@@ -1,0 +1,53 @@
+---
+title: Import from QuickBooks Desktop IIF
+summary: Create or import a company in SPRK from a QuickBooks Desktop IIF export using the Companies page.
+audience: End users
+app_sections:
+  - companies
+workflow_type: setup
+source_refs:
+  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/settings/companies/companies.tsx
+  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/settings/howTo.ts
+last_validated: 2026-05-01
+screenshot_status: not-started
+owner: codex
+---
+
+## Purpose
+
+Use this workflow when your source data comes from QuickBooks Desktop and you exported it as an `.iif` file.
+
+## Prerequisites
+
+- You can open `Settings` → `Companies`.
+- You exported the source data from QuickBooks Desktop as an `.iif` file.
+- You have room to create another company in your workspace.
+
+## Steps
+
+1. In QuickBooks Desktop, export the data you want to migrate as an IIF file.
+2. In SPRK, open `Settings` → `Companies`.
+3. Open the menu attached to `New Company`.
+4. Select `Import from QBD (IIF)`.
+5. In the file picker, choose the `.iif` export.
+6. Wait for SPRK to complete the import and refresh the list.
+7. Confirm that the imported company appears in the `Companies` table.
+8. Review the imported company before daily use, with extra attention to chart of accounts, customers, and vendors.
+
+## Expected Result
+
+SPRK imports the QuickBooks Desktop IIF file and adds the resulting company to the companies list.
+
+## Common Mistakes
+
+- Exporting the wrong file type from QuickBooks Desktop and trying to use it with the IIF import path.
+- Using the QBD import option with a ZIP file instead of an IIF file.
+- Assuming the import replaces the currently selected company. The imported company is added to the list and may still need to be selected.
+- Skipping validation of the imported setup data after the import finishes.
+
+## Related Articles
+
+- [Create your first company](./create-your-first-company.md)
+- [Import from QuickBooks Online ZIP](./import-from-quickbooks-online-zip.md)
+- [Use the Import Wizard](./use-the-import-wizard.md)
+- [Switch between companies](./switch-between-companies.md)
