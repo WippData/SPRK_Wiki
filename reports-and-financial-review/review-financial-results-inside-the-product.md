@@ -1,18 +1,6 @@
----
-title: Review Financial Results Inside the Product
-summary: Run financial reports in SPRK, compare periods where supported, and review balances and activity inside the app without treating the report itself as accounting advice.
-audience: End users
-app_sections:
-  - reports
-workflow_type: reporting
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/reports/ReportsPage.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/reports/hooks.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/reports.go
-last_validated: 2026-05-04
-screenshot_status: not-started
-owner: codex
----
+# Review Financial Results Inside the Product
+
+Run financial reports in SPRK, compare periods where supported, and review balances and activity inside the app without treating the report itself as accounting advice.
 
 ## Purpose
 
@@ -59,3 +47,9 @@ You can review current report totals and detailed lines directly in SPRK for the
 - [View available reports](./view-available-reports.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
 - [Interpret report navigation without accounting advice](./interpret-report-navigation-without-accounting-advice.md)
+
+## Info
+
+- App sections: `reports`
+- Last validated: 2026-05-04
+- Screenshot status: `not-started`

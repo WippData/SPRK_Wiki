@@ -1,35 +1,6 @@
----
-title: Move Between Major App Areas
-summary: Use the sidebar, section groups, quick links, and collapse control to move through the main SPRK pages.
-audience: End users
-app_sections:
-  - dashboard
-  - reports
-  - invoices
-  - banking
-  - customers
-  - reconcile
-  - vendors
-  - bills
-  - rules
-  - ledger
-  - checks
-  - chart
-  - checklists
-  - companies
-  - license
-  - support
-  - preferences
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/shared/ui/Sidebar.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/shared/ui/sidebarItems.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Dashboard.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/App.tsx
-last_validated: 2026-05-01
-screenshot_status: not-started
-owner: codex
----
+# Move Between Major App Areas
+
+Use the sidebar, section groups, quick links, and collapse control to move through the main SPRK pages.
 
 ## Purpose
 
@@ -69,3 +40,9 @@ You can move reliably between the app’s major work areas and understand whethe
 - [Understand the dashboard overview](./understand-the-dashboard-overview.md)
 - [Use global search](./use-global-search.md)
 - [Understand company-aware navigation](./understand-company-aware-navigation.md)
+
+## Info
+
+- App sections: `dashboard`, `reports`, `invoices`, `banking`, `customers`, `reconcile`, `vendors`, `bills`, `rules`, `ledger`, `checks`, `chart`, `checklists`, `companies`, `license`, `support`, `preferences`
+- Last validated: 2026-05-01
+- Screenshot status: `not-started`

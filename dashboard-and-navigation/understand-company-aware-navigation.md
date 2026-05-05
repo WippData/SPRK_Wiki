@@ -1,19 +1,6 @@
----
-title: Understand Company-Aware Navigation
-summary: Learn how the active company affects what you see as you move through SPRK and how to avoid working in the wrong company.
-audience: End users
-app_sections:
-  - dashboard
-  - companies
-workflow_type: reference
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/shared/ui/Sidebar.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/settings/companies/companies.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/App.tsx
-last_validated: 2026-05-01
-screenshot_status: not-started
-owner: codex
----
+# Understand Company-Aware Navigation
+
+Learn how the active company affects what you see as you move through SPRK and how to avoid working in the wrong company.
 
 ## Purpose
 
@@ -46,3 +33,9 @@ You understand that pages, search results, dashboard data, and accounting workfl
 - [Move between major app areas](./move-between-major-app-areas.md)
 - [Use global search](./use-global-search.md)
 - [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
+
+## Info
+
+- App sections: `dashboard`, `companies`
+- Last validated: 2026-05-01
+- Screenshot status: `not-started`

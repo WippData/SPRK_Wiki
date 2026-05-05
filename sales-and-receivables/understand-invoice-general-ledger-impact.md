@@ -1,19 +1,6 @@
----
-title: Understand Invoice General Ledger Impact
-summary: Review the current backend posting logic for invoice creation, Open status recognition, and payment receipt in SPRK.
-audience: End users
-app_sections:
-  - invoices
-  - ledger
-workflow_type: reference
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/invoices.go
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/invoices/drawerConfig.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/invoices/logic.ts
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Understand Invoice General Ledger Impact
+
+Understand how invoice creation, Open status recognition, and payment receipt affect the general ledger in SPRK.
 
 ## Purpose
 
@@ -34,7 +21,7 @@ Use this article when you need to understand what SPRK currently posts to the ge
 
 ## Expected Result
 
-Current posting logic as of 2026-05-02:
+Invoice posting behavior as of 2026-05-02:
 
 - Creating an invoice as `Draft` does not post a journal entry.
 - Creating an invoice as `Open`, or updating an existing invoice from a non-open status to `Open`, posts one recognition journal entry.
@@ -59,7 +46,7 @@ Current status behavior when a payment is recorded:
 ## Common Mistakes
 
 - Marking an invoice `Paid` by editing status instead of using `Receive payment`. The payment posting logic is tied to the payment workflow, not a manual status change.
-- Assuming item-level income account selections currently drive the invoice journal entry. The current backend logic credits one resolved income account for the whole invoice.
+- Assuming item-level income account selections currently drive the invoice journal entry. SPRK currently credits one resolved income account for the whole invoice.
 - Assuming tax is posted to a separate liability account. The current invoice recognition logic credits the full total to the income side.
 - Assuming void handling is part of this documented flow. This article only documents create/open and payment behavior.
 
@@ -68,3 +55,9 @@ Current status behavior when a payment is recorded:
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Receive invoice payments](./receive-invoice-payments.md)
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
+
+## Info
+
+- App sections: `invoices`, `ledger`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

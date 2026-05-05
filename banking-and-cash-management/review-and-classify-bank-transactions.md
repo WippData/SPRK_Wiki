@@ -1,19 +1,6 @@
----
-title: Review and Classify Bank Transactions
-summary: Categorize pending bank or credit card transactions, use splits or check matching when needed, and confirm the entries that should post to the general ledger.
-audience: End users
-app_sections:
-  - banking
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Banking.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/bank/bankImportUtils.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/bank/tableColumns.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/bank.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Review and Classify Bank Transactions
+
+Categorize pending bank or credit card transactions, use splits or check matching when needed, and confirm the entries that should post to the general ledger.
 
 ## Purpose
 
@@ -67,3 +54,9 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Create and manage rules](./create-and-manage-rules.md)
 - [Import bank transactions](./import-bank-transactions.md)
+
+## Info
+
+- App sections: `banking`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

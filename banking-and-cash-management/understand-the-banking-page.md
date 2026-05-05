@@ -1,17 +1,6 @@
----
-title: Understand the Banking Page
-summary: Learn how the Banking page is organized so you can pick an account, import activity, review pending transactions, and confirm what should post to the general ledger.
-audience: End users
-app_sections:
-  - banking
-workflow_type: reference
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Banking.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/bank/tableColumns.tsx
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Understand the Banking Page
+
+Learn how the Banking page is organized so you can pick an account, import activity, review pending transactions, and confirm what should post to the general ledger.
 
 ## Purpose
 
@@ -62,3 +51,9 @@ You understand where to select the account, where imported files enter the workf
 - [Review and classify bank transactions](./review-and-classify-bank-transactions.md)
 - [Create and manage rules](./create-and-manage-rules.md)
 - [Import bank transactions](./import-bank-transactions.md)
+
+## Info
+
+- App sections: `banking`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

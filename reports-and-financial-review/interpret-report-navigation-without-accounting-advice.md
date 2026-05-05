@@ -1,18 +1,6 @@
----
-title: Interpret Report Navigation Without Accounting Advice
-summary: Understand what each report area is for, move between reports and supporting detail, and keep the workflow focused on product navigation rather than accounting conclusions.
-audience: End users
-app_sections:
-  - reports
-workflow_type: reference
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/reports/ReportsPage.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/shared/ui/sidebarItems.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/App.tsx
-last_validated: 2026-05-04
-screenshot_status: not-started
-owner: codex
----
+# Interpret Report Navigation Without Accounting Advice
+
+Understand what each report area is for, move between reports and supporting detail, and keep the workflow focused on product navigation rather than accounting conclusions.
 
 ## Purpose
 
@@ -53,3 +41,9 @@ You can navigate the Reports area confidently and understand what each control i
 - [View available reports](./view-available-reports.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)
+
+## Info
+
+- App sections: `reports`
+- Last validated: 2026-05-04
+- Screenshot status: `not-started`

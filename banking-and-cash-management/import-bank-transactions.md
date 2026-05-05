@@ -1,18 +1,6 @@
----
-title: Import Bank Transactions
-summary: Bring bank or credit card activity into SPRK from a supported file format, review the preview, and load the transactions into the pending queue for later confirmation.
-audience: End users
-app_sections:
-  - banking
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Banking.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/bank/hooks.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/bank.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Import Bank Transactions
+
+Bring bank or credit card activity into SPRK from a supported file format, review the preview, and load the transactions into the pending queue for later confirmation.
 
 ## Purpose
 
@@ -60,3 +48,9 @@ The imported rows are added to the selected account's pending bank register and 
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Review and classify bank transactions](./review-and-classify-bank-transactions.md)
 - [Create and manage rules](./create-and-manage-rules.md)
+
+## Info
+
+- App sections: `banking`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

@@ -1,19 +1,6 @@
----
-title: Create and Open Invoices
-summary: Build invoices from customers and items, then move them to Open status when you want SPRK to post the receivable.
-audience: End users
-app_sections:
-  - invoices
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Invoices.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/invoices/drawerConfig.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/invoices/logic.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/invoices.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Create and Open Invoices
+
+Build invoices from customers and items, then move them to Open status when you want SPRK to post the receivable.
 
 ## Purpose
 
@@ -42,7 +29,7 @@ Use this workflow when you need to create a customer invoice and decide whether 
 6. Review quantity, unit price, and extended amount on each line.
 7. Decide how the invoice should be saved:
    - `Draft` keeps the invoice unposted.
-   - `Open` posts the receivable based on the current backend logic.
+   - `Open` posts the receivable based on the current invoice workflow.
 8. Save the invoice.
 9. Review the invoice list to confirm the expected status, total, and balance.
 
@@ -63,3 +50,9 @@ The invoice is created and appears in the invoice list. If you saved it as `Open
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
 - [Manage customers](./manage-customers.md)
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
+
+## Info
+
+- App sections: `invoices`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

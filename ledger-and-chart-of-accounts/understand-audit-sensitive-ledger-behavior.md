@@ -1,20 +1,6 @@
----
-title: Understand Audit-Sensitive Ledger Behavior
-summary: Review the current rules around journal-entry edits, reversal entries, and inactive-account handling so you know which ledger changes preserve history and how they affect balances.
-audience: End users
-app_sections:
-  - ledger
-  - chart
-workflow_type: reference
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/journal.go
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/safe/journalEntry.go
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/accounts.go
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/JournalEntries.tsx
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Understand Audit-Sensitive Ledger Behavior
+
+Review the current rules around journal-entry edits, reversal entries, and inactive-account handling so you know which ledger changes preserve history and how they affect balances.
 
 ## Purpose
 
@@ -62,3 +48,9 @@ You understand which maintenance actions keep an audit trail and how they affect
 - [Record journal entries](./record-journal-entries.md)
 - [Understand ledger import and export behavior](./understand-ledger-import-and-export-behavior.md)
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)
+
+## Info
+
+- App sections: `ledger`, `chart`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

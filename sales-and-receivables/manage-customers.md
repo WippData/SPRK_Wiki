@@ -1,17 +1,6 @@
----
-title: Manage Customers
-summary: Create and maintain customer records so invoices and customer-facing receivables workflows have the right contact information.
-audience: End users
-app_sections:
-  - customers
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Customers.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/customers/drawerConfig.ts
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Manage Customers
+
+Create and maintain customer records so invoices and customer-facing receivables workflows have the right contact information.
 
 ## Purpose
 
@@ -48,3 +37,9 @@ The customer is available for later invoice selection and ongoing relationship m
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Use global search](../dashboard-and-navigation/use-global-search.md)
+
+## Info
+
+- App sections: `customers`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

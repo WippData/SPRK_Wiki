@@ -1,17 +1,6 @@
----
-title: Use the Import Wizard
-summary: Build a new company from uploaded files, copied data, and manual settings when a simple one-file import is not enough.
-audience: End users
-app_sections:
-  - companies
-workflow_type: setup
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/settings/companies/companies.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/settings/onboarding/NewCompanyWizard.tsx
-last_validated: 2026-05-01
-screenshot_status: not-started
-owner: codex
----
+# Use the Import Wizard
+
+Build a new company from uploaded files, copied data, and manual settings when a simple one-file import is not enough.
 
 ## Purpose
 
@@ -59,3 +48,9 @@ SPRK creates a new company using the combination of files, copied data, and sett
 - [Import from QuickBooks Online ZIP](./import-from-quickbooks-online-zip.md)
 - [Import from QuickBooks Desktop IIF](./import-from-quickbooks-desktop-iif.md)
 - [Switch between companies](./switch-between-companies.md)
+
+## Info
+
+- App sections: `companies`
+- Last validated: 2026-05-01
+- Screenshot status: `not-started`

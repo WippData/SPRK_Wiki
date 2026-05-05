@@ -1,17 +1,6 @@
----
-title: Manage Items for Invoicing
-summary: Define products and services so invoice lines can be filled quickly and consistently.
-audience: End users
-app_sections:
-  - items
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Items.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/items/drawerConfig.ts
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Manage Items for Invoicing
+
+Define products and services so invoice lines can be filled quickly and consistently.
 
 ## Purpose
 
@@ -54,3 +43,9 @@ The item becomes available for invoice entry, and invoice lines can reuse its SK
 - [Manage customers](./manage-customers.md)
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
+
+## Info
+
+- App sections: `items`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

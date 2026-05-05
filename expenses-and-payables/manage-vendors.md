@@ -1,19 +1,6 @@
----
-title: Manage Vendors
-summary: Create and maintain vendor records so bills, checks, and vendor reporting use the right payee information.
-audience: End users
-app_sections:
-  - vendors
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Vendors.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/vendors/drawerConfig.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/vendors/vendorFilters.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/vendors/useVendorRegisterAction.tsx
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Manage Vendors
+
+Create and maintain vendor records so bills, checks, and vendor reporting use the right payee information.
 
 ## Purpose
 
@@ -52,3 +39,9 @@ The vendor is available for bill entry, check tracking, and vendor lookup. Creat
 - [Create and manage bills](./create-and-manage-bills.md)
 - [Work with checks](./work-with-checks.md)
 - [Review common payables workflows](./review-common-payables-workflows.md)
+
+## Info
+
+- App sections: `vendors`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

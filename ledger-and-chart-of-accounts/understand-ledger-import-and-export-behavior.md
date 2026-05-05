@@ -1,19 +1,6 @@
----
-title: Understand Ledger Import and Export Behavior
-summary: Move journal-entry data into or out of SPRK from the `Ledger` page, including template downloads, preview checks, account resolution, and current posting behavior.
-audience: End users
-app_sections:
-  - ledger
-workflow_type: reference
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/JournalEntries.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/journalentries/exportHandler.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/shared/lib/importCSV.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/journal.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Understand Ledger Import and Export Behavior
+
+Move journal-entry data into or out of SPRK from the `Ledger` page, including template downloads, preview checks, account resolution, and current posting behavior.
 
 ## Purpose
 
@@ -58,3 +45,9 @@ You can move journal-entry data in or out of the product with the current suppor
 - [Record journal entries](./record-journal-entries.md)
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)
 - [Understand audit-sensitive ledger behavior](./understand-audit-sensitive-ledger-behavior.md)
+
+## Info
+
+- App sections: `ledger`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

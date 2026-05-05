@@ -1,18 +1,6 @@
----
-title: View Available Reports
-summary: Open the Reports page, move between the available report tabs, set the date controls that apply to each tab, and run the report you want to review.
-audience: End users
-app_sections:
-  - reports
-workflow_type: reporting
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Reports.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/reports/ReportsPage.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/reports/reportCatalog.ts
-last_validated: 2026-05-04
-screenshot_status: not-started
-owner: codex
----
+# View Available Reports
+
+Open the Reports page, move between the available report tabs, set the date controls that apply to each tab, and run the report you want to review.
 
 ## Purpose
 
@@ -34,7 +22,7 @@ Use this workflow when you want to see which reports are available in SPRK and r
    - `Balance Sheet`
    - `Cash Flow (Indirect)`
    - `Tax Forms`
-   - Additional report views such as `General Ledger` and `Account Detail` are also supported by the current Reports page configuration.
+   - Additional report views such as `General Ledger` and `Account Detail` are also available.
 4. Select the tab you want to run.
 5. Set the date controls required for that tab:
    - Range-based reports use a period preset and date range.
@@ -65,3 +53,9 @@ The selected report loads in the main table area with the date context and contr
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
 - [Interpret report navigation without accounting advice](./interpret-report-navigation-without-accounting-advice.md)
+
+## Info
+
+- App sections: `reports`
+- Last validated: 2026-05-04
+- Screenshot status: `not-started`
