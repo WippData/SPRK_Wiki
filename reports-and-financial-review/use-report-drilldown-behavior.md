@@ -1,19 +1,6 @@
----
-title: Use Report Drilldown Behavior
-summary: Open a report row with supporting detail when SPRK exposes drilldown, then review the underlying journal entries without changing the original posting.
-audience: End users
-app_sections:
-  - reports
-  - ledger
-workflow_type: reporting
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/reports/ReportsPage.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/reports/reportTabTypes.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/shared/ui/modals/RegisterModal.tsx
-last_validated: 2026-05-04
-screenshot_status: not-started
-owner: codex
----
+# Use Report Drilldown Behavior
+
+Open a report row with supporting detail when SPRK exposes drilldown, then review the underlying journal entries without changing the original posting.
 
 ## Purpose
 
@@ -57,3 +44,9 @@ SPRK opens a supporting-entry view for the selected account and date context so 
 - [View available reports](./view-available-reports.md)
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)
 - [Interpret report navigation without accounting advice](./interpret-report-navigation-without-accounting-advice.md)
+
+## Info
+
+- App sections: `reports`, `ledger`
+- Last validated: 2026-05-04
+- Screenshot status: `not-started`

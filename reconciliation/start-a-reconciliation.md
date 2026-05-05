@@ -1,18 +1,6 @@
----
-title: Start a Reconciliation
-summary: Open the reconciliation workflow for a bank or credit card account, review the statement dates and balances that SPRK locks or derives, and start the clearing session correctly.
-audience: End users
-app_sections:
-  - reconcile
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Reconcile.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/reconciliation/hooks.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/reconcile.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Start a Reconciliation
+
+Open the reconciliation workflow for a bank or credit card account, review the statement dates and balances that SPRK locks or derives, and start the clearing session correctly.
 
 ## Purpose
 
@@ -62,3 +50,9 @@ The reconciliation workflow is initialized with statement dates and balances for
 - [Finish a reconciliation](./finish-a-reconciliation.md)
 - [Match and unmatch transactions](./match-and-unmatch-transactions.md)
 - [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md)
+
+## Info
+
+- App sections: `reconcile`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

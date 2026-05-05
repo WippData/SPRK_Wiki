@@ -1,19 +1,6 @@
----
-title: Receive Invoice Payments
-summary: Record customer payments from the invoice list so SPRK updates the balance and posts the cash or bank side of the transaction.
-audience: End users
-app_sections:
-  - invoices
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Invoices.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/invoices/drawerConfig.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/invoices/logic.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/invoices.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Receive Invoice Payments
+
+Record customer payments from the invoice list so SPRK updates the balance and posts the cash or bank side of the transaction.
 
 ## Purpose
 
@@ -59,3 +46,9 @@ SPRK records the payment, reduces the invoice balance, and updates the status:
 
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
+
+## Info
+
+- App sections: `invoices`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

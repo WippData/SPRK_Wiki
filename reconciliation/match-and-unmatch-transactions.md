@@ -1,17 +1,6 @@
----
-title: Match and Unmatch Transactions
-summary: Link a reconciled bank line to a check when the workflow needs check-level support, and remove that link when the wrong check was chosen.
-audience: End users
-app_sections:
-  - reconcile
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Reconcile.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/bank.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Match and Unmatch Transactions
+
+Link a reconciled bank line to a check when the workflow needs check-level support, and remove that link when the wrong check was chosen.
 
 ## Purpose
 
@@ -56,3 +45,9 @@ The bank line is either linked to the correct check or returned to an unmatched 
 - [Start a reconciliation](./start-a-reconciliation.md)
 - [Finish a reconciliation](./finish-a-reconciliation.md)
 - [Work with checks](../expenses-and-payables/work-with-checks.md)
+
+## Info
+
+- App sections: `reconcile`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

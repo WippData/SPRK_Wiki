@@ -1,20 +1,6 @@
----
-title: Work with Checks
-summary: Create, update, match, unmatch, void, and delete checks while understanding what the current check workflow does and does not post to the ledger.
-audience: End users
-app_sections:
-  - checks
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Checks.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/checks/CheckDrawer.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/checks/transactionDefinition.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/checks.go
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/bank.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Work with Checks
+
+Create, update, match, unmatch, void, and delete checks while understanding what the current check workflow does and does not post to the ledger.
 
 ## Purpose
 
@@ -52,7 +38,7 @@ Use this workflow when you need to track a check, keep its status current, and c
 
 The check is stored and can move through draft, issued, matched, cleared, voided, or deleted states based on the current workflow. Current general ledger impact as of 2026-05-02:
 
-- Creating or editing a check record does not post a separate journal entry in the current `Checks` backend flow.
+- Creating or editing a check record does not post a separate journal entry in the current `Checks` workflow.
 - Matching a check links it to a bank transaction and changes operational status, but that match action is not documented here as creating its own new journal entry.
 - Void and delete actions update the check record and matching state, not a separate check-specific posting flow.
 
@@ -68,3 +54,9 @@ The check is stored and can move through draft, issued, matched, cleared, voided
 - [Create and manage bills](./create-and-manage-bills.md)
 - [Review common payables workflows](./review-common-payables-workflows.md)
 - [Manage vendors](./manage-vendors.md)
+
+## Info
+
+- App sections: `checks`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

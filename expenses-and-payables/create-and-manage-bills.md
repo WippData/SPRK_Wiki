@@ -1,19 +1,6 @@
----
-title: Create and Manage Bills
-summary: Enter vendor bills, decide whether they stay in draft or post to Accounts Payable, and record bill payments from the Bills page.
-audience: End users
-app_sections:
-  - bills
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Bills.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/bills/drawerConfig.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/bills/logic.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/bills.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Create and Manage Bills
+
+Enter vendor bills, decide whether they stay in draft or post to Accounts Payable, and record bill payments from the Bills page.
 
 ## Purpose
 
@@ -43,7 +30,7 @@ Use this workflow when you need to enter a vendor bill, recognize the payable, a
 7. Add `Tax total` or `Memo` if needed.
 8. Decide how the bill should be saved:
    - `Draft` stores the bill without posting Accounts Payable.
-   - `Open` stores the bill and posts the payable based on the current backend logic.
+   - `Open` stores the bill and posts the payable based on the current bills workflow.
 9. Save the bill.
 10. Review the bill list to confirm the expected `Status`, `Total`, and `Balance`.
 11. When you are ready to record payment, use the dollar action for the bill.
@@ -81,3 +68,9 @@ The bill is saved and appears in the bill list. Current general ledger impact as
 - [Manage vendors](./manage-vendors.md)
 - [Work with checks](./work-with-checks.md)
 - [Review common payables workflows](./review-common-payables-workflows.md)
+
+## Info
+
+- App sections: `bills`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

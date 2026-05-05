@@ -1,17 +1,6 @@
----
-title: Switch Between Companies
-summary: Change the active company from the Companies page so the rest of the app updates to the company you want to work in.
-audience: End users
-app_sections:
-  - companies
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/settings/companies/companies.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/shared/ui/Sidebar.tsx
-last_validated: 2026-05-01
-screenshot_status: not-started
-owner: codex
----
+# Switch Between Companies
+
+Change the active company from the Companies page so the rest of the app updates to the company you want to work in.
 
 ## Purpose
 
@@ -46,3 +35,9 @@ The selected company becomes the active company across the app.
 - [Import from QuickBooks Online ZIP](./import-from-quickbooks-online-zip.md)
 - [Import from QuickBooks Desktop IIF](./import-from-quickbooks-desktop-iif.md)
 - [Use the Import Wizard](./use-the-import-wizard.md)
+
+## Info
+
+- App sections: `companies`
+- Last validated: 2026-05-01
+- Screenshot status: `not-started`

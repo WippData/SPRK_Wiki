@@ -1,17 +1,6 @@
----
-title: Create Your First Company
-summary: Create a company from the Companies tab and set the core accounting options that SPRK uses for day-to-day work.
-audience: End users
-app_sections:
-  - companies
-workflow_type: setup
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/settings/companies/companies.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/settings/companies/companySettingOptions.ts
-last_validated: 2026-05-01
-screenshot_status: not-started
-owner: codex
----
+# Create Your First Company
+
+Create a company from the Companies tab and set the core accounting options that SPRK uses for day-to-day work.
 
 ## Purpose
 
@@ -61,3 +50,9 @@ The new company is added to the `Companies` table and becomes available as the a
 - [Import from QuickBooks Desktop IIF](./import-from-quickbooks-desktop-iif.md)
 - [Use the Import Wizard](./use-the-import-wizard.md)
 - [Switch between companies](./switch-between-companies.md)
+
+## Info
+
+- App sections: `companies`
+- Last validated: 2026-05-01
+- Screenshot status: `not-started`

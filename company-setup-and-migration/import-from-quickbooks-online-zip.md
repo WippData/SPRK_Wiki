@@ -1,17 +1,6 @@
----
-title: Import from QuickBooks Online ZIP
-summary: Create a company in SPRK by importing a QuickBooks Online ZIP export from the Companies page.
-audience: End users
-app_sections:
-  - companies
-workflow_type: setup
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/settings/companies/companies.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/settings/howTo.ts
-last_validated: 2026-05-01
-screenshot_status: not-started
-owner: codex
----
+# Import from QuickBooks Online ZIP
+
+Create a company in SPRK by importing a QuickBooks Online ZIP export from the Companies page.
 
 ## Purpose
 
@@ -51,3 +40,9 @@ SPRK imports the QuickBooks Online ZIP and adds the imported company to the comp
 - [Import from QuickBooks Desktop IIF](./import-from-quickbooks-desktop-iif.md)
 - [Use the Import Wizard](./use-the-import-wizard.md)
 - [Switch between companies](./switch-between-companies.md)
+
+## Info
+
+- App sections: `companies`
+- Last validated: 2026-05-01
+- Screenshot status: `not-started`

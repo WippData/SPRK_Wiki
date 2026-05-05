@@ -1,18 +1,6 @@
----
-title: Finish a Reconciliation
-summary: Clear the right confirmed transactions, monitor the difference, and finish the reconciliation only when the selected activity agrees to the statement ending balance.
-audience: End users
-app_sections:
-  - reconcile
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Reconcile.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/reconciliation/hooks.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/reconcile.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Finish a Reconciliation
+
+Clear the right confirmed transactions, monitor the difference, and finish the reconciliation only when the selected activity agrees to the statement ending balance.
 
 ## Purpose
 
@@ -60,3 +48,9 @@ SPRK finalizes the reconciliation for the selected statement window. Current tra
 - [Start a reconciliation](./start-a-reconciliation.md)
 - [Match and unmatch transactions](./match-and-unmatch-transactions.md)
 - [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md)
+
+## Info
+
+- App sections: `reconcile`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

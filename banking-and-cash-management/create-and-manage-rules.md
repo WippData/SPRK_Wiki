@@ -1,21 +1,6 @@
----
-title: Create and Manage Rules
-summary: Build rules that suggest transaction categories based on descriptions or amounts, then maintain rule priority and scope from the Rules page.
-audience: End users
-app_sections:
-  - banking
-  - rules
-workflow_type: setup
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Banking.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Rules.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/rules/ruleDrawer.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/rules/drawerConfig.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/rules.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Create and Manage Rules
+
+Build rules that suggest transaction categories based on descriptions or amounts, then maintain rule priority and scope from the Rules page.
 
 ## Purpose
 
@@ -73,3 +58,9 @@ The rule is saved and becomes available when SPRK evaluates pending bank transac
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Review and classify bank transactions](./review-and-classify-bank-transactions.md)
 - [Import bank transactions](./import-bank-transactions.md)
+
+## Info
+
+- App sections: `banking`, `rules`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

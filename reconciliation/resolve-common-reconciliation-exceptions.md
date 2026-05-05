@@ -1,19 +1,6 @@
----
-title: Resolve Common Reconciliation Exceptions
-summary: Diagnose the most common reasons a reconciliation cannot start or finish cleanly, including first-time setup issues, date-window issues, and nonzero differences.
-audience: End users
-app_sections:
-  - reconcile
-workflow_type: troubleshooting
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Reconcile.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/reconciliation/hooks.ts
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/reconcile.go
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/bank.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Resolve Common Reconciliation Exceptions
+
+Diagnose the most common reasons a reconciliation cannot start or finish cleanly, including first-time setup issues, date-window issues, and nonzero differences.
 
 ## Purpose
 
@@ -61,3 +48,9 @@ You can identify whether the issue is caused by account selection, transaction s
 - [Start a reconciliation](./start-a-reconciliation.md)
 - [Match and unmatch transactions](./match-and-unmatch-transactions.md)
 - [Finish a reconciliation](./finish-a-reconciliation.md)
+
+## Info
+
+- App sections: `reconcile`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

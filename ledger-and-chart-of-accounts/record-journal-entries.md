@@ -1,19 +1,6 @@
----
-title: Record Journal Entries
-summary: Create balanced manual journal entries in the `Ledger` page, save reusable templates when needed, and understand how posting affects the general ledger.
-audience: End users
-app_sections:
-  - ledger
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/JournalEntries.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/journal.go
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/safe/journalEntry.go
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/features/settings/howTo.ts
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Record Journal Entries
+
+Create balanced manual journal entries in the `Ledger` page, save reusable templates when needed, and understand how posting affects the general ledger.
 
 ## Purpose
 
@@ -58,3 +45,9 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)
 - [Understand ledger import and export behavior](./understand-ledger-import-and-export-behavior.md)
 - [Understand audit-sensitive ledger behavior](./understand-audit-sensitive-ledger-behavior.md)
+
+## Info
+
+- App sections: `ledger`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

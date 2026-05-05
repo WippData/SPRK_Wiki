@@ -1,16 +1,6 @@
----
-title: Understand the Dashboard Overview
-summary: Use the dashboard to get a quick summary of recent activity and jump into common workflows.
-audience: End users
-app_sections:
-  - dashboard
-workflow_type: reference
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Dashboard.tsx
-last_validated: 2026-05-01
-screenshot_status: not-started
-owner: codex
----
+# Understand the Dashboard Overview
+
+Use the dashboard to get a quick summary of recent activity and jump into common workflows.
 
 ## Purpose
 
@@ -50,3 +40,9 @@ You can read the dashboard as a summary page and use it as a launch point into d
 - [Move between major app areas](./move-between-major-app-areas.md)
 - [Use global search](./use-global-search.md)
 - [Understand company-aware navigation](./understand-company-aware-navigation.md)
+
+## Info
+
+- App sections: `dashboard`
+- Last validated: 2026-05-01
+- Screenshot status: `not-started`

@@ -1,19 +1,6 @@
----
-title: Use Global Search
-summary: Search across customers, vendors, and ledger entries from the persistent search bar at the top of the app.
-audience: End users
-app_sections:
-  - customers
-  - vendors
-  - ledger
-workflow_type: daily-ops
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/App.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/shared/ui/layout/GlobalSearch.tsx
-last_validated: 2026-05-01
-screenshot_status: not-started
-owner: codex
----
+# Use Global Search
+
+Search across customers, vendors, and ledger entries from the persistent search bar at the top of the app.
 
 ## Purpose
 
@@ -59,3 +46,9 @@ When possible, SPRK also carries the selected result into that page as a prefill
 - [Move between major app areas](./move-between-major-app-areas.md)
 - [Understand company-aware navigation](./understand-company-aware-navigation.md)
 - [Understand the dashboard overview](./understand-the-dashboard-overview.md)
+
+## Info
+
+- App sections: `customers`, `vendors`, `ledger`
+- Last validated: 2026-05-01
+- Screenshot status: `not-started`

@@ -1,17 +1,6 @@
----
-title: Understand the Chart of Accounts Structure
-summary: Review how SPRK organizes accounts by code, parent-child hierarchy, type, subtype, and active status so you can maintain a usable account list without changing posted balances.
-audience: End users
-app_sections:
-  - chart
-workflow_type: reference
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/ChartOfAccounts.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/accounts.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Understand the Chart of Accounts Structure
+
+Review how SPRK organizes accounts by code, parent-child hierarchy, type, subtype, and active status so you can maintain a usable account list without changing posted balances.
 
 ## Purpose
 
@@ -58,7 +47,7 @@ You can organize the account list into a clearer structure and keep accounts ava
 
 ## Common Mistakes
 
-- Expecting `Delete` to erase prior history. The current backend marks the account inactive instead.
+- Expecting `Delete` to erase prior history. SPRK marks the account inactive instead.
 - Importing parent relationships without valid `parentId` values.
 - Treating subtype as required for every account when the page only exposes it as an optional field.
 
@@ -67,3 +56,9 @@ You can organize the account list into a clearer structure and keep accounts ava
 - [Record journal entries](./record-journal-entries.md)
 - [Understand ledger import and export behavior](./understand-ledger-import-and-export-behavior.md)
 - [Understand audit-sensitive ledger behavior](./understand-audit-sensitive-ledger-behavior.md)
+
+## Info
+
+- App sections: `chart`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`

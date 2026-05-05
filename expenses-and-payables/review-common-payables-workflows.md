@@ -1,22 +1,6 @@
----
-title: Review Common Payables Workflows
-summary: Use a simple decision path to move from vendor setup to bill recognition, payment, and check tracking without mixing up the accounting effect.
-audience: End users
-app_sections:
-  - vendors
-  - bills
-  - checks
-workflow_type: reference
-source_refs:
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Vendors.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Bills.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-frontend/src/pages/Checks.tsx
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/bills.go
-  - /Users/nathancunningham/Code/SPRK_Desktop-backend/internal/core/checks.go
-last_validated: 2026-05-02
-screenshot_status: not-started
-owner: codex
----
+# Review Common Payables Workflows
+
+Use a simple decision path to move from vendor setup to bill recognition, payment, and check tracking without mixing up the accounting effect.
 
 ## Purpose
 
@@ -55,3 +39,9 @@ You can choose the right payables page quickly and avoid confusing master-data s
 - [Manage vendors](./manage-vendors.md)
 - [Create and manage bills](./create-and-manage-bills.md)
 - [Work with checks](./work-with-checks.md)
+
+## Info
+
+- App sections: `vendors`, `bills`, `checks`
+- Last validated: 2026-05-02
+- Screenshot status: `not-started`
