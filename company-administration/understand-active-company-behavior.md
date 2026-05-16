@@ -32,6 +32,7 @@ You can predict which company your work applies to before opening any accounting
 - [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
 - [Use the Companies tab](./use-the-companies-tab.md)
 - [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
+- [Understand company-aware navigation](../dashboard-and-navigation/understand-company-aware-navigation.md)
 
 ## Info
 

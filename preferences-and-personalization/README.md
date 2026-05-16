@@ -8,6 +8,12 @@ Review app-wide display and formatting settings, control update prompts, tailor 
 - [Customize the sidebar](./customize-the-sidebar.md)
 - [Understand personalization boundaries and saved behavior](./understand-personalization-boundaries-and-saved-behavior.md)
 
+## Related Foundation Workflows
+
+- [Understand the sidebar and main navigation](../getting-started/understand-the-sidebar-and-main-navigation.md)
+- [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)
+- [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
+
 ## Info
 
 - App sections: `preferences`

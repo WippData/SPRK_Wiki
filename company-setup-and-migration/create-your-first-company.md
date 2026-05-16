@@ -50,6 +50,7 @@ The new company is added to the `Companies` table and becomes available as the a
 - [Import from QuickBooks Desktop IIF](./import-from-quickbooks-desktop-iif.md)
 - [Use the Import Wizard](./use-the-import-wizard.md)
 - [Switch between companies](./switch-between-companies.md)
+- [Use the Companies tab](../company-administration/use-the-companies-tab.md)
 
 ## Info
 

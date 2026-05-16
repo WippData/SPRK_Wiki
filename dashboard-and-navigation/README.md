@@ -9,6 +9,12 @@ Learn the main SPRK layout, move between pages, and use search to get where you 
 - [Use global search](./use-global-search.md)
 - [Understand company-aware navigation](./understand-company-aware-navigation.md)
 
+## Related Foundation Workflows
+
+- [Understand the sidebar and main navigation](../getting-started/understand-the-sidebar-and-main-navigation.md)
+- [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
+- [Customize the sidebar](../preferences-and-personalization/customize-the-sidebar.md)
+
 ## Info
 
 - App sections: `dashboard`

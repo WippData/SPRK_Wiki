@@ -40,6 +40,7 @@ You can move reliably between the app’s major work areas and understand whethe
 - [Understand the dashboard overview](./understand-the-dashboard-overview.md)
 - [Use global search](./use-global-search.md)
 - [Understand company-aware navigation](./understand-company-aware-navigation.md)
+- [Understand the sidebar and main navigation](../getting-started/understand-the-sidebar-and-main-navigation.md)
 
 ## Info
 

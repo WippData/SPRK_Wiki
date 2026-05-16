@@ -35,6 +35,7 @@ The selected company becomes the active company across the app.
 - [Import from QuickBooks Online ZIP](./import-from-quickbooks-online-zip.md)
 - [Import from QuickBooks Desktop IIF](./import-from-quickbooks-desktop-iif.md)
 - [Use the Import Wizard](./use-the-import-wizard.md)
+- [Understand active company behavior](../company-administration/understand-active-company-behavior.md)
 
 ## Info
 

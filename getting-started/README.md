@@ -10,6 +10,12 @@ Sign in, confirm the right company, learn the main navigation, and use the dashb
 - [Understand the dashboard at a high level](./understand-the-dashboard-at-a-high-level.md)
 - [First-day orientation for a new user](./first-day-orientation-for-a-new-user.md)
 
+## Related Foundation Workflows
+
+- [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)
+- [Create your first company](../company-setup-and-migration/create-your-first-company.md)
+- [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
+
 ## Info
 
 - App sections: `dashboard`, `companies`
