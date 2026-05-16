@@ -40,6 +40,7 @@ You can read the dashboard as a summary page and use it as a launch point into d
 - [Move between major app areas](./move-between-major-app-areas.md)
 - [Use global search](./use-global-search.md)
 - [Understand company-aware navigation](./understand-company-aware-navigation.md)
+- [Understand the dashboard at a high level](../getting-started/understand-the-dashboard-at-a-high-level.md)
 
 ## Info
 

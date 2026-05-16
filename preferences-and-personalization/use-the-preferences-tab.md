@@ -47,6 +47,7 @@ Your user-level preferences are applied across the SPRK app, including display, 
 - [Customize the sidebar](./customize-the-sidebar.md)
 - [Understand personalization boundaries and saved behavior](./understand-personalization-boundaries-and-saved-behavior.md)
 - [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
+- [Understand the sidebar and main navigation](../getting-started/understand-the-sidebar-and-main-navigation.md)
 
 ## Info
 

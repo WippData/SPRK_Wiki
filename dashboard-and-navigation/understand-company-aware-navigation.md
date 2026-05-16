@@ -33,6 +33,7 @@ You understand that pages, search results, dashboard data, and accounting workfl
 - [Move between major app areas](./move-between-major-app-areas.md)
 - [Use global search](./use-global-search.md)
 - [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
+- [Understand active company behavior](../company-administration/understand-active-company-behavior.md)
 
 ## Info
 

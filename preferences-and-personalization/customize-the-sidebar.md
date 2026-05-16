@@ -44,6 +44,7 @@ Your sidebar reflects your saved navigation preferences while keeping required s
 - [Use the Preferences tab](./use-the-preferences-tab.md)
 - [Understand personalization boundaries and saved behavior](./understand-personalization-boundaries-and-saved-behavior.md)
 - [Understand the sidebar and main navigation](../getting-started/understand-the-sidebar-and-main-navigation.md)
+- [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)
 
 ## Info
 
