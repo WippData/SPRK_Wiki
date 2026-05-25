@@ -24,23 +24,23 @@ Use this workflow when you want to save time with support and avoid a back-and-f
 5. In `Support Activity Log`, select `Download Log`.
 6. Keep the downloaded text file ready to attach or quote when you contact support.
 7. Choose the support path that fits your need:
-   - Use the email, Telegram, or Discord details in `Contact` for direct outreach.
+   - Use the email or Discord details in `Contact` for direct outreach.
    - Use `View or Submit Bugs` for known issues or bug submission.
-   - Use `Schedule Support Call` when you need a guided session.
 8. Include the company name, workflow, timing, and log file when you contact support.
 
 ## Expected Result
 
-Your support request includes the core details needed to investigate the issue, and the exported log gives support a text record of the captured session activity. Current general ledger impact as of 2026-05-11:
+Your support request includes the core details needed to investigate the issue, and the exported log gives support a text record of the captured session activity. Current general ledger impact as of 2026-05-25:
 
 - Downloading the support log does not create or modify any ledger transaction.
-- Collecting support notes, opening contact links, and scheduling help do not affect account balances or financial reports.
+- Collecting support notes, opening contact links, and using the bug-reporting link do not affect account balances or financial reports.
 
 ## Common Mistakes
 
 - Contacting support without naming the company or workflow where the issue occurred.
 - Downloading the log before reproducing the issue you want support to inspect.
 - Clearing the log before you save the file you plan to share.
+- Looking for contact or guided-session options that are not currently visible. Use the current channels shown in the product.
 - Treating support activity as an accounting workflow. Support actions are informational and operational only.
 
 ## Related Articles
@@ -52,5 +52,5 @@ Your support request includes the core details needed to investigate the issue, 
 ## Info
 
 - App sections: `support`
-- Last validated: 2026-05-11
+- Last validated: 2026-05-25
 - Screenshot status: `not-started`
