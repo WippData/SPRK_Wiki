@@ -4,7 +4,7 @@ Open the Support tab to download a troubleshooting log, clear the current sessio
 
 ## Purpose
 
-Use this workflow when you need the main support tools inside SPRK, including the activity log, contact details, update actions, bug-reporting link, booking link, and built-in help topics.
+Use this workflow when you need the main support tools inside SPRK, including the activity log, current contact details, update actions, bug-reporting link, and built-in help topics.
 
 ## Prerequisites
 
@@ -18,26 +18,26 @@ Use this workflow when you need the main support tools inside SPRK, including th
 2. In `Support Activity Log`, review whether the current session has captured actions.
 3. Select `Download Log` if you need a text file to share with support.
 4. Select `Clear Log` only if you want to remove the current session history and start fresh.
-5. Review the `Contact` card for the available support channels.
+5. Review the `Contact` card for the available support channels. The current Support tab lists email and Discord.
 6. If your installed app exposes update controls, use `Download Latest Version` to check for and download an available update.
 7. If an update finishes downloading and the app shows it is ready, use `Install & Restart` to apply it.
 8. Use `View or Submit Bugs` if you need the known-issues and bug-submission page.
-9. Use `Schedule Support Call` if you need a support session.
-10. Expand `How To Guides` if you want quick in-product help topics before contacting support.
+9. Expand `How To Guides` if you want quick in-product help topics before contacting support.
 
 ## Expected Result
 
-You can reach the product's visible support actions from one tab and leave with the log file, contact method, update action, or help topic you need. Current general ledger impact as of 2026-05-11:
+You can reach the product's visible support actions from one tab and leave with the log file, contact method, update action, bug-reporting path, or help topic you need. Current general ledger impact as of 2026-05-25:
 
 - Opening the Support tab does not create or change any journal entry.
 - Downloading or clearing the support log does not affect the general ledger.
-- Contact links, update actions, bug-reporting links, scheduling links, and help topics do not post transactions or change account balances.
+- Contact links, update actions, bug-reporting links, and help topics do not post transactions or change account balances.
 
 ## Common Mistakes
 
 - Clearing the support log before downloading the session details you wanted to keep.
 - Expecting the support log to include activity from earlier sessions instead of the current app session.
 - Assuming update controls will always appear. They are only visible when the installed app supports in-app updates.
+- Looking for channels or guided-session actions that are not currently visible. Use the options shown in the current Support tab.
 
 ## Related Articles
 
@@ -48,5 +48,5 @@ You can reach the product's visible support actions from one tab and leave with 
 ## Info
 
 - App sections: `support`
-- Last validated: 2026-05-11
+- Last validated: 2026-05-25
 - Screenshot status: `not-started`

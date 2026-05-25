@@ -12,6 +12,28 @@ Use this workflow when you have external bank or credit card activity in a file 
 - Your file is one of the formats accepted by the Banking page.
 - You are ready to review imported transactions before posting them.
 
+## File Instructions
+
+CSV, XLSX, and XLSM files should include a header row. SPRK uses the selected bank or credit card account from the Banking page, so the file does not need an account column.
+
+| SPRK Field Name | Acceptable Import Names |
+| --- | --- |
+| Date | `Date`, `Posted`, `Transaction Date`, `DT` |
+| Amount | `Amount`, `Amt`, `Value` |
+| Amount split into money out and money in | `Debit` / `Credit`, `Withdrawal` / `Deposit`, `Spent` / `Received` |
+| Description | `Description`, `Desc`, `Vendor`, `Payee`, `Name`, `Memo`, `Details` |
+| Check No | `Check No`, `Check Number`, `Check #`, `Chk No`, `Chk #` |
+
+For QBO files, SPRK reads the OFX-style transaction tags inside each `<STMTTRN>` transaction.
+
+| SPRK Field Name | Acceptable Import Names |
+| --- | --- |
+| Date | `<DTPOSTED>` |
+| Amount | `<TRNAMT>` |
+| Description | `<NAME>`, `<PAYEE>` |
+| Memo | `<MEMO>` |
+| Check No | `<CHECKNUM>`, `<CHKNUM>` |
+
 ## Steps
 
 1. Open `Banking`.
