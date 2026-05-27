@@ -2,6 +2,8 @@
 
 Use the dashboard to get a quick summary of recent activity and jump into common workflows.
 
+![Dashboard overview in Demo Company showing 30-day KPI cards, charts, and quick links](../screenshots/dashboard-and-navigation/dashboard-overview-step-01.png)
+
 ## Purpose
 
 Use the dashboard when you want a high-level view of recent activity before drilling into detailed accounting pages.
@@ -45,5 +47,5 @@ You can read the dashboard as a summary page and use it as a launch point into d
 ## Info
 
 - App sections: `dashboard`
-- Last validated: 2026-05-01
-- Screenshot status: `not-started`
+- Last validated: 2026-05-27
+- Screenshot status: `captured`
