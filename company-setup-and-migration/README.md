@@ -5,7 +5,6 @@ Create a company, import setup data from another system, and switch between comp
 ## In This Section
 
 - [Create your first company](./create-your-first-company.md)
-- [Create a starting balance](./create-a-starting-balance.md)
 - [Import from QuickBooks Online ZIP](./import-from-quickbooks-online-zip.md)
 - [Import from QuickBooks Desktop IIF](./import-from-quickbooks-desktop-iif.md)
 - [Use the Import Wizard](./use-the-import-wizard.md)

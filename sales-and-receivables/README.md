@@ -13,5 +13,5 @@ Set up customers and items, create invoices, receive payments, and understand th
 ## Info
 
 - App sections: `customers`, `items`, `invoices`
-- Last validated: 2026-05-02
+- Last validated: 2026-05-25
 - Screenshot status: `not-started`

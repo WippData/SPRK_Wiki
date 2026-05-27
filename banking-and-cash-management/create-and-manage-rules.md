@@ -1,57 +1,73 @@
 # Create and Manage Rules
 
-Build rules that suggest transaction categories based on descriptions or amounts, then maintain rule priority and scope from the Rules page.
+Build rules that prefill categorization for repeated bank transaction patterns, then manage scope, priority, and imported rule sets from the Rules page.
 
 ## Purpose
 
-Use this workflow when you want SPRK to suggest the same category or split treatment for repeated bank transaction patterns.
+Use this workflow when the same bank or credit card transactions appear repeatedly and you want SPRK to prepare those rows more consistently before you confirm them.
 
 ## Prerequisites
 
 - At least one bank or credit card account exists.
-- The destination accounts you want rules to apply are available.
+- The destination accounts you want rules to use are available.
 - You know the text pattern or amount pattern that should trigger the rule.
 
 ## Steps
 
-1. Open `Rules` to manage rules centrally, or open `Banking` and use the row-level create rule action on a pending transaction to start from a real example.
-2. Select `New` if you are creating the rule from the Rules page.
-3. Enter a `Rule name`.
-4. In `Apply to accounts`, leave the field blank to let the rule work across all bankish accounts, or choose specific bank or credit card accounts.
-5. Choose the match logic:
-   - `All conditions (AND)` requires every condition to match.
-   - `Any condition (OR)` allows any one condition to match.
-6. Add one or more conditions. Current fields support:
+1. Open `Rules` to manage rules centrally.
+   - If you are already reviewing a pending bank transaction, you can also start from the row-level rule action in `Banking`.
+2. Choose the rules tab that matches the result you want:
+   - `Expense / COGS` for spending-side categorization patterns.
+   - `Income` for deposit-side categorization patterns.
+3. Select `New`.
+4. Enter a clear `Rule name`.
+5. In `Apply to accounts`, either:
+   - leave the field blank to let the rule apply across all bank and credit card accounts, or
+   - choose the specific bank or credit card accounts where the pattern should apply.
+6. Choose the match logic:
+   - `All conditions (AND)` means every condition must match.
+   - `Any condition (OR)` means any one condition can match.
+7. Add one or more conditions. The current rule builder supports:
    - `Description`
    - `Amount (Spent)`
    - `Amount (Received)`
-7. Choose the condition operator and value:
+8. Choose the operator and value for each condition.
    - Text operators include contains, does not contain, starts with, ends with, is, and is not.
-   - Numeric operators include `>`, `<`, and `between`, where `between` uses `min,max`.
-8. Choose how the transaction should be categorized:
-   - Use `Categorize to` for one target account.
-   - Or add split rows and choose a split type.
-9. If you use amount-based splits and the split lines will not consume the full amount every time, choose `Balance to` for the remainder.
-10. Save the rule.
-11. Review the rule list and adjust rule priority if needed:
+   - Numeric operators include `>`, `<`, and `between`.
+   - For `between`, enter the range as `min,max`.
+9. Choose the categorization result:
+   - Use `Categorize to` when one destination account is enough.
+   - Add split rows when the same pattern should be distributed across multiple accounts.
+10. If you use a split rule:
+   - Choose `%` when the split should total exactly `100%`.
+   - Choose `$` when the rule should use fixed amounts.
+   - For `$` splits, set `Balance to` so SPRK knows where any remaining amount should go.
+11. Save the rule.
+12. Review the rule list and adjust priority when multiple rules could match the same pattern.
    - Drag rows to reorder them.
-   - Or use `Reorder rule`.
-12. Edit, deactivate, or delete rules as your transaction patterns change.
+   - Use the row-level reorder action if you want to move a rule to the top, bottom, or a specific position.
+   - Use `Reorder rule` when you want to move a rule by name and target position.
+13. If you already maintain rules in a spreadsheet, use `Import` to preview and load a rules file.
+   - The current import flow accepts `.xlsx` and `.xls`.
+   - Review the preview and any reported issues before confirming the import.
+14. Edit, disable, or delete rules as your transaction patterns change.
 
 ## Expected Result
 
-The rule is saved and becomes available when SPRK evaluates pending bank transactions. Current general ledger impact as of 2026-05-02:
+The rule is saved and becomes available when SPRK evaluates pending bank transactions. Current general ledger impact as of 2026-05-23:
 
-- Creating, editing, reordering, activating, deactivating, importing, or deleting rules does not post to the general ledger.
-- Rules suggest or prefill categorization for pending transactions.
-- A general ledger entry is created only when the bank transaction itself is later confirmed from the Banking workflow.
+- Creating, editing, reordering, importing, disabling, or deleting rules does not post to the general ledger.
+- Rules can prefill categories or split instructions for pending bank transactions.
+- A general ledger entry is created only later, when the bank transaction itself is confirmed from the Banking workflow.
 
 ## Common Mistakes
 
-- Assuming rule creation confirms existing pending transactions automatically.
-- Creating overlapping rules without checking priority order.
-- Using a text condition that is too broad and catches unrelated transactions.
-- Forgetting that split rules need valid totals or a balance account when using fixed amounts.
+- Assuming rule creation or rule import confirms existing pending transactions automatically.
+- Leaving overlapping rules in the wrong order and then getting the wrong suggestion first.
+- Forgetting that a blank `Apply to accounts` scope means the rule can apply across all bank and credit card accounts.
+- Using percent splits that do not total exactly `100%`.
+- Using fixed-amount splits without setting `Balance to`.
+- Making the description match too broad and catching unrelated transactions.
 
 ## Related Articles
 
@@ -62,5 +78,5 @@ The rule is saved and becomes available when SPRK evaluates pending bank transac
 ## Info
 
 - App sections: `banking`, `rules`
-- Last validated: 2026-05-02
+- Last validated: 2026-05-23
 - Screenshot status: `not-started`
