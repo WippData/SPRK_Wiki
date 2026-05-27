@@ -9,36 +9,17 @@ Use this workflow when you have external bank or credit card activity in a file 
 ## Prerequisites
 
 - The destination bank or credit card account exists in SPRK.
+- You are signed in to SPRK and have an active company selected.
+- You are ready to choose the specific bank or credit card account that should receive the import.
 - Your file is one of the formats accepted by the Banking page.
 - You are ready to review imported transactions before posting them.
-
-## File Instructions
-
-CSV, XLSX, and XLSM files should include a header row. SPRK uses the selected bank or credit card account from the Banking page, so the file does not need an account column.
-
-| SPRK Field Name | Acceptable Import Names |
-| --- | --- |
-| Date | `Date`, `Posted`, `Transaction Date`, `DT` |
-| Amount | `Amount`, `Amt`, `Value` |
-| Amount split into money out and money in | `Debit` / `Credit`, `Withdrawal` / `Deposit`, `Spent` / `Received` |
-| Description | `Description`, `Desc`, `Vendor`, `Payee`, `Name`, `Memo`, `Details` |
-| Check No | `Check No`, `Check Number`, `Check #`, `Chk No`, `Chk #` |
-
-For QBO files, SPRK reads the OFX-style transaction tags inside each `<STMTTRN>` transaction.
-
-| SPRK Field Name | Acceptable Import Names |
-| --- | --- |
-| Date | `<DTPOSTED>` |
-| Amount | `<TRNAMT>` |
-| Description | `<NAME>`, `<PAYEE>` |
-| Memo | `<MEMO>` |
-| Check No | `<CHECKNUM>`, `<CHKNUM>` |
 
 ## Steps
 
 1. Open `Banking`.
 2. Select the bank or credit card account that should receive the imported activity.
-3. In the upload area, choose or drop one file. The Banking page currently accepts:
+   - If no account is selected, SPRK keeps the importer disabled and prompts you to choose an account first.
+3. In the upload area, click to choose a file or drag one file onto the drop zone. The Banking page currently accepts:
    - `CSV`
    - `XLSX`
    - `XLSM`
@@ -46,24 +27,30 @@ For QBO files, SPRK reads the OFX-style transaction tags inside each `<STMTTRN>`
    - `QFX`
    - `QBO`
 4. Review the import preview.
-5. If the preview indicates the sign should be reversed, use the reverse option before confirming the import.
+   - The preview title shows the parsed import type when SPRK detects one.
+   - The preview shows how many rows were parsed before you confirm anything.
+   - You can filter the preview by description, date, and transaction type if you want to inspect a subset of the imported rows.
+5. If the money direction looks backwards, turn on `Swap spent/received` before confirming the preview.
 6. Confirm the import preview.
-7. Return to the `Pending` tab and review the imported transactions.
+7. Return to the `Pending` tab and review the imported transactions for the selected account.
 8. Categorize and confirm the transactions you want posted to the general ledger.
 
 ## Expected Result
 
-The imported rows are added to the selected account's pending bank register and are ready for review. Current general ledger impact as of 2026-05-02:
+The imported rows are added to the selected account's pending bank register and are ready for review. Current general ledger impact as of 2026-05-21:
 
-- Importing a file does not create a journal entry by itself.
-- Confirming the import preview only loads or updates pending bank transactions.
+- Selecting the destination account does not post anything to the general ledger.
+- Opening the preview and changing the `Swap spent/received` option do not post anything to the general ledger.
+- Confirming the import preview only loads or updates pending bank transactions for later review.
 - The general ledger is affected later, when each pending transaction is confirmed from the Banking workflow.
 
 ## Common Mistakes
 
-- Importing into the wrong selected bank or credit card account.
-- Skipping the preview and missing a sign reversal issue.
-- Treating imported rows as final posting rather than as pending items still waiting for review.
+- Importing while the wrong bank or credit card account is selected.
+- Forgetting that SPRK will not let you import until an account is chosen.
+- Skipping the preview and missing a spent-versus-received reversal issue.
+- Treating imported rows as final postings rather than as pending items still waiting for review.
+- Assuming closing the preview has the same effect as confirming it.
 
 ## Related Articles
 
@@ -74,5 +61,5 @@ The imported rows are added to the selected account's pending bank register and 
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-05-02
+- Last validated: 2026-05-21
 - Screenshot status: `not-started`

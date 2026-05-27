@@ -1,18 +1,18 @@
 # Create and Open Invoices
 
-Build invoices from customers and items, then move them to Open status when you want SPRK to post the receivable.
+Build invoices from customers and items, save them in the right status, and reopen them later when you need to review or update the details.
 
 ## Purpose
 
-Use this workflow when you need to create a customer invoice and decide whether it should stay in draft or post to receivables immediately.
+Use this workflow when you need to create a new customer invoice, decide whether it should stay in draft or move to open status, and return to existing invoices from the invoice list.
 
 ## Prerequisites
 
-- A customer record exists.
+- A customer record exists, or you are ready to add one from the invoice drawer.
 - The invoice amount can be built from one or more lines.
-- Your company has an Accounts Receivable setup that supports invoice posting.
+- Your company is ready to use invoices in receivables workflows.
 
-## Steps
+## Create a new invoice
 
 1. Open `Invoices`.
 2. Select `New`.
@@ -20,29 +20,40 @@ Use this workflow when you need to create a customer invoice and decide whether 
    - `Invoice #`
    - `Customer`
    - `Date`
+   - `Payment Terms`, if needed
    - `Due Date`
    - `Status`
    - `Memo`
    - `Tax rate`, if needed
-4. Add one or more invoice lines.
-5. Use `SKU` or `Description` to pull item details into the line when available.
-6. Review quantity, unit price, and extended amount on each line.
-7. Decide how the invoice should be saved:
+4. If the customer already has default payment terms, review the terms and due date that SPRK fills in for you.
+5. Add one or more invoice lines.
+6. Use `SKU` or `Description` to pull matching item details into the line when available.
+7. Review quantity, unit price, and extended amount on each line.
+8. Decide how the invoice should be saved:
    - `Draft` keeps the invoice unposted.
-   - `Open` posts the receivable based on the current invoice workflow.
-8. Save the invoice.
-9. Review the invoice list to confirm the expected status, total, and balance.
+   - `Open` moves the invoice into an active receivables state.
+9. Save the invoice.
+10. Review the invoice list to confirm the expected status, total, and balance.
+
+## Open an existing invoice
+
+1. Open `Invoices`.
+2. Find the invoice in the list.
+3. Use the row action for `View` when you only need to review the invoice.
+4. Use the row action for `Edit` when you need to update the invoice details.
+5. Confirm the invoice number, customer, date, due date, status, total, and balance before making changes.
 
 ## Expected Result
 
-The invoice is created and appears in the invoice list. If you saved it as `Open`, the receivable posting logic runs. If you saved it as `Draft`, the invoice exists but does not post to the ledger yet.
+The invoice appears in the invoice list with the expected number, customer, totals, balance, and status. Reopened invoices can be reviewed in view mode or updated in edit mode.
 
 ## Common Mistakes
 
-- Leaving the invoice in `Draft` when you expected the receivable to post immediately.
-- Choosing `Paid` directly in the status field and assuming that is the same as recording a payment.
-- Forgetting that a valid customer is required.
-- Creating an `Open` invoice before verifying the amount and tax values.
+- Leaving the invoice in `Draft` when you expected it to move into the active receivables workflow.
+- Choosing `Paid` in the invoice status field and assuming that is the same as recording a payment.
+- Forgetting that `Customer` is required.
+- Skipping a review of the due date after customer terms or invoice dates change.
+- Changing an existing invoice without checking its current balance and status first.
 
 ## Related Articles
 
@@ -54,5 +65,5 @@ The invoice is created and appears in the invoice list. If you saved it as `Open
 ## Info
 
 - App sections: `invoices`
-- Last validated: 2026-05-02
+- Last validated: 2026-05-27
 - Screenshot status: `not-started`

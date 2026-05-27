@@ -1,42 +1,50 @@
 # Manage Items for Invoicing
 
-Define products and services so invoice lines can be filled quickly and consistently.
+Define reusable products and services so invoice lines can be built faster and with more consistent descriptions, pricing, and account defaults.
 
 ## Purpose
 
-Use this workflow when you want invoice lines to populate more quickly and consistently from reusable item records.
+Use this workflow when you want invoice lines to reuse prepared item records instead of retyping descriptions, prices, and sales defaults each time.
 
 ## Prerequisites
 
 - You can open the `Items` page.
-- You know whether the item is a service, product, or other type.
+- You know whether the record should be set up as a service, product, or other item type.
 
 ## Steps
 
 1. Open `Items`.
-2. Select `New` to create an item, or use the row actions to view or edit an existing one.
+2. Choose the setup path that fits the job:
+   - Use `New` to create one item from the drawer.
+   - Use `Import` if you already maintain item data in a spreadsheet or CSV file.
+   - Use `More` and enable grid mode when you need to edit several items together.
 3. Enter the core item details:
    - `Item type`
    - `SKU`
    - `Description`
    - `Unit price`
    - `Unit of measure`
-4. If your accounting setup uses them, set:
+4. Fill in the extra pricing and tax fields when they matter for your workflow:
+   - `Buy price`
+   - `Sell price`
+   - `Tax code`
+5. If your accounting setup uses account defaults, review:
    - `Income account`
    - `Expense/COGS account`
-   - `Tax code`
-5. Save the item.
-6. Use the item later from the invoice line `SKU` or `Description` selectors when building an invoice.
+6. Confirm the `Active` setting, then save the item.
+7. Use the page search when you need to find an item later by SKU or description.
+8. Use the saved item later from invoice line selectors so invoice entry stays more consistent.
 
 ## Expected Result
 
-The item becomes available for invoice entry, and invoice lines can reuse its SKU, description, and pricing details.
+The item becomes available for invoice entry, and future invoice lines can reuse its saved description, pricing, unit-of-measure, and account defaults.
 
 ## Common Mistakes
 
-- Skipping item setup and retyping every invoice line manually.
-- Assuming item setup alone controls the current invoice journal entry behavior. Review the GL article for the present posting logic.
-- Leaving descriptions too vague, which makes invoice lines and reports harder to interpret.
+- Skipping item setup and retyping invoice lines manually even when the same products or services repeat.
+- Leaving descriptions too vague, which makes invoices and reporting harder to read later.
+- Forgetting to review the active setting and then wondering why an older item should no longer be used.
+- Assuming item setup alone controls the full receivables posting flow. Review the invoice workflow and GL guidance for downstream behavior.
 
 ## Related Articles
 
@@ -47,5 +55,5 @@ The item becomes available for invoice entry, and invoice lines can reuse its SK
 ## Info
 
 - App sections: `items`
-- Last validated: 2026-05-02
+- Last validated: 2026-05-25
 - Screenshot status: `not-started`
