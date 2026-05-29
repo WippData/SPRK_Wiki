@@ -30,12 +30,14 @@ Use this workflow when imported or manually entered bank activity needs review b
    - Use the row-level primary action for one transaction.
    - Or select several rows, use `Apply to selected` if helpful, then choose `Confirm selected`.
 11. Review the transaction after confirmation. It leaves `Pending` and appears under `Categorized`.
+12. If the confirmed transaction later needs to be reversed, open the linked journal entry from `Reconcile` where the row shows an enabled `Journal` action.
 
 ## Expected Result
 
-The reviewed transaction is confirmed and removed from the pending queue. Current general ledger impact as of 2026-05-02:
+The reviewed transaction is confirmed and removed from the pending queue. Current general ledger impact as of 2026-05-29:
 
 - Confirming a transaction creates a journal entry linked to that bank transaction.
+- Linked journal entries can be opened and reversed from `Reconcile` when the row shows the `Journal` action.
 - The selected bank or credit card account is always the bank-side line of the entry.
 - For money received, SPRK debits the selected bank or credit card account and credits the chosen target account or split accounts.
 - For money spent, SPRK credits the selected bank or credit card account and debits the chosen target account or split accounts.
@@ -54,9 +56,10 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Create and manage rules](./create-and-manage-rules.md)
 - [Import bank transactions](./import-bank-transactions.md)
+- [Edit linked ledger and bank activity](../ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity.md)
 
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-05-02
-- Screenshot status: `not-started`
+- Last validated: 2026-05-29
+- Screenshot status: `captured`

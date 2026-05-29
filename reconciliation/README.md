@@ -9,8 +9,10 @@ Reconcile a bank or credit card account against a statement, manage matched tran
 - [Finish a reconciliation](./finish-a-reconciliation.md)
 - [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md)
 
+For linked journal reversals available from the reconciliation table, see [Edit linked ledger and bank activity](../ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity.md).
+
 ## Info
 
 - App sections: `reconcile`
-- Last validated: 2026-05-02
-- Screenshot status: `not-started`
+- Last validated: 2026-05-29
+- Screenshot status: `captured`
