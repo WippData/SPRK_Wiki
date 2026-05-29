@@ -34,13 +34,15 @@ Use this workflow when imported or manually entered bank activity needs review b
    - Or select several rows, use the bulk account or vendor tools if helpful, then choose `Confirm selected`.
    - SPRK requires each selected row to have either a category, a saved split, or a matched check before it can confirm.
 12. Review the transaction after confirmation. It leaves `Pending` and appears under `Categorized`.
+13. If the confirmed transaction later needs to be reversed, open the linked journal entry from `Reconcile` where the row shows an enabled `Journal` action.
 
 ## Expected Result
 
-The reviewed transaction is confirmed and removed from the pending queue. Current general ledger impact as of 2026-05-22:
+The reviewed transaction is confirmed and removed from the pending queue. Current general ledger impact as of 2026-05-29:
 
 - Changing a vendor, changing `Categorize To`, saving draft splits, and matching a check do not post to the general ledger by themselves.
 - Confirming a transaction creates or links the journal-entry result for that bank transaction.
+- Linked journal entries can be opened and reversed from `Reconcile` when the row shows the `Journal` action.
 - The selected bank or credit card account remains the bank-side line of the confirmed entry.
 - For money received, SPRK debits the selected bank or credit card account and credits the chosen target account or split accounts.
 - For money spent, SPRK credits the selected bank or credit card account and debits the chosen target account or split accounts.
@@ -60,9 +62,10 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Create and manage rules](./create-and-manage-rules.md)
 - [Import bank transactions](./import-bank-transactions.md)
+- [Edit linked ledger and bank activity](../ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity.md)
 
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-05-22
-- Screenshot status: `not-started`
+- Last validated: 2026-05-29
+- Screenshot status: `captured`
