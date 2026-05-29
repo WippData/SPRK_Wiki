@@ -12,5 +12,5 @@ Import bank activity, review pending transactions, confirm transactions when the
 ## Info
 
 - App sections: `banking`, `rules`
-- Last validated: 2026-05-02
+- Last validated: 2026-05-23
 - Screenshot status: `not-started`

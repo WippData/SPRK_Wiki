@@ -37,6 +37,7 @@ You can recognize where to change pages, where to confirm company context, and w
 - [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)
 - [Use global search](../dashboard-and-navigation/use-global-search.md)
 - [Choose or switch your active company](./choose-or-switch-your-active-company.md)
+- [Customize the sidebar](../preferences-and-personalization/customize-the-sidebar.md)
 
 ## Info
 

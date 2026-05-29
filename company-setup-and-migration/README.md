@@ -10,6 +10,12 @@ Create a company, import setup data from another system, and switch between comp
 - [Use the Import Wizard](./use-the-import-wizard.md)
 - [Switch between companies](./switch-between-companies.md)
 
+## Related Foundation Workflows
+
+- [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
+- [Use the Companies tab](../company-administration/use-the-companies-tab.md)
+- [Understand company-aware navigation](../dashboard-and-navigation/understand-company-aware-navigation.md)
+
 ## Info
 
 - App sections: `companies`

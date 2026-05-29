@@ -9,31 +9,36 @@ Use this workflow when you need to create a new customer invoice, decide whether
 ## Prerequisites
 
 - A customer record exists, or you are ready to add one from the invoice drawer.
-- The invoice amount can be built from one or more lines, with or without existing item records.
+- The invoice amount can be built from one or more lines.
 - Your company is ready to use invoices in receivables workflows.
 
 ## Create a new invoice
 
-1. Open `Invoices`, then select `New`.
-2. Review `Invoice #`. SPRK fills the next available invoice number automatically, but you can override it if needed.
-3. Choose `Customer`. If the customer does not exist yet, use the invoice drawer option to add a new customer without leaving the workflow.
-4. Review `Date`, `Payment Terms`, and `Due Date`.
-5. If the customer already has default terms, confirm the terms and due date that SPRK fills in for you.
-6. If you change the invoice date or payment terms, review the due date again because SPRK recalculates it from those values.
-7. Add `Memo` or `Tax rate` if needed.
-8. Add one or more invoice lines.
-9. Use `SKU` or `Description` to pull matching item details into the line when available. If the item does not exist yet, use the line-level option to add a new item from the drawer.
-10. Review quantity, unit price, extended amount, and invoice totals.
-11. Decide how the invoice should be saved:
+1. Open `Invoices`.
+2. Select `New`.
+3. Complete the invoice header:
+   - `Invoice #`
+   - `Customer`
+   - `Date`
+   - `Payment Terms`, if needed
+   - `Due Date`
+   - `Status`
+   - `Memo`
+   - `Tax rate`, if needed
+4. If the customer already has default payment terms, review the terms and due date that SPRK fills in for you.
+5. Add one or more invoice lines.
+6. Use `SKU` or `Description` to pull matching item details into the line when available.
+7. Review quantity, unit price, and extended amount on each line.
+8. Decide how the invoice should be saved:
    - `Draft` keeps the invoice unposted.
-   - `Open` posts the invoice to active receivables.
-12. Save the invoice.
-13. Review the invoice list to confirm the expected status, total, and balance.
+   - `Open` moves the invoice into an active receivables state.
+9. Save the invoice.
+10. Review the invoice list to confirm the expected status, total, and balance.
 
 ## Open an existing invoice
 
 1. Open `Invoices`.
-2. Find the invoice in the list. If needed, narrow the list by searching for the invoice number, customer, or memo, or by filtering on customer or status.
+2. Find the invoice in the list.
 3. Use the row action for `View` when you only need to review the invoice.
 4. Use the row action for `Edit` when you need to update the invoice details.
 5. Confirm the invoice number, customer, date, due date, status, total, and balance before making changes.
@@ -47,7 +52,6 @@ The invoice appears in the invoice list with the expected number, customer, tota
 - Leaving the invoice in `Draft` when you expected it to move into the active receivables workflow.
 - Choosing `Paid` in the invoice status field and assuming that is the same as recording a payment.
 - Forgetting that `Customer` is required.
-- Treating the auto-filled invoice number as locked when you actually need to override it.
 - Skipping a review of the due date after customer terms or invoice dates change.
 - Changing an existing invoice without checking its current balance and status first.
 
@@ -61,5 +65,5 @@ The invoice appears in the invoice list with the expected number, customer, tota
 ## Info
 
 - App sections: `invoices`
-- Last validated: 2026-05-28
+- Last validated: 2026-05-27
 - Screenshot status: `not-started`

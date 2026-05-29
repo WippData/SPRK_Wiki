@@ -1,45 +1,59 @@
 # Manage Customers
 
-Create and maintain customer records so invoices and customer-facing receivables workflows have the right contact information.
+Create and maintain customer records so invoicing, payment follow-up, and customer-specific receivables workflows start from clean setup data.
 
 ## Purpose
 
-Use this workflow when you need to create or maintain a customer record before invoicing or follow-up.
+Use this workflow when you need to add, update, search, import, or review customer records before creating invoices or receiving customer payments.
 
 ## Prerequisites
 
 - You can open the `Customers` page.
 - You know the customer name.
+- If you plan to use customer defaults for invoicing, you know the income account, payment terms, or credit settings you want to apply.
 
 ## Steps
 
 1. Open `Customers`.
-2. Select `New` to create a customer, or use the row actions to view or edit an existing customer.
-3. Enter the customer details that matter for your process:
+2. Decide how you want to work with the list:
+   - Use `New` to add one customer from the drawer.
+   - Use `Import` if you already have customer data in a spreadsheet or CSV file.
+   - Use `More` and enable grid mode if you want to make several edits in one pass.
+3. When creating or editing a single customer, complete the core record details:
    - `Name` is required.
-   - `Company`, `Email`, and `Phone` support contact and billing workflows.
-   - Address fields help complete the record when needed.
-4. Save the customer.
-5. Use the search filter on the Customers page when you need to find the record later by name, company, email, or phone.
+   - `Company`, `Email`, and `Phone` support billing and follow-up workflows.
+   - Address fields help complete the customer profile when you need them.
+4. If you want invoices for this customer to default toward a specific revenue account, set `Default Income Account`.
+5. If you track customer payment expectations, open `Payments & Credit` and review the available settings:
+   - `Credit limit`
+   - `Credit status`
+   - `Terms`
+6. Save the customer.
+7. Use the page tools to manage or review the list after setup:
+   - Search by name, company, email, or phone.
+   - Filter for `Active` or `Inactive` customers when cleaning up the list.
+   - Open row actions for an existing customer when you want to create an invoice, create a payment, or jump into that customer's `AR Aging` report.
 
 ## Expected Result
 
-The customer is available for later invoice selection and ongoing relationship management.
+The customer is saved and available for invoice selection, payment workflows, search, import cleanup, and customer-specific receivables follow-up.
 
 ## Common Mistakes
 
-- Skipping the customer record and trying to invoice without a clean customer list.
-- Entering inconsistent naming conventions, which makes search and reporting harder later.
-- Treating Customers as only a contact list. It is also a key source for invoice workflows and navigation from global search.
+- Skipping the customer record and trying to build invoice workflows from inconsistent free-typed names.
+- Ignoring active and inactive status when cleaning up an older customer list.
+- Setting a default income account without confirming it is the correct income-type account for your setup.
+- Forgetting to maintain terms or credit settings when those defaults matter for invoice creation and follow-up.
 
 ## Related Articles
 
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
 - [Create and open invoices](./create-and-open-invoices.md)
+- [Receive invoice payments](./receive-invoice-payments.md)
 - [Use global search](../dashboard-and-navigation/use-global-search.md)
 
 ## Info
 
 - App sections: `customers`
-- Last validated: 2026-05-02
+- Last validated: 2026-05-25
 - Screenshot status: `not-started`

@@ -39,6 +39,7 @@ You can see the publicly supported company management actions in one place, incl
 - [Understand active company behavior](./understand-active-company-behavior.md)
 - [Add a company from the sidebar flow](./add-a-company-from-the-sidebar-flow.md)
 - [Review company-level maintenance actions](./review-company-level-maintenance-actions.md)
+- [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
 
 ## Info
 

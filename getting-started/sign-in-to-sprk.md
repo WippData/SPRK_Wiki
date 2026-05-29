@@ -39,6 +39,7 @@ You enter SPRK and land in the main application shell with sidebar navigation an
 
 - [Choose or switch your active company](./choose-or-switch-your-active-company.md)
 - [First-day orientation for a new user](./first-day-orientation-for-a-new-user.md)
+- [Understand the sidebar and main navigation](./understand-the-sidebar-and-main-navigation.md)
 - [Use the Import Wizard](../company-setup-and-migration/use-the-import-wizard.md)
 
 ## Info

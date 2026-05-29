@@ -37,6 +37,7 @@ The selected company becomes the active context for dashboard values, search res
 - [Understand company-aware navigation](../dashboard-and-navigation/understand-company-aware-navigation.md)
 - [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
 - [Create your first company](../company-setup-and-migration/create-your-first-company.md)
+- [Understand active company behavior](../company-administration/understand-active-company-behavior.md)
 
 ## Info
 

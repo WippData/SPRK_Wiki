@@ -9,6 +9,12 @@ Review the company list, understand which company is active, add a company, and 
 - [Add a company from the sidebar flow](./add-a-company-from-the-sidebar-flow.md)
 - [Review company-level maintenance actions](./review-company-level-maintenance-actions.md)
 
+## Related Foundation Workflows
+
+- [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
+- [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
+- [Understand company-aware navigation](../dashboard-and-navigation/understand-company-aware-navigation.md)
+
 ## Info
 
 - App sections: `companies`
