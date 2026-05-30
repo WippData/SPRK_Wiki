@@ -11,6 +11,7 @@ Use this workflow when you need to add, update, search, import, or review custom
 - You can open the `Customers` page.
 - You know the customer name.
 - If you plan to use customer defaults for invoicing, you know the income account, payment terms, or credit settings you want to apply.
+- You understand whether this customer should use standard terms, restricted credit handling, or manual review before invoicing.
 
 ## Steps
 
@@ -28,8 +29,12 @@ Use this workflow when you need to add, update, search, import, or review custom
    - `Credit limit`
    - `Credit status`
    - `Terms`
-6. Save the customer.
-7. Use the page tools to manage or review the list after setup:
+6. Decide whether this customer needs setup beyond the basic record:
+   - Keep the record simple if you only need contact details.
+   - Add payment terms when invoices should usually follow a standard due-date pattern.
+   - Add credit settings when your team wants a visible review signal before opening new invoices.
+7. Save the customer.
+8. Use the page tools to manage or review the list after setup:
    - Search by name, company, email, or phone.
    - Filter for `Active` or `Inactive` customers when cleaning up the list.
    - Open row actions for an existing customer when you want to create an invoice, create a payment, or jump into that customer's `AR Aging` report.
@@ -44,9 +49,11 @@ The customer is saved and available for invoice selection, payment workflows, se
 - Ignoring active and inactive status when cleaning up an older customer list.
 - Setting a default income account without confirming it is the correct income-type account for your setup.
 - Forgetting to maintain terms or credit settings when those defaults matter for invoice creation and follow-up.
+- Treating `Credit status` as a payment record. It is a setup signal, not the same thing as receiving money.
 
 ## Related Articles
 
+- [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Receive invoice payments](./receive-invoice-payments.md)
@@ -55,5 +62,5 @@ The customer is saved and available for invoice selection, payment workflows, se
 ## Info
 
 - App sections: `customers`
-- Last validated: 2026-05-25
-- Screenshot status: `not-started`
+- Last validated: 2026-05-30
+- Screenshot status: `planned`

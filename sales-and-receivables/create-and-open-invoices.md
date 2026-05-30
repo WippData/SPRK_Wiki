@@ -11,6 +11,7 @@ Use this workflow when you need to create a new customer invoice, decide whether
 - A customer record exists, or you are ready to add one from the invoice drawer.
 - The invoice amount can be built from one or more lines.
 - Your company is ready to use invoices in receivables workflows.
+- If the customer uses saved payment terms, you are ready to review the filled due date before saving.
 
 ## Create a new invoice
 
@@ -26,14 +27,15 @@ Use this workflow when you need to create a new customer invoice, decide whether
    - `Memo`
    - `Tax rate`, if needed
 4. If the customer already has default payment terms, review the terms and due date that SPRK fills in for you.
-5. Add one or more invoice lines.
-6. Use `SKU` or `Description` to pull matching item details into the line when available.
-7. Review quantity, unit price, and extended amount on each line.
-8. Decide how the invoice should be saved:
+5. Recheck the due date any time you change the customer, invoice date, or negotiated payment timing for this invoice.
+6. Add one or more invoice lines.
+7. Use `SKU` or `Description` to pull matching item details into the line when available.
+8. Review quantity, unit price, and extended amount on each line.
+9. Decide how the invoice should be saved:
    - `Draft` keeps the invoice unposted.
    - `Open` moves the invoice into an active receivables state.
-9. Save the invoice.
-10. Review the invoice list to confirm the expected status, total, and balance.
+10. Save the invoice.
+11. Review the invoice list to confirm the expected status, total, and balance.
 
 ## Open an existing invoice
 
@@ -53,10 +55,12 @@ The invoice appears in the invoice list with the expected number, customer, tota
 - Choosing `Paid` in the invoice status field and assuming that is the same as recording a payment.
 - Forgetting that `Customer` is required.
 - Skipping a review of the due date after customer terms or invoice dates change.
+- Assuming customer payment terms are always correct for exceptions, rush jobs, or negotiated one-off dates.
 - Changing an existing invoice without checking its current balance and status first.
 
 ## Related Articles
 
+- [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Receive invoice payments](./receive-invoice-payments.md)
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
 - [Manage customers](./manage-customers.md)
@@ -65,5 +69,5 @@ The invoice appears in the invoice list with the expected number, customer, tota
 ## Info
 
 - App sections: `invoices`
-- Last validated: 2026-05-27
-- Screenshot status: `not-started`
+- Last validated: 2026-05-30
+- Screenshot status: `planned`
