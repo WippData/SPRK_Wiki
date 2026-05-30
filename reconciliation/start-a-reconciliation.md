@@ -10,6 +10,7 @@ Use this workflow when you are ready to begin reconciling one bank or credit car
 
 - An active company is selected.
 - The bank or credit card account you want to reconcile already exists.
+- You are ready to confirm that the selected account matches the statement you are holding, even if SPRK opens a saved default account automatically.
 - The transactions you expect to clear have already been confirmed in SPRK.
 - For a first-time reconciliation with no prior reconcile history, you know which journal entry should serve as the opening balance anchor for that account.
 
@@ -17,6 +18,7 @@ Use this workflow when you are ready to begin reconciling one bank or credit car
 
 1. Open `Reconcile`.
 2. In the account picker near the page header, choose the bank or credit card account you want to reconcile.
+   - If SPRK opens a saved default account automatically, confirm that it matches the statement before you continue.
 3. Select `Start`.
 4. Review the `Start reconciliation` window:
    - If SPRK finds a prior reconciliation for that account, the `Statement opening date` and `Statement opening balance` fields are locked from the last posted reconciliation before the selected statement ending date.
@@ -47,6 +49,7 @@ The reconciliation workflow is initialized with statement dates and balances for
 
 ## Related Articles
 
+- [Choose bank and credit card accounts](../banking-and-cash-management/choose-bank-and-credit-card-accounts.md)
 - [Finish a reconciliation](./finish-a-reconciliation.md)
 - [Match and unmatch transactions](./match-and-unmatch-transactions.md)
 - [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md)
@@ -54,5 +57,5 @@ The reconciliation workflow is initialized with statement dates and balances for
 ## Info
 
 - App sections: `reconcile`
-- Last validated: 2026-05-02
-- Screenshot status: `not-started`
+- Last validated: 2026-05-30
+- Screenshot status: `captured`

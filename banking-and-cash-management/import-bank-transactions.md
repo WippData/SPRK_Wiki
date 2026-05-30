@@ -19,6 +19,7 @@ Use this workflow when you have external bank or credit card activity in a file 
 1. Open `Banking`.
 2. Select the bank or credit card account that should receive the imported activity.
    - If no account is selected, SPRK keeps the importer disabled and prompts you to choose an account first.
+   - If a default account opens automatically, confirm that it matches the account for the file you are about to import.
 3. In the upload area, click to choose a file or drag one file onto the drop zone. The Banking page currently accepts:
    - `CSV`
    - `XLSX`
@@ -54,6 +55,7 @@ The imported rows are added to the selected account's pending bank register and 
 
 ## Related Articles
 
+- [Choose bank and credit card accounts](./choose-bank-and-credit-card-accounts.md)
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Review and classify bank transactions](./review-and-classify-bank-transactions.md)
 - [Create and manage rules](./create-and-manage-rules.md)
@@ -61,5 +63,5 @@ The imported rows are added to the selected account's pending bank register and 
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-05-21
-- Screenshot status: `not-started`
+- Last validated: 2026-05-30
+- Screenshot status: `captured`
