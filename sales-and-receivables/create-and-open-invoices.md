@@ -11,6 +11,7 @@ Use this workflow when you need to create a new customer invoice, decide whether
 - A customer record exists, or you are ready to add one from the invoice drawer.
 - The invoice amount can be built from one or more lines.
 - Your company is ready to use invoices in receivables workflows.
+- You know which receivables account should carry the invoice when it opens.
 - If the customer uses saved payment terms, you are ready to review the filled due date before saving.
 
 ## Create a new invoice
@@ -20,6 +21,7 @@ Use this workflow when you need to create a new customer invoice, decide whether
 3. Complete the invoice header:
    - `Invoice #`
    - `Customer`
+   - `AR Account`
    - `Date`
    - `Payment Terms`, if needed
    - `Due Date`
@@ -30,12 +32,14 @@ Use this workflow when you need to create a new customer invoice, decide whether
 5. Recheck the due date any time you change the customer, invoice date, or negotiated payment timing for this invoice.
 6. Add one or more invoice lines.
 7. Use `SKU` or `Description` to pull matching item details into the line when available.
-8. Review quantity, unit price, and extended amount on each line.
-9. Decide how the invoice should be saved:
+8. If the customer or item does not exist yet, create it inline from the invoice drawer and continue without leaving the page.
+9. Review quantity, unit price, and extended amount on each line.
+10. Decide how the invoice should be saved:
    - `Draft` keeps the invoice unposted.
    - `Open` moves the invoice into an active receivables state.
-10. Save the invoice.
-11. Review the invoice list to confirm the expected status, total, and balance.
+11. If you choose `Open`, confirm `AR Account`, due date, and lines one more time before saving.
+12. Save the invoice.
+13. Review the invoice list to confirm the expected status, total, and balance.
 
 ## Open an existing invoice
 
@@ -53,6 +57,7 @@ The invoice appears in the invoice list with the expected number, customer, tota
 
 - Leaving the invoice in `Draft` when you expected it to move into the active receivables workflow.
 - Choosing `Paid` in the invoice status field and assuming that is the same as recording a payment.
+- Leaving `AR Account` blank when you expect the invoice to move into an open receivables state.
 - Forgetting that `Customer` is required.
 - Skipping a review of the due date after customer terms or invoice dates change.
 - Assuming customer payment terms are always correct for exceptions, rush jobs, or negotiated one-off dates.
@@ -60,6 +65,7 @@ The invoice appears in the invoice list with the expected number, customer, tota
 
 ## Related Articles
 
+- [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Receive invoice payments](./receive-invoice-payments.md)
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
@@ -69,5 +75,5 @@ The invoice appears in the invoice list with the expected number, customer, tota
 ## Info
 
 - App sections: `invoices`
-- Last validated: 2026-05-30
+- Last validated: 2026-05-31
 - Screenshot status: `planned`

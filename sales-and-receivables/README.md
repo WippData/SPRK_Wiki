@@ -5,6 +5,7 @@ Set up customers and items, create invoices, receive payments, and understand th
 ## In This Section
 
 - [Manage customers](./manage-customers.md)
+- [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
 - [Create and open invoices](./create-and-open-invoices.md)
@@ -14,5 +15,5 @@ Set up customers and items, create invoices, receive payments, and understand th
 ## Info
 
 - App sections: `customers`, `items`, `invoices`
-- Last validated: 2026-05-30
+- Last validated: 2026-05-31
 - Screenshot status: `planned`

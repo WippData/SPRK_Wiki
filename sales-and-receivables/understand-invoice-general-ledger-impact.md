@@ -1,10 +1,10 @@
 # Understand Invoice General Ledger Impact
 
-Understand how invoice creation, customer terms, Open status recognition, and payment receipt affect the general ledger and receivables review in SPRK.
+Understand how invoice creation, receivables account review, customer and item defaults, Open status recognition, and payment receipt affect the general ledger and receivables review in SPRK.
 
 ## Purpose
 
-Use this article when you need to understand what SPRK currently posts to the general ledger during invoice creation and payment receipt, and what customer payment defaults do not change.
+Use this article when you need to understand what SPRK currently posts to the general ledger during invoice creation and payment receipt, and what setup defaults do not change about that posting pattern.
 
 ## Prerequisites
 
@@ -15,10 +15,11 @@ Use this article when you need to understand what SPRK currently posts to the ge
 
 1. Treat `Draft` and `Open` as different accounting states.
 2. Use `Open` when you want SPRK to recognize the receivable.
-3. Treat customer `Terms` and invoice `Due Date` as receivables timing data, not as the posting trigger.
-4. Use `Receive payment` when cash or bank has actually been collected.
-5. Verify the resulting status and balance in `Invoices`.
-6. If you need to validate the posting, inspect the related activity in `Ledger`.
+3. Review the invoice `AR Account` before the invoice moves to `Open`.
+4. Treat customer `Terms`, invoice `Due Date`, and item defaults as setup and timing data, not as the posting trigger.
+5. Use `Receive payment` when cash or bank has actually been collected.
+6. Verify the resulting status and balance in `Invoices`.
+7. If you need to validate the posting, inspect the related activity in `Ledger`.
 
 ## Expected Result
 
@@ -38,7 +39,7 @@ Current payment entry when a payment is recorded:
 - Debit the selected `Deposit to` account
 - Credit `Accounts Receivable`
 
-Customer terms and credit settings affect setup and follow-up, but they do not change the basic journal pattern above. Their main downstream effect is on due-date defaults and receivables aging review.
+Customer terms, customer credit settings, and item defaults affect setup and follow-up, but they do not change the basic journal pattern above. Their main downstream effect is on due-date defaults, data consistency, and receivables aging review.
 
 Current status behavior when a payment is recorded:
 
@@ -50,12 +51,14 @@ Current status behavior when a payment is recorded:
 
 - Marking an invoice `Paid` by editing status instead of using `Receive payment`. The payment posting logic is tied to the payment workflow, not a manual status change.
 - Assuming item-level income account selections currently drive the invoice journal entry. SPRK currently credits one resolved income account for the whole invoice.
+- Assuming customer or item defaults automatically replace the need to review the receivables account on each invoice.
 - Assuming tax is posted to a separate liability account. The current invoice recognition logic credits the full total to the income side.
 - Assuming customer credit settings automatically stop or post invoice activity. Use them as setup and review signals unless your workflow has been validated otherwise.
 - Assuming void handling is part of this documented flow. This article only documents create/open and payment behavior.
 
 ## Related Articles
 
+- [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Receive invoice payments](./receive-invoice-payments.md)
@@ -64,5 +67,5 @@ Current status behavior when a payment is recorded:
 ## Info
 
 - App sections: `invoices`, `ledger`
-- Last validated: 2026-05-30
+- Last validated: 2026-05-31
 - Screenshot status: `planned`

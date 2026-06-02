@@ -53,6 +53,7 @@ You can organize the account list into a clearer structure and keep accounts ava
 
 ## Related Articles
 
+- [Set up receivables defaults before invoicing](../sales-and-receivables/set-up-receivables-defaults-before-invoicing.md)
 - [Record journal entries](./record-journal-entries.md)
 - [Understand ledger import and export behavior](./understand-ledger-import-and-export-behavior.md)
 - [Understand audit-sensitive ledger behavior](./understand-audit-sensitive-ledger-behavior.md)
