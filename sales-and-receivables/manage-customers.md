@@ -24,20 +24,21 @@ Use this workflow when you need to add, update, search, import, or review custom
    - `Name` is required.
    - `Company`, `Email`, and `Phone` support billing and follow-up workflows.
    - Address fields help complete the customer profile when you need them.
-4. If you want invoices for this customer to default toward a specific revenue account, set `Default Income Account`.
+4. If you want invoices for this customer to start from a consistent sales setup, set `Default Income Account`.
 5. If you track customer payment expectations, open `Payments & Credit` and review the available settings:
-   - `Credit Limit`
-   - `Credit Status`
-   - `Default Payment Terms`
+   - `Credit limit`
+   - `Credit status`
+   - `Terms`
 6. Decide whether this customer needs setup beyond the basic record:
    - Keep the record simple if you only need contact details.
-   - Add default payment terms when invoices should usually follow a standard due-date pattern.
+   - Add payment terms when invoices should usually follow a standard due-date pattern.
    - Add credit settings when your team wants a visible review signal before opening new invoices.
 7. Save the customer.
 8. Use the page tools to manage or review the list after setup:
    - Search by name, company, email, or phone.
    - Filter for `Active` or `Inactive` customers when cleaning up the list.
    - Open row actions for an existing customer when you want to create an invoice, create a payment, or jump into that customer's `AR Aging` report.
+9. If the customer will be invoiced often, pair this setup with saved item records and invoice account review before the first live invoice.
 
 ## Expected Result
 
@@ -48,11 +49,13 @@ The customer is saved and available for invoice selection, payment workflows, se
 - Skipping the customer record and trying to build invoice workflows from inconsistent free-typed names.
 - Ignoring active and inactive status when cleaning up an older customer list.
 - Setting a default income account without confirming it is the correct income-type account for your setup.
-- Forgetting to maintain payment terms or credit settings when those defaults matter for invoice creation and follow-up.
-- Treating `Credit Status` as a payment record. It is a setup signal, not the same thing as receiving money.
+- Forgetting to maintain terms or credit settings when those defaults matter for invoice creation and follow-up.
+- Treating `Credit status` as a payment record. It is a setup signal, not the same thing as receiving money.
+- Assuming customer setup alone finishes receivables preparation. Review item setup, invoice account review, and due-date defaults before opening invoices.
 
 ## Related Articles
 
+- [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
 - [Create and open invoices](./create-and-open-invoices.md)

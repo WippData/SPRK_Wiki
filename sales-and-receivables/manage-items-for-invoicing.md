@@ -32,8 +32,9 @@ Use this workflow when you want invoice lines to reuse prepared item records ins
    - `Income account`
    - `Expense/COGS account`
 6. Confirm the `Active` setting, then save the item.
-7. Use the page search when you need to find an item later by SKU or description.
-8. Use the saved item later from invoice line selectors so invoice entry stays more consistent.
+7. If you import items, review any mapped income or expense accounts before you rely on those records in invoices.
+8. Use the page search when you need to find an item later by SKU or description.
+9. Use the saved item later from invoice line selectors so invoice entry stays more consistent.
 
 ## Expected Result
 
@@ -44,10 +45,12 @@ The item becomes available for invoice entry, and future invoice lines can reuse
 - Skipping item setup and retyping invoice lines manually even when the same products or services repeat.
 - Leaving descriptions too vague, which makes invoices and reporting harder to read later.
 - Forgetting to review the active setting and then wondering why an older item should no longer be used.
+- Importing item records without checking that account mappings resolved the way you expected.
 - Assuming item setup alone controls the full receivables posting flow. Review the invoice workflow and GL guidance for downstream behavior.
 
 ## Related Articles
 
+- [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
 - [Manage customers](./manage-customers.md)
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
@@ -55,5 +58,5 @@ The item becomes available for invoice entry, and future invoice lines can reuse
 ## Info
 
 - App sections: `items`
-- Last validated: 2026-05-25
+- Last validated: 2026-05-31
 - Screenshot status: `not-started`

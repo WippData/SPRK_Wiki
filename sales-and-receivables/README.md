@@ -7,6 +7,7 @@ Use the setup pages in this section before heavy invoice entry when customer def
 ## In This Section
 
 - [Manage customers](./manage-customers.md)
+- [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
 - [Create and open invoices](./create-and-open-invoices.md)

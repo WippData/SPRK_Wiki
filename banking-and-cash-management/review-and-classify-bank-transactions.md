@@ -64,6 +64,7 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 
 ## Related Articles
 
+- [Choose bank and credit card accounts](./choose-bank-and-credit-card-accounts.md)
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Create and manage rules](./create-and-manage-rules.md)
 - [Import bank transactions](./import-bank-transactions.md)
@@ -74,4 +75,4 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 
 - App sections: `banking`
 - Last validated: 2026-06-01
-- Screenshot status: `planned`
+- Screenshot status: `captured`
