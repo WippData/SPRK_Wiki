@@ -16,25 +16,29 @@ Use this workflow when imported or manually entered bank activity needs review b
 
 1. Open `Banking`.
 2. Select the bank or credit card account you want to review.
+   - If a default account opens automatically, confirm that it is the account you meant to review before you edit or confirm transactions.
 3. Stay on the `Pending` tab.
-4. Filter the transaction list if needed by description, amount, date, amount type, category, or rule status.
-5. For each transaction you want to review, confirm the basic details such as date, description, amount, and optional check number.
-6. Review any suggestion already shown on the row:
+4. Confirm that the register belongs to the account you selected:
+   - `Pending` and `Categorized` both reflect the selected bank or credit card account only.
+   - Switching to another account changes which register you are reviewing.
+5. Filter the transaction list if needed by description, amount, date, amount type, category, or rule status.
+6. For each transaction you want to review, confirm the basic details such as date, description, amount, and optional check number.
+7. Review any suggestion already shown on the row:
    - Some rows may already have a category suggestion from a rule.
-   - If a selected vendor has a default expense account, SPRK can also fill `Categorize To` automatically when no manual category or rule already controls the row.
-7. If needed, assign or change the optional `Vendor`.
-8. In `Categorize To`, choose the account that should receive the non-bank side of the entry.
-9. If one account is not enough, select `Split` and build the allocation:
+   - If a selected vendor has a default expense account, SPRK can also fill `Categorize To` automatically when no manual category, split, or rule already controls the row.
+8. If needed, assign or change the optional `Vendor`.
+9. In `Categorize To`, choose the account that should receive the non-bank side of the entry.
+10. If one account is not enough, select `Split` and build the allocation:
    - Use `Percent` when the split should total exactly `100%`.
    - Use `Amount` when the split lines should total the full transaction amount.
    - Save the split only after the total is complete.
-10. If the transaction should be tied to an existing check, use `Find Check` and match the transaction before you confirm it.
-11. Confirm the transaction:
+11. If the transaction should be tied to an existing check, use `Find Check` and match the transaction before you confirm it.
+12. Confirm the transaction:
    - Use the row-level primary action for one transaction.
    - Or select several rows, use the bulk account or vendor tools if helpful, then choose `Confirm selected`.
    - SPRK requires each selected row to have either a category, a saved split, or a matched check before it can confirm.
-12. Review the transaction after confirmation. It leaves `Pending` and appears under `Categorized`.
-13. If the confirmed transaction later needs to be reversed, open the linked journal entry from `Reconcile` where the row shows an enabled `Journal` action.
+13. Review the transaction after confirmation. It leaves `Pending` and appears under `Categorized`.
+14. If the confirmed transaction later needs to be reversed, open the linked journal entry from `Reconcile` where the row shows an enabled `Journal` action.
 
 ## Expected Result
 
@@ -54,6 +58,7 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - Confirming without selecting a category, saving a valid split, or matching the correct check.
 - Using the wrong bank account card and then confirming a transaction into the wrong cash account.
 - Assuming a row suggestion from a rule or vendor setup means the transaction has already posted.
+- Expecting a vendor default to override a manual category or saved split you already chose.
 - Expecting an incomplete split total to save in the current split editor.
 - Forgetting that a matched check still needs confirmation from the bank transaction workflow.
 
@@ -62,10 +67,11 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Create and manage rules](./create-and-manage-rules.md)
 - [Import bank transactions](./import-bank-transactions.md)
+- [Set up vendor default expense accounts](../expenses-and-payables/set-up-vendor-default-expense-accounts.md)
 - [Edit linked ledger and bank activity](../ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity.md)
 
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-05-29
-- Screenshot status: `captured`
+- Last validated: 2026-06-01
+- Screenshot status: `planned`

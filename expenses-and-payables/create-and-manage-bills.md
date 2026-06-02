@@ -59,6 +59,7 @@ The bill is saved and appears in the bill list. Current general ledger impact as
 
 - Leaving a bill in `Draft` when you expected the payable to post.
 - Choosing the wrong expense account on the bill line and then assuming SPRK will correct the ledger impact later.
+- Assuming a vendor default expense account replaces bill-line account review. Bill lines still need direct review before you open the bill.
 - Recording a payment without checking the remaining balance first.
 - Entering a payment amount larger than intended. Review overpayments carefully before recording them.
 - Assuming delete or void behavior reverses prior ledger impact automatically. This article documents bill creation and payment behavior only.
@@ -66,11 +67,12 @@ The bill is saved and appears in the bill list. Current general ledger impact as
 ## Related Articles
 
 - [Manage vendors](./manage-vendors.md)
+- [Set up vendor default expense accounts](./set-up-vendor-default-expense-accounts.md)
 - [Work with checks](./work-with-checks.md)
 - [Review common payables workflows](./review-common-payables-workflows.md)
 
 ## Info
 
 - App sections: `bills`
-- Last validated: 2026-05-02
-- Screenshot status: `not-started`
+- Last validated: 2026-06-01
+- Screenshot status: `planned`
