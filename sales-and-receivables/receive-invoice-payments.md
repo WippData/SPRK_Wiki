@@ -26,7 +26,7 @@ Use this workflow when a customer has paid an invoice and you want SPRK to reduc
    - `Reference #`, if needed
    - `Memo`
 5. Select `Record payment`.
-6. If the payment is less than the remaining balance, confirm the partial-payment prompt.
+6. If the payment is less than or different from the remaining balance, review the confirmation prompt before you continue.
 7. Return to the invoice list and confirm the updated `Balance` and `Status`.
 8. If you need collection follow-up for other invoices from the same customer, return to that customer record or aging report after the payment is recorded.
 
@@ -56,5 +56,5 @@ Customer payment terms and credit settings can help you review receivables befor
 ## Info
 
 - App sections: `invoices`
-- Last validated: 2026-05-30
+- Last validated: 2026-05-31
 - Screenshot status: `planned`

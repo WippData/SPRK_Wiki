@@ -28,18 +28,21 @@ Use this workflow when you need to create a new customer invoice, decide whether
    - `Status`
    - `Memo`
    - `Tax rate`, if needed
-4. If the customer already has default payment terms, review the terms and due date that SPRK fills in for you.
-5. Recheck the due date any time you change the customer, invoice date, or negotiated payment timing for this invoice.
-6. Add one or more invoice lines.
-7. Use `SKU` or `Description` to pull matching item details into the line when available.
-8. If the customer or item does not exist yet, create it inline from the invoice drawer and continue without leaving the page.
-9. Review quantity, unit price, and extended amount on each line.
-10. Decide how the invoice should be saved:
+4. If the selected customer already has saved payment terms, review the `Payment Terms` value SPRK fills in for you.
+5. Review the resulting `Due Date` before saving:
+   - If the invoice does not already have a manual due date, SPRK can calculate one from the invoice date and payment terms.
+   - If you need an exception for this invoice, replace the default due date with the agreed date before you save.
+6. Recheck the due date any time you change the customer, invoice date, or negotiated payment timing for this invoice.
+7. Add one or more invoice lines.
+8. Use `SKU` or `Description` to pull matching item details into the line when available.
+9. If the customer or item does not exist yet, create it inline from the invoice drawer and continue without leaving the page.
+10. Review quantity, unit price, and extended amount on each line.
+11. Decide how the invoice should be saved:
    - `Draft` keeps the invoice unposted.
    - `Open` moves the invoice into an active receivables state.
-11. If you choose `Open`, confirm `AR Account`, due date, and lines one more time before saving.
-12. Save the invoice.
-13. Review the invoice list to confirm the expected status, total, and balance.
+12. If you choose `Open`, confirm `AR Account`, due date, and lines one more time before saving.
+13. Save the invoice.
+14. Review the invoice list to confirm the expected status, total, balance, terms, and due date.
 
 ## Open an existing invoice
 
@@ -51,7 +54,7 @@ Use this workflow when you need to create a new customer invoice, decide whether
 
 ## Expected Result
 
-The invoice appears in the invoice list with the expected number, customer, totals, balance, and status. Reopened invoices can be reviewed in view mode or updated in edit mode.
+The invoice appears in the invoice list with the expected number, customer, totals, balance, payment timing, and status. Reopened invoices can be reviewed in view mode or updated in edit mode.
 
 ## Common Mistakes
 

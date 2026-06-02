@@ -5,6 +5,7 @@ Set up vendors, enter bills, work with checks, and understand the main payables 
 ## In This Section
 
 - [Manage vendors](./manage-vendors.md)
+- [Set up vendor default expense accounts](./set-up-vendor-default-expense-accounts.md)
 - [Create and manage bills](./create-and-manage-bills.md)
 - [Work with checks](./work-with-checks.md)
 - [Review common payables workflows](./review-common-payables-workflows.md)
@@ -12,5 +13,5 @@ Set up vendors, enter bills, work with checks, and understand the main payables 
 ## Info
 
 - App sections: `vendors`, `bills`, `checks`
-- Last validated: 2026-05-02
-- Screenshot status: `not-started`
+- Last validated: 2026-06-01
+- Screenshot status: `planned`

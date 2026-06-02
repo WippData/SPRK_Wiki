@@ -25,7 +25,7 @@ Use this workflow when imported or manually entered bank activity needs review b
 6. For each transaction you want to review, confirm the basic details such as date, description, amount, and optional check number.
 7. Review any suggestion already shown on the row:
    - Some rows may already have a category suggestion from a rule.
-   - If a selected vendor has a default expense account, SPRK can also fill `Categorize To` automatically when no manual category or rule already controls the row.
+   - If a selected vendor has a default expense account, SPRK can also fill `Categorize To` automatically when no manual category, split, or rule already controls the row.
 8. If needed, assign or change the optional `Vendor`.
 9. In `Categorize To`, choose the account that should receive the non-bank side of the entry.
 10. If one account is not enough, select `Split` and build the allocation:
@@ -58,6 +58,7 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - Confirming without selecting a category, saving a valid split, or matching the correct check.
 - Using the wrong bank account card and then confirming a transaction into the wrong cash account.
 - Assuming a row suggestion from a rule or vendor setup means the transaction has already posted.
+- Expecting a vendor default to override a manual category or saved split you already chose.
 - Expecting an incomplete split total to save in the current split editor.
 - Forgetting that a matched check still needs confirmation from the bank transaction workflow.
 
@@ -67,10 +68,11 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Create and manage rules](./create-and-manage-rules.md)
 - [Import bank transactions](./import-bank-transactions.md)
+- [Set up vendor default expense accounts](../expenses-and-payables/set-up-vendor-default-expense-accounts.md)
 - [Edit linked ledger and bank activity](../ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity.md)
 
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-05-30
+- Last validated: 2026-06-01
 - Screenshot status: `captured`
