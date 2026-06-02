@@ -15,7 +15,7 @@ Use this workflow when you need a clean vendor record before entering bills, pri
 ## Steps
 
 1. Open `Vendors`.
-2. Select `New` to create a vendor, or use the row actions to view or edit an existing one.
+2. Select `New` to create a vendor, use the row actions to view or edit an existing one, or switch to Grid Edit when repeated vendor cleanup will be faster in a table.
 3. Enter the vendor details that matter for your process:
    - `Name` is required.
    - `Company`, `Email`, and `Phone` support payables communication and lookup.
@@ -26,6 +26,7 @@ Use this workflow when you need a clean vendor record before entering bills, pri
 5. Use the Vendors page search when you need to find the record later by name, company, email, or phone.
 6. If you import vendors, review any mapped default expense accounts before you rely on those records in live workflows.
 7. Use the vendor row `Register` action when you need activity history tied to that vendor.
+8. If you update several vendor fields at once, use Grid Edit or a saved Grid Edit default on supported pages to reduce repeated drawer work.
 
 ## Expected Result
 
@@ -44,9 +45,10 @@ The vendor is available for bill entry, check tracking, supported banking classi
 - [Create and manage bills](./create-and-manage-bills.md)
 - [Work with checks](./work-with-checks.md)
 - [Review common payables workflows](./review-common-payables-workflows.md)
+- [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)
 
 ## Info
 
 - App sections: `vendors`
-- Last validated: 2026-06-01
+- Last validated: 2026-06-02
 - Screenshot status: `planned`

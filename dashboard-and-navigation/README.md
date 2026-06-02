@@ -6,6 +6,7 @@ Learn the main SPRK layout, move between pages, and use search to get where you 
 
 - [Understand the dashboard overview](./understand-the-dashboard-overview.md)
 - [Move between major app areas](./move-between-major-app-areas.md)
+- [Use grid edit for bulk record maintenance](./use-grid-edit-for-bulk-record-maintenance.md)
 - [Use global search](./use-global-search.md)
 - [Understand company-aware navigation](./understand-company-aware-navigation.md)
 
@@ -18,5 +19,5 @@ Learn the main SPRK layout, move between pages, and use search to get where you 
 ## Info
 
 - App sections: `dashboard`
-- Last validated: 2026-05-01
-- Screenshot status: `not-started`
+- Last validated: 2026-06-02
+- Screenshot status: `planned`

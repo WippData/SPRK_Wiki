@@ -36,6 +36,7 @@ Use this workflow when you need to track a check, keep its status current, and c
    - `Void` to mark the check voided
    - `Delete` to remove a draft check
 7. Review the `Status`, `Bank`, and `Memo` columns in the list after each action.
+8. Use Grid Edit when several check-list corrections or repeated field updates are easier to review in one table.
 
 ## Expected Result
 
@@ -59,9 +60,10 @@ The check is stored and can move through draft, issued, matched, cleared, voided
 - [Create and manage bills](./create-and-manage-bills.md)
 - [Review common payables workflows](./review-common-payables-workflows.md)
 - [Manage vendors](./manage-vendors.md)
+- [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)
 
 ## Info
 
 - App sections: `checks`
-- Last validated: 2026-06-01
+- Last validated: 2026-06-02
 - Screenshot status: `planned`

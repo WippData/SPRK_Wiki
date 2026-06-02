@@ -17,5 +17,5 @@ Review app-wide display and formatting settings, control update prompts, tailor 
 ## Info
 
 - App sections: `preferences`
-- Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Last validated: 2026-06-02
+- Screenshot status: `planned`

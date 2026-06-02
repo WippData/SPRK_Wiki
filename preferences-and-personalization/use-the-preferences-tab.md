@@ -1,6 +1,6 @@
 # Use the Preferences Tab
 
-Open `Preferences` to manage app-wide appearance, formatting, update notification, navigation, and getting-started settings.
+Open `Preferences` to manage app-wide appearance, formatting, update notification, navigation, automation, and getting-started settings.
 
 ## Purpose
 
@@ -18,39 +18,44 @@ Use this workflow when you want to review or change how SPRK looks and behaves f
 3. Review the `Appearance` card:
    - Use the theme toggle to switch between light and dark mode.
    - Adjust `UI scale` if you need larger or smaller interface sizing.
+   - Turn on `Grid Edit default` if you want supported list pages to open in Grid Edit mode automatically.
 4. Review the `Formatting` card:
    - Choose a `Number format`.
    - Choose a `Currency format`.
    - Choose a `Date format`.
    - Choose a `Decimal data entry` style.
 5. Review the `Updates` card and choose the automatic update frequency you want.
-6. Review the `Navigation` card if you want to tailor the sidebar layout later.
-7. Review the `Getting started` card if you want the dashboard tour to appear again.
-8. Save preferences when you finish.
+6. Review the `Automation` card if you want to adjust supported default-account helpers.
+7. Review the `Navigation` card if you want to tailor the sidebar layout later.
+8. Review the `Getting started` card if you want the dashboard tour to appear again.
+9. Save preferences when you finish if the page does not auto-save the changes you made.
 
 ## Expected Result
 
-Your user-level preferences are applied across the SPRK app, including display, formatting, and update prompt behavior. Current general ledger impact as of 2026-05-04:
+Your user-level preferences are applied across the SPRK app, including display, formatting, grid-edit startup behavior, and update prompt behavior. Current general ledger impact as of 2026-06-02:
 
 - Changing preferences does not create, edit, or delete a journal entry.
 - Display and formatting updates change how information is shown to you, not the underlying transaction amounts.
+- Turning on `Grid Edit default` changes how supported pages open for your user profile, not which records exist or how they post.
 - Resetting the getting-started tour affects onboarding prompts only and does not change company books.
 
 ## Common Mistakes
 
 - Treating Preferences as a company setup page instead of a user-level settings area.
 - Assuming number or currency display choices recalculate posted balances.
+- Assuming `Grid Edit default` changes every page in SPRK instead of supported list pages only.
 - Leaving the page before saving after making changes that are not auto-saved.
 
 ## Related Articles
 
 - [Customize the sidebar](./customize-the-sidebar.md)
 - [Understand personalization boundaries and saved behavior](./understand-personalization-boundaries-and-saved-behavior.md)
+- [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)
 - [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
 - [Understand the sidebar and main navigation](../getting-started/understand-the-sidebar-and-main-navigation.md)
 
 ## Info
 
 - App sections: `preferences`
-- Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Last validated: 2026-06-02
+- Screenshot status: `planned`
