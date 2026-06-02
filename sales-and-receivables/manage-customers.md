@@ -19,7 +19,7 @@ Use this workflow when you need to add, update, search, import, or review custom
 2. Decide how you want to work with the list:
    - Use `New` to add one customer from the drawer.
    - Use `Import` if you already have customer data in a spreadsheet or CSV file.
-   - Use `More` and enable grid mode if you want to make several edits in one pass.
+   - Use `More` and enable Grid Edit if you want to make several edits in one pass, or turn on `Grid Edit default` in `Preferences` if you want supported pages to open that way automatically.
 3. When creating or editing a single customer, complete the core record details:
    - `Name` is required.
    - `Company`, `Email`, and `Phone` support billing and follow-up workflows.
@@ -39,6 +39,7 @@ Use this workflow when you need to add, update, search, import, or review custom
    - Filter for `Active` or `Inactive` customers when cleaning up the list.
    - Open row actions for an existing customer when you want to create an invoice, create a payment, or jump into that customer's `AR Aging` report.
 9. If the customer will be invoiced often, pair this setup with saved item records and invoice account review before the first live invoice.
+10. Use Grid Edit when post-import cleanup or repeated customer-field updates will be faster than opening one drawer at a time.
 
 ## Expected Result
 
@@ -61,9 +62,10 @@ The customer is saved and available for invoice selection, payment workflows, se
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Receive invoice payments](./receive-invoice-payments.md)
 - [Use global search](../dashboard-and-navigation/use-global-search.md)
+- [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)
 
 ## Info
 
 - App sections: `customers`
-- Last validated: 2026-05-31
+- Last validated: 2026-06-02
 - Screenshot status: `planned`
