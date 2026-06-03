@@ -46,11 +46,12 @@ Your support request includes the core details needed to investigate the issue, 
 ## Related Articles
 
 - [Use the Support tab](./use-the-support-tab.md)
+- [Understand database alignment and recovery escalation](./understand-database-alignment-and-recovery-escalation.md)
 - [Troubleshoot common navigation or workflow confusion](./troubleshoot-common-navigation-or-workflow-confusion.md)
 - [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
 
 ## Info
 
 - App sections: `support`
-- Last validated: 2026-05-25
+- Last validated: 2026-06-03
 - Screenshot status: `not-started`

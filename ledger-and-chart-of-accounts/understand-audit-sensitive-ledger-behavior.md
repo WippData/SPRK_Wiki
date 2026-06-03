@@ -53,9 +53,10 @@ You understand which maintenance actions keep an audit trail and how they affect
 - [Edit linked ledger and bank activity](./edit-linked-ledger-and-bank-activity.md)
 - [Understand ledger import and export behavior](./understand-ledger-import-and-export-behavior.md)
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)
+- [Understand database alignment and recovery escalation](../support-and-troubleshooting/understand-database-alignment-and-recovery-escalation.md)
 
 ## Info
 
 - App sections: `ledger`, `chart`
-- Last validated: 2026-05-29
+- Last validated: 2026-06-03
 - Screenshot status: `captured`
