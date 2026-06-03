@@ -37,10 +37,9 @@ You can describe the current public boundary accurately: SPRK exposes backup con
 
 - [Review backup settings visible in the product](./review-backup-settings-visible-in-the-product.md)
 - [Understand backup schedule behavior](./understand-backup-schedule-behavior.md)
-- [Understand database alignment and recovery escalation](../support-and-troubleshooting/understand-database-alignment-and-recovery-escalation.md)
 
 ## Info
 
 - App sections: `backups`
-- Last validated: 2026-06-03
+- Last validated: 2026-05-07
 - Screenshot status: `not-started`
