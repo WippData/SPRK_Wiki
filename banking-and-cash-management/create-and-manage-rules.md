@@ -47,8 +47,12 @@ Use this workflow when the same bank or credit card transactions appear repeated
    - Drag rows to reorder them.
    - Use the row-level reorder action if you want to move a rule to the top, bottom, or a specific position.
    - Use `Reorder rule` when you want to move a rule by name and target position.
-13. If you already maintain rules in a spreadsheet, use `Import` to preview and load a rules file.
-   - The current import flow accepts `.xlsx` and `.xls`.
+13. If you already maintain rules in a spreadsheet, use `Import` to open the current template-first import flow before you choose a file.
+   - Review the starter guidance block above the upload area before you continue.
+   - The current import flow accepts `.xlsx` and `.csv`.
+   - Use `Download Template` when you want a starter file that matches the visible import guidance.
+   - Generic rule-import files should keep the visible import workflow in mind: the current starter format expects rule details to be carried through `Conditions` and `Actions` columns rather than spread across many separate spreadsheet fields.
+   - QuickBooks rules exports remain a supported import path when you save or prepare them as `.xlsx`.
    - Review the preview and any reported issues before confirming the import.
 14. Edit, disable, or delete rules as your transaction patterns change.
 
@@ -68,6 +72,7 @@ The rule is saved and becomes available when SPRK evaluates pending bank transac
 - Using percent splits that do not total exactly `100%`.
 - Using fixed-amount splits without setting `Balance to`.
 - Making the description match too broad and catching unrelated transactions.
+- Skipping the starter template guidance and then uploading a file that uses the wrong columns or format.
 
 ## Related Articles
 
@@ -78,5 +83,5 @@ The rule is saved and becomes available when SPRK evaluates pending bank transac
 ## Info
 
 - App sections: `banking`, `rules`
-- Last validated: 2026-05-23
-- Screenshot status: `not-started`
+- Last validated: 2026-06-04
+- Screenshot status: `blocked`
