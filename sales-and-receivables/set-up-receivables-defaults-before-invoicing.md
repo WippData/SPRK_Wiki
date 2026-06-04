@@ -2,6 +2,8 @@
 
 Prepare customer, item, and account defaults before you start entering invoices so receivables activity is easier to review and maintain later.
 
+![New invoice drawer showing Item Number / SKU line selectors](../screenshots/sales-and-receivables/invoice-item-number-sku-line-step-02.png)
+
 ## Purpose
 
 Use this page when you want invoice entry to start from cleaner defaults instead of rebuilding customer, item, and account choices on each invoice.
@@ -76,4 +78,4 @@ Invoice entry starts from cleaner defaults, repeated customers and items are eas
 
 - App sections: `customers`, `items`, `invoices`, `chart`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

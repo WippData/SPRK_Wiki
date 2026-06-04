@@ -2,6 +2,8 @@
 
 Define reusable products and services so invoice lines can be built faster and with more consistent descriptions, pricing, and account defaults.
 
+![Items list showing Item Number / SKU column and search label](../screenshots/sales-and-receivables/items-item-number-sku-step-01.png)
+
 ## Purpose
 
 Use this workflow when you want invoice lines to reuse prepared item records instead of retyping descriptions, prices, and sales defaults each time.
@@ -61,4 +63,4 @@ The item becomes available for invoice entry, and future invoice lines can reuse
 
 - App sections: `items`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`
