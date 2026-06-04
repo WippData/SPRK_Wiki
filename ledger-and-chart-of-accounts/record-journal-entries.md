@@ -1,6 +1,6 @@
 # Record Journal Entries
 
-Create balanced manual journal entries in the `Ledger` page, save reusable templates when needed, and understand how posting affects the general ledger.
+Create balanced manual journal entries in the `Ledger` page, optionally schedule an automatic reversing entry, save reusable templates when needed, and understand how posting affects the general ledger.
 
 ## Purpose
 
@@ -17,20 +17,25 @@ Use this workflow when you need to record a manual journal entry directly in the
 1. Open `Ledger`.
 2. Select `New`, or use the `Create from Template` menu if you already have a saved journal-entry template.
 3. Enter the journal header details, including the date and memo.
-4. Add each journal line with the correct account and amount.
-5. If your company uses dimensions or classes, complete those fields on the related lines.
-6. Confirm the entry is balanced before saving:
+4. If the entry should reverse automatically after posting, turn on `Create reversing entry` and review `Reversal date`:
+   - SPRK currently pre-fills the next day by default when you start a new manual journal entry.
+   - Use a reversal date on or after the journal date.
+   - Leave the switch off when you only want the original entry.
+5. Add each journal line with the correct account and amount.
+6. If your company uses dimensions or classes, complete those fields on the related lines.
+7. Confirm the entry is balanced before saving:
    - every line must use either debit or credit, not both
    - totals must match before the save action is allowed
-7. Select `Create` to post the entry.
-8. If you expect to reuse the same layout later, use the save-template option from the journal entry drawer.
-9. Review the new entry in the ledger table and use search or filters to find it again later.
+8. Select `Create` to post the entry.
+9. If you expect to reuse the same layout later, use the save-template option from the journal entry drawer.
+10. Review the new entry in the ledger table and use search or filters to find it again later.
 
 ## Expected Result
 
-A balanced journal entry is posted to the ledger and appears in the journal-entry list. Current general ledger impact as of 2026-05-02:
+A balanced journal entry is posted to the ledger and appears in the journal-entry list. Current general ledger impact as of 2026-06-04:
 
 - Saving a manual journal entry creates a new journal entry record and posts each entered debit and credit line to the general ledger.
+- When `Create reversing entry` is enabled on a new manual journal, SPRK schedules a linked offsetting journal entry instead of deleting or overwriting the original posting.
 - SPRK blocks unbalanced entries from being saved.
 - If the entry is off by a very small rounding amount within the current tolerance, SPRK can auto-adjust one line and note that adjustment in the memo before saving.
 
@@ -38,6 +43,7 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 
 - Trying to save an entry when debit and credit totals do not match.
 - Entering both debit and credit on the same line.
+- Assuming auto-reversal is part of the edit flow for existing entries. In the current live flow it appears when creating a new manual journal entry.
 - Assuming the ledger page is only for review. In the current product it is also the manual journal-entry posting page.
 
 ## Related Articles
@@ -49,5 +55,5 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 ## Info
 
 - App sections: `ledger`
-- Last validated: 2026-05-02
-- Screenshot status: `not-started`
+- Last validated: 2026-06-04
+- Screenshot status: `blocked`
