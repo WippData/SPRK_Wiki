@@ -32,16 +32,20 @@ Use this article when you want a high-level map of the Banking page before impor
    - You can click the uploader or drag a file onto it.
    - Importing only adds or updates pending transactions for the selected account.
 6. Review the `Transactions` area:
-   - Filters support description, amount, date, amount type, categorized-to account, rule-applied status, and class filters when dimensions are enabled.
+   - The transaction-type toggle supports `All`, `Expenses`, and `Deposits`.
+   - Filters support description, amount, date, GL account/category, rule-applied status, and class filters when dimensions are enabled.
    - `Pending` shows transactions that still need review before posting.
    - `Categorized` shows transactions that were already confirmed.
 7. In the `Pending` tab, use the row-level fields and actions:
    - `Vendor` is optional.
-   - `Categorize To` selects the account for the other side of the journal entry.
+   - `GL Account` selects the account for the other side of the journal entry. Some grid views still label this column `Category`; use it as the offset GL account.
    - `Split` lets you allocate one transaction across multiple accounts.
    - `Find Check` appears when check matching is supported for the selected account.
    - The primary action confirms the transaction once it is ready.
-8. Use the bulk controls above the table when you want to apply one account, apply one vendor, confirm several transactions, or delete several transactions at once.
+8. If you use `New` to enter a bank transaction manually:
+   - `GL Account` is required before `Submit & Confirm` can post the transaction.
+   - You can leave `GL Account` blank only when you are adding the row for later review instead of confirming it immediately.
+9. Use the bulk controls above the table when you want to apply one account, apply one vendor, confirm several transactions, or delete several transactions at once.
 
 ## Expected Result
 
@@ -49,7 +53,7 @@ You understand where to select the account, where imported files enter the workf
 
 - Viewing the Banking page does not post anything to the general ledger.
 - Selecting an account or saving a default account does not post anything to the general ledger.
-- Selecting accounts, filtering, importing files, editing categories, assigning vendors, creating splits, and matching checks on the page are preparation steps only.
+- Selecting accounts, filtering, importing files, editing GL account/category choices, assigning vendors, creating splits, and matching checks on the page are preparation steps only.
 - General ledger posting happens when a pending transaction is confirmed.
 
 ## Common Mistakes
@@ -70,5 +74,5 @@ You understand where to select the account, where imported files enter the workf
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-05-30
-- Screenshot status: `captured`
+- Last validated: 2026-06-04
+- Screenshot status: `blocked`

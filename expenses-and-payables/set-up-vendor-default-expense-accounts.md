@@ -32,7 +32,8 @@ Use this page when the same vendor usually points to the same expense account an
 ## Where SPRK Can Use This Default
 
 - In `Checks`, selecting a vendor can fill `Offset Account` when that field is still blank.
-- In `Banking`, selecting or changing a vendor can fill `Categorize To` when no manual category, split, or rule already controls the transaction.
+- In `Banking`, selecting or changing a vendor can fill the transaction's GL account/category when no manual category, split, or rule already controls the transaction.
+- If Banking prompts before saving a placeholder-style vendor default such as `Ask My Accountant`, `Pending`, or `TBD`, review the warning before you let that account become the vendor's reusable default.
 - Vendor imports can map or resolve the default expense account during setup review.
 
 ## Where You Should Still Review Manually
@@ -65,5 +66,5 @@ The vendor record carries a reusable expense default, and supported check and ba
 ## Info
 
 - App sections: `vendors`, `checks`, `banking`
-- Last validated: 2026-06-01
-- Screenshot status: `planned`
+- Last validated: 2026-06-04
+- Screenshot status: `blocked`
