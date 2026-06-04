@@ -2,6 +2,8 @@
 
 Run transaction detail from the `Reports` page, narrow the results to the account or ledger slice you need, and export or print the report for review outside SPRK.
 
+![General Ledger report account selector showing accounts ordered by account code](../screenshots/reports-and-financial-review/general-ledger-account-selector-sorting-step-01.png)
+
 ## Purpose
 
 Use this workflow when you need transaction-level report detail for an account, subtype, or ledger slice and need to send the results to a client or reviewer as a spreadsheet or PDF.
@@ -76,4 +78,4 @@ If the account you need is not available in the `Accounts` filter, or the select
 
 - App sections: `reports`, `ledger`, `chart-of-accounts`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

@@ -2,6 +2,8 @@
 
 Review app-wide display and formatting settings, control update prompts, tailor the sidebar, choose account-selector ordering, and understand which preferences stay with your user profile.
 
+![Preferences page showing the Account dropdown sorting control](../screenshots/preferences-and-personalization/account-dropdown-sorting-preference-step-01.png)
+
 ## In This Section
 
 - [Use the Preferences tab](./use-the-preferences-tab.md)
@@ -18,4 +20,4 @@ Review app-wide display and formatting settings, control update prompts, tailor 
 
 - App sections: `preferences`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

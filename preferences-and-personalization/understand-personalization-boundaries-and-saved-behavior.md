@@ -2,6 +2,8 @@
 
 Learn which SPRK preferences follow your user profile, how broadly they apply, and what they do not change.
 
+![Preferences page showing Account dropdown sorting as a user-level preference](../screenshots/preferences-and-personalization/account-dropdown-sorting-preference-step-01.png)
+
 ## Purpose
 
 Use this article when you want to understand whether a preference affects only your view, the whole app, or company accounting data.
@@ -43,4 +45,4 @@ You can distinguish between user-facing personalization and company accounting a
 
 - App sections: `preferences`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`
