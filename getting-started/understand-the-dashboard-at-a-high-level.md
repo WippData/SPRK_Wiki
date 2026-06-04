@@ -1,5 +1,7 @@
 # Understand the Dashboard at a High Level
 
+![SPRK dashboard in Demo Company showing 30-day summary cards, cash movement, expense category chart, and quick links](../screenshots/getting-started/dashboard-high-level-step-01.png)
+
 Use the dashboard for a quick 30-day snapshot of business activity and as a starting point for deeper workflows.
 
 ## Purpose
@@ -49,4 +51,4 @@ You can use the dashboard as a summary and launch point instead of as a transact
 
 - App sections: `dashboard`
 - Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Screenshot status: `captured`
