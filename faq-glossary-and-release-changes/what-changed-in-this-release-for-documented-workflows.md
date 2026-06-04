@@ -18,7 +18,7 @@ Use this article when you want a compact summary of the documented workflow area
 3. Treat each summary as a documentation-level change summary, then confirm the full procedure in the linked article before changing your process.
 4. Focus on the current documented workflow additions and clarifications:
 
-- `Support`: Public documentation now covers support-log download and clear actions, current contact options, update controls when supported by the installed app, bug-reporting links, and built-in `How To Guides`.
+- `Support`: Public documentation now covers support-log download and clear actions, current contact options, update controls when supported by the installed app, the conditional `Release Notes` path before restart, public-release fallback behavior, bug-reporting links, and built-in `How To Guides`.
 - `License`: Public documentation now covers saved license details, the visible purchase path, the tenant usage table, and when company-creation prompts may appear.
 - `Backups`: Public documentation now covers automatic backup timing, backup-location visibility, and manual backup actions, while keeping restore guidance intentionally limited.
 - `Company context`: Public documentation now emphasizes confirming the active company before you create, edit, import, reconcile, or review records.
@@ -49,4 +49,4 @@ You can see which user-facing workflow areas gained or clarified documentation i
 
 - App sections: `dashboard`, `companies`, `license`, `support`, `backups`
 - Last validated: 2026-05-25
-- Screenshot status: `not-started`
+- Screenshot status: `blocked`

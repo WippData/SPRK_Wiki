@@ -4,7 +4,7 @@ Use this article to understand how SPRK release-change notes should be read by e
 
 ## Purpose
 
-Use this workflow when you want to interpret public release notes without confusing a navigation change, update prompt, or support improvement with a posted accounting transaction.
+Use this workflow when you want to interpret public release notes without confusing a navigation change, update prompt, support improvement, or release-notes modal with a posted accounting transaction.
 
 ## Prerequisites
 
@@ -18,15 +18,18 @@ Use this workflow when you want to interpret public release notes without confus
 2. Confirm which app sections the change touches, such as `Support`, `License`, `Backups`, or a transaction page.
 3. Check the current app version in the sidebar footer so you know which build you are comparing.
 4. If the change relates to downloading or installing an update, open `Support` and use the visible update controls when they are available in your installed app.
-5. Read the related workflow article for the affected area so you understand the full user steps after the change.
-6. Look for a plain-language statement about general ledger impact whenever the change touches transaction entry, classification, reconciliation, or reporting behavior.
-7. If a release note does not mention posting behavior, assume only the documented visible workflow changed and confirm transaction effects in the related accounting article before acting.
+5. Use `Release Notes` when it is shown so you can review the visible version context before restarting. Depending on the updater state, the modal can describe the installed version, the downloaded update version, or the latest public release.
+6. If the in-app release notes do not load, use the fallback link to the public releases page and continue reading the visible workflow summary there.
+7. Read the related workflow article for the affected area so you understand the full user steps after the change.
+8. Look for a plain-language statement about general ledger impact whenever the change touches transaction entry, classification, reconciliation, or reporting behavior.
+9. If a release note does not mention posting behavior, assume only the documented visible workflow changed and confirm transaction effects in the related accounting article before acting.
 
 ## Expected Result
 
 You can read user-facing release summaries with the right frame: what changed on screen, which workflows are affected, and whether the change alters bookkeeping behavior. Current general ledger impact as of 2026-05-10:
 
 - Reading a release summary does not post or modify any transaction.
+- Opening an in-app release-notes modal or public releases link does not post or modify any transaction.
 - Downloading an app update, installing an app update, or dismissing an update prompt does not affect the general ledger.
 - Only workflow changes that explicitly involve transaction creation, editing, classification, reconciliation, or reporting should be evaluated for ledger impact.
 
@@ -34,6 +37,7 @@ You can read user-facing release summaries with the right frame: what changed on
 
 - Treating a release note as accounting advice instead of product guidance.
 - Assuming every update changes transaction behavior.
+- Assuming every build shows the same release-notes prompt or modal state.
 - Ignoring the app version when comparing what you see to documented instructions.
 
 ## Related Articles
@@ -47,4 +51,4 @@ You can read user-facing release summaries with the right frame: what changed on
 
 - App sections: `dashboard`, `support`
 - Last validated: 2026-05-10
-- Screenshot status: `not-started`
+- Screenshot status: `blocked`
