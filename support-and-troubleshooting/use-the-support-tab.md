@@ -2,6 +2,8 @@
 
 Open the Support tab to download a troubleshooting log, clear the current session log, review contact options, check for updates when your app supports them, review release notes before restarting, and open support resources.
 
+![Support tab showing support activity log actions, contact options, updater controls, Release Notes, bug reporting, and How To Guides](../screenshots/support-and-troubleshooting/support-tab-overview-step-01.png)
+
 ## Purpose
 
 Use this workflow when you need the main support tools inside SPRK, including the activity log, current contact details, update actions, release-note access when updater controls are available, the bug-reporting link, and built-in help topics.
@@ -56,4 +58,4 @@ You can reach the product's visible support actions from one tab and leave with 
 
 - App sections: `support`
 - Last validated: 2026-06-06
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

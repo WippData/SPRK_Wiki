@@ -2,6 +2,8 @@
 
 Use the Support tab to gather a session log, find contact options, review release notes when updater controls are available, and work through common product-navigation questions before escalating an issue.
 
+![Support tab showing support log, contact, updater, release notes, bug reporting, and how-to guide controls](../screenshots/support-and-troubleshooting/support-tab-overview-step-01.png)
+
 ## In This Section
 
 - [Use the Support tab](./use-the-support-tab.md)
@@ -12,4 +14,4 @@ Use the Support tab to gather a session log, find contact options, review releas
 
 - App sections: `support`
 - Last validated: 2026-06-06
-- Screenshot status: `blocked`
+- Screenshot status: `captured`
