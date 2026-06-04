@@ -34,7 +34,7 @@ Use this workflow when you need to create a new customer invoice, decide whether
    - If you need an exception for this invoice, replace the default due date with the agreed date before you save.
 6. Recheck the due date any time you change the customer, invoice date, or negotiated payment timing for this invoice.
 7. Add one or more invoice lines.
-8. Use `SKU` or `Description` to pull matching item details into the line when available.
+8. Use `Item Number / SKU` or `Description` to pull matching item details into the line when available.
 9. If the customer or item does not exist yet, create it inline from the invoice drawer and continue without leaving the page.
 10. Review quantity, unit price, and extended amount on each line.
 11. Decide how the invoice should be saved:
@@ -78,5 +78,5 @@ The invoice appears in the invoice list with the expected number, customer, tota
 ## Info
 
 - App sections: `invoices`
-- Last validated: 2026-05-31
-- Screenshot status: `planned`
+- Last validated: 2026-06-04
+- Screenshot status: `blocked`

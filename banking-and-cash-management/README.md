@@ -1,6 +1,6 @@
 # Banking and Cash Management
 
-Import bank activity, review pending transactions, confirm transactions when they are ready, and create or import rules for repeated patterns.
+Import bank activity, review pending transactions, assign GL account/category choices, confirm transactions when they are ready, and create or import rules for repeated patterns.
 
 ## In This Section
 

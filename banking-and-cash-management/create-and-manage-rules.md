@@ -2,7 +2,7 @@
 
 ![Rules page showing filters, priority order, active banking rules, and row actions](../screenshots/banking-and-cash-management/create-and-manage-rules-step-01.png)
 
-Build rules that prefill categorization for repeated bank transaction patterns, then manage scope, priority, and imported rule sets from the Rules page.
+Build rules that prefill GL account choices for repeated bank transaction patterns, then manage scope, priority, and imported rule sets from the Rules page.
 
 ![Rules import dialog showing template guidance, required columns, recommended columns, and supported file types](../screenshots/banking-and-cash-management/rules-import-template-guidance-step-01.png)
 
@@ -40,7 +40,7 @@ Use this workflow when the same bank or credit card transactions appear repeated
    - Numeric operators include `>`, `<`, and `between`.
    - For `between`, enter the range as `min,max`.
 9. Choose the categorization result:
-   - Use `Categorize to` when one destination account is enough.
+   - Use `GL Account` when one destination account is enough.
    - Add split rows when the same pattern should be distributed across multiple accounts.
 10. If you use a split rule:
    - Choose `%` when the split should total exactly `100%`.
@@ -58,6 +58,7 @@ Use this workflow when the same bank or credit card transactions appear repeated
    - Generic spreadsheet or CSV rule files should include `Conditions` and `Actions` columns.
    - `Name` and `Description` are recommended so imported rules are easier to review later.
    - Review the preview and any reported issues before confirming the import.
+   - Legacy imported condition fields can still match when their capitalization differs, but new setup should use the visible current labels, including `GL Account`.
 14. Edit, disable, or delete rules as your transaction patterns change.
 
 ## Expected Result
@@ -65,7 +66,7 @@ Use this workflow when the same bank or credit card transactions appear repeated
 The rule is saved and becomes available when SPRK evaluates pending bank transactions. Current general ledger impact as of 2026-05-23:
 
 - Creating, editing, reordering, importing, disabling, or deleting rules does not post to the general ledger.
-- Rules can prefill categories or split instructions for pending bank transactions.
+- Rules can prefill GL account/category choices or split instructions for pending bank transactions.
 - A general ledger entry is created only later, when the bank transaction itself is confirmed from the Banking workflow.
 
 ## Common Mistakes
