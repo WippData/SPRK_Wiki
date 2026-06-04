@@ -22,20 +22,22 @@ Use this workflow when you want to see which reports are available in SPRK and r
    - `Balance Sheet`
    - `Cash Flow (Indirect)`
    - `Tax Forms`
-   - Additional report views such as `General Ledger` and `Account Detail` are also available.
+   - Transaction-detail views such as `General Ledger` and `Account Detail` are also available.
 4. Select the tab you want to run.
 5. Set the date controls required for that tab:
    - Range-based reports use a period preset and date range.
    - As-of reports use an as-of style date.
    - `Income Statement` also supports compare-period controls and optional grouping.
    - `Tax Forms` requires a tax-form selection before you run it.
+   - `General Ledger` adds filters for `Account Type`, `Account SubType`, `Accounts`, `Vendor`, `Text`, `Group By`, and optional `Include opening balance`.
 6. Select `Run`.
 7. Review the table and any summary cards that appear for the selected report.
+   - In `General Ledger`, use `Group By` when you want the results collapsed by `Account Type`, `SubType`, or `Type & SubType` before you expand to account-level detail.
 8. If needed, use `Export` to save the current report rows or `Print` to open the print workflow for the active report.
 
 ## Expected Result
 
-The selected report loads in the main table area with the date context and controls that match that report type. Current general ledger impact as of 2026-05-04:
+The selected report loads in the main table area with the date context and controls that match that report type. Current general ledger impact as of 2026-06-04:
 
 - Opening a report tab does not post anything to the ledger.
 - Running a report reads posted data for the active company but does not change balances.
@@ -51,11 +53,12 @@ The selected report loads in the main table area with the date context and contr
 ## Related Articles
 
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)
+- [Export transactions from reports](./export-transactions-from-reports.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
 - [Interpret report navigation without accounting advice](./interpret-report-navigation-without-accounting-advice.md)
 
 ## Info
 
 - App sections: `reports`
-- Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Last validated: 2026-06-04
+- Screenshot status: `planned`

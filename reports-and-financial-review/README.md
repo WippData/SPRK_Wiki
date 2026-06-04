@@ -5,6 +5,7 @@ Open the Reports area, run the report you need, review supporting detail, and un
 ## In This Section
 
 - [View available reports](./view-available-reports.md)
+- [Export transactions from reports](./export-transactions-from-reports.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)
 - [Interpret report navigation without accounting advice](./interpret-report-navigation-without-accounting-advice.md)
@@ -12,5 +13,5 @@ Open the Reports area, run the report you need, review supporting detail, and un
 ## Info
 
 - App sections: `reports`
-- Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Last validated: 2026-06-04
+- Screenshot status: `planned`
