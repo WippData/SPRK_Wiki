@@ -28,11 +28,16 @@ Use this workflow when you want to review or change how SPRK looks and behaves f
    - Choose a `Date format`. SPRK's standard default is `MM/DD/YYYY`, but your saved profile can use another visible format such as `YYYY-MM-DD`, `YYYY/MM/DD`, `MM-DD-YYYY`, `DD-MM-YYYY`, or `DD/MM/YYYY`.
    - Choose a `Decimal data entry` style.
 5. When you type dates directly into date fields elsewhere in SPRK, use the order implied by your selected date format. Many date fields accept typed values with separators, and compact entries can normalize to the saved display format after the field accepts them.
-6. Review the `Updates` card and choose the automatic update frequency you want.
-7. Review the `Automation` card if you want to adjust supported default-account helpers.
-8. Review the `Navigation` card if you want to tailor the sidebar layout later.
-9. Review the `Getting started` card if you want the dashboard tour to appear again.
-10. Save preferences when you finish if the page does not auto-save the changes you made.
+6. Review column and list preferences when you need faster table cleanup:
+   - Use `Grid Edit default` to choose whether supported list pages start in Grid Edit mode.
+   - Open `Column preferences` from supported tables to choose visible optional columns and change their order.
+   - Drag a column's reorder handle when you want to move it quickly, or use the move-up and move-down controls when keyboard or button controls are easier.
+   - Leave required columns visible when SPRK keeps them protected.
+7. Review the `Updates` card and choose the automatic update frequency you want.
+8. Review the `Automation` card if you want to adjust supported default-account helpers.
+9. Review the `Navigation` card if you want to tailor the sidebar layout later.
+10. Review the `Getting started` card if you want the dashboard tour to appear again.
+11. Save preferences when you finish if the page does not auto-save the changes you made.
 
 ## Expected Result
 
@@ -43,6 +48,7 @@ Your user-level preferences are applied across the SPRK app, including display, 
 - Changing `Date format` changes how date fields display and interpret typed dates; it does not rewrite posted transaction dates.
 - Turning on `Grid Edit default` changes how supported pages open for your user profile, not which records exist or how they post.
 - Changing `Account dropdown sorting` changes the order used by supported account page-link dropdowns across the app, not the chart of accounts itself.
+- Changing column visibility or column order affects your working view on supported tables, not the accounting records behind those rows.
 - Resetting the getting-started tour affects onboarding prompts only and does not change company books.
 
 ## Common Mistakes
@@ -52,6 +58,7 @@ Your user-level preferences are applied across the SPRK app, including display, 
 - Typing compact dates without checking that the digits match your selected date order.
 - Assuming `Grid Edit default` changes every page in SPRK instead of supported list pages only.
 - Assuming account selectors always appear in one fixed order for every user.
+- Assuming drag reordering in `Column preferences` replaces the move-up and move-down controls; both paths can be available on supported tables.
 - Leaving the page before saving after making changes that are not auto-saved.
 
 ## Related Articles

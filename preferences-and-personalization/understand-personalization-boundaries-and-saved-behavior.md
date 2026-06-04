@@ -15,6 +15,7 @@ Use this article when you want to understand whether a preference affects only y
 - SPRK keeps certain settings access available even when you customize the sidebar, so required configuration paths remain reachable.
 - Column visibility and column order preferences affect how supported tables appear for your user profile, while required columns can remain protected by the product.
 - Account-dropdown sorting affects supported account selectors, including report and transaction-entry selectors, so one user may see grouped account-type ordering while another user sees a flatter A-Z list.
+- Supported column-preference dialogs can offer both drag handles and move-up or move-down controls for reordering, so users can choose the control style that fits the task.
 
 ## Expected Result
 
@@ -24,7 +25,7 @@ You can distinguish between user-facing personalization and company accounting a
 - Saved preferences do not move transactions between companies or reopen closed periods.
 - Display-only formatting changes do not rewrite journal entries, invoices, bills, or reconciliations.
 - Account selector ordering does not rename, activate, deactivate, or reorder accounts in the chart of accounts.
-- Changing supported table layouts or enabling default Grid Edit changes your working view, not the underlying accounting data.
+- Changing supported table layouts, reordering columns, or enabling default Grid Edit changes your working view, not the underlying accounting data.
 
 ## Common Mistakes
 
@@ -32,6 +33,7 @@ You can distinguish between user-facing personalization and company accounting a
 - Confusing app-wide user preferences with company-specific maintenance settings.
 - Treating an account selector's order as proof that accounts were reorganized in company setup.
 - Assuming column order preferences apply to every page identically.
+- Treating a dragged column order as a shared company layout instead of a saved user preference.
 - Expecting sidebar personalization to override required product guardrails.
 
 ## Related Articles
