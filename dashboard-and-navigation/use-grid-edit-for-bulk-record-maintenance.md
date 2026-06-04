@@ -28,7 +28,8 @@ Use this workflow when you want to make the same kind of change across several r
 8. Select `Apply Changes` only after the grid reflects the final values you intend to keep.
 9. If you want to change which columns stay visible or where they appear, open `Column preferences`:
    - Turn optional columns on or off as needed.
-   - Use the move-up and move-down controls to reorder columns.
+   - Drag a column's reorder handle when you want to move it into place quickly.
+   - Use the move-up and move-down controls when you prefer button controls or need a steadier one-step move.
    - Leave required columns visible when SPRK keeps them protected.
 10. Use the page's `More` menu to leave Grid Edit mode when you want to return to the standard row-action view.
 
@@ -46,6 +47,7 @@ You can review and apply repeated list updates from one table instead of opening
 - Applying several edits at once without reviewing the changed-cell count and final cell values.
 - Assuming every list page exposes the same columns or the same editing depth.
 - Forgetting that column preferences affect how the list is displayed, not the underlying accounting logic.
+- Assuming drag reordering is available on every table; use the visible `Column preferences` controls for the page you are on.
 
 ## Related Articles
 
@@ -60,5 +62,5 @@ You can review and apply repeated list updates from one table instead of opening
 ## Info
 
 - App sections: `items`, `customers`, `vendors`, `checks`, `banking`, `preferences`
-- Last validated: 2026-06-02
-- Screenshot status: `planned`
+- Last validated: 2026-06-04
+- Screenshot status: `blocked`
