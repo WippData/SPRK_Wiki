@@ -21,19 +21,21 @@ Use this article when you need to understand how SPRK preserves history around j
    - dimension edits can be restricted
    - account changes are not allowed line-by-line in the current edit path
 3. If a correction should preserve the original posting trail, use reversal behavior instead of trying to overwrite history.
-4. When reversing an entry, choose the posting-date mode that fits the correction:
+4. For a new manual journal entry that should unwind automatically, use the create-time `Create reversing entry` switch in the journal drawer instead of waiting to reverse it later by hand.
+5. When reversing an existing posted entry, choose the posting-date mode that fits the correction:
    - `today`
    - `original`
    - `custom`
-5. For a confirmed bank transaction with a linked journal entry, open the journal from `Reconcile` and reverse from the linked journal modal.
-6. Remember that a reversal creates a separate entry with flipped debit and credit amounts rather than deleting the original.
-7. In `Chart of Accounts`, treat account deletion as deactivation. Prior activity remains part of the company history.
+6. For a confirmed bank transaction with a linked journal entry, open the journal from `Reconcile` and reverse from the linked journal modal.
+7. Remember that a reversal creates a separate entry with flipped debit and credit amounts rather than deleting the original.
+8. In `Chart of Accounts`, treat account deletion as deactivation. Prior activity remains part of the company history.
 
 ## Expected Result
 
-You understand which maintenance actions keep an audit trail and how they affect balances. Current general ledger impact as of 2026-05-29:
+You understand which maintenance actions keep an audit trail and how they affect balances. Current general ledger impact as of 2026-06-04:
 
 - Reversing a journal entry creates a new journal entry that flips each original debit and credit line, which offsets the original entry in the general ledger.
+- The create-time auto-reversal option for manual journals still preserves history by creating a second offsetting entry on the scheduled reversal date.
 - SPRK prevents reversing a reversal and prevents reversing the same original entry more than once.
 - If a reversal is tied to an unreconciled bank transaction, SPRK excludes the original bank row for audit history.
 - If a reversal is tied to a reconciled bank transaction, SPRK creates a confirmed correction bank transaction instead of changing the reconciled row.
@@ -43,6 +45,7 @@ You understand which maintenance actions keep an audit trail and how they affect
 ## Common Mistakes
 
 - Assuming reversal deletes the original entry. It creates a separate offsetting entry.
+- Assuming create-time auto-reversal is the same as editing a posted journal. The current manual-journal drawer schedules a separate future reversal entry.
 - Assuming linked bank reversal always changes the original bank row. Reconciled rows are preserved and corrected with a separate bank transaction.
 - Expecting to swap an entry line to a different account during edit. The current edit rules do not allow account changes on existing lines.
 - Treating inactive accounts as erased accounts. Inactive status only changes availability for future use.
@@ -57,5 +60,5 @@ You understand which maintenance actions keep an audit trail and how they affect
 ## Info
 
 - App sections: `ledger`, `chart`
-- Last validated: 2026-05-29
-- Screenshot status: `captured`
+- Last validated: 2026-06-04
+- Screenshot status: `partial`

@@ -13,5 +13,5 @@ Organize your account list, record journal entries, move ledger data in or out o
 ## Info
 
 - App sections: `ledger`, `chart`
-- Last validated: 2026-05-29
-- Screenshot status: `captured`
+- Last validated: 2026-06-04
+- Screenshot status: `partial`
