@@ -2,6 +2,8 @@
 
 Review app-wide display, formatting, date-entry, account-selector ordering, update prompts, sidebar customization, supported table layouts, and which preferences stay with your user profile.
 
+![Column preferences dialog showing drag handles, visibility checkboxes, and move controls](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
+
 ## In This Section
 
 - [Use the Preferences tab](./use-the-preferences-tab.md)

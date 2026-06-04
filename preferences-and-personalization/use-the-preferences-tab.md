@@ -4,6 +4,8 @@ Open `Preferences` to manage app-wide appearance, formatting, date display, upda
 
 ![Preferences page showing the Account dropdown sorting control and its ordering choices](../screenshots/preferences-and-personalization/account-dropdown-sorting-preference-step-01.png)
 
+![Column preferences dialog showing drag handles, visibility checkboxes, and move controls for invoice columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
+
 ## Purpose
 
 Use this workflow when you want to review or change how SPRK looks and behaves for your user profile across the app.

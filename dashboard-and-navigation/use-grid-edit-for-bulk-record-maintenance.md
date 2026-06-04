@@ -2,6 +2,8 @@
 
 Use Grid Edit when you need to clean up repeated list data faster than opening one drawer at a time.
 
+![Column preferences dialog showing drag handles and move controls for supported list columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
+
 ## Purpose
 
 Use this workflow when you want to make the same kind of change across several records, especially after an import or during list cleanup.
@@ -63,4 +65,4 @@ You can review and apply repeated list updates from one table instead of opening
 
 - App sections: `items`, `customers`, `vendors`, `checks`, `banking`, `preferences`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`
