@@ -10,25 +10,26 @@ Use this article when you want to understand whether a preference affects only y
 
 - The Preferences page describes its settings as applying across all companies across the entire app.
 - Theme, UI scale, display formatting, grid-edit startup behavior, automatic update prompts, and sidebar customization are personalization settings, not accounting transactions.
+- `Account dropdown sorting` is also a user-level preference. It changes how supported account selectors are ordered for you without changing any company account setup.
 - Preferences can change how values and pages are presented without changing source amounts or posted history.
 - The active company still matters for navigation context, but your user preferences are broader than a single company.
 - SPRK keeps certain settings access available even when you customize the sidebar, so required configuration paths remain reachable.
-- Column visibility and column order preferences affect how supported tables appear for your user profile, while required columns can remain protected by the product.
+- Column visibility, column order, and account-selector ordering affect how supported tables and dropdowns appear for your user profile, while required columns can remain protected by the product.
 
 ## Expected Result
 
-You can distinguish between user-facing personalization and company accounting activity before making changes. Current general ledger impact as of 2026-06-02:
+You can distinguish between user-facing personalization and company accounting activity before making changes. Current general ledger impact as of 2026-06-04:
 
 - Personalization settings do not post to the general ledger.
 - Saved preferences do not move transactions between companies or reopen closed periods.
 - Display-only formatting changes do not rewrite journal entries, invoices, bills, or reconciliations.
-- Changing supported table layouts or enabling default Grid Edit changes your working view, not the underlying accounting data.
+- Changing supported table layouts, account-dropdown ordering, or enabling default Grid Edit changes your working view, not the underlying accounting data.
 
 ## Common Mistakes
 
 - Assuming a formatting preference changed how a transaction was originally posted.
 - Confusing app-wide user preferences with company-specific maintenance settings.
-- Assuming column order preferences apply to every page identically.
+- Assuming column order or account-selector preferences apply to every page identically.
 - Expecting sidebar personalization to override required product guardrails.
 
 ## Related Articles
@@ -41,5 +42,5 @@ You can distinguish between user-facing personalization and company accounting a
 ## Info
 
 - App sections: `preferences`
-- Last validated: 2026-06-02
-- Screenshot status: `planned`
+- Last validated: 2026-06-04
+- Screenshot status: `blocked`

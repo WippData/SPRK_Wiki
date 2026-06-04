@@ -1,10 +1,10 @@
 # Use the Preferences Tab
 
-Open `Preferences` to manage app-wide appearance, formatting, update notification, navigation, automation, and getting-started settings.
+Open `Preferences` to manage app-wide appearance, formatting, update notification, navigation, account-selector ordering, automation, and getting-started settings.
 
 ## Purpose
 
-Use this workflow when you want to review or change how SPRK looks and behaves for your user profile across the app.
+Use this workflow when you want to review or change how SPRK looks and behaves for your user profile across the app, including how supported account dropdowns are ordered.
 
 ## Prerequisites
 
@@ -24,18 +24,23 @@ Use this workflow when you want to review or change how SPRK looks and behaves f
    - Choose a `Currency format`.
    - Choose a `Date format`.
    - Choose a `Decimal data entry` style.
-5. Review the `Updates` card and choose the automatic update frequency you want.
-6. Review the `Automation` card if you want to adjust supported default-account helpers.
-7. Review the `Navigation` card if you want to tailor the sidebar layout later.
-8. Review the `Getting started` card if you want the dashboard tour to appear again.
-9. Save preferences when you finish if the page does not auto-save the changes you made.
+5. Review `Account dropdown sorting` if your build exposes it:
+   - Choose `Type then name` if you want accounts grouped by account type and then alphabetized within each group.
+   - Choose `Type then code` if you want grouped sections that keep code-based ordering inside each type.
+   - Choose `Flat A-Z` if you want one alphabetical account list instead of grouped sections.
+6. Review the `Updates` card and choose the automatic update frequency you want.
+7. Review the `Automation` card if you want to adjust supported default-account helpers.
+8. Review the `Navigation` card if you want to tailor the sidebar layout later.
+9. Review the `Getting started` card if you want the dashboard tour to appear again.
+10. Save preferences when you finish if the page does not auto-save the changes you made.
 
 ## Expected Result
 
-Your user-level preferences are applied across the SPRK app, including display, formatting, grid-edit startup behavior, and update prompt behavior. Current general ledger impact as of 2026-06-02:
+Your user-level preferences are applied across the SPRK app, including display, formatting, account-selector ordering, grid-edit startup behavior, and update prompt behavior. Current general ledger impact as of 2026-06-04:
 
 - Changing preferences does not create, edit, or delete a journal entry.
 - Display and formatting updates change how information is shown to you, not the underlying transaction amounts.
+- Changing `Account dropdown sorting` affects supported account selectors for your user profile, not the chart of accounts itself.
 - Turning on `Grid Edit default` changes how supported pages open for your user profile, not which records exist or how they post.
 - Resetting the getting-started tour affects onboarding prompts only and does not change company books.
 
@@ -43,6 +48,7 @@ Your user-level preferences are applied across the SPRK app, including display, 
 
 - Treating Preferences as a company setup page instead of a user-level settings area.
 - Assuming number or currency display choices recalculate posted balances.
+- Expecting every account dropdown to show identical grouping chrome instead of following the supported page's selector design.
 - Assuming `Grid Edit default` changes every page in SPRK instead of supported list pages only.
 - Leaving the page before saving after making changes that are not auto-saved.
 
@@ -57,5 +63,5 @@ Your user-level preferences are applied across the SPRK app, including display, 
 ## Info
 
 - App sections: `preferences`
-- Last validated: 2026-06-02
-- Screenshot status: `planned`
+- Last validated: 2026-06-04
+- Screenshot status: `blocked`

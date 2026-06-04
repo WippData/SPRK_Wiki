@@ -23,6 +23,7 @@ Use this workflow when you need transaction-level report detail for an account, 
 4. Narrow the report before you export:
    - In `General Ledger`, use the current filter bar as needed: `Account Type`, `Account SubType`, `Accounts`, `Vendor`, `Text`, `Group By`, and `Include opening balance`.
    - In `Account Detail`, select the required account and optional text filter.
+   - If an account selector appears grouped or flat in a way you did not expect, check your user-level `Account dropdown sorting` preference before assuming accounts are missing.
 5. Select `Run`.
 6. Review the results before exporting:
    - Confirm the active company is correct.
@@ -41,6 +42,7 @@ SPRK produces an outbound copy of the current report results for review outside 
 
 - Running the report does not post, edit, reverse, or reclassify journal entries.
 - Export and print actions do not change ledger balances.
+- Changing how an account filter is ordered does not add, remove, or rename accounts in the report source data.
 - The exported or printed file reflects the report filters in effect at the time you create it, rather than exporting unfiltered rows from other pages of the result set.
 
 ## Common Mistakes
@@ -49,6 +51,7 @@ SPRK produces an outbound copy of the current report results for review outside 
 - Forgetting to rerun the report after changing the account, type, vendor, text, or date filter.
 - Assuming `Export` creates a PDF. Use `Print` and the system PDF option when you need a PDF.
 - Sending the file before opening it and confirming the account and date range.
+- Expecting every account selector to appear as one flat list instead of following the current supported grouping or sorting preference.
 - Expecting an inactive or unavailable account to appear in every account selector.
 
 ## Troubleshooting
@@ -58,8 +61,9 @@ If the account you need is not available in the `Accounts` filter, or the select
 1. Check `Chart of Accounts` and confirm the account exists for the active company.
 2. Confirm the account is active.
 3. Confirm the account name or code matches what you are searching for.
-4. Try the other transaction-detail report view, such as `Account Detail` instead of `General Ledger`.
-5. If the account exists and is active but still does not appear in the report filter, contact support with the company name, account name, account code, report name, date range, and a screenshot of the missing account selector.
+4. Check `Preferences` and confirm `Account dropdown sorting` is not grouping the list differently than you expected.
+5. Try the other transaction-detail report view, such as `Account Detail` instead of `General Ledger`.
+6. If the account exists and is active but still does not appear in the report filter, contact support with the company name, account name, account code, report name, date range, and a screenshot of the missing account selector.
 
 ## Related Articles
 
@@ -72,4 +76,4 @@ If the account you need is not available in the `Accounts` filter, or the select
 
 - App sections: `reports`, `ledger`, `chart-of-accounts`
 - Last validated: 2026-06-04
-- Screenshot status: `planned`
+- Screenshot status: `blocked`
