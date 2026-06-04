@@ -1,6 +1,6 @@
 # Support And Troubleshooting
 
-Use the Support tab to gather a session log, find contact options, and work through common product-navigation questions before escalating an issue.
+Use the Support tab to gather a session log, find contact options, review release notes when updater controls are available, and work through common product-navigation questions before escalating an issue.
 
 ## In This Section
 
@@ -12,4 +12,4 @@ Use the Support tab to gather a session log, find contact options, and work thro
 
 - App sections: `support`
 - Last validated: 2026-05-11
-- Screenshot status: `not-started`
+- Screenshot status: `blocked`
