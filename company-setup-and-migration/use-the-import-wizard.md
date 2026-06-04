@@ -2,6 +2,8 @@
 
 Build a new company from uploaded files, copied data, and manual settings when a simple one-file import is not enough.
 
+![Import Wizard showing starter templates, required columns, recommended columns, and the Download Templates action](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
+
 ## Purpose
 
 Use the Import Wizard when your migration spans multiple files or when you want to mix uploaded files, copied data from an existing company, and manual settings in one guided flow.
@@ -58,4 +60,4 @@ SPRK creates a new company using the combination of files, copied data, and sett
 
 - App sections: `companies`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

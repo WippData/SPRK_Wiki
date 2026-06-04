@@ -2,6 +2,8 @@
 
 Import bank activity, review pending transactions, confirm transactions when they are ready, and create or import rules for repeated patterns.
 
+![Rules import dialog showing the current template guidance for rule imports](../screenshots/banking-and-cash-management/rules-import-template-guidance-step-01.png)
+
 ## In This Section
 
 - [Understand the banking page](./understand-the-banking-page.md)
@@ -14,4 +16,4 @@ Import bank activity, review pending transactions, confirm transactions when the
 
 - App sections: `banking`, `rules`
 - Last validated: 2026-06-04
-- Screenshot status: `partial`
+- Screenshot status: `captured`

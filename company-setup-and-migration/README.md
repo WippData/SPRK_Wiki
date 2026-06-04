@@ -2,6 +2,8 @@
 
 Create a company, download starter import templates, combine uploaded and copied setup data, and switch between companies in SPRK.
 
+![Import Wizard showing company import starter templates and the Download Templates action](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
+
 ## In This Section
 
 - [Create your first company](./create-your-first-company.md)
@@ -20,4 +22,4 @@ Create a company, download starter import templates, combine uploaded and copied
 
 - App sections: `companies`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`
