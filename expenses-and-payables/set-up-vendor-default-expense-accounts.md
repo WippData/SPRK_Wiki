@@ -2,6 +2,8 @@
 
 Prepare vendor-level expense defaults before you enter repeat payables, checks, or bank classifications so supported workflows start with cleaner coding.
 
+![Vendors list showing the Default Expense Account column](../screenshots/expenses-and-payables/vendor-default-expense-account-step-01.png)
+
 ## Purpose
 
 Use this page when the same vendor usually points to the same expense account and you want SPRK to reuse that setup where the current workflow supports it.
@@ -67,4 +69,4 @@ The vendor record carries a reusable expense default, and supported check and ba
 
 - App sections: `vendors`, `checks`, `banking`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

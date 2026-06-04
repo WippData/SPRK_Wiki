@@ -2,6 +2,10 @@
 
 Learn how the Banking page is organized so you can choose the right bank or credit card account, import activity into that account, review pending transactions, and confirm what should post to the general ledger.
 
+![Banking page showing the All, Expenses, and Deposits transaction-type filters](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
+
+![New bank transaction drawer showing the GL Account helper for add-only versus confirm](../screenshots/banking-and-cash-management/banking-gl-account-drawer-step-02.png)
+
 ## Purpose
 
 Use this article when you want a high-level map of the Banking page before importing or categorizing transactions.
@@ -75,4 +79,4 @@ You understand where to select the account, where imported files enter the workf
 
 - App sections: `banking`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

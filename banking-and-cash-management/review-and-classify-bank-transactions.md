@@ -2,6 +2,8 @@
 
 Categorize pending bank or credit card transactions, use splits or check matching when needed, and confirm the entries that should post to the general ledger.
 
+![Banking review filters and Category column used for the offset GL account](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
+
 ## Purpose
 
 Use this workflow when imported or manually entered bank activity needs review before SPRK posts it to the general ledger.
@@ -80,4 +82,4 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 
 - App sections: `banking`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

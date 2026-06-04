@@ -2,6 +2,8 @@
 
 Import bank activity, review pending transactions, assign GL account/category choices, confirm transactions when they are ready, and create rules for repeated patterns.
 
+![Banking page showing transaction-type filters and the review grid](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
+
 ## In This Section
 
 - [Understand the banking page](./understand-the-banking-page.md)
@@ -14,4 +16,4 @@ Import bank activity, review pending transactions, assign GL account/category ch
 
 - App sections: `banking`, `rules`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

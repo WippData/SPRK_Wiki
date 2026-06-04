@@ -2,6 +2,8 @@
 
 Build invoices from customers and items, save them in the right status, and reopen them later when you need to review or update the details.
 
+![New invoice drawer showing Item Number / SKU on invoice lines](../screenshots/sales-and-receivables/invoice-item-number-sku-line-step-02.png)
+
 ## Purpose
 
 Use this workflow when you need to create a new customer invoice, decide whether it should stay in draft or move to open status, and return to existing invoices from the invoice list.
@@ -79,4 +81,4 @@ The invoice appears in the invoice list with the expected number, customer, tota
 
 - App sections: `invoices`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

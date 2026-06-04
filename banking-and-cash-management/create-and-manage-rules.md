@@ -2,6 +2,8 @@
 
 Build rules that prefill GL account choices for repeated bank transaction patterns, then manage scope, priority, and imported rule sets from the Rules page.
 
+![Rules page showing GL Account filter and GL Account result column](../screenshots/banking-and-cash-management/rules-gl-account-labels-step-03.png)
+
 ## Purpose
 
 Use this workflow when the same bank or credit card transactions appear repeatedly and you want SPRK to prepare those rows more consistently before you confirm them.
@@ -80,4 +82,4 @@ The rule is saved and becomes available when SPRK evaluates pending bank transac
 
 - App sections: `banking`, `rules`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`
