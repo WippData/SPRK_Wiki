@@ -2,6 +2,8 @@
 
 Move journal-entry data into or out of SPRK from the `Ledger` page, including template downloads, preview checks, account resolution, and current posting behavior.
 
+![Journal Entry Import Template modal showing accepted file formats, required columns, recommended columns, and Download Template](../screenshots/ledger-and-chart-of-accounts/journal-entry-import-template-step-01.png)
+
 ## Purpose
 
 Use this article when you need to import journal-entry activity into SPRK or export journal-entry data for review outside the app.
@@ -56,4 +58,4 @@ You can move journal-entry data in or out of the product with the current suppor
 
 - App sections: `ledger`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

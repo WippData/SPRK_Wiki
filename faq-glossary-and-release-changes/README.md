@@ -2,6 +2,8 @@
 
 Use this section to answer common SPRK questions quickly, look up product terms, and understand how to read public release-change guidance or updater release notes without guessing about accounting impact.
 
+![Release Notes modal showing installed version details and release-change sections](../screenshots/faq-glossary-and-release-changes/release-notes-modal-step-01.png)
+
 ## In This Section
 
 - [Frequently asked questions](./frequently-asked-questions.md)
@@ -12,5 +14,5 @@ Use this section to answer common SPRK questions quickly, look up product terms,
 ## Info
 
 - App sections: `dashboard`, `companies`, `license`, `support`, `preferences`, `backups`
-- Last validated: 2026-05-10
-- Screenshot status: `blocked`
+- Last validated: 2026-06-04
+- Screenshot status: `captured`

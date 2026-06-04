@@ -2,6 +2,8 @@
 
 Use this article to understand how SPRK release-change notes should be read by end users: focus on the visible workflow change, the affected app areas, and whether the change has any accounting impact.
 
+![Release Notes modal showing installed SPRK version 0.3.45 and visible user-facing release changes](../screenshots/faq-glossary-and-release-changes/release-notes-modal-step-01.png)
+
 ## Purpose
 
 Use this workflow when you want to interpret public release notes without confusing a navigation change, update prompt, support improvement, or release-notes modal with a posted accounting transaction.
@@ -50,5 +52,5 @@ You can read user-facing release summaries with the right frame: what changed on
 ## Info
 
 - App sections: `dashboard`, `support`
-- Last validated: 2026-05-10
-- Screenshot status: `blocked`
+- Last validated: 2026-06-04
+- Screenshot status: `captured`
