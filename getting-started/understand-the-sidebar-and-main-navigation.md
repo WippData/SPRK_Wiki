@@ -2,6 +2,8 @@
 
 Learn how the sidebar sections, app header, global search, and main content area work together in SPRK.
 
+![SPRK sidebar and main navigation showing the company switcher, sidebar groups, header search, and main content area](../screenshots/getting-started/sidebar-and-main-navigation-step-01.png)
+
 ## Purpose
 
 Use this article when you want to understand the main SPRK layout before you start working in detailed accounting pages.
@@ -43,4 +45,4 @@ You can recognize where to change pages, where to confirm company context, and w
 
 - App sections: `dashboard`
 - Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Screenshot status: `captured`
