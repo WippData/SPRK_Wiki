@@ -2,6 +2,8 @@
 
 Review app-wide display and formatting settings, control update prompts, tailor the sidebar, manage supported table layouts, and understand which preferences stay with your user profile.
 
+![Column preferences dialog showing drag handles, visibility checkboxes, and move controls](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
+
 ## In This Section
 
 - [Use the Preferences tab](./use-the-preferences-tab.md)
@@ -18,4 +20,4 @@ Review app-wide display and formatting settings, control update prompts, tailor 
 
 - App sections: `preferences`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

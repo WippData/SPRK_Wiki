@@ -2,6 +2,8 @@
 
 Learn the main SPRK layout, move between pages, use search, and work efficiently in supported list views.
 
+![Column preferences dialog used from supported list views to reorder visible columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
+
 ## In This Section
 
 - [Understand the dashboard overview](./understand-the-dashboard-overview.md)
@@ -20,4 +22,4 @@ Learn the main SPRK layout, move between pages, use search, and work efficiently
 
 - App sections: `dashboard`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

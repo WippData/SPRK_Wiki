@@ -2,6 +2,8 @@
 
 Learn which SPRK preferences follow your user profile, how broadly they apply, and what they do not change.
 
+![Column preferences dialog showing user-level column order controls on an invoice table](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
+
 ## Purpose
 
 Use this article when you want to understand whether a preference affects only your view, the whole app, or company accounting data.
@@ -44,4 +46,4 @@ You can distinguish between user-facing personalization and company accounting a
 
 - App sections: `preferences`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

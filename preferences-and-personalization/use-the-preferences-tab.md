@@ -2,6 +2,8 @@
 
 Open `Preferences` to manage app-wide appearance, formatting, update notification, navigation, automation, and getting-started settings.
 
+![Column preferences dialog showing drag handles, visibility checkboxes, and move controls for invoice columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
+
 ## Purpose
 
 Use this workflow when you want to review or change how SPRK looks and behaves for your user profile across the app.
@@ -65,4 +67,4 @@ Your user-level preferences are applied across the SPRK app, including display, 
 
 - App sections: `preferences`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`
