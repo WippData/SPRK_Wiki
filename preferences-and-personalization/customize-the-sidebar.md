@@ -2,6 +2,8 @@
 
 Use the sidebar editor in `Preferences` to rename sections, reorder links, hide items, and add external links for your own navigation setup.
 
+![Sidebar configuration modal showing editable sidebar sections, labels, reorder controls, and visibility toggles](../screenshots/preferences-and-personalization/customize-sidebar-step-01.png)
+
 ## Purpose
 
 Use this workflow when you want the left sidebar to better match how you move through SPRK each day without changing underlying accounting data.
@@ -49,5 +51,5 @@ Your sidebar reflects your saved navigation preferences while keeping required s
 ## Info
 
 - App sections: `preferences`
-- Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
