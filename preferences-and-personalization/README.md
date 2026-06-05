@@ -1,6 +1,6 @@
 # Preferences and Personalization
 
-Review app-wide display and formatting settings, control update prompts, tailor the sidebar, and understand which preferences stay with your user profile.
+Review app-wide display, formatting, account-selector ordering, update prompts, sidebar customization, and which preferences stay with your user profile.
 
 ## In This Section
 
@@ -17,5 +17,5 @@ Review app-wide display and formatting settings, control update prompts, tailor 
 ## Info
 
 - App sections: `preferences`
-- Last validated: 2026-06-02
-- Screenshot status: `planned`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`
