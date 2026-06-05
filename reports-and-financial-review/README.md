@@ -1,6 +1,6 @@
 # Reports and Financial Review
 
-Open the Reports area, run the report you need, review supporting detail, and understand report navigation inside SPRK.
+Open the Reports area, run the report you need, set date controls, review supporting detail, and understand report navigation inside SPRK.
 
 ## In This Section
 

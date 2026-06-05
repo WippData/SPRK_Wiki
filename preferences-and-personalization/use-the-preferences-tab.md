@@ -1,6 +1,6 @@
 # Use the Preferences Tab
 
-Open `Preferences` to manage app-wide appearance, formatting, update notification, navigation, automation, and getting-started settings.
+Open `Preferences` to manage app-wide appearance, formatting, date display, update notification, navigation, automation, and getting-started settings.
 
 ![Preferences page showing the Account dropdown sorting control and its ordering choices](../screenshots/preferences-and-personalization/account-dropdown-sorting-preference-step-01.png)
 
@@ -25,20 +25,22 @@ Use this workflow when you want to review or change how SPRK looks and behaves f
 4. Review the `Formatting` card:
    - Choose a `Number format`.
    - Choose a `Currency format`.
-   - Choose a `Date format`.
+   - Choose a `Date format`. SPRK's standard default is `MM/DD/YYYY`, but your saved profile can use another visible format such as `YYYY-MM-DD`, `YYYY/MM/DD`, `MM-DD-YYYY`, `DD-MM-YYYY`, or `DD/MM/YYYY`.
    - Choose a `Decimal data entry` style.
-5. Review the `Updates` card and choose the automatic update frequency you want.
-6. Review the `Automation` card if you want to adjust supported default-account helpers.
-7. Review the `Navigation` card if you want to tailor the sidebar layout later.
-8. Review the `Getting started` card if you want the dashboard tour to appear again.
-9. Save preferences when you finish if the page does not auto-save the changes you made.
+5. When you type dates directly into date fields elsewhere in SPRK, use the order implied by your selected date format. Many date fields accept typed values with separators, and compact entries can normalize to the saved display format after the field accepts them.
+6. Review the `Updates` card and choose the automatic update frequency you want.
+7. Review the `Automation` card if you want to adjust supported default-account helpers.
+8. Review the `Navigation` card if you want to tailor the sidebar layout later.
+9. Review the `Getting started` card if you want the dashboard tour to appear again.
+10. Save preferences when you finish if the page does not auto-save the changes you made.
 
 ## Expected Result
 
-Your user-level preferences are applied across the SPRK app, including display, formatting, grid-edit startup behavior, and update prompt behavior. Current general ledger impact as of 2026-06-05:
+Your user-level preferences are applied across the SPRK app, including display, formatting, date-entry interpretation, grid-edit startup behavior, and update prompt behavior. Current general ledger impact as of 2026-06-05:
 
 - Changing preferences does not create, edit, or delete a journal entry.
 - Display and formatting updates change how information is shown to you, not the underlying transaction amounts.
+- Changing `Date format` changes how date fields display and interpret typed dates; it does not rewrite posted transaction dates.
 - Turning on `Grid Edit default` changes how supported pages open for your user profile, not which records exist or how they post.
 - Changing `Account dropdown sorting` changes the order used by supported account page-link dropdowns across the app, not the chart of accounts itself.
 - Resetting the getting-started tour affects onboarding prompts only and does not change company books.
@@ -47,6 +49,7 @@ Your user-level preferences are applied across the SPRK app, including display, 
 
 - Treating Preferences as a company setup page instead of a user-level settings area.
 - Assuming number or currency display choices recalculate posted balances.
+- Typing compact dates without checking that the digits match your selected date order.
 - Assuming `Grid Edit default` changes every page in SPRK instead of supported list pages only.
 - Assuming account selectors always appear in one fixed order for every user.
 - Leaving the page before saving after making changes that are not auto-saved.
@@ -56,6 +59,8 @@ Your user-level preferences are applied across the SPRK app, including display, 
 - [Customize the sidebar](./customize-the-sidebar.md)
 - [Understand personalization boundaries and saved behavior](./understand-personalization-boundaries-and-saved-behavior.md)
 - [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)
+- [Create your first company](../company-setup-and-migration/create-your-first-company.md)
+- [View available reports](../reports-and-financial-review/view-available-reports.md)
 - [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
 - [Understand the sidebar and main navigation](../getting-started/understand-the-sidebar-and-main-navigation.md)
 

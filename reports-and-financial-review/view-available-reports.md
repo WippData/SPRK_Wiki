@@ -28,6 +28,7 @@ Use this workflow when you want to see which reports are available in SPRK and r
 5. Set the date controls required for that tab:
    - Range-based reports use a period preset and date range.
    - As-of reports use an as-of style date.
+   - Date fields can be selected from the calendar or typed directly. Typed dates should follow your saved `Preferences` date order, and accepted compact entries can normalize to the visible display format.
    - `Income Statement` also supports compare-period controls and optional grouping.
    - `Tax Forms` requires a tax-form selection before you run it.
    - `Reconciliation` requires an account and posted statement period.
@@ -39,7 +40,7 @@ Use this workflow when you want to see which reports are available in SPRK and r
 
 ## Expected Result
 
-The selected report loads in the main table area with the date context and controls that match that report type. Current general ledger impact as of 2026-06-04:
+The selected report loads in the main table area with the date context and controls that match that report type. Current general ledger impact as of 2026-06-05:
 
 - Opening a report tab does not post anything to the ledger.
 - Running a report reads posted data for the active company but does not change balances.
@@ -50,6 +51,7 @@ The selected report loads in the main table area with the date context and contr
 
 - Forgetting to confirm the active company before running the report.
 - Expecting every report tab to use the same date controls.
+- Typing report dates in a different order than the date format saved in `Preferences`.
 - Assuming a blank report means the report is broken, when it may mean there is no activity for the selected period.
 - Treating `Export` as a way to move data back into SPRK. It is an outbound file action for the current report result.
 
@@ -60,6 +62,7 @@ The selected report loads in the main table area with the date context and contr
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
 - [View and print bank reconciliation reports](../reconciliation/view-and-print-bank-reconciliation-reports.md)
 - [Interpret report navigation without accounting advice](./interpret-report-navigation-without-accounting-advice.md)
+- [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
 
 ## Info
 

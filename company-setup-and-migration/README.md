@@ -1,6 +1,6 @@
 # Company Setup and Migration
 
-Create a company, import setup data from another system, download starter templates for migration files, and switch between companies in SPRK.
+Create a company, set date-sensitive setup defaults, import setup data from another system, download starter templates for migration files, and switch between companies in SPRK.
 
 ## In This Section
 

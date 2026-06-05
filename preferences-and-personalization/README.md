@@ -1,6 +1,6 @@
 # Preferences and Personalization
 
-Review app-wide display, formatting, account-selector ordering, update prompts, sidebar customization, and which preferences stay with your user profile.
+Review app-wide display, formatting, date-entry, account-selector ordering, update prompts, sidebar customization, and which preferences stay with your user profile.
 
 ## In This Section
 

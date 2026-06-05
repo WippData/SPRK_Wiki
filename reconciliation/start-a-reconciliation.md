@@ -25,6 +25,7 @@ Use this workflow when you are ready to begin reconciling one bank or credit car
    - If SPRK does not find a prior reconciliation, select the `Opening balance journal entry` that should anchor the account's first reconciliation.
 5. For a first-time reconciliation, confirm that SPRK derives the opening and ending values from the selected journal entry before continuing.
 6. If this is not the first reconciliation, enter or confirm the `Statement ending date`.
+   - Use the calendar control or type the date directly in the order set by your `Preferences` date format.
 7. If this is not the first reconciliation, enter the `Statement ending balance`:
    - Use a positive number for bank accounts.
    - Use a negative number for credit accounts.
@@ -45,6 +46,7 @@ The reconciliation workflow is initialized with statement dates and balances for
 - Starting on the wrong bank or credit card account.
 - Choosing the wrong opening balance journal entry for the first reconciliation.
 - Entering a positive ending balance for a credit account.
+- Typing a statement date in a different order than your saved date-format preference.
 - Expecting SPRK to let you edit the opening balance from a prior posted reconciliation.
 
 ## Related Articles
@@ -54,9 +56,10 @@ The reconciliation workflow is initialized with statement dates and balances for
 - [Match and unmatch transactions](./match-and-unmatch-transactions.md)
 - [View and print bank reconciliation reports](./view-and-print-bank-reconciliation-reports.md)
 - [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md)
+- [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
 
 ## Info
 
 - App sections: `reconcile`
 - Last validated: 2026-06-05
-- Screenshot status: `partial`
+- Screenshot status: `captured`
