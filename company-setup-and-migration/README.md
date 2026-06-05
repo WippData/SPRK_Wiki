@@ -1,6 +1,6 @@
 # Company Setup and Migration
 
-Create a company, import setup data from another system, and switch between companies in SPRK.
+Create a company, import setup data from another system, download starter templates for migration files, and switch between companies in SPRK.
 
 ## In This Section
 
@@ -19,5 +19,5 @@ Create a company, import setup data from another system, and switch between comp
 ## Info
 
 - App sections: `companies`
-- Last validated: 2026-05-01
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`
