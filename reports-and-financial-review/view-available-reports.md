@@ -22,6 +22,7 @@ Use this workflow when you want to see which reports are available in SPRK and r
    - `Balance Sheet`
    - `Cash Flow (Indirect)`
    - `Tax Forms`
+   - `Reconciliation`
    - Transaction-detail views such as `General Ledger` and `Account Detail` are also available.
 4. Select the tab you want to run.
 5. Set the date controls required for that tab:
@@ -29,6 +30,7 @@ Use this workflow when you want to see which reports are available in SPRK and r
    - As-of reports use an as-of style date.
    - `Income Statement` also supports compare-period controls and optional grouping.
    - `Tax Forms` requires a tax-form selection before you run it.
+   - `Reconciliation` requires an account and posted statement period.
    - `General Ledger` adds filters for `Account Type`, `Account SubType`, `Accounts`, `Vendor`, `Text`, `Group By`, and optional `Include opening balance`.
 6. Select `Run`.
 7. Review the table and any summary cards that appear for the selected report.
@@ -42,6 +44,7 @@ The selected report loads in the main table area with the date context and contr
 - Opening a report tab does not post anything to the ledger.
 - Running a report reads posted data for the active company but does not change balances.
 - Export and print are output actions only and do not create journal entries.
+- Reconciliation reports are review outputs for posted reconciliation sessions and do not create new ledger activity.
 
 ## Common Mistakes
 
@@ -55,10 +58,11 @@ The selected report loads in the main table area with the date context and contr
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)
 - [Export transactions from reports](./export-transactions-from-reports.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
+- [View and print bank reconciliation reports](../reconciliation/view-and-print-bank-reconciliation-reports.md)
 - [Interpret report navigation without accounting advice](./interpret-report-navigation-without-accounting-advice.md)
 
 ## Info
 
 - App sections: `reports`
-- Last validated: 2026-06-04
-- Screenshot status: `planned`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`
