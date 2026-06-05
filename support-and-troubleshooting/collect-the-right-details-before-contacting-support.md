@@ -1,5 +1,7 @@
 # Collect the right details before contacting support
 
+![Support tab showing the Support Activity Log, contact options, and bug-reporting link](../screenshots/support-and-troubleshooting/collect-support-details-step-01.png)
+
 Prepare a clear support request by capturing the current session log, confirming the workflow you were using, and writing down the visible result before you reach out.
 
 ## Purpose
@@ -30,7 +32,7 @@ Use this workflow when you want to save time with support and avoid a back-and-f
 
 ## Expected Result
 
-Your support request includes the core details needed to investigate the issue, and the exported log gives support a text record of the captured session activity. Current general ledger impact as of 2026-05-25:
+Your support request includes the core details needed to investigate the issue, and the exported log gives support a text record of the captured session activity. Current general ledger impact as of 2026-06-05:
 
 - Downloading the support log does not create or modify any ledger transaction.
 - Collecting support notes, opening contact links, and using the bug-reporting link do not affect account balances or financial reports.
@@ -52,5 +54,5 @@ Your support request includes the core details needed to investigate the issue, 
 ## Info
 
 - App sections: `support`
-- Last validated: 2026-05-25
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
