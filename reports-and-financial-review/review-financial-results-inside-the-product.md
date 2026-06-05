@@ -22,7 +22,7 @@ Use this workflow when you want to review company results in SPRK by period, as 
    - `Cash Flow (Indirect)` for period-based cash-movement review.
    - `General Ledger` for filtered transaction detail by type, subtype, account, vendor, or text.
    - `Account Detail` for transaction detail on one selected account.
-3. Set the period or date controls for the selected report.
+3. Set the period or date controls for the selected report. You can use the calendar controls or type dates directly when the field is editable; typed dates should follow your saved `Preferences` date order.
 4. If you are on `Income Statement`, add a compare period when you want side-by-side period review.
 5. If you are on `Income Statement`, use `Group By` when you want the report split by month, quarter, or year.
 6. Select `Run`.
@@ -32,7 +32,7 @@ Use this workflow when you want to review company results in SPRK by period, as 
 
 ## Expected Result
 
-You can review current report totals and detailed lines directly in SPRK for the selected company and period. Current general ledger impact as of 2026-06-04:
+You can review current report totals and detailed lines directly in SPRK for the selected company and period. Current general ledger impact as of 2026-06-05:
 
 - Report totals reflect posted activity already stored in SPRK.
 - Running or rerunning the report does not create, reverse, or reclassify any journal entry.
@@ -42,6 +42,7 @@ You can review current report totals and detailed lines directly in SPRK for the
 
 - Using the wrong report for the question you are trying to answer.
 - Comparing periods without checking that the date ranges match your intent.
+- Typing date shortcuts without confirming they match your selected date-format order.
 - Treating report output as a substitute for reviewing the underlying entries when a balance looks unexpected.
 - Assuming a report review changes the ledger automatically. Any correction still has to happen through the relevant transaction or journal-entry workflow.
 
@@ -51,9 +52,10 @@ You can review current report totals and detailed lines directly in SPRK for the
 - [Export transactions from reports](./export-transactions-from-reports.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
 - [Interpret report navigation without accounting advice](./interpret-report-navigation-without-accounting-advice.md)
+- [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
 
 ## Info
 
 - App sections: `reports`
-- Last validated: 2026-06-04
-- Screenshot status: `planned`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`

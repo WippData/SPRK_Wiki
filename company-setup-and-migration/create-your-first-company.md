@@ -30,8 +30,9 @@ Use this workflow when you want to start a new company in SPRK without importing
    - `Dimensions`
    - `Default Accounts Receivable`
    - `Default Accounts Payable`
-6. Select `Create`.
-7. Confirm that the new company appears in the companies list and becomes the active company after creation.
+6. For date fields such as `Posting Cutoff Date` and `Fiscal Year End`, you can use the visible calendar control or type a date directly. Typed dates should follow your saved `Preferences` date order; SPRK normalizes accepted entries to the selected display format.
+7. Select `Create`.
+8. Confirm that the new company appears in the companies list and becomes the active company after creation.
 
 ## Expected Result
 
@@ -42,6 +43,7 @@ The new company is added to the `Companies` table and becomes available as the a
 - Leaving `Company Display name` blank. The create action is not meant to succeed without it.
 - Turning off `Accounts setup` without planning how the chart of accounts will be created afterward.
 - Setting the wrong `Country (ISO)` format. Use the short country code shown by the product, not the full country name.
+- Typing setup dates in an order that does not match your saved date-format preference.
 - Ignoring default receivable or payable account settings when your team needs invoices or bills immediately after setup.
 
 ## Related Articles
@@ -51,9 +53,10 @@ The new company is added to the `Companies` table and becomes available as the a
 - [Use the Import Wizard](./use-the-import-wizard.md)
 - [Switch between companies](./switch-between-companies.md)
 - [Use the Companies tab](../company-administration/use-the-companies-tab.md)
+- [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
 
 ## Info
 
 - App sections: `companies`
-- Last validated: 2026-05-01
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`

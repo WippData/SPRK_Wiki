@@ -2,7 +2,7 @@
 
 Reconcile a bank or credit card account against a statement, manage matched transactions, and finish only when the difference is zero.
 
-Begin by choosing the specific bank or credit card account you want to reconcile so the statement balances and clearing work stay tied to the correct register.
+Begin by choosing the specific bank or credit card account you want to reconcile so statement dates, statement balances, and clearing work stay tied to the correct register.
 
 ## In This Section
 
@@ -16,5 +16,5 @@ For linked journal reversals available from the reconciliation table, see [Edit 
 ## Info
 
 - App sections: `reconcile`
-- Last validated: 2026-05-30
+- Last validated: 2026-06-05
 - Screenshot status: `captured`
