@@ -2,6 +2,8 @@
 
 Learn how the active company affects what you see as you move through SPRK and how to avoid working in the wrong company.
 
+![Company switcher open in Demo Company showing the active company and available company choices](../screenshots/dashboard-and-navigation/company-aware-navigation-step-01.png)
+
 ## Purpose
 
 Use this article when you want to understand why navigation results can change based on the active company and how to verify you are working in the right place.
@@ -38,5 +40,5 @@ You understand that pages, search results, dashboard data, and accounting workfl
 ## Info
 
 - App sections: `dashboard`, `companies`
-- Last validated: 2026-05-01
-- Screenshot status: `not-started`
+- Last validated: 2026-06-04
+- Screenshot status: `captured`
