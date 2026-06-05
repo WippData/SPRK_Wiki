@@ -52,10 +52,11 @@ The reconciliation workflow is initialized with statement dates and balances for
 - [Choose bank and credit card accounts](../banking-and-cash-management/choose-bank-and-credit-card-accounts.md)
 - [Finish a reconciliation](./finish-a-reconciliation.md)
 - [Match and unmatch transactions](./match-and-unmatch-transactions.md)
+- [View and print bank reconciliation reports](./view-and-print-bank-reconciliation-reports.md)
 - [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md)
 
 ## Info
 
 - App sections: `reconcile`
-- Last validated: 2026-05-30
-- Screenshot status: `captured`
+- Last validated: 2026-06-05
+- Screenshot status: `partial`

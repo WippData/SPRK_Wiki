@@ -20,6 +20,7 @@ Use this workflow when you want to review company results in SPRK by period, as 
    - `Balance Sheet` for balances as of a date.
    - `Trial Balance` for account balances as of a date.
    - `Cash Flow (Indirect)` for period-based cash-movement review.
+   - `Reconciliation` for posted bank or credit card reconciliation report output.
    - `General Ledger` for filtered transaction detail by type, subtype, account, vendor, or text.
    - `Account Detail` for transaction detail on one selected account.
 3. Set the period or date controls for the selected report.
@@ -37,6 +38,7 @@ You can review current report totals and detailed lines directly in SPRK for the
 - Report totals reflect posted activity already stored in SPRK.
 - Running or rerunning the report does not create, reverse, or reclassify any journal entry.
 - Compare-period and grouping views reorganize the display only; they do not change source transactions.
+- Running a reconciliation report reads a posted reconciliation period for the selected account; it does not reopen or change that reconciliation.
 
 ## Common Mistakes
 
@@ -50,10 +52,11 @@ You can review current report totals and detailed lines directly in SPRK for the
 - [View available reports](./view-available-reports.md)
 - [Export transactions from reports](./export-transactions-from-reports.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
+- [View and print bank reconciliation reports](../reconciliation/view-and-print-bank-reconciliation-reports.md)
 - [Interpret report navigation without accounting advice](./interpret-report-navigation-without-accounting-advice.md)
 
 ## Info
 
 - App sections: `reports`
-- Last validated: 2026-06-04
-- Screenshot status: `planned`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`
