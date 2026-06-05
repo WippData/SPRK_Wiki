@@ -11,6 +11,7 @@ Use this workflow when imported or manually entered bank activity needs review b
 - A bank or credit card account is available on the Banking page.
 - The transaction already exists in the selected account as a pending row.
 - The offset account or split accounts you want to use are available.
+- If the transaction came from an import, the import preview has already been confirmed.
 
 ## Steps
 
@@ -18,6 +19,9 @@ Use this workflow when imported or manually entered bank activity needs review b
 2. Select the bank or credit card account you want to review.
    - If a default account opens automatically, confirm that it is the account you meant to review before you edit or confirm transactions.
 3. Stay on the `Pending` tab.
+   - If you are still in the import preview, finish preview review first.
+   - Use `Skip` in the preview for likely duplicate rows that should not become pending transactions.
+   - Confirm the preview only after the selected-row count matches the rows you want to review in `Pending`.
 4. Confirm that the register belongs to the account you selected:
    - `Pending` and `Categorized` both reflect the selected bank or credit card account only.
    - Switching to another account changes which register you are reviewing.
@@ -46,6 +50,7 @@ Use this workflow when imported or manually entered bank activity needs review b
 The reviewed transaction is confirmed and removed from the pending queue. Current general ledger impact as of 2026-05-29:
 
 - Changing a vendor, changing `Categorize To`, saving draft splits, and matching a check do not post to the general ledger by themselves.
+- Import-preview duplicate review, row skipping, and preview confirmation do not post to the general ledger by themselves.
 - Confirming a transaction creates or links the journal-entry result for that bank transaction.
 - Linked journal entries can be opened and reversed from `Reconcile` when the row shows the `Journal` action.
 - The selected bank or credit card account remains the bank-side line of the confirmed entry.
@@ -58,6 +63,7 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 
 - Confirming without selecting a category, saving a valid split, or matching the correct check.
 - Using the wrong bank account card and then confirming a transaction into the wrong cash account.
+- Treating `Possible duplicate` import-preview warnings as final postings. They are pre-confirm safeguards before rows enter `Pending`.
 - Assuming a row suggestion from a rule or vendor setup means the transaction has already posted.
 - Expecting a vendor default to override a manual category or saved split you already chose.
 - Expecting an incomplete split total to save in the current split editor.
@@ -76,5 +82,5 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-06-02
-- Screenshot status: `captured`
+- Last validated: 2026-06-04
+- Screenshot status: `blocked`

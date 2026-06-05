@@ -19,6 +19,7 @@ Use this article when you want a high-level map of the Banking page before impor
    - The page title is `Bank & Credit Import`.
    - `New` lets you enter a bank transaction manually.
    - `Refresh` reloads the current account activity and pending suggestions.
+   - `Import` opens the current bank transaction import starter modal after an account is selected.
 3. Use the account cards near the top of the page to choose the bank or credit card account you want to work in:
    - SPRK can open a saved default account automatically when one is already set for the active company.
    - If no account is active yet, choose one before you import or review activity.
@@ -28,9 +29,12 @@ Use this article when you want a high-level map of the Banking page before impor
 4. If the account you need is missing, add the bank or credit card account before continuing:
    - Some chooser views can offer an add-account path without leaving the current workflow.
    - The account must exist in the active company before you can import or reconcile activity into it.
-5. Use the upload area beside the account cards to import one file at a time for the selected account:
+5. Use either import entry point to import one file at a time for the selected account:
+   - The header `Import` action opens a starter modal with accepted formats, `Download Template`, and `Import File`.
    - You can click the uploader or drag a file onto it.
-   - Importing only adds or updates pending transactions for the selected account.
+   - Importing opens a preview before rows are added to pending review.
+   - The preview can warn when a row appears to be a duplicate and lets you skip rows before confirming the batch.
+   - Confirming the preview only adds or updates selected, non-skipped pending transactions for the selected account.
 6. Review the `Transactions` area:
    - Filters support description, amount, date, amount type, categorized-to account, rule-applied status, and class filters when dimensions are enabled.
    - `Pending` shows transactions that still need review before posting.
@@ -49,7 +53,7 @@ You understand where to select the account, where imported files enter the workf
 
 - Viewing the Banking page does not post anything to the general ledger.
 - Selecting an account or saving a default account does not post anything to the general ledger.
-- Selecting accounts, filtering, importing files, editing categories, assigning vendors, creating splits, and matching checks on the page are preparation steps only.
+- Selecting accounts, filtering, opening an import preview, skipping import-preview rows, editing categories, assigning vendors, creating splits, and matching checks on the page are preparation steps only.
 - General ledger posting happens when a pending transaction is confirmed.
 
 ## Common Mistakes
@@ -58,6 +62,7 @@ You understand where to select the account, where imported files enter the workf
 - Treating the `Categorized` tab as the place where edits are staged. It reflects transactions that are already confirmed.
 - Assuming a rule-based suggestion means the transaction has already posted.
 - Forgetting that importing into the wrong selected account sends the pending rows into that account's workflow.
+- Assuming a duplicate warning blocks the whole import. Review the row, skip it if needed, and confirm only the rows that should enter `Pending`.
 - Relying on the wrong saved default account when you switch between multiple bank or credit card accounts.
 
 ## Related Articles
@@ -70,5 +75,5 @@ You understand where to select the account, where imported files enter the workf
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-05-30
-- Screenshot status: `captured`
+- Last validated: 2026-06-04
+- Screenshot status: `blocked`
