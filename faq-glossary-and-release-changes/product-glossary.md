@@ -2,6 +2,8 @@
 
 Use this glossary to translate common SPRK labels into plain language so you can move through the app with less guesswork.
 
+![Product Glossary expanded in Support How To Guides with the SPRK sidebar and settings context visible](../screenshots/faq-glossary-and-release-changes/product-glossary-step-01.png)
+
 ## Purpose
 
 Use this article when you see a product term in the sidebar, settings, or help content and want a short public-facing definition.
@@ -53,5 +55,5 @@ You can interpret common SPRK terms more consistently and navigate to the right 
 ## Info
 
 - App sections: `dashboard`, `chart`, `reconcile`, `support`, `license`, `preferences`, `backups`, `checklists`, `rules`
-- Last validated: 2026-05-10
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
