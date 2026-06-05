@@ -1,5 +1,7 @@
 # Understand Active Company Behavior
 
+![Companies tab showing Demo Company selected as the active company](../screenshots/company-administration/active-company-behavior-step-01.png)
+
 Learn what changes when you select a different active company and what stays separate across companies.
 
 ## Purpose
@@ -37,5 +39,5 @@ You can predict which company your work applies to before opening any accounting
 ## Info
 
 - App sections: `companies`, `dashboard`
-- Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
