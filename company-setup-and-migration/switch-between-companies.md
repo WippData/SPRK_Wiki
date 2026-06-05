@@ -2,6 +2,8 @@
 
 Change the active company from the Companies page so the rest of the app updates to the company you want to work in.
 
+![Companies page showing Demo Company selected and other active companies available to select](../screenshots/company-setup-and-migration/switch-between-companies-step-01.png)
+
 ## Purpose
 
 Use this workflow when you need to move from one SPRK company to another without signing out.
@@ -40,5 +42,5 @@ The selected company becomes the active company across the app.
 ## Info
 
 - App sections: `companies`
-- Last validated: 2026-05-01
-- Screenshot status: `not-started`
+- Last validated: 2026-06-04
+- Screenshot status: `captured`
