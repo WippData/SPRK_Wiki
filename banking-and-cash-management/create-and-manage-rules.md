@@ -4,6 +4,8 @@
 
 Build rules that prefill categorization for repeated bank transaction patterns, then manage scope, priority, and imported rule sets from the Rules page.
 
+![Rules import dialog showing template guidance, required columns, recommended columns, and supported file types](../screenshots/banking-and-cash-management/rules-import-template-guidance-step-01.png)
+
 ## Purpose
 
 Use this workflow when the same bank or credit card transactions appear repeatedly and you want SPRK to prepare those rows more consistently before you confirm them.
@@ -49,8 +51,12 @@ Use this workflow when the same bank or credit card transactions appear repeated
    - Drag rows to reorder them.
    - Use the row-level reorder action if you want to move a rule to the top, bottom, or a specific position.
    - Use `Reorder rule` when you want to move a rule by name and target position.
-13. If you already maintain rules in a spreadsheet, use `Import` to preview and load a rules file.
-   - The current import flow accepts `.xlsx` and `.xls`.
+13. If you already maintain rules outside SPRK, use `Import` to preview and load a rules file.
+   - The import modal shows the rule template expectations before you select a file.
+   - Accepted formats are `.xlsx` and `.csv`.
+   - QuickBooks rules exports are accepted as-is when they are saved as `.xlsx`.
+   - Generic spreadsheet or CSV rule files should include `Conditions` and `Actions` columns.
+   - `Name` and `Description` are recommended so imported rules are easier to review later.
    - Review the preview and any reported issues before confirming the import.
 14. Edit, disable, or delete rules as your transaction patterns change.
 
@@ -70,6 +76,8 @@ The rule is saved and becomes available when SPRK evaluates pending bank transac
 - Using percent splits that do not total exactly `100%`.
 - Using fixed-amount splits without setting `Balance to`.
 - Making the description match too broad and catching unrelated transactions.
+- Uploading a generic rules file without `Conditions` and `Actions` columns.
+- Treating a QuickBooks rules export as a generic CSV. Save the export as `.xlsx` when you want SPRK to read it as a QuickBooks rules export.
 
 ## Related Articles
 

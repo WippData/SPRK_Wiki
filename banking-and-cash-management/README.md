@@ -1,6 +1,6 @@
 # Banking and Cash Management
 
-Import bank activity, review pending transactions, confirm transactions when they are ready, and create rules for repeated patterns.
+Import bank activity, review pending transactions, confirm transactions when they are ready, and create or import rules for repeated patterns.
 
 ## In This Section
 
@@ -13,5 +13,5 @@ Import bank activity, review pending transactions, confirm transactions when the
 ## Info
 
 - App sections: `banking`, `rules`
-- Last validated: 2026-05-30
+- Last validated: 2026-06-05
 - Screenshot status: `captured`
