@@ -9,7 +9,7 @@ Use this article when you want to understand whether a preference affects only y
 ## Key Points
 
 - The Preferences page describes its settings as applying across all companies across the entire app.
-- Theme, UI scale, display formatting, grid-edit startup behavior, automatic update prompts, and sidebar customization are personalization settings, not accounting transactions.
+- Theme, UI scale, display formatting, grid-edit startup behavior, account-dropdown sorting, automatic update prompts, and sidebar customization are personalization settings, not accounting transactions.
 - Preferences can change how values and pages are presented without changing source amounts or posted history.
 - The active company still matters for navigation context, but your user preferences are broader than a single company.
 - SPRK keeps certain settings access available even when you customize the sidebar, so required configuration paths remain reachable.
@@ -17,12 +17,13 @@ Use this article when you want to understand whether a preference affects only y
 
 ## Expected Result
 
-You can distinguish between user-facing personalization and company accounting activity before making changes. Current general ledger impact as of 2026-06-02:
+You can distinguish between user-facing personalization and company accounting activity before making changes. Current general ledger impact as of 2026-06-05:
 
 - Personalization settings do not post to the general ledger.
 - Saved preferences do not move transactions between companies or reopen closed periods.
 - Display-only formatting changes do not rewrite journal entries, invoices, bills, or reconciliations.
 - Changing supported table layouts or enabling default Grid Edit changes your working view, not the underlying accounting data.
+- When `Grid Edit default` is on, supported list pages can open directly into grid mode for your user profile; it does not force unsupported pages into grid mode.
 
 ## Common Mistakes
 
@@ -41,5 +42,5 @@ You can distinguish between user-facing personalization and company accounting a
 ## Info
 
 - App sections: `preferences`
-- Last validated: 2026-06-02
-- Screenshot status: `planned`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`

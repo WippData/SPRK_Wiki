@@ -18,7 +18,8 @@ Use this workflow when you want to review or change how SPRK looks and behaves f
 3. Review the `Appearance` card:
    - Use the theme toggle to switch between light and dark mode.
    - Adjust `UI scale` if you need larger or smaller interface sizing.
-   - Turn on `Grid Edit default` if you want supported list pages to open in Grid Edit mode automatically.
+   - Turn on `Grid Edit default` if you want supported list pages to open in grid mode automatically.
+   - The current helper text says this opens supported tables in Grid Edit mode by default.
 4. Review the `Formatting` card:
    - Choose a `Number format`.
    - Choose a `Currency format`.
@@ -32,7 +33,7 @@ Use this workflow when you want to review or change how SPRK looks and behaves f
 
 ## Expected Result
 
-Your user-level preferences are applied across the SPRK app, including display, formatting, grid-edit startup behavior, and update prompt behavior. Current general ledger impact as of 2026-06-02:
+Your user-level preferences are applied across the SPRK app, including display, formatting, grid-edit startup behavior, and update prompt behavior. Current general ledger impact as of 2026-06-05:
 
 - Changing preferences does not create, edit, or delete a journal entry.
 - Display and formatting updates change how information is shown to you, not the underlying transaction amounts.
@@ -57,5 +58,5 @@ Your user-level preferences are applied across the SPRK app, including display, 
 ## Info
 
 - App sections: `preferences`
-- Last validated: 2026-06-02
-- Screenshot status: `planned`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`
