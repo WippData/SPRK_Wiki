@@ -1,6 +1,6 @@
 # Dashboard and Navigation
 
-Learn the main SPRK layout, move between pages, and use search to get where you need to go faster.
+Learn the main SPRK layout, move between pages, use search to get where you need to go faster, and understand shared table tools such as Grid Edit.
 
 ## In This Section
 
@@ -19,5 +19,5 @@ Learn the main SPRK layout, move between pages, and use search to get where you 
 ## Info
 
 - App sections: `dashboard`
-- Last validated: 2026-06-02
-- Screenshot status: `planned`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`

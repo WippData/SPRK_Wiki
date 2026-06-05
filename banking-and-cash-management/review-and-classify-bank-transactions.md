@@ -36,10 +36,16 @@ Use this workflow when imported or manually entered bank activity needs review b
 12. Confirm the transaction:
    - Use the row-level primary action for one transaction.
    - Or select several rows, use the bulk account or vendor tools if helpful, then choose `Confirm selected`.
+   - In the standard `Pending` table, use the checkbox column to choose rows for the bulk toolbar.
+   - In Banking Grid Edit, use the row-number column when the build exposes row selection there; the Banking toolbar can then show selected-row actions such as `Confirm selected`.
    - SPRK requires each selected row to have either a category, a saved split, or a matched check before it can confirm.
 13. Review the transaction after confirmation. It leaves `Pending` and appears under `Categorized`.
 14. If the confirmed transaction later needs to be reversed, open the linked journal entry from `Reconcile` where the row shows an enabled `Journal` action.
-15. Use Grid Edit on supported Banking tables when repeated classification cleanup will be faster than opening one row at a time, but review the final rows carefully before confirming transactions.
+15. Use Grid Edit on supported Banking tables when repeated classification cleanup will be faster than opening one row at a time:
+   - Draft Grid Edit changes are not the same as confirmation.
+   - Apply pending Grid Edit changes before you run Banking bulk actions such as applying an account, applying a vendor, confirming selected rows, deleting rows, or selecting categorized rows.
+   - If SPRK blocks a bulk action while the changed-cell counter is still active, review the edits, choose `Apply Changes`, and then run the bulk action after the grid is clean.
+   - Review the final rows carefully before confirming transactions.
 
 ## Expected Result
 
@@ -62,6 +68,7 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - Expecting a vendor default to override a manual category or saved split you already chose.
 - Expecting an incomplete split total to save in the current split editor.
 - Forgetting that a matched check still needs confirmation from the bank transaction workflow.
+- Trying to confirm or bulk-update selected Banking rows before applying draft Grid Edit changes.
 
 ## Related Articles
 
@@ -76,5 +83,5 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-06-02
-- Screenshot status: `captured`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`

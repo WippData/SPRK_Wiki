@@ -32,12 +32,23 @@ Use this workflow when you want to make the same kind of change across several r
    - Leave required columns visible when SPRK keeps them protected.
 10. Use the page's `More` menu to leave Grid Edit mode when you want to return to the standard row-action view.
 
+## Banking-Specific Selection Behavior
+
+Banking uses Grid Edit for transaction-review cleanup, but Banking also has posting-sensitive bulk actions. Treat those actions separately from ordinary changed-cell tracking:
+
+- The standard Banking `Pending` table uses checkboxes to select rows for actions such as applying an account, applying a vendor, confirming selected rows, or deleting selected rows.
+- Banking Grid Edit can expose selected-row actions in the same toolbar, including `Confirm selected`, when row selection is available in that mode.
+- Row selection is Banking-specific guidance. Do not assume every Grid Edit table in SPRK supports selected rows or an in-grid confirmation action.
+- If the Banking changed-cell counter is active, apply or discard those Grid Edit changes before running bulk account, vendor, confirm, delete, or select-categorized actions.
+- Applying Grid Edit changes saves the draft cell edits; confirming a bank transaction is still the step that posts or links the ledger result.
+
 ## Expected Result
 
 You can review and apply repeated list updates from one table instead of opening each record individually. Current general ledger impact as of 2026-06-02:
 
 - Entering or reviewing draft grid changes does not post to the general ledger by itself.
 - Applying list edits updates the saved record data for that page, not a new journal-entry workflow.
+- On Banking, applying draft Grid Edit changes prepares selected rows for review, but it does not replace the separate transaction confirmation step.
 - The accounting impact still depends on the fields and downstream workflows tied to the records you changed.
 
 ## Common Mistakes
@@ -45,6 +56,8 @@ You can review and apply repeated list updates from one table instead of opening
 - Using Grid Edit for broad cleanup without first confirming you are on the correct page and company context.
 - Applying several edits at once without reviewing the changed-cell count and final cell values.
 - Assuming every list page exposes the same columns or the same editing depth.
+- Assuming every Grid Edit table supports Banking-style selected-row actions.
+- Trying to run Banking bulk actions before applying or discarding draft Grid Edit changes.
 - Forgetting that column preferences affect how the list is displayed, not the underlying accounting logic.
 
 ## Related Articles
@@ -60,5 +73,5 @@ You can review and apply repeated list updates from one table instead of opening
 ## Info
 
 - App sections: `items`, `customers`, `vendors`, `checks`, `banking`, `preferences`
-- Last validated: 2026-06-02
-- Screenshot status: `planned`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`
