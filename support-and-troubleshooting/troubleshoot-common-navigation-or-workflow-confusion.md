@@ -2,6 +2,8 @@
 
 Resolve common "where do I do this?" questions by checking the active company, confirming the correct app area, and using the built-in help and adjacent workflow articles.
 
+![Support How To Guides expanded to the troubleshooting article for navigation and workflow confusion](../screenshots/support-and-troubleshooting/troubleshoot-navigation-confusion-step-01.png)
+
 ## Purpose
 
 Use this workflow when a task feels missing, a page looks different than expected, or you are unsure which section of SPRK owns the workflow you need.
@@ -51,5 +53,5 @@ You can usually narrow the problem to the active company, the wrong app section,
 ## Info
 
 - App sections: `support`
-- Last validated: 2026-05-11
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
