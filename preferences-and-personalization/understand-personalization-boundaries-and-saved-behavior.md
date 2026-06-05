@@ -28,6 +28,7 @@ You can distinguish between user-facing personalization and company accounting a
 - Display-only formatting changes do not rewrite journal entries, invoices, bills, or reconciliations.
 - Account selector ordering does not rename, activate, deactivate, or reorder accounts in the chart of accounts.
 - Changing supported table layouts, reordering columns, or enabling default Grid Edit changes your working view, not the underlying accounting data.
+- When `Grid Edit default` is on, supported list pages can open directly into grid mode for your user profile; it does not force unsupported pages into grid mode.
 
 ## Common Mistakes
 

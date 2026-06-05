@@ -24,6 +24,7 @@ Use this workflow when you want to review or change how SPRK looks and behaves f
    - Adjust `UI scale` if you need larger or smaller interface sizing.
    - Turn on `Grid Edit default` if you want supported list pages to open in Grid Edit mode automatically.
    - Choose `Account dropdown sorting` when you want supported account selectors to be easier to scan. The visible choices are grouped by type then name, grouped by type then code, or flat A-Z.
+   - The current helper text says this opens supported tables in Grid Edit mode by default.
 4. Review the `Formatting` card:
    - Choose a `Number format`.
    - Choose a `Currency format`.

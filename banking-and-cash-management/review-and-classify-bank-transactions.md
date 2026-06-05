@@ -44,7 +44,7 @@ Use this workflow when imported or manually entered bank activity needs review b
    - SPRK requires each selected row to have either a GL account/category, a saved split, or a matched check before it can confirm.
 13. Review the transaction after confirmation. It leaves `Pending` and appears under `Categorized`.
 14. If the confirmed transaction later needs to be reversed, open the linked journal entry from `Reconcile` where the row shows an enabled `Journal` action.
-15. Use Grid Edit on supported Banking tables when repeated classification cleanup will be faster than opening one row at a time, but review the final rows carefully before confirming transactions.
+15. Use `More` > `Enable Grid Mode` on supported Banking tables when repeated classification cleanup will be faster than opening one row at a time, but review and apply draft grid changes before confirming transactions.
 
 ## Expected Result
 
@@ -81,5 +81,5 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-06-04
+- Last validated: 2026-06-05
 - Screenshot status: `captured`

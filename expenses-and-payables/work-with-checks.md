@@ -36,7 +36,7 @@ Use this workflow when you need to track a check, keep its status current, and c
    - `Void` to mark the check voided
    - `Delete` to remove a draft check
 7. Review the `Status`, `Bank`, and `Memo` columns in the list after each action.
-8. Use Grid Edit when several check-list corrections or repeated field updates are easier to review in one table.
+8. Use `More` > `Enable Grid Mode` when several check-list corrections or repeated field updates are easier to review in one table, then review the changed-cell count before selecting `Apply Changes`.
 
 ## Expected Result
 
@@ -65,5 +65,5 @@ The check is stored and can move through draft, issued, matched, cleared, voided
 ## Info
 
 - App sections: `checks`
-- Last validated: 2026-06-02
-- Screenshot status: `planned`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`
