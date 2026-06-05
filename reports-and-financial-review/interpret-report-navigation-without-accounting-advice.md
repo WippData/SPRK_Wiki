@@ -2,6 +2,8 @@
 
 Understand what each report area is for, move between reports and supporting detail, and keep the workflow focused on product navigation rather than accounting conclusions.
 
+![Reports page in Demo Company showing report tabs, date controls, and export and print actions](../screenshots/reports-and-financial-review/report-navigation-step-01.png)
+
 ## Purpose
 
 Use this article when you want a product-usage explanation of how report navigation works in SPRK without turning the page into accounting, tax, or legal advice.
@@ -46,4 +48,4 @@ You can navigate the Reports area confidently and understand what each control i
 
 - App sections: `reports`
 - Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Screenshot status: `captured`
