@@ -2,6 +2,8 @@
 
 Search across customers, vendors, and ledger entries from the persistent search bar at the top of the app.
 
+![Global search results showing ledger entries returned from the app header search field](../screenshots/dashboard-and-navigation/global-search-step-01.png)
+
 ## Purpose
 
 Use global search when you want to jump directly to a customer, vendor, or ledger result without browsing to the page first.
@@ -50,5 +52,5 @@ When possible, SPRK also carries the selected result into that page as a prefill
 ## Info
 
 - App sections: `customers`, `vendors`, `ledger`
-- Last validated: 2026-05-01
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
