@@ -49,7 +49,10 @@ Use this article when you want a high-level map of the Banking page before impor
 8. If you use `New` to enter a bank transaction manually:
    - `GL Account` is required before `Submit & Confirm` can post the transaction.
    - You can leave `GL Account` blank only when you are adding the row for later review instead of confirming it immediately.
-9. Use the bulk controls above the table when you want to apply one account, apply one vendor, confirm several transactions, or delete several transactions at once.
+9. Use the bulk controls above the table when you want to apply one account, apply one vendor, confirm several transactions, or delete several transactions at once:
+   - In the standard table, select rows with the checkbox column.
+   - In Banking Grid Edit, selection may appear through the row-number column when that mode supports selected-row actions.
+   - Bulk posting and cleanup actions should run only after any draft Grid Edit changes have been applied.
 
 ## Expected Result
 
@@ -58,6 +61,7 @@ You understand where to select the account, where imported files enter the workf
 - Viewing the Banking page does not post anything to the general ledger.
 - Selecting an account or saving a default account does not post anything to the general ledger.
 - Selecting accounts, filtering, importing files, editing GL account/category choices, assigning vendors, creating splits, and matching checks on the page are preparation steps only.
+- Draft Grid Edit cleanup remains a preparation step until the changes are applied, and applying Grid Edit changes still does not confirm the bank transaction by itself.
 - General ledger posting happens when a pending transaction is confirmed.
 
 ## Common Mistakes
@@ -67,6 +71,7 @@ You understand where to select the account, where imported files enter the workf
 - Assuming a rule-based suggestion means the transaction has already posted.
 - Forgetting that importing into the wrong selected account sends the pending rows into that account's workflow.
 - Relying on the wrong saved default account when you switch between multiple bank or credit card accounts.
+- Mixing unapplied Grid Edit changes with bulk Banking actions instead of applying the draft changes first.
 
 ## Related Articles
 
@@ -78,5 +83,5 @@ You understand where to select the account, where imported files enter the workf
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-06-04
+- Last validated: 2026-06-05
 - Screenshot status: `captured`
