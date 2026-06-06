@@ -12,5 +12,5 @@ Use this section to answer common SPRK questions quickly, look up product terms,
 ## Info
 
 - App sections: `dashboard`, `companies`, `license`, `support`, `preferences`, `backups`
-- Last validated: 2026-05-10
+- Last validated: 2026-06-06
 - Screenshot status: `blocked`

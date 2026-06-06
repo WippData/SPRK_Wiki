@@ -11,5 +11,5 @@ Use the Support tab to gather a session log, find contact options, review releas
 ## Info
 
 - App sections: `support`
-- Last validated: 2026-05-11
+- Last validated: 2026-06-06
 - Screenshot status: `blocked`
