@@ -1,5 +1,7 @@
 # Create and Manage Rules
 
+![Rules page showing filters, priority order, active banking rules, and row actions](../screenshots/banking-and-cash-management/create-and-manage-rules-step-01.png)
+
 Build rules that prefill categorization for repeated bank transaction patterns, then manage scope, priority, and imported rule sets from the Rules page.
 
 ## Purpose
@@ -78,5 +80,5 @@ The rule is saved and becomes available when SPRK evaluates pending bank transac
 ## Info
 
 - App sections: `banking`, `rules`
-- Last validated: 2026-05-23
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
