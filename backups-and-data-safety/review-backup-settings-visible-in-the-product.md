@@ -2,6 +2,8 @@
 
 Open the `Backups` tab to review the current automatic backup controls, backup location, recent status, and on-demand backup action.
 
+![SPRK Backups settings showing status, backup location, Run Backup Now, and automatic backup controls](../screenshots/backups-and-data-safety/review-backup-settings-step-01.png)
+
 ## Purpose
 
 Use this workflow when you want to confirm which backup settings are publicly available in the current SPRK app.
@@ -45,5 +47,5 @@ You can review and manage the current backup controls that SPRK exposes publicly
 ## Info
 
 - App sections: `backups`
-- Last validated: 2026-05-07
-- Screenshot status: `not-started`
+- Last validated: 2026-06-06
+- Screenshot status: `captured`
