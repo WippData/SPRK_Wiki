@@ -2,6 +2,8 @@
 
 Edit company details, archive or unarchive companies, and understand when permanent delete is available.
 
+![Companies tab filtered to Archived companies with edit, archive, and delete maintenance actions visible](../screenshots/company-administration/company-maintenance-actions-step-01.png)
+
 ## Purpose
 
 Use this workflow when you need to maintain company settings after a company already exists.
@@ -47,4 +49,4 @@ You can maintain company settings and lifecycle state without guessing which act
 
 - App sections: `companies`
 - Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Screenshot status: `captured`
