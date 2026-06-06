@@ -26,7 +26,7 @@ Use this workflow when you want to interpret public release notes without confus
 
 ## Expected Result
 
-You can read user-facing release summaries with the right frame: what changed on screen, which workflows are affected, and whether the change alters bookkeeping behavior. Current general ledger impact as of 2026-05-10:
+You can read user-facing release summaries with the right frame: what changed on screen, which workflows are affected, and whether the change alters bookkeeping behavior. On 2026-06-06, the Support path showed installed-version release notes for `SPRK-0.3.45` with release sections and an external GitHub release link. Current general ledger impact as of 2026-06-06:
 
 - Reading a release summary does not post or modify any transaction.
 - Opening an in-app release-notes modal or public releases link does not post or modify any transaction.
@@ -50,5 +50,5 @@ You can read user-facing release summaries with the right frame: what changed on
 ## Info
 
 - App sections: `dashboard`, `support`
-- Last validated: 2026-05-10
+- Last validated: 2026-06-06
 - Screenshot status: `blocked`
