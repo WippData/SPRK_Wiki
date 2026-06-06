@@ -2,6 +2,8 @@
 
 Follow a safe first-day path through sign-in, company confirmation, navigation, dashboard review, and your next likely setup or transaction workflow.
 
+![SPRK Dashboard in Demo Company showing the active company selector, main sidebar navigation, KPI cards, charts, and quick links](../screenshots/getting-started/first-day-orientation-step-01.png)
+
 ## Purpose
 
 Use this article when you want a practical first-day sequence that gets you oriented without accidentally working in the wrong company or skipping important setup.
@@ -50,5 +52,5 @@ You finish your first day with the right company selected, a working mental mode
 ## Info
 
 - App sections: `dashboard`, `companies`
-- Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
