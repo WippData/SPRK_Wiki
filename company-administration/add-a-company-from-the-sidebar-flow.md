@@ -2,6 +2,10 @@
 
 Start a new company from the sidebar company selector and finish setup in the Companies area.
 
+![Company switcher menu showing the Add Company action above selectable companies](../screenshots/company-administration/add-company-sidebar-flow-step-01.png)
+
+![Companies tab showing the New Company action and active company list](../screenshots/company-administration/add-company-sidebar-flow-step-02.png)
+
 ## Purpose
 
 Use this workflow when you are already in the app and want to start a new company without browsing through the full settings layout first.
@@ -46,4 +50,4 @@ You can start from the sidebar and land in the same company-creation experience 
 
 - App sections: `companies`
 - Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Screenshot status: `captured`
