@@ -2,6 +2,8 @@
 
 Review how SPRK schedules automatic backups so you know when the app plans to save backup files for this device.
 
+![SPRK Backups settings showing automatic backup scheduling controls and backup-on-close options](../screenshots/backups-and-data-safety/backup-schedule-behavior-step-01.png)
+
 ## Purpose
 
 Use this article when you want to confirm whether automatic backups are enabled and what local time the next daily backup cycle is expected to follow.
@@ -10,7 +12,7 @@ Use this article when you want to confirm whether automatic backups are enabled 
 
 - You are signed in to SPRK.
 - The active company in the sidebar is `Demo Company` for this validated workflow pass.
-- You can open `Preferences` from the `System` section in the sidebar.
+- You can open `Preferences` from the `Settings` section in the sidebar.
 
 ## Steps
 
@@ -44,5 +46,5 @@ You can see whether automatic backups are enabled and what local time SPRK uses 
 ## Info
 
 - App sections: `backups`
-- Last validated: 2026-05-07
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
