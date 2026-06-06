@@ -18,4 +18,4 @@ Review app-wide display, formatting, account-selector ordering, update prompts, 
 
 - App sections: `preferences`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

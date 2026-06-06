@@ -45,4 +45,4 @@ You can distinguish between user-facing personalization and company accounting a
 
 - App sections: `preferences`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

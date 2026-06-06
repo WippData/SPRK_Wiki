@@ -2,6 +2,8 @@
 
 Open `Preferences` to manage app-wide appearance, formatting, update notification, navigation, automation, and getting-started settings.
 
+![Preferences page showing the Account dropdown sorting control and its ordering choices](../screenshots/preferences-and-personalization/account-dropdown-sorting-preference-step-01.png)
+
 ## Purpose
 
 Use this workflow when you want to review or change how SPRK looks and behaves for your user profile across the app.
@@ -61,4 +63,4 @@ Your user-level preferences are applied across the SPRK app, including display, 
 
 - App sections: `preferences`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`
