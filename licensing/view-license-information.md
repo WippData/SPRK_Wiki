@@ -2,6 +2,8 @@
 
 Open the `License` area to review the saved contact details, current license key status, usage table, and purchase link that SPRK currently exposes.
 
+![License page showing redacted saved license details, valid license status, fine print, and tenant usage context](../screenshots/licensing/view-license-information-step-01.png)
+
 ## Purpose
 
 Use this workflow when you want to confirm whether a license is already saved for your workspace and review the licensing details visible in the app.
@@ -43,5 +45,5 @@ You can review the licensing details currently visible in SPRK, including whethe
 ## Info
 
 - App sections: `license`
-- Last validated: 2026-05-11
-- Screenshot status: `not-started`
+- Last validated: 2026-06-06
+- Screenshot status: `captured`
