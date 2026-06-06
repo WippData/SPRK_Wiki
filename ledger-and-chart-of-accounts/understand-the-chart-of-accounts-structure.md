@@ -2,6 +2,8 @@
 
 Review how SPRK organizes accounts by code, parent-child hierarchy, type, subtype, and active status so you can maintain a usable account list without changing posted balances.
 
+![Chart of Accounts page in Demo Company showing account type grouping, filters, toolbar actions, and asset account rows](../screenshots/ledger-and-chart-of-accounts/chart-of-accounts-structure-step-01.png)
+
 ## Purpose
 
 Use this article when you need to understand how accounts are grouped, created, edited, imported, exported, or deactivated in the `Chart of Accounts` page.
@@ -61,5 +63,5 @@ You can organize the account list into a clearer structure and keep accounts ava
 ## Info
 
 - App sections: `chart`
-- Last validated: 2026-05-02
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
