@@ -4,6 +4,8 @@ Open the `License` area to review the saved contact details, current license key
 
 ![License page showing redacted saved license details, valid license status, fine print, and tenant usage context](../screenshots/licensing/view-license-information-step-01.png)
 
+![SPRK License tab showing fine print and tenant usage stats](../screenshots/licensing/license-information-step-02.png)
+
 ## Purpose
 
 Use this workflow when you want to confirm whether a license is already saved for your workspace and review the licensing details visible in the app.

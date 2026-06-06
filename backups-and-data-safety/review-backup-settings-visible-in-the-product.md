@@ -4,6 +4,8 @@ Open the `Backups` tab to review the current automatic backup controls, backup l
 
 ![SPRK Backups settings showing status, backup location, Run Backup Now, and automatic backup controls](../screenshots/backups-and-data-safety/review-backup-settings-step-01.png)
 
+![SPRK Backups tab showing automatic backup schedule and backup-on-close controls](../screenshots/backups-and-data-safety/review-backup-settings-step-02.png)
+
 ## Purpose
 
 Use this workflow when you want to confirm which backup settings are publicly available in the current SPRK app.
@@ -16,8 +18,8 @@ Use this workflow when you want to confirm which backup settings are publicly av
 ## Steps
 
 1. Confirm the active company shown in the sidebar is `Demo Company`.
-2. Open `Preferences` from the `System` section.
-3. Select the `Backups` tab.
+2. Open `Backups` from the `Settings` section.
+3. Confirm the `Backups` tab is selected.
 4. Review the automatic backup switch.
 5. Review the daily schedule time shown in local time.
 6. Review the `Backup location` field.
