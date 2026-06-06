@@ -2,6 +2,8 @@
 
 Define reusable products and services so invoice lines can be built faster and with more consistent descriptions, pricing, and account defaults.
 
+![Items list showing Item Number / SKU column and search label](../screenshots/sales-and-receivables/items-item-number-sku-step-01.png)
+
 ## Purpose
 
 Use this workflow when you want invoice lines to reuse prepared item records instead of retyping descriptions, prices, and sales defaults each time.
@@ -17,10 +19,10 @@ Use this workflow when you want invoice lines to reuse prepared item records ins
 2. Choose the setup path that fits the job:
    - Use `New` to create one item from the drawer.
    - Use `Import` if you already maintain item data in a spreadsheet or CSV file.
-   - Use `More` and enable Grid Edit when you need to edit several items together, or turn on `Grid Edit default` in `Preferences` if you want supported pages to open that way automatically.
+   - Use `More` > `Enable Grid Mode` when you need to edit several items together, or turn on `Grid Edit default` in `Preferences` if you want supported pages to open that way automatically.
 3. Enter the core item details:
    - `Item type`
-   - `SKU`
+   - `Item Number / SKU`
    - `Description`
    - `Unit price`
    - `Unit of measure`
@@ -33,9 +35,9 @@ Use this workflow when you want invoice lines to reuse prepared item records ins
    - `Expense/COGS account`
 6. Confirm the `Active` setting, then save the item.
 7. If you import items, review any mapped income or expense accounts before you rely on those records in invoices.
-8. Use the page search when you need to find an item later by SKU or description.
+8. Use the page search when you need to find an item later by item number, SKU, or description.
 9. Use the saved item later from invoice line selectors so invoice entry stays more consistent.
-10. Use Grid Edit when repeated item cleanup will be faster than opening each record individually.
+10. Use Grid Edit when repeated item cleanup will be faster than opening each record individually, then review the changed-cell count before selecting `Apply Changes`.
 
 ## Expected Result
 
@@ -60,5 +62,5 @@ The item becomes available for invoice entry, and future invoice lines can reuse
 ## Info
 
 - App sections: `items`
-- Last validated: 2026-06-02
-- Screenshot status: `planned`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`

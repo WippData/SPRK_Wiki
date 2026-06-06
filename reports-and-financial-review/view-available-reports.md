@@ -22,13 +22,16 @@ Use this workflow when you want to see which reports are available in SPRK and r
    - `Balance Sheet`
    - `Cash Flow (Indirect)`
    - `Tax Forms`
+   - `Reconciliation`
    - Transaction-detail views such as `General Ledger` and `Account Detail` are also available.
 4. Select the tab you want to run.
 5. Set the date controls required for that tab:
    - Range-based reports use a period preset and date range.
    - As-of reports use an as-of style date.
+   - Date fields can be selected from the calendar or typed directly. Typed dates should follow your saved `Preferences` date order, and accepted compact entries can normalize to the visible display format.
    - `Income Statement` also supports compare-period controls and optional grouping.
    - `Tax Forms` requires a tax-form selection before you run it.
+   - `Reconciliation` requires an account and posted statement period.
    - `General Ledger` adds filters for `Account Type`, `Account SubType`, `Accounts`, `Vendor`, `Text`, `Group By`, and optional `Include opening balance`.
 6. Select `Run`.
 7. Review the table and any summary cards that appear for the selected report.
@@ -37,16 +40,18 @@ Use this workflow when you want to see which reports are available in SPRK and r
 
 ## Expected Result
 
-The selected report loads in the main table area with the date context and controls that match that report type. Current general ledger impact as of 2026-06-04:
+The selected report loads in the main table area with the date context and controls that match that report type. Current general ledger impact as of 2026-06-05:
 
 - Opening a report tab does not post anything to the ledger.
 - Running a report reads posted data for the active company but does not change balances.
 - Export and print are output actions only and do not create journal entries.
+- Reconciliation reports are review outputs for posted reconciliation sessions and do not create new ledger activity.
 
 ## Common Mistakes
 
 - Forgetting to confirm the active company before running the report.
 - Expecting every report tab to use the same date controls.
+- Typing report dates in a different order than the date format saved in `Preferences`.
 - Assuming a blank report means the report is broken, when it may mean there is no activity for the selected period.
 - Treating `Export` as a way to move data back into SPRK. It is an outbound file action for the current report result.
 
@@ -55,10 +60,12 @@ The selected report loads in the main table area with the date context and contr
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)
 - [Export transactions from reports](./export-transactions-from-reports.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
+- [View and print bank reconciliation reports](../reconciliation/view-and-print-bank-reconciliation-reports.md)
 - [Interpret report navigation without accounting advice](./interpret-report-navigation-without-accounting-advice.md)
+- [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
 
 ## Info
 
 - App sections: `reports`
-- Last validated: 2026-06-04
-- Screenshot status: `planned`
+- Last validated: 2026-06-05
+- Screenshot status: `blocked`

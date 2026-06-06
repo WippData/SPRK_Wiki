@@ -1,6 +1,8 @@
 # Dashboard and Navigation
 
-Learn the main SPRK layout, move between pages, and use search to get where you need to go faster.
+Learn the main SPRK layout, move between pages, use search to get where you need to go faster, and work efficiently in supported list views with shared table tools such as Grid Edit.
+
+![Column preferences dialog used from supported list views to reorder visible columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
 
 ## In This Section
 
@@ -19,5 +21,5 @@ Learn the main SPRK layout, move between pages, and use search to get where you 
 ## Info
 
 - App sections: `dashboard`
-- Last validated: 2026-06-02
-- Screenshot status: `planned`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`

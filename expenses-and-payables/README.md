@@ -1,6 +1,8 @@
 # Expenses and Payables
 
-Set up vendors, enter bills, work with checks, and understand the main payables workflows in SPRK.
+Set up vendors, enter bills, work with checks, and understand the main payables workflows in SPRK, including reusable vendor expense defaults.
+
+![Vendors list showing default expense account setup context](../screenshots/expenses-and-payables/vendor-default-expense-account-step-01.png)
 
 ## In This Section
 
@@ -13,5 +15,5 @@ Set up vendors, enter bills, work with checks, and understand the main payables 
 ## Info
 
 - App sections: `vendors`, `bills`, `checks`
-- Last validated: 2026-06-01
-- Screenshot status: `planned`
+- Last validated: 2026-06-04
+- Screenshot status: `captured`

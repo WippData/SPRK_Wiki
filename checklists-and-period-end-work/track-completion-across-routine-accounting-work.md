@@ -2,6 +2,8 @@
 
 Review checklist runs by status, period, and notes so you can see what is still in progress and what has already been completed.
 
+![Checklists page showing completion tracking filters, status and period selectors, run table headers, and the current no-rows state](../screenshots/checklists-and-period-end-work/track-completion-step-01.png)
+
 ## Purpose
 
 Use this workflow when you need to review checklist-run progress across periods, identify unfinished work, or confirm that a recurring checklist was completed.
@@ -53,5 +55,5 @@ You can see which checklist runs are open, completed, or due for follow-up witho
 ## Info
 
 - App sections: `checklists`
-- Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Last validated: 2026-06-06
+- Screenshot status: `captured`

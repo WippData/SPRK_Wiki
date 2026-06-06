@@ -29,6 +29,7 @@ Use this article when reconciliation stops with a validation error, an unexpecte
 5. If SPRK reports that a transaction is already reconciled, remove it from your current plan and confirm whether it was cleared in an earlier statement period.
 6. If the transaction coding is wrong and the row has an enabled `Journal` action, open the linked journal entry and reverse it before adding the corrected activity.
 7. If the opening balance looks unexpected, confirm whether SPRK is carrying forward the ending balance from the last posted reconciliation before the current statement ending date.
+8. If a reconciliation report appears blank, confirm that the selected account has a posted reconciliation period. The Reports `Reconciliation` tab shows a no-posted-reconciliations message when there is no posted history for the account.
 
 ## Expected Result
 
@@ -50,10 +51,11 @@ You can identify whether the issue is caused by account selection, transaction s
 - [Start a reconciliation](./start-a-reconciliation.md)
 - [Match and unmatch transactions](./match-and-unmatch-transactions.md)
 - [Finish a reconciliation](./finish-a-reconciliation.md)
+- [View and print bank reconciliation reports](./view-and-print-bank-reconciliation-reports.md)
 - [Edit linked ledger and bank activity](../ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity.md)
 
 ## Info
 
 - App sections: `reconcile`
-- Last validated: 2026-05-29
-- Screenshot status: `captured`
+- Last validated: 2026-06-05
+- Screenshot status: `partial`

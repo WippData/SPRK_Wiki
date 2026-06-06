@@ -2,6 +2,8 @@
 
 Use this page to review the current set of user-visible workflow areas that now have public documentation coverage and the main behaviors readers should pay attention to in this release cycle.
 
+![Release Notes modal showing documented workflow changes for import templates, reversing journals, release notes, account selectors, reports, and ledger behavior](../screenshots/faq-glossary-and-release-changes/release-notes-modal-step-01.png)
+
 ## Purpose
 
 Use this article when you want a compact summary of the documented workflow areas that matter most to end users in the current wiki release.
@@ -48,5 +50,5 @@ You can see which user-facing workflow areas gained or clarified documentation i
 ## Info
 
 - App sections: `dashboard`, `companies`, `license`, `support`, `backups`
-- Last validated: 2026-05-25
-- Screenshot status: `blocked`
+- Last validated: 2026-06-04
+- Screenshot status: `captured`

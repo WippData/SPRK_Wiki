@@ -2,6 +2,8 @@
 
 Create balanced manual journal entries in the `Ledger` page, optionally schedule an automatic reversing entry, save reusable templates when needed, and understand how posting affects the general ledger.
 
+![New Journal Entry drawer showing date, memo, account lines, debit and credit columns, totals, and reversing-entry controls](../screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png)
+
 ## Purpose
 
 Use this workflow when you need to record a manual journal entry directly in the ledger.
@@ -56,4 +58,4 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 
 - App sections: `ledger`
 - Last validated: 2026-06-04
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

@@ -2,6 +2,8 @@
 
 Prepare customer, item, and account defaults before you start entering invoices so receivables activity is easier to review and maintain later.
 
+![New invoice drawer showing Item Number / SKU line selectors](../screenshots/sales-and-receivables/invoice-item-number-sku-line-step-02.png)
+
 ## Purpose
 
 Use this page when you want invoice entry to start from cleaner defaults instead of rebuilding customer, item, and account choices on each invoice.
@@ -26,7 +28,7 @@ Use this page when you want invoice entry to start from cleaner defaults instead
    - Set `Default Income Account` when this customer usually points to the same revenue category.
    - Set payment terms when most invoices for the customer follow the same due-date pattern.
 3. Open `Items` and create or update the products or services you invoice repeatedly:
-   - Save `SKU` and `Description` values that users can recognize quickly during invoice entry.
+   - Save `Item Number / SKU` and `Description` values that users can recognize quickly during invoice entry.
    - Save `Unit price` and `Unit of measure` when those values repeat often.
    - Review `Income account` when you want the item record to carry its own sales default.
 4. If you import customers or items, review the imported account mappings before you start invoicing.
@@ -38,8 +40,8 @@ Use this page when you want invoice entry to start from cleaner defaults instead
    - `Payment Terms`
    - `Due Date`
 7. Use the line selectors to pull saved item details into invoice lines:
-   - `SKU` can fill matching description and price details.
-   - `Description` can fill matching SKU and price details.
+   - `Item Number / SKU` can fill matching description and price details.
+   - `Description` can fill matching item number/SKU and price details.
 8. If the needed customer or item does not exist yet, create it inline from the invoice drawer and continue the invoice without leaving the workflow.
 9. Before saving an invoice as `Open`, confirm the receivables account, due date, and line details still match the intended transaction.
 
@@ -75,5 +77,5 @@ Invoice entry starts from cleaner defaults, repeated customers and items are eas
 ## Info
 
 - App sections: `customers`, `items`, `invoices`, `chart`
-- Last validated: 2026-05-31
-- Screenshot status: `planned`
+- Last validated: 2026-06-04
+- Screenshot status: `captured`

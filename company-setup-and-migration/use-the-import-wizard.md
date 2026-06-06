@@ -2,6 +2,8 @@
 
 Build a new company from uploaded files, copied data, and manual settings when a simple one-file import is not enough.
 
+![Import Wizard showing starter templates, download templates action, and upload guidance](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
+
 ## Purpose
 
 Use the Import Wizard when your migration spans multiple files or when you want to mix uploaded files, copied data from an existing company, and manual settings in one guided flow.
@@ -19,7 +21,10 @@ Use the Import Wizard when your migration spans multiple files or when you want 
 2. Open the menu attached to `New Company`.
 3. Select `Import Wizard`.
 4. Enter the new `Company name`.
-5. Add files in the `Upload files` area if you are importing source files.
+5. Add files in the `Upload files` step if you are importing source files.
+   - Use `Download Templates` when you want starter file layouts before preparing uploads.
+   - The wizard can accept multiple files in the same run.
+   - After files are added, review how SPRK auto-assigns each file before continuing.
 6. If you want to reuse existing SPRK data, choose an `Existing company (optional)` as the default copy source.
 7. In `Finalize your configuration`, choose a source for each data type:
    - file upload
@@ -38,6 +43,7 @@ SPRK creates a new company using the combination of files, copied data, and sett
 ## Common Mistakes
 
 - Starting the wizard without a company name. The review action is disabled until a name is entered.
+- Skipping the starter templates and then uploading files that do not match the expected columns.
 - Uploading operational files such as invoices or bills without also bringing in foundation data like a chart of accounts or a trial balance.
 - Assuming the wizard’s auto-assignment is final. Review each data type before creating the company.
 - Forgetting that settings can be entered manually if no source file exists for them.
@@ -52,5 +58,5 @@ SPRK creates a new company using the combination of files, copied data, and sett
 ## Info
 
 - App sections: `companies`
-- Last validated: 2026-05-01
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
