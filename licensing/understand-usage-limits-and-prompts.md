@@ -2,6 +2,8 @@
 
 Use the `License` area to review the current usage table and understand which prompts are informational versus the ones tied to adding more real companies.
 
+![License page showing the Tenant Stats usage table and visibility note](../screenshots/licensing/usage-limits-step-01.png)
+
 ## Purpose
 
 Use this workflow when you want to understand what the visible usage values and limits mean before deciding whether you need to add a license.
@@ -43,5 +45,5 @@ You can interpret the current usage table as a workspace-wide visibility tool an
 ## Info
 
 - App sections: `license`
-- Last validated: 2026-05-11
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
