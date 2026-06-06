@@ -26,27 +26,28 @@ Use this workflow when imported or manually entered bank activity needs review b
 5. Filter the transaction list if needed:
    - Use `All`, `Expenses`, or `Deposits` to narrow the transaction type.
    - Use the other filters for description, amount, date, GL account/category, rule status, or class values when dimensions are enabled.
-6. For each transaction you want to review, confirm the basic details such as date, description, amount, and optional check number.
-7. Review any suggestion already shown on the row:
+6. If the transaction came from a file import, remember that likely-duplicate warnings appeared before the row entered `Pending`. Recheck any suspicious imported row before you categorize or confirm it.
+7. For each transaction you want to review, confirm the basic details such as date, description, amount, and optional check number.
+8. Review any suggestion already shown on the row:
    - Some rows may already have a GL account/category suggestion from a rule.
    - If a selected vendor has a default expense account, SPRK can also fill the GL account/category automatically when no manual category, split, or rule already controls the row.
-8. If needed, assign or change the optional `Vendor`.
-9. In `GL Account`, choose the account that should receive the non-bank side of the entry.
+9. If needed, assign or change the optional `Vendor`.
+10. In `GL Account`, choose the account that should receive the non-bank side of the entry.
    - If you are working directly in the review grid, the same choice may still appear under a `Category` column.
-10. If one account is not enough, select `Split` and build the allocation:
+11. If one account is not enough, select `Split` and build the allocation:
    - Use `Percent` when the split should total exactly `100%`.
    - Use `Amount` when the split lines should total the full transaction amount.
    - Save the split only after the total is complete.
-11. If the transaction should be tied to an existing check, use `Find Check` and match the transaction before you confirm it.
-12. Confirm the transaction:
+12. If the transaction should be tied to an existing check, use `Find Check` and match the transaction before you confirm it.
+13. Confirm the transaction:
    - Use the row-level primary action for one transaction.
    - Or select several rows, use the bulk account or vendor tools if helpful, then choose `Confirm selected`.
    - SPRK requires each selected row to have either a GL account/category, a saved split, or a matched check before it can confirm.
    - In the standard `Pending` table, use the checkbox column to choose rows for the bulk toolbar.
    - In Banking Grid Edit, use the row-number column when the build exposes row selection there; the Banking toolbar can then show selected-row actions such as `Confirm selected`.
-13. Review the transaction after confirmation. It leaves `Pending` and appears under `Categorized`.
-14. If the confirmed transaction later needs to be reversed, open the linked journal entry from `Reconcile` where the row shows an enabled `Journal` action.
-15. Use Grid Edit on supported Banking tables when repeated classification cleanup will be faster than opening one row at a time:
+14. Review the transaction after confirmation. It leaves `Pending` and appears under `Categorized`.
+15. If the confirmed transaction later needs to be reversed, open the linked journal entry from `Reconcile` where the row shows an enabled `Journal` action.
+16. Use Grid Edit on supported Banking tables when repeated classification cleanup will be faster than opening one row at a time:
    - Draft Grid Edit changes are not the same as confirmation.
    - Apply pending Grid Edit changes before you run Banking bulk actions such as applying an account, applying a vendor, confirming selected rows, deleting rows, or selecting categorized rows.
    - If SPRK blocks a bulk action while the changed-cell counter is still active, review the edits, choose `Apply Changes`, and then run the bulk action after the grid is clean.
@@ -54,7 +55,7 @@ Use this workflow when imported or manually entered bank activity needs review b
 
 ## Expected Result
 
-The reviewed transaction is confirmed and removed from the pending queue. Current general ledger impact as of 2026-05-29:
+The reviewed transaction is confirmed and removed from the pending queue. Current general ledger impact as of 2026-06-05:
 
 - Changing a vendor, changing `GL Account` or the grid's `Category` column, saving draft splits, and matching a check do not post to the general ledger by themselves.
 - Confirming a transaction creates or links the journal-entry result for that bank transaction.
@@ -64,11 +65,13 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - For money spent, SPRK credits the selected bank or credit card account and debits the chosen target account or split accounts.
 - Split confirmations post the same bank-side line plus the offset split lines you saved.
 - If the transaction was matched to a check first, confirming the bank transaction also clears the linked check.
+- Likely-duplicate warnings during import do not post, delete, or skip a transaction by themselves. They are a pre-confirm review signal before the row reaches `Pending`.
 
 ## Common Mistakes
 
 - Confirming without selecting a category, saving a valid split, or matching the correct check.
 - Using the wrong bank account card and then confirming a transaction into the wrong cash account.
+- Assuming a likely-duplicate warning means SPRK has already removed or posted the imported row.
 - Assuming a row suggestion from a rule or vendor setup means the transaction has already posted.
 - Expecting a vendor default to override a manual GL account/category or saved split you already chose.
 - Expecting an incomplete split total to save in the current split editor.
