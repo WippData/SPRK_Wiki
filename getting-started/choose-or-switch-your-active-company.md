@@ -2,6 +2,8 @@
 
 Confirm the company shown in the sidebar before you begin work, and switch the active company when you need a different data context.
 
+![SPRK Dashboard with the company switcher open, showing Demo Company selected and other available companies in the sidebar](../screenshots/getting-started/choose-switch-active-company-step-01.png)
+
 ## Purpose
 
 Use this workflow when you need to confirm you are working in the right company before reviewing data, entering transactions, or running reports.
@@ -16,7 +18,7 @@ Use this workflow when you need to confirm you are working in the right company 
 1. Look at the company selector at the top of the left sidebar.
 2. Confirm the displayed company name matches the company you intend to use.
 3. If the wrong company is active, open the company selector and choose the correct company.
-4. If you need to manage companies in more detail, open `Companies` from the `System` section.
+4. If you need to manage companies in more detail, open `Companies` from the `Settings` section.
 5. After switching, verify the sidebar now shows the intended company before you continue.
 
 ## Expected Result
@@ -42,5 +44,5 @@ The selected company becomes the active context for dashboard values, search res
 ## Info
 
 - App sections: `companies`, `dashboard`
-- Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
