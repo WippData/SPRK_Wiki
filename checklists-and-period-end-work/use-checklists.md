@@ -1,5 +1,9 @@
 # Use Checklists
 
+![Checklists page showing the run table, filters, and Refresh, New, and Manage actions](../screenshots/checklists-and-period-end-work/use-checklists-step-01.png)
+
+![Manage checklists dialog showing reusable checklist template columns and the New checklist action](../screenshots/checklists-and-period-end-work/use-checklists-step-02.png)
+
 Open the Checklist area, manage reusable checklist templates, and understand the difference between template setup and period-specific runs.
 
 ## Purpose
@@ -64,5 +68,5 @@ You have a reusable checklist template that can be used to create period-specifi
 ## Info
 
 - App sections: `checklists`
-- Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Last validated: 2026-06-05
+- Screenshot status: `captured`
