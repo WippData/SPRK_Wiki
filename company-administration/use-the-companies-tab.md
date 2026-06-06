@@ -2,6 +2,8 @@
 
 Open the Companies tab to review active and archived companies, refresh the list, and reach creation or maintenance actions.
 
+![Companies tab showing active companies, filters, refresh, new-company actions, and company row controls](../screenshots/company-administration/companies-tab-step-01.png)
+
 ## Purpose
 
 Use this workflow when you need a central place to review companies and reach the actions for selecting, editing, archiving, deleting, or adding a company.
@@ -45,4 +47,4 @@ You can see the publicly supported company management actions in one place, incl
 
 - App sections: `companies`
 - Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Screenshot status: `captured`
