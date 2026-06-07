@@ -1,5 +1,7 @@
 # Understand When An Upgrade Prompt May Appear
 
+![License tab showing usage limits and plan details](../screenshots/licensing/usage-limits-step-01.png)
+
 SPRK may show an upgrade or add-license prompt when you try to create another real company after using the free company allowance.
 
 ## Purpose
@@ -44,4 +46,4 @@ You understand that the clearest published upgrade prompt appears around additio
 
 - App sections: `license`, `companies`
 - Last validated: 2026-05-11
-- Screenshot status: `not-started`
+- Screenshot status: `captured`

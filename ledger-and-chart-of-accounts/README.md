@@ -1,5 +1,7 @@
 # Ledger and Chart of Accounts
 
+![Chart of Accounts table showing account structure](../screenshots/ledger-and-chart-of-accounts/chart-of-accounts-structure-step-01.png)
+
 Organize your account list, record journal entries, move ledger data in or out of SPRK, and understand audit-sensitive actions.
 
 ## In This Section
@@ -14,4 +16,4 @@ Organize your account list, record journal entries, move ledger data in or out o
 
 - App sections: `ledger`, `chart`
 - Last validated: 2026-06-04
-- Screenshot status: `partial`
+- Screenshot status: `captured`

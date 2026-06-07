@@ -1,5 +1,7 @@
 # Receive Invoice Payments
 
+![Receive payment drawer opened from an open invoice](../screenshots/sales-and-receivables/receive-invoice-payment-drawer-step-01.png)
+
 Record customer payments from the invoice list so SPRK updates the balance and posts the cash or bank side of the transaction.
 
 ## Purpose
@@ -57,4 +59,4 @@ Customer payment terms and credit settings can help you review receivables befor
 
 - App sections: `invoices`
 - Last validated: 2026-05-31
-- Screenshot status: `planned`
+- Screenshot status: `captured`

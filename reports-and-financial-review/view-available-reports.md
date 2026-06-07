@@ -1,5 +1,7 @@
 # View Available Reports
 
+![Reports page showing available report tabs and controls](../screenshots/reports-and-financial-review/reports-overview-step-01.png)
+
 Open the Reports page, move between the available report tabs, set the date controls that apply to each tab, and run the report you want to review.
 
 ## Purpose
@@ -68,4 +70,4 @@ The selected report loads in the main table area with the date context and contr
 
 - App sections: `reports`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

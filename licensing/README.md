@@ -1,5 +1,7 @@
 # Licensing
 
+![License tab showing redacted license information](../screenshots/licensing/view-license-information-step-01.png)
+
 Review your license details, understand what the visible usage table means, and know when SPRK may ask you to add a license for additional company creation.
 
 ## In This Section
@@ -12,4 +14,4 @@ Review your license details, understand what the visible usage table means, and 
 
 - App sections: `license`
 - Last validated: 2026-05-11
-- Screenshot status: `not-started`
+- Screenshot status: `captured`

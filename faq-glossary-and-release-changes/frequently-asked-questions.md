@@ -1,5 +1,7 @@
 # Frequently Asked Questions
 
+![Support tab with help and troubleshooting context](../screenshots/faq-glossary-and-release-changes/faq-support-context-step-01.png)
+
 Use this page when you want quick answers to common SPRK questions about companies, navigation, licensing, support, backups, and the difference between product help actions and accounting transactions.
 
 ![Frequently Asked Questions expanded in Support How To Guides with common SPRK help topics visible](../screenshots/faq-glossary-and-release-changes/frequently-asked-questions-step-01.png)

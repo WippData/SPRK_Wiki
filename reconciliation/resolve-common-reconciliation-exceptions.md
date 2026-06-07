@@ -1,5 +1,7 @@
 # Resolve Common Reconciliation Exceptions
 
+![Active reconciliation summary showing cleared balance and difference](../screenshots/reconciliation/reconciliation-active-summary-step-01.png)
+
 Diagnose the most common reasons a reconciliation cannot start or finish cleanly, including first-time setup issues, date-window issues, and nonzero differences.
 
 ## Purpose
@@ -58,4 +60,4 @@ You can identify whether the issue is caused by account selection, transaction s
 
 - App sections: `reconcile`
 - Last validated: 2026-06-05
-- Screenshot status: `partial`
+- Screenshot status: `captured`

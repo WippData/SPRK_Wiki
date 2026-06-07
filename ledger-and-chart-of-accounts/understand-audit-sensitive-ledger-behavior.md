@@ -1,5 +1,7 @@
 # Understand Audit-Sensitive Ledger Behavior
 
+![New journal entry drawer for reviewing ledger posting fields](../screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png)
+
 Review the current rules around journal-entry edits, reversal entries, and inactive-account handling so you know which ledger changes preserve history and how they affect balances.
 
 ## Purpose
@@ -61,4 +63,4 @@ You understand which maintenance actions keep an audit trail and how they affect
 
 - App sections: `ledger`, `chart`
 - Last validated: 2026-06-04
-- Screenshot status: `partial`
+- Screenshot status: `captured`

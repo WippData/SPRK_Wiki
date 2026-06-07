@@ -1,5 +1,7 @@
 # Use the Plugins Settings Tab
 
+![Plugins settings tab showing installed runtime plugin entries](../screenshots/plugins-and-runtime/plugins-settings-tab-step-01.png)
+
 Open the `Plugins` settings tab to review installed plugins, refresh plugin inventory, and preview a plugin bundle before installing or upgrading it.
 
 ## Purpose
@@ -71,4 +73,4 @@ Bundle preview validates package constraints before install or upgrade. Treat th
 
 - App sections: `plugins`, `settings`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

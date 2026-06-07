@@ -1,5 +1,7 @@
 # Checklists and Period-End Work
 
+![Checklists page with close-style task templates](../screenshots/checklists-and-period-end-work/use-checklists-step-01.png)
+
 Create checklist templates, start checklist runs for a period, and track completion without using the checklist as a posting workflow.
 
 ## In This Section
@@ -12,4 +14,4 @@ Create checklist templates, start checklist runs for a period, and track complet
 
 - App sections: `checklists`
 - Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Screenshot status: `captured`

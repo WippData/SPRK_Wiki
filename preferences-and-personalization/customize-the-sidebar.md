@@ -1,5 +1,7 @@
 # Customize the Sidebar
 
+![Sidebar configuration modal with visible and hidden navigation items](../screenshots/preferences-and-personalization/sidebar-configuration-step-01.png)
+
 Use the sidebar editor in `Preferences` to rename sections, reorder links, hide items, and add external links for your own navigation setup.
 
 ![Sidebar configuration modal showing editable sidebar sections, item labels, reorder controls, and visibility toggles](../screenshots/preferences-and-personalization/customize-sidebar-step-01.png)

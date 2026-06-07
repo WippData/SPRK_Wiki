@@ -1,5 +1,7 @@
 # Create and Manage Bills
 
+![New bill drawer for entering vendor bill details](../screenshots/expenses-and-payables/new-bill-drawer-step-01.png)
+
 Enter vendor bills, decide whether they stay in draft or post to Accounts Payable, and record bill payments from the Bills page.
 
 ## Purpose
@@ -75,4 +77,4 @@ The bill is saved and appears in the bill list. Current general ledger impact as
 
 - App sections: `bills`
 - Last validated: 2026-06-01
-- Screenshot status: `planned`
+- Screenshot status: `captured`

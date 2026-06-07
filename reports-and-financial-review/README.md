@@ -1,5 +1,7 @@
 # Reports and Financial Review
 
+![Reports page showing report tabs, summary cards, and output controls](../screenshots/reports-and-financial-review/reports-overview-step-01.png)
+
 Open the Reports area, run the report you need, set date controls, review supporting detail, and understand report navigation inside SPRK.
 
 ## In This Section
@@ -16,4 +18,4 @@ For reconciliation-specific report access from `Reconcile`, see [View and print 
 
 - App sections: `reports`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

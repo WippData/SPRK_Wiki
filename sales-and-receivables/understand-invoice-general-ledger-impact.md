@@ -1,5 +1,7 @@
 # Understand Invoice General Ledger Impact
 
+![General Ledger report showing invoice-related receivables activity](../screenshots/reports-and-financial-review/general-ledger-report-populated-step-01.png)
+
 Understand how invoice creation, receivables account review, customer and item defaults, customer terms, Open status recognition, aging review, and payment receipt affect the general ledger and receivables review in SPRK.
 
 ## Purpose
@@ -76,4 +78,4 @@ Current status behavior when a payment is recorded:
 
 - App sections: `invoices`, `ledger`, `reports`
 - Last validated: 2026-05-31
-- Screenshot status: `planned`
+- Screenshot status: `captured`

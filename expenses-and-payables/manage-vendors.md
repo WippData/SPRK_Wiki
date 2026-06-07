@@ -1,5 +1,7 @@
 # Manage Vendors
 
+![Vendors list with editable vendor records](../screenshots/expenses-and-payables/vendors-list-step-01.png)
+
 Create and maintain vendor records so bills, checks, and vendor reporting use the right payee information.
 
 ## Purpose
@@ -51,4 +53,4 @@ The vendor is available for bill entry, check tracking, supported banking classi
 
 - App sections: `vendors`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

@@ -1,5 +1,7 @@
 # Match and Unmatch Transactions
 
+![Reconciliation transaction table for reviewing matched bank activity](../screenshots/reconciliation/reconciliation-transaction-table-step-01.png)
+
 Link a reconciled bank line to a check when the workflow needs check-level support, and remove that link when the wrong check was chosen.
 
 ## Purpose
@@ -50,4 +52,4 @@ The bank line is either linked to the correct check or returned to an unmatched 
 
 - App sections: `reconcile`
 - Last validated: 2026-05-02
-- Screenshot status: `not-started`
+- Screenshot status: `captured`

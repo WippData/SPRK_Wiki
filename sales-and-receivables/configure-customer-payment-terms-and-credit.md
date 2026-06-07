@@ -1,5 +1,7 @@
 # Configure Customer Payment Terms and Credit
 
+![Payments and Credit configuration modal for a customer](../screenshots/sales-and-receivables/customer-payments-credit-step-01.png)
+
 Set customer-level payment and credit defaults before invoicing so due dates, receivables follow-up, and internal review expectations stay more consistent.
 
 ## Purpose
@@ -67,4 +69,4 @@ The customer record keeps payment and credit defaults together, new invoices can
 
 - App sections: `customers`, `invoices`, `reports`
 - Last validated: 2026-05-31
-- Screenshot status: `planned`
+- Screenshot status: `captured`

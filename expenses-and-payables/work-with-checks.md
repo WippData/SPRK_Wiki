@@ -1,5 +1,7 @@
 # Work With Checks
 
+![Sidebar configuration showing Checks as a hidden navigation item](../screenshots/preferences-and-personalization/sidebar-configuration-step-01.png)
+
 Create, update, match, unmatch, void, and delete checks while understanding what the current check workflow does and does not post to the ledger.
 
 ## Purpose
@@ -66,4 +68,4 @@ The check is stored and can move through draft, issued, matched, cleared, voided
 
 - App sections: `checks`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

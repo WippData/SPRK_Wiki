@@ -1,5 +1,7 @@
 # Getting Started
 
+![Dashboard overview after signing in to SPRK](../screenshots/getting-started/dashboard-high-level-step-01.png)
+
 Sign in, confirm the right company, learn the main navigation, and use the dashboard as your starting point.
 
 ## In This Section
@@ -20,4 +22,4 @@ Sign in, confirm the right company, learn the main navigation, and use the dashb
 
 - App sections: `dashboard`, `companies`
 - Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Screenshot status: `captured`
