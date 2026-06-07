@@ -1,6 +1,6 @@
 # Interpret Report Navigation Without Accounting Advice
 
-![Populated Balance Sheet report with clickable amount rows](../screenshots/reports-and-financial-review/balance-sheet-populated-step-01.png)
+![Reports page showing report tabs, date controls, export and print actions, summary cards, and the report table area](../screenshots/reports-and-financial-review/report-navigation-step-01.png)
 
 Understand what each report area is for, move between reports and supporting detail, and keep the workflow focused on product navigation rather than accounting conclusions.
 

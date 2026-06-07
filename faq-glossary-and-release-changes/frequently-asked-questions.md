@@ -4,6 +4,8 @@
 
 Use this page when you want quick answers to common SPRK questions about companies, navigation, licensing, support, backups, and the difference between product help actions and accounting transactions.
 
+![Frequently Asked Questions expanded in Support How To Guides with common SPRK help topics visible](../screenshots/faq-glossary-and-release-changes/frequently-asked-questions-step-01.png)
+
 ## Purpose
 
 Use this article as a first-stop reference before you contact support or assume a workflow changed your books.
@@ -55,5 +57,5 @@ You can answer common SPRK usage questions quickly and route yourself to the rig
 ## Info
 
 - App sections: `dashboard`, `companies`, `license`, `support`, `preferences`, `backups`
-- Last validated: 2026-05-10
+- Last validated: 2026-06-06
 - Screenshot status: `captured`

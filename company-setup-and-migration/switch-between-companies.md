@@ -1,6 +1,6 @@
 # Switch Between Companies
 
-![Companies tab showing selectable company records](../screenshots/company-administration/companies-tab-audit-step-01.png)
+![Companies tab showing Demo Company selected and other active companies available to select](../screenshots/company-setup-and-migration/switch-between-companies-step-01.png)
 
 Change the active company from the Companies page so the rest of the app updates to the company you want to work in.
 
@@ -42,5 +42,5 @@ The selected company becomes the active company across the app.
 ## Info
 
 - App sections: `companies`
-- Last validated: 2026-05-01
+- Last validated: 2026-06-06
 - Screenshot status: `captured`

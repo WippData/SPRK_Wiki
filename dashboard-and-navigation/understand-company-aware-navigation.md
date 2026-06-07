@@ -1,6 +1,6 @@
 # Understand Company-Aware Navigation
 
-![Company switcher and active company context](../screenshots/getting-started/choose-switch-active-company-step-01.png)
+![SPRK Dashboard showing Demo Company selected in the sidebar with company-aware navigation and dashboard data visible](../screenshots/dashboard-and-navigation/company-aware-navigation-step-01.png)
 
 Learn how the active company affects what you see as you move through SPRK and how to avoid working in the wrong company.
 

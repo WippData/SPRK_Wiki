@@ -1,6 +1,6 @@
 # Understand the Dashboard at a High Level
 
-![Dashboard overview with KPI cards, charts, and quick links](../screenshots/getting-started/dashboard-high-level-step-01.png)
+![Dashboard in Demo Company showing 30-day KPI cards, Cash Movement and Expenses by Category charts, and Quick Links](../screenshots/getting-started/dashboard-at-high-level-step-01.png)
 
 Use the dashboard for a quick 30-day snapshot of business activity and as a starting point for deeper workflows.
 
@@ -50,5 +50,5 @@ You can use the dashboard as a summary and launch point instead of as a transact
 ## Info
 
 - App sections: `dashboard`
-- Last validated: 2026-05-04
+- Last validated: 2026-06-06
 - Screenshot status: `captured`
