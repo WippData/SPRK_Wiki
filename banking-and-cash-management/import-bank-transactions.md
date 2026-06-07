@@ -1,5 +1,7 @@
 # Import Bank Transactions
 
+![Bank transaction import template modal](../screenshots/banking-and-cash-management/bank-transaction-import-template-step-01.png)
+
 Bring bank or credit card activity into SPRK from a supported file format, review the preview, and load the transactions into the pending queue for later confirmation.
 
 ## Purpose
@@ -70,4 +72,4 @@ The imported rows are added to the selected account's pending bank register and 
 
 - App sections: `banking`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

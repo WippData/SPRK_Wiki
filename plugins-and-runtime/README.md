@@ -1,5 +1,7 @@
 # Plugins and Runtime
 
+![Plugins settings tab showing runtime configuration](../screenshots/plugins-and-runtime/plugins-settings-tab-step-01.png)
+
 Review plugin settings, understand which installed plugins can appear inside SPRK, and use bundle preview before installing or upgrading a plugin package.
 
 ## In This Section
@@ -16,4 +18,4 @@ Review plugin settings, understand which installed plugins can appear inside SPR
 
 - App sections: `plugins`, `settings`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

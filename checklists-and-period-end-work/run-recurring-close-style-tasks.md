@@ -1,5 +1,7 @@
 # Run Recurring Close-Style Tasks
 
+![Start checklist run drawer for recurring close-style tasks](../screenshots/checklists-and-period-end-work/start-checklist-run-step-01.png)
+
 Start a checklist run for a defined period, capture responses on each checklist item, and complete the run when the work is actually finished.
 
 ## Purpose
@@ -60,4 +62,4 @@ You have a dated checklist run tied to a specific period and template, with stor
 
 - App sections: `checklists`
 - Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Screenshot status: `captured`

@@ -1,5 +1,7 @@
 # Finish a Reconciliation
 
+![Active reconciliation summary with Finish available and zero difference](../screenshots/reconciliation/reconciliation-active-summary-step-01.png)
+
 Clear the right confirmed transactions, monitor the difference, and finish the reconciliation only when the selected activity agrees to the statement ending balance.
 
 ## Purpose
@@ -56,4 +58,4 @@ SPRK finalizes the reconciliation for the selected statement window. Current tra
 
 - App sections: `reconcile`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

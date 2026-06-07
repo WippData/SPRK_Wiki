@@ -1,5 +1,7 @@
 # Review Financial Results Inside the Product
 
+![Populated General Ledger report with account groups and rows](../screenshots/reports-and-financial-review/general-ledger-report-populated-step-01.png)
+
 Run financial reports in SPRK, compare periods where supported, and review balances and activity inside the app without treating the report itself as accounting advice.
 
 ## Purpose
@@ -61,4 +63,4 @@ You can review current report totals and detailed lines directly in SPRK for the
 
 - App sections: `reports`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

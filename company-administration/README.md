@@ -1,5 +1,7 @@
 # Company Administration
 
+![Companies tab showing the active company and company list](../screenshots/company-administration/companies-tab-audit-step-01.png)
+
 Review the company list, understand which company is active, add a company, and manage company-level settings.
 
 ## In This Section
@@ -19,4 +21,4 @@ Review the company list, understand which company is active, add a company, and 
 
 - App sections: `companies`
 - Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Screenshot status: `captured`

@@ -1,5 +1,7 @@
 # Import from QuickBooks Desktop IIF
 
+![Import Wizard showing accepted IIF and spreadsheet file formats](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
+
 Create or import a company in SPRK from a QuickBooks Desktop IIF export using the Companies page.
 
 ## Purpose
@@ -45,4 +47,4 @@ SPRK imports the QuickBooks Desktop IIF file and adds the resulting company to t
 
 - App sections: `companies`
 - Last validated: 2026-05-01
-- Screenshot status: `not-started`
+- Screenshot status: `captured`

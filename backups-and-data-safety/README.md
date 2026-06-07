@@ -1,5 +1,7 @@
 # Backups and Data Safety
 
+![Backups settings showing backup path and retention options](../screenshots/backups-and-data-safety/backup-settings-audit-step-01.png)
+
 Review backup settings, understand the automatic schedule, and use the current on-demand backup controls that are publicly visible in SPRK.
 
 ## In This Section
@@ -12,4 +14,4 @@ Review backup settings, understand the automatic schedule, and use the current o
 
 - App sections: `backups`
 - Last validated: 2026-05-07
-- Screenshot status: `not-started`
+- Screenshot status: `captured`

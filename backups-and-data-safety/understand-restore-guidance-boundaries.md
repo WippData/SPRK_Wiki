@@ -1,5 +1,7 @@
 # Understand Restore Guidance Boundaries
 
+![Backups settings showing backup path and schedule controls](../screenshots/backups-and-data-safety/backup-settings-audit-step-01.png)
+
 Use caution when discussing restore workflows, because the validated public `Backups` tab currently shows backup settings and an on-demand backup action, not a restore workflow.
 
 ## Purpose
@@ -42,4 +44,4 @@ You can describe the current public boundary accurately: SPRK exposes backup con
 
 - App sections: `backups`
 - Last validated: 2026-05-07
-- Screenshot status: `not-started`
+- Screenshot status: `captured`

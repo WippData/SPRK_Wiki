@@ -1,5 +1,7 @@
 # Review Common Payables Workflows
 
+![Bills list showing payable balances and payment actions](../screenshots/expenses-and-payables/bills-list-step-01.png)
+
 Use a simple decision path to move from vendor setup to bill recognition, payment, and check tracking without mixing up the accounting effect.
 
 ## Purpose
@@ -47,4 +49,4 @@ You can choose the right payables page quickly and avoid confusing master-data s
 
 - App sections: `vendors`, `bills`, `checks`
 - Last validated: 2026-06-01
-- Screenshot status: `planned`
+- Screenshot status: `captured`

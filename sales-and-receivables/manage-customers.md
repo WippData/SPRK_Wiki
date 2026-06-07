@@ -1,5 +1,7 @@
 # Manage Customers
 
+![Customers list with editable customer records](../screenshots/sales-and-receivables/customers-list-step-01.png)
+
 Create and maintain customer records so invoicing, payment follow-up, and customer-specific receivables workflows start from clean setup data.
 
 ## Purpose
@@ -68,4 +70,4 @@ The customer is saved and available for invoice selection, payment workflows, se
 
 - App sections: `customers`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

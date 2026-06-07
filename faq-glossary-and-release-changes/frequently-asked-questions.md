@@ -1,5 +1,7 @@
 # Frequently Asked Questions
 
+![Support tab with help and troubleshooting context](../screenshots/faq-glossary-and-release-changes/faq-support-context-step-01.png)
+
 Use this page when you want quick answers to common SPRK questions about companies, navigation, licensing, support, backups, and the difference between product help actions and accounting transactions.
 
 ## Purpose
@@ -54,4 +56,4 @@ You can answer common SPRK usage questions quickly and route yourself to the rig
 
 - App sections: `dashboard`, `companies`, `license`, `support`, `preferences`, `backups`
 - Last validated: 2026-05-10
-- Screenshot status: `not-started`
+- Screenshot status: `captured`

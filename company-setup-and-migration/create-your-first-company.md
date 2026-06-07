@@ -1,5 +1,7 @@
 # Create Your First Company
 
+![New company drawer for entering company details](../screenshots/company-setup-and-migration/new-company-drawer-step-01.png)
+
 Create a company from the Companies tab and set the core accounting options that SPRK uses for day-to-day work.
 
 ## Purpose
@@ -59,4 +61,4 @@ The new company is added to the `Companies` table and becomes available as the a
 
 - App sections: `companies`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

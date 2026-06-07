@@ -1,5 +1,7 @@
 # View and Print Bank Reconciliation Reports
 
+![Reports Reconciliation tab opened from Print Bank Rec](../screenshots/reconciliation/reconciliation-report-tab-step-01.png)
+
 Open the bank reconciliation report from an active reconciliation account or from posted reconciliation history, then review the report output without changing ledger activity.
 
 ## Purpose
@@ -61,4 +63,4 @@ SPRK opens the reconciliation report area for the selected account and posted st
 
 - App sections: `reconcile`, `reports`
 - Last validated: 2026-06-05
-- Screenshot status: `blocked`
+- Screenshot status: `captured`

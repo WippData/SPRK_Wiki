@@ -1,5 +1,7 @@
 # Create a Starting Balance
 
+![Reconciliation account selection for starting balance context](../screenshots/reconciliation/reconcile-account-selection-audit-step-01.png)
+
 Create the opening journal entry for a bank or credit account, then use `Reconcile` to establish the formal starting balance that future reconciliations will build from.
 
 ## Purpose
@@ -57,4 +59,4 @@ SPRK uses the journal entry as the first reconciliation anchor for that account.
 
 - App sections: `ledger`, `reconcile`
 - Last validated: 2026-05-15
-- Screenshot status: `not-started`
+- Screenshot status: `captured`

@@ -1,5 +1,7 @@
 # Use Report Drilldown Behavior
 
+![Report drilldown window showing supporting journal entries](../screenshots/reports-and-financial-review/report-drilldown-window-step-01.png)
+
 Open a report row with supporting detail when SPRK exposes drilldown, then review the underlying journal entries without changing the original posting.
 
 ## Purpose
@@ -55,4 +57,4 @@ SPRK opens a supporting-entry view for the selected account and date context so 
 
 - App sections: `reports`, `ledger`
 - Last validated: 2026-06-04
-- Screenshot status: `planned`
+- Screenshot status: `captured`

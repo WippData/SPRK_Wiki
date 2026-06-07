@@ -1,5 +1,7 @@
 # Sign In to SPRK
 
+![SPRK application shell after sign-in](../screenshots/getting-started/sidebar-and-main-navigation-step-01.png)
+
 Enter the app from the local sign-in screen, or complete the startup choice flow if this is the first time the workspace is being opened.
 
 ## Purpose
@@ -46,4 +48,4 @@ You enter SPRK and land in the main application shell with sidebar navigation an
 
 - App sections: `dashboard`, `companies`
 - Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Screenshot status: `captured`

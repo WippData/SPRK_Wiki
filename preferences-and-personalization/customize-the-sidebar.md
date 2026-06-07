@@ -1,5 +1,7 @@
 # Customize the Sidebar
 
+![Sidebar configuration modal with visible and hidden navigation items](../screenshots/preferences-and-personalization/sidebar-configuration-step-01.png)
+
 Use the sidebar editor in `Preferences` to rename sections, reorder links, hide items, and add external links for your own navigation setup.
 
 ## Purpose
@@ -50,4 +52,4 @@ Your sidebar reflects your saved navigation preferences while keeping required s
 
 - App sections: `preferences`
 - Last validated: 2026-05-04
-- Screenshot status: `not-started`
+- Screenshot status: `captured`
