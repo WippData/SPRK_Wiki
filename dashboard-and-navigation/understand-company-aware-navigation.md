@@ -1,5 +1,7 @@
 # Understand Company-Aware Navigation
 
+![SPRK Dashboard showing Demo Company selected in the sidebar with company-aware navigation and dashboard data visible](../screenshots/dashboard-and-navigation/company-aware-navigation-step-01.png)
+
 Learn how the active company affects what you see as you move through SPRK and how to avoid working in the wrong company.
 
 ## Purpose
@@ -39,4 +41,4 @@ You understand that pages, search results, dashboard data, and accounting workfl
 
 - App sections: `dashboard`, `companies`
 - Last validated: 2026-05-01
-- Screenshot status: `not-started`
+- Screenshot status: `captured`
