@@ -25,8 +25,10 @@ Use this article when reconciliation stops with a validation error, an unexpecte
 3. If a transaction is missing from the reconciliation table, confirm that it is:
    - In the selected account
    - Already confirmed
-   - Dated on or before the statement ending date
    - Not already reconciled
+   - Not excluded from bank review
+   - A row that belongs on the statement you are reconciling
+   - If the transaction date is after the statement ending date, verify whether the statement actually cleared it in this period before selecting it.
 4. If a match is wrong, use `Unmatch` before finishing the reconciliation and choose the correct check again if needed.
 5. If SPRK reports that a transaction is already reconciled, remove it from your current plan and confirm whether it was cleared in an earlier statement period.
 6. If the transaction coding is wrong and the row has an enabled `Journal` action, open the linked journal entry and reverse it before adding the corrected activity.
@@ -38,7 +40,7 @@ Use this article when reconciliation stops with a validation error, an unexpecte
 You can identify whether the issue is caused by account selection, transaction status, statement setup, linked journal activity, or the first-time opening balance path. Current transaction and general ledger impact as of 2026-05-29:
 
 - Troubleshooting steps do not create new general ledger entries by themselves.
-- Correcting a reconciliation issue usually means adjusting transaction selection, dates, balances, or match state before posting the reconcile record.
+- Correcting a reconciliation issue usually means adjusting transaction selection, dates, balances, status, exclusion state, or match state before posting the reconcile record.
 - If you must change original transaction coding on a row with a linked journal entry, reversing from the linked journal creates a separate reversal entry and then preserves or corrects the bank row based on whether it was already reconciled.
 
 ## Common Mistakes
@@ -46,6 +48,7 @@ You can identify whether the issue is caused by account selection, transaction s
 - Trying to solve a reconciliation difference by leaving incorrect transactions selected.
 - Using reconciliation to fix posting mistakes that should be corrected in the original banking, invoice, bill, or journal-entry workflow.
 - Forgetting that already reconciled transactions cannot be reused in a later statement period.
+- Assuming every selectable row must be dated on or before the statement ending date. Confirmed unreconciled later-dated rows can appear when they may belong to the statement clearing period.
 - Reversing a linked journal without checking whether the correction date belongs in the current statement period.
 
 ## Related Articles

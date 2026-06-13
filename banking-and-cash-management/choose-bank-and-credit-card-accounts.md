@@ -20,6 +20,7 @@ The account chooser appears in both `Banking` and `Reconcile`.
 - Each card represents one bank or credit card account.
 - Selecting a card changes the account you are working in right now.
 - The chooser can include both bank accounts and credit cards in the same strip.
+- If the company uses name-only account presentation, account cards and dropdowns can show account names without code-first labels.
 - In `Banking`, pending counts can appear on the account cards so you can see which account still needs review.
 - The account marked `Default on open` is the account SPRK tries to open automatically the next time you return to that workflow.
 
@@ -41,6 +42,7 @@ The account chooser appears in both `Banking` and `Reconcile`.
 - Add the missing bank or credit card account before importing or reconciling activity into it.
 - If your chooser offers an add-account path, use that option to create the account without leaving the workflow.
 - If the needed account still does not appear, confirm that it was created as the correct bank or credit card type for the active company.
+- If account codes are missing from the chooser, confirm whether the company is intentionally using `Required account fields = Name`.
 
 ## Choose The Account Before Importing
 

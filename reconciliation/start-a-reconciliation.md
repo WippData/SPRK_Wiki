@@ -39,6 +39,7 @@ The reconciliation workflow is initialized with statement dates and balances for
 
 - Starting a normal reconciliation session does not create a new general ledger entry.
 - The page loads confirmed transactions for the selected account and preselects those that fall inside the statement window.
+- Eligible unreconciled confirmed rows can still appear for manual selection even when their transaction date is after the statement ending date. Use statement evidence to decide whether a later-dated row belongs on the current statement.
 - A first-time opening anchor also does not create a journal entry. It creates a posted reconciliation record so future reconciliations have an opening balance reference.
 
 ## Common Mistakes
@@ -48,6 +49,7 @@ The reconciliation workflow is initialized with statement dates and balances for
 - Entering a positive ending balance for a credit account.
 - Typing a statement date in a different order than your saved date-format preference.
 - Expecting SPRK to let you edit the opening balance from a prior posted reconciliation.
+- Assuming the statement ending date alone hides every later-dated confirmed row. Account, confirmed status, unreconciled state, and statement judgment still matter.
 
 ## Related Articles
 

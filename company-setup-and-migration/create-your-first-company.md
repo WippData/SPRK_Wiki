@@ -1,6 +1,8 @@
 # Create Your First Company
 
-![New company drawer for entering company details](../screenshots/company-setup-and-migration/new-company-drawer-step-01.png)
+![New company drawer showing account fields and accounting edit permissions](../screenshots/company-setup-and-migration/company-account-fields-defaults-step-01.png)
+
+![Required account fields selector showing Code and Name choices](../screenshots/company-setup-and-migration/required-account-fields-selector-step-02.png)
 
 Create a company from the Companies tab and set the core accounting options that SPRK uses for day-to-day work.
 
@@ -32,9 +34,15 @@ Use this workflow when you want to start a new company in SPRK without importing
    - `Dimensions`
    - `Default Accounts Receivable`
    - `Default Accounts Payable`
-6. For date fields such as `Posting Cutoff Date` and `Fiscal Year End`, you can use the visible calendar control or type a date directly. Typed dates should follow your saved `Preferences` date order; SPRK normalizes accepted entries to the selected display format.
-7. Select `Create`.
-8. Confirm that the new company appears in the companies list and becomes the active company after creation.
+6. Review `Accounting edit permissions` before creating the company.
+   - Workspace or tenant defaults can prefill accounting edit policies when those defaults exist.
+   - Explicit choices you make in the company drawer override those defaults for the new company.
+7. Use `Required account fields` to decide whether account codes are required in visible account setup.
+   - Choosing `Name` only can make account-code columns and code-first labels disappear from the `Chart of Accounts`, bank-account choosers, reconcile account selectors, and account dropdowns that otherwise show `code · name`.
+   - When `Name` only is active, account pickers sort and label by account name instead of code-first display strings.
+8. For date fields such as `Posting Cutoff Date` and `Fiscal Year End`, you can use the visible calendar control or type a date directly. Typed dates should follow your saved `Preferences` date order; SPRK normalizes accepted entries to the selected display format.
+9. Select `Create`.
+10. Confirm that the new company appears in the companies list and becomes the active company after creation.
 
 ## Expected Result
 
@@ -47,6 +55,7 @@ The new company is added to the `Companies` table and becomes available as the a
 - Setting the wrong `Country (ISO)` format. Use the short country code shown by the product, not the full country name.
 - Typing setup dates in an order that does not match your saved date-format preference.
 - Ignoring default receivable or payable account settings when your team needs invoices or bills immediately after setup.
+- Treating missing account codes in lists as missing data when the company is configured for name-only account presentation.
 
 ## Related Articles
 

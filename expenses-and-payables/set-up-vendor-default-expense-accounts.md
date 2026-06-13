@@ -11,6 +11,7 @@ Use this page when the same vendor usually points to the same expense account an
 ## Why This Matters
 
 - Vendor setup can carry a `Default Expense Account`.
+- Clean vendor setup also helps vendor-aware bank imports resolve vendor columns by exact active vendor ID or uniquely matched active vendor name when that workflow is available.
 - Supported workflows can reuse that default instead of making you recategorize the same vendor repeatedly.
 - The default helps reduce cleanup work later when you review vendor activity and expense reporting.
 - A saved default does not replace review. You should still confirm the final account before you save or confirm a transaction.
@@ -35,6 +36,7 @@ Use this page when the same vendor usually points to the same expense account an
 
 - In `Checks`, selecting a vendor can fill `Offset Account` when that field is still blank.
 - In `Banking`, selecting or changing a vendor can fill the transaction's GL account/category when no manual category, split, or rule already controls the transaction.
+- In vendor-aware bank-import preview, exact active vendor IDs and uniquely matched active vendor names can resolve imported vendor columns. Unresolved names stay visible until you choose a vendor, create the unknown vendors from the preview, or leave the row for later review.
 - If Banking prompts before saving a placeholder-style vendor default such as `Ask My Accountant`, `Pending`, or `TBD`, review the warning before you let that account become the vendor's reusable default.
 - Vendor imports can map or resolve the default expense account during setup review.
 

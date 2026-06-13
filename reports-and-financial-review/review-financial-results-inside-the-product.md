@@ -2,6 +2,8 @@
 
 ![Populated General Ledger report with account groups and rows](../screenshots/reports-and-financial-review/general-ledger-report-populated-step-01.png)
 
+![Income Statement summary cards for grouped report review](../screenshots/reports-and-financial-review/income-statement-summary-cards-step-01.png)
+
 Run financial reports in SPRK, compare periods where supported, and review balances and activity inside the app without treating the report itself as accounting advice.
 
 ## Purpose
@@ -31,7 +33,10 @@ Use this workflow when you want to review company results in SPRK by period, as 
 6. Select `Run`.
 7. Review the summary totals and report rows shown on the page.
    - In `General Ledger`, use `Group By` when you want account-type, subtype, or nested type-and-subtype sections before expanding account detail.
+   - Statement and trial-balance rows follow account code when codes are present and fall back to account name when codes are blank.
 8. If something looks unusual, use drilldown where available to inspect the supporting entries instead of guessing from the summary alone.
+   - Supported statement cards, subtotals, totals, and rows can drill into grouped supporting detail, not only single-account leaf rows.
+   - Grouped drilldowns can represent account scopes such as `Income`, `Expense`, `Net Income`, `Assets`, `Liabilities`, `Equity`, or `Net change in cash`.
 
 ## Expected Result
 
@@ -40,6 +45,7 @@ You can review current report totals and detailed lines directly in SPRK for the
 - Report totals reflect posted activity already stored in SPRK.
 - Running or rerunning the report does not create, reverse, or reclassify any journal entry.
 - Compare-period and grouping views reorganize the display only; they do not change source transactions.
+- Account-code or account-name ordering changes display consistency only; it does not change balances.
 - Running a reconciliation report reads a posted reconciliation period for the selected account; it does not reopen or change that reconciliation.
 
 ## Common Mistakes

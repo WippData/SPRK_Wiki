@@ -22,7 +22,9 @@ Use this workflow when you are already in the app and want to start a new compan
 2. Open the company selector.
 3. Choose `+ Add Company`.
 4. SPRK opens the `Companies` area and takes you to the new-company flow.
-5. Enter the company details that apply to the new company, such as the display name, currency, country, posting cutoff date, fiscal year end, and any default A/R or A/P account choices.
+5. Enter the company details that apply to the new company, such as the display name, currency, country, posting cutoff date, fiscal year end, required account fields, accounting edit permissions, and any default A/R or A/P account choices.
+   - Workspace or tenant accounting edit-policy defaults can prefill the drawer when those defaults exist, while explicit values you choose in the form override them.
+   - `Required account fields = Name` can make supported account lists and pickers show account names without account codes.
 6. Select `Create` when the new company setup is ready.
 7. Confirm the new company becomes selectable and review whether SPRK switches the active company to the newly created company.
 
