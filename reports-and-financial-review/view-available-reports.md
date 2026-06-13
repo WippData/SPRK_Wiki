@@ -38,6 +38,8 @@ Use this workflow when you want to see which reports are available in SPRK and r
 6. Select `Run`.
 7. Review the table and any summary cards that appear for the selected report.
    - In `General Ledger`, use `Group By` when you want the results collapsed by `Account Type`, `SubType`, or `Type & SubType` before you expand to account-level detail.
+   - On supported statement reports, non-zero summary cards, subtotals, totals, and rows can open supporting-entry drilldown.
+   - Visible statement row order follows account code when codes are present and falls back to account name when codes are blank.
 8. If needed, use `Export` to save the current report rows or `Print` to open the print workflow for the active report.
 
 ## Expected Result

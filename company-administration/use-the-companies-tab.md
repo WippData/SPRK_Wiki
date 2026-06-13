@@ -20,6 +20,7 @@ Use this workflow when you need a central place to review companies and reach th
 3. Use the filter control to switch between `Active`, `Archived`, and `All`.
 4. Select `Refresh` if you need to reload the list.
 5. Use `New Company` for a blank company, or open the menu next to it for import and demo options.
+   - The new-company drawer includes `Required account fields` and `Accounting edit permissions` so admins can review account-code presentation and edit-policy defaults before creating the company.
 6. Use the row actions to select the active company, edit a company, archive or unarchive it, or permanently delete an archived company.
 
 ## Expected Result

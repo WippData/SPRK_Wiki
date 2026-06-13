@@ -34,11 +34,14 @@ Use this workflow when you need a clean vendor record before entering bills, pri
 
 The vendor is available for bill entry, check tracking, supported banking classification, and vendor lookup. Creating or editing a vendor record does not create a general ledger transaction by itself.
 
+Clean, unique active vendor names also improve vendor-aware bank-import review when that workflow is available. Spreadsheet imports can resolve exact active vendor IDs and uniquely matched active vendor names during preview; unresolved imported names remain available for review or vendor creation from the import preview.
+
 ## Common Mistakes
 
 - Skipping vendor setup and typing payee names differently across bills and checks.
 - Treating Vendors as only a contact list. It also supports reusable setup defaults and vendor-level register review.
 - Assuming a saved vendor default expense account automatically classifies every future payable workflow.
+- Leaving common vendor names ambiguous and then expecting every bank import row to resolve automatically.
 - Assuming vendor maintenance posts accounting activity. The vendor record is reference data until you enter a transaction such as a bill.
 
 ## Related Articles

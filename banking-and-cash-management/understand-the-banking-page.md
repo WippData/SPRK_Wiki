@@ -37,6 +37,7 @@ Use this article when you want a high-level map of the Banking page before impor
    - The import starter modal shows accepted formats, starter-template download, required columns, and recommended columns before you select a spreadsheet file.
    - You can also click the uploader or drag a file onto it when the selected account is already active.
    - Import preview review happens before rows are created in `Pending`.
+   - When the build exposes vendor-aware import review, spreadsheet imports can carry vendor details. Exact active vendor IDs and uniquely matched active vendor names can resolve during preview, unresolved imported names can stay visible for review, and `Add unknown vendors (n)` creates one vendor record for each unique unresolved name in the current batch.
    - Importing only adds or updates selected, non-skipped pending transactions for the selected account.
 6. Review the `Transactions` area:
    - The transaction-type toggle supports `All`, `Expenses`, and `Deposits`.
@@ -48,6 +49,8 @@ Use this article when you want a high-level map of the Banking page before impor
    - `GL Account` selects the account for the other side of the journal entry. Some grid views still label this column `Category`; use it as the offset GL account.
    - `Split` lets you allocate one transaction across multiple accounts.
    - `Find Check` appears when check matching is supported for the selected account.
+   - `Match bank transaction` can connect eligible pending rows to open invoices, open bills, or existing checks when the row direction and document balance allow it.
+   - Register-account pairings between bank, cash, or credit-card accounts use `Transfer` language instead of document-match language.
    - The primary action confirms the transaction once it is ready.
 8. If you use `New` to enter a bank transaction manually:
    - `GL Account` is required before `Submit & Confirm` can post the transaction.
@@ -64,6 +67,7 @@ You understand where to select the account, where imported files enter the workf
 - Viewing the Banking page does not post anything to the general ledger.
 - Selecting an account or saving a default account does not post anything to the general ledger.
 - Selecting accounts, filtering, importing files, editing GL account/category choices, assigning vendors, creating splits, and matching checks on the page are preparation steps only.
+- Creating vendors from an import preview, when available, updates vendor setup and preview resolution only; rows still must be confirmed from the preview before they reach `Pending`.
 - Draft Grid Edit cleanup remains a preparation step until the changes are applied, and applying Grid Edit changes still does not confirm the bank transaction by itself.
 - Reviewing a bank-import preview, skipping likely duplicate rows, and restoring rows before import are preparation steps only.
 - General ledger posting happens when a pending transaction is confirmed.

@@ -32,6 +32,10 @@ Use this workflow when a customer has paid an invoice and you want SPRK to reduc
 7. Return to the invoice list and confirm the updated `Balance` and `Status`.
 8. If you need collection follow-up for other invoices from the same customer, return to that customer record or aging report after the payment is recorded.
 
+## Banking Match Path
+
+When the customer payment first appears as a pending money-in row in `Banking`, use `Match bank transaction` when available. SPRK can suggest open invoices, show the candidate number, customer, dates, open amount, bank amount, and difference, then use `Receive Payment & Confirm` or `Receive Partial & Confirm` when the bank amount is eligible. Overpayments are not actionable from that Banking match path.
+
 ## Expected Result
 
 SPRK records the payment, reduces the invoice balance, and updates the status:

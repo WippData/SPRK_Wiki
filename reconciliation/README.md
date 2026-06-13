@@ -1,6 +1,6 @@
 # Reconciliation
 
-Reconcile a bank or credit card account against a statement, manage matched transactions, and finish only when the difference is zero.
+Reconcile a bank or credit card account against a statement, manage matched transactions, account for statement-cleared timing differences, and finish only when the difference is zero.
 
 Begin by choosing the specific bank or credit card account you want to reconcile so statement dates, statement balances, and clearing work stay tied to the correct register.
 

@@ -2,7 +2,7 @@
 
 ![Reports page showing report tabs, summary cards, and output controls](../screenshots/reports-and-financial-review/reports-overview-step-01.png)
 
-Open the Reports area, run the report you need, set date controls, review supporting detail, and understand report navigation inside SPRK.
+Open the Reports area, run the report you need, set date controls, review supporting detail from rows or supported totals, and understand report navigation inside SPRK.
 
 ## In This Section
 

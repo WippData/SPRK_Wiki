@@ -27,6 +27,7 @@ Use this article when you need to understand how accounts are grouped, created, 
    - Accounts are sorted by code.
    - Child accounts can be linked by a saved parent account or inferred from account codes when the code structure supports it.
    - Filters let you narrow by `Type`, `Subtype`, and `Status`.
+   - If the company is configured with `Required account fields = Name`, account-code columns and code-first labels can disappear from the visible chart and related account pickers.
 6. Select `New` or the edit pencil for an existing row when you need to maintain an account record.
 7. When creating or editing an account, fill in the fields SPRK supports publicly:
    - `Code`
@@ -46,12 +47,14 @@ You can organize the account list into a clearer structure and keep accounts ava
 - Creating, editing, importing, exporting, or deactivating accounts from `Chart of Accounts` does not post a journal entry by itself.
 - These actions change account setup and availability, not existing account balances.
 - Export produces a file only and does not change ledger data.
+- Name-only account presentation changes how accounts are shown and sorted in supported lists. It does not delete stored account codes or change balances.
 
 ## Common Mistakes
 
 - Expecting `Delete` to erase prior history. SPRK marks the account inactive instead.
 - Importing parent relationships without valid `parentId` values.
 - Treating subtype as required for every account when the page only exposes it as an optional field.
+- Assuming missing visible account codes mean the codes were deleted. Check the company's `Required account fields` setting first.
 
 ## Related Articles
 

@@ -34,6 +34,10 @@ Use this workflow when you need to enter a vendor bill, recognize the payable, a
    - `Draft` stores the bill without posting Accounts Payable.
    - `Open` stores the bill and posts the payable based on the current bills workflow.
 9. Save the bill.
+   - If you edit and save a bill that has already posted, SPRK can show `Save Posted Bill` before it changes the posting.
+   - Review the available strategy before continuing: `Post adjustment journal entry`, `Reverse and repost`, or `Edit existing journal entry`.
+   - Adjustment dates can use `Today`, `Original posting date`, or `Custom date`.
+   - Reversal dates can use `Original posting date`, `Today`, or `Custom date`; repost dates can use `Document date`, `Today`, or `Custom date`.
 10. Review the bill list to confirm the expected `Status`, `Total`, and `Balance`.
 11. When you are ready to record payment, use the dollar action for the bill.
 12. In `Record payment`, complete:
@@ -43,6 +47,10 @@ Use this workflow when you need to enter a vendor bill, recognize the payable, a
    - `Reference #`, if needed
    - `Memo`
 13. Record the payment and confirm the updated balance and status in the bill list.
+
+## Banking Match Path
+
+When the vendor payment first appears as a pending money-out row in `Banking`, use `Match bank transaction` when available. SPRK can suggest open bills, show the candidate number, vendor, dates, open amount, bank amount, and difference, then use `Pay Bill & Confirm` or `Pay Partial & Confirm` when the bank amount is eligible. Overpayments are not actionable from that Banking match path.
 
 ## Expected Result
 
@@ -56,6 +64,7 @@ The bill is saved and appears in the bill list. Current general ledger impact as
   - Debit `Accounts Payable`.
   - Credit the selected `Paid from` account.
 - Full payment changes the bill to `Paid`. A smaller payment leaves the bill as `Partial`.
+- Saving changes to an already posted bill follows the posted-save strategy you choose when SPRK prompts. `Edit existing journal entry` can be unavailable when company policy or prior adjustment history does not allow it.
 
 ## Common Mistakes
 
@@ -65,6 +74,7 @@ The bill is saved and appears in the bill list. Current general ledger impact as
 - Recording a payment without checking the remaining balance first.
 - Entering a payment amount larger than intended. Review overpayments carefully before recording them.
 - Assuming delete or void behavior reverses prior ledger impact automatically. This article documents bill creation and payment behavior only.
+- Treating `Save Posted Bill` as a routine draft save. It is an audit-sensitive choice about how SPRK should preserve or adjust the posted entry.
 
 ## Related Articles
 

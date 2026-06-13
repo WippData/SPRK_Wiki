@@ -14,6 +14,7 @@ Use this workflow when you need to create a new customer invoice, decide whether
 - The invoice amount can be built from one or more lines.
 - Your company is ready to use invoices in receivables workflows.
 - You know which receivables account should carry the invoice when it opens.
+- If the company uses name-only account presentation, account pickers such as `AR Account` can show names without code-first labels.
 - If the customer uses saved payment terms, you are ready to review the filled due date before saving.
 
 ## Create a new invoice
@@ -44,6 +45,10 @@ Use this workflow when you need to create a new customer invoice, decide whether
    - `Open` moves the invoice into an active receivables state.
 12. If you choose `Open`, confirm `AR Account`, due date, and lines one more time before saving.
 13. Save the invoice.
+   - If you edit and save an invoice that has already posted, SPRK can show `Save Posted Invoice` before it changes the posting.
+   - Review the available strategy before continuing: `Post adjustment journal entry`, `Reverse and repost`, or `Edit existing journal entry`.
+   - Adjustment dates can use `Today`, `Original posting date`, or `Custom date`.
+   - Reversal dates can use `Original posting date`, `Today`, or `Custom date`; repost dates can use `Document date`, `Today`, or `Custom date`.
 14. Review the invoice list to confirm the expected status, total, balance, terms, and due date.
 
 ## Open an existing invoice
@@ -56,7 +61,7 @@ Use this workflow when you need to create a new customer invoice, decide whether
 
 ## Expected Result
 
-The invoice appears in the invoice list with the expected number, customer, totals, balance, payment timing, and status. Reopened invoices can be reviewed in view mode or updated in edit mode.
+The invoice appears in the invoice list with the expected number, customer, totals, balance, payment timing, and status. Reopened invoices can be reviewed in view mode or updated in edit mode. Posted invoice saves follow the strategy you choose when SPRK prompts, and `Edit existing journal entry` can be unavailable when company policy or prior adjustment history does not allow it.
 
 ## Common Mistakes
 
@@ -67,6 +72,7 @@ The invoice appears in the invoice list with the expected number, customer, tota
 - Skipping a review of the due date after customer terms or invoice dates change.
 - Assuming customer payment terms are always correct for exceptions, rush jobs, or negotiated one-off dates.
 - Changing an existing invoice without checking its current balance and status first.
+- Treating `Save Posted Invoice` as a routine draft save. It is an audit-sensitive choice about how SPRK should preserve or adjust the posted entry.
 
 ## Related Articles
 

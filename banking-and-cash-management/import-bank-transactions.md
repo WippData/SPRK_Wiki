@@ -26,7 +26,8 @@ Use this workflow when you have external bank or credit card activity in a file 
 4. In the `Bank Transaction Import Template` modal, review the file guidance before you select a file:
    - Accepted formats are `.csv`, `.xlsx`, `.xlsm`, `.ofx`, `.qfx`, and `.qbo`.
    - Spreadsheet imports require `Date`, `Description`, and `Amount`.
-   - Spreadsheet imports can also include `Debit`, `Credit`, `Check #`, and `Memo`.
+   - Spreadsheet imports can also include the recommended columns shown in the starter modal, such as `Debit`, `Credit`, `Check #`, and `Memo`.
+   - When your build exposes vendor-aware import columns, spreadsheet imports can also include `Vendor` and `Vendor ID`.
    - `OFX`, `QFX`, and `QBO` files do not use the spreadsheet columns.
    - `Download Template` gives you a starter spreadsheet layout.
 5. Choose `Import File`, then select one supported file.
@@ -35,6 +36,9 @@ Use this workflow when you have external bank or credit card activity in a file 
    - The preview shows how many rows were parsed before you confirm anything.
    - The preview can show how many rows are selected for import before anything is added to `Pending`.
    - Rows that appear to match existing activity can show a likely-duplicate warning. Treat this as a review prompt, not as proof that the row is definitely a duplicate.
+   - When the import preview exposes vendor-aware review, a spreadsheet with vendor information can show a `Vendor` column.
+   - Exact active vendor IDs and uniquely matched active vendor names can resolve automatically. Unresolved imported names stay visible for review instead of being silently discarded.
+   - Use `Add unknown vendors (n)` only when the unresolved names should become new vendor records. The count is based on unique unresolved imported names in the current batch, not every unresolved row.
    - Use row-level `Skip` when a row should not be imported. Use `Restore` if you skipped a row and decide it should be included after all.
    - You can filter the preview by description, date, and transaction type if you want to inspect a subset of the imported rows.
 7. If the money direction looks backwards, turn on `Swap spent/received` before confirming the preview.
@@ -48,6 +52,7 @@ The imported rows are added to the selected account's pending bank register and 
 
 - Selecting the destination account does not post anything to the general ledger.
 - Opening the preview and changing the `Swap spent/received` option do not post anything to the general ledger.
+- When vendor creation is available from the preview, it updates vendor setup and the current preview batch only. It does not move rows to `Pending` or post bank activity.
 - Confirming the import preview only loads or updates selected, non-skipped rows as pending bank transactions for later review.
 - The general ledger is affected later, when each pending transaction is confirmed from the Banking workflow.
 
@@ -56,6 +61,7 @@ The imported rows are added to the selected account's pending bank register and 
 - Importing while the wrong bank or credit card account is selected.
 - Forgetting that SPRK will not let you import until an account is chosen.
 - Ignoring likely-duplicate warnings in the preview instead of comparing the row to existing bank activity.
+- Assuming an unresolved imported vendor name has been assigned to a vendor record. Review the preview and use `Add unknown vendors (n)` only for names you actually want to create.
 - Forgetting that skipped preview rows are excluded from the import unless you restore them before confirming.
 - Skipping the preview and missing a spent-versus-received reversal issue.
 - Treating imported rows as final postings rather than as pending items still waiting for review.

@@ -1,6 +1,6 @@
 # Record Journal Entries
 
-Create balanced manual journal entries in the `Ledger` page, optionally schedule an automatic reversing entry, save reusable templates when needed, and understand how posting affects the general ledger.
+Create balanced manual journal entries in the `Ledger` page, optionally create linked bank-register rows when that drawer option is available, schedule an automatic reversing entry, save reusable templates when needed, and understand how posting affects the general ledger.
 
 ![New Journal Entry drawer showing date, memo, account lines, debit and credit columns, totals, and reversing-entry controls](../screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png)
 
@@ -23,20 +23,25 @@ Use this workflow when you need to record a manual journal entry directly in the
    - SPRK currently pre-fills the next day by default when you start a new manual journal entry.
    - Use a reversal date on or after the journal date.
    - Leave the switch off when you only want the original entry.
-5. Add each journal line with the correct account and amount.
-6. If your company uses dimensions or classes, complete those fields on the related lines.
-7. Confirm the entry is balanced before saving:
+5. If the journal touches bank, cash, or credit-card accounts and you want it to appear in the bank register immediately, turn on the bank-register option when the drawer exposes it.
+   - The option is off by default.
+   - When enabled, SPRK creates linked confirmed bank-register rows for eligible bank, cash, or credit-card lines instead of waiting for a separate bank import or manual bank entry.
+6. Add each journal line with the correct account and amount.
+7. If your company uses dimensions or classes, complete those fields on the related lines.
+8. Confirm the entry is balanced before saving:
    - every line must use either debit or credit, not both
    - totals must match before the save action is allowed
-8. Select `Create` to post the entry.
-9. If you expect to reuse the same layout later, use the save-template option from the journal entry drawer.
-10. Review the new entry in the ledger table and use search or filters to find it again later.
+9. Select `Create` to post the entry.
+10. If you expect to reuse the same layout later, use the save-template option from the journal entry drawer.
+11. Review the new entry in the ledger table and use search or filters to find it again later.
 
 ## Expected Result
 
 A balanced journal entry is posted to the ledger and appears in the journal-entry list. Current general ledger impact as of 2026-06-04:
 
 - Saving a manual journal entry creates a new journal entry record and posts each entered debit and credit line to the general ledger.
+- The bank-register option, when available and enabled, creates linked confirmed register rows for eligible Bank, Cash, and Credit Card journal lines. The journal entry remains the posting source.
+- Eligible bank-side lines are linked individually, so one manual journal can create more than one confirmed bank-register row. Identical amounts on the same account are still separate linked rows.
 - When `Create reversing entry` is enabled on a new manual journal, SPRK schedules a linked offsetting journal entry instead of deleting or overwriting the original posting.
 - SPRK blocks unbalanced entries from being saved.
 - If the entry is off by a very small rounding amount within the current tolerance, SPRK can auto-adjust one line and note that adjustment in the memo before saving.
@@ -46,6 +51,7 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - Trying to save an entry when debit and credit totals do not match.
 - Entering both debit and credit on the same line.
 - Assuming auto-reversal is part of the edit flow for existing entries. In the current live flow it appears when creating a new manual journal entry.
+- Assuming every manual journal creates bank-register activity. Register rows are opt-in and only mirror eligible bank, cash, or credit-card lines.
 - Assuming the ledger page is only for review. In the current product it is also the manual journal-entry posting page.
 
 ## Related Articles

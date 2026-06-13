@@ -27,6 +27,7 @@ Use this workflow after a reconciliation session is started and you are ready to
    - `Cleared balance` is calculated from beginning balance, spent, and received totals.
    - `Difference` must reach zero before a normal reconciliation can finish.
 6. When the difference is zero, select `Finish`.
+   - If a later reconciliation period carries an opening balance that already equals the statement ending balance, SPRK can finish the quiet period with zero selected transactions.
 7. If needed, use `Export` before finishing to download the current reconciliation table as a CSV review file.
 8. After the reconciliation is posted, use `History` and `View report`, or use `More` > `Print Bank Rec`, when you need to review the bank reconciliation report for that posted statement period.
 
@@ -38,6 +39,7 @@ SPRK finalizes the reconciliation for the selected statement window. Current tra
 - SPRK creates a posted reconciliation record for the account and statement ending date.
 - Each selected confirmed bank transaction is stamped as reconciled, tied to that reconciliation record, and marked with a cleared date and statement end date.
 - SPRK requires the difference to be zero for reconciliations with prior history.
+- Later reconciliations can finish with no selected transactions when the carried opening balance already equals the statement ending balance.
 - Posted reconciliation records can be reviewed later from reconciliation history and the Reports `Reconciliation` tab.
 
 ## Common Mistakes
@@ -45,6 +47,7 @@ SPRK finalizes the reconciliation for the selected statement window. Current tra
 - Trying to finish while the difference is not zero.
 - Clearing transactions from the wrong account.
 - Expecting pending bank transactions to be available for final clearing.
+- Selecting a row just to finish a quiet statement period when the beginning and ending balances already match.
 - Assuming reconciliation changes the original account coding of a confirmed bank transaction.
 
 ## Related Articles
