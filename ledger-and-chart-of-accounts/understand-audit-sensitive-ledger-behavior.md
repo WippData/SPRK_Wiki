@@ -22,16 +22,17 @@ Use this article when you need to understand how SPRK preserves history around j
    - line amount edits can be restricted
    - dimension edits can be restricted
    - account changes are not allowed line-by-line in the current edit path
-3. If a correction should preserve the original posting trail, use reversal behavior instead of trying to overwrite history.
-4. For a new manual journal entry that should unwind automatically, use the create-time `Create reversing entry` switch in the journal drawer instead of waiting to reverse it later by hand.
-5. For a new manual journal entry that should create bank-register rows, turn on the bank-register option, when the drawer exposes it, only when you want eligible Bank, Cash, or Credit Card lines mirrored into confirmed register activity.
-6. When reversing an existing posted entry, choose the posting-date mode that fits the correction:
+3. Confirm whether the account is configured as a company-level control account before trying to post it from a manual journal. Control accounts should be reached through their source workflow.
+4. If a correction should preserve the original posting trail, use reversal behavior instead of trying to overwrite history.
+5. For a new manual journal entry that should unwind automatically, use the create-time `Create reversing entry` switch in the journal drawer instead of waiting to reverse it later by hand.
+6. For a new manual journal entry that should create bank-register rows, turn on the bank-register option, when the drawer exposes it, only when you want eligible Bank, Cash, or Credit Card lines mirrored into confirmed register activity.
+7. When reversing an existing posted entry, choose the posting-date mode that fits the correction:
    - `today`
    - `original`
    - `custom`
-7. For a confirmed bank transaction with a linked journal entry, open the journal from `Reconcile` and reverse from the linked journal modal.
-8. Remember that a reversal creates a separate entry with flipped debit and credit amounts rather than deleting the original.
-9. In `Chart of Accounts`, treat account deletion as deactivation. Prior activity remains part of the company history.
+8. For a confirmed bank transaction with a linked journal entry, open the journal from `Reconcile` and reverse from the linked journal modal.
+9. Remember that a reversal creates a separate entry with flipped debit and credit amounts rather than deleting the original.
+10. In `Chart of Accounts`, treat account deletion as deactivation. Prior activity remains part of the company history.
 
 ## Expected Result
 
@@ -44,6 +45,7 @@ You understand which maintenance actions keep an audit trail and how they affect
 - If a reversal is tied to an unreconciled bank transaction, SPRK excludes the original bank row for audit history.
 - If a reversal is tied to a reconciled bank transaction, SPRK creates a confirmed correction bank transaction instead of changing the reconciled row.
 - When journal edits are allowed, the saved entry itself is updated and an edit-audit record is stored alongside the before-and-after versions.
+- Control-account settings can block new manual journal posting to selected accounts without deleting the account or changing existing history.
 - Marking an account inactive does not remove prior ledger activity or create a new journal entry.
 
 ## Common Mistakes
@@ -53,6 +55,7 @@ You understand which maintenance actions keep an audit trail and how they affect
 - Assuming opt-in bank-register rows are editable accounting records separate from the journal. They mirror eligible journal lines and accounting corrections go back through the journal.
 - Assuming linked bank reversal always changes the original bank row. Reconciled rows are preserved and corrected with a separate bank transaction.
 - Expecting to swap an entry line to a different account during edit. The current edit rules do not allow account changes on existing lines.
+- Treating a configured control account as inactive or deleted because it is unavailable in new manual journal choices.
 - Treating inactive accounts as erased accounts. Inactive status only changes availability for future use.
 
 ## Related Articles
@@ -65,5 +68,5 @@ You understand which maintenance actions keep an audit trail and how they affect
 ## Info
 
 - App sections: `ledger`, `chart`
-- Last validated: 2026-06-04
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

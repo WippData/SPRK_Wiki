@@ -39,7 +39,7 @@ Use this workflow when you want to move from a report summary card, subtotal, to
 
 ## Expected Result
 
-SPRK opens a supporting-entry view for the selected account or account group and date context so you can trace report amounts back to posted activity. Current general ledger impact as of 2026-06-04:
+SPRK opens a supporting-entry view for the selected account or account group and date context so you can trace report amounts back to posted activity. Current general ledger impact as of 2026-06-17:
 
 - Drilldown does not create a correcting entry or edit an existing one.
 - Drilldown only exposes journal entries that are already posted in the ledger for that company and date context.
@@ -62,5 +62,5 @@ SPRK opens a supporting-entry view for the selected account or account group and
 ## Info
 
 - App sections: `reports`, `ledger`
-- Last validated: 2026-06-04
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

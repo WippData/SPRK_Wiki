@@ -41,15 +41,18 @@ Use this workflow when you want to see which reports are available in SPRK and r
    - On supported statement reports, non-zero summary cards, subtotals, totals, and rows can open supporting-entry drilldown.
    - Visible statement row order follows account code when codes are present and falls back to account name when codes are blank.
 8. If needed, use `Export` to save the current report rows or `Print` to open the print workflow for the active report.
+9. Treat `Tax Forms` as a review view where visible, not as tax return preparation, tax filing, agency submission, or compliance approval.
 
 ## Expected Result
 
-The selected report loads in the main table area with the date context and controls that match that report type. Current general ledger impact as of 2026-06-05:
+The selected report loads in the main table area with the date context and controls that match that report type. Current general ledger impact as of 2026-06-17:
 
 - Opening a report tab does not post anything to the ledger.
 - Running a report reads posted data for the active company but does not change balances.
 - Export and print are output actions only and do not create journal entries.
+- The visible `Export` action exports the active report context. Do not assume a separate batch or package export exists unless the target build exposes one.
 - Reconciliation reports are review outputs for posted reconciliation sessions and do not create new ledger activity.
+- Tax-form review does not file tax returns, submit agency forms, or replace professional compliance review.
 
 ## Common Mistakes
 
@@ -58,6 +61,7 @@ The selected report loads in the main table area with the date context and contr
 - Typing report dates in a different order than the date format saved in `Preferences`.
 - Assuming a blank report means the report is broken, when it may mean there is no activity for the selected period.
 - Treating `Export` as a way to move data back into SPRK. It is an outbound file action for the current report result.
+- Treating `Tax Forms` as tax filing or compliance approval instead of report review.
 
 ## Related Articles
 
@@ -71,5 +75,5 @@ The selected report loads in the main table area with the date context and contr
 ## Info
 
 - App sections: `reports`
-- Last validated: 2026-06-05
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

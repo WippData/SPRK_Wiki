@@ -24,7 +24,7 @@ Use this workflow when you need the main support tools inside SPRK, including th
 6. If your installed app exposes update controls, review the visible update actions first:
    - Use `Release Notes` when it is shown and you want to read what changed before restarting or comparing builds.
    - The release-notes modal can reflect the installed version, a downloaded update version, or the latest public release, depending on which updater state is visible in your build.
-   - In the 2026-06-06 validated build, `Release Notes` opened an installed-version modal for `SPRK-0.3.45` with an `Installed` badge, publication date, release sections, and an `Open on GitHub` link.
+   - In the 2026-06-17 validation pass, the installed sidebar version was `v 0.3.51` and `Release Notes` opened an available-update modal for `SPRK-0.3.52` with publication date `Jun 15, 2026`, release sections, and an `Open on GitHub` link.
 7. If your installed app exposes update controls, use `Download Latest Version` to check for and download an available update.
 8. If an update finishes downloading and the app shows it is ready, use `Install & Restart` to apply it.
 9. If release notes do not load, use the visible fallback link to the public releases page instead of treating the Support workflow as blocked.
@@ -33,7 +33,7 @@ Use this workflow when you need the main support tools inside SPRK, including th
 
 ## Expected Result
 
-You can reach the product's visible support actions from one tab and leave with the log file, contact method, update action, release-note reference, bug-reporting path, or help topic you need. Current general ledger impact as of 2026-06-06:
+You can reach the product's visible support actions from one tab and leave with the log file, contact method, update action, release-note reference, bug-reporting path, or help topic you need. Current general ledger impact as of 2026-06-17:
 
 - Opening the Support tab does not create or change any journal entry.
 - Downloading or clearing the support log does not affect the general ledger.
@@ -57,5 +57,5 @@ You can reach the product's visible support actions from one tab and leave with 
 ## Info
 
 - App sections: `support`
-- Last validated: 2026-06-06
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

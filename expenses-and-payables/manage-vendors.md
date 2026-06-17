@@ -55,5 +55,5 @@ Clean, unique active vendor names also improve vendor-aware bank-import review w
 ## Info
 
 - App sections: `vendors`
-- Last validated: 2026-06-05
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

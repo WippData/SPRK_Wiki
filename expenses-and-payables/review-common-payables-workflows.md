@@ -19,9 +19,10 @@ Use this article when you want a quick way to choose the right payables workflow
 2. Use `Bills` when you need SPRK to track an amount owed to a vendor.
 3. Save the bill as `Draft` if you are still reviewing it, or `Open` if you want SPRK to recognize the payable.
 4. Return to `Bills` and use `Record payment` when you are paying an existing bill from a bank or cash account.
-5. Use `Checks` when you need to maintain a check record and its status, especially for matching and reconciliation work.
-6. If you classify bank transactions from imported activity, remember that vendor defaults can also help supported banking workflows start with a category suggestion.
-7. If you are unsure whether a step affects the ledger, verify it before saving:
+5. Use `View payment history` and `View linked journal entries` from the bill row menu to trace payment applications and posting history before changing a bill.
+6. Use `Checks` when you need to maintain a check record and its status, especially for matching and reconciliation work.
+7. If you classify bank transactions from imported activity, remember that vendor defaults can also help supported banking workflows start with a category suggestion.
+8. If you are unsure whether a step affects the ledger, verify it before saving:
    - Vendor setup: no journal entry
    - Bill opened: debits line accounts and credits Accounts Payable
    - Bill payment: debits Accounts Payable and credits the selected payment account
@@ -37,6 +38,8 @@ You can choose the right payables page quickly and avoid confusing master-data s
 - Entering a bill as `Open` before verifying the account coding.
 - Assuming vendor setup, bill entry, and check tracking all create the same accounting result.
 - Assuming a vendor default expense account means every downstream workflow will auto-fill without review.
+- Treating linked journal review as deletion or unposting.
+- Publishing a `Void bill` click path without validating that the target build exposes `Void bill`; the sampled 2026-06-17 `v0.3.51` menu showed `Delete` instead.
 
 ## Related Articles
 
@@ -44,9 +47,10 @@ You can choose the right payables page quickly and avoid confusing master-data s
 - [Set up vendor default expense accounts](./set-up-vendor-default-expense-accounts.md)
 - [Create and manage bills](./create-and-manage-bills.md)
 - [Work with checks](./work-with-checks.md)
+- [Review document payment history and linked journals](../ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md)
 
 ## Info
 
 - App sections: `vendors`, `bills`, `checks`
-- Last validated: 2026-06-01
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

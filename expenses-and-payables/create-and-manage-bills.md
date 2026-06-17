@@ -2,6 +2,8 @@
 
 ![New bill drawer for entering vendor bill details](../screenshots/expenses-and-payables/new-bill-drawer-step-01.png)
 
+![Bill row actions showing payment, linked journal, payment history, and delete actions visible in the current build](../screenshots/expenses-and-payables/bill-payment-history-actions-step-01.png)
+
 Enter vendor bills, decide whether they stay in draft or post to Accounts Payable, and record bill payments from the Bills page.
 
 ## Purpose
@@ -47,6 +49,11 @@ Use this workflow when you need to enter a vendor bill, recognize the payable, a
    - `Reference #`, if needed
    - `Memo`
 13. Record the payment and confirm the updated balance and status in the bill list.
+14. To review later, use the row action menu for `View payment history` or `View linked journal entries`.
+
+## Row Action Boundaries
+
+The current `v0.3.51` bill menu validated on 2026-06-17 showed `Record Payment`, `Match Payment`, `View linked journal entries`, `View payment history`, and `Delete` on a sampled open bill. Source-backed bill voiding work exists in the backlog, but `Void bill` was not visible in that sampled live menu. Do not publish a bill-void click path until the visible control appears in the target build.
 
 ## Banking Match Path
 
@@ -65,6 +72,8 @@ The bill is saved and appears in the bill list. Current general ledger impact as
   - Credit the selected `Paid from` account.
 - Full payment changes the bill to `Paid`. A smaller payment leaves the bill as `Partial`.
 - Saving changes to an already posted bill follows the posted-save strategy you choose when SPRK prompts. `Edit existing journal entry` can be unavailable when company policy or prior adjustment history does not allow it.
+- Viewing payment history or linked journal entries does not post by itself.
+- Reversing a bill-payment journal through a supported source-document confirmation can deactivate the payment application and reopen the bill balance.
 
 ## Common Mistakes
 
@@ -75,6 +84,7 @@ The bill is saved and appears in the bill list. Current general ledger impact as
 - Entering a payment amount larger than intended. Review overpayments carefully before recording them.
 - Assuming delete or void behavior reverses prior ledger impact automatically. This article documents bill creation and payment behavior only.
 - Treating `Save Posted Bill` as a routine draft save. It is an audit-sensitive choice about how SPRK should preserve or adjust the posted entry.
+- Publishing `Void bill` steps from source notes alone. Validate the visible bill row action in the target build first.
 
 ## Related Articles
 
@@ -82,9 +92,10 @@ The bill is saved and appears in the bill list. Current general ledger impact as
 - [Set up vendor default expense accounts](./set-up-vendor-default-expense-accounts.md)
 - [Work with checks](./work-with-checks.md)
 - [Review common payables workflows](./review-common-payables-workflows.md)
+- [Review document payment history and linked journals](../ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md)
 
 ## Info
 
 - App sections: `bills`
-- Last validated: 2026-06-01
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

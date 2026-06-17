@@ -37,6 +37,7 @@ Use this workflow when you want to start a new company in SPRK without importing
 6. Review `Accounting edit permissions` before creating the company.
    - Workspace or tenant defaults can prefill accounting edit policies when those defaults exist.
    - Explicit choices you make in the company drawer override those defaults for the new company.
+   - If the form exposes `Control accounts`, use it for accounts that should be posted through their source workflow instead of new manual journals.
 7. Use `Required account fields` to decide whether account codes are required in visible account setup.
    - Choosing `Name` only can make account-code columns and code-first labels disappear from the `Chart of Accounts`, bank-account choosers, reconcile account selectors, and account dropdowns that otherwise show `code · name`.
    - When `Name` only is active, account pickers sort and label by account name instead of code-first display strings.
@@ -56,6 +57,7 @@ The new company is added to the `Companies` table and becomes available as the a
 - Typing setup dates in an order that does not match your saved date-format preference.
 - Ignoring default receivable or payable account settings when your team needs invoices or bills immediately after setup.
 - Treating missing account codes in lists as missing data when the company is configured for name-only account presentation.
+- Selecting control accounts without telling journal-entry users why those accounts disappear from new manual journal account choices.
 
 ## Related Articles
 
@@ -64,10 +66,11 @@ The new company is added to the `Companies` table and becomes available as the a
 - [Use the Import Wizard](./use-the-import-wizard.md)
 - [Switch between companies](./switch-between-companies.md)
 - [Use the Companies tab](../company-administration/use-the-companies-tab.md)
+- [Record journal entries](../ledger-and-chart-of-accounts/record-journal-entries.md)
 - [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
 
 ## Info
 
 - App sections: `companies`
-- Last validated: 2026-06-05
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

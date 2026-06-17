@@ -2,7 +2,7 @@
 
 ![Receive payment drawer opened from an open invoice](../screenshots/sales-and-receivables/receive-invoice-payment-drawer-step-01.png)
 
-Record customer payments from the invoice list so SPRK updates the balance and posts the cash or bank side of the transaction.
+Record customer payments from the invoice list so SPRK updates the balance and posts the cash or bank side of the transaction, then review payment history and linked journals when you need the audit trail.
 
 ## Purpose
 
@@ -31,6 +31,7 @@ Use this workflow when a customer has paid an invoice and you want SPRK to reduc
 6. If the payment is less than or different from the remaining balance, review the confirmation prompt before you continue.
 7. Return to the invoice list and confirm the updated `Balance` and `Status`.
 8. If you need collection follow-up for other invoices from the same customer, return to that customer record or aging report after the payment is recorded.
+9. To review later, use the invoice row action menu for `View payment history` or `View linked journal entries`.
 
 ## Banking Match Path
 
@@ -45,6 +46,12 @@ SPRK records the payment, reduces the invoice balance, and updates the status:
 
 Customer payment terms and credit settings can help you review receivables before collection, but they do not replace this payment workflow.
 
+Current general ledger impact as of 2026-06-17:
+
+- Recording a payment reduces Accounts Receivable and increases the selected deposit account according to the invoice payment workflow.
+- Viewing payment history or linked journal entries does not post by itself.
+- Reversing a payment-linked journal through a supported source-document confirmation can deactivate the payment application and reopen the invoice balance.
+
 ## Common Mistakes
 
 - Editing the invoice status to `Paid` instead of using `Receive payment`.
@@ -52,15 +59,18 @@ Customer payment terms and credit settings can help you review receivables befor
 - Forgetting to choose `Deposit to`.
 - Entering an amount greater than the remaining balance.
 - Expecting a disabled dollar action on a paid invoice to reopen payment entry.
+- Recording a payment manually and then matching the same bank transaction as another payment.
+- Treating payment history as an edit screen.
 
 ## Related Articles
 
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
+- [Review document payment history and linked journals](../ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md)
 
 ## Info
 
 - App sections: `invoices`
-- Last validated: 2026-05-31
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

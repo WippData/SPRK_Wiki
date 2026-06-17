@@ -26,21 +26,24 @@ Use this article when you want a product-usage explanation of how report navigat
    - A grouped drilldown can represent several accounts behind one label, such as income, expense, net income, assets, liabilities, equity, or net change in cash.
 6. When a number appears wrong, move to the workflow that owns the original transaction or ledger entry to correct it. Do not treat the report page as the correction tool.
    - A report-launched journal preview may expose `Edit` only when the normal journal edit policy allows it.
+7. Treat tax-oriented report views as review aids only. SPRK report navigation does not prepare or file tax returns, payroll filings, sales tax filings, or jurisdiction-specific compliance submissions.
 
 ## Expected Result
 
-You can navigate the Reports area confidently and understand what each control is for without using the page as a source of accounting advice. Current general ledger impact as of 2026-05-04:
+You can navigate the Reports area confidently and understand what each control is for without using the page as a source of accounting advice. Current general ledger impact as of 2026-06-17:
 
 - Report navigation is read-only.
 - Export and print are presentation actions, not posting actions.
 - Moving from a report into supporting detail does not alter the journal entries being reviewed.
 - Report-side editing, where visible, still follows the same audit and posting-window controls as journal editing elsewhere.
+- Tax-oriented report review does not submit filings or create compliance approval.
 
 ## Common Mistakes
 
 - Asking the report page to answer accounting-policy questions that depend on professional judgment.
 - Confusing product navigation guidance with advice about how accounts should be classified.
 - Trying to fix source data from the report page instead of using the owning workflow.
+- Treating report navigation as tax, payroll, legal, or compliance advice.
 
 ## Related Articles
 
@@ -51,5 +54,5 @@ You can navigate the Reports area confidently and understand what each control i
 ## Info
 
 - App sections: `reports`
-- Last validated: 2026-05-04
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

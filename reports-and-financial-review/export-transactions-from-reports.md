@@ -32,7 +32,7 @@ Use this workflow when you need transaction-level report detail for an account, 
    - Confirm the date range is correct.
    - Confirm the report rows are limited to the account or ledger slice you intended.
    - Confirm the transaction dates, descriptions, accounts, debits, credits, balances, and any visible dimension columns match the review request.
-7. To create a spreadsheet file, select `Export`.
+7. To create a spreadsheet file for the active report context, select `Export`.
 8. To create a PDF, select `Print`, then use the system print dialog to save or print the report as a PDF.
 9. Open the exported or printed file and confirm it contains the expected filtered detail before sending it outside SPRK.
    - Current General Ledger CSV exports include `Account Code`, `Account Name`, `Date`, `Entry #`, `Memo`, `Description`, `Name`, `Debit`, `Credit`, and `Balance`.
@@ -40,17 +40,20 @@ Use this workflow when you need transaction-level report detail for an account, 
 
 ## Expected Result
 
-SPRK produces an outbound copy of the current report results for review outside the app. Current general ledger impact as of 2026-06-04:
+SPRK produces an outbound copy of the current report results for review outside the app. Current general ledger impact as of 2026-06-17:
 
 - Running the report does not post, edit, reverse, or reclassify journal entries.
 - Export and print actions do not change ledger balances.
 - The exported or printed file reflects the report filters in effect at the time you create it, rather than exporting unfiltered rows from other pages of the result set.
+- The current visible Reports page exposes active-report `Export` and `Print` controls. Do not promise a batch report package unless that target build exposes an export-many or package action.
+- Report exports are review outputs, not tax filing, payroll filing, or statutory submission workflows.
 
 ## Common Mistakes
 
 - Exporting before selecting the correct active company.
 - Forgetting to rerun the report after changing the account, type, vendor, text, or date filter.
 - Assuming `Export` creates a PDF. Use `Print` and the system PDF option when you need a PDF.
+- Assuming `Export` creates a complete tax package or agency filing.
 - Sending the file before opening it and confirming the account and date range.
 - Expecting an inactive or unavailable account to appear in every account selector.
 - Assuming another user's account selector order will match yours if your `Account dropdown sorting` preferences differ.
@@ -76,5 +79,5 @@ If the account you need is not available in the `Accounts` filter, or the select
 ## Info
 
 - App sections: `reports`, `ledger`, `chart-of-accounts`
-- Last validated: 2026-06-05
+- Last validated: 2026-06-17
 - Screenshot status: `captured`
