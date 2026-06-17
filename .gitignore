@@ -1,0 +1,6 @@
+.DS_Store
+.private/
+
+# Local screenshot experiments that are not wiki assets.
+screenshots/screencheck.png
+screenshots/capture-test-*.png
