@@ -2,7 +2,7 @@
 
 Use this article to understand how SPRK release-change notes should be read by end users: focus on the visible workflow change, the affected app areas, and whether the change has any accounting impact.
 
-![Release Notes modal showing installed SPRK version 0.3.45 and visible user-facing release changes](../screenshots/faq-glossary-and-release-changes/release-notes-modal-step-01.png)
+![Release Notes modal showing an available SPRK 0.3.52 update and user-facing release sections](../screenshots/faq-glossary-and-release-changes/release-notes-modal-step-02.png)
 
 ## Purpose
 
@@ -28,7 +28,7 @@ Use this workflow when you want to interpret public release notes without confus
 
 ## Expected Result
 
-You can read user-facing release summaries with the right frame: what changed on screen, which workflows are affected, and whether the change alters bookkeeping behavior. On 2026-06-06, the Support path showed installed-version release notes for `SPRK-0.3.45` with release sections and an external GitHub release link. Current general ledger impact as of 2026-06-06:
+You can read user-facing release summaries with the right frame: what changed on screen, which workflows are affected, and whether the change alters bookkeeping behavior. On 2026-06-17, the Support path showed `SPRK-0.3.52` as an available update while the installed sidebar version was `v 0.3.51`. The release-notes modal showed `SPRK-0.3.52`, publication date `Jun 15, 2026`, release sections, and an external GitHub release link. Current general ledger impact as of 2026-06-17:
 
 - Reading a release summary does not post or modify any transaction.
 - Opening an in-app release-notes modal or public releases link does not post or modify any transaction.
@@ -48,9 +48,10 @@ You can read user-facing release summaries with the right frame: what changed on
 - [View available reports](../reports-and-financial-review/view-available-reports.md)
 - [Review and classify bank transactions](../banking-and-cash-management/review-and-classify-bank-transactions.md)
 - [Record journal entries](../ledger-and-chart-of-accounts/record-journal-entries.md)
+- [Version 1.0 capability matrix](../version-1-0-capability-matrix.md)
 
 ## Info
 
 - App sections: `dashboard`, `support`
-- Last validated: 2026-06-06
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

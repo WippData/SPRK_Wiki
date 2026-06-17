@@ -29,12 +29,14 @@ Use this workflow when you need to understand whether plugin settings are availa
 
 ## Expected Result
 
-You can review the tenant's installed plugin inventory and inspect a plugin bundle before installing or upgrading it. Current general ledger impact as of 2026-06-05:
+You can review the tenant's installed plugin inventory and inspect a plugin bundle before installing or upgrading it. Current general ledger impact as of 2026-06-17:
 
 - Opening the `Plugins` tab does not create or edit journal entries.
 - Refreshing installed plugins reports plugin state only and does not post transactions.
 - Previewing a plugin bundle validates plugin metadata before install or upgrade; preview alone does not add a runtime page or change account balances.
-- Installing a plugin can make new app surfaces available, but it does not necessarily make every declared extension visible in the public SPRK runtime.
+- Installing and enabling a compatible `new_page` plugin can add a sidebar `Plugins` group with public runtime pages.
+- Disabling a plugin removes its public runtime pages from navigation and enables uninstall for that installed plugin.
+- Uninstalling a disabled plugin removes installed plugin metadata and company-state records.
 
 ## Runtime and Bundle Guardrails
 
@@ -61,10 +63,14 @@ Bundle preview validates package constraints before install or upgrade. Treat th
 - Installing or upgrading a bundle before reading preview warnings.
 - Treating plugin preview as a replacement for source and publisher trust checks.
 - Looking for installed-plugin actions when no plugins are installed yet. In an empty tenant, the page shows an empty inventory and the bundle preview area.
+- Looking for uninstall while a plugin is still enabled. Disable it first.
 
 ## Related Articles
 
 - [Plugins and Runtime](./README.md)
+- [Install and manage plugins](./install-and-manage-plugins.md)
+- [Control plugin availability by company](./control-plugin-availability-by-company.md)
+- [Troubleshoot plugin pages that do not appear](./troubleshoot-plugin-pages-that-do-not-appear.md)
 - [View license information](../licensing/view-license-information.md)
 - [Use the Support tab](../support-and-troubleshooting/use-the-support-tab.md)
 - [Understand personalization boundaries and saved behavior](../preferences-and-personalization/understand-personalization-boundaries-and-saved-behavior.md)
@@ -72,5 +78,5 @@ Bundle preview validates package constraints before install or upgrade. Treat th
 ## Info
 
 - App sections: `plugins`, `settings`
-- Last validated: 2026-06-05
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

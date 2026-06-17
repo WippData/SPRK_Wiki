@@ -6,6 +6,8 @@ Learn how the Banking page is organized so you can choose the right bank or cred
 
 ![New bank transaction drawer showing the GL Account helper for add-only versus confirm](../screenshots/banking-and-cash-management/banking-gl-account-drawer-step-02.png)
 
+![Banking More menu showing Import File, Download Import Template, and Disable Grid Edit actions](../screenshots/banking-and-cash-management/banking-import-template-menu-step-01.png)
+
 ## Purpose
 
 Use this article when you want a high-level map of the Banking page before importing or categorizing transactions.
@@ -62,7 +64,7 @@ Use this article when you want a high-level map of the Banking page before impor
 
 ## Expected Result
 
-You understand where to select the account, where imported files enter the workflow, and which parts of the page only prepare transactions versus which step actually posts to the general ledger. Current ledger impact as of 2026-06-05:
+You understand where to select the account, where imported files enter the workflow, and which parts of the page only prepare transactions versus which step actually posts to the general ledger. Current ledger impact as of 2026-06-17:
 
 - Viewing the Banking page does not post anything to the general ledger.
 - Selecting an account or saving a default account does not post anything to the general ledger.
@@ -92,5 +94,5 @@ You understand where to select the account, where imported files enter the workf
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-06-05
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

@@ -77,6 +77,7 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - Split confirmations post the same bank-side line plus the offset split lines you saved.
 - If the transaction was matched to a check first, confirming the bank transaction also clears the linked check.
 - Matching to an invoice or bill from Banking records the related customer receipt or bill payment as part of the confirm path. It does not silently accept overpayments.
+- A later imported opposite side of a transfer can be adopted into an existing transfer or excluded as a duplicate counterpart instead of creating a second journal entry for the same transfer.
 - Likely-duplicate warnings during import do not post, delete, or skip a transaction by themselves. They are a pre-confirm review signal before the row reaches `Pending`.
 
 ## Common Mistakes
@@ -89,6 +90,7 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - Expecting an incomplete split total to save in the current split editor.
 - Forgetting that a matched check still needs confirmation from the bank transaction workflow.
 - Treating a bank-to-bank transfer as a document match. Register-account pairings use `Transfer` wording.
+- Assuming transfer duplicate review depends only on matching description text. Linked transfer metadata can matter when SPRK recognizes a counterpart.
 - Trying to confirm or bulk-update selected Banking rows before applying draft Grid Edit changes.
 
 ## Related Articles
@@ -104,5 +106,5 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-06-05
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

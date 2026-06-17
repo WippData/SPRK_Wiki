@@ -2,7 +2,7 @@
 
 ![Dashboard overview after signing in to SPRK](../screenshots/getting-started/dashboard-high-level-step-01.png)
 
-Sign in, confirm the right company, learn the main navigation, and use the dashboard as your starting point.
+Sign in, confirm the right company, learn the main navigation, use the dashboard as your starting point, and follow a first-client setup path for firm work.
 
 ## In This Section
 
@@ -11,6 +11,7 @@ Sign in, confirm the right company, learn the main navigation, and use the dashb
 - [Understand the sidebar and main navigation](./understand-the-sidebar-and-main-navigation.md)
 - [Understand the dashboard at a high level](./understand-the-dashboard-at-a-high-level.md)
 - [First-day orientation for a new user](./first-day-orientation-for-a-new-user.md)
+- [Set up a first client for firm work](./set-up-first-client-for-firm-work.md)
 
 ## Related Foundation Workflows
 
@@ -21,5 +22,5 @@ Sign in, confirm the right company, learn the main navigation, and use the dashb
 ## Info
 
 - App sections: `dashboard`, `companies`
-- Last validated: 2026-05-04
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

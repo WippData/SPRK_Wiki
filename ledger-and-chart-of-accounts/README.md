@@ -9,6 +9,7 @@ Organize your account list, record journal entries, move ledger data in or out o
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)
 - [Record journal entries](./record-journal-entries.md)
 - [Edit linked ledger and bank activity](./edit-linked-ledger-and-bank-activity.md)
+- [Review document payment history and linked journals](./review-document-payment-history-and-linked-journals.md)
 - [Understand ledger import and export behavior](./understand-ledger-import-and-export-behavior.md)
 - [Understand audit-sensitive ledger behavior](./understand-audit-sensitive-ledger-behavior.md)
 

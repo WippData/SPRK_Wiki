@@ -1,6 +1,6 @@
 # Preferences and Personalization
 
-Review app-wide display, formatting, date-entry, account-selector ordering, update prompts, sidebar customization, supported table layouts, and which preferences stay with your user profile.
+Review app-wide display, tooltip visibility, formatting, date-entry, account-selector ordering, update prompts, sidebar customization, supported table layouts, and which preferences stay with your user profile.
 
 ![Column preferences dialog showing drag handles, visibility checkboxes, and move controls](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
 
@@ -19,5 +19,5 @@ Review app-wide display, formatting, date-entry, account-selector ordering, upda
 ## Info
 
 - App sections: `preferences`
-- Last validated: 2026-06-05
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

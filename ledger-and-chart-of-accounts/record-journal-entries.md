@@ -12,6 +12,7 @@ Use this workflow when you need to record a manual journal entry directly in the
 
 - An active company is selected.
 - The accounts you need already exist in `Chart of Accounts`.
+- The accounts are available for manual journal entry. Company-level `Control accounts` can remove source-workflow accounts from new manual journal choices.
 - You know the posting date, memo, and debit and credit lines you want to record.
 
 ## Steps
@@ -27,6 +28,7 @@ Use this workflow when you need to record a manual journal entry directly in the
    - The option is off by default.
    - When enabled, SPRK creates linked confirmed bank-register rows for eligible bank, cash, or credit-card lines instead of waiting for a separate bank import or manual bank entry.
 6. Add each journal line with the correct account and amount.
+   - If an expected account is missing from the picker, confirm whether the company has configured it as a `Control accounts` value that should be posted through invoices, bills, banking, or another source workflow.
 7. If your company uses dimensions or classes, complete those fields on the related lines.
 8. Confirm the entry is balanced before saving:
    - every line must use either debit or credit, not both
@@ -44,6 +46,7 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - Eligible bank-side lines are linked individually, so one manual journal can create more than one confirmed bank-register row. Identical amounts on the same account are still separate linked rows.
 - When `Create reversing entry` is enabled on a new manual journal, SPRK schedules a linked offsetting journal entry instead of deleting or overwriting the original posting.
 - SPRK blocks unbalanced entries from being saved.
+- SPRK can block new or changed manual journal lines that use configured control accounts. Existing lines that already use a control account can remain as-is during edit review, but users should not newly assign that account from the manual journal drawer once the setting is active.
 - If the entry is off by a very small rounding amount within the current tolerance, SPRK can auto-adjust one line and note that adjustment in the memo before saving.
 
 ## Common Mistakes
@@ -52,6 +55,7 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - Entering both debit and credit on the same line.
 - Assuming auto-reversal is part of the edit flow for existing entries. In the current live flow it appears when creating a new manual journal entry.
 - Assuming every manual journal creates bank-register activity. Register rows are opt-in and only mirror eligible bank, cash, or credit-card lines.
+- Assuming a control account is missing because it was deleted. It may be intentionally restricted from new manual journals.
 - Assuming the ledger page is only for review. In the current product it is also the manual journal-entry posting page.
 
 ## Related Articles
@@ -63,5 +67,5 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 ## Info
 
 - App sections: `ledger`
-- Last validated: 2026-06-04
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

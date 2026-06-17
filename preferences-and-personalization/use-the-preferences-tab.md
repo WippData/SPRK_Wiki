@@ -4,6 +4,8 @@ Open `Preferences` to manage app-wide appearance, formatting, date display, upda
 
 ![Preferences page showing the Account dropdown sorting control and its ordering choices](../screenshots/preferences-and-personalization/account-dropdown-sorting-preference-step-01.png)
 
+![Preferences page showing the Show tooltips switch in the Appearance card](../screenshots/preferences-and-personalization/show-tooltips-preference-step-01.png)
+
 ![Column preferences dialog showing drag handles, visibility checkboxes, and move controls for invoice columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
 
 ## Purpose
@@ -23,6 +25,7 @@ Use this workflow when you want to review or change how SPRK looks and behaves f
    - Use the theme toggle to switch between light and dark mode.
    - Adjust `UI scale` if you need larger or smaller interface sizing.
    - Turn on `Grid Edit default` if you want supported list pages to open in Grid Edit mode automatically.
+   - Turn `Show tooltips` on or off to show field help icons and hover explanations across the app where SPRK defines them.
    - Choose `Account dropdown sorting` when you want supported account selectors to be easier to scan. The visible choices are grouped by type then name, grouped by type then code, or flat A-Z.
    - The current helper text says this opens supported tables in Grid Edit mode by default.
 4. Review the `Formatting` card:
@@ -50,6 +53,7 @@ Your user-level preferences are applied across the SPRK app, including display, 
 - Display and formatting updates change how information is shown to you, not the underlying transaction amounts.
 - Changing `Date format` changes how date fields display and interpret typed dates; it does not rewrite posted transaction dates.
 - Turning on `Grid Edit default` changes how supported pages open for your user profile, not which records exist or how they post.
+- Turning `Show tooltips` on or off changes visible help affordances only; it does not disable the underlying fields, workflows, or validation rules.
 - Changing `Account dropdown sorting` changes the order used by supported account page-link dropdowns across the app, not the chart of accounts itself.
 - Changing column visibility or column order affects your working view on supported tables, not the accounting records behind those rows.
 - Resetting the getting-started tour affects onboarding prompts only and does not change company books.
@@ -60,6 +64,7 @@ Your user-level preferences are applied across the SPRK app, including display, 
 - Assuming number or currency display choices recalculate posted balances.
 - Typing compact dates without checking that the digits match your selected date order.
 - Assuming `Grid Edit default` changes every page in SPRK instead of supported list pages only.
+- Assuming hidden tooltips turn off validation or field requirements.
 - Assuming account selectors always appear in one fixed order for every user.
 - Assuming drag reordering in `Column preferences` replaces the move-up and move-down controls; both paths can be available on supported tables.
 - Leaving the page before saving after making changes that are not auto-saved.
@@ -77,5 +82,5 @@ Your user-level preferences are applied across the SPRK app, including display, 
 ## Info
 
 - App sections: `preferences`
-- Last validated: 2026-06-05
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

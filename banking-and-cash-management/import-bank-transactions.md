@@ -2,6 +2,8 @@
 
 ![Bank transaction import template modal](../screenshots/banking-and-cash-management/bank-transaction-import-template-step-01.png)
 
+![Banking More menu showing Import File and Download Import Template actions](../screenshots/banking-and-cash-management/banking-import-template-menu-step-01.png)
+
 Bring bank or credit card activity into SPRK from a supported file format, review the preview, and load the transactions into the pending queue for later confirmation.
 
 ## Purpose
@@ -48,7 +50,7 @@ Use this workflow when you have external bank or credit card activity in a file 
 
 ## Expected Result
 
-The imported rows are added to the selected account's pending bank register and are ready for review. Current general ledger impact as of 2026-06-05:
+The imported rows are added to the selected account's pending bank register and are ready for review. Current general ledger impact as of 2026-06-17:
 
 - Selecting the destination account does not post anything to the general ledger.
 - Opening the preview and changing the `Swap spent/received` option do not post anything to the general ledger.
@@ -77,5 +79,5 @@ The imported rows are added to the selected account's pending bank register and 
 ## Info
 
 - App sections: `banking`
-- Last validated: 2026-06-05
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

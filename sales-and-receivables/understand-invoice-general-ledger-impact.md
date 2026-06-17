@@ -64,7 +64,8 @@ Current status behavior when a payment is recorded:
 - Assuming customer or item defaults automatically replace the need to review the receivables account on each invoice.
 - Assuming tax is posted to a separate liability account. The current invoice recognition logic credits the full total to the income side.
 - Assuming customer credit settings automatically stop or post invoice activity. Use them as setup and review signals unless your workflow has been validated otherwise.
-- Assuming void handling is part of this documented flow. This article only documents create/open and payment behavior.
+- Assuming invoice voiding deletes the original invoice or original journal. A successful `Void invoice` posts a reversal, moves the invoice to `Void`, zeroes the balance, and preserves audit details.
+- Assuming active payments can remain in place while the invoice recognition posting is reversed. Reverse or unapply active payments first where SPRK requires that guardrail.
 
 ## Related Articles
 
@@ -72,10 +73,11 @@ Current status behavior when a payment is recorded:
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Receive invoice payments](./receive-invoice-payments.md)
+- [Review document payment history and linked journals](../ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md)
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
 
 ## Info
 
 - App sections: `invoices`, `ledger`, `reports`
-- Last validated: 2026-05-31
+- Last validated: 2026-06-17
 - Screenshot status: `captured`

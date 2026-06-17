@@ -32,6 +32,7 @@ Use this article as a first-stop reference before you contact support or assume 
 - `Where do I confirm backup timing?` In `Preferences` under `Backups`, where the schedule is shown in local device time.
 - `Where do I find quick in-product help topics?` In the `Support` tab under `How To Guides`.
 - `How do I confirm what version I am using?` Check the version shown in the sidebar footer.
+- `Where do I confirm whether a workflow is in scope for the 1.0 wiki?` Start with the [Version 1.0 capability matrix](../version-1-0-capability-matrix.md), then open the linked workflow page for the visible product area.
 
 ## Expected Result
 
@@ -57,5 +58,5 @@ You can answer common SPRK usage questions quickly and route yourself to the rig
 ## Info
 
 - App sections: `dashboard`, `companies`, `license`, `support`, `preferences`, `backups`
-- Last validated: 2026-06-06
+- Last validated: 2026-06-17
 - Screenshot status: `captured`
