@@ -6,11 +6,11 @@
 
 Create a company from the Companies tab and set the core accounting options that SPRK uses for day-to-day work.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you want to start a new company in SPRK without importing it from another accounting system.
 
-## Prerequisites
+## Before You Start
 
 - You can open `Settings` → `Companies`.
 - You have permission to create a company in your current workspace.
@@ -45,11 +45,11 @@ Use this workflow when you want to start a new company in SPRK without importing
 9. Select `Create`.
 10. Confirm that the new company appears in the companies list and becomes the active company after creation.
 
-## Expected Result
+## What Happens Next
 
 The new company is added to the `Companies` table and becomes available as the active company across the app.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Leaving `Company Display name` blank. The create action is not meant to succeed without it.
 - Turning off `Accounts setup` without planning how the chart of accounts will be created afterward.
@@ -59,7 +59,7 @@ The new company is added to the `Companies` table and becomes available as the a
 - Treating missing account codes in lists as missing data when the company is configured for name-only account presentation.
 - Selecting control accounts without telling journal-entry users why those accounts disappear from new manual journal account choices.
 
-## Related Articles
+## Related
 
 - [Import from QuickBooks Online ZIP](./import-from-quickbooks-online-zip.md)
 - [Import from QuickBooks Desktop IIF](./import-from-quickbooks-desktop-iif.md)
@@ -68,9 +68,3 @@ The new company is added to the `Companies` table and becomes available as the a
 - [Use the Companies tab](../company-administration/use-the-companies-tab.md)
 - [Record journal entries](../ledger-and-chart-of-accounts/record-journal-entries.md)
 - [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
-
-## Info
-
-- App sections: `companies`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

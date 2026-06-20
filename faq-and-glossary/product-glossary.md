@@ -2,13 +2,13 @@
 
 Use this glossary to translate common SPRK labels into plain language so you can move through the app with less guesswork.
 
-![Product Glossary expanded in Support How To Guides with the SPRK sidebar and settings context visible](../screenshots/faq-glossary-and-release-changes/product-glossary-step-01.png)
+![Product Glossary expanded in Support How To Guides with the SPRK sidebar and settings context visible](../screenshots/faq-and-glossary/product-glossary-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this article when you see a product term in the sidebar, settings, or help content and want a short public-facing definition.
 
-## Prerequisites
+## Before You Start
 
 - You can open the SPRK sidebar and settings tabs if you want to compare a term to the visible product label.
 
@@ -32,28 +32,22 @@ Use this article when you see a product term in the sidebar, settings, or help c
 - `Support Activity Log`: The current-session troubleshooting log you can download or clear from the `Support` tab.
 - `Tenant Stats`: Workspace-wide usage counts shown in the `License` area.
 
-## Expected Result
+## What Happens Next
 
-You can interpret common SPRK terms more consistently and navigate to the right workflow page when you need more detail. Current general ledger impact as of 2026-05-10:
+You can interpret common SPRK terms more consistently and navigate to the right workflow page when you need more detail.
 
 - Looking up a glossary term does not post or modify a transaction.
 - Definitions on this page explain product labels only and do not change company balances.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Treating a navigation label as proof that a transaction was created.
 - Assuming tenant-wide terms such as `License` or `Tenant Stats` describe one company only.
 - Using a short definition when you actually need the full workflow article.
 
-## Related Articles
+## Related
 
-- [Understand the sidebar and main navigation](../getting-started/understand-the-sidebar-and-main-navigation.md)
+- [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)
 - [Understand the chart of accounts structure](../ledger-and-chart-of-accounts/understand-the-chart-of-accounts-structure.md)
 - [Start a reconciliation](../reconciliation/start-a-reconciliation.md)
 - [Use the support tab](../support-and-troubleshooting/use-the-support-tab.md)
-
-## Info
-
-- App sections: `dashboard`, `chart`, `reconcile`, `support`, `license`, `preferences`, `backups`, `checklists`, `rules`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

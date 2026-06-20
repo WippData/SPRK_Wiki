@@ -4,11 +4,11 @@ Use the sidebar, section groups, quick links, and collapse control to move throu
 
 ![SPRK dashboard showing the sidebar navigation groups, active Dashboard page, and Quick Links shortcuts](../screenshots/dashboard-and-navigation/major-app-areas-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this workflow when you want to understand how the app is organized and how to move from one major page to another.
 
-## Prerequisites
+## Before You Start
 
 - You are signed in to SPRK.
 - A company is active in the sidebar.
@@ -26,26 +26,19 @@ Use this workflow when you want to understand how the app is organized and how t
 6. If you are on the dashboard, use `Quick Links` for fast access to the linked pages that are currently exposed there.
 7. When you need settings-style system work, use the `Settings` section rather than looking for a separate top navigation bar.
 
-## Expected Result
+## What Happens Next
 
 You can move reliably between the app’s major work areas and understand whether you are navigating by full labels, icons, or dashboard quick links.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Looking for page tabs across the top of the app. Most page changes happen from the sidebar.
 - Forgetting that the sidebar can be collapsed, which makes labels disappear and leaves icon-only navigation.
 - Expecting the dashboard quick links to cover every page. They are shortcuts, not a full menu.
 - Searching for one generic settings page. Settings-style pages are exposed as specific destinations like `Companies`, `License`, `Support`, and `Preferences`.
 
-## Related Articles
+## Related
 
 - [Understand the dashboard overview](./understand-the-dashboard-overview.md)
 - [Use global search](./use-global-search.md)
 - [Understand company-aware navigation](./understand-company-aware-navigation.md)
-- [Understand the sidebar and main navigation](../getting-started/understand-the-sidebar-and-main-navigation.md)
-
-## Info
-
-- App sections: `dashboard`, `reports`, `invoices`, `banking`, `items`, `customers`, `vendors`, `bills`, `checklists`, `reconcile`, `rules`, `ledger`, `chart`, `companies`, `license`, `support`, `preferences`, `backups`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

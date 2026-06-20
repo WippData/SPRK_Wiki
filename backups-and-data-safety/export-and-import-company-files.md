@@ -4,11 +4,11 @@
 
 Use `Company file` actions when you need to move or preserve one company without including every other company in the local SPRK database.
 
-## Purpose
+## When To Use This
 
 Use this workflow when a firm needs a company-level handoff, support needs a complete company package for review, or you want a company-specific transfer path that is separate from routine device backups.
 
-## Prerequisites
+## Before You Start
 
 - You are signed in to SPRK.
 - The active company in the sidebar is the company you intend to export or import around.
@@ -25,30 +25,24 @@ Use this workflow when a firm needs a company-level handoff, support needs a com
 7. If SPRK shows an import preview, read the company identity, validation messages, and any replace warning before continuing.
 8. Do not confirm a replace/import step unless you are working in the intended company and have a current backup or exported company file.
 
-## Expected Result
+## What Happens Next
 
-You can distinguish a company-level handoff from device backup settings. Current general ledger impact as of 2026-06-17:
+You can distinguish a company-level handoff from device backup settings.
 
 - Exporting a company file creates an outbound company package. It does not post, reverse, or edit journal entries.
 - Importing or replacing from a company file can change which company data is available after the workflow completes, so treat confirmation steps as data-management actions rather than accounting entries.
 - Routine backups still protect the local database for all companies; a company file is narrower and intentionally company-scoped.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Treating `Run Backup Now` and `Export Company File` as the same action.
 - Importing a company file into a production-like company before reading preview and replace language.
 - Describing Company File as hosted collaboration or multi-user firm administration. It is a local company handoff/import path.
 - Assuming legacy package or restore scripts are public workflows when the visible product directs users to `Company file`.
 
-## Related Articles
+## Related
 
 - [Review backup settings visible in the product](./review-backup-settings-visible-in-the-product.md)
 - [Understand restore guidance boundaries](./understand-restore-guidance-boundaries.md)
 - [Understand import and migration boundaries](../company-setup-and-migration/understand-import-and-migration-boundaries.md)
 - [Collect the right details before contacting support](../support-and-troubleshooting/collect-the-right-details-before-contacting-support.md)
-
-## Info
-
-- App sections: `backups`, `companies`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

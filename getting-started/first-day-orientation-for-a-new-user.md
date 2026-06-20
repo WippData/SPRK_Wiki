@@ -4,11 +4,11 @@ Follow a safe first-day path through sign-in, company confirmation, navigation, 
 
 ![SPRK Dashboard in Demo Company showing the active company selector, main sidebar navigation, KPI cards, charts, and quick links](../screenshots/getting-started/first-day-orientation-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this article when you want a practical first-day sequence that gets you oriented without accidentally working in the wrong company or skipping important setup.
 
-## Prerequisites
+## Before You Start
 
 - You can open SPRK.
 - You are ready either to explore a demo company or to work in a real company.
@@ -27,30 +27,24 @@ Use this article when you want a practical first-day sequence that gets you orie
 5. Choose the next workflow based on your goal:
    - If you need a company first, go to [Create your first company](../company-setup-and-migration/create-your-first-company.md).
    - If you are bringing in source data, go to [Use the Import Wizard](../company-setup-and-migration/use-the-import-wizard.md).
-   - If you are just learning the product layout, continue with [Understand the sidebar and main navigation](./understand-the-sidebar-and-main-navigation.md).
+   - If you are just learning the product layout, continue with [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md).
 
-## Expected Result
+## What Happens Next
 
-You finish your first day with the right company selected, a working mental model of the main navigation, and a clear next workflow. Current general ledger impact as of 2026-05-04:
+You finish your first day with the right company selected, a working mental model of the main navigation, and a clear next workflow.
 
 - This orientation flow does not post to the general ledger by itself.
 - Ledger impact starts only when you complete later workflows that create, import, confirm, or edit accounting transactions.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Jumping into transaction pages before you know which company is active.
 - Confusing onboarding choices with bookkeeping actions.
 - Trying to learn every page at once instead of choosing the next workflow that matches your immediate task.
 
-## Related Articles
+## Related
 
 - [Sign in to SPRK](./sign-in-to-sprk.md)
-- [Choose or switch your active company](./choose-or-switch-your-active-company.md)
-- [Understand the dashboard at a high level](./understand-the-dashboard-at-a-high-level.md)
+- [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
+- [Understand the dashboard overview](../dashboard-and-navigation/understand-the-dashboard-overview.md)
 - [Use the Import Wizard](../company-setup-and-migration/use-the-import-wizard.md)
-
-## Info
-
-- App sections: `dashboard`, `companies`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

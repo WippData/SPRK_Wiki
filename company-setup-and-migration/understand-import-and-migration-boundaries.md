@@ -4,15 +4,15 @@ Use SPRK import paths with the right expectations: some imports have strong prev
 
 ![Import Wizard showing starter templates, download templates action, and upload guidance](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this article when you are planning a client migration, comparing import options, or deciding how much post-import review a file needs.
 
 ## Key Points
 
 - Bank import has the strongest public review path: choose an account, import a file, review pending rows, resolve categories/vendors where available, watch duplicate warnings, then confirm selected rows.
-- Journal import uses the `Ledger` import path with a server-side preview and batch commit boundary. Preview alone does not post, and a valid batch should post together rather than as a partial subset.
-- Invoice and bill imports can support grouped document data where available, but review them carefully because not every document import path has the same batch-atomic guarantees as journal import.
+- Journal import uses the `Ledger` import path with a preview before posting. Preview alone does not post.
+- Invoice and bill imports can support grouped document data where available, but review them carefully because each import path has its own confirmation and correction expectations.
 - The Import Wizard is the broadest setup path for mixed company data. Direct `QuickBooks Online ZIP` and `QuickBooks Desktop IIF` paths are narrower and should not be described as perfect historical migrations.
 - Company File export/import is the SPRK-to-SPRK handoff path once the source company already exists in SPRK.
 - After any import, review chart of accounts, opening balances, customers, vendors, items, unpaid invoices, unpaid bills, bank activity, reconciliation status, and reports.
@@ -30,32 +30,26 @@ Use this article when you are planning a client migration, comparing import opti
 5. Capture visible diagnostics, duplicate warnings, row counts, and file type if the import does not behave as expected.
 6. Run a post-import review before relying on reports or balances.
 
-## Expected Result
+## What Happens Next
 
-You can choose an import path without over-reading its guarantees. Current general ledger impact as of 2026-06-17:
+You can choose an import path without over-reading its guarantees.
 
 - Preview and template-download steps do not post entries.
 - Confirmed bank rows, opened invoices or bills, and committed journal batches can affect the ledger according to their workflow.
 - Failed or blocked previews should not be treated as posted accounting activity.
 - Direct QuickBooks imports are setup aids, not a promise that every historical QuickBooks transaction type is recreated perfectly.
 
-## Common Mistakes
+## If Something Looks Wrong
 
-- Assuming every import path is atomic, duplicate-proof, or equally reversible.
+- Assuming every import path has the same duplicate review, confirmation, or correction options.
 - Treating a public sample or downloaded template as a required production format instead of a starting point.
 - Skipping post-import review because the file uploaded successfully.
 - Using Company File language for ordinary bank, journal, invoice, or bill imports.
 
-## Related Articles
+## Related
 
 - [Use the Import Wizard](./use-the-import-wizard.md)
 - [Import bank transactions](../banking-and-cash-management/import-bank-transactions.md)
-- [Understand ledger import and export behavior](../ledger-and-chart-of-accounts/understand-ledger-import-and-export-behavior.md)
+- [Prepare and review ledger imports and exports](../ledger-and-chart-of-accounts/understand-ledger-import-and-export-behavior.md)
 - [Export and import Company Files](../backups-and-data-safety/export-and-import-company-files.md)
 - [Collect import run details for support](../support-and-troubleshooting/collect-import-run-details-for-support.md)
-
-## Info
-
-- App sections: `companies`, `banking`, `ledger`, `backups`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

@@ -1,16 +1,16 @@
 # Frequently Asked Questions
 
-![Support tab with help and troubleshooting context](../screenshots/faq-glossary-and-release-changes/faq-support-context-step-01.png)
+![Support tab with help and troubleshooting context](../screenshots/faq-and-glossary/faq-support-context-step-01.png)
 
 Use this page when you want quick answers to common SPRK questions about companies, navigation, licensing, support, backups, and the difference between product help actions and accounting transactions.
 
-![Frequently Asked Questions expanded in Support How To Guides with common SPRK help topics visible](../screenshots/faq-glossary-and-release-changes/frequently-asked-questions-step-01.png)
+![Frequently Asked Questions expanded in Support How To Guides with common SPRK help topics visible](../screenshots/faq-and-glossary/frequently-asked-questions-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this article as a first-stop reference before you contact support or assume a workflow changed your books.
 
-## Prerequisites
+## Before You Start
 
 - You are signed in to SPRK, or you are reviewing the public help center before using the app.
 - You can open the sidebar, `Companies`, `License`, `Support`, `Preferences`, and `Backups` if you need to verify an answer inside the product.
@@ -32,31 +32,25 @@ Use this article as a first-stop reference before you contact support or assume 
 - `Where do I confirm backup timing?` In `Preferences` under `Backups`, where the schedule is shown in local device time.
 - `Where do I find quick in-product help topics?` In the `Support` tab under `How To Guides`.
 - `How do I confirm what version I am using?` Check the version shown in the sidebar footer.
-- `Where do I confirm whether a workflow is in scope for the 1.0 wiki?` Start with the [Version 1.0 capability matrix](../version-1-0-capability-matrix.md), then open the linked workflow page for the visible product area.
+- `Where do I confirm whether a workflow is covered?` Start with the section README that matches the product area, then open the linked workflow page.
 
-## Expected Result
+## What Happens Next
 
-You can answer common SPRK usage questions quickly and route yourself to the right product area for confirmation. Current general ledger impact as of 2026-05-10:
+You can answer common SPRK usage questions quickly and route yourself to the right product area for confirmation.
 
 - Reading FAQ guidance does not create, edit, reverse, or delete a journal entry.
 - Switching companies changes working context only and does not post a transaction by itself.
 - License, support, backup, and update-reference actions described on this page do not affect account balances unless you separately enter or classify accounting transactions elsewhere in SPRK.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Assuming a settings or support action changes the books just because it changes what you can see.
 - Forgetting to confirm the active company before starting a workflow.
 - Treating usage statistics or backup settings as accounting entries.
 
-## Related Articles
+## Related
 
-- [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
+- [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
 - [View license information](../licensing/view-license-information.md)
 - [Use the support tab](../support-and-troubleshooting/use-the-support-tab.md)
 - [Review backup settings visible in the product](../backups-and-data-safety/review-backup-settings-visible-in-the-product.md)
-
-## Info
-
-- App sections: `dashboard`, `companies`, `license`, `support`, `preferences`, `backups`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

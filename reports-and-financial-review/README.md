@@ -2,7 +2,7 @@
 
 ![Reports page showing report tabs, summary cards, and output controls](../screenshots/reports-and-financial-review/reports-overview-step-01.png)
 
-Open the Reports area, run the report you need, set date controls, review supporting detail from rows or supported totals, and understand report navigation inside SPRK.
+Open the Reports area, run the report you need, set date controls, review supporting detail from rows or supported totals, and use reports as part of month-end review inside SPRK.
 
 ## In This Section
 
@@ -10,12 +10,10 @@ Open the Reports area, run the report you need, set date controls, review suppor
 - [Export transactions from reports](./export-transactions-from-reports.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)
-- [Interpret report navigation without accounting advice](./interpret-report-navigation-without-accounting-advice.md)
+
+## Related Review Workflows
+
+- [Month-end review checklist](../checklists-and-period-end-work/month-end-review-checklist.md)
+- [Common accountant corrections](../ledger-and-chart-of-accounts/common-accountant-corrections.md)
 
 For reconciliation-specific report access from `Reconcile`, see [View and print bank reconciliation reports](../reconciliation/view-and-print-bank-reconciliation-reports.md).
-
-## Info
-
-- App sections: `reports`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

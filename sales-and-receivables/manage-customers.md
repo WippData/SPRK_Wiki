@@ -4,11 +4,11 @@
 
 Create and maintain customer records so invoicing, payment follow-up, and customer-specific receivables workflows start from clean setup data.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you need to add, update, search, import, or review customer records before creating invoices or receiving customer payments.
 
-## Prerequisites
+## Before You Start
 
 - You can open the `Customers` page.
 - You know the customer name.
@@ -43,11 +43,11 @@ Use this workflow when you need to add, update, search, import, or review custom
 9. If the customer will be invoiced often, pair this setup with saved item records and invoice account review before the first live invoice.
 10. Use Grid Edit when post-import cleanup or repeated customer-field updates will be faster than opening one drawer at a time, then review the changed-cell count before selecting `Apply Changes`.
 
-## Expected Result
+## What Happens Next
 
 The customer is saved and available for invoice selection, payment workflows, search, import cleanup, and customer-specific receivables follow-up.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Skipping the customer record and trying to build invoice workflows from inconsistent free-typed names.
 - Ignoring active and inactive status when cleaning up an older customer list.
@@ -56,7 +56,7 @@ The customer is saved and available for invoice selection, payment workflows, se
 - Treating `Credit status` as a payment record. It is a setup signal, not the same thing as receiving money.
 - Assuming customer setup alone finishes receivables preparation. Review item setup, invoice account review, and due-date defaults before opening invoices.
 
-## Related Articles
+## Related
 
 - [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
@@ -65,9 +65,3 @@ The customer is saved and available for invoice selection, payment workflows, se
 - [Receive invoice payments](./receive-invoice-payments.md)
 - [Use global search](../dashboard-and-navigation/use-global-search.md)
 - [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)
-
-## Info
-
-- App sections: `customers`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

@@ -2,7 +2,7 @@
 
 Choose the right bank or credit card account before you import, review, confirm, or reconcile activity so that work stays tied to the correct register.
 
-## Purpose
+## When To Use This
 
 Use this page when you want to understand how SPRK separates banking work by account and how to save one account to open automatically next time.
 
@@ -68,22 +68,16 @@ Use the account chooser before starting `Reconcile`.
 - Statement balances, cleared transactions, and reconciliation history depend on the account you chose.
 - Starting on the wrong account can make the statement totals and available transactions look incorrect for the statement you are holding.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Importing a file without first confirming the correct bank or credit card account.
 - Treating the saved default as a permanent lock instead of a starting point you can change for the current session.
 - Reviewing pending counts on one account card and then reconciling a different account by mistake.
 - Assuming that saving a default account posts transactions or changes historical entries.
 
-## Related Articles
+## Related
 
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Import bank transactions](./import-bank-transactions.md)
 - [Review and classify bank transactions](./review-and-classify-bank-transactions.md)
 - [Start a reconciliation](../reconciliation/start-a-reconciliation.md)
-
-## Info
-
-- App sections: `banking`, `reconcile`
-- Last validated: 2026-05-30
-- Screenshot status: `captured`

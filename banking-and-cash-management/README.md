@@ -12,8 +12,7 @@ Import bank activity, review likely duplicates before rows enter pending review,
 - [Create and manage rules](./create-and-manage-rules.md)
 - [Import bank transactions](./import-bank-transactions.md)
 
-## Info
+## Related Review Workflows
 
-- App sections: `banking`, `rules`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`
+- [Month-end review checklist](../checklists-and-period-end-work/month-end-review-checklist.md)
+- [Before you import](../company-setup-and-migration/before-you-import.md)

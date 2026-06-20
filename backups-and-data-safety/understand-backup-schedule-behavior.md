@@ -4,19 +4,19 @@ Review how SPRK schedules automatic backups so you know when the app plans to sa
 
 ![SPRK Backups settings showing automatic backup scheduling controls and backup-on-close options](../screenshots/backups-and-data-safety/backup-schedule-behavior-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this article when you want to confirm whether automatic backups are enabled and what local time the next daily backup cycle is expected to follow.
 
-## Prerequisites
+## Before You Start
 
 - You are signed in to SPRK.
-- The active company in the sidebar is `Demo Company` for this validated workflow pass.
+- Confirm the active company before reviewing backup or company-file controls.
 - You can open `Preferences` from the `Settings` section in the sidebar.
 
 ## Steps
 
-1. Confirm the active company shown in the sidebar is `Demo Company`.
+1. Confirm the active company shown in the sidebar.
 2. Open `Preferences`.
 3. Select the `Backups` tab.
 4. Review the `Enable automatic backups` switch to see whether the schedule is active.
@@ -24,27 +24,21 @@ Use this article when you want to confirm whether automatic backups are enabled 
 6. Treat the displayed time as your local device time.
 7. If needed, choose a different time in the time field to change when the daily backup cycle runs.
 
-## Expected Result
+## What Happens Next
 
-You can see whether automatic backups are enabled and what local time SPRK uses for the 24-hour backup cycle. Current general ledger impact as of 2026-05-07:
+You can see whether automatic backups are enabled and what local time SPRK uses for the 24-hour backup cycle.
 
 - Changing the backup schedule does not post, reverse, or edit a journal entry.
 - Backup timing changes affect when backup files are created for this device, not company balances.
 - Automatic backups protect data copies; they do not reclassify transactions or change account activity.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Assuming the schedule uses a shared server time instead of the local time shown in the product.
 - Treating backup timing as a posting or close-period control.
 - Forgetting to confirm the correct active company before validating settings context.
 
-## Related Articles
+## Related
 
 - [Review backup settings visible in the product](./review-backup-settings-visible-in-the-product.md)
 - [Understand restore guidance boundaries](./understand-restore-guidance-boundaries.md)
-
-## Info
-
-- App sections: `backups`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

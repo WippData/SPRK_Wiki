@@ -4,7 +4,7 @@
 
 Use this checklist to orient a small-business accounting or bookkeeping firm through the first client setup path in SPRK.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you need a high-level sequence from company creation or import through bank review, reconciliation, reporting, and company handoff.
 
@@ -32,7 +32,7 @@ Use this workflow when you need a high-level sequence from company creation or i
 - SPRK 1.0 guidance is aimed at accounting and bookkeeping firms serving small businesses, not enterprise ERP, payroll tax filing, tax agency filing, full multi-currency/FX, advanced inventory costing, or perfect historical QuickBooks migration.
 - Use a Company File for SPRK-to-SPRK handoff; use import paths for setup and transaction data that originate outside SPRK.
 
-## Related Articles
+## Related
 
 - [Create your first company](../company-setup-and-migration/create-your-first-company.md)
 - [Understand import and migration boundaries](../company-setup-and-migration/understand-import-and-migration-boundaries.md)
@@ -41,9 +41,3 @@ Use this workflow when you need a high-level sequence from company creation or i
 - [View available reports](../reports-and-financial-review/view-available-reports.md)
 - [Export and import Company Files](../backups-and-data-safety/export-and-import-company-files.md)
 - [Run recurring close-style tasks](../checklists-and-period-end-work/run-recurring-close-style-tasks.md)
-
-## Info
-
-- App sections: `dashboard`, `companies`, `banking`, `reconcile`, `reports`, `backups`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

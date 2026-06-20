@@ -2,13 +2,23 @@
 
 ![New journal entry drawer for reviewing ledger posting fields](../screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png)
 
-Review the current rules around journal-entry edits, reversal entries, linked bank-register rows, and inactive-account handling so you know which ledger changes preserve history and how they affect balances.
+Review why some posted accounting records cannot be edited like scratch work, when to reverse instead of overwrite, and how SPRK protects history around ledger and bank-linked activity.
 
-## Purpose
+## When To Use This
 
-Use this article when you need to understand how SPRK preserves history around journal entries and account maintenance.
+Use this article when you are asking "why can't I edit this?" or "should I reverse this instead?" during accountant review.
 
-## Prerequisites
+## Practical Decision Guide
+
+| Question | Better Next Step |
+| --- | --- |
+| The transaction belongs to an invoice, bill, check, payment, or bank row | Start with the source workflow |
+| The original manual journal was wrong and should remain visible | Reverse it or post a correcting journal |
+| The period is reviewed and you need a clean audit trail | Use reversal or a new adjusting entry |
+| A control account is not available in the journal drawer | Use the source workflow tied to that account |
+| A reconciled bank-linked item looks wrong | Review linked ledger and reconciliation behavior before changing anything |
+
+## Before You Start
 
 - An active company is selected.
 - You understand which existing entry or account you want to review or maintain.
@@ -34,9 +44,9 @@ Use this article when you need to understand how SPRK preserves history around j
 9. Remember that a reversal creates a separate entry with flipped debit and credit amounts rather than deleting the original.
 10. In `Chart of Accounts`, treat account deletion as deactivation. Prior activity remains part of the company history.
 
-## Expected Result
+## What Happens Next
 
-You understand which maintenance actions keep an audit trail and how they affect balances. Current general ledger impact as of 2026-06-04:
+You understand which maintenance actions keep an audit trail and how they affect balances.
 
 - Reversing a journal entry creates a new journal entry that flips each original debit and credit line, which offsets the original entry in the general ledger.
 - The create-time auto-reversal option for manual journals still preserves history by creating a second offsetting entry on the scheduled reversal date.
@@ -48,7 +58,7 @@ You understand which maintenance actions keep an audit trail and how they affect
 - Control-account settings can block new manual journal posting to selected accounts without deleting the account or changing existing history.
 - Marking an account inactive does not remove prior ledger activity or create a new journal entry.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Assuming reversal deletes the original entry. It creates a separate offsetting entry.
 - Assuming create-time auto-reversal is the same as editing a posted journal. The current manual-journal drawer schedules a separate future reversal entry.
@@ -58,15 +68,11 @@ You understand which maintenance actions keep an audit trail and how they affect
 - Treating a configured control account as inactive or deleted because it is unavailable in new manual journal choices.
 - Treating inactive accounts as erased accounts. Inactive status only changes availability for future use.
 
-## Related Articles
+## Related
 
 - [Record journal entries](./record-journal-entries.md)
+- [Common accountant corrections](./common-accountant-corrections.md)
+- [When to use journal entries vs source forms](./when-to-use-journal-entries-vs-source-forms.md)
 - [Edit linked ledger and bank activity](./edit-linked-ledger-and-bank-activity.md)
-- [Understand ledger import and export behavior](./understand-ledger-import-and-export-behavior.md)
+- [Prepare and review ledger imports and exports](./understand-ledger-import-and-export-behavior.md)
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)
-
-## Info
-
-- App sections: `ledger`, `chart`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

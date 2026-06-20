@@ -4,11 +4,11 @@
 
 Create or import a company in SPRK from a QuickBooks Desktop IIF export using the Companies page.
 
-## Purpose
+## When To Use This
 
 Use this workflow when your source data comes from QuickBooks Desktop and you exported it as an `.iif` file.
 
-## Prerequisites
+## Before You Start
 
 - You can open `Settings` → `Companies`.
 - You exported the source data from QuickBooks Desktop as an `.iif` file.
@@ -25,26 +25,20 @@ Use this workflow when your source data comes from QuickBooks Desktop and you ex
 7. Confirm that the imported company appears in the `Companies` table.
 8. Review the imported company before daily use, with extra attention to chart of accounts, customers, and vendors.
 
-## Expected Result
+## What Happens Next
 
 SPRK imports the QuickBooks Desktop IIF file and adds the resulting company to the companies list.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Exporting the wrong file type from QuickBooks Desktop and trying to use it with the IIF import path.
 - Using the QBD import option with a ZIP file instead of an IIF file.
 - Assuming the import replaces the currently selected company. The imported company is added to the list and may still need to be selected.
 - Skipping validation of the imported setup data after the import finishes.
 
-## Related Articles
+## Related
 
 - [Create your first company](./create-your-first-company.md)
 - [Import from QuickBooks Online ZIP](./import-from-quickbooks-online-zip.md)
 - [Use the Import Wizard](./use-the-import-wizard.md)
 - [Switch between companies](./switch-between-companies.md)
-
-## Info
-
-- App sections: `companies`
-- Last validated: 2026-05-01
-- Screenshot status: `captured`

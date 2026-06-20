@@ -6,11 +6,11 @@
 
 Bring bank or credit card activity into SPRK from a supported file format, review the preview, and load the transactions into the pending queue for later confirmation.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you have external bank or credit card activity in a file and want to load it into SPRK for review.
 
-## Prerequisites
+## Before You Start
 
 - The destination bank or credit card account exists in SPRK.
 - You are signed in to SPRK and have an active company selected.
@@ -24,14 +24,14 @@ Use this workflow when you have external bank or credit card activity in a file 
 2. Select the bank or credit card account that should receive the imported activity.
    - If no account is selected, SPRK keeps the importer disabled and prompts you to choose an account first.
    - If a default account opens automatically, confirm that it matches the account for the file you are about to import.
-3. Choose `Import` in the page header, or use the upload area beside the account cards if you already have the file ready.
+3. Open `More` -> `Import File`, or use the visible upload area beside the account cards if you already have the file ready.
 4. In the `Bank Transaction Import Template` modal, review the file guidance before you select a file:
    - Accepted formats are `.csv`, `.xlsx`, `.xlsm`, `.ofx`, `.qfx`, and `.qbo`.
    - Spreadsheet imports require `Date`, `Description`, and `Amount`.
    - Spreadsheet imports can also include the recommended columns shown in the starter modal, such as `Debit`, `Credit`, `Check #`, and `Memo`.
    - When your build exposes vendor-aware import columns, spreadsheet imports can also include `Vendor` and `Vendor ID`.
    - `OFX`, `QFX`, and `QBO` files do not use the spreadsheet columns.
-   - `Download Template` gives you a starter spreadsheet layout.
+   - `More` -> `Download Import Template` gives you a starter spreadsheet layout when you want to prepare the file before importing.
 5. Choose `Import File`, then select one supported file.
 6. Review the import preview.
    - The preview title shows the parsed import type when SPRK detects one.
@@ -48,9 +48,9 @@ Use this workflow when you have external bank or credit card activity in a file 
 9. Return to the `Pending` tab and review the imported transactions for the selected account.
 10. Categorize and confirm the transactions you want posted to the general ledger.
 
-## Expected Result
+## What Happens Next
 
-The imported rows are added to the selected account's pending bank register and are ready for review. Current general ledger impact as of 2026-06-17:
+The imported rows are added to the selected account's pending bank register and are ready for review.
 
 - Selecting the destination account does not post anything to the general ledger.
 - Opening the preview and changing the `Swap spent/received` option do not post anything to the general ledger.
@@ -58,7 +58,7 @@ The imported rows are added to the selected account's pending bank register and 
 - Confirming the import preview only loads or updates selected, non-skipped rows as pending bank transactions for later review.
 - The general ledger is affected later, when each pending transaction is confirmed from the Banking workflow.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Importing while the wrong bank or credit card account is selected.
 - Forgetting that SPRK will not let you import until an account is chosen.
@@ -69,15 +69,9 @@ The imported rows are added to the selected account's pending bank register and 
 - Treating imported rows as final postings rather than as pending items still waiting for review.
 - Assuming closing the preview has the same effect as confirming it.
 
-## Related Articles
+## Related
 
 - [Choose bank and credit card accounts](./choose-bank-and-credit-card-accounts.md)
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Review and classify bank transactions](./review-and-classify-bank-transactions.md)
 - [Create and manage rules](./create-and-manage-rules.md)
-
-## Info
-
-- App sections: `banking`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

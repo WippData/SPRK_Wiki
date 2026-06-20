@@ -10,9 +10,3 @@ Review backup settings, understand the automatic schedule, use on-demand backup 
 - [Review backup settings visible in the product](./review-backup-settings-visible-in-the-product.md)
 - [Export and import Company Files](./export-and-import-company-files.md)
 - [Understand restore guidance boundaries](./understand-restore-guidance-boundaries.md)
-
-## Info
-
-- App sections: `backups`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

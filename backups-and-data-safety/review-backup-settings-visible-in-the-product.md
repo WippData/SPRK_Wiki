@@ -6,18 +6,18 @@ Open the `Backups` tab to review the current automatic backup controls, backup l
 
 ![SPRK Backups tab showing automatic backup schedule and backup-on-close controls](../screenshots/backups-and-data-safety/review-backup-settings-step-02.png)
 
-## Purpose
+## When To Use This
 
 Use this workflow when you want to confirm which backup settings are publicly available in the current SPRK app.
 
-## Prerequisites
+## Before You Start
 
 - You are signed in to SPRK.
-- The active company shown in the sidebar is `Demo Company` for this validated workflow pass.
+- Confirm the active company shown in the sidebar before using company-file controls.
 
 ## Steps
 
-1. Confirm the active company shown in the sidebar is `Demo Company`.
+1. Confirm the active company shown in the sidebar.
 2. Open `Backups` from the `Settings` section.
 3. Confirm the `Backups` tab is selected.
 4. Review the automatic backup switch.
@@ -31,9 +31,9 @@ Use this workflow when you want to confirm which backup settings are publicly av
    - `Import Company File` starts the company-file import path.
    - The card shows the active company name so you can confirm the company context before continuing.
 
-## Expected Result
+## What Happens Next
 
-You can review and manage the current backup controls that SPRK exposes publicly: enable or disable automatic backups, set the daily time, save a folder path, review the last result, start a manual backup run, and use company-scoped Company File handoff controls. Current general ledger impact as of 2026-06-17:
+You can review and manage the current backup controls that SPRK exposes publicly: enable or disable automatic backups, set the daily time, save a folder path, review the last result, start a manual backup run, and use company-scoped Company File handoff controls.
 
 - Saving a backup location does not create or modify any accounting entry.
 - Running a backup creates a data copy for safekeeping; it does not post to income, expense, asset, liability, or equity accounts.
@@ -41,21 +41,15 @@ You can review and manage the current backup controls that SPRK exposes publicly
 - Importing a Company File is a data-management workflow. Review preview and replace language before confirming any import.
 - The status area reports backup activity only and does not represent a financial transaction.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Treating the backup folder path as a company record instead of a device-level storage setting.
 - Assuming `Run Backup Now` changes books or confirms pending work.
 - Confusing routine backups for all local companies with a company-scoped Company File export.
 - Reading the status area as accounting activity rather than backup history.
 
-## Related Articles
+## Related
 
 - [Understand backup schedule behavior](./understand-backup-schedule-behavior.md)
 - [Export and import Company Files](./export-and-import-company-files.md)
 - [Understand restore guidance boundaries](./understand-restore-guidance-boundaries.md)
-
-## Info
-
-- App sections: `backups`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

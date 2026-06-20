@@ -4,11 +4,11 @@
 
 Start a checklist run for a defined period, capture responses on each checklist item, and complete the run when the work is actually finished.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you want to start and complete a checklist run for daily, weekly, monthly, quarterly, yearly, or custom close-style work.
 
-## Prerequisites
+## Before You Start
 
 - An active company is selected.
 - At least one active checklist template exists.
@@ -37,29 +37,23 @@ Use this workflow when you want to start and complete a checklist run for daily,
    - Use `Complete run` only when the checklist work is actually finished.
 9. Reopen the run later if you need to review or edit it before completion.
 
-## Expected Result
+## What Happens Next
 
-You have a dated checklist run tied to a specific period and template, with stored responses and a visible status. Current general ledger impact as of 2026-05-04:
+You have a dated checklist run tied to a specific period and template, with stored responses and a visible status.
 
 - Starting a checklist run creates a checklist-run record only.
 - Saving responses updates checklist-run fields only.
 - Completing the run changes the run status to `Completed` but does not create, edit, reverse, or approve a journal entry.
 - If one of the checklist items tells you to post an entry elsewhere in SPRK, that posting must still happen in the separate source workflow.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Starting a run with the wrong period dates.
 - Assuming `Completed` means all related accounting transactions have already been posted.
 - Using a checklist run to replace the actual bill, banking, reconciliation, or journal-entry action.
 - Trying to start a duplicate run for the same company, checklist, and period.
 
-## Related Articles
+## Related
 
 - [Use checklists](./use-checklists.md)
 - [Track completion across routine accounting work](./track-completion-across-routine-accounting-work.md)
-
-## Info
-
-- App sections: `checklists`
-- Last validated: 2026-05-04
-- Screenshot status: `captured`

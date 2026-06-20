@@ -4,11 +4,11 @@
 
 Open the Reports page, move between the available report tabs, set the date controls that apply to each tab, and run the report you want to review.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you want to see which reports are available in SPRK and run the one that fits the review you need.
 
-## Prerequisites
+## Before You Start
 
 - You are signed in to SPRK.
 - The correct active company is selected.
@@ -18,22 +18,26 @@ Use this workflow when you want to see which reports are available in SPRK and r
 
 1. Open `Reports` from the left sidebar.
 2. Confirm the page header shows `Reports`.
-3. Review the report tabs currently exposed on the page. SPRK currently supports report views for:
-   - `Trial Balance`
-   - `Income Statement`
-   - `Balance Sheet`
-   - `Cash Flow (Indirect)`
-   - `Tax Forms`
-   - `Reconciliation`
-   - Transaction-detail views such as `General Ledger` and `Account Detail` are also available.
-4. Select the tab you want to run.
+3. Choose the report that matches your review question:
+   - `Trial Balance` for account balances by debit and credit.
+   - `Income Statement` for income, expenses, and net income.
+   - `Balance Sheet` for assets, liabilities, and equity.
+   - `Cash Flow (Indirect)` for cash flow review.
+   - `Tax Forms` for tax-form review where available.
+   - `General Ledger` for posted transaction detail by account.
+   - `Account Detail` for one account's activity.
+   - `Expense by Vendor` for vendor spending and 1099-oriented review.
+   - `Receivables Aging` for unpaid customer balances.
+   - `Payables Aging` for unpaid vendor balances.
+   - `Reconciliation` for posted reconciliation reports.
+4. Select the tab you want to run. Use the tab overflow menu if a report is not visible in the first row.
 5. Set the date controls required for that tab:
    - Range-based reports use a period preset and date range.
    - As-of reports use an as-of style date.
    - Date fields can be selected from the calendar or typed directly. Typed dates should follow your saved `Preferences` date order, and accepted compact entries can normalize to the visible display format.
    - `Income Statement` also supports compare-period controls and optional grouping.
    - `Tax Forms` requires a tax-form selection before you run it.
-   - `Reconciliation` requires an account and posted statement period.
+   - `Expense by Vendor`, aging reports, and `Reconciliation` require the filters shown on their tabs.
    - `General Ledger` adds filters for `Account Type`, `Account SubType`, `Accounts`, `Vendor`, `Text`, `Group By`, and optional `Include opening balance`.
 6. Select `Run`.
 7. Review the table and any summary cards that appear for the selected report.
@@ -43,18 +47,18 @@ Use this workflow when you want to see which reports are available in SPRK and r
 8. If needed, use `Export` to save the current report rows or `Print` to open the print workflow for the active report.
 9. Treat `Tax Forms` as a review view where visible, not as tax return preparation, tax filing, agency submission, or compliance approval.
 
-## Expected Result
+## What Happens Next
 
-The selected report loads in the main table area with the date context and controls that match that report type. Current general ledger impact as of 2026-06-17:
+The selected report loads in the main table area with the date context and controls that match that report type.
 
 - Opening a report tab does not post anything to the ledger.
 - Running a report reads posted data for the active company but does not change balances.
 - Export and print are output actions only and do not create journal entries.
-- The visible `Export` action exports the active report context. Do not assume a separate batch or package export exists unless the target build exposes one.
+- The visible `Export` action exports the active report context. Do not assume a separate batch or package export exists unless SPRK shows that action.
 - Reconciliation reports are review outputs for posted reconciliation sessions and do not create new ledger activity.
 - Tax-form review does not file tax returns, submit agency forms, or replace professional compliance review.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Forgetting to confirm the active company before running the report.
 - Expecting every report tab to use the same date controls.
@@ -63,17 +67,10 @@ The selected report loads in the main table area with the date context and contr
 - Treating `Export` as a way to move data back into SPRK. It is an outbound file action for the current report result.
 - Treating `Tax Forms` as tax filing or compliance approval instead of report review.
 
-## Related Articles
+## Related
 
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)
 - [Export transactions from reports](./export-transactions-from-reports.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
 - [View and print bank reconciliation reports](../reconciliation/view-and-print-bank-reconciliation-reports.md)
-- [Interpret report navigation without accounting advice](./interpret-report-navigation-without-accounting-advice.md)
 - [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
-
-## Info
-
-- App sections: `reports`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

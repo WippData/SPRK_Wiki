@@ -4,11 +4,11 @@
 
 Create the opening journal entry for a bank or credit account, then use `Reconcile` to establish the formal starting balance that future reconciliations will build from.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you are setting up a company and need SPRK to recognize the first balance for a bank or credit account before regular reconciliation work begins.
 
-## Prerequisites
+## Before You Start
 
 - An active company is selected.
 - The bank or credit account you want to reconcile already exists in the chart of accounts.
@@ -34,31 +34,25 @@ Use this workflow when you are setting up a company and need SPRK to recognize t
    - the ending balance is populated from the selected entry amount
 13. Select `Reconcile` to establish the starting balance for that account.
 
-## Expected Result
+## What Happens Next
 
-SPRK uses the journal entry as the first reconciliation anchor for that account. Current transaction and general ledger impact as of 2026-05-15:
+SPRK uses the journal entry as the first reconciliation anchor for that account.
 
 - Saving the journal entry posts the opening balance to the general ledger.
 - Selecting that journal entry in `Start reconciliation` does not create a second journal entry.
 - Completing the opening reconciliation creates the reconciliation anchor that later statement periods use as their beginning balance reference.
 - Creating linked bank-register rows from the opening journal is optional and separate from choosing the opening-balance journal entry as the first reconciliation anchor.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Creating the opening journal entry in the wrong account and then trying to reconcile a different account.
 - Skipping `Reconcile` after saving the journal entry and assuming the starting balance is fully established already.
 - Choosing the wrong journal entry in the `Opening balance journal entry` picker when more than one setup entry exists.
 - Treating the locked dates and derived balance in the start modal as manual entry fields.
 
-## Related Articles
+## Related
 
 - [Create your first company](./create-your-first-company.md)
 - [Use the Import Wizard](./use-the-import-wizard.md)
 - [Start a reconciliation](../reconciliation/start-a-reconciliation.md)
 - [Record journal entries](../ledger-and-chart-of-accounts/record-journal-entries.md)
-
-## Info
-
-- App sections: `ledger`, `reconcile`
-- Last validated: 2026-05-15
-- Screenshot status: `captured`

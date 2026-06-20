@@ -6,11 +6,11 @@ Build invoices from customers and items, save them in the right status, and reop
 
 ![Invoice row actions showing payment, linked journal, payment history, and void actions](../screenshots/sales-and-receivables/invoice-payment-history-void-actions-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this workflow when you need to create a new customer invoice, decide whether it should stay in draft or move to open status, and return to existing invoices from the invoice list.
 
-## Prerequisites
+## Before You Start
 
 - A customer record exists, or you are ready to add one from the invoice drawer.
 - The invoice amount can be built from one or more lines.
@@ -71,11 +71,11 @@ Use this workflow when you need to create a new customer invoice, decide whether
 5. Enter a non-empty reason.
 6. Confirm only when you intend SPRK to post a reversal, set the invoice to `Void`, zero the invoice balance, and preserve void audit details.
 
-## Expected Result
+## What Happens Next
 
 The invoice appears in the invoice list with the expected number, customer, totals, balance, payment timing, and status. Reopened invoices can be reviewed in view mode, updated in edit mode, reviewed through payment history, or corrected through supported source-document actions. Posted invoice saves follow the strategy you choose when SPRK prompts, and `Edit existing journal entry` can be unavailable when company policy or prior adjustment history does not allow it.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Leaving the invoice in `Draft` when you expected it to move into the active receivables workflow.
 - Choosing `Paid` in the invoice status field and assuming that is the same as recording a payment.
@@ -88,7 +88,7 @@ The invoice appears in the invoice list with the expected number, customer, tota
 - Trying to void an invoice that already has active payments. Reverse or unapply active payments first where the product supports that correction.
 - Treating `Void invoice` as delete. It preserves the invoice and creates reversal history.
 
-## Related Articles
+## Related
 
 - [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
@@ -97,9 +97,3 @@ The invoice appears in the invoice list with the expected number, customer, tota
 - [Review document payment history and linked journals](../ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md)
 - [Manage customers](./manage-customers.md)
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
-
-## Info
-
-- App sections: `invoices`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

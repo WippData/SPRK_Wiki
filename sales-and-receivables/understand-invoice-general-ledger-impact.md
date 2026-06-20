@@ -4,11 +4,11 @@
 
 Understand how invoice creation, receivables account review, customer and item defaults, customer terms, Open status recognition, aging review, and payment receipt affect the general ledger and receivables review in SPRK.
 
-## Purpose
+## When To Use This
 
 Use this article when you need to understand what SPRK currently posts to the general ledger during invoice creation and payment receipt, and what setup defaults do not change about that posting pattern.
 
-## Prerequisites
+## Before You Start
 
 - You understand the difference between `Draft`, `Open`, `Partial`, and `Paid` invoice statuses.
 - You have access to the invoice workflow and, if needed, the Ledger page for validation.
@@ -24,7 +24,7 @@ Use this article when you need to understand what SPRK currently posts to the ge
 7. If you need to validate the posting, inspect the related activity in `Ledger`.
 8. If you need collection follow-up, use receivables aging to review invoice terms, due dates, and overdue timing after the invoice is already posted.
 
-## Expected Result
+## What Happens Next
 
 Invoice posting behavior as of 2026-05-31:
 
@@ -56,18 +56,18 @@ Current status behavior when a payment is recorded:
 - payment is less than remaining balance: invoice becomes `Partial`
 - payment greater than remaining balance: blocked
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Marking an invoice `Paid` by editing status instead of using `Receive payment`. The payment posting logic is tied to the payment workflow, not a manual status change.
 - Assuming customer payment terms or credit settings change the journal entry pattern. They do not.
 - Assuming item-level income account selections currently drive the invoice journal entry. SPRK currently credits one resolved income account for the whole invoice.
 - Assuming customer or item defaults automatically replace the need to review the receivables account on each invoice.
 - Assuming tax is posted to a separate liability account. The current invoice recognition logic credits the full total to the income side.
-- Assuming customer credit settings automatically stop or post invoice activity. Use them as setup and review signals unless your workflow has been validated otherwise.
+- Assuming customer credit settings automatically stop or post invoice activity. Use them as setup and review signals, then follow the visible invoice workflow.
 - Assuming invoice voiding deletes the original invoice or original journal. A successful `Void invoice` posts a reversal, moves the invoice to `Void`, zeroes the balance, and preserves audit details.
 - Assuming active payments can remain in place while the invoice recognition posting is reversed. Reverse or unapply active payments first where SPRK requires that guardrail.
 
-## Related Articles
+## Related
 
 - [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
@@ -75,9 +75,3 @@ Current status behavior when a payment is recorded:
 - [Receive invoice payments](./receive-invoice-payments.md)
 - [Review document payment history and linked journals](../ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md)
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
-
-## Info
-
-- App sections: `invoices`, `ledger`, `reports`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

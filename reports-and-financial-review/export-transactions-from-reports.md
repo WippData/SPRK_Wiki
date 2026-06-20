@@ -4,11 +4,11 @@ Run transaction detail from the `Reports` page, narrow the results to the accoun
 
 ![General Ledger report account selector showing account ordering controlled by Preferences](../screenshots/reports-and-financial-review/general-ledger-account-selector-sorting-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this workflow when you need transaction-level report detail for an account, subtype, or ledger slice and need to send the results to a client or reviewer as a spreadsheet or PDF.
 
-## Prerequisites
+## Before You Start
 
 - You are signed in to SPRK.
 - The correct active company is selected.
@@ -38,17 +38,17 @@ Use this workflow when you need transaction-level report detail for an account, 
    - Current General Ledger CSV exports include `Account Code`, `Account Name`, `Date`, `Entry #`, `Memo`, `Description`, `Name`, `Debit`, `Credit`, and `Balance`.
    - If the current report includes dimensions in the live table, confirm those dimensions are also present in the exported output where SPRK exposes them.
 
-## Expected Result
+## What Happens Next
 
-SPRK produces an outbound copy of the current report results for review outside the app. Current general ledger impact as of 2026-06-17:
+SPRK produces an outbound copy of the current report results for review outside the app.
 
 - Running the report does not post, edit, reverse, or reclassify journal entries.
 - Export and print actions do not change ledger balances.
 - The exported or printed file reflects the report filters in effect at the time you create it, rather than exporting unfiltered rows from other pages of the result set.
-- The current visible Reports page exposes active-report `Export` and `Print` controls. Do not promise a batch report package unless that target build exposes an export-many or package action.
+- The visible Reports page exports or prints the active report context. Do not assume SPRK will create a multi-report package unless that action is visible in your app.
 - Report exports are review outputs, not tax filing, payroll filing, or statutory submission workflows.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Exporting before selecting the correct active company.
 - Forgetting to rerun the report after changing the account, type, vendor, text, or date filter.
@@ -69,15 +69,9 @@ If the account you need is not available in the `Accounts` filter, or the select
 5. Open `Preferences` and check `Account dropdown sorting` if the account appears in an unexpected part of the list.
 6. If the account exists and is active but still does not appear in the report filter, contact support with the company name, account name, account code, report name, date range, and a screenshot of the missing account selector.
 
-## Related Articles
+## Related
 
 - [View available reports](./view-available-reports.md)
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
 - [Understand the chart of accounts structure](../ledger-and-chart-of-accounts/understand-the-chart-of-accounts-structure.md)
-
-## Info
-
-- App sections: `reports`, `ledger`, `chart-of-accounts`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

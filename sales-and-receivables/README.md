@@ -1,6 +1,6 @@
 # Sales and Receivables
 
-Set up customers and items, create invoices with item number/SKU lines, receive payments, and review the main receivables workflows in SPRK.
+Set up customers and items, create invoices with item number/SKU lines, receive payments, and review accounts receivable before reporting.
 
 ![Items list showing Item Number / SKU setup for receivables workflows](../screenshots/sales-and-receivables/items-item-number-sku-step-01.png)
 
@@ -9,15 +9,10 @@ Use the setup pages in this section before heavy invoice entry when customer def
 ## In This Section
 
 - [Manage customers](./manage-customers.md)
+- [AR review workflow](./ar-review-workflow.md)
 - [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Receive invoice payments](./receive-invoice-payments.md)
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
-
-## Info
-
-- App sections: `customers`, `items`, `invoices`
-- Last validated: 2026-06-04
-- Screenshot status: `captured`

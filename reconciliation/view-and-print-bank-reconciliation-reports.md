@@ -4,11 +4,11 @@
 
 Open the bank reconciliation report from an active reconciliation account or from posted reconciliation history, then review the report output without changing ledger activity.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you need support for a completed bank or credit card reconciliation, or when you want to check whether a posted reconciliation report is available for an account.
 
-## Prerequisites
+## Before You Start
 
 - The correct active company is selected.
 - The bank or credit card account has been selected in `Reconcile`.
@@ -36,31 +36,25 @@ Use this workflow when you need support for a completed bank or credit card reco
    - Review the summary values and cleared transaction sections.
 8. Use `Print` if you need a PDF or paper copy, or `Export` if the report exposes an export action for the current output.
 
-## Expected Result
+## What Happens Next
 
-SPRK opens the reconciliation report area for the selected account and posted statement period. Current transaction and general ledger impact as of 2026-06-05:
+SPRK opens the reconciliation report area for the selected account and posted statement period.
 
 - Opening, running, printing, or exporting a reconciliation report does not create new ledger activity.
 - The report is review output tied to a posted reconciliation session.
 - If the selected account has no posted reconciliation periods, SPRK shows that no posted reconciliations were found for the account instead of generating a populated report.
 - History rows only expose `View report` when there is posted reconciliation history to view.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Looking for reconciliation reports only on the general Reports page and missing the `Print Bank Rec` shortcut from `Reconcile`.
 - Expecting a report before the reconciliation has been posted.
 - Treating a printed report as a way to edit or reopen a posted reconciliation.
 - Choosing the wrong account before opening `Print Bank Rec`, which pre-fills the report account from the active selection.
 
-## Related Articles
+## Related
 
 - [Start a reconciliation](./start-a-reconciliation.md)
 - [Finish a reconciliation](./finish-a-reconciliation.md)
 - [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md)
 - [View available reports](../reports-and-financial-review/view-available-reports.md)
-
-## Info
-
-- App sections: `reconcile`, `reports`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

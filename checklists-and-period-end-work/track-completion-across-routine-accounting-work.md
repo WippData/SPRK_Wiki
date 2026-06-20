@@ -4,11 +4,11 @@ Review checklist runs by status, period, and notes so you can see what is still 
 
 ![Checklists page showing completion tracking filters, status and period selectors, run table headers, and the current no-rows state](../screenshots/checklists-and-period-end-work/track-completion-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this workflow when you need to review checklist-run progress across periods, identify unfinished work, or confirm that a recurring checklist was completed.
 
-## Prerequisites
+## Before You Start
 
 - An active company is selected.
 - At least one checklist run exists for the period you want to review.
@@ -33,27 +33,21 @@ Use this workflow when you need to review checklist-run progress across periods,
 7. If a run is still `Draft` or `In Progress`, update the run or return to the source workflow that still needs to be completed.
 8. Use `Refresh` when recent changes are not yet visible in the list.
 
-## Expected Result
+## What Happens Next
 
-You can see which checklist runs are open, completed, or due for follow-up without leaving the Checklist page. Current general ledger impact as of 2026-05-04:
+You can see which checklist runs are open, completed, or due for follow-up without leaving the Checklist page.
 
 - Filtering, sorting, opening, or refreshing checklist runs does not post to the ledger.
 - Status values show checklist progress only; they do not confirm that underlying accounting entries are correct.
 - The checklist page can help you spot unfinished work, but any ledger change still has to be reviewed and posted in the relevant transaction workflow.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Treating a completed checklist run as the only proof needed for financial review.
 - Forgetting to clear filters and then assuming runs are missing.
 - Using checklist status instead of the source transaction page when you need posting detail.
 
-## Related Articles
+## Related
 
 - [Use checklists](./use-checklists.md)
 - [Run recurring close-style tasks](./run-recurring-close-style-tasks.md)
-
-## Info
-
-- App sections: `checklists`
-- Last validated: 2026-06-06
-- Screenshot status: `captured`

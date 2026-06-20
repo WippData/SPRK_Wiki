@@ -4,11 +4,11 @@
 
 Use a simple decision path to move from vendor setup to bill recognition, payment, and check tracking without mixing up the accounting effect.
 
-## Purpose
+## When To Use This
 
 Use this article when you want a quick way to choose the right payables workflow before entering data in the wrong place.
 
-## Prerequisites
+## Before You Start
 
 - You have an active company selected.
 - You know whether your next step is setup, payable recognition, payment, or check tracking.
@@ -28,29 +28,23 @@ Use this article when you want a quick way to choose the right payables workflow
    - Bill payment: debits Accounts Payable and credits the selected payment account
    - Check record activity: operational tracking only in the current documented flow
 
-## Expected Result
+## What Happens Next
 
 You can choose the right payables page quickly and avoid confusing master-data setup, payable recognition, payment posting, check-status tracking, and supported reuse of vendor defaults.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Using `Checks` when the real task is to reduce an open bill balance.
 - Entering a bill as `Open` before verifying the account coding.
 - Assuming vendor setup, bill entry, and check tracking all create the same accounting result.
 - Assuming a vendor default expense account means every downstream workflow will auto-fill without review.
 - Treating linked journal review as deletion or unposting.
-- Publishing a `Void bill` click path without validating that the target build exposes `Void bill`; the sampled 2026-06-17 `v0.3.51` menu showed `Delete` instead.
+- Assuming every payable record supports the same correction action. Open the row menu and use the action SPRK shows for that bill, payment, or check.
 
-## Related Articles
+## Related
 
 - [Manage vendors](./manage-vendors.md)
 - [Set up vendor default expense accounts](./set-up-vendor-default-expense-accounts.md)
 - [Create and manage bills](./create-and-manage-bills.md)
 - [Work with checks](./work-with-checks.md)
 - [Review document payment history and linked journals](../ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md)
-
-## Info
-
-- App sections: `vendors`, `bills`, `checks`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

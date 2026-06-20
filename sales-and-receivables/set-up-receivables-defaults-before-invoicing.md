@@ -4,7 +4,7 @@ Prepare customer, item, and account defaults before you start entering invoices 
 
 ![New invoice drawer showing Item Number / SKU line selectors](../screenshots/sales-and-receivables/invoice-item-number-sku-line-step-02.png)
 
-## Purpose
+## When To Use This
 
 Use this page when you want invoice entry to start from cleaner defaults instead of rebuilding customer, item, and account choices on each invoice.
 
@@ -15,7 +15,7 @@ Use this page when you want invoice entry to start from cleaner defaults instead
 - Invoice entry can reuse saved customers and items, or create them inline without leaving the invoice drawer.
 - Cleaner setup reduces rework when you review open invoices, balances, and receivables aging later.
 
-## Prerequisites
+## Before You Start
 
 - You can open `Customers`, `Items`, and `Invoices`.
 - Your chart of accounts already includes the income accounts and receivables account you expect to use.
@@ -45,7 +45,7 @@ Use this page when you want invoice entry to start from cleaner defaults instead
 8. If the needed customer or item does not exist yet, create it inline from the invoice drawer and continue the invoice without leaving the workflow.
 9. Before saving an invoice as `Open`, confirm the receivables account, due date, and line details still match the intended transaction.
 
-## Expected Result
+## What Happens Next
 
 Invoice entry starts from cleaner defaults, repeated customers and items are easier to reuse, and open receivables are easier to review by customer, timing, and account structure.
 
@@ -57,7 +57,7 @@ Invoice entry starts from cleaner defaults, repeated customers and items are eas
 - Customer and item defaults improve setup quality, but they do not replace final invoice review.
 - Receivables aging and invoice list review become easier when customer names, due dates, and line details are consistent.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Starting invoice entry before the chart of accounts is ready for receivables and income activity.
 - Assuming customer defaults remove the need to review each invoice header.
@@ -65,7 +65,7 @@ Invoice entry starts from cleaner defaults, repeated customers and items are eas
 - Leaving imported customer or item account mappings unreviewed before opening invoices.
 - Assuming inline create is only for customer records. It can also help you add a missing item during invoice entry.
 
-## Related Articles
+## Related
 
 - [Manage customers](./manage-customers.md)
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
@@ -73,9 +73,3 @@ Invoice entry starts from cleaner defaults, repeated customers and items are eas
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
 - [Understand the chart of accounts structure](../ledger-and-chart-of-accounts/understand-the-chart-of-accounts-structure.md)
-
-## Info
-
-- App sections: `customers`, `items`, `invoices`, `chart`
-- Last validated: 2026-06-04
-- Screenshot status: `captured`

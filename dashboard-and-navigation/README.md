@@ -14,12 +14,7 @@ Learn the main SPRK layout, move between pages, use search to get where you need
 
 ## Related Foundation Workflows
 
-- [Understand the sidebar and main navigation](../getting-started/understand-the-sidebar-and-main-navigation.md)
-- [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
+- [Move between major app areas](./move-between-major-app-areas.md)
+- [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
 - [Customize the sidebar](../preferences-and-personalization/customize-the-sidebar.md)
-
-## Info
-
-- App sections: `dashboard`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`
+- [Month-end review checklist](../checklists-and-period-end-work/month-end-review-checklist.md)

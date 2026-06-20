@@ -4,15 +4,29 @@ Use Grid Edit when you need to clean up repeated list data faster than opening o
 
 ![Column preferences dialog showing drag handles and move controls for supported list columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
 
-## Purpose
+## When To Use This
 
-Use this workflow when you want to make the same kind of change across several records, especially after an import, during list cleanup, or while reviewing a table before individual drawer edits would be slower.
+Use this workflow when you want to make the same kind of careful cleanup across several records, especially after an import, during list cleanup, or while reviewing a table before individual drawer edits would be slower.
 
-## Prerequisites
+## Before You Start
 
 - You can open a supported list page such as `Items`, `Customers`, `Vendors`, `Checks`, or a supported `Banking` table.
 - The active company shown in the sidebar is the company you intend to review before you make changes.
 - You understand which fields should be reviewed carefully before applying bulk edits.
+
+## Good Uses for Grid Edit
+
+- Cleaning up customer, vendor, or item names after setup.
+- Filling repeated non-posting fields that were missed during import.
+- Reviewing a list for consistent defaults before heavy transaction entry.
+- Preparing pending bank rows for review before the final confirm step.
+
+## Use Extra Caution
+
+- Do not bulk edit fields when you are unsure which records belong to the active company.
+- Do not treat Grid Edit as a substitute for source-document review.
+- Do not change account, vendor, customer, or item fields in bulk without checking the accounting impact.
+- In Banking, applying grid edits is not the same as confirming transactions.
 
 ## Steps
 
@@ -47,9 +61,9 @@ Banking uses Grid Edit for transaction-review cleanup, but Banking also has post
 - If the Banking changed-cell counter is active, apply or discard those Grid Edit changes before running bulk account, vendor, confirm, delete, or select-categorized actions.
 - Applying Grid Edit changes saves the draft cell edits; confirming a bank transaction is still the step that posts or links the ledger result.
 
-## Expected Result
+## What Happens Next
 
-You can review and apply repeated list updates from one table instead of opening each record individually. Current general ledger impact as of 2026-06-05:
+You can review and apply repeated list updates from one table instead of opening each record individually.
 
 - Entering or reviewing draft grid changes does not post to the general ledger by itself.
 - Applying list edits updates the saved record data for that page, not a new journal-entry workflow.
@@ -57,7 +71,7 @@ You can review and apply repeated list updates from one table instead of opening
 - The accounting impact still depends on the fields and downstream workflows tied to the records you changed.
 - Banking confirmation remains a separate posting workflow; apply any draft grid edits before using bulk Banking actions such as confirm selected.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Using Grid Edit for broad cleanup without first confirming you are on the correct page and company context.
 - Applying several edits at once without reviewing the changed-cell count and final cell values.
@@ -68,7 +82,7 @@ You can review and apply repeated list updates from one table instead of opening
 - Assuming drag reordering is available on every table; use the visible `Column preferences` controls for the page you are on.
 - Looking for `Column preferences` while still in grid mode. In the current Items workflow, that control is visible in the standard list view.
 
-## Related Articles
+## Related
 
 - [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
 - [Understand personalization boundaries and saved behavior](../preferences-and-personalization/understand-personalization-boundaries-and-saved-behavior.md)
@@ -77,9 +91,4 @@ You can review and apply repeated list updates from one table instead of opening
 - [Manage vendors](../expenses-and-payables/manage-vendors.md)
 - [Work with checks](../expenses-and-payables/work-with-checks.md)
 - [Review and classify bank transactions](../banking-and-cash-management/review-and-classify-bank-transactions.md)
-
-## Info
-
-- App sections: `items`, `customers`, `vendors`, `checks`, `banking`, `preferences`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`
+- [Before you import](../company-setup-and-migration/before-you-import.md)
