@@ -6,11 +6,11 @@
 
 Open the Checklist area, manage reusable checklist templates, and understand the difference between template setup and period-specific runs.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you need to review the Checklist page layout, maintain reusable checklist templates, or understand how checklist runs are created from those templates.
 
-## Prerequisites
+## Before You Start
 
 - An active company is selected.
 - You know the checklist name and the items you want the template to contain.
@@ -45,28 +45,22 @@ Use this workflow when you need to review the Checklist page layout, maintain re
 8. Save the template.
 9. Return to the main Checklist page when you are ready to start a run from one of the active templates.
 
-## Expected Result
+## What Happens Next
 
-You have a reusable checklist template that can be used to create period-specific runs. Current general ledger impact as of 2026-05-04:
+You have a reusable checklist template that can be used to create period-specific runs.
 
 - Creating or editing a checklist template stores checklist metadata only.
 - Deleting a checklist from the manage view retires it from active use instead of posting a reversing entry.
 - No template action changes balances, clears transactions, or posts to the ledger.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Expecting `Manage` to show completed runs instead of templates.
 - Leaving item labels blank and then trying to save.
 - Treating a checklist template as proof that the accounting work is already done.
 - Turning a template inactive before confirming you no longer need it for future periods.
 
-## Related Articles
+## Related
 
 - [Run recurring close-style tasks](./run-recurring-close-style-tasks.md)
 - [Track completion across routine accounting work](./track-completion-across-routine-accounting-work.md)
-
-## Info
-
-- App sections: `checklists`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

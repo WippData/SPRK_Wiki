@@ -4,11 +4,11 @@ Edit company details, archive or unarchive companies, and understand when perman
 
 ![Companies tab filtered to Archived companies with edit, archive, and delete maintenance actions visible](../screenshots/company-administration/company-maintenance-actions-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this workflow when you need to maintain company settings after a company already exists.
 
-## Prerequisites
+## Before You Start
 
 - You can open `Companies` from the `System` section.
 - The company you want to maintain is visible in the list.
@@ -27,9 +27,9 @@ Use this workflow when you need to maintain company settings after a company alr
 7. Permanently delete a company only after it has been archived first.
 8. If SPRK warns that the company has journal entries, keep it archived instead of expecting permanent delete to succeed.
 
-## Expected Result
+## What Happens Next
 
-You can maintain company settings and lifecycle state without guessing which actions are reversible. Current general ledger impact as of 2026-05-04:
+You can maintain company settings and lifecycle state without guessing which actions are reversible.
 
 - Editing company settings changes setup values but does not create a journal entry by itself.
 - A posting cutoff date can restrict which dates are allowed for future posted entries, but changing the cutoff does not repost prior activity automatically.
@@ -38,21 +38,15 @@ You can maintain company settings and lifecycle state without guessing which act
 - Archiving or unarchiving a company changes availability in the company list and selector; it does not create, edit, or delete journal entries.
 - Permanent deletion is limited to archived companies, and companies with journal-entry activity are blocked from deletion.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Trying to delete an active company before archiving it.
 - Assuming a company with accounting activity can always be removed permanently.
 - Treating setup edits as though they rewrite prior transactions automatically.
 - Assuming a missing manual-journal account picker option means the account is inactive. It may be configured as a control account.
 
-## Related Articles
+## Related
 
 - [Use the Companies tab](./use-the-companies-tab.md)
 - [Understand the chart of accounts structure](../ledger-and-chart-of-accounts/understand-the-chart-of-accounts-structure.md)
 - [Understand audit-sensitive ledger behavior](../ledger-and-chart-of-accounts/understand-audit-sensitive-ledger-behavior.md)
-
-## Info
-
-- App sections: `companies`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

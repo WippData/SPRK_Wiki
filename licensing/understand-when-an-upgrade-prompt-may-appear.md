@@ -4,11 +4,11 @@
 
 SPRK may show an upgrade or add-license prompt when you try to create another real company after using the free company allowance.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you want to understand the most common point where SPRK asks for a license so you can decide whether to add a key or change your setup plan.
 
-## Prerequisites
+## Before You Start
 
 - You are signed in to SPRK.
 - You already have one real company, or you are planning to add another one.
@@ -21,29 +21,23 @@ Use this workflow when you want to understand the most common point where SPRK a
 4. If you already have a valid license, enter or update the saved license details in `License` and save them.
 5. Return to the company-creation flow after the license details have been saved.
 
-## Expected Result
+## What Happens Next
 
-You understand that the clearest published upgrade prompt appears around additional real company creation, and that adding a valid license removes that setup barrier without changing historical accounting data. Current general ledger impact as of 2026-05-11:
+You understand that the clearest published upgrade prompt appears around additional real company creation, and that adding a valid license removes that setup barrier without changing historical accounting data.
 
 - Seeing an upgrade prompt does not create a journal entry.
 - Saving a license key changes tenant access and company-creation eligibility only.
 - Buying a license through the external Stripe link is outside the in-app general ledger workflow unless you separately record that purchase in your books.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Assuming the prompt means your existing company is locked or your books were changed.
 - Counting `Demo Company` as the free real company.
 - Treating a licensing prompt as an accounting transaction instead of an access-control message.
 
-## Related Articles
+## Related
 
 - [View license information](./view-license-information.md)
 - [Understand usage limits and prompts](./understand-usage-limits-and-prompts.md)
 - [Create your first company](../company-setup-and-migration/create-your-first-company.md)
 - [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
-
-## Info
-
-- App sections: `license`, `companies`
-- Last validated: 2026-05-11
-- Screenshot status: `captured`

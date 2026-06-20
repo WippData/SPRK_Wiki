@@ -4,11 +4,11 @@ Use the dashboard to get a quick summary of recent activity and jump into common
 
 ![Dashboard overview in Demo Company showing 30-day KPI cards, charts, and quick links](../screenshots/dashboard-and-navigation/dashboard-overview-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use the dashboard when you want a high-level view of recent activity before drilling into detailed accounting pages.
 
-## Prerequisites
+## Before You Start
 
 - You have an active company selected.
 - The dashboard is available from the sidebar.
@@ -27,25 +27,18 @@ Use the dashboard when you want a high-level view of recent activity before dril
 4. Use the `Quick Links` card when you want to jump directly into one of the linked workflows.
 5. If the dashboard is still loading, wait for the summary cards and charts to populate before using the numbers operationally.
 
-## Expected Result
+## What Happens Next
 
 You can read the dashboard as a summary page and use it as a launch point into deeper workflows.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Treating dashboard figures as the place to do detailed investigation. Use the linked working pages when you need record-level detail.
 - Interpreting loading placeholders as final values.
 - Assuming the quick links list is configurable from the dashboard itself. Use it as navigation, not as a setup panel.
 
-## Related Articles
+## Related
 
 - [Move between major app areas](./move-between-major-app-areas.md)
 - [Use global search](./use-global-search.md)
 - [Understand company-aware navigation](./understand-company-aware-navigation.md)
-- [Understand the dashboard at a high level](../getting-started/understand-the-dashboard-at-a-high-level.md)
-
-## Info
-
-- App sections: `dashboard`
-- Last validated: 2026-05-27
-- Screenshot status: `captured`

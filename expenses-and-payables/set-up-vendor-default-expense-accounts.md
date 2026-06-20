@@ -4,7 +4,7 @@ Prepare vendor-level expense defaults before you enter repeat payables, checks, 
 
 ![Vendors list showing the Default Expense Account column](../screenshots/expenses-and-payables/vendor-default-expense-account-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this page when the same vendor usually points to the same expense account and you want SPRK to reuse that setup where the current workflow supports it.
 
@@ -16,7 +16,7 @@ Use this page when the same vendor usually points to the same expense account an
 - The default helps reduce cleanup work later when you review vendor activity and expense reporting.
 - A saved default does not replace review. You should still confirm the final account before you save or confirm a transaction.
 
-## Prerequisites
+## Before You Start
 
 - You can open `Vendors`.
 - The expense account you want to reuse already exists and is active.
@@ -47,11 +47,11 @@ Use this page when the same vendor usually points to the same expense account an
 - A manual category or saved split should stay in control once you have already chosen a more specific result.
 - Mixed-use vendors may need one-off exceptions even when a default is usually helpful.
 
-## Expected Result
+## What Happens Next
 
 The vendor record carries a reusable expense default, and supported check and banking workflows can start from cleaner coding with less repetitive entry.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Treating the default as a guarantee that every vendor transaction belongs to one account.
 - Assuming the default replaces bill-line review in payables workflows.
@@ -59,16 +59,10 @@ The vendor record carries a reusable expense default, and supported check and ba
 - Assuming a vendor default overrides a rule or a manual banking category every time.
 - Choosing an account without confirming that it is the active expense account you actually want to reuse.
 
-## Related Articles
+## Related
 
 - [Manage vendors](./manage-vendors.md)
 - [Create and manage bills](./create-and-manage-bills.md)
 - [Work with checks](./work-with-checks.md)
 - [Review common payables workflows](./review-common-payables-workflows.md)
 - [Review and classify bank transactions](../banking-and-cash-management/review-and-classify-bank-transactions.md)
-
-## Info
-
-- App sections: `vendors`, `checks`, `banking`
-- Last validated: 2026-06-04
-- Screenshot status: `captured`

@@ -4,11 +4,11 @@ Open the Companies tab to review active and archived companies, refresh the list
 
 ![Companies tab showing active companies, filters, refresh, new-company actions, and company row controls](../screenshots/company-administration/companies-tab-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this workflow when you need a central place to review companies and reach the actions for selecting, editing, archiving, deleting, or adding a company.
 
-## Prerequisites
+## Before You Start
 
 - You are signed in to SPRK.
 - At least one company exists in the workspace.
@@ -23,29 +23,22 @@ Use this workflow when you need a central place to review companies and reach th
    - The new-company drawer includes `Required account fields` and `Accounting edit permissions` so admins can review account-code presentation and edit-policy defaults before creating the company.
 6. Use the row actions to select the active company, edit a company, archive or unarchive it, or permanently delete an archived company.
 
-## Expected Result
+## What Happens Next
 
-You can see the publicly supported company management actions in one place, including the active company marker and company-level action buttons. Current general ledger impact as of 2026-05-04:
+You can see the publicly supported company management actions in one place, including the active company marker and company-level action buttons.
 
 - Viewing or refreshing the company list does not create, edit, or delete a journal entry.
 - Switching which company is selected changes app context only.
 - Opening company creation or maintenance actions does not post to the general ledger until you later create accounting transactions inside that company.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Looking for company maintenance under `Preferences` or another settings tab.
 - Assuming archived companies disappear from filters permanently.
 - Using the `New Company` menu when you only meant to switch the active company.
 
-## Related Articles
+## Related
 
-- [Understand active company behavior](./understand-active-company-behavior.md)
-- [Add a company from the sidebar flow](./add-a-company-from-the-sidebar-flow.md)
-- [Review company-level maintenance actions](./review-company-level-maintenance-actions.md)
 - [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
-
-## Info
-
-- App sections: `companies`
-- Last validated: 2026-05-04
-- Screenshot status: `captured`
+- [Create your first company](../company-setup-and-migration/create-your-first-company.md)
+- [Review company-level maintenance actions](./review-company-level-maintenance-actions.md)

@@ -12,12 +12,6 @@ Review app-wide display, tooltip visibility, formatting, date-entry, account-sel
 
 ## Related Foundation Workflows
 
-- [Understand the sidebar and main navigation](../getting-started/understand-the-sidebar-and-main-navigation.md)
 - [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)
-- [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
-
-## Info
-
-- App sections: `preferences`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`
+- [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)
+- [Switch between companies](../company-setup-and-migration/switch-between-companies.md)

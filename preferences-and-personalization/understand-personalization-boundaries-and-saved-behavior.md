@@ -4,7 +4,7 @@ Learn which SPRK preferences follow your user profile, how broadly they apply, a
 
 ![Preferences page showing user-level tooltip visibility, grid edit, and account sorting controls](../screenshots/preferences-and-personalization/show-tooltips-preference-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this article when you want to understand whether a preference affects only your view, the whole app, or company accounting data.
 
@@ -20,9 +20,9 @@ Use this article when you want to understand whether a preference affects only y
 - Supported column-preference dialogs can offer both drag handles and move-up or move-down controls for reordering, so users can choose the control style that fits the task.
 - `Show tooltips` controls visible field-help icons and hover explanations where they exist; it does not remove fields, change required validation, or change accounting behavior.
 
-## Expected Result
+## What Happens Next
 
-You can distinguish between user-facing personalization and company accounting activity before making changes. Current general ledger impact as of 2026-06-05:
+You can distinguish between user-facing personalization and company accounting activity before making changes.
 
 - Personalization settings do not post to the general ledger.
 - Saved preferences do not move transactions between companies or reopen closed periods.
@@ -32,7 +32,7 @@ You can distinguish between user-facing personalization and company accounting a
 - Changing supported table layouts, reordering columns, or enabling default Grid Edit changes your working view, not the underlying accounting data.
 - When `Grid Edit default` is on, supported list pages can open directly into grid mode for your user profile; it does not force unsupported pages into grid mode.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Assuming a formatting preference changed how a transaction was originally posted.
 - Confusing app-wide user preferences with company-specific maintenance settings.
@@ -42,15 +42,9 @@ You can distinguish between user-facing personalization and company accounting a
 - Turning off tooltips and then expecting field requirements or save checks to stop applying.
 - Expecting sidebar personalization to override required product guardrails.
 
-## Related Articles
+## Related
 
 - [Use the Preferences tab](./use-the-preferences-tab.md)
 - [Customize the sidebar](./customize-the-sidebar.md)
 - [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)
-- [Understand active company behavior](../company-administration/understand-active-company-behavior.md)
-
-## Info
-
-- App sections: `preferences`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`
+- [Switch between companies](../company-setup-and-migration/switch-between-companies.md)

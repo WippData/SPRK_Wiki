@@ -4,11 +4,11 @@ Build a new company from uploaded files, copied data, and manual settings when a
 
 ![Import Wizard showing starter templates, download templates action, and upload guidance](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use the Import Wizard when your migration spans multiple files or when you want to mix uploaded files, copied data from an existing company, and manual settings in one guided flow.
 
-## Prerequisites
+## Before You Start
 
 - You can open `Settings` → `Companies`.
 - You know the new company name you want to create.
@@ -36,11 +36,11 @@ Use the Import Wizard when your migration spans multiple files or when you want 
 11. Create the company and wait for the wizard to finish.
 12. Review the new company before using it for live work.
 
-## Expected Result
+## What Happens Next
 
 SPRK creates a new company using the combination of files, copied data, and settings you selected in the wizard.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Starting the wizard without a company name. The review action is disabled until a name is entered.
 - Skipping the starter templates and then uploading files that do not match the expected columns.
@@ -48,15 +48,9 @@ SPRK creates a new company using the combination of files, copied data, and sett
 - Assuming the wizard’s auto-assignment is final. Review each data type before creating the company.
 - Forgetting that settings can be entered manually if no source file exists for them.
 
-## Related Articles
+## Related
 
 - [Create your first company](./create-your-first-company.md)
 - [Import from QuickBooks Online ZIP](./import-from-quickbooks-online-zip.md)
 - [Import from QuickBooks Desktop IIF](./import-from-quickbooks-desktop-iif.md)
 - [Switch between companies](./switch-between-companies.md)
-
-## Info
-
-- App sections: `companies`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

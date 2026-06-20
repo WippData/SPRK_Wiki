@@ -4,11 +4,11 @@ Categorize pending bank or credit card transactions, use splits or check matchin
 
 ![Banking review filters and Category column used for the offset GL account](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this workflow when imported or manually entered bank activity needs review before SPRK posts it to the general ledger.
 
-## Prerequisites
+## Before You Start
 
 - A bank or credit card account is available on the Banking page.
 - The transaction already exists in the selected account as a pending row.
@@ -62,9 +62,9 @@ Use this workflow when imported or manually entered bank activity needs review b
    - If SPRK blocks a bulk action while the changed-cell counter is still active, review the edits, choose `Apply Changes`, and then run the bulk action after the grid is clean.
    - Review the final rows carefully before confirming transactions.
 
-## Expected Result
+## What Happens Next
 
-The reviewed transaction is confirmed and removed from the pending queue. Current general ledger impact as of 2026-06-05:
+The reviewed transaction is confirmed and removed from the pending queue.
 
 - Changing a vendor, changing `GL Account` or the grid's `Category` column, saving draft splits, and matching a check do not post to the general ledger by themselves.
 - Confirming a transaction creates or links the journal-entry result for that bank transaction.
@@ -80,7 +80,7 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - A later imported opposite side of a transfer can be adopted into an existing transfer or excluded as a duplicate counterpart instead of creating a second journal entry for the same transfer.
 - Likely-duplicate warnings during import do not post, delete, or skip a transaction by themselves. They are a pre-confirm review signal before the row reaches `Pending`.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Confirming without selecting a category, saving a valid split, or matching the correct check.
 - Using the wrong bank account card and then confirming a transaction into the wrong cash account.
@@ -93,7 +93,7 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - Assuming transfer duplicate review depends only on matching description text. Linked transfer metadata can matter when SPRK recognizes a counterpart.
 - Trying to confirm or bulk-update selected Banking rows before applying draft Grid Edit changes.
 
-## Related Articles
+## Related
 
 - [Choose bank and credit card accounts](./choose-bank-and-credit-card-accounts.md)
 - [Understand the banking page](./understand-the-banking-page.md)
@@ -102,9 +102,3 @@ The reviewed transaction is confirmed and removed from the pending queue. Curren
 - [Set up vendor default expense accounts](../expenses-and-payables/set-up-vendor-default-expense-accounts.md)
 - [Edit linked ledger and bank activity](../ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity.md)
 - [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)
-
-## Info
-
-- App sections: `banking`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

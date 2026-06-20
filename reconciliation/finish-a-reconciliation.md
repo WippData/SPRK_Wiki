@@ -4,11 +4,11 @@
 
 Clear the right confirmed transactions, monitor the difference, and finish the reconciliation only when the selected activity agrees to the statement ending balance.
 
-## Purpose
+## When To Use This
 
 Use this workflow after a reconciliation session is started and you are ready to clear transactions and finalize the statement.
 
-## Prerequisites
+## Before You Start
 
 - A reconciliation session is already active for the account.
 - The account's `Statement opening balance`, `Statement ending balance`, and statement date range are already set.
@@ -31,9 +31,9 @@ Use this workflow after a reconciliation session is started and you are ready to
 7. If needed, use `Export` before finishing to download the current reconciliation table as a CSV review file.
 8. After the reconciliation is posted, use `History` and `View report`, or use `More` > `Print Bank Rec`, when you need to review the bank reconciliation report for that posted statement period.
 
-## Expected Result
+## What Happens Next
 
-SPRK finalizes the reconciliation for the selected statement window. Current transaction and general ledger impact as of 2026-05-02:
+SPRK finalizes the reconciliation for the selected statement window.
 
 - Finishing a reconciliation does not create a new journal entry in the general ledger.
 - SPRK creates a posted reconciliation record for the account and statement ending date.
@@ -42,7 +42,7 @@ SPRK finalizes the reconciliation for the selected statement window. Current tra
 - Later reconciliations can finish with no selected transactions when the carried opening balance already equals the statement ending balance.
 - Posted reconciliation records can be reviewed later from reconciliation history and the Reports `Reconciliation` tab.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Trying to finish while the difference is not zero.
 - Clearing transactions from the wrong account.
@@ -50,15 +50,9 @@ SPRK finalizes the reconciliation for the selected statement window. Current tra
 - Selecting a row just to finish a quiet statement period when the beginning and ending balances already match.
 - Assuming reconciliation changes the original account coding of a confirmed bank transaction.
 
-## Related Articles
+## Related
 
 - [Start a reconciliation](./start-a-reconciliation.md)
 - [Match and unmatch transactions](./match-and-unmatch-transactions.md)
 - [View and print bank reconciliation reports](./view-and-print-bank-reconciliation-reports.md)
 - [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md)
-
-## Info
-
-- App sections: `reconcile`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

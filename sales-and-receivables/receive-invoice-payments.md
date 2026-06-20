@@ -4,11 +4,11 @@
 
 Record customer payments from the invoice list so SPRK updates the balance and posts the cash or bank side of the transaction, then review payment history and linked journals when you need the audit trail.
 
-## Purpose
+## When To Use This
 
 Use this workflow when a customer has paid an invoice and you want SPRK to reduce the receivable and update the invoice status correctly.
 
-## Prerequisites
+## Before You Start
 
 - The invoice already exists.
 - The invoice is not already fully paid.
@@ -37,7 +37,7 @@ Use this workflow when a customer has paid an invoice and you want SPRK to reduc
 
 When the customer payment first appears as a pending money-in row in `Banking`, use `Match bank transaction` when available. SPRK can suggest open invoices, show the candidate number, customer, dates, open amount, bank amount, and difference, then use `Receive Payment & Confirm` or `Receive Partial & Confirm` when the bank amount is eligible. Overpayments are not actionable from that Banking match path.
 
-## Expected Result
+## What Happens Next
 
 SPRK records the payment, reduces the invoice balance, and updates the status:
 
@@ -46,13 +46,12 @@ SPRK records the payment, reduces the invoice balance, and updates the status:
 
 Customer payment terms and credit settings can help you review receivables before collection, but they do not replace this payment workflow.
 
-Current general ledger impact as of 2026-06-17:
 
 - Recording a payment reduces Accounts Receivable and increases the selected deposit account according to the invoice payment workflow.
 - Viewing payment history or linked journal entries does not post by itself.
 - Reversing a payment-linked journal through a supported source-document confirmation can deactivate the payment application and reopen the invoice balance.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Editing the invoice status to `Paid` instead of using `Receive payment`.
 - Assuming customer credit settings or invoice terms collect the payment automatically.
@@ -62,15 +61,9 @@ Current general ledger impact as of 2026-06-17:
 - Recording a payment manually and then matching the same bank transaction as another payment.
 - Treating payment history as an edit screen.
 
-## Related Articles
+## Related
 
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
 - [Review document payment history and linked journals](../ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md)
-
-## Info
-
-- App sections: `invoices`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

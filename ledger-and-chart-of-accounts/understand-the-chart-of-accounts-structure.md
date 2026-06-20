@@ -4,11 +4,11 @@ Review how SPRK organizes accounts by code, parent-child hierarchy, type, subtyp
 
 ![Chart of Accounts page in Demo Company showing account type grouping, filters, toolbar actions, and asset account rows](../screenshots/ledger-and-chart-of-accounts/chart-of-accounts-structure-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this article when you need to understand how accounts are grouped, created, edited, imported, exported, or deactivated in the `Chart of Accounts` page.
 
-## Prerequisites
+## Before You Start
 
 - An active company is selected.
 - You know whether you are adding a brand-new account, reorganizing an existing one, or reviewing the current structure.
@@ -40,31 +40,25 @@ Use this article when you need to understand how accounts are grouped, created, 
    - Active accounts remain available for normal use.
    - Deleting an account from this page sets it inactive instead of removing its history.
 
-## Expected Result
+## What Happens Next
 
-You can organize the account list into a clearer structure and keep accounts available for downstream workflows. Current general ledger impact as of 2026-05-02:
+You can organize the account list into a clearer structure and keep accounts available for downstream workflows.
 
 - Creating, editing, importing, exporting, or deactivating accounts from `Chart of Accounts` does not post a journal entry by itself.
 - These actions change account setup and availability, not existing account balances.
 - Export produces a file only and does not change ledger data.
 - Name-only account presentation changes how accounts are shown and sorted in supported lists. It does not delete stored account codes or change balances.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Expecting `Delete` to erase prior history. SPRK marks the account inactive instead.
 - Importing parent relationships without valid `parentId` values.
 - Treating subtype as required for every account when the page only exposes it as an optional field.
 - Assuming missing visible account codes mean the codes were deleted. Check the company's `Required account fields` setting first.
 
-## Related Articles
+## Related
 
 - [Set up receivables defaults before invoicing](../sales-and-receivables/set-up-receivables-defaults-before-invoicing.md)
 - [Record journal entries](./record-journal-entries.md)
-- [Understand ledger import and export behavior](./understand-ledger-import-and-export-behavior.md)
+- [Prepare and review ledger imports and exports](./understand-ledger-import-and-export-behavior.md)
 - [Understand audit-sensitive ledger behavior](./understand-audit-sensitive-ledger-behavior.md)
-
-## Info
-
-- App sections: `chart`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

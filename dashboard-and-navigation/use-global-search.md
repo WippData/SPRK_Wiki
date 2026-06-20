@@ -4,11 +4,11 @@ Search across customers, vendors, and ledger entries from the persistent search 
 
 ![Global search results showing ledger entries returned from the app header search field](../screenshots/dashboard-and-navigation/global-search-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use global search when you want to jump directly to a customer, vendor, or ledger result without browsing to the page first.
 
-## Prerequisites
+## Before You Start
 
 - An active company is selected.
 - You can see the search field at the top of the app.
@@ -26,7 +26,7 @@ Use global search when you want to jump directly to a customer, vendor, or ledge
 6. Press `Enter` to open the highlighted result, or click the result directly.
 7. Press `Escape` if you want to close the open search result list.
 
-## Expected Result
+## What Happens Next
 
 Search results open the page that matches the result type:
 
@@ -36,21 +36,15 @@ Search results open the page that matches the result type:
 
 When possible, SPRK also carries the selected result into that page as a prefilled search or filter.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Typing only one character and expecting full results. The current search waits until the query is at least two characters long.
 - Assuming all results open the same page.
 - Forgetting that search is disabled until a company is selected.
 - Using the slash shortcut while actively typing in another input field and expecting focus to move.
 
-## Related Articles
+## Related
 
 - [Move between major app areas](./move-between-major-app-areas.md)
 - [Understand company-aware navigation](./understand-company-aware-navigation.md)
 - [Understand the dashboard overview](./understand-the-dashboard-overview.md)
-
-## Info
-
-- App sections: `customers`, `vendors`, `ledger`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

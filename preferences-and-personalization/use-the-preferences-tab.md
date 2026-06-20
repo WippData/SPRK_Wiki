@@ -8,11 +8,11 @@ Open `Preferences` to manage app-wide appearance, formatting, date display, upda
 
 ![Column preferences dialog showing drag handles, visibility checkboxes, and move controls for invoice columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this workflow when you want to review or change how SPRK looks and behaves for your user profile across the app.
 
-## Prerequisites
+## Before You Start
 
 - You are signed in to SPRK.
 - The active company shown in the sidebar is the company you intend to use while validating context-sensitive pages.
@@ -45,9 +45,9 @@ Use this workflow when you want to review or change how SPRK looks and behaves f
 10. Review the `Getting started` card if you want the dashboard tour to appear again.
 11. Save preferences when you finish if the page does not auto-save the changes you made.
 
-## Expected Result
+## What Happens Next
 
-Your user-level preferences are applied across the SPRK app, including display, formatting, date-entry interpretation, grid-edit startup behavior, and update prompt behavior. Current general ledger impact as of 2026-06-05:
+Your user-level preferences are applied across the SPRK app, including display, formatting, date-entry interpretation, grid-edit startup behavior, and update prompt behavior.
 
 - Changing preferences does not create, edit, or delete a journal entry.
 - Display and formatting updates change how information is shown to you, not the underlying transaction amounts.
@@ -58,7 +58,7 @@ Your user-level preferences are applied across the SPRK app, including display, 
 - Changing column visibility or column order affects your working view on supported tables, not the accounting records behind those rows.
 - Resetting the getting-started tour affects onboarding prompts only and does not change company books.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Treating Preferences as a company setup page instead of a user-level settings area.
 - Assuming number or currency display choices recalculate posted balances.
@@ -69,18 +69,12 @@ Your user-level preferences are applied across the SPRK app, including display, 
 - Assuming drag reordering in `Column preferences` replaces the move-up and move-down controls; both paths can be available on supported tables.
 - Leaving the page before saving after making changes that are not auto-saved.
 
-## Related Articles
+## Related
 
 - [Customize the sidebar](./customize-the-sidebar.md)
 - [Understand personalization boundaries and saved behavior](./understand-personalization-boundaries-and-saved-behavior.md)
 - [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)
 - [Create your first company](../company-setup-and-migration/create-your-first-company.md)
 - [View available reports](../reports-and-financial-review/view-available-reports.md)
-- [Choose or switch your active company](../getting-started/choose-or-switch-your-active-company.md)
-- [Understand the sidebar and main navigation](../getting-started/understand-the-sidebar-and-main-navigation.md)
-
-## Info
-
-- App sections: `preferences`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`
+- [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
+- [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)

@@ -4,11 +4,11 @@
 
 Add `Checks` to the sidebar when it is hidden, then create, update, match, unmatch, void, and delete checks while understanding what the current check workflow does and does not post to the ledger.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you need to make the `Checks` page available in your sidebar, track a check, keep its status current, and connect it to related bank activity during reconciliation work.
 
-## Prerequisites
+## Before You Start
 
 - You can open `Preferences` if `Checks` is not already visible in your sidebar.
 - A bank account exists for the check.
@@ -44,13 +44,12 @@ Use this workflow when you need to make the `Checks` page available in your side
 10. Review the `Status`, `Bank`, and `Memo` columns in the list after each action.
 11. Use `More` > `Enable Grid Mode` when several check-list corrections or repeated field updates are easier to review in one table, then review the changed-cell count before selecting `Apply Changes`.
 
-## Expected Result
+## What Happens Next
 
 `Checks` is available from the sidebar, and the check is stored so it can move through draft, issued, matched, cleared, voided, or deleted states based on the current workflow.
 
 ## GL Impact
 
-Current general ledger impact as of 2026-06-09:
 
 - Adding or showing `Checks` in the sidebar is a navigation preference only. It does not create, edit, delete, or repost accounting transactions.
 - Creating or editing a check record does not post a separate journal entry in the current `Checks` workflow.
@@ -61,7 +60,7 @@ Current general ledger impact as of 2026-06-09:
 - Confirming a matched bank transaction from the Banking workflow is another downstream path that can post to the general ledger and clear the linked check.
 - Void and delete actions update the check record and matching state, not a separate check-specific posting flow.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Looking for `Checks` in the default sidebar without first adding or showing it from sidebar customization.
 - Assuming the `Checks` page is the same as recording a bill payment.
@@ -70,7 +69,7 @@ Current general ledger impact as of 2026-06-09:
 - Trying to delete a non-draft check. The current workflow only allows draft checks to be deleted.
 - Assuming voiding a check is the same as clearing it through reconciliation.
 
-## Related Articles
+## Related
 
 - [Customize the sidebar](../preferences-and-personalization/customize-the-sidebar.md)
 - [Set up vendor default expense accounts](./set-up-vendor-default-expense-accounts.md)
@@ -79,9 +78,3 @@ Current general ledger impact as of 2026-06-09:
 - [Manage vendors](./manage-vendors.md)
 - [Review and classify bank transactions](../banking-and-cash-management/review-and-classify-bank-transactions.md)
 - [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)
-
-## Info
-
-- App sections: `checks`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

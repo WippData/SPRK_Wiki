@@ -4,11 +4,11 @@
 
 Enter the app from the local sign-in screen, or complete the startup choice flow if this is the first time the workspace is being opened.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you need to enter the SPRK desktop app and understand the difference between a first-time startup path and a returning login.
 
-## Prerequisites
+## Before You Start
 
 - The SPRK desktop app is open.
 
@@ -23,29 +23,23 @@ Use this workflow when you need to enter the SPRK desktop app and understand the
 4. If the startup flow asks how much support you want, choose whether to start with tips or skip them.
 5. Continue into the application after the company is created or selected.
 
-## Expected Result
+## What Happens Next
 
-You enter SPRK and land in the main application shell with sidebar navigation and the app header available. Current general ledger impact as of 2026-05-04:
+You enter SPRK and land in the main application shell with sidebar navigation and the app header available.
 
 - Signing in does not create a journal entry.
 - Choosing a startup path does not post to the general ledger by itself.
 - A ledger impact only occurs later if you complete accounting workflows that create or confirm transactions.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Assuming the `Login` button creates a company. It only enters the app after onboarding is already complete.
 - Treating onboarding choices as permanent accounting setup decisions.
 - Expecting import-related ledger posting to happen during sign-in rather than during the later import and review workflows.
 
-## Related Articles
+## Related
 
-- [Choose or switch your active company](./choose-or-switch-your-active-company.md)
+- [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
 - [First-day orientation for a new user](./first-day-orientation-for-a-new-user.md)
-- [Understand the sidebar and main navigation](./understand-the-sidebar-and-main-navigation.md)
+- [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)
 - [Use the Import Wizard](../company-setup-and-migration/use-the-import-wizard.md)
-
-## Info
-
-- App sections: `dashboard`, `companies`
-- Last validated: 2026-05-04
-- Screenshot status: `captured`

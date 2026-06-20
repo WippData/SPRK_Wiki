@@ -4,7 +4,7 @@
 
 Set customer-level payment and credit defaults before invoicing so due dates, receivables follow-up, and internal review expectations stay more consistent.
 
-## Purpose
+## When To Use This
 
 Use this page when you want a customer record to carry standard payment terms, a visible credit review status, or a credit limit before your team starts creating invoices.
 
@@ -14,7 +14,7 @@ Use this page when you want a customer record to carry standard payment terms, a
 - Set a credit status when your team needs a visible reminder to pause, review, or use a stricter collection approach before opening invoices.
 - Set a credit limit when you want the customer record to show a reference amount for receivables review and follow-up.
 
-## Prerequisites
+## Before You Start
 
 - You can open `Customers`.
 - The customer record already exists, or you are ready to create it.
@@ -38,7 +38,7 @@ Use this page when you want a customer record to carry standard payment terms, a
 9. When creating an invoice later, review the filled `Payment Terms` and `Due Date` instead of assuming they are always correct for that specific job.
 10. Use the customer row action for `AR Aging` when you need to review open balances, terms, and overdue timing for that customer after invoices are posted.
 
-## Expected Result
+## What Happens Next
 
 The customer record keeps payment and credit defaults together, new invoices can start with the customer's payment terms already filled in, and receivables follow-up stays easier to review by customer.
 
@@ -50,23 +50,17 @@ The customer record keeps payment and credit defaults together, new invoices can
 - Receivables aging can show terms and overdue timing alongside the customer balance, which helps with collection follow-up.
 - Recording a payment is still a separate workflow. Changing terms or credit settings does not reduce an invoice balance.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Treating customer terms as permanent invoice instructions without reviewing the actual invoice date and due date.
 - Using `Paid` or another invoice status change instead of the payment workflow when money is collected.
 - Assuming a credit status blocks or approves customer activity automatically. Use it as a visible control point unless your team has verified a stronger workflow around it.
 - Forgetting to revisit older customer defaults after payment expectations change.
 
-## Related Articles
+## Related
 
 - [Manage customers](./manage-customers.md)
 - [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Receive invoice payments](./receive-invoice-payments.md)
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
-
-## Info
-
-- App sections: `customers`, `invoices`, `reports`
-- Last validated: 2026-05-31
-- Screenshot status: `captured`

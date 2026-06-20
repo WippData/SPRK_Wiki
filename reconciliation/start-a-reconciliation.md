@@ -2,11 +2,11 @@
 
 Open the reconciliation workflow for a bank or credit card account, review the statement dates and balances that SPRK locks or derives, and start the clearing session correctly.
 
-## Purpose
+## When To Use This
 
 Use this workflow when you are ready to begin reconciling one bank or credit card account against a statement.
 
-## Prerequisites
+## Before You Start
 
 - An active company is selected.
 - The bank or credit card account you want to reconcile already exists.
@@ -33,16 +33,16 @@ Use this workflow when you are ready to begin reconciling one bank or credit car
    - `Start` begins a normal reconciliation session when a prior reconciliation exists.
    - `Reconcile` completes the opening anchor flow immediately when this is the first reconciliation and you are using the journal-entry anchor.
 
-## Expected Result
+## What Happens Next
 
-The reconciliation workflow is initialized with statement dates and balances for the selected account. Current transaction and general ledger impact as of 2026-05-02:
+The reconciliation workflow is initialized with statement dates and balances for the selected account.
 
 - Starting a normal reconciliation session does not create a new general ledger entry.
 - The page loads confirmed transactions for the selected account and preselects those that fall inside the statement window.
 - Eligible unreconciled confirmed rows can still appear for manual selection even when their transaction date is after the statement ending date. Use statement evidence to decide whether a later-dated row belongs on the current statement.
 - A first-time opening anchor also does not create a journal entry. It creates a posted reconciliation record so future reconciliations have an opening balance reference.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Starting on the wrong bank or credit card account.
 - Choosing the wrong opening balance journal entry for the first reconciliation.
@@ -51,7 +51,7 @@ The reconciliation workflow is initialized with statement dates and balances for
 - Expecting SPRK to let you edit the opening balance from a prior posted reconciliation.
 - Assuming the statement ending date alone hides every later-dated confirmed row. Account, confirmed status, unreconciled state, and statement judgment still matter.
 
-## Related Articles
+## Related
 
 - [Choose bank and credit card accounts](../banking-and-cash-management/choose-bank-and-credit-card-accounts.md)
 - [Finish a reconciliation](./finish-a-reconciliation.md)
@@ -59,9 +59,3 @@ The reconciliation workflow is initialized with statement dates and balances for
 - [View and print bank reconciliation reports](./view-and-print-bank-reconciliation-reports.md)
 - [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md)
 - [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
-
-## Info
-
-- App sections: `reconcile`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

@@ -8,11 +8,11 @@ Learn how the Banking page is organized so you can choose the right bank or cred
 
 ![Banking More menu showing Import File, Download Import Template, and Disable Grid Edit actions](../screenshots/banking-and-cash-management/banking-import-template-menu-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this article when you want a high-level map of the Banking page before importing or categorizing transactions.
 
-## Prerequisites
+## Before You Start
 
 - You are signed in to SPRK.
 - An active company is selected.
@@ -62,9 +62,9 @@ Use this article when you want a high-level map of the Banking page before impor
    - In Banking Grid Edit, selection may appear through the row-number column when that mode supports selected-row actions.
    - Bulk posting and cleanup actions should run only after any draft Grid Edit changes have been applied.
 
-## Expected Result
+## What Happens Next
 
-You understand where to select the account, where imported files enter the workflow, and which parts of the page only prepare transactions versus which step actually posts to the general ledger. Current ledger impact as of 2026-06-17:
+You understand where to select the account, where imported files enter the workflow, and which parts of the page only prepare transactions versus which step actually posts to the general ledger.
 
 - Viewing the Banking page does not post anything to the general ledger.
 - Selecting an account or saving a default account does not post anything to the general ledger.
@@ -74,7 +74,7 @@ You understand where to select the account, where imported files enter the workf
 - Reviewing a bank-import preview, skipping likely duplicate rows, and restoring rows before import are preparation steps only.
 - General ledger posting happens when a pending transaction is confirmed.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Working in the wrong bank or credit card account card before importing or confirming transactions.
 - Treating the `Categorized` tab as the place where edits are staged. It reflects transactions that are already confirmed.
@@ -84,15 +84,9 @@ You understand where to select the account, where imported files enter the workf
 - Relying on the wrong saved default account when you switch between multiple bank or credit card accounts.
 - Mixing unapplied Grid Edit changes with bulk Banking actions instead of applying the draft changes first.
 
-## Related Articles
+## Related
 
 - [Choose bank and credit card accounts](./choose-bank-and-credit-card-accounts.md)
 - [Review and classify bank transactions](./review-and-classify-bank-transactions.md)
 - [Create and manage rules](./create-and-manage-rules.md)
 - [Import bank transactions](./import-bank-transactions.md)
-
-## Info
-
-- App sections: `banking`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

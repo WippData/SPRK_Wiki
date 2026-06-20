@@ -4,11 +4,11 @@ Resolve common "where do I do this?" questions by checking the active company, c
 
 ![Support How To Guides expanded to the troubleshooting article for navigation and workflow confusion](../screenshots/support-and-troubleshooting/troubleshoot-navigation-confusion-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this workflow when a task feels missing, a page looks different than expected, or you are unsure which section of SPRK owns the workflow you need.
 
-## Prerequisites
+## Before You Start
 
 - You are signed in to SPRK.
 - You can identify the workflow you are trying to complete.
@@ -30,28 +30,22 @@ Use this workflow when a task feels missing, a page looks different than expecte
 6. If you still cannot find the workflow, open the related public wiki article for the exact page you are trying to use.
 7. If the page still seems unavailable or different than expected, collect a support log and contact support with the page name and company context.
 
-## Expected Result
+## What Happens Next
 
-You can usually narrow the problem to the active company, the wrong app section, a missing prerequisite record, or a need for support follow-up. Current general ledger impact as of 2026-05-11:
+You can usually narrow the problem to the active company, the wrong app section, a missing prerequisite record, or a need for support follow-up.
 
 - Checking navigation, reading help, and opening support resources do not post to the general ledger.
 - If you discover that a workflow belongs in another section, the ledger impact depends on the accounting action you later complete there, not on the troubleshooting steps themselves.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Looking for a settings workflow inside an operational page, or the reverse.
 - Forgetting that company selection changes which records and workflows are in view.
 - Assuming imported activity is final before the review or confirmation step on the destination page.
 - Escalating immediately without naming the page and workflow that seemed missing.
 
-## Related Articles
+## Related
 
 - [Use the Support tab](./use-the-support-tab.md)
 - [Collect the right details before contacting support](./collect-the-right-details-before-contacting-support.md)
 - [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)
-
-## Info
-
-- App sections: `support`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

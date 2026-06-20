@@ -1,20 +1,32 @@
-# Understand Ledger Import and Export Behavior
+# Prepare and Review Ledger Imports and Exports
 
-Move journal-entry data into or out of SPRK from the `Ledger` page, including template downloads, preview checks, account resolution, and current posting behavior.
+Move journal-entry data into or out of SPRK from the `Ledger` page, with an accountant review path for templates, account matching, preview totals, and post-import report checks.
 
 ![Journal Entry Import Template modal showing accepted file formats, required columns, recommended columns, and Download Template](../screenshots/ledger-and-chart-of-accounts/journal-entry-import-template-step-01.png)
 
-![Current Journal Entry Import Template modal in SPRK 0.3.51](../screenshots/ledger-and-chart-of-accounts/journal-entry-import-template-step-02.png)
+![Journal Entry Import Template modal showing required and recommended columns](../screenshots/ledger-and-chart-of-accounts/journal-entry-import-template-step-02.png)
 
-## Purpose
+## When To Use This
 
-Use this article when you need to import journal-entry activity into SPRK or export journal-entry data for review outside the app.
+Use this article when you need to import journal-entry activity into SPRK, export journal-entry data for review outside the app, or prepare ledger data for migration cleanup.
 
-## Prerequisites
+## Before You Start
 
 - An active company is selected.
 - For imports, you have a source file in `.csv` or `.xlsx` format that matches the ledger workflow you intend to use.
 - You understand which existing accounts should receive imported lines.
+
+## Accountant Review Sequence
+
+1. Confirm the active company.
+2. Confirm the import belongs in `Ledger`, not `Banking`, invoices, bills, checks, or payments.
+3. Download the current template if you are preparing a spreadsheet.
+4. Match account labels to the accounts you intend to use.
+5. Check that each journal entry balances before upload.
+6. Preview the file in SPRK.
+7. Compare preview totals and dates to the source file.
+8. Confirm only when the preview matches your accounting intent.
+9. Run `Trial Balance` or `General Ledger` after import to review the posted result.
 
 ## Steps
 
@@ -35,9 +47,9 @@ Use this article when you need to import journal-entry activity into SPRK or exp
 8. Confirm the import only after you have reviewed the preview totals, dates, descriptions, accounts, vendors, and validation messages.
 9. After import completes, refresh the ledger if needed and review the newly created entries.
 
-## Expected Result
+## What Happens Next
 
-You can move journal-entry data in or out of the product with the current supported tools. Current general ledger impact as of 2026-06-17:
+You can move journal-entry data in or out of the product with the current supported tools.
 
 - Export creates a download file only. It does not create, edit, or reverse any ledger entries.
 - Previewing a ledger import does not post.
@@ -46,7 +58,7 @@ You can move journal-entry data in or out of the product with the current suppor
 - Import is blocked when the file has validation errors, no usable journal lines, unresolved or ambiguous account labels, invalid vendors, out-of-balance entries, duplicate-batch conflicts, posting-cutoff conflicts, or other journal validation failures.
 - If the same completed batch is retried, SPRK can return the existing journal entries instead of creating duplicates; if only part of a prior batch exists, the retry should be blocked rather than posting the remainder.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Assuming export includes every journal entry in the company even when the ledger view is filtered.
 - Skipping the starter modal and preparing a file without checking the current required and recommended columns.
@@ -55,14 +67,10 @@ You can move journal-entry data in or out of the product with the current suppor
 - Assuming vendor matching is fuzzy. Import vendor references should match active vendor IDs or unique active vendor names/company/print-as values.
 - Assuming QuickBooks-style or trial-balance-style source files bypass preview. They still need review before commit.
 
-## Related Articles
+## Related
 
+- [Before you import](../company-setup-and-migration/before-you-import.md)
 - [Record journal entries](./record-journal-entries.md)
+- [When to use journal entries vs source forms](./when-to-use-journal-entries-vs-source-forms.md)
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)
 - [Understand audit-sensitive ledger behavior](./understand-audit-sensitive-ledger-behavior.md)
-
-## Info
-
-- App sections: `ledger`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

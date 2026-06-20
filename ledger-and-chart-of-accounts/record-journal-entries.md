@@ -4,16 +4,28 @@ Create balanced manual journal entries in the `Ledger` page, optionally create l
 
 ![New Journal Entry drawer showing date, memo, account lines, debit and credit columns, totals, and reversing-entry controls](../screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png)
 
-## Purpose
+## When To Use This
 
-Use this workflow when you need to record a manual journal entry directly in the ledger.
+Use this workflow when you need to record a manual accountant adjustment directly in the ledger instead of using invoices, bills, checks, payments, or banking.
 
-## Prerequisites
+## Before You Start
 
 - An active company is selected.
 - The accounts you need already exist in `Chart of Accounts`.
 - The accounts are available for manual journal entry. Company-level `Control accounts` can remove source-workflow accounts from new manual journal choices.
 - You know the posting date, memo, and debit and credit lines you want to record.
+
+## Common Accountant Scenarios
+
+Use manual journal entries for work such as:
+
+- month-end accruals and reversals
+- expense reclasses that do not belong to a source transaction
+- owner contributions, draws, or equity adjustments
+- depreciation, amortization, allocations, or accountant-only adjustments
+- correcting or reversing a prior manual journal entry
+
+Use a source workflow instead when the activity belongs to a customer invoice, customer payment, vendor bill, check, bank transaction, or payment workflow.
 
 ## Steps
 
@@ -37,9 +49,9 @@ Use this workflow when you need to record a manual journal entry directly in the
 10. If you expect to reuse the same layout later, use the save-template option from the journal entry drawer.
 11. Review the new entry in the ledger table and use search or filters to find it again later.
 
-## Expected Result
+## What Happens Next
 
-A balanced journal entry is posted to the ledger and appears in the journal-entry list. Current general ledger impact as of 2026-06-04:
+A balanced journal entry is posted to the ledger and appears in the journal-entry list.
 
 - Saving a manual journal entry creates a new journal entry record and posts each entered debit and credit line to the general ledger.
 - The bank-register option, when available and enabled, creates linked confirmed register rows for eligible Bank, Cash, and Credit Card journal lines. The journal entry remains the posting source.
@@ -49,7 +61,7 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - SPRK can block new or changed manual journal lines that use configured control accounts. Existing lines that already use a control account can remain as-is during edit review, but users should not newly assign that account from the manual journal drawer once the setting is active.
 - If the entry is off by a very small rounding amount within the current tolerance, SPRK can auto-adjust one line and note that adjustment in the memo before saving.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Trying to save an entry when debit and credit totals do not match.
 - Entering both debit and credit on the same line.
@@ -58,14 +70,10 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - Assuming a control account is missing because it was deleted. It may be intentionally restricted from new manual journals.
 - Assuming the ledger page is only for review. In the current product it is also the manual journal-entry posting page.
 
-## Related Articles
+## Related
 
+- [When to use journal entries vs source forms](./when-to-use-journal-entries-vs-source-forms.md)
+- [Common accountant corrections](./common-accountant-corrections.md)
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)
-- [Understand ledger import and export behavior](./understand-ledger-import-and-export-behavior.md)
+- [Prepare and review ledger imports and exports](./understand-ledger-import-and-export-behavior.md)
 - [Understand audit-sensitive ledger behavior](./understand-audit-sensitive-ledger-behavior.md)
-
-## Info
-
-- App sections: `ledger`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`

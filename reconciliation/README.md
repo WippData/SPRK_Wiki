@@ -13,9 +13,3 @@ Begin by choosing the specific bank or credit card account you want to reconcile
 - [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md)
 
 For linked journal reversals available from the reconciliation table, see [Edit linked ledger and bank activity](../ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity.md).
-
-## Info
-
-- App sections: `reconcile`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

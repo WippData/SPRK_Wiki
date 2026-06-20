@@ -8,15 +8,29 @@ Build rules that prefill GL account choices for repeated bank transaction patter
 
 ![Rules page showing GL Account filter and GL Account result column](../screenshots/banking-and-cash-management/rules-gl-account-labels-step-03.png)
 
-## Purpose
+## When To Use This
 
-Use this workflow when the same bank or credit card transactions appear repeatedly and you want SPRK to prepare those rows more consistently before you confirm them.
+Use this workflow when the same bank or credit card transactions appear repeatedly and you want SPRK to suggest the right account, vendor, or split before you confirm them.
 
-## Prerequisites
+## Before You Start
 
 - At least one bank or credit card account exists.
 - The destination accounts you want rules to use are available.
 - You know the text pattern or amount pattern that should trigger the rule.
+
+## Good Rule Examples
+
+- A monthly software vendor that always posts to the same expense account.
+- A merchant processor deposit that should post to a specific income or clearing account.
+- A recurring bank fee with consistent description text.
+- A payroll withdrawal that should be split across predictable accounts.
+
+## Risky Rule Examples
+
+- A broad description such as `Amazon`, `Check`, or `Transfer` without more conditions.
+- A rule that applies to all bank accounts when only one account has that pattern.
+- A fixed-dollar split when the transaction amount changes often.
+- A rule that sends unclear deposits directly to income without review.
 
 ## Steps
 
@@ -63,15 +77,15 @@ Use this workflow when the same bank or credit card transactions appear repeated
    - Legacy imported condition fields can still match when their capitalization differs, but new setup should use the visible current labels, including `GL Account`.
 14. Edit, disable, or delete rules as your transaction patterns change.
 
-## Expected Result
+## What Happens Next
 
-The rule is saved and becomes available when SPRK evaluates pending bank transactions. Current general ledger impact as of 2026-05-23:
+The rule is saved and becomes available when SPRK evaluates pending bank transactions.
 
 - Creating, editing, reordering, importing, disabling, or deleting rules does not post to the general ledger.
 - Rules can prefill GL account/category choices or split instructions for pending bank transactions.
 - A general ledger entry is created only later, when the bank transaction itself is confirmed from the Banking workflow.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Assuming rule creation or rule import confirms existing pending transactions automatically.
 - Leaving overlapping rules in the wrong order and then getting the wrong suggestion first.
@@ -81,15 +95,11 @@ The rule is saved and becomes available when SPRK evaluates pending bank transac
 - Making the description match too broad and catching unrelated transactions.
 - Uploading a generic rules file without `Conditions` and `Actions` columns.
 - Treating a QuickBooks rules export as a generic CSV. Save the export as `.xlsx` when you want SPRK to read it as a QuickBooks rules export.
+- Letting rule suggestions replace accountant review. Confirming the bank transaction is still the posting step.
 
-## Related Articles
+## Related
 
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Review and classify bank transactions](./review-and-classify-bank-transactions.md)
 - [Import bank transactions](./import-bank-transactions.md)
-
-## Info
-
-- App sections: `banking`, `rules`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`
+- [Month-end review checklist](../checklists-and-period-end-work/month-end-review-checklist.md)

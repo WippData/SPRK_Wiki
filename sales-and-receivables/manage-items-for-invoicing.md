@@ -4,11 +4,11 @@ Define reusable products and services so invoice lines can be built faster and w
 
 ![Items list showing Item Number / SKU column and search label](../screenshots/sales-and-receivables/items-item-number-sku-step-01.png)
 
-## Purpose
+## When To Use This
 
 Use this workflow when you want invoice lines to reuse prepared item records instead of retyping descriptions, prices, and sales defaults each time.
 
-## Prerequisites
+## Before You Start
 
 - You can open the `Items` page.
 - You know whether the record should be set up as a service, product, or other item type.
@@ -39,11 +39,11 @@ Use this workflow when you want invoice lines to reuse prepared item records ins
 9. Use the saved item later from invoice line selectors so invoice entry stays more consistent.
 10. Use Grid Edit when repeated item cleanup will be faster than opening each record individually, then review the changed-cell count before selecting `Apply Changes`.
 
-## Expected Result
+## What Happens Next
 
 The item becomes available for invoice entry, and future invoice lines can reuse its saved description, pricing, unit-of-measure, and account defaults.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Skipping item setup and retyping invoice lines manually even when the same products or services repeat.
 - Leaving descriptions too vague, which makes invoices and reporting harder to read later.
@@ -51,16 +51,10 @@ The item becomes available for invoice entry, and future invoice lines can reuse
 - Importing item records without checking that account mappings resolved the way you expected.
 - Assuming item setup alone controls the full receivables posting flow. Review the invoice workflow and GL guidance for downstream behavior.
 
-## Related Articles
+## Related
 
 - [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
 - [Manage customers](./manage-customers.md)
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
 - [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)
-
-## Info
-
-- App sections: `items`
-- Last validated: 2026-06-05
-- Screenshot status: `captured`

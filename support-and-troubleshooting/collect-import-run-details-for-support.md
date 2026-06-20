@@ -4,7 +4,7 @@
 
 Gather the visible import context support needs after a failed, partial, duplicate, or confusing import.
 
-## Purpose
+## When To Use This
 
 Use this workflow when an import preview, confirmation, or post-import review does not match what you expected.
 
@@ -25,30 +25,24 @@ Use this workflow when an import preview, confirmation, or post-import review do
 8. Open `Support` and download the `Support Activity Log`.
 9. Include the company, page, file type, visible error text, preview details, confirmation status, and support log when contacting support.
 
-## Expected Result
+## What Happens Next
 
-Support receives enough context to distinguish preview-only issues from posted or partially reviewed results. Current general ledger impact as of 2026-06-17:
+Support receives enough context to distinguish preview-only issues from posted or partially reviewed results.
 
 - Collecting details and downloading logs does not post accounting activity.
 - Import preview diagnostics are not ledger postings by themselves.
 - Confirmed imports can affect the ledger depending on the workflow, so be explicit about whether you confirmed.
 
-## Common Mistakes
+## If Something Looks Wrong
 
 - Reporting only that "the import failed" without the page, file type, or visible message.
 - Retrying the same file multiple times before capturing duplicate warnings.
-- Describing hidden backend fields that are not visible to the user.
+- Describing hidden technical fields that are not visible in SPRK.
 - Assuming invoice, bill, bank, journal, and company imports all have identical rollback behavior.
 
-## Related Articles
+## Related
 
 - [Collect the right details before contacting support](./collect-the-right-details-before-contacting-support.md)
 - [Understand import and migration boundaries](../company-setup-and-migration/understand-import-and-migration-boundaries.md)
 - [Import bank transactions](../banking-and-cash-management/import-bank-transactions.md)
-- [Understand ledger import and export behavior](../ledger-and-chart-of-accounts/understand-ledger-import-and-export-behavior.md)
-
-## Info
-
-- App sections: `support`, `banking`, `ledger`, `companies`
-- Last validated: 2026-06-17
-- Screenshot status: `captured`
+- [Prepare and review ledger imports and exports](../ledger-and-chart-of-accounts/understand-ledger-import-and-export-behavior.md)
