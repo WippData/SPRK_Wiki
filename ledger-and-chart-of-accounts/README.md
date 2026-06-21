@@ -8,6 +8,7 @@ Organize your account list, decide when to use journal entries, make accountant 
 
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)
 - [Record journal entries](./record-journal-entries.md)
+- [Set up and use dimensions or classes](../company-administration/set-up-and-use-dimensions-or-classes.md)
 - [When to use journal entries vs source forms](./when-to-use-journal-entries-vs-source-forms.md)
 - [Common accountant corrections](./common-accountant-corrections.md)
 - [Edit linked ledger and bank activity](./edit-linked-ledger-and-bank-activity.md)

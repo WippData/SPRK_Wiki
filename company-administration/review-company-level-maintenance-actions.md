@@ -48,5 +48,6 @@ You can maintain company settings and lifecycle state without guessing which act
 ## Related
 
 - [Use the Companies tab](./use-the-companies-tab.md)
+- [Set up and use dimensions or classes](./set-up-and-use-dimensions-or-classes.md)
 - [Understand the chart of accounts structure](../ledger-and-chart-of-accounts/understand-the-chart-of-accounts-structure.md)
 - [Understand audit-sensitive ledger behavior](../ledger-and-chart-of-accounts/understand-audit-sensitive-ledger-behavior.md)
