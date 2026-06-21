@@ -41,7 +41,7 @@ Use a source workflow instead when the activity belongs to a customer invoice, c
    - When enabled, SPRK creates linked confirmed bank-register rows for eligible bank, cash, or credit-card lines instead of waiting for a separate bank import or manual bank entry.
 6. Add each journal line with the correct account and amount.
    - If an expected account is missing from the picker, confirm whether the company has configured it as a `Control accounts` value that should be posted through invoices, bills, banking, or another source workflow.
-7. If your company uses dimensions or classes, complete those fields on the related lines.
+7. If your company uses dimensions or classes, use `Set dimensions` on the related lines and choose the correct value for each enabled dimension.
 8. Confirm the entry is balanced before saving:
    - every line must use either debit or credit, not both
    - totals must match before the save action is allowed
@@ -68,12 +68,14 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - Assuming auto-reversal is part of the edit flow for existing entries. In the current live flow it appears when creating a new manual journal entry.
 - Assuming every manual journal creates bank-register activity. Register rows are opt-in and only mirror eligible bank, cash, or credit-card lines.
 - Assuming a control account is missing because it was deleted. It may be intentionally restricted from new manual journals.
+- Assuming class fields appear automatically for every company. Set them up first from company `Dimensions`.
 - Assuming the ledger page is only for review. In the current product it is also the manual journal-entry posting page.
 
 ## Related
 
 - [When to use journal entries vs source forms](./when-to-use-journal-entries-vs-source-forms.md)
 - [Common accountant corrections](./common-accountant-corrections.md)
+- [Set up and use dimensions or classes](../company-administration/set-up-and-use-dimensions-or-classes.md)
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)
 - [Prepare and review ledger imports and exports](./understand-ledger-import-and-export-behavior.md)
 - [Understand audit-sensitive ledger behavior](./understand-audit-sensitive-ledger-behavior.md)
