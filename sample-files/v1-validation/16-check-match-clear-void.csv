@@ -1,0 +1,4 @@
+Check Number,Date,Payee,Bank Account,Expense Account,Amount,Bank Import Description,Expected Action,Expected Evidence
+9001,2026-06-20,Harbor Office Supply,Operating Checking,Office Supplies,148.25,SPRK V1 Check 9001 Harbor Office Supply,Match check,Pending bank row links to existing check
+9002,2026-06-21,Northwind Utilities,Operating Checking,Utilities,212.40,SPRK V1 Check 9002 Northwind Utilities,Clear check,Check can be marked cleared through banking or reconciliation path
+9003,2026-06-22,V1 New Vendor Materials,Operating Checking,Materials,137.44,SPRK V1 Check 9003 Materials,Void check,Void preserves correction history instead of deleting posted activity

@@ -12,7 +12,7 @@ Use this workflow when you need to record a manual accountant adjustment directl
 
 - An active company is selected.
 - The accounts you need already exist in `Chart of Accounts`.
-- The accounts are available for manual journal entry. Company-level `Control accounts` can remove source-workflow accounts from new manual journal choices.
+- The accounts are available for manual journal entry. Company-level `Control accounts` and account-level `Control account` flags can remove source-workflow accounts from new manual journal choices, and `Nonposting account` summary accounts are not meant for direct posting.
 - You know the posting date, memo, and debit and credit lines you want to record.
 
 ## Common Accountant Scenarios
@@ -40,7 +40,7 @@ Use a source workflow instead when the activity belongs to a customer invoice, c
    - The option is off by default.
    - When enabled, SPRK creates linked confirmed bank-register rows for eligible bank, cash, or credit-card lines instead of waiting for a separate bank import or manual bank entry.
 6. Add each journal line with the correct account and amount.
-   - If an expected account is missing from the picker, confirm whether the company has configured it as a `Control accounts` value that should be posted through invoices, bills, banking, or another source workflow.
+   - If an expected account is missing from the picker, confirm whether it is a nonposting summary account, an account-level `Control account`, or a company-level `Control accounts` value that should be posted through invoices, bills, banking, or another source workflow.
 7. If your company uses dimensions or classes, use `Set dimensions` on the related lines and choose the correct value for each enabled dimension.
 8. Confirm the entry is balanced before saving:
    - every line must use either debit or credit, not both
@@ -59,6 +59,7 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - When `Create reversing entry` is enabled on a new manual journal, SPRK schedules a linked offsetting journal entry instead of deleting or overwriting the original posting.
 - SPRK blocks unbalanced entries from being saved.
 - SPRK can block new or changed manual journal lines that use configured control accounts. Existing lines that already use a control account can remain as-is during edit review, but users should not newly assign that account from the manual journal drawer once the setting is active.
+- Nonposting accounts are parent or summary accounts. They may remain visible in `Chart of Accounts`, but they are not the right target for manual journal posting.
 - If the entry is off by a very small rounding amount within the current tolerance, SPRK can auto-adjust one line and note that adjustment in the memo before saving.
 
 ## If Something Looks Wrong
@@ -67,9 +68,22 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - Entering both debit and credit on the same line.
 - Assuming auto-reversal is part of the edit flow for existing entries. In the current live flow it appears when creating a new manual journal entry.
 - Assuming every manual journal creates bank-register activity. Register rows are opt-in and only mirror eligible bank, cash, or credit-card lines.
-- Assuming a control account is missing because it was deleted. It may be intentionally restricted from new manual journals.
+- Assuming a missing account was deleted. It may be nonposting, inactive, or intentionally restricted from new manual journals as a control account.
 - Assuming class fields appear automatically for every company. Set them up first from company `Dimensions`.
 - Assuming the ledger page is only for review. In the current product it is also the manual journal-entry posting page.
+
+## Business Scenario: Journal Entry Import
+
+Use this scenario to train staff on importing balanced journal entries and confirming that imported entries appear in the ledger before relying on them for close work.
+
+- Sample file: [17-journal-entry-import.csv](../sample-files/v1-validation/17-journal-entry-import.csv)
+- Evidence:
+
+![Journal import preview showing four parsed rows, zero failures, and balanced debits and credits](../screenshots/v1-validation/journal-import-preview-success-v0.3.57.png)
+
+![Journal Entries grid filtered to imported V1 journal entries after commit](../screenshots/v1-validation/journal-import-committed-rows-v0.3.57.png)
+
+Validation note: the journal entry import walkthrough passed in SPRK v0.3.57. The preview parsed 4 rows with 0 failures, balanced $407.00 debit and credit totals, and the committed rows appeared in the Journal Entries grid for `V1-JE-7001` and `V1-JE-7002`.
 
 ## Related
 

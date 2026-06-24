@@ -31,11 +31,14 @@ Use this workflow when you want to move from a report summary card, subtotal, to
 7. Open a journal preview from a drilldown row when you need to inspect the full entry.
    - Some report-launched journal previews expose `Edit` when the journal edit policy allows it.
    - Other previews remain view-only because of posting-window policy or other audit restrictions.
-8. Use the drilldown filters if you need to narrow the supporting rows further:
+8. If the supporting detail opens in the shared register modal, use `Export` or `Print` when you need the exact filtered register rows outside SPRK.
+   - Export and print use the current modal rows and visible columns.
+   - `Print` opens a print-friendly table; use the system print dialog if you want a PDF.
+9. Use the drilldown filters if you need to narrow the supporting rows further:
    - Text filter for entry number, memo, description, or account.
    - Minimum and maximum amount filters.
    - Date modes `On`, `Before`, `After`, or `Between`.
-9. Close the drilldown window when you are done and return to the report.
+10. Close the drilldown window when you are done and return to the report.
 
 ## What Happens Next
 
@@ -44,6 +47,7 @@ SPRK opens a supporting-entry view for the selected account or account group and
 - Drilldown does not create a correcting entry or edit an existing one.
 - Drilldown only exposes journal entries that are already posted in the ledger for that company and date context.
 - Report drilldown can open an edit path only when normal journal edit policy allows it; it does not bypass posting-window or audit controls.
+- Register-level `Export` and `Print` are output actions for the open detail view only.
 - Closing the drilldown window leaves the underlying report and ledger unchanged.
 
 ## If Something Looks Wrong
@@ -51,6 +55,19 @@ SPRK opens a supporting-entry view for the selected account or account group and
 - Expecting every report card, total, subtotal, or row to be clickable. Drilldown only applies where SPRK exposes a supported non-zero target.
 - Assuming drilldown always edits the transaction you are viewing. It is primarily a review path, and editing remains conditional.
 - Forgetting that an as-of report uses detail up to the selected date, not only activity on that one date.
+
+## Business Scenario: Report Drilldown To Journal Detail
+
+Use this scenario to train reviewers to move from a report row into supporting journal entries without changing the original posting.
+
+- Sample file: [20-report-drilldown-transaction-export.csv](../sample-files/v1-validation/20-report-drilldown-transaction-export.csv)
+- Evidence:
+
+![General Ledger report rows available for detail review](../screenshots/v1-validation/reports-general-ledger-drilldown-rows.png)
+
+![Journal-entry drilldown modal opened from a report row](../screenshots/v1-validation/reports-journal-entry-drilldown-modal.png)
+
+The walkthrough confirmed that report drilldown is a review path and that the journal preview keeps the underlying entry separate from the report itself.
 
 ## Related
 

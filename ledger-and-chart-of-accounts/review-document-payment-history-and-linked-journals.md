@@ -37,6 +37,23 @@ You can explain why a receivable or payable balance changed and where to inspect
 - Deleting a document or journal entry when the correct workflow is payment reversal, voiding, or posted-document correction.
 - Assuming every linked journal is editable or reversible from every entry point.
 
+## Business Scenario: Source Document Audit Trail
+
+Use this scenario to train reviewers to move from a source document to payment history and linked journals without changing the document.
+
+- Sample file: [11-document-payment-history-linked-journals.csv](../sample-files/v1-validation/11-document-payment-history-linked-journals.csv)
+- Evidence:
+
+![Invoice payment history showing payment application details](../screenshots/v1-validation/invoice-payment-history.png)
+
+![Invoice linked journal entries showing the posting trail](../screenshots/v1-validation/invoice-linked-journal-entries.png)
+
+![Bill payment history showing payable payment activity](../screenshots/v1-validation/bill-payment-history.png)
+
+![Bill linked journal entries showing the payable posting trail](../screenshots/v1-validation/bill-linked-journal-entries.png)
+
+The walkthrough confirmed that both invoice and bill source documents expose payment history and linked journal review directly from their action menus.
+
 ## Related
 
 - [Create and open invoices](../sales-and-receivables/create-and-open-invoices.md)

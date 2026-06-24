@@ -21,7 +21,8 @@ Use this workflow when you need a central place to review companies and reach th
 4. Select `Refresh` if you need to reload the list.
 5. Use `New Company` for a blank company, or open the menu next to it for import and demo options.
    - The new-company drawer includes `Required account fields` and `Accounting edit permissions` so admins can review account-code presentation and edit-policy defaults before creating the company.
-6. Use the row actions to select the active company, edit a company, archive or unarchive it, or permanently delete an archived company.
+6. If your workspace uses tenant-level defaults, open `Settings` -> `Defaults` before creating a batch of companies so new company setup starts from the intended `Required account fields`, `Journal entries`, and `Reconciliation dates` policies.
+7. Use the row actions to select the active company, edit a company, archive or unarchive it, or permanently delete an archived company.
 
 ## What Happens Next
 
@@ -41,4 +42,5 @@ You can see the publicly supported company management actions in one place, incl
 
 - [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
 - [Create your first company](../company-setup-and-migration/create-your-first-company.md)
+- [Manage default company settings](./manage-default-company-settings.md)
 - [Review company-level maintenance actions](./review-company-level-maintenance-actions.md)

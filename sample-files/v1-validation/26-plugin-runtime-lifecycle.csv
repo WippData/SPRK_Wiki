@@ -1,0 +1,5 @@
+Trainer Step,Plugin,Company Scope,Expected Evidence,Boundary Note
+Install plugin,V1 Proof Plugin,All companies or selected company,Install preview and installed state are visible,Use controlled proof plugin only
+Enable plugin,V1 Proof Plugin,V1 Training Company,Plugin page appears in navigation or runtime list,Enablement is company scoped when available
+Open runtime page,V1 Proof Plugin,V1 Training Company,Runtime list or transaction page opens,Does not imply plugins can extend every surface
+Disable plugin,V1 Proof Plugin,V1 Training Company,Navigation recovers and runtime page is unavailable,Accounting schedules remain pilot or backend unless surfaced

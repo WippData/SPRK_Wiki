@@ -2,7 +2,7 @@
 
 Learn how the Banking page is organized so you can choose the right bank or credit card account, import activity into that account, review pending transactions, and confirm what should post to the general ledger.
 
-![Banking page showing the All, Expenses, and Deposits transaction-type filters](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
+![Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
 
 ![New bank transaction drawer showing the GL Account helper for add-only versus confirm](../screenshots/banking-and-cash-management/banking-gl-account-drawer-step-02.png)
 
@@ -39,7 +39,8 @@ Use this article when you want a high-level map of the Banking page before impor
    - The import starter modal shows accepted formats, starter-template download, required columns, and recommended columns before you select a spreadsheet file.
    - You can also click the uploader or drag a file onto it when the selected account is already active.
    - Import preview review happens before rows are created in `Pending`.
-   - When the build exposes vendor-aware import review, spreadsheet imports can carry vendor details. Exact active vendor IDs and uniquely matched active vendor names can resolve during preview, unresolved imported names can stay visible for review, and `Add unknown vendors (n)` creates one vendor record for each unique unresolved name in the current batch.
+   - Spreadsheet imports can use signed amounts, separate `Debit` and `Credit` columns, or a positive `Amount` plus direction columns such as `Credit or Debit`, `Debit/Credit`, `Dr/Cr`, or `Type`.
+   - When the build exposes party-aware import review, spreadsheet imports can carry vendor or customer details. Exact active IDs and uniquely matched active names can resolve during preview, unresolved imported names can stay visible for review, and `Add unknown vendors (n)` or `Add unknown customers (n)` creates one setup record for each unique unresolved name in the current batch.
    - Importing only adds or updates selected, non-skipped pending transactions for the selected account.
 6. Review the `Transactions` area:
    - The transaction-type toggle supports `All`, `Expenses`, and `Deposits`.
@@ -47,7 +48,7 @@ Use this article when you want a high-level map of the Banking page before impor
    - `Pending` shows transactions that still need review before posting.
    - `Categorized` shows transactions that were already confirmed.
 7. In the `Pending` tab, use the row-level fields and actions:
-   - `Vendor` is optional.
+   - The party field is optional and can group choices under `Vendors` and `Customers` where the current UI exposes both.
    - `GL Account` selects the account for the other side of the journal entry. Some grid views still label this column `Category`; use it as the offset GL account.
    - `Split` lets you allocate one transaction across multiple accounts.
    - `Find Check` appears when check matching is supported for the selected account.
@@ -57,9 +58,11 @@ Use this article when you want a high-level map of the Banking page before impor
 8. If you use `New` to enter a bank transaction manually:
    - `GL Account` is required before `Submit & Confirm` can post the transaction.
    - You can leave `GL Account` blank only when you are adding the row for later review instead of confirming it immediately.
-9. Use the bulk controls above the table when you want to apply one account, apply one vendor, confirm several transactions, or delete several transactions at once:
+9. Use the bulk controls above the table when you want to apply one account, apply one vendor or customer, confirm several transactions, or delete several transactions at once:
    - In the standard table, select rows with the checkbox column.
    - In Banking Grid Edit, selection may appear through the row-number column when that mode supports selected-row actions.
+   - Current party bulk controls can read `Apply vendor or customer` and `Apply party`.
+   - Banking Grid Edit can show `Confirm Selected` when the grid is clean or `Confirm & Apply Selected` when selected rows still have draft edits to apply.
    - Bulk posting and cleanup actions should run only after any draft Grid Edit changes have been applied.
 
 ## What Happens Next
@@ -69,7 +72,7 @@ You understand where to select the account, where imported files enter the workf
 - Viewing the Banking page does not post anything to the general ledger.
 - Selecting an account or saving a default account does not post anything to the general ledger.
 - Selecting accounts, filtering, importing files, editing GL account/category choices, assigning vendors, creating splits, and matching checks on the page are preparation steps only.
-- Creating vendors from an import preview, when available, updates vendor setup and preview resolution only; rows still must be confirmed from the preview before they reach `Pending`.
+- Creating vendors or customers from an import preview, when available, updates setup records and preview resolution only; rows still must be confirmed from the preview before they reach `Pending`.
 - Draft Grid Edit cleanup remains a preparation step until the changes are applied, and applying Grid Edit changes still does not confirm the bank transaction by itself.
 - Reviewing a bank-import preview, skipping likely duplicate rows, and restoring rows before import are preparation steps only.
 - General ledger posting happens when a pending transaction is confirmed.

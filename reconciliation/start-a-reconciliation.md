@@ -51,6 +51,19 @@ The reconciliation workflow is initialized with statement dates and balances for
 - Expecting SPRK to let you edit the opening balance from a prior posted reconciliation.
 - Assuming the statement ending date alone hides every later-dated confirmed row. Account, confirmed status, unreconciled state, and statement judgment still matter.
 
+## Business Scenario: Zero-Difference Monthly Reconciliation
+
+Use this scenario to train a reviewer to clear statement transactions, reach a zero difference, and post the reconciliation.
+
+- Sample file: [06-reconciliation-statement-items.csv](../sample-files/v1-validation/06-reconciliation-statement-items.csv)
+- Evidence:
+
+![Reconciliation selected rows with a zero difference before posting](../screenshots/v1-validation/reconciliation-zero-difference-selected-rows.png)
+
+![Reconciliation completion confirmation after posting](../screenshots/v1-validation/reconciliation-complete-toast.png)
+
+The walkthrough confirmed that selected statement rows can tie to the entered ending balance and that posting the reconciliation creates history for later report review.
+
 ## Related
 
 - [Choose bank and credit card accounts](../banking-and-cash-management/choose-bank-and-credit-card-accounts.md)

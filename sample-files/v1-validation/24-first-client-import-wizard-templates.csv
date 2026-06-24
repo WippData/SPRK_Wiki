@@ -1,0 +1,5 @@
+Wizard Step,Template Or File,Example Data,Expected Evidence,Trainer Note
+Create client,V1 first client setup,Bluebird Design Books,Company setup starts from blank or import path,Use for firm onboarding
+Download template,Chart of Accounts template,Standard service business accounts,Template is available before upload,Shows guided setup
+Import setup file,Customer or vendor template,Green Client Co and Harbor Office Supply,Preview or result is visible,Use small data set for training
+Finish first week path,Bank import and reports,Use banking fixture 01 and core reports,First client workflow reaches reports,Connects setup to monthly work

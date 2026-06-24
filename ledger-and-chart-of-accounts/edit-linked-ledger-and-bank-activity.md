@@ -42,11 +42,15 @@ Use this workflow when a confirmed bank or credit card transaction has a linked 
 
 ![Reverse journal date choices](../screenshots/reconciliation/reverse-linked-journal-step-03-reverse-date-choice.png)
 
-11. Review `Reconcile`, `Banking`, or `Ledger` to confirm the correction appears in the expected period.
+11. If SPRK shows a source-document confirmation for an invoice or bill posting, read the document impact before confirming:
+   - Invoice or bill recognition journals can require voiding the source document and reversing the posting together.
+   - Invoice-payment or bill-payment journals can require reversing the payment application and the journal together so the source document balance reopens correctly.
+   - Some linked journals are intentionally not reversible from the ledger and must be corrected from the invoice or bill workflow.
+12. Review `Reconcile`, `Banking`, or `Ledger` to confirm the correction appears in the expected period.
 
 ## What Happens Next
 
-SPRK preserves the original audit trail and creates a separate reversing entry. Current linked bank and ledger behavior as of 2026-05-29:
+SPRK preserves the original audit trail and creates a separate reversing entry.
 
 - The original journal entry remains in place.
 - Linked bank-register rows created from a manual journal preserve that journal as the posting source. They are not the same workflow as confirming a pending imported bank transaction.
@@ -57,6 +61,7 @@ SPRK preserves the original audit trail and creates a separate reversing entry. 
 - If the linked bank transaction has not been reconciled, SPRK excludes the original bank row and marks it as excluded because of the journal reversal.
 - If the linked bank transaction has already been reconciled, SPRK leaves the reconciled row in place and creates a confirmed correction bank transaction linked to the reversal journal entry.
 - After a successful reversal from `Reconcile`, the reconciliation table reloads and SPRK shows `Journal entry reversed`.
+- When a source-document confirmation is involved, SPRK also updates the linked invoice, bill, or payment application according to the confirmation.
 
 ## If Something Looks Wrong
 
@@ -64,6 +69,7 @@ SPRK preserves the original audit trail and creates a separate reversing entry. 
 - Editing linked bank-register accounting directly from the modal. Accounting details still change through the journal entry.
 - Reversing before confirming whether the transaction has already been reconciled.
 - Choosing a custom reversal date that belongs in the wrong statement period.
+- Confirming a source-document reversal before checking whether it will void a bill or invoice, reverse a payment application, or reopen a source-document balance.
 - Expecting every historical row to show `Journal`. Rows without a persisted journal link do not have the linked journal action.
 
 ## Related

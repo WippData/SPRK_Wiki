@@ -1,0 +1,4 @@
+Date,Description,Amount,Credit or Debit,Customer/Vendor,Memo
+2026-06-09,SPRK V1 Transfer To Savings,350.00,Debit,,Transfer money out from Operating Checking
+2026-06-10,SPRK V1 Transfer From Operating,350.00,Credit,,Imported counterpart for Savings Account adoption
+2026-06-11,SPRK V1 Ambiguous Transfer Similar Amount,350.00,Credit,,Use to demonstrate review when a counterpart could already exist

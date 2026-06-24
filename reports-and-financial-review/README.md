@@ -2,7 +2,7 @@
 
 ![Reports page showing report tabs, summary cards, and output controls](../screenshots/reports-and-financial-review/reports-overview-step-01.png)
 
-Open the Reports area, run the report you need, set date controls, review supporting detail from rows or supported totals, and use reports as part of month-end review inside SPRK.
+Open the Reports area, run the report you need, set searchable filters and date controls, review supporting detail from rows or supported totals, and use reports as part of month-end review inside SPRK.
 
 ## In This Section
 

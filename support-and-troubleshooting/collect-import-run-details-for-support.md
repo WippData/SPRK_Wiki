@@ -40,6 +40,17 @@ Support receives enough context to distinguish preview-only issues from posted o
 - Describing hidden technical fields that are not visible in SPRK.
 - Assuming invoice, bill, bank, journal, and company imports all have identical rollback behavior.
 
+## Business Scenario: Support Log And Guide Context
+
+Use this scenario to train staff to capture visible import context, download the support activity log, and reference the synced guide set when an import behaves unexpectedly.
+
+- Sample file: [25-import-run-details-support.csv](../sample-files/v1-validation/25-import-run-details-support.csv)
+- Evidence:
+
+![Support tab showing support activity log, contact information, release controls, and guide sync context](../screenshots/v1-validation/support-log-guides-sync.png)
+
+The walkthrough confirmed the Support tab exposes a downloadable activity log and synced how-to guide sections that can accompany import screenshots and fixture files in a support handoff.
+
 ## Related
 
 - [Collect the right details before contacting support](./collect-the-right-details-before-contacting-support.md)

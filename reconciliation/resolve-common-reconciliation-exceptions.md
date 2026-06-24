@@ -32,6 +32,9 @@ Use this article when reconciliation stops with a validation error, an unexpecte
 4. If a match is wrong, use `Unmatch` before finishing the reconciliation and choose the correct check again if needed.
 5. If SPRK reports that a transaction is already reconciled, remove it from your current plan and confirm whether it was cleared in an earlier statement period.
 6. If the transaction coding is wrong and the row has an enabled `Journal` action, open the linked journal entry and reverse it before adding the corrected activity.
+   - If the journal is tied to an invoice or bill, SPRK may ask for source-document confirmation before reversing.
+   - Recognition postings can require voiding the invoice or bill with the reversal.
+   - Payment postings can require reversing the payment application so the invoice or bill balance reopens correctly.
 7. If the opening balance looks unexpected, confirm whether SPRK is carrying forward the ending balance from the last posted reconciliation before the current statement ending date.
 8. If a reconciliation report appears blank, confirm that the selected account has a posted reconciliation period. The Reports `Reconciliation` tab shows a no-posted-reconciliations message when there is no posted history for the account.
 
@@ -50,6 +53,7 @@ You can identify whether the issue is caused by account selection, transaction s
 - Forgetting that already reconciled transactions cannot be reused in a later statement period.
 - Assuming every selectable row must be dated on or before the statement ending date. Confirmed unreconciled later-dated rows can appear when they may belong to the statement clearing period.
 - Reversing a linked journal without checking whether the correction date belongs in the current statement period.
+- Reversing an invoice-linked or bill-linked journal without reading the source-document impact confirmation.
 
 ## Related
 

@@ -1,0 +1,4 @@
+Customer Name,Customer Email,Item Number,Item Name,Invoice Number,Invoice Date,Payment Terms,Quantity,Unit Price,Payment Amount,Expected Evidence
+Green Client Co,ap@greenclient.example,V1-SVC-TRAIN,Training Services,V1-INV-1001,2026-06-12,Net 15,3,200.00,600.00,Invoice can be created and paid
+Bluebird Design,billing@bluebird.example,V1-SVC-CONSULT,Consulting Services,V1-INV-1002,2026-06-13,Due on receipt,2,450.00,900.00,Customer and item details flow into invoice lines
+V1 New Customer Training,owner@example.invalid,V1-SVC-TRAIN,Training Services,V1-INV-1003,2026-06-14,Net 30,1,900.00,900.00,Customer from bank import can be used in invoice workflow

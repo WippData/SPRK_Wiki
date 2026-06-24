@@ -61,6 +61,19 @@ Customer payment terms and credit settings can help you review receivables befor
 - Recording a payment manually and then matching the same bank transaction as another payment.
 - Treating payment history as an edit screen.
 
+## Business Scenario: Customer Payment Review
+
+Use this scenario to train staff on the difference between recording a payment, matching a bank deposit, and reviewing payment history after the invoice balance changes.
+
+- Sample file: [10-bank-deposit-invoice-match.csv](../sample-files/v1-validation/10-bank-deposit-invoice-match.csv)
+- Evidence:
+
+![Invoice payment history showing recorded payment details](../screenshots/v1-validation/invoice-payment-history.png)
+
+![Invoice linked journal entries showing the accounting trail](../screenshots/v1-validation/invoice-linked-journal-entries.png)
+
+The walkthrough confirmed that payment history and linked journals are review surfaces, not edit screens, and that the invoice action menu keeps payment review close to the source document.
+
 ## Related
 
 - [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)

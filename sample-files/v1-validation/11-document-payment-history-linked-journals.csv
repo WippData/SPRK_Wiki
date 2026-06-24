@@ -1,0 +1,5 @@
+Document Type,Document Number,Party,Action To Open,Expected Evidence,Trainer Note
+Invoice,V1-INV-1001,Green Client Co,View payment history,Payment application appears with date and amount,Viewing history does not post anything
+Invoice,V1-INV-1001,Green Client Co,View linked journal entries,Recognition and payment journals are visible,Linked journal review explains accounting impact
+Bill,V1-BILL-3001,Harbor Office Supply,View payment history,Payment application appears with date and amount,Use the same pattern for AP review
+Bill,V1-BILL-3001,Harbor Office Supply,View linked journal entries,Bill and payment journals are visible,Linked journal review supports correction training

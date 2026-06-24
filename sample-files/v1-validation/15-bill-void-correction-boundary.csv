@@ -1,0 +1,4 @@
+Bill Number,Vendor,Status,Balance,Action,Expected Result,Boundary Note
+V1-BILL-VOID-5001,Harbor Office Supply,Open,185.00,Void bill,Bill becomes Void and reversal history is preserved,Only unpaid eligible bills should be voided
+V1-BILL-CORR-5002,Northwind Utilities,Open,212.40,Save Posted Bill,SPRK prompts for correction strategy,Treat posted-bill edits as audit-sensitive
+V1-BILL-PAID-5003,V1 New Vendor Materials,Paid,0.00,Attempt void,Bill should not be treated as an eligible unpaid void,Reverse or unapply payments first where supported

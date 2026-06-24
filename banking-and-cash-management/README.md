@@ -1,8 +1,8 @@
 # Banking and Cash Management
 
-Import bank activity, review likely duplicates before rows enter pending review, assign GL account/category choices, confirm transactions when they are ready, and create or import rules for repeated patterns. Banking also supports bulk review paths, including selected-row actions and Grid Edit cleanup for pending transactions.
+Import bank activity, review likely duplicates before rows enter pending review, assign vendor or customer context, assign GL account/category choices, confirm transactions when they are ready, and create or import rules for repeated patterns. Banking also supports bulk review paths, including selected-row actions and Grid Edit cleanup for pending transactions.
 
-![Banking page showing transaction-type filters and the review grid](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
+![Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
 
 ## In This Section
 

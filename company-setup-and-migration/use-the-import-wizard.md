@@ -48,6 +48,19 @@ SPRK creates a new company using the combination of files, copied data, and sett
 - Assuming the wizard’s auto-assignment is final. Review each data type before creating the company.
 - Forgetting that settings can be entered manually if no source file exists for them.
 
+## Business Scenario: First Client Import Wizard Setup
+
+Use this scenario to train staff on starting a new client company from the Companies page, downloading starter templates, and assigning uploaded files to the right data types before creating the company.
+
+- Sample file: [24-first-client-import-wizard-templates.csv](../sample-files/v1-validation/24-first-client-import-wizard-templates.csv)
+- Evidence:
+
+![Companies page new-company drawer showing required setup fields](../screenshots/v1-validation/companies-new-company-required-fields.png)
+
+![Import Wizard showing starter templates, accepted formats, upload target, and data-type source slots](../screenshots/v1-validation/companies-import-wizard-templates-upload-slots.png)
+
+The walkthrough opened the wizard from `Settings` -> `Companies` and stopped before creating a new company.
+
 ## Related
 
 - [Create your first company](./create-your-first-company.md)

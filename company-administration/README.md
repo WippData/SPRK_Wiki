@@ -7,6 +7,7 @@ Review the company list, confirm which company is active, create companies, and 
 ## In This Section
 
 - [Use the Companies tab](./use-the-companies-tab.md)
+- [Manage default company settings](./manage-default-company-settings.md)
 - [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
 - [Create your first company](../company-setup-and-migration/create-your-first-company.md)
 - [Review company-level maintenance actions](./review-company-level-maintenance-actions.md)

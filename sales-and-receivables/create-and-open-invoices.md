@@ -88,6 +88,23 @@ The invoice appears in the invoice list with the expected number, customer, tota
 - Trying to void an invoice that already has active payments. Reverse or unapply active payments first where the product supports that correction.
 - Treating `Void invoice` as delete. It preserves the invoice and creates reversal history.
 
+## Business Scenario: Open Invoice Review And Grouped Import
+
+Use this scenario to train staff on invoice detail review, row actions, and the grouped-line CSV import claim for service-business invoices.
+
+- Sample files:
+  - [08-ar-customer-item-invoice-payment.csv](../sample-files/v1-validation/08-ar-customer-item-invoice-payment.csv)
+  - [09-invoice-import-grouped-lines.csv](../sample-files/v1-validation/09-invoice-import-grouped-lines.csv)
+- Evidence:
+
+![Open invoice detail showing customer, dates, status, total, and balance](../screenshots/v1-validation/invoice-open-detail.png)
+
+![Invoice actions menu showing payment, linked journal, payment history, and void actions](../screenshots/v1-validation/invoice-actions-menu.png)
+
+![Invoice grid filtered to V1 imported invoices showing grouped-line CSV import results](../screenshots/v1-validation/invoice-import-grouped-lines-success-v0.3.57.png)
+
+Validation note: the grouped invoice import walkthrough passed in SPRK v0.3.57. The screenshot shows the two expected open invoices created from [09-invoice-import-grouped-lines.csv](../sample-files/v1-validation/09-invoice-import-grouped-lines.csv).
+
 ## Related
 
 - [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
