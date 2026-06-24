@@ -1,0 +1,4 @@
+Vendor,Bill #,Date,Due Date,Status,Account,Description,Quantity,Unit Cost,Paid From,Payment Amount,Expected Evidence
+Harbor Office Supply,V1-BILL-3001,2026-06-12,2026-06-27,Open,Office Supplies,V1 printer paper and supplies,1,148.25,Operating Checking,148.25,Bill can be opened and fully paid
+Northwind Utilities,V1-BILL-3002,2026-06-13,2026-06-28,Open,Utilities,V1 monthly utility bill,1,212.40,Operating Checking,100.00,Partial payment leaves remaining balance
+V1 New Vendor Materials,V1-BILL-3003,2026-06-14,2026-06-29,Draft,Materials,V1 field materials,1,137.44,Operating Checking,0.00,Draft bill does not post until opened

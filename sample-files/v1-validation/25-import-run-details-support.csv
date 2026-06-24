@@ -1,0 +1,5 @@
+Import Type,Sample File,Where To Open Details,Expected Details To Collect,Trainer Note
+Bank import,01-bank-import-duplicates-and-parties.csv,Support or import-run details,File name rows parsed and warnings,Use after duplicate preview example
+Rules import,05-banking-rules-import.csv,Support or import-run details,Import type and issues,Shows support-ready context
+Journal import,17-journal-entry-import.csv,Support or import-run details,Validation errors and committed groups,Use to explain recovery after a bad row
+Company File import,Generated Company File,Support or import-run details,Preview and replacement failure details if any,Do not present as audit log export

@@ -18,7 +18,7 @@ Use this page when you want invoice entry to start from cleaner defaults instead
 ## Before You Start
 
 - You can open `Customers`, `Items`, and `Invoices`.
-- Your chart of accounts already includes the income accounts and receivables account you expect to use.
+- Your chart of accounts already includes the income accounts and receivables account you expect to use. Nonposting summary accounts and restricted control accounts may be visible in the chart but unavailable in posting-oriented invoice and default-account selectors.
 - You know whether invoice lines should usually follow customer defaults, item defaults, or a one-off exception for the current job.
 
 ## Setup Workflow
@@ -55,6 +55,7 @@ Invoice entry starts from cleaner defaults, repeated customers and items are eas
 - The invoice still needs a reviewed `AR Account` before it moves to `Open`.
 - Saved item details can reduce manual entry and help keep invoice lines more consistent.
 - Customer and item defaults improve setup quality, but they do not replace final invoice review.
+- Customer default account selectors use eligible posting accounts and readable account labels where those columns are shown. If an active account is missing, check whether it is nonposting or control-restricted before assuming it was deleted.
 - Receivables aging and invoice list review become easier when customer names, due dates, and line details are consistent.
 
 ## If Something Looks Wrong

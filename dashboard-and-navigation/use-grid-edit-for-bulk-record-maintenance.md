@@ -56,7 +56,9 @@ Use this workflow when you want to make the same kind of careful cleanup across 
 Banking uses Grid Edit for transaction-review cleanup, but Banking also has posting-sensitive bulk actions. Treat those actions separately from ordinary changed-cell tracking:
 
 - The standard Banking `Pending` table uses checkboxes to select rows for actions such as applying an account, applying a vendor, confirming selected rows, or deleting selected rows.
-- Banking Grid Edit can expose selected-row actions in the same toolbar, including `Confirm selected`, when row selection is available in that mode.
+- Banking Grid Edit can expose selected-row actions in the same toolbar, including `Confirm Selected`, when row selection is available in that mode.
+- If selected Banking rows still have draft changes, the toolbar can show `Confirm & Apply Selected` so SPRK applies those edits before attempting confirmation.
+- A Banking row can be ready to confirm based on its saved categorization even if a draft category cell is currently blank in Grid Edit. Review the saved row state and changed-cell count before deciding the row is incomplete.
 - Row selection is Banking-specific guidance. Do not assume every Grid Edit table in SPRK supports selected rows or an in-grid confirmation action.
 - If the Banking changed-cell counter is active, apply or discard those Grid Edit changes before running bulk account, vendor, confirm, delete, or select-categorized actions.
 - Applying Grid Edit changes saves the draft cell edits; confirming a bank transaction is still the step that posts or links the ledger result.

@@ -40,6 +40,22 @@ You can distinguish a company-level handoff from device backup settings.
 - Describing Company File as hosted collaboration or multi-user firm administration. It is a local company handoff/import path.
 - Assuming legacy package or restore scripts are public workflows when the visible product directs users to `Company file`.
 
+## Business Scenario: Company File Handoff And Replace Preview
+
+Use this scenario to train firm staff on the company-scoped handoff path: export the active company, import the exported file back into SPRK for preview, and stop before the replace confirmation unless the replacement is intentional.
+
+- Sample files:
+  - [22-backup-company-file-export.csv](../sample-files/v1-validation/22-backup-company-file-export.csv)
+  - [23-company-file-import-preview-replace.csv](../sample-files/v1-validation/23-company-file-import-preview-replace.csv)
+  - [23-company-file-import-preview-replace.sprkcompany.zip](../sample-files/v1-validation/23-company-file-import-preview-replace.sprkcompany.zip)
+- Evidence:
+
+![Backups page showing Company File export and import controls](../screenshots/v1-validation/backups-company-file-and-close-policy.png)
+
+![Company File import preview showing table count, export timestamp, and replace warning](../screenshots/v1-validation/company-file-import-preview-replace-warning.png)
+
+The walkthrough exported the active Demo Company, selected the exported `.sprkcompany.zip` file for import preview, and canceled before `Replace company`.
+
 ## Related
 
 - [Review backup settings visible in the product](./review-backup-settings-visible-in-the-product.md)

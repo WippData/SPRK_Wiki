@@ -1,0 +1,5 @@
+Processed,Description,Amount,Type,Customer/Vendor,Memo
+2026-06-05,SPRK V1 Shared Party Customer Deposit,1200.00,Sale,Green Client Co,Shared party column should resolve as customer on money in
+2026-06-06,SPRK V1 Shared Party Vendor Purchase,215.60,Purchase,Harbor Office Supply,Shared party column should resolve as vendor on money out
+2026-06-07,SPRK V1 Positive Amount Debit Direction,72.10,Debit,Northwind Utilities,Positive amount plus direction should become spent
+2026-06-08,SPRK V1 Positive Amount Credit Direction,425.00,Credit,Bluebird Design,Positive amount plus direction should become received

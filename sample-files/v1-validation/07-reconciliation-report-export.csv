@@ -1,0 +1,5 @@
+Trainer Step,Report,Statement Date,Expected Output,Expected Evidence
+Finish reconciliation,Bank Reconciliation Report,2026-05-31,Completed reconciliation appears in history with posted status and zero difference,Finished reconciliation screen or history row
+Open report,Bank Reconciliation Report,2026-05-31,Report shows beginning balance 25000.00 ending balance 54379.00 cleared deposits 44382.50 cleared payments -15003.50 and zero difference,Report preview screenshot
+Review detail,Bank Reconciliation Report,2026-05-31,Report includes cleared checks/payments and deposits line detail,Report detail screenshot
+Explain boundary,Bank Reconciliation Report,2026-05-31,Report proves reconciliation output not statutory audit certification,Trainer note on page

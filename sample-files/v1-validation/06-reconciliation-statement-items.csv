@@ -1,0 +1,5 @@
+Trainer Step,Bank Account,Statement Date,Statement Ending Balance,Transaction Date,Description,Amount,Expected Evidence
+Start reconciliation,Operating Checking,2026-05-31,54379.00,,,,Statement date and ending balance are entered before clearing rows
+Clear payment,Operating Checking,2026-05-31,54379.00,2026-04-18,Insurance premium,-780.00,Payment rows can be marked cleared
+Clear deposit,Operating Checking,2026-05-31,54379.00,2026-04-24,Customer payment,1785.00,Deposit rows can be marked cleared
+Review variance,Operating Checking,2026-05-31,54379.00,,,,Variance reaches zero when selected rows match the statement

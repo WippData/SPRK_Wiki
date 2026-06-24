@@ -6,7 +6,7 @@ Create and maintain customer records so invoicing, payment follow-up, and custom
 
 ## When To Use This
 
-Use this workflow when you need to add, update, search, import, or review customer records before creating invoices or receiving customer payments.
+Use this workflow when you need to add, update, search, import, or review customer records before creating invoices, receiving customer payments, or assigning customer context to money-in bank activity.
 
 ## Before You Start
 
@@ -41,11 +41,17 @@ Use this workflow when you need to add, update, search, import, or review custom
    - Filter for `Active` or `Inactive` customers when cleaning up the list.
    - Open row actions for an existing customer when you want to create an invoice, create a payment, or jump into that customer's `AR Aging` report.
 9. If the customer will be invoiced often, pair this setup with saved item records and invoice account review before the first live invoice.
-10. Use Grid Edit when post-import cleanup or repeated customer-field updates will be faster than opening one drawer at a time, then review the changed-cell count before selecting `Apply Changes`.
+10. In Banking, customer names can also help money-in review:
+   - Pending bank rows can offer customer choices alongside vendor choices where the current UI exposes grouped parties.
+   - Banking import preview can resolve `Customer`, `Customer ID`, or shared `Customer/Vendor` style columns for inflow or sale rows.
+   - `Add unknown customers (n)` creates setup records from unique unresolved customer names in the current import preview batch when you choose to use it.
+11. Use Grid Edit when post-import cleanup or repeated customer-field updates will be faster than opening one drawer at a time, then review the changed-cell count before selecting `Apply Changes`.
 
 ## What Happens Next
 
-The customer is saved and available for invoice selection, payment workflows, search, import cleanup, and customer-specific receivables follow-up.
+The customer is saved and available for invoice selection, payment workflows, Banking party assignment, search, import cleanup, and customer-specific receivables follow-up.
+
+Assigning a customer to a bank row adds party context. It is not the same as matching the bank row to an open invoice payment; use the Banking match workflow when the row should receive an invoice payment.
 
 ## If Something Looks Wrong
 
@@ -54,6 +60,7 @@ The customer is saved and available for invoice selection, payment workflows, se
 - Setting a default income account without confirming it is the correct income-type account for your setup.
 - Forgetting to maintain terms or credit settings when those defaults matter for invoice creation and follow-up.
 - Treating `Credit status` as a payment record. It is a setup signal, not the same thing as receiving money.
+- Assuming customer assignment from Banking applies money to an invoice. Customer assignment and invoice matching are separate actions.
 - Assuming customer setup alone finishes receivables preparation. Review item setup, invoice account review, and due-date defaults before opening invoices.
 
 ## Related
@@ -63,5 +70,6 @@ The customer is saved and available for invoice selection, payment workflows, se
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
 - [Create and open invoices](./create-and-open-invoices.md)
 - [Receive invoice payments](./receive-invoice-payments.md)
+- [Review and classify bank transactions](../banking-and-cash-management/review-and-classify-bank-transactions.md)
 - [Use global search](../dashboard-and-navigation/use-global-search.md)
 - [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)

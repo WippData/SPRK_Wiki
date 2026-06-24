@@ -1,0 +1,5 @@
+Journal Number,Date,Memo,Account,Debit,Credit,Create Reversing Entry,Reversal Date,Expected Evidence
+V1-JE-REV-7101,2026-06-28,V1 auto reversal accrual,Professional Fees,500.00,,Yes,2026-07-01,Original journal remains and linked reversing entry is scheduled
+V1-JE-REV-7101,2026-06-28,V1 auto reversal accrual,Accounts Payable,,500.00,Yes,2026-07-01,Debit and credit remain balanced
+V1-JE-REV-7102,2026-06-29,V1 manual reversal example,Bank Fees,65.00,,No,,Manual reversal should preserve original entry history
+V1-JE-REV-7102,2026-06-29,V1 manual reversal example,Operating Checking,,65.00,No,,Control account restrictions may affect selectable accounts

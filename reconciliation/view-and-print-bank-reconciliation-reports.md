@@ -52,6 +52,19 @@ SPRK opens the reconciliation report area for the selected account and posted st
 - Treating a printed report as a way to edit or reopen a posted reconciliation.
 - Choosing the wrong account before opening `Print Bank Rec`, which pre-fills the report account from the active selection.
 
+## Business Scenario: Posted Reconciliation Report Evidence
+
+Use this scenario to train a reviewer to open the report generated from a completed reconciliation and preserve the report output as support.
+
+- Sample file: [07-reconciliation-report-export.csv](../sample-files/v1-validation/07-reconciliation-report-export.csv)
+- Evidence:
+
+![Posted reconciliation history row with a report action](../screenshots/v1-validation/reconciliation-history-posted-report-action.png)
+
+![Reconciliation report details opened from posted history](../screenshots/v1-validation/reconciliation-report-detail.png)
+
+The walkthrough confirmed that posted history exposes a report action and that the report includes the statement period detail needed for review support.
+
 ## Related
 
 - [Start a reconciliation](./start-a-reconciliation.md)

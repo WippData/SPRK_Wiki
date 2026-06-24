@@ -1,0 +1,4 @@
+Date,Description,Amount,Credit or Debit,Customer,Memo
+2026-06-17,SPRK V1 Payment V1-INV-1001 Green Client,600.00,Credit,Green Client Co,Use to match bank deposit to open invoice payment
+2026-06-18,SPRK V1 Partial Payment V1-IMP-2001 Green Client,400.00,Credit,Green Client Co,Use to show partial payment matching if supported
+2026-06-19,SPRK V1 Unmatched Customer Deposit Bluebird,900.00,Credit,Bluebird Design,Use to explain customer assignment versus invoice matching

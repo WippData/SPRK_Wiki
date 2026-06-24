@@ -1,0 +1,4 @@
+Bill Number,Vendor,Date,Due Date,Status,Account,Description,Quantity,Unit Cost,Memo
+V1-IMP-BILL-4001,Pat Reed,2026-06-18,2026-07-03,open,Office Supplies,Printer paper,2,34.50,Grouped bill import proof
+V1-IMP-BILL-4001,Pat Reed,2026-06-18,2026-07-03,open,Office Supplies,Toner cartridge,1,89.25,Grouped bill import proof
+V1-IMP-BILL-4002,Alexis Park,2026-06-19,2026-07-04,open,Utilities,Electric service,1,210.00,Second grouped bill proof

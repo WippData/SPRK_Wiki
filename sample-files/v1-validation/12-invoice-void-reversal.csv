@@ -1,0 +1,4 @@
+Invoice Number,Customer,Invoice Date,Original Amount,Void Date Option,Void Reason,Expected Result,Boundary Note
+V1-VOID-1101,Green Client Co,2026-06-20,250.00,Original invoice date,V1 validation unpaid invoice void,Invoice status becomes Void and balance becomes zero,Use only for unpaid eligible invoices
+V1-VOID-1102,Bluebird Design,2026-06-21,325.00,Today,V1 validation current date void,Reversal history is preserved,Void is not delete
+V1-VOID-1103,V1 New Customer Training,2026-06-22,450.00,Custom date,V1 validation custom date void,Custom reversal date is captured,Do not use for paid or partial invoices

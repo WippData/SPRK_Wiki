@@ -15,7 +15,7 @@ Use this workflow when the same bank or credit card transactions appear repeated
 ## Before You Start
 
 - At least one bank or credit card account exists.
-- The destination accounts you want rules to use are available.
+- The destination accounts you want rules to use are available. Nonposting summary accounts and restricted control accounts may be omitted from rule target selectors.
 - You know the text pattern or amount pattern that should trigger the rule.
 
 ## Good Rule Examples
@@ -96,6 +96,19 @@ The rule is saved and becomes available when SPRK evaluates pending bank transac
 - Uploading a generic rules file without `Conditions` and `Actions` columns.
 - Treating a QuickBooks rules export as a generic CSV. Save the export as `.xlsx` when you want SPRK to read it as a QuickBooks rules export.
 - Letting rule suggestions replace accountant review. Confirming the bank transaction is still the posting step.
+
+## Business Scenario: Import Rule Setup
+
+Use this scenario to test whether a firm can load a reusable banking-rule CSV and review the resulting rule draft before applying it to bank activity.
+
+- Sample file: [05-banking-rules-import.csv](../sample-files/v1-validation/05-banking-rules-import.csv)
+- Evidence:
+
+![Rules import preview showing three reusable rule drafts with zero issues](../screenshots/v1-validation/rules-import-preview-success-v0.3.57.png)
+
+![Rules grid showing the imported V1 banking rules after confirmation](../screenshots/v1-validation/rules-import-committed-rows-v0.3.57.png)
+
+Validation note: this walkthrough was validated in SPRK v0.3.57. The CSV preview found three rule drafts with zero issues, and the imported V1 rules appeared in the rules grid after confirmation.
 
 ## Related
 

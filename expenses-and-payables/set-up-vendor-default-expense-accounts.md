@@ -19,7 +19,7 @@ Use this page when the same vendor usually points to the same expense account an
 ## Before You Start
 
 - You can open `Vendors`.
-- The expense account you want to reuse already exists and is active.
+- The expense account you want to reuse already exists, is active, and is eligible for posting. Nonposting summary accounts and restricted control accounts may stay visible in `Chart of Accounts` but be omitted from default-account selectors.
 - You know which vendors usually post to the same expense category.
 
 ## Setup Workflow
@@ -39,6 +39,7 @@ Use this page when the same vendor usually points to the same expense account an
 - In vendor-aware bank-import preview, exact active vendor IDs and uniquely matched active vendor names can resolve imported vendor columns. Unresolved names stay visible until you choose a vendor, create the unknown vendors from the preview, or leave the row for later review.
 - If Banking prompts before saving a placeholder-style vendor default such as `Ask My Accountant`, `Pending`, or `TBD`, review the warning before you let that account become the vendor's reusable default.
 - Vendor imports can map or resolve the default expense account during setup review.
+- Vendor and customer list columns show readable account labels for saved defaults where the current UI exposes those columns, not raw stored account IDs.
 
 ## Where You Should Still Review Manually
 
@@ -58,6 +59,7 @@ The vendor record carries a reusable expense default, and supported check and ba
 - Forgetting to update the vendor when its usual expense category changes.
 - Assuming a vendor default overrides a rule or a manual banking category every time.
 - Choosing an account without confirming that it is the active expense account you actually want to reuse.
+- Looking for a nonposting parent account in the default selector. Choose the posting account that should receive vendor activity.
 
 ## Related
 

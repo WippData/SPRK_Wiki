@@ -1,0 +1,6 @@
+Date,Description,Amount,Credit or Debit,Customer,Vendor,Check #,Memo
+2026-06-01,SPRK V1 Duplicate Office Supplies,48.25,Debit,,Harbor Office Supply,,Duplicate proof row A
+2026-06-01,SPRK V1 Duplicate Office Supplies,48.25,Debit,,Harbor Office Supply,,Duplicate proof row A repeated
+2026-06-02,SPRK V1 Customer Deposit Green Client,625.00,Credit,Green Client Co,,,Customer deposit with known customer
+2026-06-03,SPRK V1 Unknown Vendor Field Materials,137.44,Debit,,V1 New Vendor Materials,,Unknown vendor should remain visible or be creatable
+2026-06-04,SPRK V1 Unknown Customer Training Deposit,900.00,Credit,V1 New Customer Training,,,Unknown customer should remain visible or be creatable

@@ -1,0 +1,5 @@
+Trainer Step,Source Company File,Destination Company,Action,Expected Evidence,Boundary Note
+Choose Company File,V1 Training Company export,Replacement Test Company,Select import file,Preview opens before replacement,Do not overwrite without confirming preview
+Review preview,V1 Training Company export,Replacement Test Company,Review company summary,Preview shows expected source details,Preview does not replace data by itself
+Confirm replace,V1 Training Company export,Replacement Test Company,Confirm replacement,Replacement confirmation is explicit,Use a disposable destination company
+Explain rollback,V1 Training Company export,Replacement Test Company,Review failure handling,Validation failure does not silently replace company,Document as safety boundary

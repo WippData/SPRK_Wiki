@@ -35,9 +35,11 @@ Use this workflow when you want to see which reports are available in SPRK and r
    - Range-based reports use a period preset and date range.
    - As-of reports use an as-of style date.
    - Date fields can be selected from the calendar or typed directly. Typed dates should follow your saved `Preferences` date order, and accepted compact entries can normalize to the visible display format.
+   - Supported report selectors are searchable and sorted so large account, vendor, period, or similar lists are easier to narrow. The exact filters still depend on the report tab you are using.
    - `Income Statement` also supports compare-period controls and optional grouping.
    - `Tax Forms` requires a tax-form selection before you run it.
-   - `Expense by Vendor`, aging reports, and `Reconciliation` require the filters shown on their tabs.
+   - `Expense by Vendor` includes vendor and date filters, and can expose a `1099` filter with `All`, `Yes`, and `No`.
+   - Aging reports and `Reconciliation` require the filters shown on their tabs.
    - `General Ledger` adds filters for `Account Type`, `Account SubType`, `Accounts`, `Vendor`, `Text`, `Group By`, and optional `Include opening balance`.
 6. Select `Run`.
 7. Review the table and any summary cards that appear for the selected report.
@@ -45,7 +47,8 @@ Use this workflow when you want to see which reports are available in SPRK and r
    - On supported statement reports, non-zero summary cards, subtotals, totals, and rows can open supporting-entry drilldown.
    - Visible statement row order follows account code when codes are present and falls back to account name when codes are blank.
 8. If needed, use `Export` to save the current report rows or `Print` to open the print workflow for the active report.
-9. Treat `Tax Forms` as a review view where visible, not as tax return preparation, tax filing, agency submission, or compliance approval.
+9. If your workspace uses compatible plugins, plugin-provided report sources can appear only after SPRK accepts the plugin's report metadata and the runtime report surface is available. Installed plugin status alone does not guarantee a report tab.
+10. Treat `Tax Forms` as a review view where visible, not as tax return preparation, tax filing, agency submission, or compliance approval.
 
 ## What Happens Next
 
@@ -56,6 +59,8 @@ The selected report loads in the main table area with the date context and contr
 - Export and print are output actions only and do not create journal entries.
 - The visible `Export` action exports the active report context. Do not assume a separate batch or package export exists unless SPRK shows that action.
 - Reconciliation reports are review outputs for posted reconciliation sessions and do not create new ledger activity.
+- The `Expense by Vendor` `1099` filter changes report scope only. It does not create forms, file taxes, or change vendor setup.
+- Plugin-backed report surfaces are conditional on plugin enablement, runtime availability, company access, and supported report metadata.
 - Tax-form review does not file tax returns, submit agency forms, or replace professional compliance review.
 
 ## If Something Looks Wrong
@@ -65,7 +70,19 @@ The selected report loads in the main table area with the date context and contr
 - Typing report dates in a different order than the date format saved in `Preferences`.
 - Assuming a blank report means the report is broken, when it may mean there is no activity for the selected period.
 - Treating `Export` as a way to move data back into SPRK. It is an outbound file action for the current report result.
+- Expecting every installed plugin to add a report. Plugin report visibility depends on the installed plugin state and SPRK runtime support.
 - Treating `Tax Forms` as tax filing or compliance approval instead of report review.
+
+## Business Scenario: Core Report Export Surface
+
+Use this scenario to train a reviewer to run a core statement, inspect the visible report controls, and export the active report output when SPRK exposes the action.
+
+- Sample file: [19-core-report-export-package.csv](../sample-files/v1-validation/19-core-report-export-package.csv)
+- Evidence:
+
+![Income Statement report with export controls visible](../screenshots/v1-validation/reports-income-statement-export-surface.png)
+
+The walkthrough confirmed that report export is tied to the active report context. It did not assume a separate batch package unless SPRK shows that action.
 
 ## Related
 
@@ -74,3 +91,4 @@ The selected report loads in the main table area with the date context and contr
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
 - [View and print bank reconciliation reports](../reconciliation/view-and-print-bank-reconciliation-reports.md)
 - [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
+- [Troubleshoot missing Plugins (Beta) pages](../plugins/troubleshoot-plugin-pages-that-do-not-appear.md)

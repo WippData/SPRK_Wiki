@@ -1,0 +1,5 @@
+Review Area,Report Or View,Filter,Expected Evidence,Boundary Note
+Receivables aging,AR Aging,As of 2026-06-30,Open invoices age by customer,Does not prove collections automation
+Payables aging,AP Aging,As of 2026-06-30,Open bills age by vendor,Does not prove approval workflow
+Expense by vendor,Expense by Vendor,1099 vendors if available,Vendor totals are visible,Does not file 1099 forms
+Tax mapping,Schedule C or tax mapping review,Current company,Tax mapping view opens,Review support is not tax filing

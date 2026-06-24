@@ -1,0 +1,5 @@
+Report Name,Drilldown Target,Expected Transaction,Expected Export,Trainer Note
+Income Statement,Office Supplies,SPRK V1 Duplicate Office Supplies,Detail rows can be exported,Shows report-to-transaction trace
+Balance Sheet,Accounts Receivable,V1-INV-1001,Detail rows can be exported,Shows AR balance support
+Expense by Vendor,Harbor Office Supply,V1-BILL-3001,Detail rows can be exported,Shows vendor expense review
+General Ledger,Operating Checking,SPRK V1 Payment V1-INV-1001 Green Client,Visible in account detail,Shows bank-linked activity

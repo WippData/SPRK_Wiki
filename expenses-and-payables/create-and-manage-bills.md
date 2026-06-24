@@ -53,9 +53,25 @@ Use this workflow when you need to enter a vendor bill, recognize the payable, a
 
 ## Available Bill Actions
 
-The row action menu changes based on the bill's status, balance, and posting history. Use the visible actions on the bill row rather than assuming every bill supports the same correction path. Common actions include recording a payment, matching a payment, viewing linked journal entries, viewing payment history, and deleting eligible records.
+The row action menu changes based on the bill's status, balance, and posting history. Use the visible actions on the bill row rather than assuming every bill supports the same correction path. Common actions include recording a payment, matching a payment, viewing linked journal entries, viewing payment history, voiding eligible posted bills, and deleting eligible draft records.
 
 If you need to correct a posted bill or bill payment, prefer the supported correction action SPRK shows for that record. Do not delete a source record just to force the ledger to match.
+
+## Void an Eligible Bill
+
+Use `Void bill` when a posted bill should be reversed while preserving the original bill and posting history.
+
+1. Open the bill row action menu.
+2. Choose `Void bill` only when the action is enabled.
+   - The action can appear on posted-like bills.
+   - It is enabled only when the bill is still `Open` and its full balance still equals its total.
+   - Draft, partial, paid, and already voided bills are not valid void targets.
+3. In the `Void bill` modal, choose the void posting date:
+   - `Today`
+   - `Original bill date`
+   - `Custom date`
+4. Enter a reason.
+5. Confirm `Void bill` after reviewing the bill and date.
 
 ## Banking Match Path
 
@@ -75,6 +91,8 @@ The bill is saved and appears in the bill list.
 - Full payment changes the bill to `Paid`. A smaller payment leaves the bill as `Partial`.
 - Saving changes to an already posted bill follows the posted-save strategy you choose when SPRK prompts. `Edit existing journal entry` can be unavailable when company policy or prior adjustment history does not allow it.
 - Viewing payment history or linked journal entries does not post by itself.
+- A successful `Void bill` posts a reversal journal entry, sets the bill status to `Void`, zeroes the bill balance, and records void details instead of deleting the bill.
+- If a bill has active payments, SPRK blocks voiding or recognition-journal reversal until those payments are reversed or unapplied.
 - Reversing a bill-payment journal through a supported source-document confirmation can deactivate the payment application and reopen the bill balance.
 
 ## If Something Looks Wrong
@@ -85,7 +103,28 @@ The bill is saved and appears in the bill list.
 - Recording a payment without checking the remaining balance first.
 - Entering a payment amount larger than intended. Review overpayments carefully before recording them.
 - Assuming delete or correction behavior reverses prior ledger impact automatically. Review the visible action and its confirmation before continuing.
+- Trying to delete a posted bill. Only draft bills with no posted ledger impact can be deleted; posted bills need void or correction workflows.
+- Trying to void a partially paid or paid bill directly. Reverse or unapply active payments first.
 - Treating `Save Posted Bill` as a routine draft save. It is an audit-sensitive choice about how SPRK should preserve or adjust the posted entry.
+
+## Business Scenario: Bill Review, Payment Trail, And Grouped Import
+
+Use this scenario to train staff on bill detail review, bill action menus, payment history, linked journals, and the grouped-line CSV import claim for vendor bills.
+
+- Sample files:
+  - [13-ap-vendor-bill-payment.csv](../sample-files/v1-validation/13-ap-vendor-bill-payment.csv)
+  - [14-bill-import-grouped-lines.csv](../sample-files/v1-validation/14-bill-import-grouped-lines.csv)
+- Evidence:
+
+![Bill detail showing vendor, dates, total, status, and balance](../screenshots/v1-validation/bill-open-detail.png)
+
+![Bill actions menu showing payment, journal, history, and void options](../screenshots/v1-validation/bill-actions-menu-payment-journal-void.png)
+
+![Bill payment history showing payment activity](../screenshots/v1-validation/bill-payment-history.png)
+
+![Bill grid filtered to V1 imported bills showing grouped-line CSV import results](../screenshots/v1-validation/bill-import-grouped-lines-success-v0.3.57.png)
+
+Validation note: the grouped bill import walkthrough passed in SPRK v0.3.57. The screenshot shows the two expected open bills created from [14-bill-import-grouped-lines.csv](../sample-files/v1-validation/14-bill-import-grouped-lines.csv).
 
 ## Related
 

@@ -1,0 +1,5 @@
+Entry #,Date,Entry Memo,Description,Account,Debit,Credit
+V1-JE-7001,2026-06-25,V1 accrual import proof,Professional fees accrual,Professional Fees,325.00,
+V1-JE-7001,2026-06-25,V1 accrual import proof,Accrual liability,Accounts Payable,,325.00
+V1-JE-7002,2026-06-26,V1 reclass import proof,Office supplies reclass,Office Supplies,82.00,
+V1-JE-7002,2026-06-26,V1 reclass import proof,Miscellaneous expense offset,Miscellaneous Expense,,82.00

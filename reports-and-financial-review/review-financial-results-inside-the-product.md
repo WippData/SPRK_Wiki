@@ -32,7 +32,9 @@ Use this workflow when you want to review company results by period, prepare mon
    - `Reconciliation` for posted bank or credit card reconciliation report output.
    - `General Ledger` for filtered transaction detail by type, subtype, account, vendor, or text.
    - `Account Detail` for transaction detail on one selected account.
+   - `Expense by Vendor` when you need vendor spending detail, including the visible `1099` filter when you are reviewing tagged vendors.
 4. Set the period or date controls for the selected report. You can use the calendar controls or type dates directly when the field is editable; typed dates should follow your saved `Preferences` date order.
+   - Supported report selectors are searchable and sorted so longer account or vendor lists are easier to narrow.
 5. If you are on `Income Statement`, add a compare period when you want side-by-side period review.
 6. If you are on `Income Statement`, use `Group By` when you want the report split by month, quarter, or year.
 7. Select `Run`.
@@ -52,6 +54,8 @@ You can review current report totals and detailed lines directly in SPRK for the
 - Compare-period and grouping views reorganize the display only; they do not change source transactions.
 - Account-code or account-name ordering changes display consistency only; it does not change balances.
 - Running a reconciliation report reads a posted reconciliation period for the selected account; it does not reopen or change that reconciliation.
+- Filtering `Expense by Vendor` by `1099` changes which vendors are included in the review; it does not create forms, file taxes, or change the vendor records by itself.
+- Plugin-backed report output appears only when the installed plugin is enabled, runtime-compatible, and accepted by SPRK's report runtime.
 
 ## If Something Looks Wrong
 
@@ -60,6 +64,20 @@ You can review current report totals and detailed lines directly in SPRK for the
 - Typing date shortcuts without confirming they match your selected date-format order.
 - Treating report output as a substitute for reviewing the underlying entries when a balance looks unexpected.
 - Assuming a report review changes the ledger automatically. Any correction still has to happen through the relevant transaction or journal-entry workflow.
+- Expecting a plugin report to appear just because a plugin was installed. Confirm the plugin is enabled and runtime available first.
+
+## Business Scenario: Aging, Expense, And Tax Mapping Review
+
+Use this scenario to train reviewers to move beyond the core statements into payables aging and tax-form mapping review without implying tax filing or compliance submission.
+
+- Sample file: [21-aging-expense-tax-mapping-review.csv](../sample-files/v1-validation/21-aging-expense-tax-mapping-review.csv)
+- Evidence:
+
+![Payables aging report with summary and detail rows](../screenshots/v1-validation/reports-payables-aging-summary-detail.png)
+
+![Tax form Schedule C review report](../screenshots/v1-validation/reports-tax-form-schedule-c-review.png)
+
+The walkthrough confirmed that aging and tax-form views are in-product review tools. They do not file returns, submit agency forms, or change vendor/customer setup by themselves.
 
 ## Related
 

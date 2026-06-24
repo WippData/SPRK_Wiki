@@ -1,0 +1,5 @@
+Trainer Step,Bank Account,Description,Party Type,Party Name,Category,Spent,Received,Expected Evidence
+Select imported row,Operating Checking,SPRK V1 Unknown Vendor Field Materials,Vendor,V1 New Vendor Materials,Office Supplies,137.44,,Party and category can be reviewed before confirmation
+Assign customer context,Operating Checking,SPRK V1 Customer Deposit Green Client,Customer,Green Client Co,Service Revenue,,625.00,Customer context is visible but invoice matching remains separate
+Confirm ready row,Operating Checking,SPRK V1 Duplicate Office Supplies,Vendor,Harbor Office Supply,Office Supplies,48.25,,Confirmed row leaves Pending and posts only after confirm
+Review skipped duplicate,Operating Checking,SPRK V1 Duplicate Office Supplies,Vendor,Harbor Office Supply,Office Supplies,48.25,,Likely duplicate can be skipped or left unconfirmed

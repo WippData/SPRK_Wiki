@@ -1,0 +1,5 @@
+Trainer Step,Company,Action,Expected Evidence,Trainer Note
+Open backup settings,V1 Training Company,Review backup configuration,Backup settings are visible,Explains safety before handoff
+Run backup,V1 Training Company,Run backup now,Backup completion is visible,Use before replacement examples
+Export Company File,V1 Training Company,Export company file,Company File is produced,This is the public handoff story
+Confirm handoff,V1 Training Company,Locate exported file,File can be shared or imported later,Do not position legacy package restore as primary path

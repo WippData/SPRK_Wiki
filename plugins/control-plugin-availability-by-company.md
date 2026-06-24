@@ -1,6 +1,6 @@
 # Control Plugins (Beta) by Company
 
-![Plugins settings tab showing installed plugin entries](../screenshots/plugins/plugins-settings-tab-step-01.png)
+![Plugins settings tab showing supported plugin types and installed plugin status](../screenshots/plugins/plugins-settings-tab-step-01.png)
 
 Check company context when an installed Plugin (Beta) should be used for one company but not another.
 

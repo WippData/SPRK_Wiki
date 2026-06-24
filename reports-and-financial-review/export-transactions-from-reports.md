@@ -26,6 +26,7 @@ Use this workflow when you need transaction-level report detail for an account, 
    - In `General Ledger`, use the current filter bar as needed: `Account Type`, `Account SubType`, `Accounts`, `Vendor`, `Text`, `Group By`, and `Include opening balance`.
    - In `Account Detail`, select the required account and optional text filter.
    - Account selectors follow your `Account dropdown sorting` preference, so the list may be grouped by account type or shown as a flat A-Z list depending on your saved preference.
+   - Supported report selectors are searchable and sorted by their visible labels, but each report still exposes its own filter set.
 5. Select `Run`.
 6. Review the results before exporting:
    - Confirm the active company is correct.
@@ -34,6 +35,7 @@ Use this workflow when you need transaction-level report detail for an account, 
    - Confirm the transaction dates, descriptions, accounts, debits, credits, balances, and any visible dimension columns match the review request.
 7. To create a spreadsheet file for the active report context, select `Export`.
 8. To create a PDF, select `Print`, then use the system print dialog to save or print the report as a PDF.
+   - If you are working inside a register modal opened from vendor or account-detail review, `Export` and `Print` use the modal's current filtered rows and visible columns, not a broader report package.
 9. Open the exported or printed file and confirm it contains the expected filtered detail before sending it outside SPRK.
    - Current General Ledger CSV exports include `Account Code`, `Account Name`, `Date`, `Entry #`, `Memo`, `Description`, `Name`, `Debit`, `Credit`, and `Balance`.
    - If the current report includes dimensions in the live table, confirm those dimensions are also present in the exported output where SPRK exposes them.
@@ -45,6 +47,7 @@ SPRK produces an outbound copy of the current report results for review outside 
 - Running the report does not post, edit, reverse, or reclassify journal entries.
 - Export and print actions do not change ledger balances.
 - The exported or printed file reflects the report filters in effect at the time you create it, rather than exporting unfiltered rows from other pages of the result set.
+- Register-level export and print reflect the open register context and title. They do not post, reverse, or reclassify ledger activity.
 - The visible Reports page exports or prints the active report context. Do not assume SPRK will create a multi-report package unless that action is visible in your app.
 - Report exports are review outputs, not tax filing, payroll filing, or statutory submission workflows.
 
@@ -67,7 +70,8 @@ If the account you need is not available in the `Accounts` filter, or the select
 3. Confirm the account name or code matches what you are searching for.
 4. Try the other transaction-detail report view, such as `Account Detail` instead of `General Ledger`.
 5. Open `Preferences` and check `Account dropdown sorting` if the account appears in an unexpected part of the list.
-6. If the account exists and is active but still does not appear in the report filter, contact support with the company name, account name, account code, report name, date range, and a screenshot of the missing account selector.
+6. If the account exists and is active but still does not appear in the report filter, check whether it is a nonposting summary account or otherwise restricted from that selector.
+7. Contact support with the company name, account name, account code, report name, date range, and a screenshot of the missing account selector if the account should be eligible but still does not appear.
 
 ## Related
 

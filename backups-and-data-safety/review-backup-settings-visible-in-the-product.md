@@ -48,6 +48,19 @@ You can review and manage the current backup controls that SPRK exposes publicly
 - Confusing routine backups for all local companies with a company-scoped Company File export.
 - Reading the status area as accounting activity rather than backup history.
 
+## Business Scenario: Manual Backup Control
+
+Use this scenario to train staff on where manual backup controls live and how to distinguish routine database backups from Company File handoff.
+
+- Sample file: [22-backup-company-file-export.csv](../sample-files/v1-validation/22-backup-company-file-export.csv)
+- Evidence:
+
+![Backups page showing backup status, backup path, Run Backup Now, and Company File controls](../screenshots/v1-validation/backups-run-now-location-company-file.png)
+
+![Backups page showing Run Backup Now completed successfully in the user application support backup folder](../screenshots/v1-validation/backup-run-now-success-v0.3.57.png)
+
+Validation note: this walkthrough was validated in SPRK v0.3.57. `Run Backup Now` completed successfully and reported the backup location under the user's application support backup folder.
+
 ## Related
 
 - [Understand backup schedule behavior](./understand-backup-schedule-behavior.md)

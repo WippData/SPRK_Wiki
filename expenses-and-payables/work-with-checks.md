@@ -69,6 +69,17 @@ Use this workflow when you need to make the `Checks` page available in your side
 - Trying to delete a non-draft check. The current workflow only allows draft checks to be deleted.
 - Assuming voiding a check is the same as clearing it through reconciliation.
 
+## Business Scenario: Checks Visibility And Workflow Boundary
+
+Use this scenario to train staff on the fact that Checks may need to be shown from sidebar customization before check tracking can be validated.
+
+- Sample file: [16-check-match-clear-void.csv](../sample-files/v1-validation/16-check-match-clear-void.csv)
+- Evidence:
+
+![Preferences sidebar configuration entry used to show hidden pages such as Checks](../screenshots/v1-validation/preferences-sidebar-configuration-checks-boundary.png)
+
+The walkthrough did not change the user's sidebar configuration. It confirmed the documented navigation boundary: Checks can be managed only after the page is made visible from Preferences when it is hidden.
+
 ## Related
 
 - [Customize the sidebar](../preferences-and-personalization/customize-the-sidebar.md)

@@ -67,6 +67,17 @@ Current status behavior when a payment is recorded:
 - Assuming invoice voiding deletes the original invoice or original journal. A successful `Void invoice` posts a reversal, moves the invoice to `Void`, zeroes the balance, and preserves audit details.
 - Assuming active payments can remain in place while the invoice recognition posting is reversed. Reverse or unapply active payments first where SPRK requires that guardrail.
 
+## Business Scenario: Invoice Void And Reversal Guardrail
+
+Use this scenario to train reviewers on where the void action appears and why the action is different from deleting or manually editing the original journal entry.
+
+- Sample file: [12-invoice-void-reversal.csv](../sample-files/v1-validation/12-invoice-void-reversal.csv)
+- Evidence:
+
+![Invoice row action menu with Void invoice enabled on an eligible invoice](../screenshots/v1-validation/invoice-void-action-enabled.png)
+
+The walkthrough stopped at the enabled void action and did not confirm a destructive source-document reversal. The visible action proves the workflow entry point while preserving the demo company data.
+
 ## Related
 
 - [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
