@@ -17,16 +17,20 @@ Use this article when you want a quick way to choose the right payables workflow
 
 1. Start with `Vendors` if the payee does not exist yet or if you want to save a reusable `Default Expense Account` before later transactions.
 2. Use `Bills` when you need SPRK to track an amount owed to a vendor.
-3. Save the bill as `Draft` if you are still reviewing it, or `Open` if you want SPRK to recognize the payable.
-4. Return to `Bills` and use `Record payment` when you are paying an existing bill from a bank or cash account.
-5. Use `View payment history` and `View linked journal entries` from the bill row menu to trace payment applications and posting history before changing a bill.
-6. Use `Void bill` for an eligible open bill that should be reversed without deleting the source record. Reverse or unapply active payments first if the bill is partial or paid.
-7. Use `Checks` when you need to maintain a check record and its status, especially for matching and reconciliation work.
-8. If you classify bank transactions from imported activity, remember that vendor defaults can also help supported banking workflows start with a category suggestion.
-9. If you are unsure whether a step affects the ledger, verify it before saving:
+3. Review `Pay from` before saving the bill:
+   - Choose an Accounts Payable control account when the bill should stay open until payment.
+   - Choose a cash, bank, or credit-card settlement account only for a paid-now bill.
+4. Save the bill as `Draft` if you are still reviewing it, or `Open` if you want SPRK to recognize the payable or paid-now expense based on `Pay from`.
+5. Return to `Bills` and use `Record payment` when you are paying an existing open bill from a bank or cash account.
+6. Use `View payment history` and `View linked journal entries` from the bill row menu to trace payment applications and posting history before changing a bill.
+7. Use `Void bill` for an eligible open bill that should be reversed without deleting the source record. Reverse or unapply active payments first if the bill is partial or paid.
+8. Use `Checks` when you need to maintain a check record and its status, especially for matching and reconciliation work.
+9. If you classify bank transactions from imported activity, remember that vendor defaults can also help supported banking workflows start with a category suggestion.
+10. If you are unsure whether a step affects the ledger, verify it before saving:
    - Vendor setup: no journal entry
-   - Bill opened: debits line accounts and credits Accounts Payable
-   - Bill payment: debits Accounts Payable and credits the selected payment account
+   - Bill opened with an Accounts Payable control account in `Pay from`: debits line accounts and credits payables
+   - Bill saved paid-now with a settlement account in `Pay from`: debits line accounts and credits the selected settlement account
+   - Bill payment: debits payables and credits the selected `Pay from` account
    - Bill void: posts a reversal and keeps the original bill history
    - Check record activity: operational tracking only in the current documented flow
 
@@ -38,6 +42,7 @@ You can choose the right payables page quickly and avoid confusing master-data s
 
 - Using `Checks` when the real task is to reduce an open bill balance.
 - Entering a bill as `Open` before verifying the account coding.
+- Choosing a settlement account in `Pay from` when you meant to track an unpaid vendor balance.
 - Assuming vendor setup, bill entry, and check tracking all create the same accounting result.
 - Assuming a vendor default expense account means every downstream workflow will auto-fill without review.
 - Treating linked journal review as deletion or unposting.

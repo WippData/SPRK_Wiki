@@ -23,6 +23,9 @@ Use this article when you want to confirm whether automatic backups are enabled 
 5. Review the `Schedule` field.
 6. Treat the displayed time as your local device time.
 7. If needed, choose a different time in the time field to change when the daily backup cycle runs.
+8. Review the saved backup location on the Backups settings page when you need to understand where scheduled files will be written.
+   - Relative backup locations are resolved by the desktop runtime against its configured backup base directory.
+   - Use a recent manual backup result when you need to confirm the final resolved path.
 
 ## What Happens Next
 
@@ -30,12 +33,14 @@ You can see whether automatic backups are enabled and what local time SPRK uses 
 
 - Changing the backup schedule does not post, reverse, or edit a journal entry.
 - Backup timing changes affect when backup files are created for this device, not company balances.
+- Backup location resolution affects where files are written, not what accounting data posts.
 - Automatic backups protect data copies; they do not reclassify transactions or change account activity.
 
 ## If Something Looks Wrong
 
 - Assuming the schedule uses a shared server time instead of the local time shown in the product.
 - Treating backup timing as a posting or close-period control.
+- Treating a relative backup location as the final absolute path without checking a run result.
 - Forgetting to confirm the correct active company before validating settings context.
 
 ## Related

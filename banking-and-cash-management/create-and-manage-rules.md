@@ -72,8 +72,12 @@ Use this workflow when the same bank or credit card transactions appear repeated
    - Accepted formats are `.xlsx` and `.csv`.
    - QuickBooks rules exports are accepted as-is when they are saved as `.xlsx`.
    - Generic spreadsheet or CSV rule files should include `Conditions` and `Actions` columns.
+   - Generic `Conditions` and `Actions` values can be plain text or JSON.
+   - Plain-text examples include description-match wording for conditions and actions such as `set gl account` followed by an account name, code, or ID.
    - `Name` and `Description` are recommended so imported rules are easier to review later.
    - Review the preview and any reported issues before confirming the import.
+   - SPRK blocks confirmation when the preview is empty.
+   - Unresolved account labels remain visible for review instead of being silently dropped.
    - Legacy imported condition fields can still match when their capitalization differs, but new setup should use the visible current labels, including `GL Account`.
 14. Edit, disable, or delete rules as your transaction patterns change.
 
@@ -94,6 +98,9 @@ The rule is saved and becomes available when SPRK evaluates pending bank transac
 - Using fixed-amount splits without setting `Balance to`.
 - Making the description match too broad and catching unrelated transactions.
 - Uploading a generic rules file without `Conditions` and `Actions` columns.
+- Assuming generic rule imports require JSON. Plain text is supported, but it still needs to resolve to a valid preview before confirmation.
+- Confirming an empty rules preview. Add valid rows or fix the source file first.
+- Ignoring unresolved account labels in the preview.
 - Treating a QuickBooks rules export as a generic CSV. Save the export as `.xlsx` when you want SPRK to read it as a QuickBooks rules export.
 - Letting rule suggestions replace accountant review. Confirming the bank transaction is still the posting step.
 

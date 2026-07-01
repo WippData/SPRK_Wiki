@@ -39,6 +39,7 @@ Use a source workflow instead when the activity belongs to a customer invoice, c
 5. If the journal touches bank, cash, or credit-card accounts and you want it to appear in the bank register immediately, turn on the bank-register option when the drawer exposes it.
    - The option is off by default.
    - When enabled, SPRK creates linked confirmed bank-register rows for eligible bank, cash, or credit-card lines instead of waiting for a separate bank import or manual bank entry.
+   - After posting, use the journal preview's linked-register review or `Resolve` controls if a bank-register row needs to be inspected, restored, or excluded.
 6. Add each journal line with the correct account and amount.
    - If an expected account is missing from the picker, confirm whether it is a nonposting summary account, an account-level `Control account`, or a company-level `Control accounts` value that should be posted through invoices, bills, banking, or another source workflow.
 7. If your company uses dimensions or classes, use `Set dimensions` on the related lines and choose the correct value for each enabled dimension.
@@ -56,6 +57,7 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - Saving a manual journal entry creates a new journal entry record and posts each entered debit and credit line to the general ledger.
 - The bank-register option, when available and enabled, creates linked confirmed register rows for eligible Bank, Cash, and Credit Card journal lines. The journal entry remains the posting source.
 - Eligible bank-side lines are linked individually, so one manual journal can create more than one confirmed bank-register row. Identical amounts on the same account are still separate linked rows.
+- Linked bank-register rows created from journal lines can be reviewed later from the posted journal. `Resolve` repairs linkage or eligible missing register rows; it does not turn the manual journal into a Banking import.
 - When `Create reversing entry` is enabled on a new manual journal, SPRK schedules a linked offsetting journal entry instead of deleting or overwriting the original posting.
 - SPRK blocks unbalanced entries from being saved.
 - SPRK can block new or changed manual journal lines that use configured control accounts. Existing lines that already use a control account can remain as-is during edit review, but users should not newly assign that account from the manual journal drawer once the setting is active.
@@ -68,6 +70,7 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - Entering both debit and credit on the same line.
 - Assuming auto-reversal is part of the edit flow for existing entries. In the current live flow it appears when creating a new manual journal entry.
 - Assuming every manual journal creates bank-register activity. Register rows are opt-in and only mirror eligible bank, cash, or credit-card lines.
+- Assuming linked register `Resolve` changes the journal's accounting lines. Use journal edit, reversal, or another supported correction path for accounting changes.
 - Assuming a missing account was deleted. It may be nonposting, inactive, or intentionally restricted from new manual journals as a control account.
 - Assuming class fields appear automatically for every company. Set them up first from company `Dimensions`.
 - Assuming the ledger page is only for review. In the current product it is also the manual journal-entry posting page.

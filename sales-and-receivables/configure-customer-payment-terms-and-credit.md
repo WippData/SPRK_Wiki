@@ -11,6 +11,7 @@ Use this page when you want a customer record to carry standard payment terms, a
 ## When To Use This Setup
 
 - Set customer terms when most invoices for the customer should start from the same due-date pattern.
+- Use company `Sales / Invoicing` defaults when most new invoices across the company should start from the same terms before customer-specific setup is applied.
 - Set a credit status when your team needs a visible reminder to pause, review, or use a stricter collection approach before opening invoices.
 - Set a credit limit when you want the customer record to show a reference amount for receivables review and follow-up.
 
@@ -45,6 +46,8 @@ The customer record keeps payment and credit defaults together, new invoices can
 ## Downstream Effects
 
 - Customer terms can prefill invoice `Payment Terms` and help SPRK calculate a due date from the invoice date.
+- Company-level `Default invoice payment terms` can seed invoices that do not already have a customer or invoice-specific terms value.
+- Common terms such as `Due on receipt`, `Due upon receipt`, `EOM`, `x/y net N`, and `Net N` can calculate due dates. Review unusual freeform terms manually.
 - Invoice-level terms still need review because a one-off invoice may need a different due date than the customer default.
 - If an invoice has its own terms, receivables aging can show the invoice-specific terms for that invoice instead of falling back to the customer default.
 - Receivables aging can show terms and overdue timing alongside the customer balance, which helps with collection follow-up.

@@ -15,7 +15,7 @@ Use this workflow when an invoice or bill balance changed and you need to trace 
 1. Open `Invoices` or `Bills`.
 2. Find the document by number, party, date, status, total, or balance.
 3. Use the row action menu when you need document-side review.
-4. For invoices, the current action menu can show `Record Payment`, `Match Payment`, `View linked journal entries`, `View payment history`, and `Void invoice` on eligible open rows.
+4. For invoices, the current action menu can show `Print`, `Record Payment`, `Match Payment`, `View linked journal entries`, `View payment history`, and `Void invoice` on eligible rows.
 5. For bills, use the visible row actions for payment, matching, payment history, and linked journal review.
 6. Use `View payment history` to review applications without editing the document.
 7. Use `View linked journal entries` to inspect the accounting trail.

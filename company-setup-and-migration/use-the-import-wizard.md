@@ -8,6 +8,8 @@ Build a new company from uploaded files, copied data, and manual settings when a
 
 Use the Import Wizard when your migration spans multiple files or when you want to mix uploaded files, copied data from an existing company, and manual settings in one guided flow.
 
+If your main goal is to clone, copy, or duplicate an existing SPRK company, start with [Copying an existing company](./copying-an-existing-company.md) for the focused version of this workflow.
+
 ## Before You Start
 
 - You can open `Settings` → `Companies`.
@@ -64,6 +66,7 @@ The walkthrough opened the wizard from `Settings` -> `Companies` and stopped bef
 ## Related
 
 - [Create your first company](./create-your-first-company.md)
+- [Copying an existing company](./copying-an-existing-company.md)
 - [Import from QuickBooks Online ZIP](./import-from-quickbooks-online-zip.md)
 - [Import from QuickBooks Desktop IIF](./import-from-quickbooks-desktop-iif.md)
 - [Switch between companies](./switch-between-companies.md)

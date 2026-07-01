@@ -35,6 +35,7 @@ Use this page when the same vendor usually points to the same expense account an
 ## Where SPRK Can Use This Default
 
 - In `Checks`, selecting a vendor can fill `Offset Account` when that field is still blank.
+- In `Bills`, a vendor or header default can help fill blank line accounts, but each bill line still needs review before posting.
 - In `Banking`, selecting or changing a vendor can fill the transaction's GL account/category when no manual category, split, or rule already controls the transaction.
 - In vendor-aware bank-import preview, exact active vendor IDs and uniquely matched active vendor names can resolve imported vendor columns. Unresolved names stay visible until you choose a vendor, create the unknown vendors from the preview, or leave the row for later review.
 - If Banking prompts before saving a placeholder-style vendor default such as `Ask My Accountant`, `Pending`, or `TBD`, review the warning before you let that account become the vendor's reusable default.
@@ -44,6 +45,7 @@ Use this page when the same vendor usually points to the same expense account an
 ## Where You Should Still Review Manually
 
 - Bills still need line-by-line account review before you save them as `Open`.
+- `Default Expense Account` and bill header `Default expense account` are fallback helpers; the bill line `Account` is the posting source.
 - A rule can take priority over a vendor default in banking workflows.
 - A manual category or saved split should stay in control once you have already chosen a more specific result.
 - Mixed-use vendors may need one-off exceptions even when a default is usually helpful.

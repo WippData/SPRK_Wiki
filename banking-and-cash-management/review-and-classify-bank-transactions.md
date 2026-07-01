@@ -67,6 +67,15 @@ Use this workflow when imported or manually entered bank activity needs review b
    - The Banking Grid Edit confirm flow can apply draft edits as part of `Confirm & Apply Selected`, but other bulk actions still expect the grid edits to be clean.
    - If SPRK blocks a bulk action while the changed-cell counter is still active, review the edits, choose `Apply Changes`, and then run the bulk action after the grid is clean.
    - Review the final rows carefully before confirming transactions.
+19. If a transfer confirmation stops for review, compare the candidate transfer details before choosing:
+   - `Use existing transfer` when the row is the missing counterpart to the existing transfer.
+   - `Create separate transfer` when the nearby same-amount transfer is unrelated or risky to reuse.
+   - Cancel if the candidate is already reconciled, belongs to another statement period, or does not match your source evidence.
+20. If a confirmed row in `Categorized` needs its accounting link repaired, use `Resolve` on that confirmed row.
+   - `Resolve GL link` can show the current linked journal, suggested existing GL lines, and a `Create GL transaction` path when the row has enough categorization to build a balanced entry.
+   - Suggested GL lines are review candidates, not automatic matches. Compare account, amount, date, memo, and source context before linking.
+   - `Remove link` removes the journal association from the bank row. It does not delete the confirmed bank row, unconfirm it, unreconcile it, or clear statement metadata.
+   - `Create GL and link` uses the bank row details to create a linked journal only after the row has a valid target account or split.
 
 ## What Happens Next
 
@@ -85,7 +94,10 @@ The reviewed transaction is confirmed and removed from the pending queue.
 - Matching to an invoice or bill from Banking records the related customer receipt or bill payment as part of the confirm path. It does not silently accept overpayments.
 - Confirmed bank rows can carry either vendor or customer identity into linked journals and later review. A bank row does not need both party types.
 - A row with saved categorization can be ready to confirm even if a transient draft category cell is blank in the current Grid Edit session. Review the visible saved row state before assuming it is uncategorized.
+- Confirmed rows can later be resolved without returning them to `Pending` when the visible `Resolve` action is available.
+- Removing a GL link preserves the bank row and its reconciled state. Creating or linking GL from `Resolve` changes the accounting trail, so review it like any other posting-sensitive correction.
 - A later imported opposite side of a transfer can be adopted into an existing transfer or excluded as a duplicate counterpart instead of creating a second journal entry for the same transfer.
+- Ambiguous transfer evidence can require an explicit transfer-review choice instead of silently adopting or changing an existing transfer.
 - Likely-duplicate warnings during import do not post, delete, or skip a transaction by themselves. They are a pre-confirm review signal before the row reaches `Pending`.
 
 ## If Something Looks Wrong
@@ -101,6 +113,9 @@ The reviewed transaction is confirmed and removed from the pending queue.
 - Assuming transfer duplicate review depends only on matching description text. Linked transfer metadata can matter when SPRK recognizes a counterpart.
 - Trying to confirm or bulk-update selected Banking rows before applying draft Grid Edit changes.
 - Treating customer assignment as invoice matching. Customer assignment adds party context; invoice matching applies a payment to an open invoice.
+- Using `Resolve` as though it were a pending-row categorization action. It belongs to confirmed rows that need GL-link review.
+- Removing a GL link and expecting the bank row to disappear. The row stays confirmed unless you use a separate supported correction path.
+- Reusing a transfer candidate without checking whether it is reconciled or already tied to different source evidence.
 
 ## Business Scenario: Classify, Transfer, And Confirm Bank Activity
 

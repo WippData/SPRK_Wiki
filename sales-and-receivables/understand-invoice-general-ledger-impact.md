@@ -2,7 +2,7 @@
 
 ![General Ledger report showing invoice-related receivables activity](../screenshots/reports-and-financial-review/general-ledger-report-populated-step-01.png)
 
-Understand how invoice creation, receivables account review, customer and item defaults, customer terms, Open status recognition, aging review, and payment receipt affect the general ledger and receivables review in SPRK.
+Understand how invoice creation, `Receive to` routing, customer and item defaults, customer terms, Open status recognition, paid-now invoices, aging review, and payment receipt affect the general ledger and receivables review in SPRK.
 
 ## When To Use This
 
@@ -16,33 +16,43 @@ Use this article when you need to understand what SPRK currently posts to the ge
 ## Steps
 
 1. Treat `Draft` and `Open` as different accounting states.
-2. Use `Open` when you want SPRK to recognize the receivable.
-3. Review the invoice `AR Account` before the invoice moves to `Open`.
-4. Treat customer `Terms`, invoice `Due Date`, and item defaults as setup and timing data, not as the posting trigger.
-5. Use `Receive payment` when cash or bank has actually been collected.
-6. Verify the resulting status and balance in `Invoices`.
-7. If you need to validate the posting, inspect the related activity in `Ledger`.
-8. If you need collection follow-up, use receivables aging to review invoice terms, due dates, and overdue timing after the invoice is already posted.
+2. Use `Open` when you want SPRK to post the invoice through the selected `Receive to` route instead of keeping it unposted as a draft.
+3. Review `Receive to` before the invoice posts.
+4. Use an Accounts Receivable control account in `Receive to` when the invoice should remain open until payment is recorded.
+5. Use a cash, bank, or credit-card settlement account in `Receive to` only when the invoice is being recorded as paid immediately.
+6. Review `Default income account` and each line `Income account`; the line accounts are the posting source of truth.
+7. Treat customer `Terms`, invoice `Due Date`, and item defaults as setup and timing data, not as the posting trigger.
+8. Use `Receive payment` when cash or bank is collected after an open receivable already exists.
+9. Verify the resulting status and balance in `Invoices`.
+10. If you need to validate the posting, inspect the related activity in `Ledger`.
+11. If you need collection follow-up, use receivables aging to review invoice terms, due dates, and overdue timing after the invoice is already posted.
 
 ## What Happens Next
 
-Invoice posting behavior as of 2026-05-31:
+Invoice posting behavior:
 
 - Creating an invoice as `Draft` does not post a journal entry.
-- Creating an invoice as `Open`, or updating an existing invoice from a non-open status to `Open`, posts one recognition journal entry.
-- Recording a payment through `Receive payment` posts a separate payment journal entry and updates the invoice balance.
+- Creating an invoice as `Open`, or updating an existing invoice from a non-open status to `Open`, posts according to the `Receive to` routing and the line income accounts.
+- Recording a payment through `Receive payment` posts a separate payment journal entry and updates the invoice balance when the invoice is on the open receivables path.
+- Recording a paid-now invoice with a settlement account in `Receive to` posts directly between the selected settlement account and the invoice income lines.
 
-Current invoice recognition entry when an invoice becomes `Open`:
+Open accrual invoice recognition when `Receive to` is an Accounts Receivable control account:
 
-- Debit `Accounts Receivable` for the full invoice total
-- Credit a single income account for the full invoice total
+- Debit the selected Accounts Receivable control account for the invoice total.
+- Credit each line's `Income account` for that line amount.
+
+Paid-now invoice posting when `Receive to` is a non-control cash, bank, or credit-card settlement account:
+
+- Debit the selected settlement account.
+- Credit each line's `Income account`.
+- The invoice does not remain open as an unpaid receivable.
 
 Current payment entry when a payment is recorded:
 
 - Debit the selected `Deposit to` account
-- Credit `Accounts Receivable`
+- Credit the receivable account carried by the open invoice
 
-Customer terms, customer credit settings, and item defaults affect setup and follow-up, but they do not change the basic journal pattern above. Their main downstream effect is on invoice terms, due-date defaults, data consistency, and receivables aging review.
+Customer terms, customer credit settings, company invoice defaults, and item defaults affect setup and follow-up, but they do not replace routing and line-account review. Their main downstream effect is on invoice terms, due-date defaults, starting workflow status, data consistency, and receivables aging review.
 
 Current aging behavior:
 
@@ -59,9 +69,10 @@ Current status behavior when a payment is recorded:
 ## If Something Looks Wrong
 
 - Marking an invoice `Paid` by editing status instead of using `Receive payment`. The payment posting logic is tied to the payment workflow, not a manual status change.
-- Assuming customer payment terms or credit settings change the journal entry pattern. They do not.
-- Assuming item-level income account selections currently drive the invoice journal entry. SPRK currently credits one resolved income account for the whole invoice.
-- Assuming customer or item defaults automatically replace the need to review the receivables account on each invoice.
+- Assuming customer payment terms or credit settings choose the posting route. They do not.
+- Assuming the header `Default income account` is the final posting source when line accounts have been filled. The line-level `Income account` controls the revenue side.
+- Assuming customer, company, or item defaults automatically replace the need to review `Receive to` and line income accounts on each invoice.
+- Choosing a settlement account in `Receive to` when you wanted an open receivable.
 - Assuming tax is posted to a separate liability account. The current invoice recognition logic credits the full total to the income side.
 - Assuming customer credit settings automatically stop or post invoice activity. Use them as setup and review signals, then follow the visible invoice workflow.
 - Assuming invoice voiding deletes the original invoice or original journal. A successful `Void invoice` posts a reversal, moves the invoice to `Void`, zeroes the balance, and preserves audit details.
