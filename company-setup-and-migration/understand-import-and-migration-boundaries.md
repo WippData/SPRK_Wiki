@@ -12,7 +12,8 @@ Use this article when you are planning a client migration, comparing import opti
 
 - Bank import has the strongest public review path: choose an account, import a file, review pending rows, resolve categories/vendors where available, watch duplicate warnings, then confirm selected rows.
 - Journal import uses the `Ledger` import path with a preview before posting. Preview alone does not post.
-- Invoice and bill imports can support grouped document data where available, but review them carefully because each import path has its own confirmation and correction expectations.
+- Invoice and bill imports can support grouped document data where available. Review `Receive to`, `Pay from`, default line-account headers, line accounts, statuses, quantities, and duplicate document numbers before confirming.
+- Invoice and bill imports can create accrual documents or paid-now documents depending on the control-account versus settlement-account routing in the file.
 - The Import Wizard is the broadest setup path for mixed company data. Direct `QuickBooks Online ZIP` and `QuickBooks Desktop IIF` paths are narrower and should not be described as perfect historical migrations.
 - Company File export/import is the SPRK-to-SPRK handoff path once the source company already exists in SPRK.
 - After any import, review chart of accounts, opening balances, customers, vendors, items, unpaid invoices, unpaid bills, bank activity, reconciliation status, and reports.
@@ -36,6 +37,9 @@ You can choose an import path without over-reading its guarantees.
 
 - Preview and template-download steps do not post entries.
 - Confirmed bank rows, opened invoices or bills, and committed journal batches can affect the ledger according to their workflow.
+- Imported documents that use cash, bank, or credit-card settlement routing can post as paid-now activity instead of remaining open AR/AP balances.
+- Rule imports can use plain-text or JSON conditions and actions, but an empty or unresolved preview is still a stop point.
+- Journal imports can resolve readable account labels, including code-plus-name labels, but unknown accounts and invalid previews still block posting.
 - Failed or blocked previews should not be treated as posted accounting activity.
 - Direct QuickBooks imports are setup aids, not a promise that every historical QuickBooks transaction type is recreated perfectly.
 
@@ -44,6 +48,8 @@ You can choose an import path without over-reading its guarantees.
 - Assuming every import path has the same duplicate review, confirmation, or correction options.
 - Treating a public sample or downloaded template as a required production format instead of a starting point.
 - Skipping post-import review because the file uploaded successfully.
+- Assuming grouped invoice or bill rows are safe to retry without checking duplicate-number errors.
+- Treating a paid-now settlement account as though it also leaves an open receivable or payable.
 - Using Company File language for ordinary bank, journal, invoice, or bill imports.
 
 ## Related

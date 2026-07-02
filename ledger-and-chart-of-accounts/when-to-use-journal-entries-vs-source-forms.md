@@ -13,8 +13,10 @@ Use this guidance before posting a manual journal entry for activity that might 
 | Accounting need | Better starting point | Why |
 | --- | --- | --- |
 | Bill a customer | `Invoices` | Keeps customer balance, invoice status, payment history, and revenue detail together |
+| Record a customer sale already paid at creation | `Invoices` with settlement `Receive to` | Posts through the source invoice while settling directly to cash, bank, or credit card |
 | Receive money from a customer invoice | `Receive Payment` | Applies payment to AR instead of bypassing the customer balance |
 | Enter a vendor bill | `Bills` | Keeps AP aging, vendor balance, payment status, and expense detail together |
+| Record a vendor bill already paid at creation | `Bills` with settlement `Pay from` | Posts through the source bill while settling directly to cash, bank, or credit card |
 | Pay a vendor by check | `Checks` or bill payment workflow | Keeps payment records connected to vendor and bank activity |
 | Classify imported bank activity | `Banking` | Keeps bank review, rules, reconciliation, and ledger posting connected |
 | Record accruals, reclasses, owner entries, allocations, or accountant adjustments | `Ledger` journal entry | These usually do not belong to a customer invoice, vendor bill, payment, or bank import row |
@@ -51,6 +53,7 @@ Use this guidance before posting a manual journal entry for activity that might 
 
 - Do not use journal entries to bypass AR or AP unless you intentionally do not want customer or vendor subledger tracking.
 - Do not post directly to control accounts if the company is configured to use source workflows for those accounts.
+- Use invoice `Receive to` and bill `Pay from` routing when a source document should post through AR/AP or settle immediately. Do not recreate those source-document postings with a manual journal unless you are intentionally outside the customer or vendor workflow.
 - Do not classify bank activity with a journal entry when the transaction is waiting in Banking.
 - Do not use source forms for pure accountant adjustments that do not involve a customer, vendor, bank transaction, or item.
 

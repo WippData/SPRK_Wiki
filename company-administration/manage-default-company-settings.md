@@ -41,11 +41,14 @@ Bulk apply updates `Required account fields`, `Journal entries`, and `Reconcilia
 
 The `Defaults` tab requires a valid tenant license before defaults can be saved or applied.
 
+These tenant defaults are separate from per-company invoice presentation settings such as `Sales / Invoicing`, company contact fields, `Payment Instructions`, and `Item identification`. Edit those on the company record when you want to change new-invoice defaults, printed invoice content, or item-label presentation for a specific company.
+
 ## If Something Looks Wrong
 
 - If `Defaults` is missing, confirm the tenant license and workspace access.
 - If `Save defaults` or apply actions are disabled, confirm a valid tenant license is active.
 - If account codes disappear after applying defaults, check whether `Required account fields` is set to `Name` only.
+- If invoice terms, invoice workflow status, printed contact fields, payment instructions, or item-number visibility look wrong, review the specific company record instead of the tenant `Defaults` tab.
 - If a company should keep a different edit policy, do not include it in `Apply to selected` and avoid `Apply to all`.
 
 ## Related

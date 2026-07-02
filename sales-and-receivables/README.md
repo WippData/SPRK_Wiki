@@ -1,6 +1,6 @@
 # Sales and Receivables
 
-Set up customers and items, create invoices with item number/SKU lines, receive payments, and review accounts receivable before reporting.
+Set up customers and items, create invoices with the right item presentation and account routing, receive payments, print customer-facing invoices, and review accounts receivable before reporting.
 
 ![Items list showing Item Number / SKU setup for receivables workflows](../screenshots/sales-and-receivables/items-item-number-sku-step-01.png)
 

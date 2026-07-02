@@ -4,6 +4,8 @@ Run transaction detail from the `Reports` page, narrow the results to the accoun
 
 ![General Ledger report account selector showing account ordering controlled by Preferences](../screenshots/reports-and-financial-review/general-ledger-account-selector-sorting-step-01.png)
 
+![General Ledger report table showing transaction detail columns and column-control gear](../screenshots/reports-and-financial-review/general-ledger-column-controls-step-01.png)
+
 ## When To Use This
 
 Use this workflow when you need transaction-level report detail for an account, subtype, or ledger slice and need to send the results to a client or reviewer as a spreadsheet or PDF.
@@ -33,10 +35,13 @@ Use this workflow when you need transaction-level report detail for an account, 
    - Confirm the date range is correct.
    - Confirm the report rows are limited to the account or ledger slice you intended.
    - Confirm the transaction dates, descriptions, accounts, debits, credits, balances, and any visible dimension columns match the review request.
-7. To create a spreadsheet file for the active report context, select `Export`.
-8. To create a PDF, select `Print`, then use the system print dialog to save or print the report as a PDF.
+7. Use the visible column controls on transaction-detail tables such as `General Ledger` and `Account Detail` when you need to hide, show, or reorder review columns before export or print.
+   - Treat column controls as a review-scope setting for the current report table.
+   - After changing visible columns, open the exported or printed file and confirm it contains the column set you intended.
+8. To create a spreadsheet file for the active report context, select `Export`.
+9. To create a PDF, select `Print`, then use the system print dialog to save or print the report as a PDF.
    - If you are working inside a register modal opened from vendor or account-detail review, `Export` and `Print` use the modal's current filtered rows and visible columns, not a broader report package.
-9. Open the exported or printed file and confirm it contains the expected filtered detail before sending it outside SPRK.
+10. Open the exported or printed file and confirm it contains the expected filtered detail before sending it outside SPRK.
    - Current General Ledger CSV exports include `Account Code`, `Account Name`, `Date`, `Entry #`, `Memo`, `Description`, `Name`, `Debit`, `Credit`, and `Balance`.
    - If the current report includes dimensions in the live table, confirm those dimensions are also present in the exported output where SPRK exposes them.
 
@@ -47,6 +52,7 @@ SPRK produces an outbound copy of the current report results for review outside 
 - Running the report does not post, edit, reverse, or reclassify journal entries.
 - Export and print actions do not change ledger balances.
 - The exported or printed file reflects the report filters in effect at the time you create it, rather than exporting unfiltered rows from other pages of the result set.
+- Transaction-detail column controls change the review table you are looking at; confirm exported or printed output after changing columns.
 - Register-level export and print reflect the open register context and title. They do not post, reverse, or reclassify ledger activity.
 - The visible Reports page exports or prints the active report context. Do not assume SPRK will create a multi-report package unless that action is visible in your app.
 - Report exports are review outputs, not tax filing, payroll filing, or statutory submission workflows.
@@ -58,6 +64,7 @@ SPRK produces an outbound copy of the current report results for review outside 
 - Assuming `Export` creates a PDF. Use `Print` and the system PDF option when you need a PDF.
 - Assuming `Export` creates a complete tax package or agency filing.
 - Sending the file before opening it and confirming the account and date range.
+- Hiding or showing report columns and then assuming the outbound file is correct without checking it.
 - Expecting an inactive or unavailable account to appear in every account selector.
 - Assuming another user's account selector order will match yours if your `Account dropdown sorting` preferences differ.
 

@@ -34,11 +34,13 @@ Use this workflow when you want to move from a report summary card, subtotal, to
 8. If the supporting detail opens in the shared register modal, use `Export` or `Print` when you need the exact filtered register rows outside SPRK.
    - Export and print use the current modal rows and visible columns.
    - `Print` opens a print-friendly table; use the system print dialog if you want a PDF.
-9. Use the drilldown filters if you need to narrow the supporting rows further:
+9. On transaction-detail report tables such as `General Ledger` or `Account Detail`, use the visible column controls when you need a narrower or reordered review table before output.
+   - Confirm the exported or printed file after changing visible columns.
+10. Use the drilldown filters if you need to narrow the supporting rows further:
    - Text filter for entry number, memo, description, or account.
    - Minimum and maximum amount filters.
    - Date modes `On`, `Before`, `After`, or `Between`.
-10. Close the drilldown window when you are done and return to the report.
+11. Close the drilldown window when you are done and return to the report.
 
 ## What Happens Next
 
@@ -48,6 +50,7 @@ SPRK opens a supporting-entry view for the selected account or account group and
 - Drilldown only exposes journal entries that are already posted in the ledger for that company and date context.
 - Report drilldown can open an edit path only when normal journal edit policy allows it; it does not bypass posting-window or audit controls.
 - Register-level `Export` and `Print` are output actions for the open detail view only.
+- Column controls tailor supported transaction-detail tables for review. They do not edit the underlying journal entries.
 - Closing the drilldown window leaves the underlying report and ledger unchanged.
 
 ## If Something Looks Wrong
@@ -55,6 +58,7 @@ SPRK opens a supporting-entry view for the selected account or account group and
 - Expecting every report card, total, subtotal, or row to be clickable. Drilldown only applies where SPRK exposes a supported non-zero target.
 - Assuming drilldown always edits the transaction you are viewing. It is primarily a review path, and editing remains conditional.
 - Forgetting that an as-of report uses detail up to the selected date, not only activity on that one date.
+- Assuming column visibility changes are accounting changes. They are presentation and output-review controls.
 
 ## Business Scenario: Report Drilldown To Journal Detail
 

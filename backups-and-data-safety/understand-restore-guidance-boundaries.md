@@ -19,8 +19,10 @@ Use this article when you want to know what SPRK publicly exposes today for back
 2. Select the `Backups` tab.
 3. Review the controls that are publicly visible: the automatic backup switch, schedule field, backup location field, status area, `Run Backup Now`, `Export Company File`, and `Import Company File`.
 4. Keep routine backup guidance separate from Company File handoff guidance.
-5. Confirm whether a database restore button, restore wizard, or restore-from-backup instructions are visible in the product.
-6. If no public database restore workflow is visible, keep restore-from-backup guidance limited to backup creation, backup location review, Company File import where visible, and support escalation for recovery questions.
+5. When reviewing backup location, remember that relative paths are resolved by the desktop runtime before backup files are written.
+6. Use a manual backup result or visible status message to confirm the resolved target path; do not invent a fixed operating-system path that the product does not show.
+7. Confirm whether a database restore button, restore wizard, or restore-from-backup instructions are visible in the product.
+8. If no public database restore workflow is visible, keep restore-from-backup guidance limited to backup creation, backup location review, Company File import where visible, and support escalation for recovery questions.
 
 ## What Happens Next
 
@@ -28,12 +30,14 @@ You can distinguish the visible backup and company-file tools from broader recov
 
 - Describing recovery boundaries does not affect the books.
 - Company File import is recovery-adjacent because it can bring in company data, but it should not be described as a general restore-from-backup wizard.
+- Relative backup path resolution tells users where files are written. It is not a restore workflow by itself.
 - Backup and restore guidance should never be described as changing ledger balances unless a future public workflow explicitly proves that behavior.
 
 ## If Something Looks Wrong
 
 - Following restore steps that are not visible in your installed SPRK app.
 - Assuming a backup file can be restored from the same screen without a visible restore control.
+- Assuming the raw saved backup location is always the final resolved path.
 - Assuming Company File import and full database restore are the same operation.
 - Blending support guidance with product steps that the user cannot currently perform.
 

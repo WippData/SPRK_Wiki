@@ -45,7 +45,11 @@ Use this workflow when you need to add, update, search, import, or review custom
    - Pending bank rows can offer customer choices alongside vendor choices where the current UI exposes grouped parties.
    - Banking import preview can resolve `Customer`, `Customer ID`, or shared `Customer/Vendor` style columns for inflow or sale rows.
    - `Add unknown customers (n)` creates setup records from unique unresolved customer names in the current import preview batch when you choose to use it.
-11. Use Grid Edit when post-import cleanup or repeated customer-field updates will be faster than opening one drawer at a time, then review the changed-cell count before selecting `Apply Changes`.
+11. When importing customers from QuickBooks Desktop data, review billing address fields after import.
+   - QuickBooks-style `BADDR1` through `BADDR5` values can be preserved as structured billing address data.
+   - SPRK can place the first billing line into address line 1, keep remaining non-city lines in address line 2, and parse a final `City, ST ZIP` line into city, state, and postal code when it is recognizable.
+   - Review any address that does not follow that pattern before using it on customer-facing invoices.
+12. Use Grid Edit when post-import cleanup or repeated customer-field updates will be faster than opening one drawer at a time, then review the changed-cell count before selecting `Apply Changes`.
 
 ## What Happens Next
 
@@ -62,6 +66,7 @@ Assigning a customer to a bank row adds party context. It is not the same as mat
 - Treating `Credit status` as a payment record. It is a setup signal, not the same thing as receiving money.
 - Assuming customer assignment from Banking applies money to an invoice. Customer assignment and invoice matching are separate actions.
 - Assuming customer setup alone finishes receivables preparation. Review item setup, invoice account review, and due-date defaults before opening invoices.
+- Assuming every imported multi-line billing address parses perfectly. Review address lines, city, state, and postal code after QuickBooks Desktop customer imports.
 
 ## Related
 

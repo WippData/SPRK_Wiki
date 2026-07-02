@@ -24,7 +24,7 @@ Use this article when you want a high-level map of the Banking page before impor
 2. Review the page header:
    - The page title is `Bank & Credit Import`.
    - `New` lets you enter a bank transaction manually.
-   - `Refresh` reloads the current account activity and pending suggestions.
+   - `Refresh` reloads the current account activity and pending suggestions. In builds where extra actions are grouped, look for refresh inside the page `More` menu.
    - `Import` opens the current bank-transaction import starter modal after you choose a bank or credit card account.
 3. Use the account cards near the top of the page to choose the bank or credit card account you want to work in:
    - SPRK can open a saved default account automatically when one is already set for the active company.
@@ -46,7 +46,7 @@ Use this article when you want a high-level map of the Banking page before impor
    - The transaction-type toggle supports `All`, `Expenses`, and `Deposits`.
    - Filters support description, amount, date, GL account/category, rule-applied status, and class filters when dimensions are enabled.
    - `Pending` shows transactions that still need review before posting.
-   - `Categorized` shows transactions that were already confirmed.
+   - `Categorized` shows transactions that were already confirmed. Confirmed rows can expose `Resolve` when their general-ledger link needs to be removed, relinked, or created from reviewed categorization.
 7. In the `Pending` tab, use the row-level fields and actions:
    - The party field is optional and can group choices under `Vendors` and `Customers` where the current UI exposes both.
    - `GL Account` selects the account for the other side of the journal entry. Some grid views still label this column `Category`; use it as the offset GL account.
@@ -55,6 +55,7 @@ Use this article when you want a high-level map of the Banking page before impor
    - `Match bank transaction` can connect eligible pending rows to open invoices, open bills, or existing checks when the row direction and document balance allow it.
    - Register-account pairings between bank, cash, or credit-card accounts use `Transfer` language instead of document-match language.
    - The primary action confirms the transaction once it is ready.
+   - Transfer confirmations can stop for review when SPRK finds a same-amount nearby transfer or another risky counterpart. Choose the existing transfer only when the evidence matches, or choose `Create separate transfer` when the row should remain independent.
 8. If you use `New` to enter a bank transaction manually:
    - `GL Account` is required before `Submit & Confirm` can post the transaction.
    - You can leave `GL Account` blank only when you are adding the row for later review instead of confirming it immediately.
@@ -76,6 +77,8 @@ You understand where to select the account, where imported files enter the workf
 - Draft Grid Edit cleanup remains a preparation step until the changes are applied, and applying Grid Edit changes still does not confirm the bank transaction by itself.
 - Reviewing a bank-import preview, skipping likely duplicate rows, and restoring rows before import are preparation steps only.
 - General ledger posting happens when a pending transaction is confirmed.
+- `Resolve` on `Categorized` rows is a confirmed-row repair path. It can remove a journal link, link to a suggested existing GL line, or create and link a new GL transaction when the bank row has enough categorization.
+- Removing a GL link from Banking preserves the confirmed bank row and does not erase reconciliation or statement metadata.
 
 ## If Something Looks Wrong
 
@@ -86,6 +89,8 @@ You understand where to select the account, where imported files enter the workf
 - Treating the import preview as an immediate batch load instead of a review-and-selection step.
 - Relying on the wrong saved default account when you switch between multiple bank or credit card accounts.
 - Mixing unapplied Grid Edit changes with bulk Banking actions instead of applying the draft changes first.
+- Treating suggested GL lines in `Resolve GL link` as guaranteed matches. They are candidates for review.
+- Reusing an existing transfer during conflict review without checking the candidate amount, account, date, reconciliation state, and memo.
 
 ## Related
 
