@@ -4,37 +4,33 @@ Use the `License` area to review the current usage table and understand which pr
 
 ![License page showing the Tenant Stats usage table and visibility note](../screenshots/licensing/usage-limits-step-01.png)
 
-## When To Use This
+## Quick Reference
 
-Use this workflow when you want to understand what the visible usage values and limits mean before deciding whether you need to add a license.
+| Item | Meaning | Where It Matters |
+|---|---|---|
+| `Tenant Stats` | Workspace-wide usage values shown in the `License` area. | Use it to understand current usage context before adding companies. |
+| `Metric` | The usage category SPRK is reporting. | Review it before comparing a value to a limit. |
+| `Value` | The current visible count or usage amount. | Use it to see where the workspace currently stands. |
+| `Limit` | The visible allowance or threshold for that metric. | Use it to understand when a setup action may need a license. |
+| First real company note | Explains that the first real company is free and demo companies do not count toward that allowance. | Review it before deciding whether a license is needed for another real company. |
+| Upgrade or add-license prompt | A setup message tied most clearly to creating another real company after the free allowance is used. | Use it as an access/setup signal, not as an accounting entry. |
 
-## Before You Start
+## Details
 
-- You are signed in to SPRK.
-- At least one company is available so the usage table can load.
+Open `License` from the `System` section to review the saved license status, purchase link when shown, fine print, and `Tenant Stats` table.
 
-## Steps
+Usage values are visibility information. They do not post to the general ledger, change balances, or create accounting entries.
 
-1. Open `License` from the `System` section in the sidebar.
-2. Scroll to the `Tenant Stats` table.
-3. Review each row’s `Metric`, `Value`, and `Limit`.
-4. Read the note below the table that explains your first real company is free and that demo companies do not count toward that allowance.
-5. Read the note that usage stats are provided for visibility.
-6. Use this page together with company-creation workflows if you need to understand whether adding another real company may require a license.
-
-## What Happens Next
-
-You can interpret the current usage table as a workspace-wide visibility tool and understand that the main published licensing prompt is tied to creating additional real companies after the free allowance is used.
-
-- Reviewing usage values does not create or reverse an accounting transaction.
-- Reaching a visible limit in the table does not by itself post anything to the general ledger.
-- License prompts affect what setup actions are available, not the balances in your books.
+License prompts affect setup and access decisions. If you are creating another real company, review the company-creation workflow together with the licensing page.
 
 ## If Something Looks Wrong
 
-- Reading the usage table as a per-company limit when it is presented for the workspace as a whole.
-- Assuming every visible limit blocks daily accounting work.
-- Confusing demo companies with real companies when reading the free-company note.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| A usage value looks higher than expected | Whether the table is showing workspace-wide usage | Review the metric name and compare it to the visible limit. |
+| A limit appears in the table but daily work still opens | Whether the limit applies to setup activity rather than existing accounting workflows | Continue normal work unless SPRK shows a specific prompt for the action you are taking. |
+| A company count does not match expectations | Whether demo companies are included in your mental count | Review the free-company note before creating another real company. |
+| A license prompt appears during company creation | Whether the workspace has already used the free real-company allowance | Add a license or adjust the setup plan before continuing. |
 
 ## Related
 

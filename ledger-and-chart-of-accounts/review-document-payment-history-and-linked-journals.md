@@ -32,17 +32,18 @@ You can explain why a receivable or payable balance changed and where to inspect
 
 ## If Something Looks Wrong
 
-- Treating payment history as an edit screen.
-- Assuming bank-side matching and document-side payment review are the same workflow.
-- Deleting a document or journal entry when the correct workflow is payment reversal, voiding, or posted-document correction.
-- Assuming every linked journal is editable or reversible from every entry point.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| Two similar workflows or fields are easy to mix up | Treating payment history as an edit screen | Use the specific workflow or control named on this page |
+| The result looks ready, but a key check is unresolved | Assuming bank-side matching and document-side payment review are the same workflow | Verify the visible SPRK state before continuing |
+| The result does not match what you expected | Deleting a document or journal entry when the correct workflow is payment reversal, voiding, or posted-document correction | Review the visible state and use the related workflow before continuing |
+| The result looks ready, but a key check is unresolved | Assuming every linked journal is editable or reversible from every entry point | Verify the visible SPRK state before continuing |
 
-## Business Scenario: Source Document Audit Trail
+## Practice And Examples
 
-Use this scenario to train reviewers to move from a source document to payment history and linked journals without changing the document.
+Use the practice file and screenshots to review payment history and linked journals from invoices and bills without changing the source document.
 
-- Sample file: [11-document-payment-history-linked-journals.csv](../sample-files/v1-validation/11-document-payment-history-linked-journals.csv)
-- Evidence:
+- Practice file: [document-payment-history-linked-journals.csv](../sample-files/practice/document-payment-history-linked-journals.csv)
 
 ![Invoice payment history showing payment application details](../screenshots/v1-validation/invoice-payment-history.png)
 
@@ -52,7 +53,7 @@ Use this scenario to train reviewers to move from a source document to payment h
 
 ![Bill linked journal entries showing the payable posting trail](../screenshots/v1-validation/bill-linked-journal-entries.png)
 
-The walkthrough confirmed that both invoice and bill source documents expose payment history and linked journal review directly from their action menus.
+Invoice and bill action menus include payment-history and linked-journal review surfaces.
 
 ## Related
 

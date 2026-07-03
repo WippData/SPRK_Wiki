@@ -55,23 +55,24 @@ SPRK opens a supporting-entry view for the selected account or account group and
 
 ## If Something Looks Wrong
 
-- Expecting every report card, total, subtotal, or row to be clickable. Drilldown only applies where SPRK exposes a supported non-zero target.
-- Assuming drilldown always edits the transaction you are viewing. It is primarily a review path, and editing remains conditional.
-- Forgetting that an as-of report uses detail up to the selected date, not only activity on that one date.
-- Assuming column visibility changes are accounting changes. They are presentation and output-review controls.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The page does not show the expected result | Expecting every report card, total, subtotal, or row to be clickable | Drilldown only applies where SPRK exposes a supported non-zero target |
+| The result looks ready, but a key check is unresolved | Assuming drilldown always edits the transaction you are viewing | It is primarily a review path, and editing remains conditional |
+| A needed review step is missing | Forgetting that an as-of report uses detail up to the selected date, not only activity on that one date | Go back to that check before continuing |
+| The result looks ready, but a key check is unresolved | Assuming column visibility changes are accounting changes | They are presentation and output-review controls |
 
-## Business Scenario: Report Drilldown To Journal Detail
+## Practice And Examples
 
-Use this scenario to train reviewers to move from a report row into supporting journal entries without changing the original posting.
+Use the practice file and screenshots to review how report rows open supporting journal-entry detail without changing the original posting.
 
-- Sample file: [20-report-drilldown-transaction-export.csv](../sample-files/v1-validation/20-report-drilldown-transaction-export.csv)
-- Evidence:
+- Practice file: [report-drilldown-transaction-export.csv](../sample-files/practice/report-drilldown-transaction-export.csv)
 
 ![General Ledger report rows available for detail review](../screenshots/v1-validation/reports-general-ledger-drilldown-rows.png)
 
 ![Journal-entry drilldown modal opened from a report row](../screenshots/v1-validation/reports-journal-entry-drilldown-modal.png)
 
-The walkthrough confirmed that report drilldown is a review path and that the journal preview keeps the underlying entry separate from the report itself.
+Report drilldown is a review path, and the journal preview keeps the underlying entry separate from the report itself.
 
 ## Related
 

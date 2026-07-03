@@ -57,27 +57,28 @@ Customer payment terms and credit settings can help you review receivables befor
 
 ## If Something Looks Wrong
 
-- Editing the invoice status to `Paid` instead of using `Receive payment`.
-- Assuming customer credit settings or invoice terms collect the payment automatically.
-- Forgetting to choose `Deposit to`.
-- Creating a missing `Deposit to` account inline and assuming that saved the payment too.
-- Entering an amount greater than the remaining balance.
-- Expecting a disabled dollar action on a paid invoice to reopen payment entry.
-- Recording a payment manually and then matching the same bank transaction as another payment.
-- Treating payment history as an edit screen.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You are about to take an action that may affect the result | Editing the invoice status to `Paid` instead of using `Receive payment` | Confirm the visible company, page, and workflow state before continuing |
+| The result looks ready, but a key check is unresolved | Assuming customer credit settings or invoice terms collect the payment automatically | Verify the visible SPRK state before continuing |
+| A needed review step is missing | Forgetting to choose `Deposit to` | Go back to that check before continuing |
+| You are about to take an action that may affect the result | Creating a missing `Deposit to` account inline and assuming that saved the payment too | Confirm the visible company, page, and workflow state before continuing |
+| The entered value or selection does not produce the expected result | Entering an amount greater than the remaining balance | Correct the value or selection before continuing |
+| The page does not show the expected result | Expecting a disabled dollar action on a paid invoice to reopen payment entry | Review the visible action or related workflow before continuing |
+| You are about to take an action that may affect the result | Recording a payment manually and then matching the same bank transaction as another payment | Confirm the visible company, page, and workflow state before continuing |
+| Two similar workflows or fields are easy to mix up | Treating payment history as an edit screen | Use the specific workflow or control named on this page |
 
-## Business Scenario: Customer Payment Review
+## Practice And Examples
 
-Use this scenario to train staff on the difference between recording a payment, matching a bank deposit, and reviewing payment history after the invoice balance changes.
+Use the practice file and screenshots to compare recording a payment, matching a bank deposit, and reviewing payment history after the invoice balance changes.
 
-- Sample file: [10-bank-deposit-invoice-match.csv](../sample-files/v1-validation/10-bank-deposit-invoice-match.csv)
-- Evidence:
+- Practice file: [bank-deposit-invoice-match.csv](../sample-files/practice/bank-deposit-invoice-match.csv)
 
 ![Invoice payment history showing recorded payment details](../screenshots/v1-validation/invoice-payment-history.png)
 
 ![Invoice linked journal entries showing the accounting trail](../screenshots/v1-validation/invoice-linked-journal-entries.png)
 
-The walkthrough confirmed that payment history and linked journals are review surfaces, not edit screens, and that the invoice action menu keeps payment review close to the source document.
+Payment history and linked journals are review surfaces, not edit screens. The invoice action menu keeps payment review close to the source document.
 
 ## Related
 

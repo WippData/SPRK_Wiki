@@ -38,9 +38,11 @@ The bank line is either linked to the correct check or returned to an unmatched 
 
 ## If Something Looks Wrong
 
-- Matching a bank line only by amount without checking date or check number.
-- Assuming matching alone finishes reconciliation.
-- Trying to use `Unmatch` after the linked check is already in a cleared state.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The result does not match what you expected | Matching a bank line only by amount without checking date or check number | Review the visible state and use the related workflow before continuing |
+| The result looks ready, but a key check is unresolved | Assuming matching alone finishes reconciliation | Verify the visible SPRK state before continuing |
+| The action is unavailable or does not complete | Trying to use `Unmatch` after the linked check is already in a cleared state | Use the supported prerequisite or correction path first |
 
 ## Related
 

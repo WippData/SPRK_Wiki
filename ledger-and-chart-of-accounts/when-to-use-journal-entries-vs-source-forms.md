@@ -1,61 +1,42 @@
-# When To Use Journal Entries vs Source Forms
+# Choose Between Journal Entries and Source Workflows
 
-![New journal entry drawer showing balanced manual journal entry fields](../screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png)
+Use this page to choose whether an accounting event belongs in invoices, bills, checks, banking, or a manual journal entry.
 
-Use this page to decide whether an accounting entry belongs in a source workflow such as invoices, bills, checks, banking, or in a manual journal entry.
+Journal entries affect the ledger, but they do not manage customer invoices, vendor bills, payment history, or bank review by themselves.
 
-## When To Use This
+## Use This Page When
 
-Use this guidance before posting a manual journal entry for activity that might belong to AR, AP, banking, or another workflow.
+Review this decision before posting a manual journal entry for activity that might belong to accounts receivable, accounts payable, banking, checks, or another source workflow.
 
-## Quick Decision Table
+## Choose This Path If
 
-| Accounting need | Better starting point | Why |
-| --- | --- | --- |
-| Bill a customer | `Invoices` | Keeps customer balance, invoice status, payment history, and revenue detail together |
-| Record a customer sale already paid at creation | `Invoices` with settlement `Receive to` | Posts through the source invoice while settling directly to cash, bank, or credit card |
-| Receive money from a customer invoice | `Receive Payment` | Applies payment to AR instead of bypassing the customer balance |
-| Enter a vendor bill | `Bills` | Keeps AP aging, vendor balance, payment status, and expense detail together |
-| Record a vendor bill already paid at creation | `Bills` with settlement `Pay from` | Posts through the source bill while settling directly to cash, bank, or credit card |
-| Pay a vendor by check | `Checks` or bill payment workflow | Keeps payment records connected to vendor and bank activity |
-| Classify imported bank activity | `Banking` | Keeps bank review, rules, reconciliation, and ledger posting connected |
-| Record accruals, reclasses, owner entries, allocations, or accountant adjustments | `Ledger` journal entry | These usually do not belong to a customer invoice, vendor bill, payment, or bank import row |
-| Reverse a manual adjustment | `Ledger` reversal | Preserves history and offsets the original journal |
+| Goal | Use | Check First |
+|---|---|---|
+| Bill a customer | [Create and open invoices](../sales-and-receivables/create-and-open-invoices.md) | The invoice should carry customer balance, status, due date, revenue lines, and payment history. |
+| Record a customer sale that is paid immediately | [Create and open invoices](../sales-and-receivables/create-and-open-invoices.md) with a settlement account in `Receive to` | The sale should settle directly instead of remaining as an open receivable. |
+| Receive money from an existing customer invoice | [Receive invoice payments](../sales-and-receivables/receive-invoice-payments.md) | The payment belongs to an open invoice and should reduce the customer balance. |
+| Enter a vendor bill | [Create and manage bills](../expenses-and-payables/create-and-manage-bills.md) | The bill should carry vendor balance, due date, expense lines, and payment history. |
+| Record a vendor bill that is paid immediately | [Create and manage bills](../expenses-and-payables/create-and-manage-bills.md) with a settlement account in `Pay from` | The bill should settle directly instead of remaining as an open payable. |
+| Pay a vendor by check | [Work with checks](../expenses-and-payables/work-with-checks.md) or the bill payment action | The payment should stay connected to vendor, bank, and payment records. |
+| Classify imported bank activity | [Review and classify bank transactions](../banking-and-cash-management/review-and-classify-bank-transactions.md) | The row is waiting in Banking and should stay connected to bank review and reconciliation. |
+| Record accruals, reclasses, owner entries, allocations, or accountant adjustments | [Record journal entries](./record-journal-entries.md) | The event does not belong to a customer, vendor, payment, check, or bank-review workflow. |
+| Correct an existing accounting record | [Common accountant corrections](./common-accountant-corrections.md) | The original source, posting state, payment state, and audit trail are understood before choosing a correction path. |
 
-## Steps
+## Before You Commit
 
-1. Ask what real-world event you are recording.
-2. If the event involves a customer invoice or payment, start in receivables.
-3. If the event involves a vendor bill or payment, start in payables.
-4. If the event came from a bank or credit card statement, start in banking.
-5. If the event is an accountant adjustment, accrual, deferral, reclass, allocation, or owner/equity entry, use a journal entry.
-6. If the original record already exists, correct it in the source workflow when possible.
-7. If the original record needs to remain visible and offset, use a reversal or correcting entry.
-8. Rerun reports after the correction so you can confirm both the balance and supporting detail look right.
+- Before posting a journal entry, confirm the real-world event you are recording.
+- Check whether a customer, vendor, bank transaction, check, invoice, bill, or payment record already exists for the event.
+- Review control-account routing before posting directly to Accounts Receivable or Accounts Payable.
+- Confirm the date, amount, account, customer, vendor, and supporting document before posting, paying, reversing, or correcting.
+- If the original record should remain visible and offset, use the supported reversal or correction workflow instead of overwriting the history.
 
-## Journal Entry Examples
+## What Not To Assume
 
-- Accrue an expense at month-end and reverse it next period.
-- Reclassify an amount between expense accounts when no source transaction should change.
-- Record owner contribution, owner draw, or equity activity.
-- Record depreciation, amortization, or allocation entries.
-- Correct a manual journal entry with a reversal or adjusting entry.
-
-## Source Form Examples
-
-- Create an invoice for a customer sale.
-- Receive a customer payment against an invoice.
-- Enter a vendor bill for AP tracking.
-- Pay a bill or write a check.
-- Confirm a bank transaction imported from a bank statement.
-
-## If Something Looks Wrong
-
-- Do not use journal entries to bypass AR or AP unless you intentionally do not want customer or vendor subledger tracking.
-- Do not post directly to control accounts if the company is configured to use source workflows for those accounts.
-- Use invoice `Receive to` and bill `Pay from` routing when a source document should post through AR/AP or settle immediately. Do not recreate those source-document postings with a manual journal unless you are intentionally outside the customer or vendor workflow.
-- Do not classify bank activity with a journal entry when the transaction is waiting in Banking.
-- Do not use source forms for pure accountant adjustments that do not involve a customer, vendor, bank transaction, or item.
+- A journal entry does not update invoice status, bill status, customer balance detail, vendor balance detail, or payment history by itself.
+- Source workflows are not the right place for pure accountant adjustments that do not involve a customer, vendor, bank transaction, check, item, or payment record.
+- A bank statement row waiting in Banking should not be replaced with a manual journal unless you intentionally want separate ledger activity outside bank review.
+- `Receive to` on invoices and `Pay from` on bills choose the document's posting path. They should not be recreated with a separate manual journal unless the source workflow is intentionally not being used.
+- Control accounts may be restricted from manual journal entry so AR and AP activity stays tied to source workflows.
 
 ## Related
 

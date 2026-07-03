@@ -34,9 +34,11 @@ You can see the publicly supported company management actions in one place, incl
 
 ## If Something Looks Wrong
 
-- Looking for company maintenance under `Preferences` or another settings tab.
-- Assuming archived companies disappear from filters permanently.
-- Using the `New Company` menu when you only meant to switch the active company.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You cannot find the expected page, action, or result | Looking for company maintenance under `Preferences` or another settings tab | Use the visible navigation or related workflow named on this page |
+| The result looks ready, but a key check is unresolved | Assuming archived companies disappear from filters permanently | Verify the visible SPRK state before continuing |
+| The current page does not fit the task | Using the `New Company` menu when you only meant to switch the active company | Return to the workflow this page supports |
 
 ## Related
 

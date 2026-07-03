@@ -13,11 +13,11 @@ Plugins are a beta feature. Use these articles when your workspace has plugin ac
 
 ## What To Know First
 
-Plugins (Beta) are admin-managed additions to SPRK. Installing or enabling a plugin can add pages to navigation or report sources when the plugin is runtime-compatible, but it does not post accounting activity by itself.
+Plugins (Beta) are admin-managed additions to SPRK. Installing or enabling a plugin can add pages to navigation or report sources when the plugin is compatible with the visible SPRK page or report surface, but it does not post accounting activity by itself.
 
 Only install plugin bundles from sources your firm trusts. If SPRK shows a warning while previewing a plugin, stop and review it before continuing.
 
-Installed does not always mean visible. A plugin card can show lifecycle and runtime states that explain whether the plugin is enabled, blocked, pilot-only, hidden by capability, or has no runtime page.
+Installed does not always mean visible. A plugin card can show status tags that explain whether the plugin is enabled, blocked, pilot-only, hidden by capability, or has no visible page.
 
 ## Related
 

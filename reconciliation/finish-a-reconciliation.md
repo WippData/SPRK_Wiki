@@ -37,6 +37,7 @@ SPRK finalizes the reconciliation for the selected statement window.
 
 - Finishing a reconciliation does not create a new journal entry in the general ledger.
 - SPRK creates a posted reconciliation record for the account and statement ending date.
+- The posted statement ending balance becomes the beginning balance source for later reconciliations on the same account.
 - Each selected confirmed bank transaction is stamped as reconciled, tied to that reconciliation record, and marked with a cleared date and statement end date.
 - SPRK requires the difference to be zero for reconciliations with prior history.
 - Later reconciliations can finish with no selected transactions when the carried opening balance already equals the statement ending balance.
@@ -44,11 +45,13 @@ SPRK finalizes the reconciliation for the selected statement window.
 
 ## If Something Looks Wrong
 
-- Trying to finish while the difference is not zero.
-- Clearing transactions from the wrong account.
-- Expecting pending bank transactions to be available for final clearing.
-- Selecting a row just to finish a quiet statement period when the beginning and ending balances already match.
-- Assuming reconciliation changes the original account coding of a confirmed bank transaction.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The action is unavailable or does not complete | Trying to finish while the difference is not zero | Use the supported prerequisite or correction path first |
+| You are about to take an action that may affect the result | Clearing transactions from the wrong account | Confirm the visible company, page, and workflow state before continuing |
+| The page does not show the expected result | Expecting pending bank transactions to be available for final clearing | Review the visible action or related workflow before continuing |
+| The entered value or selection does not produce the expected result | Selecting a row just to finish a quiet statement period when the beginning and ending balances already match | Correct the value or selection before continuing |
+| The result looks ready, but a key check is unresolved | Assuming reconciliation changes the original account coding of a confirmed bank transaction | Verify the visible SPRK state before continuing |
 
 ## Related
 

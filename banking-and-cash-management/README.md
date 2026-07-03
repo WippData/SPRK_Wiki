@@ -9,7 +9,12 @@ Import bank activity, review likely duplicates before rows enter pending review,
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Choose bank and credit card accounts](./choose-bank-and-credit-card-accounts.md)
 - [Review and classify bank transactions](./review-and-classify-bank-transactions.md)
+- [Classify bank transactions](./classify-bank-transactions.md)
+- [Match bank transactions](./match-bank-transactions.md)
+- [Review bank transfers](./review-bank-transfers.md)
+- [Resolve confirmed bank transactions](./resolve-confirmed-bank-transactions.md)
 - [Create and manage rules](./create-and-manage-rules.md)
+- [Import banking rules](./import-banking-rules.md)
 - [Import bank transactions](./import-bank-transactions.md)
 
 ## Related Review Workflows

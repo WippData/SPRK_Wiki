@@ -6,7 +6,7 @@ Use this checklist to orient a small-business accounting or bookkeeping firm thr
 
 ## When To Use This
 
-Use this workflow when you need a high-level sequence from company creation or import through bank review, reconciliation, reporting, and company handoff.
+Use this workflow when you need a high-level sequence from company creation or import through bank review, reconciliation, reporting, and company transfer.
 
 ## Steps
 
@@ -23,14 +23,14 @@ Use this workflow when you need a high-level sequence from company creation or i
 11. Run the core reports: trial balance, income statement, balance sheet, cash flow, general ledger, account detail, aging reports, expense by vendor, and reconciliation report where relevant.
 12. Export or print review outputs when needed.
 13. Configure backup settings.
-14. Export a `Company file` when the firm needs a company-level handoff or safekeeping file.
+14. Export a `Company file` when the firm needs a company-level transfer or safekeeping file.
 15. Start a checklist run if the client needs a recurring close or review cadence.
 
 ## Boundaries
 
 - This is workflow orientation, not accounting, tax, payroll, or legal advice.
 - SPRK 1.0 guidance is aimed at accounting and bookkeeping firms serving small businesses, not enterprise ERP, payroll tax filing, tax agency filing, full multi-currency/FX, advanced inventory costing, or perfect historical QuickBooks migration.
-- Use a Company File for SPRK-to-SPRK handoff; use import paths for setup and transaction data that originate outside SPRK.
+- Use a Company File for SPRK-to-SPRK transfer; use import paths for setup and transaction data that originate outside SPRK.
 
 ## Related
 

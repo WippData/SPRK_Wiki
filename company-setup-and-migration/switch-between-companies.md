@@ -28,10 +28,12 @@ The selected company becomes the active company across the app. New records, imp
 
 ## If Something Looks Wrong
 
-- Assuming opening the row is enough. You need to use the `Select` action to make a company active.
-- Forgetting to verify the active company before creating transactions or editing records.
-- Switching companies during setup work and then continuing in the wrong company by accident.
-- Assuming another browser window or session is using the same company without checking its own visible sidebar.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The result looks ready, but a key check is unresolved | Assuming opening the row is enough | You need to use the `Select` action to make a company active |
+| A needed review step is missing | Forgetting to verify the active company before creating transactions or editing records | Go back to that check before continuing |
+| You are about to take an action that may affect the result | Switching companies during setup work and then continuing in the wrong company by accident | Confirm the visible company, page, and workflow state before continuing |
+| The result looks ready, but a key check is unresolved | Assuming another browser window or session is using the same company without checking its own visible sidebar | Verify the visible SPRK state before continuing |
 
 ## Related
 

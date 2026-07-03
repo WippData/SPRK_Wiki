@@ -35,9 +35,11 @@ You can review the licensing details currently visible in SPRK, including whethe
 
 ## If Something Looks Wrong
 
-- Expecting the `License` area to show company-by-company accounting balances instead of tenant-wide license details.
-- Treating the usage table as a billing statement.
-- Assuming the absence of a `Valid License` message means your accounting data was changed.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The page does not show the expected result | Expecting the `License` area to show company-by-company accounting balances instead of tenant-wide license details | Review the visible action or related workflow before continuing |
+| Two similar workflows or fields are easy to mix up | Treating the usage table as a billing statement | Use the specific workflow or control named on this page |
+| The result looks ready, but a key check is unresolved | Assuming the absence of a `Valid License` message means your accounting data was changed | Verify the visible SPRK state before continuing |
 
 ## Related
 

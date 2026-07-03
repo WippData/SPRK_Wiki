@@ -1,65 +1,54 @@
 # Common Accountant Corrections
 
+Choose the correction path that preserves the source record, payment history, reconciliation state, and ledger trail.
+
 ![New journal entry drawer showing date, memo, account lines, debit and credit columns, totals, and reversing-entry controls](../screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png)
 
-Use this page to choose the right correction path when a transaction has the wrong account, date, customer, vendor, payment status, or posting method.
+## Use This Page When
 
-## When To Use This
+Use this page when review work finds the wrong account, date, customer, vendor, payment status, or posting method and you need to decide where the correction belongs.
 
-Use this workflow when review work finds something that needs to be fixed and you need to decide whether to edit the source record, reclassify a bank transaction, reverse a journal entry, or create a new adjusting entry.
+## Choose This Path If
 
-## Before You Start
+| Goal | Use | Check First |
+|---|---|---|
+| Correct an invoice or customer balance | [Void or correct invoices](../sales-and-receivables/void-or-correct-invoices.md) | Invoice status, balance, active payments, and linked journals |
+| Correct a bill or vendor balance | [Void or correct bills](../expenses-and-payables/void-or-correct-bills.md) | Bill status, balance, active payments, and linked journals |
+| Correct a bank classification before or after confirmation | [Review and classify bank transactions](../banking-and-cash-management/review-and-classify-bank-transactions.md) | Pending vs confirmed state, reconciliation state, and linked journal |
+| Repair the accounting link on a confirmed bank row | [Resolve confirmed bank transactions](../banking-and-cash-management/resolve-confirmed-bank-transactions.md) | Current link, candidate GL line, account, amount, date, and memo |
+| Reverse or enter an accountant-only adjustment | [Record journal entries](./record-journal-entries.md) | Whether the issue belongs outside customer, vendor, bank, or source-document workflows |
+| Choose journal entry vs source workflow | [Choose between journal entries and source workflows](./when-to-use-journal-entries-vs-source-forms.md) | Whether a source document should own the accounting event |
+| Investigate a report balance | [Use report drilldown behavior](../reports-and-financial-review/use-report-drilldown-behavior.md) | Supporting entries, source document, date range, and active company |
+| Resolve a reconciliation difference | [Resolve common reconciliation exceptions](../reconciliation/resolve-common-reconciliation-exceptions.md) | Statement period, selected rows, reconciled state, and correction date |
 
-- The correct company is active.
-- You know the record or balance that looks wrong.
-- You have reviewed the supporting transaction before changing the ledger.
-- You know whether the period is still open for normal edits.
+## Before You Commit
 
-## Correction Paths
+- Start from the report, list, or transaction where the issue was found.
+- Drill into supporting detail before posting a correction.
+- Identify the original source workflow.
+- Confirm whether the transaction has been reconciled, paid, voided, or linked to another record.
+- Use reversal when you need to preserve the original posting and create an offsetting entry.
+- Use a correcting journal entry only when the adjustment does not belong to a customer, vendor, invoice, bill, payment, or bank transaction workflow.
 
-| Situation | Start Here | Usual Correction |
-| --- | --- | --- |
-| Bank transaction uses the wrong expense or income account | `Banking` or linked bank detail | Edit the bank classification if the workflow allows it, or correct through the linked source entry |
-| Invoice uses the wrong customer, item, amount, or payment status | `Invoices` | Correct the invoice or payment workflow instead of posting a standalone journal first |
-| Bill uses the wrong vendor, account, amount, or payment status | `Bills` | Correct the bill or payment workflow where available |
-| Check needs review | `Checks` | Edit or void through the check workflow when available |
-| Manual journal entry was posted in error | `Ledger` | Reverse the journal or post a correcting journal depending on the situation |
-| Month-end accrual should unwind next period | `Ledger` | Use a reversing journal entry |
-| Account balance looks wrong on a report | `Reports` drilldown | Review supporting detail before choosing the correction workflow |
-| Source data was imported incorrectly | Import workflow and affected records | Review import results, then correct through source pages or support guidance |
+## What Not To Assume
 
-## Steps
-
-1. Start from the report, list, or transaction where the issue was found.
-2. Drill into supporting detail before posting a correction.
-3. Identify the original source workflow.
-   - Invoice and payment issues usually belong in receivables workflows.
-   - Bill, vendor, and check issues usually belong in payables workflows.
-   - Bank classification issues usually belong in banking.
-   - Accountant adjustments and accruals usually belong in journal entries.
-4. Confirm whether the transaction has been reconciled, paid, voided, or linked to another record.
-5. Use reversal when you need to preserve the original posting and create an offsetting entry.
-6. Use a correcting journal entry when the adjustment does not belong to a customer, vendor, invoice, bill, payment, or bank transaction workflow.
-7. Rerun the relevant report after the correction.
-8. Document the reason in the memo, description, or support notes your firm uses.
-
-## What Happens Next
-
-The correction should live in the workflow that best explains the accounting event. This keeps AR, AP, banking, reconciliation, and ledger reports easier to review later.
+- A journal entry is not the first answer for every invoice, bill, payment, or bank issue.
+- Deleting history is not a cleanup strategy for making reports look right.
+- Reversing an entry twice can duplicate the correction.
+- Correcting both a source workflow and a journal entry can duplicate the adjustment unless both are intentionally required.
 
 ## If Something Looks Wrong
 
-- Do not use a journal entry to fix an invoice or bill issue until you have reviewed the source workflow.
-- Do not edit or exclude reconciled bank activity without understanding the reconciliation impact.
-- Do not delete history to make a report look right.
-- Do not reverse an entry twice.
-- Do not correct the same issue in both the source workflow and a journal entry unless that is intentional.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| An invoice or bill correction is being entered as a journal entry | Whether the source workflow should own the correction | Review the invoice or bill workflow first |
+| Reconciled bank activity needs correction | Whether the change affects a posted reconciliation period | Review the reconciliation impact before editing or excluding activity |
+| A report balance looks wrong | Whether the underlying transaction should be corrected instead | Use a supported correction or reversal workflow instead of deleting history |
+| A reversal already exists | Whether the entry has already been reversed once | Do not reverse the same entry again unless that is the intended correction |
+| Both a source workflow and journal entry correction seem possible | Whether correcting both would duplicate the adjustment | Choose one correction path unless both are intentionally required |
 
 ## Related
 
-- [When to use journal entries vs source forms](./when-to-use-journal-entries-vs-source-forms.md)
-- [Record journal entries](./record-journal-entries.md)
-- [Understand audit-sensitive ledger behavior](./understand-audit-sensitive-ledger-behavior.md)
 - [Review financial results inside the product](../reports-and-financial-review/review-financial-results-inside-the-product.md)
 - [AR review workflow](../sales-and-receivables/ar-review-workflow.md)
 - [AP review workflow](../expenses-and-payables/ap-review-workflow.md)

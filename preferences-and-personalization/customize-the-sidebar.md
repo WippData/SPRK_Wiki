@@ -39,9 +39,11 @@ Your sidebar reflects your saved navigation preferences while keeping required s
 
 ## If Something Looks Wrong
 
-- Expecting a hidden page to remove the underlying feature or its historical data.
-- Renaming a sidebar label and assuming the actual page purpose changed with it.
-- Trying to remove required settings access that SPRK keeps available for guardrail reasons.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The page does not show the expected result | Expecting a hidden page to remove the underlying feature or its historical data | Review the visible action or related workflow before continuing |
+| You are about to take an action that may affect the result | Renaming a sidebar label and assuming the actual page purpose changed with it | Confirm the visible company, page, and workflow state before continuing |
+| The action is unavailable or does not complete | Trying to remove required settings access that SPRK keeps available for guardrail reasons | Use the supported prerequisite or correction path first |
 
 ## Related
 

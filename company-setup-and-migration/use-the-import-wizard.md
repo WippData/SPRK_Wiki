@@ -44,24 +44,25 @@ SPRK creates a new company using the combination of files, copied data, and sett
 
 ## If Something Looks Wrong
 
-- Starting the wizard without a company name. The review action is disabled until a name is entered.
-- Skipping the starter templates and then uploading files that do not match the expected columns.
-- Uploading operational files such as invoices or bills without also bringing in foundation data like a chart of accounts or a trial balance.
-- Assuming the wizard’s auto-assignment is final. Review each data type before creating the company.
-- Forgetting that settings can be entered manually if no source file exists for them.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You are about to take an action that may affect the result | Starting the wizard without a company name | The review action is disabled until a name is entered |
+| A needed review step is missing | Skipping the starter templates and then uploading files that do not match the expected columns | Go back to that check before continuing |
+| You are about to take an action that may affect the result | Uploading operational files such as invoices or bills without also bringing in foundation data like a chart of accounts or a trial balance | Confirm the visible company, page, and workflow state before continuing |
+| The result looks ready, but a key check is unresolved | Assuming the wizard’s auto-assignment is final | Review each data type before creating the company |
+| A needed review step is missing | Forgetting that settings can be entered manually if no source file exists for them | Go back to that check before continuing |
 
-## Business Scenario: First Client Import Wizard Setup
+## Practice And Examples
 
-Use this scenario to train staff on starting a new client company from the Companies page, downloading starter templates, and assigning uploaded files to the right data types before creating the company.
+Use the practice file and screenshots to review the new-company drawer, starter templates, accepted formats, and data-type source slots before creating a company.
 
-- Sample file: [24-first-client-import-wizard-templates.csv](../sample-files/v1-validation/24-first-client-import-wizard-templates.csv)
-- Evidence:
+- Practice file: [first-client-import-wizard-templates.csv](../sample-files/practice/first-client-import-wizard-templates.csv)
 
 ![Companies page new-company drawer showing required setup fields](../screenshots/v1-validation/companies-new-company-required-fields.png)
 
 ![Import Wizard showing starter templates, accepted formats, upload target, and data-type source slots](../screenshots/v1-validation/companies-import-wizard-templates-upload-slots.png)
 
-The walkthrough opened the wizard from `Settings` -> `Companies` and stopped before creating a new company.
+Review the assigned data types before creating the company.
 
 ## Related
 

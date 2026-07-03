@@ -50,7 +50,7 @@ Use this page when you are closing a month, reviewing a client file, preparing f
    - Use journal entries for accountant adjustments that do not belong to a source workflow.
 10. Export or save the reports your firm keeps with the period workpapers.
 11. Use `Checklists` to track review tasks that should be repeated every month.
-12. Review backup/export expectations for the company before major cleanup, import, or handoff work.
+12. Review backup/export expectations for the company before major cleanup, import, or transfer work.
 
 ## What Happens Next
 
@@ -62,11 +62,13 @@ The month-end review gives you a repeatable path for finding missing activity, w
 
 ## If Something Looks Wrong
 
-- Do not fix every report difference with a journal entry before checking the source transaction.
-- Do not finish reconciliation while known bank activity is missing.
-- Do not rely on aging reports until invoices, bills, and payments have been entered.
-- Do not run reports for one company while reviewing records for another.
-- Do not delete history to clean up a closed period; use supported correction or reversal workflows.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| A report difference is going straight to a journal entry | Whether the source transaction explains the difference | Review the source transaction before posting an adjustment |
+| Reconciliation is ready to finish while bank activity is still missing | Whether all known statement activity has been imported or entered | Add or review missing bank activity before finishing |
+| Aging report totals look incomplete | Whether invoices, bills, and payments have all been entered | Complete the source workflows before relying on aging reports |
+| Reports show the wrong company | Whether the active company matches the review file | Switch to the correct company and rerun the reports |
+| Closed-period history looks messy | Whether a correction or reversal workflow is available | Use supported correction workflows instead of deleting history |
 
 ## Related
 

@@ -4,35 +4,31 @@
 
 Learn how the active company affects what you see as you move through SPRK and how to avoid working in the wrong company.
 
-## When To Use This
+## Quick Reference
 
-Use this article when you want to understand why navigation results can change based on the active company and how to verify you are working in the right place.
+| Area | How The Active Company Matters | What To Check |
+|---|---|---|
+| Sidebar company selector | Sets the company context for the app. | Confirm the intended company before starting work. |
+| Dashboard | Shows company-specific summary information and quick links. | Check the sidebar if figures look unfamiliar. |
+| Search | Returns records for the active company context. | Confirm the company before relying on a search result. |
+| Reports | Runs against the selected company and report filters. | Confirm company, date, and account filters. |
+| Transactions and setup records | New records belong to the active company. | Check the sidebar before creating, importing, editing, posting, or confirming. |
 
-## Before You Start
+## Details
 
-- More than one company exists in your SPRK workspace, or you expect to switch companies over time.
-
-## Steps
-
-1. Check the company selector at the top of the sidebar before starting work.
-2. Treat the selected company as the active context for the rest of the app.
-3. Before entering transactions, running reports, or using search, confirm the company shown in the sidebar is correct.
-4. If you need a different company, switch it from the company selector or from `Settings` → `Companies`.
-5. After switching, reopen the page you care about if you want to confirm that the data now reflects the new active company.
-
-## What Happens Next
-
-You understand that pages, search results, dashboard data, and accounting workflows all follow the active company shown in the sidebar.
+The selected company is the working context across SPRK. If you need a different company, switch it from the company selector or from `Settings` -> `Companies`, then reopen or recheck the page you care about.
 
 ## If Something Looks Wrong
 
-- Running a search or report without checking the active company first.
-- Assuming a page remembers a different company than the one shown in the sidebar.
-- Treating company switching as a page-level filter instead of an app-wide context change.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| Records or balances look unfamiliar | Active company in the sidebar | Switch to the intended company, then review the page again. |
+| Search results look incomplete | Active company and search text | Confirm the company before changing records or broadening the search. |
+| A report total looks wrong | Active company, date range, and report filters | Correct the context, then rerun the report. |
+| A new record would belong to the wrong company | Active company before saving | Switch companies before creating or importing records. |
 
 ## Related
 
 - [Move between major app areas](./move-between-major-app-areas.md)
 - [Use global search](./use-global-search.md)
-- [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
 - [Switch between companies](../company-setup-and-migration/switch-between-companies.md)

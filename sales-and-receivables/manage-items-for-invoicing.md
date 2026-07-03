@@ -59,13 +59,15 @@ The item becomes available for invoice entry, item-started invoices or bills whe
 
 ## If Something Looks Wrong
 
-- Skipping item setup and retyping invoice lines manually even when the same products or services repeat.
-- Leaving descriptions too vague, which makes invoices and reporting harder to read later.
-- Forgetting to review the active setting and then wondering why an older item should no longer be used.
-- Importing item records without checking that account mappings resolved the way you expected.
-- Assuming item setup alone controls the full receivables posting flow. Review the invoice workflow and GL guidance for downstream behavior.
-- Assuming hidden item numbers mean the item number was deleted. Check the company `Item identification` mode.
-- Saving a document started from an item shortcut without reviewing the document header and line accounts.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| A needed review step is missing | Skipping item setup and retyping invoice lines manually even when the same products or services repeat | Go back to that check before continuing |
+| A required value or review step is missing | Leaving descriptions too vague, which makes invoices and reporting harder to read later | Complete the missing value or review step before continuing |
+| A needed review step is missing | Forgetting to review the active setting and then wondering why an older item should no longer be used | Go back to that check before continuing |
+| You are about to take an action that may affect the result | Importing item records without checking that account mappings resolved the way you expected | Confirm the visible company, page, and workflow state before continuing |
+| The result looks ready, but a key check is unresolved | Assuming item setup alone controls the full receivables posting flow | Review the invoice workflow and GL guidance for downstream behavior |
+| The result looks ready, but a key check is unresolved | Assuming hidden item numbers mean the item number was deleted | Check the company `Item identification` mode |
+| You are about to take an action that may affect the result | Saving a document started from an item shortcut without reviewing the document header and line accounts | Confirm the visible company, page, and workflow state before continuing |
 
 ## Related
 

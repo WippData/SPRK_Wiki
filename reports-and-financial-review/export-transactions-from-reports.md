@@ -59,14 +59,16 @@ SPRK produces an outbound copy of the current report results for review outside 
 
 ## If Something Looks Wrong
 
-- Exporting before selecting the correct active company.
-- Forgetting to rerun the report after changing the account, type, vendor, text, or date filter.
-- Assuming `Export` creates a PDF. Use `Print` and the system PDF option when you need a PDF.
-- Assuming `Export` creates a complete tax package or agency filing.
-- Sending the file before opening it and confirming the account and date range.
-- Hiding or showing report columns and then assuming the outbound file is correct without checking it.
-- Expecting an inactive or unavailable account to appear in every account selector.
-- Assuming another user's account selector order will match yours if your `Account dropdown sorting` preferences differ.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You are about to take an action that may affect the result | Exporting before selecting the correct active company | Confirm the visible company, page, and workflow state before continuing |
+| A needed review step is missing | Forgetting to rerun the report after changing the account, type, vendor, text, or date filter | Go back to that check before continuing |
+| The result looks ready, but a key check is unresolved | Assuming `Export` creates a PDF | Use `Print` and the system PDF option when you need a PDF |
+| The result looks ready, but a key check is unresolved | Assuming `Export` creates a complete tax package or agency filing | Verify the visible SPRK state before continuing |
+| You are about to take an action that may affect the result | Sending the file before opening it and confirming the account and date range | Confirm the visible company, page, and workflow state before continuing |
+| The result does not match what you expected | Hiding or showing report columns and then assuming the outbound file is correct without checking it | Review the visible state and use the related workflow before continuing |
+| The page does not show the expected result | Expecting an inactive or unavailable account to appear in every account selector | Review the visible action or related workflow before continuing |
+| The result looks ready, but a key check is unresolved | Assuming another user's account selector order will match yours if your `Account dropdown sorting` preferences differ | Verify the visible SPRK state before continuing |
 
 ## Troubleshooting
 

@@ -75,13 +75,15 @@ Invoice entry starts from cleaner defaults, repeated customers and items are eas
 
 ## If Something Looks Wrong
 
-- Starting invoice entry before the chart of accounts is ready for receivables and income activity.
-- Assuming customer defaults remove the need to review each invoice header.
-- Assuming company invoice defaults override every customer or invoice-specific value without review.
-- Treating item setup as optional even when the same services or products repeat every week.
-- Thinking hidden item numbers mean the item master data was removed. Check `Item identification`.
-- Leaving imported customer or item account mappings unreviewed before opening invoices.
-- Assuming inline create is only for customer records. It can also help you add a missing item during invoice entry.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You are about to take an action that may affect the result | Starting invoice entry before the chart of accounts is ready for receivables and income activity | Confirm the visible company, page, and workflow state before continuing |
+| The result looks ready, but a key check is unresolved | Assuming customer defaults remove the need to review each invoice header | Verify the visible SPRK state before continuing |
+| The result looks ready, but a key check is unresolved | Assuming company invoice defaults override every customer or invoice-specific value without review | Verify the visible SPRK state before continuing |
+| Two similar workflows or fields are easy to mix up | Treating item setup as optional even when the same services or products repeat every week | Use the specific workflow or control named on this page |
+| The result does not match what you expected | Thinking hidden item numbers mean the item master data was removed | Check `Item identification` |
+| A required value or review step is missing | Leaving imported customer or item account mappings unreviewed before opening invoices | Complete the missing value or review step before continuing |
+| The result looks ready, but a key check is unresolved | Assuming inline create is only for customer records | It can also help you add a missing item during invoice entry |
 
 ## Related
 

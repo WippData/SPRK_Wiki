@@ -2,7 +2,7 @@
 
 ![Backups settings showing backup path and retention options](../screenshots/backups-and-data-safety/backup-settings-audit-step-01.png)
 
-Review backup settings, understand the automatic schedule, use on-demand backup controls, and export or import a company-scoped Company File when the visible product exposes that handoff path.
+Review backup settings, understand the automatic schedule, use on-demand backup controls, and export or import a company-scoped Company File when the visible product exposes that transfer path.
 
 ## In This Section
 

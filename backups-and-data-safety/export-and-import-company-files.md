@@ -6,7 +6,7 @@ Use `Company file` actions when you need to move or preserve one company without
 
 ## When To Use This
 
-Use this workflow when a firm needs a company-level handoff, support needs a complete company package for review, or you want a company-specific transfer path that is separate from routine device backups.
+Use this workflow when a firm needs a company-level transfer, support needs a complete company package for review, or you want a company-specific transfer path that is separate from routine device backups.
 
 ## Before You Start
 
@@ -20,14 +20,14 @@ Use this workflow when a firm needs a company-level handoff, support needs a com
 2. Open `Backups` from the `Settings` section.
 3. Review routine backup controls separately from the `Company file` card.
 4. In `Company file`, confirm the active company name shown by SPRK.
-5. Use `Export Company File` when you need a non-destructive company-level file for handoff or safekeeping.
+5. Use `Export Company File` when you need a non-destructive company-level file for transfer or safekeeping.
 6. Use `Import Company File` only when you are ready to review a company-file import path.
 7. If SPRK shows an import preview, read the company identity, validation messages, and any replace warning before continuing.
 8. Do not confirm a replace/import step unless you are working in the intended company and have a current backup or exported company file.
 
 ## What Happens Next
 
-You can distinguish a company-level handoff from device backup settings.
+You can distinguish a company-level transfer from device backup settings.
 
 - Exporting a company file creates an outbound company package. It does not post, reverse, or edit journal entries.
 - Importing or replacing from a company file can change which company data is available after the workflow completes, so treat confirmation steps as data-management actions rather than accounting entries.
@@ -35,26 +35,27 @@ You can distinguish a company-level handoff from device backup settings.
 
 ## If Something Looks Wrong
 
-- Treating `Run Backup Now` and `Export Company File` as the same action.
-- Importing a company file into a production-like company before reading preview and replace language.
-- Describing Company File as hosted collaboration or multi-user firm administration. It is a local company handoff/import path.
-- Assuming legacy package or restore scripts are public workflows when the visible product directs users to `Company file`.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| Two similar workflows or fields are easy to mix up | Treating `Run Backup Now` and `Export Company File` as the same action | Use the specific workflow or control named on this page |
+| You are about to take an action that may affect the result | Importing a company file into a production-like company before reading preview and replace language | Confirm the visible company, page, and workflow state before continuing |
+| The result does not match what you expected | Describing Company File as hosted collaboration or multi-user firm administration | It is a local company transfer/import path |
+| The result looks ready, but a key check is unresolved | Assuming legacy package or restore scripts are public workflows when the visible product directs users to `Company file` | Verify the visible SPRK state before continuing |
 
-## Business Scenario: Company File Handoff And Replace Preview
+## Practice And Examples
 
-Use this scenario to train firm staff on the company-scoped handoff path: export the active company, import the exported file back into SPRK for preview, and stop before the replace confirmation unless the replacement is intentional.
+Use these files to practice the company-scoped export/import path in a disposable or training company. Review the import preview and replacement warning before choosing `Replace company`.
 
-- Sample files:
-  - [22-backup-company-file-export.csv](../sample-files/v1-validation/22-backup-company-file-export.csv)
-  - [23-company-file-import-preview-replace.csv](../sample-files/v1-validation/23-company-file-import-preview-replace.csv)
-  - [23-company-file-import-preview-replace.sprkcompany.zip](../sample-files/v1-validation/23-company-file-import-preview-replace.sprkcompany.zip)
-- Evidence:
+- Practice files:
+  - [company-file-export-practice.csv](../sample-files/practice/company-file-export-practice.csv)
+  - [company-file-import-preview-replace.csv](../sample-files/practice/company-file-import-preview-replace.csv)
+  - [company-file-import-preview-replace.sprkcompany.zip](../sample-files/practice/company-file-import-preview-replace.sprkcompany.zip)
 
 ![Backups page showing Company File export and import controls](../screenshots/v1-validation/backups-company-file-and-close-policy.png)
 
 ![Company File import preview showing table count, export timestamp, and replace warning](../screenshots/v1-validation/company-file-import-preview-replace-warning.png)
 
-The walkthrough exported the active Demo Company, selected the exported `.sprkcompany.zip` file for import preview, and canceled before `Replace company`.
+The preview shows the table count, export timestamp, and replacement warning so you can stop before replacing company data.
 
 ## Related
 

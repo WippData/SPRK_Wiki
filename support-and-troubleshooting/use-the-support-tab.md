@@ -41,11 +41,13 @@ You can reach the product's visible support actions from one tab and leave with 
 
 ## If Something Looks Wrong
 
-- Clearing the support log before downloading the session details you wanted to keep.
-- Expecting the support log to include activity from earlier sessions instead of the current app session.
-- Assuming update controls will always appear. They are only visible when the installed app supports in-app updates.
-- Assuming release notes must load inside SPRK before you can continue. The current flow can fall back to the public releases page.
-- Looking for channels or guided-session actions that are not currently visible. Use the options shown in the current Support tab.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You are about to take an action that may affect the result | Clearing the support log before downloading the session details you wanted to keep | Confirm the visible company, page, and workflow state before continuing |
+| The page does not show the expected result | Expecting the support log to include activity from earlier sessions instead of the current app session | Review the visible action or related workflow before continuing |
+| The result looks ready, but a key check is unresolved | Assuming update controls will always appear | They are only visible when the installed app supports in-app updates |
+| The result looks ready, but a key check is unresolved | Assuming release notes must load inside SPRK before you can continue | The current flow can fall back to the public releases page |
+| You cannot find the expected page, action, or result | Looking for channels or guided-session actions that are not currently visible | Use the options shown in the current Support tab |
 
 ## Related
 

@@ -32,10 +32,12 @@ Changing plugin availability changes whether users can reach plugin pages for th
 
 ## If Something Looks Wrong
 
-- If the page is missing, confirm the active company first.
-- If the plugin is disabled, enable it before checking navigation.
-- If the plugin is visible in one company but not another, review any company availability controls.
-- If company-specific plugin data looks wrong, stop and collect details before editing records.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The page is missing | The page is missing | Confirm the active company first |
+| The plugin is disabled | The plugin is disabled | Enable it before checking navigation |
+| The plugin is visible in one company but not another | The plugin is visible in one company but not another | Review any company availability controls |
+| Company-specific plugin data looks wrong | Company-specific plugin data looks wrong | Stop and collect details before editing records |
 
 ## Related
 

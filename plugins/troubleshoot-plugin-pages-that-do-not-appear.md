@@ -17,7 +17,7 @@ Use this page after install, upgrade, enablement, or company switching when expe
 5. Confirm the plugin is enabled.
 6. Review the plugin card tags:
    - Lifecycle states can include `Enabled`, `Disabled`, `Requires re-enable`, `Blocked`, or `Invalid`.
-   - Runtime states can include `Runtime available`, `Pilot only`, `Hidden by capability`, or `No runtime page`.
+   - Page visibility states can include available, pilot-only, hidden by capability, or no visible page.
 7. If you recently previewed a bundle, confirm the preview was actually installed or upgraded.
 8. If the plugin page is company-specific, switch to the intended company and check navigation again.
 9. Move away from the current page and back again after changing plugin state.
@@ -30,9 +30,9 @@ Use this page after install, upgrade, enablement, or company switching when expe
 - Active company.
 - App version shown in the sidebar footer.
 - Any preview warning or install message.
-- Any lifecycle, runtime, or blocked-action message on the installed plugin card.
+- Any lifecycle, page-visibility, or blocked-action message on the installed plugin card.
 - Whether the sidebar shows a `Plugins` group.
-- Whether the expected surface is a sidebar page, a list/transaction runtime page, or a report source.
+- Whether the expected surface is a sidebar page, a list or transaction page, or a report source.
 
 ## What This Changes
 
@@ -40,13 +40,15 @@ Troubleshooting visibility does not post transactions. Installing or enabling a 
 
 ## If Something Looks Wrong
 
-- If the plugin was previewed but not installed, install it before expecting pages.
-- If the plugin is disabled, enable it before checking navigation.
-- If the plugin shows `Pilot only`, `Hidden by capability`, or `No runtime page`, it may be installed without a visible public page.
-- If the plugin shows `Blocked`, `Invalid`, or `Requires re-enable`, resolve that state before expecting navigation or report visibility.
-- If the wrong company is active, switch companies and check again.
-- If preview warnings remain, resolve them before installing or upgrading.
-- If the page still does not appear, contact support with the details above.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The plugin was previewed but no page appears | Whether the preview was installed or upgraded | Install or upgrade the plugin before expecting pages. |
+| The plugin is disabled | Installed plugin state | Enable the plugin before checking navigation. |
+| The plugin shows `Pilot only`, `Hidden by capability`, or no visible page | Page-visibility state on the plugin card | Treat the plugin as installed without a visible public page until the state changes. |
+| The plugin shows `Blocked`, `Invalid`, or `Requires re-enable` | Lifecycle state and card message | Resolve that state before expecting navigation or report visibility. |
+| The page appears in one company but not another | Active company and company availability controls | Switch to the intended company and review plugin availability. |
+| Preview warnings remain | Visible preview warning | Resolve the warning before installing or upgrading. |
+| The page still does not appear | Installed state, enabled state, active company, and page-visibility message | Contact support with the details above. |
 
 ## Related
 

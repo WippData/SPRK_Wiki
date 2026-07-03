@@ -60,14 +60,16 @@ Your user-level preferences are applied across the SPRK app, including display, 
 
 ## If Something Looks Wrong
 
-- Treating Preferences as a company setup page instead of a user-level settings area.
-- Assuming number or currency display choices recalculate posted balances.
-- Typing compact dates without checking that the digits match your selected date order.
-- Assuming `Grid Edit default` changes every page in SPRK instead of supported list pages only.
-- Assuming hidden tooltips turn off validation or field requirements.
-- Assuming account selectors always appear in one fixed order for every user.
-- Assuming drag reordering in `Column preferences` replaces the move-up and move-down controls; both paths can be available on supported tables.
-- Leaving the page before saving after making changes that are not auto-saved.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| Two similar workflows or fields are easy to mix up | Treating Preferences as a company setup page instead of a user-level settings area | Use the specific workflow or control named on this page |
+| The result looks ready, but a key check is unresolved | Assuming number or currency display choices recalculate posted balances | Verify the visible SPRK state before continuing |
+| The entered value or selection does not produce the expected result | Typing compact dates without checking that the digits match your selected date order | Correct the value or selection before continuing |
+| The result looks ready, but a key check is unresolved | Assuming `Grid Edit default` changes every page in SPRK instead of supported list pages only | Verify the visible SPRK state before continuing |
+| The result looks ready, but a key check is unresolved | Assuming hidden tooltips turn off validation or field requirements | Verify the visible SPRK state before continuing |
+| The result looks ready, but a key check is unresolved | Assuming account selectors always appear in one fixed order for every user | Verify the visible SPRK state before continuing |
+| The result looks ready, but a key check is unresolved | Assuming drag reordering in `Column preferences` replaces the move-up and move-down controls; both paths can be available on supported tables | Verify the visible SPRK state before continuing |
+| A required value or review step is missing | Leaving the page before saving after making changes that are not auto-saved | Complete the missing value or review step before continuing |
 
 ## Related
 

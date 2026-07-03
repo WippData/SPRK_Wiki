@@ -66,31 +66,32 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 
 ## If Something Looks Wrong
 
-- Trying to save an entry when debit and credit totals do not match.
-- Entering both debit and credit on the same line.
-- Assuming auto-reversal is part of the edit flow for existing entries. In the current live flow it appears when creating a new manual journal entry.
-- Assuming every manual journal creates bank-register activity. Register rows are opt-in and only mirror eligible bank, cash, or credit-card lines.
-- Assuming linked register `Resolve` changes the journal's accounting lines. Use journal edit, reversal, or another supported correction path for accounting changes.
-- Assuming a missing account was deleted. It may be nonposting, inactive, or intentionally restricted from new manual journals as a control account.
-- Assuming class fields appear automatically for every company. Set them up first from company `Dimensions`.
-- Assuming the ledger page is only for review. In the current product it is also the manual journal-entry posting page.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The action is unavailable or does not complete | Trying to save an entry when debit and credit totals do not match | Use the supported prerequisite or correction path first |
+| The entered value or selection does not produce the expected result | Entering both debit and credit on the same line | Correct the value or selection before continuing |
+| The result looks ready, but a key check is unresolved | Assuming auto-reversal is part of the edit flow for existing entries | In the current live flow it appears when creating a new manual journal entry |
+| The result looks ready, but a key check is unresolved | Assuming every manual journal creates bank-register activity | Register rows are opt-in and only mirror eligible bank, cash, or credit-card lines |
+| The result looks ready, but a key check is unresolved | Assuming linked register `Resolve` changes the journal's accounting lines | Use journal edit, reversal, or another supported correction path for accounting changes |
+| The result looks ready, but a key check is unresolved | Assuming a missing account was deleted | It may be nonposting, inactive, or intentionally restricted from new manual journals as a control account |
+| The result looks ready, but a key check is unresolved | Assuming class fields appear automatically for every company | Set them up first from company `Dimensions` |
+| The result looks ready, but a key check is unresolved | Assuming the ledger page is only for review | In the current product it is also the manual journal-entry posting page |
 
-## Business Scenario: Journal Entry Import
+## Practice And Examples
 
-Use this scenario to train staff on importing balanced journal entries and confirming that imported entries appear in the ledger before relying on them for close work.
+Use the practice file and screenshots to review balanced journal-entry import before relying on imported entries for close work.
 
-- Sample file: [17-journal-entry-import.csv](../sample-files/v1-validation/17-journal-entry-import.csv)
-- Evidence:
+- Practice file: [journal-entry-import.csv](../sample-files/practice/journal-entry-import.csv)
 
 ![Journal import preview showing four parsed rows, zero failures, and balanced debits and credits](../screenshots/v1-validation/journal-import-preview-success-v0.3.57.png)
 
 ![Journal Entries grid filtered to imported V1 journal entries after commit](../screenshots/v1-validation/journal-import-committed-rows-v0.3.57.png)
 
-Validation note: the journal entry import walkthrough passed in SPRK v0.3.57. The preview parsed 4 rows with 0 failures, balanced $407.00 debit and credit totals, and the committed rows appeared in the Journal Entries grid for `V1-JE-7001` and `V1-JE-7002`.
+The import preview shows parsed rows, failures, and debit and credit totals before confirmation.
 
 ## Related
 
-- [When to use journal entries vs source forms](./when-to-use-journal-entries-vs-source-forms.md)
+- [Choose between journal entries and source workflows](./when-to-use-journal-entries-vs-source-forms.md)
 - [Common accountant corrections](./common-accountant-corrections.md)
 - [Set up and use dimensions or classes](../company-administration/set-up-and-use-dimensions-or-classes.md)
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)

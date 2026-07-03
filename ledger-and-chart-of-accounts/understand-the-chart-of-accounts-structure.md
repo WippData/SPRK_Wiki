@@ -63,12 +63,14 @@ You can organize the account list into a clearer structure and keep accounts ava
 
 ## If Something Looks Wrong
 
-- Expecting `Delete` to erase prior history. SPRK marks the account inactive instead.
-- Importing parent relationships without valid `parentId` values.
-- Treating subtype as required for every account when the page only exposes it as an optional field.
-- Assuming missing visible account codes mean the codes were deleted. Check the company's `Required account fields` setting first.
-- Assuming every active account appears in every selector. Nonposting accounts and control-restricted accounts can be hidden from posting, default-account, Banking, journal, or report selectors even when they remain visible in `Chart of Accounts`.
-- Confusing account-level `Control account` with the company-level `Control accounts` setting. Both protect source-workflow accounts, but they are configured in different places.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The page does not show the expected result | Expecting `Delete` to erase prior history | SPRK marks the account inactive instead |
+| You are about to take an action that may affect the result | Importing parent relationships without valid `parentId` values | Confirm the visible company, page, and workflow state before continuing |
+| Two similar workflows or fields are easy to mix up | Treating subtype as required for every account when the page only exposes it as an optional field | Use the specific workflow or control named on this page |
+| The result looks ready, but a key check is unresolved | Assuming missing visible account codes mean the codes were deleted | Check the company's `Required account fields` setting first |
+| The result looks ready, but a key check is unresolved | Assuming every active account appears in every selector | Nonposting accounts and control-restricted accounts can be hidden from posting, default-account, Banking, journal, or report selectors even when they remain visible in `Chart of Accounts` |
+| The result does not match what you expected | Confusing account-level `Control account` with the company-level `Control accounts` setting | Both protect source-workflow accounts, but they are configured in different places |
 
 ## Related
 

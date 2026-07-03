@@ -13,5 +13,4 @@ Review app-wide display, tooltip visibility, formatting, date-entry, account-sel
 ## Related Foundation Workflows
 
 - [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)
-- [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)
 - [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
