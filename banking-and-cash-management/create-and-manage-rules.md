@@ -4,8 +4,6 @@
 
 Build rules that prefill GL account choices for repeated bank transaction patterns, then manage scope, priority, and imported rule sets from the Rules page.
 
-![Rules import dialog showing template guidance, required columns, recommended columns, and supported file types](../screenshots/banking-and-cash-management/rules-import-template-guidance-step-01.png)
-
 ![Rules page showing GL Account filter and GL Account result column](../screenshots/banking-and-cash-management/rules-gl-account-labels-step-03.png)
 
 ## When To Use This
@@ -67,18 +65,7 @@ Use this workflow when the same bank or credit card transactions appear repeated
    - Drag rows to reorder them.
    - Use the row-level reorder action if you want to move a rule to the top, bottom, or a specific position.
    - Use `Reorder rule` when you want to move a rule by name and target position.
-13. If you already maintain rules outside SPRK, use `Import` to preview and load a rules file.
-   - The import modal shows the rule template expectations before you select a file.
-   - Accepted formats are `.xlsx` and `.csv`.
-   - QuickBooks rules exports are accepted as-is when they are saved as `.xlsx`.
-   - Generic spreadsheet or CSV rule files should include `Conditions` and `Actions` columns.
-   - Generic `Conditions` and `Actions` values can be plain text or JSON.
-   - Plain-text examples include description-match wording for conditions and actions such as `set gl account` followed by an account name, code, or ID.
-   - `Name` and `Description` are recommended so imported rules are easier to review later.
-   - Review the preview and any reported issues before confirming the import.
-   - SPRK blocks confirmation when the preview is empty.
-   - Unresolved account labels remain visible for review instead of being silently dropped.
-   - Legacy imported condition fields can still match when their capitalization differs, but new setup should use the visible current labels, including `GL Account`.
+13. If you already maintain rules outside SPRK, use [Import banking rules](./import-banking-rules.md) to preview and load a rules file before those rules affect bank review.
 14. Edit, disable, or delete rules as your transaction patterns change.
 
 ## What Happens Next
@@ -91,35 +78,19 @@ The rule is saved and becomes available when SPRK evaluates pending bank transac
 
 ## If Something Looks Wrong
 
-- Assuming rule creation or rule import confirms existing pending transactions automatically.
-- Leaving overlapping rules in the wrong order and then getting the wrong suggestion first.
-- Forgetting that a blank `Apply to accounts` scope means the rule can apply across all bank and credit card accounts.
-- Using percent splits that do not total exactly `100%`.
-- Using fixed-amount splits without setting `Balance to`.
-- Making the description match too broad and catching unrelated transactions.
-- Uploading a generic rules file without `Conditions` and `Actions` columns.
-- Assuming generic rule imports require JSON. Plain text is supported, but it still needs to resolve to a valid preview before confirmation.
-- Confirming an empty rules preview. Add valid rows or fix the source file first.
-- Ignoring unresolved account labels in the preview.
-- Treating a QuickBooks rules export as a generic CSV. Save the export as `.xlsx` when you want SPRK to read it as a QuickBooks rules export.
-- Letting rule suggestions replace accountant review. Confirming the bank transaction is still the posting step.
-
-## Business Scenario: Import Rule Setup
-
-Use this scenario to test whether a firm can load a reusable banking-rule CSV and review the resulting rule draft before applying it to bank activity.
-
-- Sample file: [05-banking-rules-import.csv](../sample-files/v1-validation/05-banking-rules-import.csv)
-- Evidence:
-
-![Rules import preview showing three reusable rule drafts with zero issues](../screenshots/v1-validation/rules-import-preview-success-v0.3.57.png)
-
-![Rules grid showing the imported V1 banking rules after confirmation](../screenshots/v1-validation/rules-import-committed-rows-v0.3.57.png)
-
-Validation note: this walkthrough was validated in SPRK v0.3.57. The CSV preview found three rule drafts with zero issues, and the imported V1 rules appeared in the rules grid after confirmation.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| A rule suggestion appears on the wrong pending transaction | Whether the rule description or amount condition is too broad | Narrow the conditions or limit `Apply to accounts` before relying on the suggestion. |
+| The wrong rule suggestion appears first | Whether overlapping rules are ordered correctly | Move the more specific rule higher in the priority list. |
+| A rule appears on every bank or credit card account | Whether `Apply to accounts` is blank | Choose the specific accounts where the rule should apply, or leave it blank only when the rule is intentionally shared. |
+| A percent split cannot be saved | Whether the split rows total exactly `100%` | Adjust the split percentages before saving. |
+| A fixed-amount split leaves an unassigned balance | Whether `Balance to` is set | Choose the account that should receive the remaining amount. |
+| A rule is saved but reports have not changed | Whether the bank transaction has been confirmed from Banking | Confirm the pending transaction after reviewing the suggested category or split. |
 
 ## Related
 
 - [Understand the banking page](./understand-the-banking-page.md)
 - [Review and classify bank transactions](./review-and-classify-bank-transactions.md)
+- [Import banking rules](./import-banking-rules.md)
 - [Import bank transactions](./import-bank-transactions.md)
 - [Month-end review checklist](../checklists-and-period-end-work/month-end-review-checklist.md)

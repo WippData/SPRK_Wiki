@@ -33,6 +33,17 @@ Use this workflow when you are ready to begin reconciling one bank or credit car
    - `Start` begins a normal reconciliation session when a prior reconciliation exists.
    - `Reconcile` completes the opening anchor flow immediately when this is the first reconciliation and you are using the journal-entry anchor.
 
+## How SPRK Determines The Beginning Balance
+
+SPRK uses reconciliation history to set the beginning balance for a normal reconciliation. It does not recalculate the beginning balance from every general-ledger line each time you open the reconciliation page.
+
+- For the first reconciliation on an account, the source is the selected `Opening balance journal entry`. Completing that first-time flow creates the posted reconciliation anchor that future reconciliations use.
+- For later reconciliations, the source is the last posted reconciliation for the same account before the selected statement ending date.
+- The `Statement opening date` and `Statement opening balance` are locked from that prior posted reconciliation record. They are carried forward as reconciliation history, not edited directly in the start window.
+- Starting or finishing reconciliation does not create a journal entry, and selecting an opening-balance journal entry for the first anchor does not create a duplicate ledger posting.
+- If a journal entry that affects an earlier period is later edited or reversed, financial reports can change according to that ledger correction, while posted reconciliation history continues to show the values recorded for that statement period.
+- Use [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md) when the opening balance looks wrong.
+
 ## What Happens Next
 
 The reconciliation workflow is initialized with statement dates and balances for the selected account.
@@ -44,25 +55,26 @@ The reconciliation workflow is initialized with statement dates and balances for
 
 ## If Something Looks Wrong
 
-- Starting on the wrong bank or credit card account.
-- Choosing the wrong opening balance journal entry for the first reconciliation.
-- Entering a positive ending balance for a credit account.
-- Typing a statement date in a different order than your saved date-format preference.
-- Expecting SPRK to let you edit the opening balance from a prior posted reconciliation.
-- Assuming the statement ending date alone hides every later-dated confirmed row. Account, confirmed status, unreconciled state, and statement judgment still matter.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You are about to take an action that may affect the result | Starting on the wrong bank or credit card account | Confirm the visible company, page, and workflow state before continuing |
+| The entered value or selection does not produce the expected result | Choosing the wrong opening balance journal entry for the first reconciliation | Correct the value or selection before continuing |
+| The entered value or selection does not produce the expected result | Entering a positive ending balance for a credit account | Correct the value or selection before continuing |
+| The entered value or selection does not produce the expected result | Typing a statement date in a different order than your saved date-format preference | Correct the value or selection before continuing |
+| The page does not show the expected result | Expecting SPRK to let you edit the opening balance from a prior posted reconciliation | Review the visible action or related workflow before continuing |
+| The result looks ready, but a key check is unresolved | Assuming the statement ending date alone hides every later-dated confirmed row | Account, confirmed status, unreconciled state, and statement judgment still matter |
 
-## Business Scenario: Zero-Difference Monthly Reconciliation
+## Practice And Examples
 
-Use this scenario to train a reviewer to clear statement transactions, reach a zero difference, and post the reconciliation.
+Use the practice file and screenshots to review selected statement rows, a zero difference, and posting the reconciliation.
 
-- Sample file: [06-reconciliation-statement-items.csv](../sample-files/v1-validation/06-reconciliation-statement-items.csv)
-- Evidence:
+- Practice file: [reconciliation-statement-items.csv](../sample-files/practice/reconciliation-statement-items.csv)
 
 ![Reconciliation selected rows with a zero difference before posting](../screenshots/v1-validation/reconciliation-zero-difference-selected-rows.png)
 
 ![Reconciliation completion confirmation after posting](../screenshots/v1-validation/reconciliation-complete-toast.png)
 
-The walkthrough confirmed that selected statement rows can tie to the entered ending balance and that posting the reconciliation creates history for later report review.
+Selected statement rows can tie to the entered ending balance. Posting the reconciliation creates history for later report review.
 
 ## Related
 
@@ -71,4 +83,5 @@ The walkthrough confirmed that selected statement rows can tie to the entered en
 - [Match and unmatch transactions](./match-and-unmatch-transactions.md)
 - [View and print bank reconciliation reports](./view-and-print-bank-reconciliation-reports.md)
 - [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md)
+- [Create a starting balance](../company-setup-and-migration/create-a-starting-balance.md)
 - [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)

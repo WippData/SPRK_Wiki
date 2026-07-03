@@ -36,11 +36,13 @@ SPRK imports the QuickBooks Desktop IIF file and adds the resulting company to t
 
 ## If Something Looks Wrong
 
-- Exporting the wrong file type from QuickBooks Desktop and trying to use it with the IIF import path.
-- Using the QBD import option with a ZIP file instead of an IIF file.
-- Assuming the import replaces the currently selected company. The imported company is added to the list and may still need to be selected.
-- Skipping validation of the imported setup data after the import finishes.
-- Assuming every multi-line customer billing address parses perfectly. Review address fields before relying on printed invoices.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You are about to take an action that may affect the result | Exporting the wrong file type from QuickBooks Desktop and trying to use it with the IIF import path | Confirm the visible company, page, and workflow state before continuing |
+| The current page does not fit the task | Using the QBD import option with a ZIP file instead of an IIF file | Return to the workflow this page supports |
+| The result looks ready, but a key check is unresolved | Assuming the import replaces the currently selected company | The imported company is added to the list and may still need to be selected |
+| A needed review step is missing | Skipping validation of the imported setup data after the import finishes | Go back to that check before continuing |
+| The result looks ready, but a key check is unresolved | Assuming every multi-line customer billing address parses perfectly | Review address fields before relying on printed invoices |
 
 ## Related
 

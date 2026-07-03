@@ -47,23 +47,24 @@ SPRK opens the reconciliation report area for the selected account and posted st
 
 ## If Something Looks Wrong
 
-- Looking for reconciliation reports only on the general Reports page and missing the `Print Bank Rec` shortcut from `Reconcile`.
-- Expecting a report before the reconciliation has been posted.
-- Treating a printed report as a way to edit or reopen a posted reconciliation.
-- Choosing the wrong account before opening `Print Bank Rec`, which pre-fills the report account from the active selection.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You cannot find the expected page, action, or result | Looking for reconciliation reports only on the general Reports page and missing the `Print Bank Rec` shortcut from `Reconcile` | Use the visible navigation or related workflow named on this page |
+| The page does not show the expected result | Expecting a report before the reconciliation has been posted | Review the visible action or related workflow before continuing |
+| Two similar workflows or fields are easy to mix up | Treating a printed report as a way to edit or reopen a posted reconciliation | Use the specific workflow or control named on this page |
+| The entered value or selection does not produce the expected result | Choosing the wrong account before opening `Print Bank Rec`, which pre-fills the report account from the active selection | Correct the value or selection before continuing |
 
-## Business Scenario: Posted Reconciliation Report Evidence
+## Practice And Examples
 
-Use this scenario to train a reviewer to open the report generated from a completed reconciliation and preserve the report output as support.
+Use the practice file and screenshots to review the report action generated from a completed reconciliation.
 
-- Sample file: [07-reconciliation-report-export.csv](../sample-files/v1-validation/07-reconciliation-report-export.csv)
-- Evidence:
+- Practice file: [reconciliation-report-export.csv](../sample-files/practice/reconciliation-report-export.csv)
 
 ![Posted reconciliation history row with a report action](../screenshots/v1-validation/reconciliation-history-posted-report-action.png)
 
 ![Reconciliation report details opened from posted history](../screenshots/v1-validation/reconciliation-report-detail.png)
 
-The walkthrough confirmed that posted history exposes a report action and that the report includes the statement period detail needed for review support.
+Posted history exposes a report action, and the report includes statement-period detail for later review.
 
 ## Related
 

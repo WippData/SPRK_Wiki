@@ -69,10 +69,12 @@ When a journal entry is posted with dimensions, the selected dimension values ar
 
 ## If Something Looks Wrong
 
-- If `Set dimensions` does not appear on journal lines, confirm the company has at least one enabled dimension and enabled value.
-- If a value is missing from the selector, return to `Settings` -> `Companies` -> `Edit` -> `Dimensions` and confirm the value is enabled.
-- If users expect class tracking, create a dimension named `Class`; SPRK treats class tracking as a company dimension.
-- If a journal is already posted, review your company's accounting edit permissions before expecting to change dimension values afterward.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| `Set dimensions` does not appear on journal lines | `Set dimensions` does not appear on journal lines | Confirm the company has at least one enabled dimension and enabled value |
+| A value is missing from the selector | A value is missing from the selector | Return to `Settings` -> `Companies` -> `Edit` -> `Dimensions` and confirm the value is enabled |
+| Users expect class tracking | Users expect class tracking | Create a dimension named `Class`; SPRK treats class tracking as a company dimension |
+| A journal is already posted | A journal is already posted | Review your company's accounting edit permissions before expecting to change dimension values afterward |
 
 ## Related
 

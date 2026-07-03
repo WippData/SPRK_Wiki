@@ -45,10 +45,12 @@ SPRK uses the journal entry as the first reconciliation anchor for that account.
 
 ## If Something Looks Wrong
 
-- Creating the opening journal entry in the wrong account and then trying to reconcile a different account.
-- Skipping `Reconcile` after saving the journal entry and assuming the starting balance is fully established already.
-- Choosing the wrong journal entry in the `Opening balance journal entry` picker when more than one setup entry exists.
-- Treating the locked dates and derived balance in the start modal as manual entry fields.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You are about to take an action that may affect the result | Creating the opening journal entry in the wrong account and then trying to reconcile a different account | Confirm the visible company, page, and workflow state before continuing |
+| A needed review step is missing | Skipping `Reconcile` after saving the journal entry and assuming the starting balance is fully established already | Go back to that check before continuing |
+| The entered value or selection does not produce the expected result | Choosing the wrong journal entry in the `Opening balance journal entry` picker when more than one setup entry exists | Correct the value or selection before continuing |
+| Two similar workflows or fields are easy to mix up | Treating the locked dates and derived balance in the start modal as manual entry fields | Use the specific workflow or control named on this page |
 
 ## Related
 

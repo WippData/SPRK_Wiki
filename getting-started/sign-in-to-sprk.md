@@ -33,9 +33,11 @@ You enter SPRK and land in the main application shell with sidebar navigation an
 
 ## If Something Looks Wrong
 
-- Assuming the `Login` button creates a company. It only enters the app after onboarding is already complete.
-- Treating onboarding choices as permanent accounting setup decisions.
-- Expecting import-related ledger posting to happen during sign-in rather than during the later import and review workflows.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The result looks ready, but a key check is unresolved | Assuming the `Login` button creates a company | It only enters the app after onboarding is already complete |
+| Two similar workflows or fields are easy to mix up | Treating onboarding choices as permanent accounting setup decisions | Use the specific workflow or control named on this page |
+| The page does not show the expected result | Expecting import-related ledger posting to happen during sign-in rather than during the later import and review workflows | Review the visible action or related workflow before continuing |
 
 ## Related
 

@@ -36,7 +36,7 @@ Use this workflow when a confirmed bank or credit card transaction has a linked 
 8. If you are starting from a confirmed bank row instead of a journal preview, use Banking `Categorized` > `Resolve` when the problem is the row's GL link rather than the journal entry itself.
    - `Resolve GL link` can remove the current journal association, link the confirmed bank row to a reviewed existing GL line, or create and link a new GL transaction when the bank row has a valid category or split.
    - Removing the link keeps the bank row confirmed and preserves reconciliation or statement metadata.
-   - Suggested GL lines are candidates. Compare account, amount, date, memo, and source evidence before linking.
+   - Suggested GL lines are candidates. Compare account, amount, date, memo, and supporting detail before linking.
 9. Select `Reverse`.
 10. Choose the posting date for the reversal:
    - `Today` posts the reversal on the current date.
@@ -70,13 +70,15 @@ SPRK preserves the original audit trail and creates a separate reversing entry.
 
 ## If Something Looks Wrong
 
-- Treating reversal as delete or edit. The original entry remains visible for audit history.
-- Editing linked bank-register accounting directly from the modal. Accounting details still change through the journal entry.
-- Treating `Resolve` as delete. Journal-side and Banking-side resolve paths preserve the reviewed source records while updating linkage or creating explicit accounting.
-- Reversing before confirming whether the transaction has already been reconciled.
-- Choosing a custom reversal date that belongs in the wrong statement period.
-- Confirming a source-document reversal before checking whether it will void a bill or invoice, reverse a payment application, or reopen a source-document balance.
-- Expecting every historical row to show `Journal`. Rows without a persisted journal link do not have the linked journal action.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| Two similar workflows or fields are easy to mix up | Treating reversal as delete or edit | The original entry remains visible for audit history |
+| You are about to take an action that may affect the result | Editing linked bank-register accounting directly from the modal | Accounting details still change through the journal entry |
+| Two similar workflows or fields are easy to mix up | Treating `Resolve` as delete | Journal-side and Banking-side resolve paths preserve the reviewed source records while updating linkage or creating explicit accounting |
+| The result does not match what you expected | Reversing before confirming whether the transaction has already been reconciled | Review the visible state and use the related workflow before continuing |
+| The entered value or selection does not produce the expected result | Choosing a custom reversal date that belongs in the wrong statement period | Correct the value or selection before continuing |
+| The result does not match what you expected | Confirming a source-document reversal before checking whether it will void a bill or invoice, reverse a payment application, or reopen a source-document balance | Review the visible state and use the related workflow before continuing |
+| The page does not show the expected result | Expecting every historical row to show `Journal` | Rows without a persisted journal link do not have the linked journal action |
 
 ## Related
 

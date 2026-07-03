@@ -51,12 +51,14 @@ You can maintain company settings and lifecycle state without guessing which act
 
 ## If Something Looks Wrong
 
-- Trying to delete an active company before archiving it.
-- Assuming a company with accounting activity can always be removed permanently.
-- Treating setup edits as though they rewrite prior transactions automatically.
-- Assuming a missing manual-journal account picker option means the account is inactive. It may be configured as a control account.
-- Assuming hidden item numbers were removed from item records. Review `Item identification` before editing item master data.
-- Assuming company invoice defaults change historical invoice postings. They seed future workflow values only.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The action is unavailable or does not complete | Trying to delete an active company before archiving it | Use the supported prerequisite or correction path first |
+| The result looks ready, but a key check is unresolved | Assuming a company with accounting activity can always be removed permanently | Verify the visible SPRK state before continuing |
+| Two similar workflows or fields are easy to mix up | Treating setup edits as though they rewrite prior transactions automatically | Use the specific workflow or control named on this page |
+| The result looks ready, but a key check is unresolved | Assuming a missing manual-journal account picker option means the account is inactive | It may be configured as a control account |
+| The result looks ready, but a key check is unresolved | Assuming hidden item numbers were removed from item records | Review `Item identification` before editing item master data |
+| The result looks ready, but a key check is unresolved | Assuming company invoice defaults change historical invoice postings | They seed future workflow values only |
 
 ## Related
 

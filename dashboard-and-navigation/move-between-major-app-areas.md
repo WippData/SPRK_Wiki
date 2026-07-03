@@ -32,10 +32,12 @@ You can move reliably between the app’s major work areas and understand whethe
 
 ## If Something Looks Wrong
 
-- Looking for page tabs across the top of the app. Most page changes happen from the sidebar.
-- Forgetting that the sidebar can be collapsed, which makes labels disappear and leaves icon-only navigation.
-- Expecting the dashboard quick links to cover every page. They are shortcuts, not a full menu.
-- Searching for one generic settings page. Settings-style pages are exposed as specific destinations like `Companies`, `License`, `Support`, and `Preferences`.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You cannot find the expected page, action, or result | Looking for page tabs across the top of the app | Most page changes happen from the sidebar |
+| A needed review step is missing | Forgetting that the sidebar can be collapsed, which makes labels disappear and leaves icon-only navigation | Go back to that check before continuing |
+| The page does not show the expected result | Expecting the dashboard quick links to cover every page | They are shortcuts, not a full menu |
+| You cannot find the expected page, action, or result | Searching for one generic settings page | Settings-style pages are exposed as specific destinations like `Companies`, `License`, `Support`, and `Preferences` |
 
 ## Related
 

@@ -1,61 +1,54 @@
 # Understand Import and Migration Boundaries
 
-Use SPRK import paths with the right expectations: some imports have strong preview and retry guardrails, while others still need careful review after import.
+Choose the import or migration path that matches the file type and review risk before relying on imported data.
 
 ![Import Wizard showing starter templates, download templates action, and upload guidance](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
 
-## When To Use This
+## Use This Page When
 
-Use this article when you are planning a client migration, comparing import options, or deciding how much post-import review a file needs.
+Use this page when you are planning a client migration, comparing import options, or deciding how much post-import review a file needs.
 
-## Key Points
+## Choose This Path If
 
-- Bank import has the strongest public review path: choose an account, import a file, review pending rows, resolve categories/vendors where available, watch duplicate warnings, then confirm selected rows.
-- Journal import uses the `Ledger` import path with a preview before posting. Preview alone does not post.
-- Invoice and bill imports can support grouped document data where available. Review `Receive to`, `Pay from`, default line-account headers, line accounts, statuses, quantities, and duplicate document numbers before confirming.
-- Invoice and bill imports can create accrual documents or paid-now documents depending on the control-account versus settlement-account routing in the file.
-- The Import Wizard is the broadest setup path for mixed company data. Direct `QuickBooks Online ZIP` and `QuickBooks Desktop IIF` paths are narrower and should not be described as perfect historical migrations.
-- Company File export/import is the SPRK-to-SPRK handoff path once the source company already exists in SPRK.
-- After any import, review chart of accounts, opening balances, customers, vendors, items, unpaid invoices, unpaid bills, bank activity, reconciliation status, and reports.
+| Goal | Use | Check First |
+|---|---|---|
+| Prepare for any import | [Before you import](./before-you-import.md) | Active company, source file, template, preview warnings, and post-import review plan |
+| Import mixed setup data into a new company | [Use the Import Wizard](./use-the-import-wizard.md) | Company name, data-type source slots, and setup records |
+| Import bank or credit card transactions | [Import bank transactions](../banking-and-cash-management/import-bank-transactions.md) | Selected account, duplicate warnings, party names, and pending review |
+| Import journal entries | [Prepare and review ledger imports and exports](../ledger-and-chart-of-accounts/understand-ledger-import-and-export-behavior.md) | Balanced rows, account labels, vendors, dates, and preview totals |
+| Import grouped invoices | [Import invoices](../sales-and-receivables/import-invoices.md) | Customers, invoice numbers, line accounts, and `Receive to` routing |
+| Import grouped bills | [Import bills](../expenses-and-payables/import-bills.md) | Vendors, bill numbers, line accounts, and `Pay from` routing |
+| Move an existing SPRK company file | [Export and import Company Files](../backups-and-data-safety/export-and-import-company-files.md) | Company identity, export file, import preview, and replace warning |
 
-## Steps
+## Before You Commit
 
-1. Decide whether you are importing setup data, bank activity, journals, documents, or a complete SPRK company file.
-2. Prefer the most specific import path for the data:
-   - `Banking` for bank and card transactions.
-   - `Ledger` for journal-entry files.
-   - `Companies` or the Import Wizard for company setup and migration files.
-   - `Backups` > `Company file` for a SPRK company handoff.
-3. Download the visible template or starter file when SPRK offers one.
-4. Preview before confirming whenever the product exposes a preview.
-5. Capture visible diagnostics, duplicate warnings, row counts, and file type if the import does not behave as expected.
-6. Run a post-import review before relying on reports or balances.
+- Preview before confirming whenever SPRK exposes a preview.
+- Download the visible template or starter file when SPRK offers one.
+- Capture visible diagnostics, duplicate warnings, row counts, and file type if the import does not behave as expected.
+- Run post-import review before relying on reports or balances.
+- For document imports, review control-account routing versus settlement-account routing before confirmation.
 
-## What Happens Next
+## What Not To Assume
 
-You can choose an import path without over-reading its guarantees.
-
+- Every import path does not have the same duplicate review, confirmation, or correction options.
 - Preview and template-download steps do not post entries.
 - Confirmed bank rows, opened invoices or bills, and committed journal batches can affect the ledger according to their workflow.
 - Imported documents that use cash, bank, or credit-card settlement routing can post as paid-now activity instead of remaining open AR/AP balances.
-- Rule imports can use plain-text or JSON conditions and actions, but an empty or unresolved preview is still a stop point.
-- Journal imports can resolve readable account labels, including code-plus-name labels, but unknown accounts and invalid previews still block posting.
-- Failed or blocked previews should not be treated as posted accounting activity.
 - Direct QuickBooks imports are setup aids, not a promise that every historical QuickBooks transaction type is recreated perfectly.
 
 ## If Something Looks Wrong
 
-- Assuming every import path has the same duplicate review, confirmation, or correction options.
-- Treating a public sample or downloaded template as a required production format instead of a starting point.
-- Skipping post-import review because the file uploaded successfully.
-- Assuming grouped invoice or bill rows are safe to retry without checking duplicate-number errors.
-- Treating a paid-now settlement account as though it also leaves an open receivable or payable.
-- Using Company File language for ordinary bank, journal, invoice, or bill imports.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| A file was uploaded successfully but balances look wrong | Whether post-import review was completed | Review setup lists, documents, bank activity, reconciliation status, and reports |
+| A template is being treated as the required production format | Whether the template is only a starter | Use it to shape the file, then review preview results |
+| Grouped invoice or bill rows are being retried | Duplicate-number errors and previous import results | Resolve duplicates before confirming again |
+| Paid-now documents still appear expected as open AR/AP | `Receive to` or `Pay from` routing | Use a control account when the document should stay open |
+| Company File wording is used for ordinary imports | Whether the path is a SPRK company transfer | Use workflow-specific import language for bank, journal, invoice, or bill files |
 
 ## Related
 
-- [Use the Import Wizard](./use-the-import-wizard.md)
-- [Import bank transactions](../banking-and-cash-management/import-bank-transactions.md)
-- [Prepare and review ledger imports and exports](../ledger-and-chart-of-accounts/understand-ledger-import-and-export-behavior.md)
-- [Export and import Company Files](../backups-and-data-safety/export-and-import-company-files.md)
 - [Collect import run details for support](../support-and-troubleshooting/collect-import-run-details-for-support.md)
+- [Create your first company](./create-your-first-company.md)
+- [Import from QuickBooks Online ZIP](./import-from-quickbooks-online-zip.md)
+- [Import from QuickBooks Desktop IIF](./import-from-quickbooks-desktop-iif.md)

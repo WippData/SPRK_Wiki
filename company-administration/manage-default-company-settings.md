@@ -45,11 +45,13 @@ These tenant defaults are separate from per-company invoice presentation setting
 
 ## If Something Looks Wrong
 
-- If `Defaults` is missing, confirm the tenant license and workspace access.
-- If `Save defaults` or apply actions are disabled, confirm a valid tenant license is active.
-- If account codes disappear after applying defaults, check whether `Required account fields` is set to `Name` only.
-- If invoice terms, invoice workflow status, printed contact fields, payment instructions, or item-number visibility look wrong, review the specific company record instead of the tenant `Defaults` tab.
-- If a company should keep a different edit policy, do not include it in `Apply to selected` and avoid `Apply to all`.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| `Defaults` is missing | `Defaults` is missing | Confirm the tenant license and workspace access |
+| `Save defaults` or apply actions are disabled | `Save defaults` or apply actions are disabled | Confirm a valid tenant license is active |
+| Account codes disappear after applying defaults | Account codes disappear after applying defaults | Check whether `Required account fields` is set to `Name` only |
+| Invoice terms | Invoice terms | Invoice workflow status, printed contact fields, payment instructions, or item-number visibility look wrong, review the specific company record instead of the tenant `Defaults` tab |
+| A company should keep a different edit policy | A company should keep a different edit policy | Do not include it in `Apply to selected` and avoid `Apply to all` |
 
 ## Related
 

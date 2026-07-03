@@ -4,43 +4,34 @@ Learn which SPRK preferences follow your user profile, how broadly they apply, a
 
 ![Preferences page showing user-level tooltip visibility, grid edit, and account sorting controls](../screenshots/preferences-and-personalization/show-tooltips-preference-step-01.png)
 
-## When To Use This
+## Quick Reference
 
-Use this article when you want to understand whether a preference affects only your view, the whole app, or company accounting data.
+| Preference Area | What It Changes | What It Does Not Change |
+|---|---|---|
+| Theme and UI scale | How SPRK appears for your user profile. | Posted transactions, company setup, or other users' views. |
+| Number, currency, and date formats | How values and dates display and how typed dates are interpreted. | Source amounts or posted transaction dates. |
+| `Show tooltips` | Whether visible field-help icons and hover explanations appear where SPRK defines them. | Required fields, validation checks, or accounting behavior. |
+| `Grid Edit default` | Whether supported list pages open in Grid Edit mode for your user profile. | Which records exist or whether unsupported pages use Grid Edit. |
+| Account dropdown sorting | The order used by supported account selectors. | The chart of accounts, account names, account codes, or account status. |
+| Column preferences | Visible optional columns and their order on supported tables. | The underlying accounting records behind those rows. |
+| Sidebar customization | Which supported destinations are easier to reach from your sidebar. | Required product guardrails or the records stored in SPRK. |
 
-## Key Points
+## Details
 
-- The Preferences page describes its settings as applying across all companies across the entire app.
-- Theme, UI scale, tooltip visibility, display formatting, account-dropdown sorting, grid-edit startup behavior, automatic update prompts, and sidebar customization are personalization settings, not accounting transactions.
-- Preferences can change how values and pages are presented without changing source amounts or posted history.
-- The active company still matters for navigation context, but your user preferences are broader than a single company.
-- SPRK keeps certain settings access available even when you customize the sidebar, so required configuration paths remain reachable.
-- Column visibility and column order preferences affect how supported tables appear for your user profile, while required columns can remain protected by the product.
-- Account-dropdown sorting affects supported account selectors, including report and transaction-entry selectors, so one user may see grouped account-type ordering while another user sees a flatter A-Z list.
-- Supported column-preference dialogs can offer both drag handles and move-up or move-down controls for reordering, so users can choose the control style that fits the task.
-- `Show tooltips` controls visible field-help icons and hover explanations where they exist; it does not remove fields, change required validation, or change accounting behavior.
+The Preferences page describes its settings as applying across all companies across the app for your user profile. The active company still matters for navigation and accounting context, but preferences are broader than a single company.
 
-## What Happens Next
-
-You can distinguish between user-facing personalization and company accounting activity before making changes.
-
-- Personalization settings do not post to the general ledger.
-- Saved preferences do not move transactions between companies or reopen closed periods.
-- Display-only formatting changes do not rewrite journal entries, invoices, bills, or reconciliations.
-- Account selector ordering does not rename, activate, deactivate, or reorder accounts in the chart of accounts.
-- Tooltip visibility changes help affordances only and does not disable validation or product guardrails.
-- Changing supported table layouts, reordering columns, or enabling default Grid Edit changes your working view, not the underlying accounting data.
-- When `Grid Edit default` is on, supported list pages can open directly into grid mode for your user profile; it does not force unsupported pages into grid mode.
+Personalization settings do not post to the general ledger, move transactions between companies, reopen closed periods, rename accounts, or change source documents. They change how SPRK is presented to you.
 
 ## If Something Looks Wrong
 
-- Assuming a formatting preference changed how a transaction was originally posted.
-- Confusing app-wide user preferences with company-specific maintenance settings.
-- Treating an account selector's order as proof that accounts were reorganized in company setup.
-- Assuming column order preferences apply to every page identically.
-- Treating a dragged column order as a shared company layout instead of a saved user preference.
-- Turning off tooltips and then expecting field requirements or save checks to stop applying.
-- Expecting sidebar personalization to override required product guardrails.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| A posted amount or date still looks unchanged | Whether you changed a display preference rather than the source transaction | Edit the source record only through the relevant accounting workflow. |
+| A setting behaves across companies | Whether it is a user preference rather than company maintenance | Use company setup pages for company-specific configuration. |
+| Account selectors appear in a different order for another user | Each user's account dropdown sorting preference | Compare preferences before changing the chart of accounts. |
+| Column order differs between pages | Whether that table supports saved column preferences | Adjust the supported table directly if needed. |
+| A required field still blocks save after tooltips are hidden | Whether `Show tooltips` controls help visibility only | Complete the required field or validation check. |
+| A required page remains visible after sidebar customization | Whether SPRK keeps that destination available as a product guardrail | Use the required page when the workflow needs it. |
 
 ## Related
 

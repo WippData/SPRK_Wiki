@@ -1,71 +1,48 @@
 # Review Common Payables Workflows
 
+Choose the right payables workflow before entering vendor setup, bill recognition, payment, check tracking, or correction activity.
+
 ![Bills list showing payable balances and payment actions](../screenshots/expenses-and-payables/bills-list-step-01.png)
 
-Use a simple decision path to move from vendor setup to bill recognition, payment, and check tracking without mixing up the accounting effect.
+## Use This Page When
 
-## When To Use This
+Use this page when you know the payables job but need to choose the page that best matches the accounting result.
 
-Use this article when you want a quick way to choose the right payables workflow before entering data in the wrong place.
+## Choose This Path If
 
-## Before You Start
+| Goal | Use | Check First |
+|---|---|---|
+| Add or maintain the payee | [Manage vendors](./manage-vendors.md) | Vendor name, active status, address, and default expense account |
+| Set reusable vendor account defaults | [Set up vendor default expense accounts](./set-up-vendor-default-expense-accounts.md) | Whether the default account fits future purchases |
+| Enter a vendor bill | [Create bills](./create-bills.md) | Vendor, `Pay from`, line accounts, due date, and status |
+| Record a payment on an open bill | [Record bill payments](./record-bill-payments.md) | Bill balance, payment amount, `Pay from`, and bank-match risk |
+| Import grouped bill rows | [Import bills](./import-bills.md) | Vendor names, bill numbers, line accounts, and `Pay from` routing |
+| Match a bank withdrawal to a bill | [Match bank transactions](../banking-and-cash-management/match-bank-transactions.md) | Pending bank row, open bill, vendor, amount, date, and difference |
+| Review or correct a posted bill | [Void or correct bills](./void-or-correct-bills.md) | Bill status, balance, active payments, linked journals, and reversal date |
+| Maintain check tracking | [Work with checks](./work-with-checks.md) | Whether the check page is visible and whether the check belongs to reconciliation work |
 
-- You have an active company selected.
-- You know whether your next step is setup, payable recognition, payment, or check tracking.
+## Before You Commit
 
-## Steps
+- Choose an Accounts Payable control account in `Pay from` when the bill should stay open until payment.
+- Choose a cash, bank, or credit-card settlement account only for a paid-now bill.
+- Review line-level bill accounts before opening or importing bills.
+- Use bill payment workflows to reduce open vendor balances.
+- Review payment history and linked journals before voiding or correcting a bill.
 
-1. Start with `Vendors` if the payee does not exist yet or if you want to save a reusable `Default Expense Account` before later transactions.
-2. Use `Bills` when you need SPRK to track an amount owed to a vendor.
-3. Review `Pay from` before saving the bill:
-   - Choose an Accounts Payable control account when the bill should stay open until payment.
-   - Choose a cash, bank, or credit-card settlement account only for a paid-now bill.
-4. Save the bill as `Draft` if you are still reviewing it, or `Open` if you want SPRK to recognize the payable or paid-now expense based on `Pay from`.
-5. Return to `Bills` and use `Record payment` when you are paying an existing open bill from a bank or cash account.
-6. Use `View payment history` and `View linked journal entries` from the bill row menu to trace payment applications and posting history before changing a bill.
-7. Use `Void bill` for an eligible open bill that should be reversed without deleting the source record. Reverse or unapply active payments first if the bill is partial or paid.
-8. Use `Checks` when you need to maintain a check record and its status, especially for matching and reconciliation work.
-9. If you classify bank transactions from imported activity, remember that vendor defaults can also help supported banking workflows start with a category suggestion.
-10. If you are unsure whether a step affects the ledger, verify it before saving:
-   - Vendor setup: no journal entry
-   - Bill opened with an Accounts Payable control account in `Pay from`: debits line accounts and credits payables
-   - Bill saved paid-now with a settlement account in `Pay from`: debits line accounts and credits the selected settlement account
-   - Bill payment: debits payables and credits the selected `Pay from` account
-   - Bill void: posts a reversal and keeps the original bill history
-   - Check record activity: operational tracking only in the current documented flow
+## What Not To Assume
 
-## What Happens Next
+- Vendor setup, bill entry, bill payment, check tracking, and banking match workflows do not create the same accounting result.
+- A vendor default expense account does not remove the need to review bill lines.
+- Linked journal review is not deletion or unposting.
+- Voiding a bill preserves the bill and creates reversal history.
+- Not every payable record supports the same correction action; use the action SPRK shows for that record.
 
-You can choose the right payables page quickly and avoid confusing master-data setup, payable recognition, payment posting, check-status tracking, and supported reuse of vendor defaults.
+## Practice And Examples
 
-## If Something Looks Wrong
-
-- Using `Checks` when the real task is to reduce an open bill balance.
-- Entering a bill as `Open` before verifying the account coding.
-- Choosing a settlement account in `Pay from` when you meant to track an unpaid vendor balance.
-- Assuming vendor setup, bill entry, and check tracking all create the same accounting result.
-- Assuming a vendor default expense account means every downstream workflow will auto-fill without review.
-- Treating linked journal review as deletion or unposting.
-- Treating bill void as deletion. Voiding preserves the bill and creates reversal history.
-- Assuming every payable record supports the same correction action. Open the row menu and use the action SPRK shows for that bill, payment, or check.
-
-## Business Scenario: Payables Correction Boundary
-
-Use this scenario to train reviewers on bill payment review, linked journal review, and why void/correction actions depend on the bill's current status and balance.
-
-- Sample file: [15-bill-void-correction-boundary.csv](../sample-files/v1-validation/15-bill-void-correction-boundary.csv)
-- Evidence:
-
-![Bill action menu with payment, linked journal, payment history, and disabled void context](../screenshots/v1-validation/bill-actions-menu-payment-journal-void.png)
-
-![Bill linked journal entries showing payable posting detail](../screenshots/v1-validation/bill-linked-journal-entries.png)
-
-The walkthrough confirmed that bill payment history and linked journals are visible from the bill action menu, and that the void path is not always enabled for partially paid or otherwise ineligible bills.
+- Practice file: [bill-void-correction-boundary.csv](../sample-files/practice/bill-void-correction-boundary.csv)
 
 ## Related
 
-- [Manage vendors](./manage-vendors.md)
-- [Set up vendor default expense accounts](./set-up-vendor-default-expense-accounts.md)
 - [Create and manage bills](./create-and-manage-bills.md)
-- [Work with checks](./work-with-checks.md)
 - [Review document payment history and linked journals](../ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md)
+- [Common accountant corrections](../ledger-and-chart-of-accounts/common-accountant-corrections.md)

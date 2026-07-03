@@ -62,15 +62,17 @@ The new company is added to the `Companies` table and becomes available as the a
 
 ## If Something Looks Wrong
 
-- Leaving `Company Display name` blank. The create action is not meant to succeed without it.
-- Turning off `Accounts setup` without planning how the chart of accounts will be created afterward.
-- Setting the wrong `Country (ISO)` format. Use the short country code shown by the product, not the full country name.
-- Typing setup dates in an order that does not match your saved date-format preference.
-- Ignoring default receivable or payable account settings when your team needs invoices or bills immediately after setup.
-- Treating missing account codes in lists as missing data when the company is configured for name-only account presentation.
-- Treating hidden item numbers as missing item data when the company is configured for `Description only` item identification.
-- Forgetting to review `Sales / Invoicing` before the first invoice if your firm wants standard terms or draft/open defaults.
-- Selecting control accounts without telling journal-entry users why those accounts disappear from new manual journal account choices.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| A required value or review step is missing | Leaving `Company Display name` blank | The create action is not meant to succeed without it |
+| You are about to take an action that may affect the result | Turning off `Accounts setup` without planning how the chart of accounts will be created afterward | Confirm the visible company, page, and workflow state before continuing |
+| The result does not match what you expected | Setting the wrong `Country (ISO)` format | Use the short country code shown by the product, not the full country name |
+| The entered value or selection does not produce the expected result | Typing setup dates in an order that does not match your saved date-format preference | Correct the value or selection before continuing |
+| The result does not match the intended workflow | Ignoring default receivable or payable account settings when your team needs invoices or bills immediately after setup | Review the visible state before continuing |
+| Two similar workflows or fields are easy to mix up | Treating missing account codes in lists as missing data when the company is configured for name-only account presentation | Use the specific workflow or control named on this page |
+| Two similar workflows or fields are easy to mix up | Treating hidden item numbers as missing item data when the company is configured for `Description only` item identification | Use the specific workflow or control named on this page |
+| A needed review step is missing | Forgetting to review `Sales / Invoicing` before the first invoice if your firm wants standard terms or draft/open defaults | Go back to that check before continuing |
+| The entered value or selection does not produce the expected result | Selecting control accounts without telling journal-entry users why those accounts disappear from new manual journal account choices | Correct the value or selection before continuing |
 
 ## Related
 

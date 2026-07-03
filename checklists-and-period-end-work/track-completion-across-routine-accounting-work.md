@@ -43,9 +43,11 @@ You can see which checklist runs are open, completed, or due for follow-up witho
 
 ## If Something Looks Wrong
 
-- Treating a completed checklist run as the only proof needed for financial review.
-- Forgetting to clear filters and then assuming runs are missing.
-- Using checklist status instead of the source transaction page when you need posting detail.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| Two similar workflows or fields are easy to mix up | Treating a completed checklist run as the only proof needed for financial review | Use the specific workflow or control named on this page |
+| A needed review step is missing | Forgetting to clear filters and then assuming runs are missing | Go back to that check before continuing |
+| The current page does not fit the task | Using checklist status instead of the source transaction page when you need posting detail | Return to the workflow this page supports |
 
 ## Related
 

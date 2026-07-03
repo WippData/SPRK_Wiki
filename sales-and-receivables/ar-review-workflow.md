@@ -35,11 +35,13 @@ AR review helps confirm that customer balances, invoice status, payment applicat
 
 ## If Something Looks Wrong
 
-- Do not post a journal entry to clear a customer balance before checking invoice payment status.
-- Do not treat a paid bank deposit as proof that the invoice payment was applied correctly.
-- Do not rely on aging reports until invoices and payments have been entered.
-- Do not change revenue accounts casually after invoices have already been posted.
-- Do not review AR without confirming the active company.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| A customer balance is being cleared with a journal entry | Whether invoice payment status explains the balance | Review the invoice and payment workflow before posting an adjustment |
+| A bank deposit appears to prove an invoice was paid | Whether the payment was applied to the open invoice | Match bank activity only after the receivables workflow is correct |
+| Receivables aging looks incomplete | Whether invoices and payments have all been entered | Complete source activity before relying on the aging report |
+| Revenue accounts are being changed after posting | Whether posted invoices already used the original account | Review the posting impact before changing account setup |
+| AR totals look wrong | Whether the active company is the one under review | Switch to the correct company before continuing |
 
 ## Related
 

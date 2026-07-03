@@ -33,9 +33,11 @@ You can read the dashboard as a summary page and use it as a launch point into d
 
 ## If Something Looks Wrong
 
-- Treating dashboard figures as the place to do detailed investigation. Use the linked working pages when you need record-level detail.
-- Interpreting loading placeholders as final values.
-- Assuming the quick links list is configurable from the dashboard itself. Use it as navigation, not as a setup panel.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| Two similar workflows or fields are easy to mix up | Treating dashboard figures as the place to do detailed investigation | Use the linked working pages when you need record-level detail |
+| The result does not match what you expected | Interpreting loading placeholders as final values | Review the visible state and use the related workflow before continuing |
+| The result looks ready, but a key check is unresolved | Assuming the quick links list is configurable from the dashboard itself | Use it as navigation, not as a setup panel |
 
 ## Related
 

@@ -13,7 +13,7 @@ Use this workflow when your firm receives a plugin, needs to upgrade an installe
 - Confirm the plugin source is trusted.
 - Confirm your workspace has plugin access.
 - Keep users out of plugin-owned workflows while you install, upgrade, disable, or uninstall.
-- Confirm the active company before testing company-specific plugin pages.
+- Confirm the active company before checking company-specific plugin pages.
 
 ## Steps
 
@@ -23,14 +23,14 @@ Use this workflow when your firm receives a plugin, needs to upgrade an installe
 4. If you are installing or upgrading, choose `Select Plugin Bundle`.
 5. Select the trusted plugin file.
 6. Select `Preview Plugin`.
-7. Review the plugin name, publisher, version, description, warnings, runtime requirements, extensions, and available action.
-   - Preview can block install or upgrade for app-version incompatibility, an older or same plugin version, invalid manifests, unsupported public runtime needs, or attempts to remove data-bearing extensions.
-   - A plugin that needs network, file, or secret capabilities may be installable for testing but hidden from the public app runtime.
+7. Review the plugin name, publisher, version, description, warnings, page availability requirements, extensions, and available action.
+   - Preview can block install or upgrade for app-version incompatibility, an older or same plugin version, invalid bundle definitions, unsupported public page needs, or attempts to remove data-bearing extensions.
+   - A plugin that needs network, file, or secret capabilities may be accepted for review but hidden from public app pages.
 8. If the preview is not ready, stop and resolve the issue before installing or upgrading.
 9. If the preview is ready and the install or upgrade action is available, continue.
 10. Refresh `Installed Plugins`.
 11. Confirm the plugin appears with the expected status.
-12. If the plugin should add pages or report sources, confirm its card shows an appropriate runtime state before checking navigation or Reports.
+12. If the plugin should add pages or report sources, confirm its card shows an appropriate page-availability state before checking navigation or Reports.
 13. To remove a plugin from use, disable it first.
 14. If uninstall becomes available after disablement, use it only when you intend to remove the installed plugin record from SPRK.
 
@@ -44,27 +44,28 @@ Uninstall can remain blocked even after a plugin is disabled when SPRK finds pro
 
 ## If Something Looks Wrong
 
-- If the plugin does not appear after installation, refresh installed plugins.
-- If uninstall is not available, disable the plugin first.
-- If uninstall stays blocked after disablement, capture the plugin card message before contacting support.
-- If expected pages are missing, confirm the plugin is enabled and the intended company is active.
-- If expected report surfaces are missing, confirm the plugin is enabled, the installed row state has refreshed, and the plugin exposes a runtime-compatible report extension.
-- If users should not use the plugin yet, leave it disabled until setup is complete.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The plugin does not appear after installation | Whether the installed-plugin list has refreshed | Select `Refresh Installed Plugins`. |
+| Uninstall is not available | Whether the plugin is still enabled | Disable the plugin first. |
+| Uninstall stays blocked after disablement | The blocked-action message on the plugin card | Capture the message before contacting support. |
+| Expected pages are missing | Plugin enabled state, page availability, and active company | Confirm the plugin is enabled and the intended company is active. |
+| Expected report surfaces are missing | Plugin enabled state and report availability | Refresh installed plugins, then review Reports again. |
+| Users should not use the plugin yet | Whether setup is complete | Leave it disabled until setup is complete. |
 
-## Business Scenario: Plugin Bundle Preview And Install Gate
+## Practice And Examples
 
-Use this scenario to train staff to preview a trusted plugin bundle, inspect runtime extensions, and stop at the install gate until installation is intentional.
+Use these practice files and screenshots to preview a trusted plugin bundle and stop at the install gate until installation is intentional.
 
-- Sample files:
-  - [26-plugin-runtime-lifecycle.csv](../sample-files/v1-validation/26-plugin-runtime-lifecycle.csv)
-  - [26-plugin-runtime-lifecycle-employees.zip](../sample-files/v1-validation/26-plugin-runtime-lifecycle-employees.zip)
-- Evidence:
+- Practice files:
+  - [plugin-lifecycle-practice.csv](../sample-files/practice/plugin-lifecycle-practice.csv)
+  - [plugin-lifecycle-employees.zip](../sample-files/practice/plugin-lifecycle-employees.zip)
 
 ![Plugin preview summary showing selected bundle, plugin metadata, and install gate](../screenshots/v1-validation/plugins-preview-summary-install-gate.png)
 
-![Plugin preview validation showing the bundle is ready to install](../screenshots/v1-validation/plugins-preview-validation-ready.png)
+![Plugin preview status showing the bundle is ready to install](../screenshots/v1-validation/plugins-preview-validation-ready.png)
 
-The walkthrough selected `employees.zip`, ran `Preview Plugin`, confirmed the preview passed validation, and did not install the plugin.
+Preview shows bundle metadata and readiness before the plugin is installed.
 
 ## Related
 

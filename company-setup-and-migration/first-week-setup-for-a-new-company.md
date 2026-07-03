@@ -52,11 +52,13 @@ The company should be ready for normal bookkeeping with fewer surprises around m
 
 ## If Something Looks Wrong
 
-- Do not enter current-month transactions until the active company is confirmed.
-- Do not import source data into a company that still has the wrong account setup.
-- Do not skip default AR/AP account review if invoices or bills will be used.
-- Do not create opening balances without a clear cutoff date.
-- Do not use a journal entry when a source workflow is the better home for the transaction.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| Current-month work is starting | Whether the intended company is active | Confirm the active company before entering transactions |
+| Source data is ready to import | Whether the chart of accounts and setup choices are correct | Fix setup before importing source data |
+| Invoices or bills will be used soon | Whether default AR/AP accounts have been reviewed | Set or review defaults before entering documents |
+| Opening balances are being created | Whether the cutoff date is clear | Confirm the cutoff date before posting setup balances |
+| A transaction is being entered as a journal entry | Whether a source workflow is the better home | Use the source workflow when it better explains the transaction |
 
 ## Related
 

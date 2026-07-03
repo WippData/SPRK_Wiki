@@ -33,11 +33,13 @@ AP review helps confirm that vendor balances, bill status, payment records, AP a
 
 ## If Something Looks Wrong
 
-- Do not use a journal entry to clear a vendor balance before checking bill payment status.
-- Do not treat a bank withdrawal as proof that the bill was paid correctly.
-- Do not rely on payables aging until bills and payments have been entered.
-- Do not apply broad vendor defaults without reviewing unusual purchases.
-- Do not review AP without confirming the active company.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| A vendor balance is being cleared with a journal entry | Whether bill payment status explains the balance | Review the bill and payment workflow before posting an adjustment |
+| A bank withdrawal appears to prove a bill was paid | Whether the bill payment is recorded against the vendor bill | Match the bank activity only after the payable workflow is correct |
+| Payables aging looks incomplete | Whether bills and payments have all been entered | Complete source activity before relying on the aging report |
+| Vendor defaults are being applied broadly | Whether any purchases need a different expense account | Review unusual purchases before applying defaults |
+| AP totals look wrong | Whether the active company is the one under review | Switch to the correct company before continuing |
 
 ## Related
 

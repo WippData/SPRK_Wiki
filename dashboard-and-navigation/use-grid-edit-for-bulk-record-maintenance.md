@@ -75,14 +75,16 @@ You can review and apply repeated list updates from one table instead of opening
 
 ## If Something Looks Wrong
 
-- Using Grid Edit for broad cleanup without first confirming you are on the correct page and company context.
-- Applying several edits at once without reviewing the changed-cell count and final cell values.
-- Assuming every list page exposes the same columns or the same editing depth.
-- Assuming every Grid Edit table supports Banking-style selected-row actions.
-- Trying to run Banking bulk actions before applying or discarding draft Grid Edit changes.
-- Forgetting that column preferences affect how the list is displayed, not the underlying accounting logic.
-- Assuming drag reordering is available on every table; use the visible `Column preferences` controls for the page you are on.
-- Looking for `Column preferences` while still in grid mode. In the current Items workflow, that control is visible in the standard list view.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The current page does not fit the task | Using Grid Edit for broad cleanup without first confirming you are on the correct page and company context | Return to the workflow this page supports |
+| You are about to take an action that may affect the result | Applying several edits at once without reviewing the changed-cell count and final cell values | Confirm the visible company, page, and workflow state before continuing |
+| The result looks ready, but a key check is unresolved | Assuming every list page exposes the same columns or the same editing depth | Verify the visible SPRK state before continuing |
+| The result looks ready, but a key check is unresolved | Assuming every Grid Edit table supports Banking-style selected-row actions | Verify the visible SPRK state before continuing |
+| The action is unavailable or does not complete | Trying to run Banking bulk actions before applying or discarding draft Grid Edit changes | Use the supported prerequisite or correction path first |
+| A needed review step is missing | Forgetting that column preferences affect how the list is displayed, not the underlying accounting logic | Go back to that check before continuing |
+| The result looks ready, but a key check is unresolved | Assuming drag reordering is available on every table; use the visible `Column preferences` controls for the page you are on | Verify the visible SPRK state before continuing |
+| You cannot find the expected page, action, or result | Looking for `Column preferences` while still in grid mode | In the current Items workflow, that control is visible in the standard list view |
 
 ## Related
 

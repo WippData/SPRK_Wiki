@@ -31,10 +31,12 @@ SPRK imports the QuickBooks Online ZIP and adds the imported company to the comp
 
 ## If Something Looks Wrong
 
-- Choosing a file that is not a QuickBooks Online ZIP export.
-- Using the QBO import path for a QuickBooks Desktop IIF file.
-- Skipping the post-import review and assuming every record mapped exactly as expected.
-- Expecting this workflow to load every possible historical workflow automatically. Review the imported company before production use.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| The entered value or selection does not produce the expected result | Choosing a file that is not a QuickBooks Online ZIP export | Correct the value or selection before continuing |
+| The current page does not fit the task | Using the QBO import path for a QuickBooks Desktop IIF file | Return to the workflow this page supports |
+| A needed review step is missing | Skipping the post-import review and assuming every record mapped exactly as expected | Go back to that check before continuing |
+| The page does not show the expected result | Expecting this workflow to load every possible historical workflow automatically | Review the imported company before production use |
 
 ## Related
 

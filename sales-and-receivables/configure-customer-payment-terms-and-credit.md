@@ -55,10 +55,12 @@ The customer record keeps payment and credit defaults together, new invoices can
 
 ## If Something Looks Wrong
 
-- Treating customer terms as permanent invoice instructions without reviewing the actual invoice date and due date.
-- Using `Paid` or another invoice status change instead of the payment workflow when money is collected.
-- Assuming a credit status blocks or approves customer activity automatically. Use it as a visible control point unless your team has verified a stronger workflow around it.
-- Forgetting to revisit older customer defaults after payment expectations change.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| Two similar workflows or fields are easy to mix up | Treating customer terms as permanent invoice instructions without reviewing the actual invoice date and due date | Use the specific workflow or control named on this page |
+| The current page does not fit the task | Using `Paid` or another invoice status change instead of the payment workflow when money is collected | Return to the workflow this page supports |
+| The result looks ready, but a key check is unresolved | Assuming a credit status blocks or approves customer activity automatically | Use it as a visible control point unless your team has verified a stronger workflow around it |
+| A needed review step is missing | Forgetting to revisit older customer defaults after payment expectations change | Go back to that check before continuing |
 
 ## Related
 

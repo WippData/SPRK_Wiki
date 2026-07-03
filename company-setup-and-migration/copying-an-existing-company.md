@@ -10,7 +10,7 @@ Use the Import Wizard, also called the Import Company Wizard in some workflows, 
 
 Use this workflow when you want to clone, copy, or duplicate an existing company into a separate new company. Common uses include building a training copy, starting a similar client from a known setup, testing a setup pattern, or creating a clean company that reuses selected foundation data.
 
-Use Company File export/import instead when the goal is a file handoff or replace-style company transfer.
+Use Company File export/import instead when the goal is a file transfer or replace-style company transfer.
 
 ## Before You Start
 
@@ -47,11 +47,13 @@ SPRK creates a separate new company using the source choices you reviewed in the
 
 ## If Something Looks Wrong
 
-- Starting from the wrong source company.
-- Reusing the original company name and then confusing the source and copied company later.
-- Copying transaction data when you only wanted setup lists.
-- Skipping post-copy review before using the duplicated company for live work.
-- Treating a copied company as a backup restore or Company File handoff.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You are about to take an action that may affect the result | Starting from the wrong source company | Confirm the visible company, page, and workflow state before continuing |
+| The result does not match the intended workflow | Reusing the original company name and then confusing the source and copied company later | Review the visible state before continuing |
+| The result does not match what you expected | Copying transaction data when you only wanted setup lists | Review the visible state and use the related workflow before continuing |
+| A needed review step is missing | Skipping post-copy review before using the duplicated company for live work | Go back to that check before continuing |
+| Two similar workflows or fields are easy to mix up | Treating a copied company as a backup restore or Company File transfer | Use the specific workflow or control named on this page |
 
 ## Related
 

@@ -62,23 +62,24 @@ Use this workflow when you need to make the `Checks` page available in your side
 
 ## If Something Looks Wrong
 
-- Looking for `Checks` in the default sidebar without first adding or showing it from sidebar customization.
-- Assuming the `Checks` page is the same as recording a bill payment.
-- Treating `Draft` and `Issued` as interchangeable when other team members rely on status.
-- Accepting a filled `Offset Account` without confirming it still matches the purpose of this check.
-- Trying to delete a non-draft check. The current workflow only allows draft checks to be deleted.
-- Assuming voiding a check is the same as clearing it through reconciliation.
+| What You See | What To Check | What To Do Next |
+|---|---|---|
+| You cannot find the expected page, action, or result | Looking for `Checks` in the default sidebar without first adding or showing it from sidebar customization | Use the visible navigation or related workflow named on this page |
+| The result looks ready, but a key check is unresolved | Assuming the `Checks` page is the same as recording a bill payment | Verify the visible SPRK state before continuing |
+| Two similar workflows or fields are easy to mix up | Treating `Draft` and `Issued` as interchangeable when other team members rely on status | Use the specific workflow or control named on this page |
+| The result does not match what you expected | Accepting a filled `Offset Account` without confirming it still matches the purpose of this check | Review the visible state and use the related workflow before continuing |
+| The action is unavailable or does not complete | Trying to delete a non-draft check | The current workflow only allows draft checks to be deleted |
+| The result looks ready, but a key check is unresolved | Assuming voiding a check is the same as clearing it through reconciliation | Verify the visible SPRK state before continuing |
 
-## Business Scenario: Checks Visibility And Workflow Boundary
+## Practice And Examples
 
-Use this scenario to train staff on the fact that Checks may need to be shown from sidebar customization before check tracking can be validated.
+Use the practice file and screenshot to identify where a hidden `Checks` page can be made visible before check tracking.
 
-- Sample file: [16-check-match-clear-void.csv](../sample-files/v1-validation/16-check-match-clear-void.csv)
-- Evidence:
+- Practice file: [check-match-clear-void.csv](../sample-files/practice/check-match-clear-void.csv)
 
 ![Preferences sidebar configuration entry used to show hidden pages such as Checks](../screenshots/v1-validation/preferences-sidebar-configuration-checks-boundary.png)
 
-The walkthrough did not change the user's sidebar configuration. It confirmed the documented navigation boundary: Checks can be managed only after the page is made visible from Preferences when it is hidden.
+When `Checks` is hidden, make the page visible from Preferences before managing checks.
 
 ## Related
 
