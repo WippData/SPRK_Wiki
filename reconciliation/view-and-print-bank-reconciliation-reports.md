@@ -1,5 +1,8 @@
 # View and Print Bank Reconciliation Reports
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; posted-history actions captured 2026-07-15 -->
+
 ![Reports Reconciliation tab opened from Print Bank Rec](../screenshots/reconciliation/reconciliation-report-tab-step-01.png)
 
 Open the bank reconciliation report from an active reconciliation account or from posted reconciliation history, then review the report output without changing ledger activity.
@@ -30,6 +33,8 @@ Use this workflow when you need support for a completed bank or credit card reco
    - Select `History`.
    - Find the posted reconciliation row.
    - Use `View report` from the row action when it is available.
+
+![Posted reconciliation history showing status and View report actions](../screenshots/reconciliation/reconciliation-history-posted-actions-2026-07.png)
 7. Review the report context before printing or sharing it:
    - Confirm the account.
    - Confirm the statement period.
@@ -44,6 +49,7 @@ SPRK opens the reconciliation report area for the selected account and posted st
 - The report is review output tied to a posted reconciliation session.
 - If the selected account has no posted reconciliation periods, SPRK shows that no posted reconciliations were found for the account instead of generating a populated report.
 - History rows only expose `View report` when there is posted reconciliation history to view.
+- `Posted` history is the normal report-producing state. If a journal correction explicitly voids an affected session, the session stays in history as `Voided`, is not used for future opening balances, and should not be treated as a normal printable posted report.
 
 ## If Something Looks Wrong
 
@@ -53,6 +59,7 @@ SPRK opens the reconciliation report area for the selected account and posted st
 | The page does not show the expected result | Expecting a report before the reconciliation has been posted | Review the visible action or related workflow before continuing |
 | Two similar workflows or fields are easy to mix up | Treating a printed report as a way to edit or reopen a posted reconciliation | Use the specific workflow or control named on this page |
 | The entered value or selection does not produce the expected result | Choosing the wrong account before opening `Print Bank Rec`, which pre-fills the report account from the active selection | Correct the value or selection before continuing |
+| A history row is `Voided` | Expecting it to behave like a normal posted report row | Keep it as audit history and use the current posted or later reconciliation period for normal report review |
 
 ## Practice And Examples
 

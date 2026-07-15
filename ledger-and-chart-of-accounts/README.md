@@ -4,6 +4,8 @@
 
 Organize your account list, decide when to use journal entries, make accountant corrections, move ledger data in or out of SPRK, and understand audit-sensitive actions.
 
+Backdated journal corrections that affect posted Bank, Cash, or Credit Card reconciliation history require an explicit `Void affected reconciliation?` decision before the save completes.
+
 ## In This Section
 
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)

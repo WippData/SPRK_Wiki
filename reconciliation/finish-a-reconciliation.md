@@ -42,6 +42,7 @@ SPRK finalizes the reconciliation for the selected statement window.
 - SPRK requires the difference to be zero for reconciliations with prior history.
 - Later reconciliations can finish with no selected transactions when the carried opening balance already equals the statement ending balance.
 - Posted reconciliation records can be reviewed later from reconciliation history and the Reports `Reconciliation` tab.
+- If a later supported journal correction explicitly voids a posted session, SPRK retains the session in `History` with status `Voided`; that session no longer supplies the opening balance for future reconciliations.
 
 ## If Something Looks Wrong
 

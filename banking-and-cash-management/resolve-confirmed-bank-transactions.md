@@ -1,5 +1,8 @@
 # Resolve Confirmed Bank Transactions
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; related reconciliation safeguards captured 2026-07-15 -->
+
 Review and repair the accounting link for a confirmed bank row without returning the row to pending review.
 
 ![Confirmed transfer toast after posting the bank-to-bank transaction](../screenshots/v1-validation/banking-transfer-confirmed-toast.png)
@@ -31,10 +34,16 @@ Review and repair the accounting link for a confirmed bank row without returning
    - Linking to an existing GL line ties the bank row to the reviewed line.
    - `Create GL and link` uses bank row details to create a linked journal when the row has a valid target account or split.
 9. Confirm only after the accounting trail matches the intended correction.
+10. For a compatible confirmed row linked to a simple two-line journal, a supported edit can keep the date, amount, description, memo, party, dimensions, and non-cash target account synchronized across the bank row and journal.
+11. Review reconciliation impact separately:
+   - A same-date change to only the non-cash target account does not by itself require posted reconciliation history to be voided when the settlement account and amount also remain unchanged.
+   - Split rows, settlement-account changes, and source-document corrections can require a reversal or source workflow instead of direct synchronization.
 
 ## What This Changes
 
 `Remove link` removes the journal association from the bank row. It does not delete the confirmed bank row, unconfirm it, unreconcile it, or clear statement metadata. Creating or linking GL from `Resolve` changes the accounting trail, so review it like any other posting-sensitive correction.
+
+When a supported linked edit changes settlement details that affect posted reconciliation history, SPRK can require explicit void confirmation. A confirmed void preserves the session as `Voided` history and releases its rows for later reconciliation review; it does not delete history.
 
 ## If Something Looks Wrong
 
@@ -45,6 +54,7 @@ Review and repair the accounting link for a confirmed bank row without returning
 | Removing the link did not remove the bank row | Whether you expected an unconfirm or delete action | Use the supported correction path for the bank row itself |
 | `Create GL and link` is unavailable | Whether the row has a valid target account or split | Complete categorization before creating a linked journal |
 | The row is reconciled | Statement period and reconciliation status | Review reconciliation impact before changing the link |
+| A simple target-account reclassification needs correction | Whether date, amount, and settlement account can remain unchanged | Use the supported paired edit and verify both the bank row and journal afterward |
 
 ## Related
 

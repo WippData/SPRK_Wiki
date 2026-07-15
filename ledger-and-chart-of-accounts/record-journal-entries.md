@@ -1,5 +1,8 @@
 # Record Journal Entries
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; reconciliation-void confirmation captured 2026-07-15 -->
+
 Create balanced manual journal entries in the `Ledger` page, optionally create linked bank-register rows when that drawer option is available, schedule an automatic reversing entry, save reusable templates when needed, and understand how posting affects the general ledger.
 
 ![New Journal Entry drawer showing date, memo, account lines, debit and credit columns, totals, and reversing-entry controls](../screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png)
@@ -47,6 +50,12 @@ Use a source workflow instead when the activity belongs to a customer invoice, c
    - every line must use either debit or credit, not both
    - totals must match before the save action is allowed
 9. Select `Create` to post the entry.
+   - If the journal date is on or before an affected posted reconciliation for a Bank, Cash, or Credit Card account, SPRK shows `Void affected reconciliation?` before the save completes.
+   - Review the account, journal date, affected statement-ending date, and number of posted reconciliations in the message.
+   - Select `Cancel` to return to the journal without saving, or `Void and save` only when the correction is intended to invalidate that posted reconciliation history.
+
+![Void affected reconciliation confirmation for a backdated journal entry](../screenshots/reconciliation/journal-entry-void-reconciliation-confirmation-2026-07.png)
+
 10. If you expect to reuse the same layout later, use the save-template option from the journal entry drawer.
 11. Review the new entry in the ledger table and use search or filters to find it again later.
 
@@ -63,6 +72,9 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - SPRK can block new or changed manual journal lines that use configured control accounts. Existing lines that already use a control account can remain as-is during edit review, but users should not newly assign that account from the manual journal drawer once the setting is active.
 - Nonposting accounts are parent or summary accounts. They may remain visible in `Chart of Accounts`, but they are not the right target for manual journal posting.
 - If the entry is off by a very small rounding amount within the current tolerance, SPRK can auto-adjust one line and note that adjustment in the memo before saving.
+- Choosing `Void and save` posts the journal and keeps each affected reconciliation session in `History` with status `Voided`; SPRK does not use a voided session as the opening-balance source for a later reconciliation.
+- Rows released by the void no longer carry that reconciliation session's reconciled, statement, or cleared markers. Review them in the next appropriate reconciliation period.
+- Canceling the void confirmation leaves the journal create or edit uncommitted.
 
 ## If Something Looks Wrong
 
@@ -73,6 +85,7 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 | The result looks ready, but a key check is unresolved | Assuming auto-reversal is part of the edit flow for existing entries | In the current live flow it appears when creating a new manual journal entry |
 | The result looks ready, but a key check is unresolved | Assuming every manual journal creates bank-register activity | Register rows are opt-in and only mirror eligible bank, cash, or credit-card lines |
 | The result looks ready, but a key check is unresolved | Assuming linked register `Resolve` changes the journal's accounting lines | Use journal edit, reversal, or another supported correction path for accounting changes |
+| `Void affected reconciliation?` appears | The journal touches an affected settlement account on or before posted reconciliation history | Cancel unless the correction should preserve the old session as `Voided`; use `Void and save` only after reviewing the statement impact |
 | The result looks ready, but a key check is unresolved | Assuming a missing account was deleted | It may be nonposting, inactive, or intentionally restricted from new manual journals as a control account |
 | The result looks ready, but a key check is unresolved | Assuming class fields appear automatically for every company | Set them up first from company `Dimensions` |
 | The result looks ready, but a key check is unresolved | Assuming the ledger page is only for review | In the current product it is also the manual journal-entry posting page |
