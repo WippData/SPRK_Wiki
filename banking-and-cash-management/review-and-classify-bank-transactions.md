@@ -1,5 +1,8 @@
 # Review and Classify Bank Transactions
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; related Banking reconciliation and rule-draft screenshots captured 2026-07-15 -->
+
 Use this banking review front door to choose the right workflow before classifying, matching, confirming, transferring, or resolving bank activity.
 
 ![Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
@@ -31,6 +34,8 @@ Banking review can create ledger entries, apply payments, clear checks, and affe
 ## What Not To Assume
 
 - A rule suggestion or vendor default does not mean the bank row has posted.
+- A saved vendor default can prevent the same default-expense prompt from repeating for that vendor later in the same bulk-confirm run. Continue reviewing each row; prompt suppression is not confirmation.
+- A row-level rule draft can begin with the full normalized description. Narrow it before saving when the text is too broad or too transaction-specific.
 - Customer assignment is not the same thing as matching an invoice payment.
 - Likely-duplicate warnings during import do not post, delete, or skip a transaction by themselves.
 - Grid Edit draft changes are not the same thing as confirmation.

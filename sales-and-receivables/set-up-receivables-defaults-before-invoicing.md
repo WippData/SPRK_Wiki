@@ -1,5 +1,8 @@
 # Set Up Receivables Defaults Before Invoicing
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; related Invoice Template payment options captured 2026-07-15 -->
+
 Prepare customer, item, and account defaults before you start entering invoices so receivables activity is easier to review and maintain later.
 
 ![New invoice drawer showing Item Number / SKU line selectors](../screenshots/sales-and-receivables/invoice-item-number-sku-line-step-02.png)
@@ -14,6 +17,7 @@ Use this page when you want invoice entry to start from cleaner defaults instead
 - Item setup can carry reusable descriptions, pricing, unit-of-measure values, and income account choices.
 - Company `Sales / Invoicing` setup can seed `Default invoice payment terms` and the `New invoice workflow` for new invoices.
 - Company `Item identification` setup can decide whether supported item selectors show `Item number + description` or `Description only`.
+- Company `Invoice Template` settings control the standard printed layout, payment instructions, and `Payment Information` display mode; there is no visible document-template selector in the current modal.
 - Invoice entry can reuse saved customers and items, or create them inline without leaving the invoice drawer.
 - Cleaner setup reduces rework when you review open invoices, balances, and receivables aging later.
 
@@ -34,29 +38,30 @@ Use this page when you want invoice entry to start from cleaner defaults instead
 3. Review `Item identification` if item numbers should or should not appear during entry:
    - `Item number + description` keeps item numbers visible beside descriptions where supported.
    - `Description only` hides item numbers in supported item and invoice helpers without deleting the item numbers from item records.
-4. Open `Customers` and decide whether the customer needs invoice-related defaults:
+4. Open `Invoices` > `More` > `Invoice Template` when you need company-level print defaults. Review `Payment Instructions`, layout controls, and `Payment Information`; these affect printed output and do not post payments.
+5. Open `Customers` and decide whether the customer needs invoice-related defaults:
    - Set `Default Income Account` when this customer usually points to the same revenue category.
    - Set payment terms when most invoices for the customer follow the same due-date pattern.
-5. Open `Items` and create or update the products or services you invoice repeatedly:
+6. Open `Items` and create or update the products or services you invoice repeatedly:
    - Save `Item Number / SKU` and `Description` values that users can recognize quickly during invoice entry.
    - Save `Unit price` and `Unit of measure` when those values repeat often.
    - Review `Income account` when you want the item record to carry its own sales default.
-6. If you import customers or items, review the imported account mappings before you start invoicing.
-7. Open `Invoices` and create a new invoice only after the main defaults are in place.
-8. In the invoice drawer, review the header fields before adding lines:
+7. If you import customers or items, review the imported account mappings before you start invoicing.
+8. Open `Invoices` and create a new invoice only after the main defaults are in place.
+9. In the invoice drawer, review the header fields before adding lines:
    - `Customer`
    - `Receive to`
    - `Default income account`
    - `Date`
    - `Payment Terms`
    - `Due Date`
-9. Use the line selectors to pull saved item details into invoice lines:
+10. Use the line selectors to pull saved item details into invoice lines:
    - `Item Number / SKU` can fill matching description and price details.
    - `Description` can fill matching item number/SKU and price details.
    - In `Description only` mode, the supported selectors may show descriptions without item numbers.
-10. Review line `Income account` values before saving. Header defaults and item defaults help fill lines, but the line account remains the posting source.
-11. If the needed customer or item does not exist yet, create it inline from the invoice drawer and continue the invoice without leaving the workflow.
-12. Before saving an invoice as `Open`, confirm `Receive to`, due date, and line details still match the intended transaction.
+11. Review line `Income account` values before saving. Header defaults and item defaults help fill lines, but the line account remains the posting source.
+12. If the needed customer or item does not exist yet, create it inline from the invoice drawer and continue the invoice without leaving the workflow.
+13. Before saving an invoice as `Open`, confirm `Receive to`, due date, and line details still match the intended transaction.
 
 ## What Happens Next
 

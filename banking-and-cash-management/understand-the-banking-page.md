@@ -1,5 +1,8 @@
 # Understand the Banking Page
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; reconciliation card popover captured 2026-07-15 -->
+
 Use this Banking page map to understand where account selection, import, pending review, confirmed activity, and repair actions live.
 
 ![Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
@@ -8,7 +11,7 @@ Use this Banking page map to understand where account selection, import, pending
 
 | Area Or Control | Meaning | Where It Matters |
 |---|---|---|
-| Account cards | Select the bank or credit card register you are reviewing | Import, pending review, confirmation, and reconciliation |
+| Account cards | Select the bank or credit card register you are reviewing; a card can also show the latest posted reconciliation date | Import, pending review, confirmation, and reconciliation |
 | `Default on open` | Marks the account SPRK should try to open first next time | Multi-account banking workflows |
 | `Import` or upload area | Starts bank-transaction import for the selected account | [Import bank transactions](./import-bank-transactions.md) |
 | `Pending` | Rows that still need review before posting | [Classify bank transactions](./classify-bank-transactions.md) |
@@ -24,6 +27,10 @@ Use this Banking page map to understand where account selection, import, pending
 ## Details
 
 The Banking page is account-specific. Imports, pending rows, confirmed rows, filters, and review actions apply to the selected bank or credit card account. If a saved default account opens automatically, confirm it is the account you meant to review before importing, editing, or confirming rows.
+
+When posted reconciliation history is available, an account card can show the latest statement-ending date. Open the date context to review `Reconciliation date`, `Account`, `Bank account number`, and `Type`. This is historical account context; it does not mean current pending or categorized rows are reconciled.
+
+![Banking account reconciliation date popover](../screenshots/banking-and-cash-management/banking-account-last-reconciled-popover-2026-07.png)
 
 Import preview review happens before rows are created in `Pending`. Spreadsheet imports can use signed amounts, separate `Debit` and `Credit` columns, or a positive `Amount` plus direction columns such as `Credit or Debit`, `Debit/Credit`, `Dr/Cr`, or `Type`.
 

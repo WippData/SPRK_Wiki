@@ -1,5 +1,8 @@
 # Use Grid Edit for Bulk Record Maintenance
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; unsaved-navigation guard captured 2026-07-15 -->
+
 Use Grid Edit when you need to clean up repeated list data faster than opening one drawer at a time.
 
 ![Column preferences dialog showing drag handles and move controls for supported list columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
@@ -43,13 +46,19 @@ Use this workflow when you want to make the same kind of careful cleanup across 
 7. Watch the changed-cell counter while you work so you know whether there are unapplied edits.
 8. Review the edited cells before you continue.
 9. Select `Apply Changes` only after the grid reflects the final values you intend to keep.
-10. If you want to leave grid mode, select `More` and choose `Disable Grid Mode`.
-11. If you want to change which columns stay visible or where they appear, return to the standard list view and open `Column preferences`:
+10. If you navigate away with unapplied changes, respond to `Unsaved changes`:
+   - `Cancel` keeps you in Grid Edit with the draft changes intact.
+   - `Discard` leaves the page without saving the draft changes.
+   - `Save` applies the draft changes, then continues navigation.
+11. If you want to leave grid mode, select `More` and choose `Disable Grid Mode`.
+12. If you want to change which columns stay visible or where they appear, return to the standard list view and open `Column preferences`:
    - Turn optional columns on or off as needed.
    - Drag a column's reorder handle when you want to move it into place quickly.
    - Use the move-up and move-down controls when you prefer button controls or need a steadier one-step move.
    - Leave required columns visible when SPRK keeps them protected.
-12. Use row actions in the standard list view when you need a single-record `View`, `Edit`, or delete workflow instead of a table-wide cleanup pass.
+13. Use row actions in the standard list view when you need a single-record `View`, `Edit`, or delete workflow instead of a table-wide cleanup pass.
+
+![Unsaved changes prompt shown when leaving Banking Grid Edit](../screenshots/banking-and-cash-management/banking-grid-edit-unsaved-changes-2026-07.png)
 
 ## Banking-Specific Selection Behavior
 
@@ -69,6 +78,7 @@ You can review and apply repeated list updates from one table instead of opening
 
 - Entering or reviewing draft grid changes does not post to the general ledger by itself.
 - Applying list edits updates the saved record data for that page, not a new journal-entry workflow.
+- The `Grid Edit save regardless` preference changes this navigation boundary: when it is on, SPRK saves unapplied Grid Edit changes during navigation instead of showing the prompt. Leave it off when you want the explicit `Discard`, `Cancel`, or `Save` decision.
 - On Banking, applying draft Grid Edit changes prepares selected rows for review, but it does not replace the separate transaction confirmation step.
 - The accounting impact still depends on the fields and downstream workflows tied to the records you changed.
 - Banking confirmation remains a separate posting workflow; apply any draft grid edits before using bulk Banking actions such as confirm selected.
@@ -82,6 +92,7 @@ You can review and apply repeated list updates from one table instead of opening
 | The result looks ready, but a key check is unresolved | Assuming every list page exposes the same columns or the same editing depth | Verify the visible SPRK state before continuing |
 | The result looks ready, but a key check is unresolved | Assuming every Grid Edit table supports Banking-style selected-row actions | Verify the visible SPRK state before continuing |
 | The action is unavailable or does not complete | Trying to run Banking bulk actions before applying or discarding draft Grid Edit changes | Use the supported prerequisite or correction path first |
+| `Unsaved changes` appears while leaving Grid Edit | Whether the edits should be kept | Choose `Cancel` to continue reviewing, `Discard` to leave without them, or `Save` to apply them and continue |
 | A needed review step is missing | Forgetting that column preferences affect how the list is displayed, not the underlying accounting logic | Go back to that check before continuing |
 | The result looks ready, but a key check is unresolved | Assuming drag reordering is available on every table; use the visible `Column preferences` controls for the page you are on | Verify the visible SPRK state before continuing |
 | You cannot find the expected page, action, or result | Looking for `Column preferences` while still in grid mode | In the current Items workflow, that control is visible in the standard list view |

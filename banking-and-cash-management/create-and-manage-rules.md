@@ -1,5 +1,8 @@
 # Create and Manage Rules
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; row-level full-description rule draft captured 2026-07-15 -->
+
 ![Rules page showing filters, priority order, active banking rules, and row actions](../screenshots/banking-and-cash-management/create-and-manage-rules-step-01.png)
 
 Build rules that prefill GL account choices for repeated bank transaction patterns, then manage scope, priority, and imported rule sets from the Rules page.
@@ -34,6 +37,7 @@ Use this workflow when the same bank or credit card transactions appear repeated
 
 1. Open `Rules` to manage rules centrally.
    - If you are already reviewing a pending bank transaction, you can also start from the row-level rule action in `Banking`.
+   - A row-level `Create rule` draft starts the `Rule name` and `Description` `contains` condition from the full normalized bank description. Review and narrow both values when the full description is too specific or would match unrelated future transactions.
 2. Choose the rules tab that matches the result you want:
    - `Expense / COGS` for spending-side categorization patterns.
    - `Income` for deposit-side categorization patterns.
@@ -68,6 +72,8 @@ Use this workflow when the same bank or credit card transactions appear repeated
 13. If you already maintain rules outside SPRK, use [Import banking rules](./import-banking-rules.md) to preview and load a rules file before those rules affect bank review.
 14. Edit, disable, or delete rules as your transaction patterns change.
 
+![Create Rule from Transaction drawer using the full bank description](../screenshots/banking-and-cash-management/banking-create-rule-full-description-2026-07.png)
+
 ## What Happens Next
 
 The rule is saved and becomes available when SPRK evaluates pending bank transactions.
@@ -81,6 +87,7 @@ The rule is saved and becomes available when SPRK evaluates pending bank transac
 | What You See | What To Check | What To Do Next |
 |---|---|---|
 | A rule suggestion appears on the wrong pending transaction | Whether the rule description or amount condition is too broad | Narrow the conditions or limit `Apply to accounts` before relying on the suggestion. |
+| A row-level draft contains a long payment-network description | Whether the full text is stable enough for future matches | Shorten the rule name for readability and narrow the `Description` condition to the distinctive text you actually need. |
 | The wrong rule suggestion appears first | Whether overlapping rules are ordered correctly | Move the more specific rule higher in the priority list. |
 | A rule appears on every bank or credit card account | Whether `Apply to accounts` is blank | Choose the specific accounts where the rule should apply, or leave it blank only when the rule is intentionally shared. |
 | A percent split cannot be saved | Whether the split rows total exactly `100%` | Adjust the split percentages before saving. |

@@ -1,5 +1,8 @@
 # Copying an Existing Company
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; related Import Wizard Rules source choices captured 2026-07-15 -->
+
 Use the Import Wizard, also called the Import Company Wizard in some workflows, to create a new SPRK company from data already stored in another SPRK company.
 
 ![Companies tab showing several existing companies and the New Company control](../screenshots/company-setup-and-migration/copy-existing-company-source-list-step-01.png)
@@ -29,7 +32,8 @@ Use Company File export/import instead when the goal is a file transfer or repla
    - Add files only when the new company should mix uploaded source data with copied company data.
 6. Choose the `Existing company (optional)` that should act as the copy source.
 7. In `Finalize your configuration`, review each data type and choose `existing company` for the categories you want copied.
-   - Common categories can include accounts, customers, vendors, items, trial balance, journal entries, invoices, bills, payments, and settings.
+   - Current categories include chart of accounts, customers, vendors, items, rules, trial balance, ledger history, journal entries, invoices, bills, payments, and settings.
+   - Choose `Existing company` on the `Rules` row when the new company should reuse rules from the selected source company.
    - Use file upload or manual settings for any category that should not come from the source company.
 8. Select `Review & Create Company`.
 9. On the confirmation step, verify the new company name and the source selected for each data type.

@@ -1,7 +1,7 @@
 # Record Journal Entries
 
 <!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
-<!-- Screenshot status: Current; reconciliation-void confirmation captured 2026-07-15 -->
+<!-- Screenshot status: Current; reconciliation-void confirmation and Journal Entries search/pagination captured 2026-07-15 -->
 
 Create balanced manual journal entries in the `Ledger` page, optionally create linked bank-register rows when that drawer option is available, schedule an automatic reversing entry, save reusable templates when needed, and understand how posting affects the general ledger.
 
@@ -58,6 +58,13 @@ Use a source workflow instead when the activity belongs to a customer invoice, c
 
 10. If you expect to reuse the same layout later, use the save-template option from the journal entry drawer.
 11. Review the new entry in the ledger table and use search or filters to find it again later.
+    - The filter bar searches across the full result set for entry numbers, memos, descriptions, accounts, and vendors; it is not limited to the rows currently visible on the page.
+    - Combine text search with amount, date, ledger, account, or class filters when you need a narrower result.
+    - Use `Previous` and `Next` at the bottom of the table to move between result pages when more than one page is available. The controls are disabled when the filtered result fits on one page.
+
+![Journal Entries filter bar](../screenshots/ledger-and-chart-of-accounts/journal-entries-filter-bar-2026-07.png)
+
+![Journal Entries Previous and Next pagination controls](../screenshots/ledger-and-chart-of-accounts/journal-entries-pagination-controls-2026-07.png)
 
 ## What Happens Next
 
@@ -89,6 +96,7 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 | The result looks ready, but a key check is unresolved | Assuming a missing account was deleted | It may be nonposting, inactive, or intentionally restricted from new manual journals as a control account |
 | The result looks ready, but a key check is unresolved | Assuming class fields appear automatically for every company | Set them up first from company `Dimensions` |
 | The result looks ready, but a key check is unresolved | Assuming the ledger page is only for review | In the current product it is also the manual journal-entry posting page |
+| A search result was not visible on the first unfiltered screen | Whether the text filter has been applied to the full result set | Run the search, then use `Previous` or `Next` when the result spans multiple pages |
 
 ## Practice And Examples
 

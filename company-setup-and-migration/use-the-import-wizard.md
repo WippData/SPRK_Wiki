@@ -1,8 +1,11 @@
 # Use the Import Wizard
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; Rules data type and source choices captured 2026-07-15 -->
+
 Build a new company from uploaded files, copied data, and manual settings when a simple one-file import is not enough.
 
-![Import Wizard showing starter templates, download templates action, and upload guidance](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
+![Import Wizard showing Rules and its source choices](../screenshots/company-administration/import-wizard-rules-source-options-2026-07.png)
 
 ## When To Use This
 
@@ -29,10 +32,13 @@ If your main goal is to clone, copy, or duplicate an existing SPRK company, star
    - After files are added, review how SPRK auto-assigns each file before continuing.
 6. If you want to reuse existing SPRK data, choose an `Existing company (optional)` as the default copy source.
 7. In `Finalize your configuration`, choose a source for each data type:
-   - file upload
-   - existing company
+   - `File upload`
+   - `Existing company`, after you choose an `Existing company (optional)` source
    - manual settings, where offered
-8. Review the data types carefully. Common categories include accounts, customers, vendors, items, trial balance, journal entries, invoices, bills, payments, and settings.
+8. Review the data types carefully. Current categories include `Chart of Accounts`, `Vendors`, `Customers`, `Items`, `Rules`, `Trial Balance`, `Ledger History`, `Journal Entries`, `Invoices`, `Bills`, `Payments`, and `Settings`.
+   - For `Rules`, use `File upload` to bring in a rules file assigned to that slot.
+   - Use `Existing company` to copy rules from the selected SPRK source company.
+   - If `Existing company` is disabled, choose the optional source company first.
 9. Select `Review & Create Company`.
 10. On the confirmation step, verify the files and sources that will be used.
 11. Create the company and wait for the wizard to finish.
@@ -51,6 +57,7 @@ SPRK creates a new company using the combination of files, copied data, and sett
 | You are about to take an action that may affect the result | Uploading operational files such as invoices or bills without also bringing in foundation data like a chart of accounts or a trial balance | Confirm the visible company, page, and workflow state before continuing |
 | The result looks ready, but a key check is unresolved | Assuming the wizard’s auto-assignment is final | Review each data type before creating the company |
 | A needed review step is missing | Forgetting that settings can be entered manually if no source file exists for them | Go back to that check before continuing |
+| `Existing company` is unavailable for `Rules` | No `Existing company (optional)` source has been selected | Choose the source company, then return to the `Rules` row and select `Existing company` |
 
 ## Practice And Examples
 

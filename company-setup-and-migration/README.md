@@ -1,6 +1,6 @@
 # Company Setup and Migration
 
-Create a company, prepare imports, set date-sensitive setup defaults, review first-week setup work, understand migration boundaries, download starter templates for migration files, and switch between companies in SPRK.
+Create a company, prepare imports, copy rules or other data from an existing company, set date-sensitive setup defaults, review first-week setup work, understand migration boundaries, download starter templates for migration files, and switch between companies in SPRK.
 
 ## In This Section
 
