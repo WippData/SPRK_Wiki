@@ -1,5 +1,8 @@
 # Use Report Drilldown Behavior
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; related reconciliation warning captured 2026-07-15 -->
+
 ![Report drilldown window showing supporting journal entries](../screenshots/reports-and-financial-review/report-drilldown-window-step-01.png)
 
 Open a report card, subtotal, total, or row with supporting detail when SPRK exposes drilldown, then review the underlying journal entries without changing the original posting.
@@ -30,6 +33,7 @@ Use this workflow when you want to move from a report summary card, subtotal, to
 6. Review the supporting journal entries in the drilldown table.
 7. Open a journal preview from a drilldown row when you need to inspect the full entry.
    - Some report-launched journal previews expose `Edit` when the journal edit policy allows it.
+   - A report-launched edit follows the same settlement-account safeguards as an edit started from `Ledger`. If the date and affected account reach posted reconciliation history, SPRK can require `Void affected reconciliation?` before saving.
    - Other previews remain view-only because of posting-window policy or other audit restrictions.
 8. If the supporting detail opens in the shared register modal, use `Export` or `Print` when you need the exact filtered register rows outside SPRK.
    - Export and print use the current modal rows and visible columns.
@@ -49,6 +53,7 @@ SPRK opens a supporting-entry view for the selected account or account group and
 - Drilldown does not create a correcting entry or edit an existing one.
 - Drilldown only exposes journal entries that are already posted in the ledger for that company and date context.
 - Report drilldown can open an edit path only when normal journal edit policy allows it; it does not bypass posting-window or audit controls.
+- Canceling a reconciliation-void confirmation leaves the report-launched journal edit uncommitted. `Void and save` should be used only after reviewing the named account and affected statement-ending date.
 - Register-level `Export` and `Print` are output actions for the open detail view only.
 - Column controls tailor supported transaction-detail tables for review. They do not edit the underlying journal entries.
 - Closing the drilldown window leaves the underlying report and ledger unchanged.

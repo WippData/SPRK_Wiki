@@ -1,5 +1,8 @@
 # Choose Bank and Credit Card Accounts
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; Banking reconciliation popover captured 2026-07-15 -->
+
 Choose the right bank or credit card account before you import, review, confirm, or reconcile activity so that work stays tied to the correct register.
 
 ## When To Use This
@@ -22,6 +25,7 @@ The account chooser appears in both `Banking` and `Reconcile`.
 - The chooser can include both bank accounts and credit cards in the same strip.
 - If the company uses name-only account presentation, account cards and dropdowns can show account names without code-first labels.
 - In `Banking`, pending counts can appear on the account cards so you can see which account still needs review.
+- In `Banking`, a card can show the latest posted reconciliation statement date. Open that date to review the reconciliation date, account, bank account number, and account type.
 - The account marked `Default on open` is the account SPRK tries to open automatically the next time you return to that workflow.
 
 ## Save A Default Account
@@ -67,6 +71,9 @@ Use the account chooser before starting `Reconcile`.
 - Reconciliation is always tied to one bank or credit card account at a time.
 - Statement balances, cleared transactions, and reconciliation history depend on the account you chose.
 - Starting on the wrong account can make the statement totals and available transactions look incorrect for the statement you are holding.
+- A date on a Banking account card is historical context from posted reconciliation history. It is not a row-level reconciled status and does not prove that current activity is cleared.
+
+![Latest posted reconciliation context on a Banking account card](../screenshots/banking-and-cash-management/banking-account-last-reconciled-popover-2026-07.png)
 
 ## If Something Looks Wrong
 

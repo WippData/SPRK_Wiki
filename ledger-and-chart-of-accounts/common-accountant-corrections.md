@@ -43,6 +43,7 @@ Use this page when review work finds the wrong account, date, customer, vendor, 
 |---|---|---|
 | An invoice or bill correction is being entered as a journal entry | Whether the source workflow should own the correction | Review the invoice or bill workflow first |
 | Reconciled bank activity needs correction | Whether the change affects a posted reconciliation period | Review the reconciliation impact before editing or excluding activity |
+| A journal correction triggers `Void affected reconciliation?` | Whether the settlement account and journal date affect posted statement periods | Cancel to leave the edit uncommitted, or use `Void and save` only when retaining the old session as `Voided` is the intended audit trail |
 | A report balance looks wrong | Whether the underlying transaction should be corrected instead | Use a supported correction or reversal workflow instead of deleting history |
 | A reversal already exists | Whether the entry has already been reversed once | Do not reverse the same entry again unless that is the intended correction |
 | Both a source workflow and journal entry correction seem possible | Whether correcting both would duplicate the adjustment | Choose one correction path unless both are intentionally required |

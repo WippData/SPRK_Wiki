@@ -4,6 +4,10 @@ Reconcile a bank or credit card account against a statement, manage matched tran
 
 Begin by choosing the specific bank or credit card account you want to reconcile so statement dates, statement balances, and clearing work stay tied to the correct register.
 
+![Posted reconciliation history with status and report actions](../screenshots/reconciliation/reconciliation-history-posted-actions-2026-07.png)
+
+Posted sessions remain available for report review. If a supported ledger correction explicitly voids a session, SPRK retains it as `Voided` audit history and excludes it from future opening-balance calculations.
+
 ## In This Section
 
 - [Start a reconciliation](./start-a-reconciliation.md)

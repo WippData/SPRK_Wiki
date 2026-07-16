@@ -1,5 +1,8 @@
 # Use the Preferences Tab
 
+<!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
+<!-- Screenshot status: Current; Grid Edit save-regardless preference captured 2026-07-15 -->
+
 Open `Preferences` to manage app-wide appearance, formatting, date display, update notification, navigation, automation, and getting-started settings.
 
 ![Preferences page showing the Account dropdown sorting control and its ordering choices](../screenshots/preferences-and-personalization/account-dropdown-sorting-preference-step-01.png)
@@ -25,6 +28,7 @@ Use this workflow when you want to review or change how SPRK looks and behaves f
    - Use the theme toggle to switch between light and dark mode.
    - Adjust `UI scale` if you need larger or smaller interface sizing.
    - Turn on `Grid Edit default` if you want supported list pages to open in Grid Edit mode automatically.
+   - Turn on `Grid Edit save regardless` if you want SPRK to save unapplied Grid Edit changes automatically when you navigate away. Leave it off to receive the `Unsaved changes` prompt with `Discard`, `Cancel`, and `Save` choices.
    - Turn `Show tooltips` on or off to show field help icons and hover explanations across the app where SPRK defines them.
    - Choose `Account dropdown sorting` when you want supported account selectors to be easier to scan. The visible choices are grouped by type then name, grouped by type then code, or flat A-Z.
    - The current helper text says this opens supported tables in Grid Edit mode by default.
@@ -39,6 +43,8 @@ Use this workflow when you want to review or change how SPRK looks and behaves f
    - Open `Column preferences` from supported tables to choose visible optional columns and change their order.
    - Drag a column's reorder handle when you want to move it quickly, or use the move-up and move-down controls when keyboard or button controls are easier.
    - Leave required columns visible when SPRK keeps them protected.
+
+![Preferences showing Grid Edit save regardless](../screenshots/preferences-and-personalization/grid-edit-save-regardless-preference-2026-07.png)
 7. Review the `Updates` card and choose the automatic update frequency you want.
 8. Review the `Automation` card if you want to adjust supported default-account helpers.
 9. Review the `Navigation` card if you want to tailor the sidebar layout later.
@@ -53,6 +59,7 @@ Your user-level preferences are applied across the SPRK app, including display, 
 - Display and formatting updates change how information is shown to you, not the underlying transaction amounts.
 - Changing `Date format` changes how date fields display and interpret typed dates; it does not rewrite posted transaction dates.
 - Turning on `Grid Edit default` changes how supported pages open for your user profile, not which records exist or how they post.
+- Turning on `Grid Edit save regardless` removes the navigation prompt for unapplied Grid Edit changes and saves them as you leave. It does not confirm Banking transactions or create ledger postings by itself.
 - Turning `Show tooltips` on or off changes visible help affordances only; it does not disable the underlying fields, workflows, or validation rules.
 - Changing `Account dropdown sorting` changes the order used by supported account page-link dropdowns across the app, not the chart of accounts itself.
 - Changing column visibility or column order affects your working view on supported tables, not the accounting records behind those rows.
@@ -66,6 +73,7 @@ Your user-level preferences are applied across the SPRK app, including display, 
 | The result looks ready, but a key check is unresolved | Assuming number or currency display choices recalculate posted balances | Verify the visible SPRK state before continuing |
 | The entered value or selection does not produce the expected result | Typing compact dates without checking that the digits match your selected date order | Correct the value or selection before continuing |
 | The result looks ready, but a key check is unresolved | Assuming `Grid Edit default` changes every page in SPRK instead of supported list pages only | Verify the visible SPRK state before continuing |
+| Grid edits save when you expected a prompt | `Grid Edit save regardless` | Turn the preference off when you want to choose `Discard`, `Cancel`, or `Save` during navigation |
 | The result looks ready, but a key check is unresolved | Assuming hidden tooltips turn off validation or field requirements | Verify the visible SPRK state before continuing |
 | The result looks ready, but a key check is unresolved | Assuming account selectors always appear in one fixed order for every user | Verify the visible SPRK state before continuing |
 | The result looks ready, but a key check is unresolved | Assuming drag reordering in `Column preferences` replaces the move-up and move-down controls; both paths can be available on supported tables | Verify the visible SPRK state before continuing |
