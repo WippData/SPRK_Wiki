@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Lightweight QA checks for SPRK wiki Markdown.
 
-By default this checks changed public Markdown files. Pass explicit paths to
-check a focused set, or use --all to check every public Markdown file.
+By default this checks every public Markdown file. Pass explicit paths to
+check a focused set. ``--all`` remains as an explicit alias for the default.
 """
 
 from __future__ import annotations
@@ -13,6 +13,7 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,6 +36,39 @@ BANNED_PUBLIC_PATTERNS = [
     "manifest",
     "runtime",
     "sha256",
+    "per-line linkage",
+    "direct synchronization",
+    "normalized amount",
+    "source-document-owned",
+    "current live flow",
+]
+
+RETIRED_FILLER = [
+    "The result looks ready, but a key check is unresolved",
+    "The result does not match what you expected",
+    "You are about to take an action that may affect the result",
+    "The action is unavailable or does not complete",
+    "The page does not show the expected result",
+    "The entered value or selection does not produce the expected result",
+    "Verify the visible SPRK state before continuing",
+    "Review the visible state and use the related workflow before continuing",
+    "Confirm the visible company, page, and workflow state before continuing",
+    "Use the specific workflow or control named on this page",
+    "Use the visible navigation or related workflow named on this page",
+    "Review the visible state before continuing",
+    "Go back to that check before continuing",
+    "Complete the missing value or review step before continuing",
+    "Return to the workflow this page supports",
+]
+
+OBSOLETE_SUPPORT_PATTERNS = [
+    "Discord",
+    "View or Submit Bugs",
+    "public releases page",
+    "bug submission",
+    "bug-report",
+    "release notes",
+    "release-note",
 ]
 
 TROUBLESHOOTING_TABLE = "| What You See | What To Check | What To Do Next |"
@@ -93,6 +127,8 @@ def is_public_path(rel: str) -> bool:
         or rel.startswith(".private/")
         or rel.startswith(".agents/")
         or rel.startswith(".codex/")
+        or rel == "AGENTS.md"
+        or rel.endswith("/AGENTS.md")
     )
 
 
@@ -116,6 +152,13 @@ def check_banned_terms(path: Path, text: str) -> list[str]:
                 f"{path.relative_to(ROOT)}:{line_number(text, index)} banned public term: {pattern}"
             )
             start = index + len(pattern)
+    lowered = text.lower()
+    for pattern in RETIRED_FILLER + OBSOLETE_SUPPORT_PATTERNS:
+        index = lowered.find(pattern.lower())
+        if index != -1:
+            issues.append(
+                f"{path.relative_to(ROOT)}:{line_number(text, index)} retired public wording: {pattern}"
+            )
     if "sample-files/v1-validation" in text:
         index = text.find("sample-files/v1-validation")
         issues.append(
@@ -143,6 +186,10 @@ def check_troubleshooting_table(path: Path, text: str) -> list[str]:
             if not row.startswith("|") or row.startswith("|---") or row == TROUBLESHOOTING_TABLE:
                 continue
             cells = [cell.strip() for cell in row.split("|")[1:-1]]
+            if len(cells) == 3 and cells[0] == cells[1]:
+                issues.append(
+                    f"{path.relative_to(ROOT)}:{offset} duplicated troubleshooting symptom/check cells: {cells[0]}"
+                )
             if len(cells) == 3 and cells[0] in GENERIC_TROUBLESHOOTING_LABELS:
                 issues.append(
                     f"{path.relative_to(ROOT)}:{offset} generic troubleshooting symptom: {cells[0]}"
@@ -157,10 +204,9 @@ def check_links(path: Path, text: str) -> list[str]:
         target = target.strip("<>")
         if not target or should_skip_link(target):
             continue
-        target_path = target.split("#", 1)[0]
-        if not target_path:
-            continue
-        resolved = (path.parent / target_path).resolve()
+        target_path, _, fragment = target.partition("#")
+        target_path = unquote(target_path.split("?", 1)[0])
+        resolved = path.resolve() if not target_path and fragment else (path.parent / target_path).resolve()
         try:
             resolved.relative_to(ROOT)
         except ValueError:
@@ -172,7 +218,33 @@ def check_links(path: Path, text: str) -> list[str]:
             issues.append(
                 f"{path.relative_to(ROOT)}:{line_number(text, match.start())} missing relative link target: {target}"
             )
+            continue
+        if fragment and resolved.suffix.lower() == ".md":
+            anchors = markdown_anchors(read(resolved))
+            if unquote(fragment).lower() not in anchors:
+                issues.append(
+                    f"{path.relative_to(ROOT)}:{line_number(text, match.start())} missing Markdown anchor: {target}"
+                )
     return issues
+
+
+def markdown_anchors(text: str) -> set[str]:
+    """Return GitHub-style heading anchors, including duplicate suffixes."""
+
+    anchors: set[str] = set()
+    counts: dict[str, int] = {}
+    for line in text.splitlines():
+        match = re.match(r"^#{1,6}\s+(.+?)\s*#*\s*$", line)
+        if not match:
+            continue
+        label = re.sub(r"<[^>]+>", "", match.group(1)).lower()
+        label = re.sub(r"[`*_~]", "", label)
+        label = re.sub(r"[^\w\- ]", "", label, flags=re.UNICODE)
+        base = re.sub(r"\s+", "-", label.strip())
+        occurrence = counts.get(base, 0)
+        counts[base] = occurrence + 1
+        anchors.add(base if occurrence == 0 else f"{base}-{occurrence}")
+    return anchors
 
 
 def should_skip_link(target: str) -> bool:
@@ -182,7 +254,6 @@ def should_skip_link(target: str) -> bool:
         or lowered.startswith("https://")
         or lowered.startswith("mailto:")
         or lowered.startswith("tel:")
-        or lowered.startswith("#")
         or lowered.startswith("app://")
     )
 
@@ -214,7 +285,7 @@ def main() -> int:
                 targets.append(path)
         targets = sorted(set(targets))
     else:
-        targets = changed_markdown_files()
+        targets = public_markdown_files()
 
     inventory_text = read(INVENTORY) if INVENTORY.exists() else ""
     issues: list[str] = []
@@ -224,7 +295,8 @@ def main() -> int:
         issues.extend(check_banned_terms(path, text))
         issues.extend(check_troubleshooting_table(path, text))
         issues.extend(check_links(path, text))
-        issues.extend(check_inventory(path, inventory_text))
+        if inventory_text:
+            issues.extend(check_inventory(path, inventory_text))
 
     if issues:
         for issue in issues:

@@ -26,6 +26,8 @@ except ImportError:  # pragma: no cover - exercised only on missing dependency
 DEFAULT_EDGE_TOLERANCE = 28
 EDGE_SAMPLE_PX = 32
 TRAFFIC_LIGHT_SEARCH_HEIGHT = 260
+NEAR_WHITE_LUMINANCE = 250
+MIN_VISIBLE_CONTENT_RATIO = 0.0005
 
 
 @dataclass(frozen=True)
@@ -254,6 +256,15 @@ def edge_stats(image: Image.Image) -> list[EdgeStats]:
     return stats
 
 
+def visible_content_ratio(image: Image.Image) -> float:
+    """Return the share of pixels dark enough to represent visible app content."""
+
+    grayscale = image.convert("L")
+    histogram = grayscale.histogram()
+    visible_pixels = sum(histogram[:NEAR_WHITE_LUMINANCE])
+    return visible_pixels / (image.width * image.height)
+
+
 def looks_like_external_dark_gutter(stat: EdgeStats) -> bool:
     """Detect neutral dark app/background gutters without flagging SPRK navy UI."""
 
@@ -271,6 +282,7 @@ def check_screenshot(path: Path, edge_tolerance: int) -> list[ScreenshotIssue]:
             width, height = image.size
             clusters = find_traffic_light_clusters(image)
             stats = edge_stats(image)
+            content_ratio = visible_content_ratio(image)
     except Exception as exc:  # noqa: BLE001 - report any image decode failure
         return [
             ScreenshotIssue(
@@ -285,6 +297,24 @@ def check_screenshot(path: Path, edge_tolerance: int) -> list[ScreenshotIssue]:
     has_edge_window_controls = any(
         cluster.red_x <= edge_tolerance and cluster.red_y <= edge_tolerance for cluster in clusters
     )
+
+    if content_ratio < MIN_VISIBLE_CONTENT_RATIO:
+        issues.append(
+            ScreenshotIssue(
+                path=str(path),
+                code="near_blank_screenshot",
+                severity="error",
+                message=(
+                    "The screenshot is almost entirely white and does not show enough visible app content."
+                ),
+                details={
+                    "image_width": width,
+                    "image_height": height,
+                    "visible_content_ratio": round(content_ratio, 6),
+                    "minimum_ratio": MIN_VISIBLE_CONTENT_RATIO,
+                },
+            )
+        )
 
     for cluster in clusters:
         if cluster.red_x <= edge_tolerance and cluster.red_y <= edge_tolerance:
@@ -312,6 +342,10 @@ def check_screenshot(path: Path, edge_tolerance: int) -> list[ScreenshotIssue]:
             )
         )
 
+    external_side_gutters = {
+        stat.edge: stat for stat in stats
+        if stat.edge in {"left", "right"} and looks_like_external_dark_gutter(stat)
+    }
     for stat in stats:
         # Cropped subsets often include an app title bar, and app modals can dim
         # the sidebar into neutral dark pixels. Treat edge gutters as failures
@@ -322,6 +356,10 @@ def check_screenshot(path: Path, edge_tolerance: int) -> list[ScreenshotIssue]:
         if has_edge_window_controls:
             continue
         if not looks_like_external_dark_gutter(stat):
+            continue
+        # A dark SPRK sidebar can legitimately fill the left crop edge. Treat
+        # this as outer-window context only when both side edges form gutters.
+        if not {"left", "right"}.issubset(external_side_gutters):
             continue
 
         issues.append(
@@ -367,8 +405,8 @@ def main(argv: list[str]) -> int:
         "paths",
         nargs="*",
         type=Path,
-        default=[Path("screenshots/v1-validation")],
-        help="PNG files or directories to check. Defaults to screenshots/v1-validation.",
+        default=[Path("screenshots")],
+        help="PNG files or directories to check. Defaults to all public screenshots.",
     )
     parser.add_argument(
         "--edge-tolerance",
