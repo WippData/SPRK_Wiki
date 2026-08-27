@@ -20,14 +20,14 @@ Do not use dimensions to replace the chart of accounts. Use accounts for financi
 
 ## Before You Start
 
-- You can open `Settings` -> `Companies`.
+- You can open `Companies` from the left sidebar.
 - The company you want to configure is selected or visible in the companies list.
 - You know the dimension names and allowed values you want users to choose from.
 - If you are adding dimensions for journal entries, users should know which lines need a value before posting.
 
 ## Set Up Dimensions in Company Settings
 
-1. Open `Settings` -> `Companies`.
+1. Open `Companies` from the left sidebar.
 2. Find the company and select `Edit`.
 3. In the company drawer, find `Dimensions`.
 4. Select `Edit`.
@@ -71,10 +71,10 @@ When a journal entry is posted with dimensions, the selected dimension values ar
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| `Set dimensions` does not appear on journal lines | `Set dimensions` does not appear on journal lines | Confirm the company has at least one enabled dimension and enabled value |
-| A value is missing from the selector | A value is missing from the selector | Return to `Settings` -> `Companies` -> `Edit` -> `Dimensions` and confirm the value is enabled |
-| Users expect class tracking | Users expect class tracking | Create a dimension named `Class`; SPRK treats class tracking as a company dimension |
-| A journal is already posted | A journal is already posted | Review your company's accounting edit permissions before expecting to change dimension values afterward |
+| `Set dimensions` does not appear on journal lines | Enabled dimensions and values | Confirm the company has at least one of each |
+| A value is missing from the selector | Whether the value is enabled for the company | Open `Companies`, select `Edit`, and review `Dimensions` |
+| Users expect class tracking | Whether a `Class` dimension exists | Create a dimension named `Class` |
+| A journal is already posted | The company's accounting edit permissions | Review the allowed correction path before changing dimensions |
 
 ## Related
 

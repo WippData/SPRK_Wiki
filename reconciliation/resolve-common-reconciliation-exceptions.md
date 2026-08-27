@@ -18,9 +18,9 @@ Use this article when reconciliation stops with a validation error, an unexpecte
 
 ## Steps
 
-1. If SPRK says `Select the opening balance journal entry`, start with the first-time setup path:
-   - Choose the journal entry that represents the account's opening balance anchor.
-   - Confirm that the selected entry belongs to the account you are reconciling.
+1. If a bank register has no prior reconciliation, review `How should this account start?`:
+   - Choose `Start at $0 — New account` only when the real account opened at zero.
+   - Choose `Use a Ledger Entry to establish the opening balance` when the account already had a balance, then select the entry for the same account.
 2. If SPRK says the difference must be zero, compare the summary bar to the statement:
    - Remove transactions that do not belong on the statement.
    - Add missing confirmed transactions that do belong on the statement.
@@ -43,7 +43,8 @@ Use this article when reconciliation stops with a validation error, an unexpecte
    - Use the create-GL path only when the bank row's category or split is correct.
    - Removing a GL link does not remove the confirmed bank row from reconciliation history.
 8. If the opening balance looks unexpected, confirm where it came from:
-   - For a first-time reconciliation, verify the selected opening-balance journal entry, posting date, account line, and amount before completing the anchor.
+   - For a first-time bank-register reconciliation, verify the $0 opening date or the selected opening-balance journal entry, posting date, account line, and amount.
+   - For another general-ledger account, review the locked opening balance derived from its ledger history.
    - For a later reconciliation, compare the current beginning balance to the ending balance on the last posted reconciliation for the same account before the current statement ending date.
    - Do not create an extra journal entry just to force the reconciliation beginning balance to change unless the underlying books are actually wrong.
 9. If a journal create or edit is dated on or before posted reconciliation history for an affected Bank, Cash, or Credit Card account, review both sides of the issue:
@@ -51,7 +52,7 @@ Use this article when reconciliation stops with a validation error, an unexpecte
    - SPRK shows `Void affected reconciliation?` before completing a supported change that would invalidate posted history.
    - `Cancel` leaves the journal uncommitted. `Void and save` keeps each affected session in history with status `Voided` instead of deleting or recalculating it.
    - Voided sessions are not used as future reconciliation opening-balance sources, and their released bank rows must be reviewed in the next appropriate period.
-10. If the wrong first-time opening anchor was selected and it has not been completed, go back through the start flow and choose the correct `Opening balance journal entry`.
+10. If the wrong first-time bank opening method was selected and it has not been completed, return to `How should this account start?` and choose the correct $0 or ledger-entry path.
 11. If the wrong balance is already part of posted reconciliation history, use [Common accountant corrections](../ledger-and-chart-of-accounts/common-accountant-corrections.md) to choose the source-document, journal reversal, or correcting-entry path that matches the accounting error. Then reconcile the correction in the statement period where it belongs.
 12. If you are finishing a quiet period with no statement-cleared transactions, verify that the beginning and ending balances support a zero-difference reconciliation before posting.
 13. If a reconciliation report appears blank, confirm that the selected account has a posted reconciliation period. The Reports `Reconciliation` tab shows a no-posted-reconciliations message when there is no posted history for the account.
@@ -83,20 +84,12 @@ You can identify whether the issue is caused by account selection, transaction s
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| The action is unavailable or does not complete | Trying to solve a reconciliation difference by leaving incorrect transactions selected | Use the supported prerequisite or correction path first |
-| The current page does not fit the task | Using reconciliation to fix posting mistakes that should be corrected through [banking review](../banking-and-cash-management/review-and-classify-bank-transactions.md), [invoices](../sales-and-receivables/create-and-open-invoices.md), [bills](../expenses-and-payables/create-and-manage-bills.md), or [journal entries](../ledger-and-chart-of-accounts/record-journal-entries.md) | Return to the workflow this page supports |
-| A needed review step is missing | Forgetting that already reconciled transactions cannot be reused in a later statement period | Go back to that check before continuing |
-| The result looks ready, but a key check is unresolved | Assuming every selectable row must be dated on or before the statement ending date | Confirmed unreconciled later-dated rows can appear when they may belong to the statement clearing period |
-| The result does not match what you expected | Reversing a linked journal without checking whether the correction date belongs in the current statement period | Review the visible state and use the related workflow before continuing |
 | A journal save shows `Void affected reconciliation?` | The named settlement account, journal date, and affected statement-ending date | Cancel unless the posted session should be retained as `Voided`; do not treat the warning as a routine save prompt |
-| The result does not match what you expected | Reversing an invoice-linked or bill-linked journal without reading the source-document impact confirmation | Review the visible state and use the related workflow before continuing |
-| You are about to take an action that may affect the result | Posting a quiet-period reconciliation without confirming the zero-difference summary | Confirm the visible company, page, and workflow state before continuing |
-| The current page does not fit the task | Using `Resolve` to bypass normal reconciliation selection and finish controls | Return to the workflow this page supports |
-| You are about to take an action that may affect the result | Creating a new [journal entry](../ledger-and-chart-of-accounts/record-journal-entries.md) only to change the reconciliation beginning balance when the books themselves are not wrong | Confirm the visible company, page, and workflow state before continuing |
 
 ## Related
 
 - [Start a reconciliation](./start-a-reconciliation.md)
+- [Reconcile general ledger accounts](./reconcile-general-ledger-accounts.md)
 - [Match and unmatch transactions](./match-and-unmatch-transactions.md)
 - [Finish a reconciliation](./finish-a-reconciliation.md)
 - [View and print bank reconciliation reports](./view-and-print-bank-reconciliation-reports.md)

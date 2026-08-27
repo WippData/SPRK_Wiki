@@ -42,13 +42,6 @@ You can answer common SPRK usage questions quickly and route yourself to the rig
 - Switching companies changes working context only and does not post a transaction by itself.
 - License, support, backup, and update-reference actions described on this page do not affect account balances unless you separately enter or classify accounting transactions elsewhere in SPRK.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| The result looks ready, but a key check is unresolved | Assuming a settings or support action changes the books just because it changes what you can see | Verify the visible SPRK state before continuing |
-| A needed review step is missing | Forgetting to confirm the active company before starting a workflow | Go back to that check before continuing |
-| Two similar workflows or fields are easy to mix up | Treating usage statistics or backup settings as accounting entries | Use the specific workflow or control named on this page |
 
 ## Related
 

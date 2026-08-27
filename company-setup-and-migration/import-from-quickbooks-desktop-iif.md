@@ -10,14 +10,14 @@ Use this workflow when your source data comes from QuickBooks Desktop and you ex
 
 ## Before You Start
 
-- You can open `Settings` → `Companies`.
+- You can open `Companies` from the left sidebar.
 - You exported the source data from QuickBooks Desktop as an `.iif` file.
 - You have room to create another company in your workspace.
 
 ## Steps
 
 1. In QuickBooks Desktop, export the data you want to migrate as an IIF file.
-2. In SPRK, open `Settings` → `Companies`.
+2. In SPRK, open `Companies` from the left sidebar.
 3. Open the menu attached to `New Company`.
 4. Select `Import from QBD (IIF)`.
 5. In the file picker, choose the `.iif` export.
@@ -34,15 +34,6 @@ Use this workflow when your source data comes from QuickBooks Desktop and you ex
 
 SPRK imports the QuickBooks Desktop IIF file and adds the resulting company to the companies list.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| You are about to take an action that may affect the result | Exporting the wrong file type from QuickBooks Desktop and trying to use it with the IIF import path | Confirm the visible company, page, and workflow state before continuing |
-| The current page does not fit the task | Using the QBD import option with a ZIP file instead of an IIF file | Return to the workflow this page supports |
-| The result looks ready, but a key check is unresolved | Assuming the import replaces the currently selected company | The imported company is added to the list and may still need to be selected |
-| A needed review step is missing | Skipping validation of the imported setup data after the import finishes | Go back to that check before continuing |
-| The result looks ready, but a key check is unresolved | Assuming every multi-line customer billing address parses perfectly | Review address fields before relying on printed invoices |
 
 ## Related
 

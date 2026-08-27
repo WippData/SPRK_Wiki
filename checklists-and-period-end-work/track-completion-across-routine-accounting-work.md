@@ -41,13 +41,6 @@ You can see which checklist runs are open, completed, or due for follow-up witho
 - Status values show checklist progress only; they do not confirm that underlying accounting entries are correct.
 - The checklist page can help you spot unfinished work, but any ledger change still has to be reviewed and posted in the relevant transaction workflow.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| Two similar workflows or fields are easy to mix up | Treating a completed checklist run as the only proof needed for financial review | Use the specific workflow or control named on this page |
-| A needed review step is missing | Forgetting to clear filters and then assuming runs are missing | Go back to that check before continuing |
-| The current page does not fit the task | Using checklist status instead of the source transaction page when you need posting detail | Return to the workflow this page supports |
 
 ## Related
 

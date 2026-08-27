@@ -11,7 +11,7 @@ Use this page when you want a customer record to carry standard payment terms, a
 ## When To Use This Setup
 
 - Set customer terms when most invoices for the customer should start from the same due-date pattern.
-- Use company `Sales / Invoicing` defaults when most new invoices across the company should start from the same terms before customer-specific setup is applied.
+- Use company `Invoice defaults` when most new invoices across the company should start from the same terms before customer-specific setup is applied.
 - Set a credit status when your team needs a visible reminder to pause, review, or use a stricter collection approach before opening invoices.
 - Set a credit limit when you want the customer record to show a reference amount for receivables review and follow-up.
 
@@ -53,14 +53,6 @@ The customer record keeps payment and credit defaults together, new invoices can
 - Receivables aging can show terms and overdue timing alongside the customer balance, which helps with collection follow-up.
 - Recording a payment is still a separate workflow. Changing terms or credit settings does not reduce an invoice balance.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| Two similar workflows or fields are easy to mix up | Treating customer terms as permanent invoice instructions without reviewing the actual invoice date and due date | Use the specific workflow or control named on this page |
-| The current page does not fit the task | Using `Paid` or another invoice status change instead of the payment workflow when money is collected | Return to the workflow this page supports |
-| The result looks ready, but a key check is unresolved | Assuming a credit status blocks or approves customer activity automatically | Use it as a visible control point unless your team has verified a stronger workflow around it |
-| A needed review step is missing | Forgetting to revisit older customer defaults after payment expectations change | Go back to that check before continuing |
 
 ## Related
 

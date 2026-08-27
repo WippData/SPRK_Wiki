@@ -75,14 +75,6 @@ Use the account chooser before starting `Reconcile`.
 
 ![Latest posted reconciliation context on a Banking account card](../screenshots/banking-and-cash-management/banking-account-last-reconciled-popover-2026-07.png)
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| You are about to take an action that may affect the result | Importing a file without first confirming the correct bank or credit card account | Confirm the visible company, page, and workflow state before continuing |
-| Two similar workflows or fields are easy to mix up | Treating the saved default as a permanent lock instead of a starting point you can change for the current session | Use the specific workflow or control named on this page |
-| The result does not match what you expected | Reviewing pending counts on one account card and then reconciling a different account by mistake | Review the visible state and use the related workflow before continuing |
-| The result looks ready, but a key check is unresolved | Assuming that saving a default account posts transactions or changes historical entries | Verify the visible SPRK state before continuing |
 
 ## Related
 

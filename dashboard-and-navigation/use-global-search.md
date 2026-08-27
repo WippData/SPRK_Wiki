@@ -36,14 +36,6 @@ Search results open the page that matches the result type:
 
 When possible, SPRK also carries the selected result into that page as a prefilled search or filter.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| The entered value or selection does not produce the expected result | Typing only one character and expecting full results | The current search waits until the query is at least two characters long |
-| The result looks ready, but a key check is unresolved | Assuming all results open the same page | Verify the visible SPRK state before continuing |
-| A needed review step is missing | Forgetting that search is disabled until a company is selected | Go back to that check before continuing |
-| The current page does not fit the task | Using the slash shortcut while actively typing in another input field and expecting focus to move | Return to the workflow this page supports |
 
 ## Related
 

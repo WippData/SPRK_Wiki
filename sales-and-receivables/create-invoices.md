@@ -2,7 +2,7 @@
 
 Create a customer invoice, choose the receivables or paid-now route, and review the posting-sensitive fields before saving.
 
-![New invoice drawer showing Receive to, default income account, and line income account](../screenshots/sales-and-receivables/invoice-routing-fields-step-01.png)
+![New invoice drawer showing Receive to, income routing, and sales-tax payable account](../screenshots/sales-and-receivables/invoice-routing-fields-step-01.png)
 
 ## When To Use This
 
@@ -16,6 +16,7 @@ Create a customer invoice, choose the receivables or paid-now route, and review 
 - The invoice amount can be built from one or more lines.
 - Your company is ready to use invoices in receivables workflows.
 - You know whether `Receive to` should use an Accounts Receivable control account or a cash, bank, or credit-card settlement account.
+- If the invoice includes sales tax, an active liability account is available for the amount you will owe the tax agency.
 - If the customer uses saved payment terms, review the filled due date before saving.
 
 ## Steps
@@ -33,7 +34,8 @@ Create a customer invoice, choose the receivables or paid-now route, and review 
    - `Status`
    - `Memo`
    - `Tax rate`, if needed
-4. If company `Sales / Invoicing` defaults are configured, review the starting payment terms, due date, and workflow status before you continue.
+   - `Sales tax payable account`, which appears when the tax rate is greater than zero
+4. If company `Invoice defaults` are configured, review the starting payment terms, due date, and workflow status before you continue.
    - `Default invoice payment terms` can seed a new invoice when no customer or invoice value is already supplied.
    - `New invoice workflow` can start new invoices as `Draft` or `Open`, depending on company setup.
 5. If the selected customer already has saved payment terms, review the `Payment Terms` value SPRK fills in for you.
@@ -51,14 +53,20 @@ Create a customer invoice, choose the receivables or paid-now route, and review 
 10. Review quantity, unit price, line `Income account`, and extended amount on each line.
     - `Default income account` fills blank line income accounts when the drawer supports that fallback.
     - The line-level `Income account` is the posting source for that line.
-11. If the customer or item does not exist yet, create it inline from the invoice drawer and continue without leaving the page.
-12. Decide how the invoice should be saved:
+11. If the invoice includes sales tax, review `Sales tax payable account`.
+    - SPRK starts with the company default when one is configured.
+    - You can choose another active liability account for this invoice.
+    - The saved invoice keeps that selection even if the company default changes later.
+12. If the customer or item does not exist yet, create it inline from the invoice drawer and continue without leaving the page.
+13. Decide how the invoice should be saved:
     - `Draft` keeps the invoice unposted.
+    - A taxed draft can be saved before a payable account is selected.
     - `Open` moves the invoice into an active receivables state when `Receive to` is an Accounts Receivable control account.
     - Choosing a settlement account in `Receive to` can route the invoice through the paid-now path instead of leaving an open receivable.
-13. If you choose `Open`, confirm `Receive to`, due date, and lines one more time before saving.
-14. Save the invoice.
-15. Review the invoice list to confirm the expected status, total, balance, terms, and due date.
+    - SPRK will not post a taxed Open or paid-now invoice until `Sales tax payable account` is selected.
+14. If you choose `Open`, confirm `Receive to`, due date, lines, and any sales-tax account one more time before saving.
+15. Save the invoice.
+16. Review the invoice list to confirm the expected status, total, balance, terms, and due date.
 
 ## What Happens When You Save
 
@@ -67,7 +75,8 @@ The invoice appears in the invoice list with the expected number, customer, tota
 - `Draft` stores the invoice without posting.
 - `Open` with an Accounts Receivable control account moves the invoice into the receivables workflow.
 - A settlement account in `Receive to` routes the invoice through the paid-now path instead of leaving an open receivable.
-- Line-level `Income account` values control the revenue side of the posting when the invoice posts.
+- Line-level `Income account` values receive the invoice subtotal when the invoice posts.
+- When the invoice has sales tax, SPRK credits that tax to the selected liability account instead of including it in revenue.
 
 ## If Something Looks Wrong
 
@@ -77,6 +86,7 @@ The invoice appears in the invoice list with the expected number, customer, tota
 | The invoice did not stay open as a receivable | Whether `Receive to` used a settlement account instead of an Accounts Receivable control account | Use the receivables route when the customer still owes the balance |
 | The due date looks wrong | Customer terms, invoice date, and any manual due date | Correct the date before sending or relying on the invoice |
 | Revenue looks routed to the wrong account | The line-level `Income account` values | Correct line accounts before saving or use a posted correction path if already posted |
+| SPRK asks for a sales-tax payable account | The invoice has tax and is being saved as `Open` or paid-now | Choose the active liability account used to hold collected sales tax until it is remitted |
 | Item numbers are missing from entry helpers | The company `Item identification` setting | Use description-based selection when the company is set to `Description only` |
 
 ## Related

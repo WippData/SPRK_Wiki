@@ -1,8 +1,8 @@
 # Support And Troubleshooting
 
-Use the Support tab to gather a session log, find contact options, review release notes when updater controls are available, and work through common product-navigation questions before escalating an issue.
+Use the Support tab to gather a session log, email the support team, and work through common product-navigation questions before asking for help.
 
-![Support tab showing support log, contact, updater, release notes, bug reporting, and how-to guide controls](../screenshots/support-and-troubleshooting/support-tab-overview-step-01.png)
+![Support tab showing the support log, contact card, and how-to guides](../screenshots/support-and-troubleshooting/support-tab-overview-step-01.png)
 
 ## In This Section
 

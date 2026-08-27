@@ -6,6 +6,8 @@
 
 Review invoice and bill payment history from the source document, then use linked journal review to understand the posting trail.
 
+<!-- Last validated against SPRK source: 2026-08-27 -->
+
 ## When To Use This
 
 Use this workflow when an invoice or bill balance changed and you need to trace whether the change came from a direct payment, a Banking match, or a linked journal action.
@@ -19,7 +21,13 @@ Use this workflow when an invoice or bill balance changed and you need to trace 
 5. For bills, use the visible row actions for payment, matching, payment history, and linked journal review.
 6. Use `View payment history` to review applications without editing the document.
 7. Use `View linked journal entries` to inspect the accounting trail.
-8. If a correction is required, use the supported payment, void, reversal, or posted-document edit workflow instead of deleting or rewriting the linked journal trail manually.
+8. If a payment must be undone, stay with the document's linked accounting trail:
+   - Open `More` > `View linked journal entries` on the invoice or bill.
+   - Open the journal entry for the payment, then select `Reverse`.
+   - Choose the reversal date.
+   - In `Confirm Source Document Reversal`, select `Reverse payment application` for an invoice payment or `Reverse bill payment application` for a bill payment.
+   - Confirm only after checking the document, amount, and reversal date.
+9. Use a document void only when the invoice or bill itself is wrong. Do not delete or rewrite the payment journal manually.
 
 ## What Happens Next
 
@@ -34,10 +42,8 @@ You can explain why a receivable or payable balance changed and where to inspect
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| Two similar workflows or fields are easy to mix up | Treating payment history as an edit screen | Use the specific workflow or control named on this page |
-| The result looks ready, but a key check is unresolved | Assuming bank-side matching and document-side payment review are the same workflow | Verify the visible SPRK state before continuing |
-| The result does not match what you expected | Deleting a document or journal entry when the correct workflow is payment reversal, voiding, or posted-document correction | Review the visible state and use the related workflow before continuing |
-| The result looks ready, but a key check is unresolved | Assuming every linked journal is editable or reversible from every entry point | Verify the visible SPRK state before continuing |
+| A payment came from a bank match | Whether you are reviewing the pending bank row or the document's recorded payment | Use the linked journal to trace the posting before choosing a reversal |
+| The payment remains in history after reversal | Whether it is shown as inactive or reversed and the document balance reopened | Keep the historical row; the reversal preserves the audit trail |
 
 ## Practice And Examples
 

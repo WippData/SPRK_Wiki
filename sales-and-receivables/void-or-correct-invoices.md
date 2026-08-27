@@ -15,7 +15,7 @@ Choose the supported invoice correction path before changing a posted, paid, or 
 - Confirm the active company and invoice number.
 - Review invoice status, total, balance, due date, and payment history.
 - Review linked journal entries before changing a posted invoice.
-- If the invoice has active payments, reverse or unapply payments first where SPRK requires that guardrail.
+- If the invoice has active payments, use `More` → `View linked journal entries`, open the payment journal, select `Reverse`, and confirm `Reverse payment application` first.
 
 ## Steps
 
@@ -41,7 +41,7 @@ Choose the supported invoice correction path before changing a posted, paid, or 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
 | `Void invoice` is not available | Invoice status, balance, and active payments | Use the visible correction action or clear required payment activity first |
-| The invoice has active payments | Payment history and payment applications | Reverse or unapply payments where SPRK requires it before voiding recognition |
+| The invoice has active payments | Payment history and linked journal entries | Reverse the payment journal and confirm `Reverse payment application` before voiding recognition |
 | A draft invoice needs removal | Whether the invoice has posted ledger impact | Use the draft action available for that invoice instead of a void workflow |
 | A posted edit prompt appears | The posted-save strategy and date choices | Choose the strategy that matches the intended correction |
 | The correction would duplicate another adjustment | Existing linked journals and payment history | Stop and review the source workflow before confirming |
@@ -51,4 +51,5 @@ Choose the supported invoice correction path before changing a posted, paid, or 
 - [Review and edit invoices](./review-and-edit-invoices.md)
 - [Receive invoice payments](./receive-invoice-payments.md)
 - [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
+- [Review and reverse document payments](../ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md)
 - [Common accountant corrections](../ledger-and-chart-of-accounts/common-accountant-corrections.md)

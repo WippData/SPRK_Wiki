@@ -21,7 +21,7 @@ Use this workflow when you need a central place to review companies and reach th
 4. Select `Refresh` if you need to reload the list.
 5. Use `New Company` for a blank company, or open the menu next to it for import and demo options.
    - The new-company drawer includes `Required account fields` and `Accounting edit permissions` so admins can review account-code presentation and edit-policy defaults before creating the company.
-6. If your workspace uses tenant-level defaults, open `Settings` -> `Defaults` before creating a batch of companies so new company setup starts from the intended `Required account fields`, `Journal entries`, and `Reconciliation dates` policies.
+6. If your workspace uses tenant-level defaults, open `Defaults` from the left sidebar before creating a batch of companies so new company setup starts from the intended `Required account fields`, `Journal entries`, and `Reconciliation dates` policies.
 7. Use the row actions to select the active company, edit a company, archive or unarchive it, or permanently delete an archived company.
 
 ## What Happens Next
@@ -32,13 +32,6 @@ You can see the publicly supported company management actions in one place, incl
 - Switching which company is selected changes app context only.
 - Opening company creation or maintenance actions does not post to the general ledger until you later create accounting transactions inside that company.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| You cannot find the expected page, action, or result | Looking for company maintenance under `Preferences` or another settings tab | Use the visible navigation or related workflow named on this page |
-| The result looks ready, but a key check is unresolved | Assuming archived companies disappear from filters permanently | Verify the visible SPRK state before continuing |
-| The current page does not fit the task | Using the `New Company` menu when you only meant to switch the active company | Return to the workflow this page supports |
 
 ## Related
 

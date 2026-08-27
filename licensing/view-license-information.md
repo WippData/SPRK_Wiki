@@ -33,13 +33,6 @@ You can review the licensing details currently visible in SPRK, including whethe
 - Viewing saved license details changes access visibility only and does not affect asset, liability, income, expense, or equity balances.
 - Reviewing the usage table reports activity counts only and does not post a transaction to the general ledger.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| The page does not show the expected result | Expecting the `License` area to show company-by-company accounting balances instead of tenant-wide license details | Review the visible action or related workflow before continuing |
-| Two similar workflows or fields are easy to mix up | Treating the usage table as a billing statement | Use the specific workflow or control named on this page |
-| The result looks ready, but a key check is unresolved | Assuming the absence of a `Valid License` message means your accounting data was changed | Verify the visible SPRK state before continuing |
 
 ## Related
 

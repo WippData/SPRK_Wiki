@@ -19,7 +19,7 @@ Use the `Plugins` tab to review installed Plugins (Beta), refresh their status, 
 
 ## Details
 
-Open `Settings` -> `Plugins` to review installed Plugins (Beta). Confirm the active company before checking any company-specific plugin page.
+Open `Plugins` from the left sidebar to review installed Plugins (Beta). Confirm the active company before checking any company-specific plugin page.
 
 Opening or refreshing the `Plugins` tab is review-only. Installing, enabling, disabling, or uninstalling a plugin changes plugin availability and navigation, not existing ledger balances.
 

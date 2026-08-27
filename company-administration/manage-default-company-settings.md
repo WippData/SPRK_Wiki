@@ -41,17 +41,17 @@ Bulk apply updates `Required account fields`, `Journal entries`, and `Reconcilia
 
 The `Defaults` tab requires a valid tenant license before defaults can be saved or applied.
 
-These tenant defaults are separate from per-company invoice presentation settings such as `Sales / Invoicing`, company contact fields, `Payment Instructions`, and `Item identification`. Edit those on the company record when you want to change new-invoice defaults, printed invoice content, or item-label presentation for a specific company.
+These tenant defaults are separate from per-company settings such as `Invoice defaults`, company contact fields, `Payment Instructions`, and `Item identification`. Edit those on the company record when you want to change new-invoice defaults, printed invoice content, or item-label presentation for a specific company.
 
 ## If Something Looks Wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| `Defaults` is missing | `Defaults` is missing | Confirm the tenant license and workspace access |
-| `Save defaults` or apply actions are disabled | `Save defaults` or apply actions are disabled | Confirm a valid tenant license is active |
-| Account codes disappear after applying defaults | Account codes disappear after applying defaults | Check whether `Required account fields` is set to `Name` only |
-| Invoice terms | Invoice terms | Invoice workflow status, printed contact fields, payment instructions, or item-number visibility look wrong, review the specific company record instead of the tenant `Defaults` tab |
-| A company should keep a different edit policy | A company should keep a different edit policy | Do not include it in `Apply to selected` and avoid `Apply to all` |
+| `Defaults` is missing | Tenant license and workspace access | Confirm the tenant license and your access |
+| `Save defaults` or apply actions are disabled | Whether a valid tenant license is active | Resolve the license before saving or applying defaults |
+| Account codes disappear after applying defaults | `Required account fields` | Choose the account fields your company needs |
+| Invoice terms or printed details look wrong | The specific company record | Edit the company's invoice defaults and presentation settings |
+| One company needs a different edit policy | Which companies are selected | Leave it out of `Apply to selected` and do not use `Apply to all` |
 
 ## Related
 

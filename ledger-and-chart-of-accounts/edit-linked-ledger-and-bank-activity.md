@@ -43,7 +43,7 @@ Use this workflow when a confirmed bank or credit card transaction has a linked 
 9. For a compatible confirmed bank row linked to a simple two-line journal, use the supported edit surface when you need to correct the date, amount, description, memo, party, dimensions, or non-cash target account.
    - Review both the bank row and its paired journal after saving; compatible fields are kept together across the pair.
    - A same-date recategorization of only the non-cash target account does not by itself require reconciliation history to be voided when the settlement account, amount, and posting date remain unchanged.
-   - Split rows, changes to the reconciled settlement account, and source-document-owned activity can require reversal, a source workflow, or another blocked correction path instead of direct synchronization.
+   - Split rows, changes to the reconciled settlement account, and activity created by an invoice, bill, or payment can require reversal or correction from the original workflow.
 10. Select `Reverse` when a separate reversing entry is the correct audit trail.
 11. Choose the posting date for the reversal:
    - `Today` posts the reversal on the current date.
@@ -66,7 +66,7 @@ SPRK preserves the original audit trail and creates a separate reversing entry.
 
 - The original journal entry remains in place.
 - Linked bank-register rows created from a manual journal preserve that journal as the posting source. They are not the same workflow as confirming a pending imported bank transaction.
-- Older single-link journal rows can be adopted into the newer per-line linkage model when SPRK can match the account and normalized amount, so prior linked bank rows can remain tied to the original journal.
+- Older journal links can be updated when SPRK can match the account and amount, so prior bank rows remain tied to the original journal.
 - Journal-side register `Resolve` and Banking-side `Resolve GL link` are repair workflows. They preserve the audit trail instead of editing a posted row in place.
 - The reversal journal entry flips the original debit and credit lines.
 - SPRK prevents reversing a reversal entry.
@@ -82,12 +82,7 @@ SPRK preserves the original audit trail and creates a separate reversing entry.
 | What You See | What To Check | What To Do Next |
 |---|---|---|
 | Two similar workflows or fields are easy to mix up | Treating reversal as delete or edit | The original entry remains visible for audit history |
-| You are about to take an action that may affect the result | Editing linked bank-register accounting directly from the modal | Accounting details still change through the journal entry |
 | Two similar workflows or fields are easy to mix up | Treating `Resolve` as delete | Journal-side and Banking-side resolve paths preserve the reviewed source records while updating linkage or creating explicit accounting |
-| The result does not match what you expected | Reversing before confirming whether the transaction has already been reconciled | Review the visible state and use the related workflow before continuing |
-| The entered value or selection does not produce the expected result | Choosing a custom reversal date that belongs in the wrong statement period | Correct the value or selection before continuing |
-| The result does not match what you expected | Confirming a source-document reversal before checking whether it will void a bill or invoice, reverse a payment application, or reopen a source-document balance | Review the visible state and use the related workflow before continuing |
-| The page does not show the expected result | Expecting every historical row to show `Journal` | Rows without a persisted journal link do not have the linked journal action |
 | A target-account recategorization shows an unexpected reconciliation warning | Whether the settlement account, amount, or posting date also changed | Recheck the full paired edit; the narrower no-void case applies only when those settlement details stay unchanged |
 
 ## Related

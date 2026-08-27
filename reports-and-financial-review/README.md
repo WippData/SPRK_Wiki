@@ -7,6 +7,8 @@ Open the Reports area, run the report you need, set searchable filters and date 
 ## In This Section
 
 - [View available reports](./view-available-reports.md)
+- [Run Schedule C](./run-schedule-c.md)
+- [Run Income by Customer](./run-income-by-customer.md)
 - [Export transactions from reports](./export-transactions-from-reports.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)

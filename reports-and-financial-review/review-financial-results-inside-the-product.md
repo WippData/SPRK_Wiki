@@ -57,16 +57,6 @@ You can review current report totals and detailed lines directly in SPRK for the
 - Filtering `Expense by Vendor` by `1099` changes which vendors are included in the review; it does not create forms, file taxes, or change the vendor records by itself.
 - Plugin-backed report output appears only when the installed plugin is enabled, compatible with the report surface, and accepted by SPRK.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| The current page does not fit the task | Using the wrong report for the question you are trying to answer | Return to the workflow this page supports |
-| The result does not match what you expected | Comparing periods without checking that the date ranges match your intent | Review the visible state and use the related workflow before continuing |
-| The entered value or selection does not produce the expected result | Typing date shortcuts without confirming they match your selected date-format order | Correct the value or selection before continuing |
-| Two similar workflows or fields are easy to mix up | Treating report output as a substitute for reviewing the underlying entries when a balance looks unexpected | Use the specific workflow or control named on this page |
-| The result looks ready, but a key check is unresolved | Assuming a report review changes the ledger automatically | Any correction still has to happen through the relevant transaction or journal-entry workflow |
-| The page does not show the expected result | Expecting a plugin report to appear just because a plugin was installed | Confirm the plugin is enabled and report availability is shown first |
 
 ## Practice And Examples
 

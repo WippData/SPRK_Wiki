@@ -4,9 +4,11 @@
 
 ![Required account fields selector showing Code and Name choices](../screenshots/company-setup-and-migration/required-account-fields-selector-step-02.png)
 
-![New Company drawer showing item identification and Sales / Invoicing settings](../screenshots/company-setup-and-migration/new-company-item-sales-settings-step-01.png)
+![Field Setup window showing item identification and Invoice defaults](../screenshots/company-setup-and-migration/new-company-item-sales-settings-step-01.png)
 
 Create a company from the Companies tab and set the core accounting options that SPRK uses for day-to-day work.
+
+<!-- Last validated against SPRK source: 2026-08-27 -->
 
 ## When To Use This
 
@@ -14,47 +16,46 @@ Use this workflow when you want to start a new company in SPRK without importing
 
 ## Before You Start
 
-- You can open `Settings` → `Companies`.
+- You can open `Companies` from the left sidebar.
 - You have permission to create a company in your current workspace.
 - You know the company display name you want to use.
 - You know whether you want SPRK to start with default accounts or a blank chart.
 
 ## Steps
 
-1. Open `Settings` → `Companies`.
+1. Open `Companies` from the left sidebar.
 2. Select `New Company`.
 3. In the `New Company` drawer, complete the core fields:
    - `Company Display name` is required.
    - `Legal name` is optional if it is different from the display name.
    - `Currency` sets the default reporting currency.
    - `Country (ISO)` is the two-letter country code shown in the form, such as `US`.
-4. Leave `Accounts setup` turned on if you want SPRK to seed default accounts. Turn it off only if you want to start with a blank chart.
-5. Review optional accounting settings if they matter for your rollout:
+4. `Accounts setup` starts turned off, which creates a blank chart. Turn it on if you want SPRK to seed default accounts.
+5. Select `Configure` beside `Field setup`, then review:
+   - `Required account fields`
+   - `Item identification`
+   - `Default invoice payment terms`
+   - `New invoice workflow`
+6. Review the other accounting settings that matter for your company:
    - `Posting Cutoff Date`
    - `Fiscal Year End`
-   - `Required account fields`
    - `Dimensions`
-   - `Default Accounts Receivable`
-   - `Default Accounts Payable`
-   - `Item identification`, if the form exposes item-label presentation
-6. Review `Accounting edit permissions` before creating the company.
+7. Review `Accounting edit permissions` before creating the company.
    - Workspace or tenant defaults can prefill accounting edit policies when those defaults exist.
    - Explicit choices you make in the company drawer override those defaults for the new company.
    - If the form exposes `Control accounts`, use it for accounts that should be posted through their source workflow instead of new manual journals.
-   - Tenant defaults are managed from `Settings` -> `Defaults`; saving a different value in the new-company drawer controls the new company.
-7. Use `Required account fields` to decide whether account codes are required in visible account setup.
+   - Tenant defaults are managed from `Defaults`; saving a different value in the new-company drawer controls the new company.
+8. Use `Required account fields` to decide whether account codes are required in visible account setup.
    - Choosing `Name` only can make account-code columns and code-first labels disappear from the `Chart of Accounts`, bank-account choosers, reconcile account selectors, and account dropdowns that otherwise show `code · name`.
    - When `Name` only is active, account pickers sort and label by account name instead of code-first display strings.
-8. For date fields such as `Posting Cutoff Date` and `Fiscal Year End`, you can use the visible calendar control or type a date directly. Typed dates should follow your saved `Preferences` date order; SPRK normalizes accepted entries to the selected display format.
-9. If `Item identification` is available, choose how supported item labels should appear:
+9. For date fields such as `Posting Cutoff Date` and `Fiscal Year End`, you can use the visible calendar control or type a date directly. Typed dates should follow your saved `Preferences` date order.
+10. Under `Item identification`, choose how supported item labels should appear:
    - `Item number + description` shows item numbers beside descriptions where supported.
    - `Description only` hides item numbers in supported item and invoice workflows without deleting the saved item numbers.
-10. Select `Create`.
-11. Confirm that the new company appears in the companies list and becomes the active company after creation.
-12. After the company exists, review `Sales / Invoicing` settings if the company will send invoices:
-   - `Default invoice payment terms` can seed new invoice terms and due dates.
-   - `New invoice workflow` can start new invoices as `Draft` or `Open`.
-   - Company contact fields and `Payment Instructions` can appear on printed customer invoices.
+11. Select `Create`.
+12. Confirm that `Company created` appears and the new company becomes active.
+13. If the company will use invoices or bills, reopen it from `Companies` and select `Edit`. Under `Field setup`, select `Configure` and set `Default Accounts Receivable` and `Default Accounts Payable`. These account defaults are available after creation, not in the new-company form.
+14. Review printed-invoice details such as company contact fields and `Payment Instructions` after the company exists.
 
 ## What Happens Next
 
@@ -65,14 +66,8 @@ The new company is added to the `Companies` table and becomes available as the a
 | What You See | What To Check | What To Do Next |
 |---|---|---|
 | A required value or review step is missing | Leaving `Company Display name` blank | The create action is not meant to succeed without it |
-| You are about to take an action that may affect the result | Turning off `Accounts setup` without planning how the chart of accounts will be created afterward | Confirm the visible company, page, and workflow state before continuing |
-| The result does not match what you expected | Setting the wrong `Country (ISO)` format | Use the short country code shown by the product, not the full country name |
-| The entered value or selection does not produce the expected result | Typing setup dates in an order that does not match your saved date-format preference | Correct the value or selection before continuing |
-| The result does not match the intended workflow | Ignoring default receivable or payable account settings when your team needs invoices or bills immediately after setup | Review the visible state before continuing |
-| Two similar workflows or fields are easy to mix up | Treating missing account codes in lists as missing data when the company is configured for name-only account presentation | Use the specific workflow or control named on this page |
-| Two similar workflows or fields are easy to mix up | Treating hidden item numbers as missing item data when the company is configured for `Description only` item identification | Use the specific workflow or control named on this page |
-| A needed review step is missing | Forgetting to review `Sales / Invoicing` before the first invoice if your firm wants standard terms or draft/open defaults | Go back to that check before continuing |
-| The entered value or selection does not produce the expected result | Selecting control accounts without telling journal-entry users why those accounts disappear from new manual journal account choices | Correct the value or selection before continuing |
+| No default receivable or payable fields appear during creation | Whether the company has been created yet | Create the company, reopen `Edit`, then use `Field setup` > `Configure` |
+| New invoices use the wrong terms or starting status | `Default invoice payment terms` and `New invoice workflow` in `Field setup` | Edit those defaults before creating the next invoice |
 
 ## Related
 

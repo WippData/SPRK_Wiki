@@ -10,13 +10,13 @@ Use this workflow when you already exported company data from QuickBooks Online 
 
 ## Before You Start
 
-- You can open `Settings` → `Companies`.
+- You can open `Companies` from the left sidebar.
 - You have a QuickBooks Online export saved as a `.zip` file.
 - You have room to create another company in your workspace.
 
 ## Steps
 
-1. Open `Settings` → `Companies`.
+1. Open `Companies` from the left sidebar.
 2. Open the menu attached to `New Company`.
 3. Select `Import from QBO (ZIP)`.
 4. In the file picker, choose the QuickBooks Online `.zip` export.
@@ -29,14 +29,6 @@ Use this workflow when you already exported company data from QuickBooks Online 
 
 SPRK imports the QuickBooks Online ZIP and adds the imported company to the companies list.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| The entered value or selection does not produce the expected result | Choosing a file that is not a QuickBooks Online ZIP export | Correct the value or selection before continuing |
-| The current page does not fit the task | Using the QBO import path for a QuickBooks Desktop IIF file | Return to the workflow this page supports |
-| A needed review step is missing | Skipping the post-import review and assuming every record mapped exactly as expected | Go back to that check before continuing |
-| The page does not show the expected result | Expecting this workflow to load every possible historical workflow automatically | Review the imported company before production use |
 
 ## Related
 

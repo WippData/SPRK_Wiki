@@ -2,7 +2,9 @@
 
 ![Sidebar configuration showing Checks as a hidden navigation item](../screenshots/preferences-and-personalization/sidebar-configuration-step-01.png)
 
-Add `Checks` to the sidebar when it is hidden, then create, update, match, unmatch, void, and delete checks while understanding what the current check workflow does and does not post to the ledger.
+Add `Checks` to the sidebar when it is hidden, then record and manage checks without losing the posting trail.
+
+<!-- Last validated against SPRK source: 2026-08-27 -->
 
 ## When To Use This
 
@@ -32,7 +34,7 @@ Use this workflow when you need to make the `Checks` page available in your side
    - `Memo`
    - `Status`
 7. If the selected vendor already has a saved default expense account and `Offset Account` is still blank, review the filled account before you continue.
-8. Save the check as `Draft` if it is not ready to issue yet, or as `Issued` when it should be treated as an active check record.
+8. Save the check as `Draft` if it is not ready to post. Save it as `Issued` only when the check should post to the ledger.
 9. Use the row actions later as needed:
    - `View` to review the record
    - `Edit` to update a draft or issued check
@@ -52,24 +54,23 @@ Use this workflow when you need to make the `Checks` page available in your side
 
 
 - Adding or showing `Checks` in the sidebar is a navigation preference only. It does not create, edit, delete, or repost accounting transactions.
-- Creating or editing a check record does not post a separate journal entry in the current `Checks` workflow.
-- Saving a check as `Draft` or `Issued` changes check tracking status only. It does not reduce cash, record an expense, or pay a bill in the general ledger by itself.
+- Saving a check as `Draft` does not post to the ledger.
+- Saving it as `Issued` posts a journal entry when the check has both a `Bank Account` and an `Offset Account`: SPRK debits the offset account and credits the bank account.
+- A check cannot use an Accounts Payable control account, another bank account, cash account, or credit-card account as its `Offset Account`. Use the bill-payment or transfer workflow when that is the accounting event.
+- After a check has posted, changing protected posting fields requires a correction workflow rather than silently rewriting the entry.
 - Matching or unmatching a check links or removes the relationship between the check and a bank transaction. The match action can change operational status, but it does not create its own new journal entry.
 - `Clear` requires an existing matched bank transaction and is separate from the earlier `Match` step. Clearing moves the matched bank row to a confirmed or cleared state instead of acting like delete or void.
 - Clearing a matched check can reuse an existing linked journal entry, or create one at clear time when the check has an offset account and has not posted yet.
 - Confirming a matched bank transaction from the Banking workflow is another downstream path that can post to the general ledger and clear the linked check.
-- Void and delete actions update the check record and matching state, not a separate check-specific posting flow.
+- Voiding a posted issued check reverses its linked journal entry, removes an eligible bank match, and keeps the check as `Voided` history. A cleared check cannot be voided from this action.
+- `Delete` is available only for an unposted draft. It is not a substitute for voiding an issued check.
 
 ## If Something Looks Wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| You cannot find the expected page, action, or result | Looking for `Checks` in the default sidebar without first adding or showing it from sidebar customization | Use the visible navigation or related workflow named on this page |
-| The result looks ready, but a key check is unresolved | Assuming the `Checks` page is the same as recording a bill payment | Verify the visible SPRK state before continuing |
-| Two similar workflows or fields are easy to mix up | Treating `Draft` and `Issued` as interchangeable when other team members rely on status | Use the specific workflow or control named on this page |
-| The result does not match what you expected | Accepting a filled `Offset Account` without confirming it still matches the purpose of this check | Review the visible state and use the related workflow before continuing |
-| The action is unavailable or does not complete | Trying to delete a non-draft check | The current workflow only allows draft checks to be deleted |
-| The result looks ready, but a key check is unresolved | Assuming voiding a check is the same as clearing it through reconciliation | Verify the visible SPRK state before continuing |
+| A bill is already recorded in Accounts Payable | Whether this check is paying that bill | Use `Bills` > `More` > `Record Payment` instead of posting a second expense through `Checks` |
+| `Void` is unavailable | Whether the check is already `Cleared` | Review the reconciliation and use the supported correction path for cleared activity |
 
 ## Practice And Examples
 

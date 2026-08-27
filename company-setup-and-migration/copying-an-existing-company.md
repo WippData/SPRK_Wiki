@@ -17,14 +17,14 @@ Use Company File export/import instead when the goal is a file transfer or repla
 
 ## Before You Start
 
-- You can open `Settings` -> `Companies`.
+- You can open `Companies` from the left sidebar.
 - The source company already exists in SPRK.
 - You know the new company name.
 - You know whether you want to copy only setup data or also include transaction-style data such as journal entries, invoices, bills, payments, or trial balance data where the wizard offers those choices.
 
 ## Steps
 
-1. Open `Settings` -> `Companies`.
+1. Open `Companies` from the left sidebar.
 2. Open the menu attached to `New Company`.
 3. Select `Import Wizard`.
 4. Enter the new `Company name`.
@@ -49,15 +49,6 @@ SPRK creates a separate new company using the source choices you reviewed in the
 - Copying setup-only categories is different from copying transaction or balance categories. Review the wizard choices carefully before creating the company.
 - Copied settings can affect future workflows in the new company, such as account label presentation, invoice defaults, item identification, and edit policies.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| You are about to take an action that may affect the result | Starting from the wrong source company | Confirm the visible company, page, and workflow state before continuing |
-| The result does not match the intended workflow | Reusing the original company name and then confusing the source and copied company later | Review the visible state before continuing |
-| The result does not match what you expected | Copying transaction data when you only wanted setup lists | Review the visible state and use the related workflow before continuing |
-| A needed review step is missing | Skipping post-copy review before using the duplicated company for live work | Go back to that check before continuing |
-| Two similar workflows or fields are easy to mix up | Treating a copied company as a backup restore or Company File transfer | Use the specific workflow or control named on this page |
 
 ## Related
 

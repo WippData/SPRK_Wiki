@@ -49,12 +49,7 @@ The `1099` field changes vendor setup and report filtering only. It does not cre
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| A needed review step is missing | Skipping vendor setup and typing payee names differently across bills and checks | Go back to that check before continuing |
 | Two similar workflows or fields are easy to mix up | Treating Vendors as only a contact list | It also supports reusable setup defaults and vendor-level register review |
-| The result looks ready, but a key check is unresolved | Assuming a saved vendor default expense account automatically classifies every future payable workflow | Verify the visible SPRK state before continuing |
-| A required value or review step is missing | Leaving common vendor names ambiguous and then expecting every bank import row to resolve automatically | Complete the missing value or review step before continuing |
-| The result looks ready, but a key check is unresolved | Assuming the `1099` flag creates a tax filing or changes ledger balances | It is a vendor tracking and report-filter field |
-| The result looks ready, but a key check is unresolved | Assuming vendor maintenance posts accounting activity | The vendor record is reference data until you enter a transaction such as a bill |
 
 ## Related
 

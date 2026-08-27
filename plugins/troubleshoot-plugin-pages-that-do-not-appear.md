@@ -11,7 +11,7 @@ Use this page after install, upgrade, enablement, or company switching when expe
 ## Do This First
 
 1. Confirm the active company in the sidebar.
-2. Open `Settings` -> `Plugins`.
+2. Open `Plugins` from the left sidebar.
 3. Select `Refresh Installed Plugins`.
 4. Confirm the plugin is installed.
 5. Confirm the plugin is enabled.

@@ -46,14 +46,6 @@ You have a dated checklist run tied to a specific period and template, with stor
 - Completing the run changes the run status to `Completed` but does not create, edit, reverse, or approve a journal entry.
 - If one of the checklist items tells you to post an entry elsewhere in SPRK, that posting must still happen in the separate source workflow.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| You are about to take an action that may affect the result | Starting a run with the wrong period dates | Confirm the visible company, page, and workflow state before continuing |
-| The result looks ready, but a key check is unresolved | Assuming `Completed` means all related accounting transactions have already been posted | Verify the visible SPRK state before continuing |
-| The current page does not fit the task | Using a checklist run to replace the actual bill, banking, reconciliation, or journal-entry action | Return to the workflow this page supports |
-| The action is unavailable or does not complete | Trying to start a duplicate run for the same company, checklist, and period | Use the supported prerequisite or correction path first |
 
 ## Related
 

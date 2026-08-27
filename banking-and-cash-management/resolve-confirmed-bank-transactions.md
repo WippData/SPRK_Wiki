@@ -37,7 +37,7 @@ Review and repair the accounting link for a confirmed bank row without returning
 10. For a compatible confirmed row linked to a simple two-line journal, a supported edit can keep the date, amount, description, memo, party, dimensions, and non-cash target account synchronized across the bank row and journal.
 11. Review reconciliation impact separately:
    - A same-date change to only the non-cash target account does not by itself require posted reconciliation history to be voided when the settlement account and amount also remain unchanged.
-   - Split rows, settlement-account changes, and source-document corrections can require a reversal or source workflow instead of direct synchronization.
+   - Split rows, settlement-account changes, and invoice, bill, or payment corrections can require a reversal or correction from the original workflow.
 
 ## What This Changes
 

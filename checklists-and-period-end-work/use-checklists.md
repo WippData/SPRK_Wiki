@@ -53,14 +53,6 @@ You have a reusable checklist template that can be used to create period-specifi
 - Deleting a checklist from the manage view retires it from active use instead of posting a reversing entry.
 - No template action changes balances, clears transactions, or posts to the ledger.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| The page does not show the expected result | Expecting `Manage` to show completed runs instead of templates | Review the visible action or related workflow before continuing |
-| A required value or review step is missing | Leaving item labels blank and then trying to save | Complete the missing value or review step before continuing |
-| Two similar workflows or fields are easy to mix up | Treating a checklist template as proof that the accounting work is already done | Use the specific workflow or control named on this page |
-| You are about to take an action that may affect the result | Turning a template inactive before confirming you no longer need it for future periods | Confirm the visible company, page, and workflow state before continuing |
 
 ## Related
 
