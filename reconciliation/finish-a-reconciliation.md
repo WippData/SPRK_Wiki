@@ -17,7 +17,7 @@ Use this workflow after a reconciliation session is started and you are ready to
 ## Steps
 
 1. Open `Reconcile` for the correct account.
-2. Confirm that the summary bar shows `Beginning balance`, `Spent`, `Received`, `Cleared balance`, `Statement ending balance`, and `Difference`.
+2. Review the summary bar. Bank registers show `Spent` and `Received`; other general-ledger accounts show `Decreases` and `Increases`. Both paths show `Beginning balance`, `Cleared balance`, `Statement ending balance`, and `Difference`.
 3. Review the preselected transactions and adjust the selection as needed:
    - Leave selected only the confirmed transactions that should clear on the statement.
    - Remove transactions that fall inside the date range but should not clear yet.
@@ -38,25 +38,17 @@ SPRK finalizes the reconciliation for the selected statement window.
 - Finishing a reconciliation does not create a new journal entry in the general ledger.
 - SPRK creates a posted reconciliation record for the account and statement ending date.
 - The posted statement ending balance becomes the beginning balance source for later reconciliations on the same account.
-- Each selected confirmed bank transaction is stamped as reconciled, tied to that reconciliation record, and marked with a cleared date and statement end date.
+- For a bank register, each selected confirmed bank transaction is stamped as reconciled and tied to the statement period. For another general-ledger account, SPRK stores the selected ledger-line references with the reconciliation session.
 - SPRK requires the difference to be zero for reconciliations with prior history.
 - Later reconciliations can finish with no selected transactions when the carried opening balance already equals the statement ending balance.
 - Posted reconciliation records can be reviewed later from reconciliation history and the Reports `Reconciliation` tab.
 - If a later supported journal correction explicitly voids a posted session, SPRK retains the session in `History` with status `Voided`; that session no longer supplies the opening balance for future reconciliations.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| The action is unavailable or does not complete | Trying to finish while the difference is not zero | Use the supported prerequisite or correction path first |
-| You are about to take an action that may affect the result | Clearing transactions from the wrong account | Confirm the visible company, page, and workflow state before continuing |
-| The page does not show the expected result | Expecting pending bank transactions to be available for final clearing | Review the visible action or related workflow before continuing |
-| The entered value or selection does not produce the expected result | Selecting a row just to finish a quiet statement period when the beginning and ending balances already match | Correct the value or selection before continuing |
-| The result looks ready, but a key check is unresolved | Assuming reconciliation changes the original account coding of a confirmed bank transaction | Verify the visible SPRK state before continuing |
 
 ## Related
 
 - [Start a reconciliation](./start-a-reconciliation.md)
+- [Reconcile general ledger accounts](./reconcile-general-ledger-accounts.md)
 - [Match and unmatch transactions](./match-and-unmatch-transactions.md)
 - [View and print bank reconciliation reports](./view-and-print-bank-reconciliation-reports.md)
 - [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md)

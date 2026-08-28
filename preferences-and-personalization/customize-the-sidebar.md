@@ -37,13 +37,6 @@ Your sidebar reflects your saved navigation preferences while keeping required s
 - Reordering or hiding links changes navigation only and does not change balances or company records.
 - Adding an external link creates a shortcut in the interface, not a bookkeeping entry.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| The page does not show the expected result | Expecting a hidden page to remove the underlying feature or its historical data | Review the visible action or related workflow before continuing |
-| You are about to take an action that may affect the result | Renaming a sidebar label and assuming the actual page purpose changed with it | Confirm the visible company, page, and workflow state before continuing |
-| The action is unavailable or does not complete | Trying to remove required settings access that SPRK keeps available for guardrail reasons | Use the supported prerequisite or correction path first |
 
 ## Related
 

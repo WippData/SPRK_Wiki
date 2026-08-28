@@ -2,7 +2,7 @@
 
 Gather visible import context after a failed, partial, duplicate, or confusing import without changing the source data again.
 
-![Support tab showing the Support Activity Log, contact options, and bug-reporting link](../screenshots/support-and-troubleshooting/collect-support-details-step-01.png)
+![Support tab showing the Support Activity Log and contact options](../screenshots/support-and-troubleshooting/collect-support-details-step-01.png)
 
 ## When To Use This
 

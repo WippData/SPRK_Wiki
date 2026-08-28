@@ -2,7 +2,9 @@
 
 ![Reconciliation account selection for starting balance context](../screenshots/reconciliation/reconcile-account-selection-audit-step-01.png)
 
-Create the opening journal entry for a bank or credit account, then use `Reconcile` to establish the formal starting balance that future reconciliations will build from.
+Choose how a new bank or credit-card account should begin its first reconciliation: start it at zero, or use a journal entry to establish its opening balance.
+
+<!-- Last validated against SPRK source: 2026-08-27 -->
 
 ## When To Use This
 
@@ -12,45 +14,34 @@ Use this workflow when you are setting up a company and need SPRK to recognize t
 
 - An active company is selected.
 - The bank or credit account you want to reconcile already exists in the chart of accounts.
-- You know the opening amount and effective date you want to establish.
-- You know which offset account your team wants to use for the opening entry.
+- You know whether the account truly opened at zero or already had a balance when SPRK began tracking it.
+- If it already had a balance, you know the opening amount, date, and offset account your team approved.
 
 ## Steps
 
-1. Open `Ledger`.
-2. Select `New`.
-3. Create a manual journal entry dated on the day the opening balance should first appear in SPRK.
-4. Add the bank or credit account line that should carry the starting balance.
-5. Add the balancing line that offsets the opening amount in the account your team is using for setup.
-6. If the journal drawer exposes the bank-register option, leave it off unless you intentionally want this setup entry mirrored into confirmed bank-register activity.
-7. Save the journal entry and confirm it appears in `Ledger`.
-8. Open `Reconcile`.
-9. In the account picker near the page header, choose the same bank or credit account from the journal entry.
-10. Select `Start`.
-11. In the `Start reconciliation` window, use `Opening balance journal entry` to choose the journal entry you just created.
-12. Confirm that SPRK derives the first reconciliation values from that journal entry:
-   - the opening-balance anchor entry appears in the picker by date and description
-   - the statement dates are locked from the selected entry
-   - the ending balance is populated from the selected entry amount
-13. Select `Reconcile` to establish the starting balance for that account.
+1. Open `Reconcile`, choose the bank or credit-card account, and select `Start`.
+2. Under `How should this account start?`, choose one method:
+   - `Start at $0 — New account` when the real account opened with no prior balance. Enter `Account opened on`; `Starting balance` remains $0.
+   - `Use a Ledger Entry to establish the opening balance` when the account already had a balance.
+3. For the ledger-entry method, select the correct `Opening balance journal entry`. If it does not exist, use `Create Opening Balance`, create a balanced entry with this account and the approved offset account, then return to the picker.
+4. Enter the statement ending date and balance shown by your statement when those fields are available.
+5. Review the account, dates, and amount, then continue with the visible reconciliation action.
 
 ## What Happens Next
 
-SPRK uses the journal entry as the first reconciliation anchor for that account.
+SPRK creates the first reconciliation anchor for that account using the method you chose.
 
-- Saving the journal entry posts the opening balance to the general ledger.
-- Selecting that journal entry in `Start reconciliation` does not create a second journal entry.
-- Completing the opening reconciliation creates the reconciliation anchor that later statement periods use as their beginning balance reference.
-- Creating linked bank-register rows from the opening journal is optional and separate from choosing the opening-balance journal entry as the first reconciliation anchor.
+- `Start at $0 — New account` creates a nonposting zero-balance anchor. It does not create a journal entry.
+- The ledger-entry method uses the selected posted entry without creating a duplicate posting.
+- Pending imported bank activity remains available for later Banking review whichever method you choose.
+- Later reconciliation periods use the completed first period as their beginning-balance reference.
 
 ## If Something Looks Wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| You are about to take an action that may affect the result | Creating the opening journal entry in the wrong account and then trying to reconcile a different account | Confirm the visible company, page, and workflow state before continuing |
-| A needed review step is missing | Skipping `Reconcile` after saving the journal entry and assuming the starting balance is fully established already | Go back to that check before continuing |
-| The entered value or selection does not produce the expected result | Choosing the wrong journal entry in the `Opening balance journal entry` picker when more than one setup entry exists | Correct the value or selection before continuing |
-| Two similar workflows or fields are easy to mix up | Treating the locked dates and derived balance in the start modal as manual entry fields | Use the specific workflow or control named on this page |
+| The journal entry does not appear in the picker | Whether it includes the same account selected in `Reconcile` | Correct the entry or select the matching account before continuing |
+| `Starting balance` is locked at $0 | Whether `Start at $0 — New account` is selected | Choose the ledger-entry method if the account had a real opening balance |
 
 ## Related
 

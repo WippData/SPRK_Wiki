@@ -17,7 +17,7 @@ Use this page when a plugin is installed, but users need to confirm whether its 
 ## Steps
 
 1. Confirm the active company in the sidebar.
-2. Open `Settings` -> `Plugins`.
+2. Open `Plugins` from the left sidebar.
 3. Refresh `Installed Plugins`.
 4. Confirm the plugin is installed and enabled.
 5. If the plugin row shows company availability controls, set them for the intended company.
@@ -34,10 +34,10 @@ Changing plugin availability changes whether users can reach plugin pages for th
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| The page is missing | The page is missing | Confirm the active company first |
-| The plugin is disabled | The plugin is disabled | Enable it before checking navigation |
-| The plugin is visible in one company but not another | The plugin is visible in one company but not another | Review any company availability controls |
-| Company-specific plugin data looks wrong | Company-specific plugin data looks wrong | Stop and collect details before editing records |
+| The page is missing | Active company and plugin status | Confirm both before changing navigation |
+| The plugin is disabled | Whether it should be available for this company | Enable it only when your company intends to use it |
+| The plugin is visible in one company but not another | Company availability controls | Review the plugin's company access |
+| Company-specific plugin data looks wrong | Active company and affected records | Stop and collect details before editing records |
 
 ## Related
 

@@ -41,10 +41,8 @@ You can usually narrow the problem to the active company, the wrong app section,
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| You cannot find the expected page, action, or result | Looking for a settings workflow inside an operational page, or the reverse | Use the visible navigation or related workflow named on this page |
-| A needed review step is missing | Forgetting that company selection changes which records and workflows are in view | Go back to that check before continuing |
-| The result looks ready, but a key check is unresolved | Assuming imported activity is final before the review or confirmation step on the destination page | Verify the visible SPRK state before continuing |
-| You are about to take an action that may affect the result | Escalating immediately without naming the page and workflow that seemed missing | Confirm the visible company, page, and workflow state before continuing |
+| Imported activity still needs review | Whether the destination page shows a preview, pending row, or confirmation action | Complete that page's review before treating the import as final |
+| A support request lacks context | Whether it names the company, page, and workflow | Add those details before emailing support |
 
 ## Related
 

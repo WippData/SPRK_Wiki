@@ -58,11 +58,6 @@ The vendor record carries a reusable expense default, and supported check and ba
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| Two similar workflows or fields are easy to mix up | Treating the default as a guarantee that every vendor transaction belongs to one account | Use the specific workflow or control named on this page |
-| The result looks ready, but a key check is unresolved | Assuming the default replaces bill-line review in payables workflows | Verify the visible SPRK state before continuing |
-| A needed review step is missing | Forgetting to update the vendor when its usual expense category changes | Go back to that check before continuing |
-| The result looks ready, but a key check is unresolved | Assuming a vendor default overrides a rule or a manual banking category every time | Verify the visible SPRK state before continuing |
-| The entered value or selection does not produce the expected result | Choosing an account without confirming that it is the active expense account you actually want to reuse | Correct the value or selection before continuing |
 | You cannot find the expected page, action, or result | Looking for a nonposting parent account in the default selector | Choose the posting account that should receive vendor activity |
 
 ## Related

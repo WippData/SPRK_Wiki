@@ -12,10 +12,12 @@ Use this report catalog to choose the SPRK report that fits the review question 
 | `Income Statement` | Income, expenses, and net income | Operating results and compare-period review |
 | `Balance Sheet` | Assets, liabilities, and equity | Financial position review |
 | `Cash Flow (Indirect)` | Cash flow review | Cash movement interpretation |
+| `Schedule C` | Income and expense activity grouped for Schedule C review | Tax-preparation review; not filing |
 | `Tax Forms` | Tax-form review where available | Review only; not tax filing or agency submission |
 | `General Ledger` | Posted transaction detail by account | Drilldown, account review, and export |
 | `Account Detail` | One account's activity | Account-level investigation |
 | `Expense by Vendor` | Vendor spending and 1099-oriented review | Vendor review and expense analysis |
+| `Income by Customer` | Posted income grouped by customer and account | Customer contribution and invoice-detail review |
 | `Receivables Aging` | Unpaid customer balances | AR review and collection follow-up |
 | `Payables Aging` | Unpaid vendor balances | AP review and payment planning |
 | `Reconciliation` | Posted reconciliation reports | Bank reconciliation history |
@@ -65,6 +67,8 @@ Opening a report tab does not post anything to the ledger. Running a report read
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)
 - [Export transactions from reports](./export-transactions-from-reports.md)
 - [Use report drilldown behavior](./use-report-drilldown-behavior.md)
+- [Run Schedule C](./run-schedule-c.md)
+- [Run Income by Customer](./run-income-by-customer.md)
 - [View and print bank reconciliation reports](../reconciliation/view-and-print-bank-reconciliation-reports.md)
 - [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
 - [Troubleshoot missing Plugins (Beta) pages](../plugins/troubleshoot-plugin-pages-that-do-not-appear.md)

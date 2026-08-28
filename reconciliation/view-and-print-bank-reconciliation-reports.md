@@ -55,10 +55,6 @@ SPRK opens the reconciliation report area for the selected account and posted st
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| You cannot find the expected page, action, or result | Looking for reconciliation reports only on the general Reports page and missing the `Print Bank Rec` shortcut from `Reconcile` | Use the visible navigation or related workflow named on this page |
-| The page does not show the expected result | Expecting a report before the reconciliation has been posted | Review the visible action or related workflow before continuing |
-| Two similar workflows or fields are easy to mix up | Treating a printed report as a way to edit or reopen a posted reconciliation | Use the specific workflow or control named on this page |
-| The entered value or selection does not produce the expected result | Choosing the wrong account before opening `Print Bank Rec`, which pre-fills the report account from the active selection | Correct the value or selection before continuing |
 | A history row is `Voided` | Expecting it to behave like a normal posted report row | Keep it as audit history and use the current posted or later reconciliation period for normal report review |
 
 ## Practice And Examples

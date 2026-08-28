@@ -33,14 +33,6 @@ You can distinguish a company-level transfer from device backup settings.
 - Importing or replacing from a company file can change which company data is available after the workflow completes, so treat confirmation steps as data-management actions rather than accounting entries.
 - Routine backups still protect the local database for all companies; a company file is narrower and intentionally company-scoped.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| Two similar workflows or fields are easy to mix up | Treating `Run Backup Now` and `Export Company File` as the same action | Use the specific workflow or control named on this page |
-| You are about to take an action that may affect the result | Importing a company file into a production-like company before reading preview and replace language | Confirm the visible company, page, and workflow state before continuing |
-| The result does not match what you expected | Describing Company File as hosted collaboration or multi-user firm administration | It is a local company transfer/import path |
-| The result looks ready, but a key check is unresolved | Assuming legacy package or restore scripts are public workflows when the visible product directs users to `Company file` | Verify the visible SPRK state before continuing |
 
 ## Practice And Examples
 

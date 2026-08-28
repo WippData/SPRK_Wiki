@@ -48,15 +48,6 @@ You can review and manage the current backup controls that SPRK exposes publicly
 - Importing a Company File is a data-management workflow. Review preview and replace language before confirming any import.
 - The status area reports backup activity only and does not represent a financial transaction.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| Two similar workflows or fields are easy to mix up | Treating the backup folder path as a company record instead of a device-level storage setting | Use the specific workflow or control named on this page |
-| The result looks ready, but a key check is unresolved | Assuming a relative backup path is the exact final folder | Check the latest manual backup result for the resolved backup location |
-| The result looks ready, but a key check is unresolved | Assuming `Run Backup Now` changes books or confirms pending work | Verify the visible SPRK state before continuing |
-| The result does not match what you expected | Confusing routine backups for all local companies with a company-scoped Company File export | Review the visible state and use the related workflow before continuing |
-| The result does not match what you expected | Reading the status area as accounting activity rather than backup history | Review the visible state and use the related workflow before continuing |
 
 ## Practice And Examples
 

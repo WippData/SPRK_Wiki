@@ -58,14 +58,6 @@ SPRK opens a supporting-entry view for the selected account or account group and
 - Column controls tailor supported transaction-detail tables for review. They do not edit the underlying journal entries.
 - Closing the drilldown window leaves the underlying report and ledger unchanged.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| The page does not show the expected result | Expecting every report card, total, subtotal, or row to be clickable | Drilldown only applies where SPRK exposes a supported non-zero target |
-| The result looks ready, but a key check is unresolved | Assuming drilldown always edits the transaction you are viewing | It is primarily a review path, and editing remains conditional |
-| A needed review step is missing | Forgetting that an as-of report uses detail up to the selected date, not only activity on that one date | Go back to that check before continuing |
-| The result looks ready, but a key check is unresolved | Assuming column visibility changes are accounting changes | They are presentation and output-review controls |
 
 ## Practice And Examples
 

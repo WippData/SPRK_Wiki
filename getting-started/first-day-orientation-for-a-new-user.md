@@ -36,13 +36,6 @@ You finish your first day with the right company selected, a working mental mode
 - This orientation flow does not post to the general ledger by itself.
 - Ledger impact starts only when you complete later workflows that create, import, confirm, or edit accounting transactions.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| The result does not match what you expected | Jumping into transaction pages before you know which company is active | Review the visible state and use the related workflow before continuing |
-| The result does not match what you expected | Confusing onboarding choices with bookkeeping actions | Review the visible state and use the related workflow before continuing |
-| The action is unavailable or does not complete | Trying to learn every page at once instead of choosing the next workflow that matches your immediate task | Use the supported prerequisite or correction path first |
 
 ## Related
 

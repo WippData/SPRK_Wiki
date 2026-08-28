@@ -14,6 +14,7 @@ Use this page when review work finds the wrong account, date, customer, vendor, 
 |---|---|---|
 | Correct an invoice or customer balance | [Void or correct invoices](../sales-and-receivables/void-or-correct-invoices.md) | Invoice status, balance, active payments, and linked journals |
 | Correct a bill or vendor balance | [Void or correct bills](../expenses-and-payables/void-or-correct-bills.md) | Bill status, balance, active payments, and linked journals |
+| Undo an invoice or bill payment | [Review payment history and reverse from the linked journal](./review-document-payment-history-and-linked-journals.md) | Document, payment amount, linked payment journal, and reversal date |
 | Correct a bank classification before or after confirmation | [Review and classify bank transactions](../banking-and-cash-management/review-and-classify-bank-transactions.md) | Pending vs confirmed state, reconciliation state, and linked journal |
 | Repair the accounting link on a confirmed bank row | [Resolve confirmed bank transactions](../banking-and-cash-management/resolve-confirmed-bank-transactions.md) | Current link, candidate GL line, account, amount, date, and memo |
 | Reverse or enter an accountant-only adjustment | [Record journal entries](./record-journal-entries.md) | Whether the issue belongs outside customer, vendor, bank, or source-document workflows |
@@ -50,6 +51,7 @@ Use this page when review work finds the wrong account, date, customer, vendor, 
 
 ## Related
 
+- [Review document payment history and linked journals](./review-document-payment-history-and-linked-journals.md)
 - [Review financial results inside the product](../reports-and-financial-review/review-financial-results-inside-the-product.md)
 - [AR review workflow](../sales-and-receivables/ar-review-workflow.md)
 - [AP review workflow](../expenses-and-payables/ap-review-workflow.md)

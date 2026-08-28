@@ -2,6 +2,8 @@
 
 Match pending bank rows to open invoices, open bills, or existing checks before confirming the bank activity.
 
+<!-- Last validated against SPRK source: 2026-08-27 -->
+
 ![Banking grid after applying the classification and preparing to confirm](../screenshots/v1-validation/banking-grid-confirm-ready.png)
 
 ## When To Use This
@@ -43,6 +45,8 @@ Match pending bank rows to open invoices, open bills, or existing checks before 
 Matching to an invoice or bill from Banking records the related customer receipt or bill payment as part of the confirm path. Partial matching is allowed only when the bank amount is less than or equal to the document open balance. Overpayments are not silently accepted from this path.
 
 If the transaction was matched to a check first, confirming the bank transaction also clears the linked check.
+
+This is the `Banking` match workflow for a row on the `Pending` tab. It can record a source-document payment as it confirms the bank row. It is different from `Match` inside `Reconcile`, which only links an already confirmed bank transaction to a check and does not create an invoice or bill payment.
 
 ## If Something Looks Wrong
 

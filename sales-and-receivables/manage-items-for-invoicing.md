@@ -32,8 +32,8 @@ Use this workflow when you want invoice lines to reuse prepared item records ins
    - `Sell price`
    - `Tax code`
 5. If your accounting setup uses account defaults, review:
-   - `Income account`
-   - `Expense/COGS account`
+   - `Income account` is the income account credited when the item is used on an invoice.
+   - `Expense/COGS account` is an optional default for the item's cost side.
 6. Confirm the `Active` setting, then save the item.
 7. If you import items, review any mapped income or expense accounts before you rely on those records in invoices.
 8. Use the page search when you need to find an item later by item number, SKU, or description.
@@ -53,6 +53,10 @@ Company setup can control how supported item labels appear:
 
 This is a presentation setting. It does not delete the item number from the item record, change the item's income or expense accounts, or change posting behavior.
 
+## Items And Inventory
+
+Choosing `Product` as the `Item type` or filling in `Expense/COGS account` does not, by itself, create inventory quantities, an inventory asset balance, or automatic cost-of-goods-sold entries. The item stores reusable invoice or bill defaults. If you track inventory outside SPRK, use your accountant's approved journal and supporting schedule rather than assuming the item record is a perpetual inventory system.
+
 ## What Happens Next
 
 The item becomes available for invoice entry, item-started invoices or bills where available, and future lines can reuse its saved description, pricing, unit-of-measure, and account defaults.
@@ -61,13 +65,9 @@ The item becomes available for invoice entry, item-started invoices or bills whe
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| A needed review step is missing | Skipping item setup and retyping invoice lines manually even when the same products or services repeat | Go back to that check before continuing |
-| A required value or review step is missing | Leaving descriptions too vague, which makes invoices and reporting harder to read later | Complete the missing value or review step before continuing |
-| A needed review step is missing | Forgetting to review the active setting and then wondering why an older item should no longer be used | Go back to that check before continuing |
-| You are about to take an action that may affect the result | Importing item records without checking that account mappings resolved the way you expected | Confirm the visible company, page, and workflow state before continuing |
-| The result looks ready, but a key check is unresolved | Assuming item setup alone controls the full receivables posting flow | Review the invoice workflow and GL guidance for downstream behavior |
-| The result looks ready, but a key check is unresolved | Assuming hidden item numbers mean the item number was deleted | Check the company `Item identification` mode |
-| You are about to take an action that may affect the result | Saving a document started from an item shortcut without reviewing the document header and line accounts | Confirm the visible company, page, and workflow state before continuing |
+| An item exists, but no invoice has posted | Whether you have created and opened an invoice using the item | Item setup supplies defaults; the invoice workflow creates the receivable and income posting |
+| An item number is hidden | The company `Item identification` mode | Choose `Item number + description` if your team wants item numbers displayed |
+| Inventory quantities or asset balances are missing | Whether you expected `Product` or `Expense/COGS account` to turn on inventory accounting | Maintain the approved inventory schedule and entries separately |
 
 ## Related
 

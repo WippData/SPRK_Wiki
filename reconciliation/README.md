@@ -11,6 +11,7 @@ Posted sessions remain available for report review. If a supported ledger correc
 ## In This Section
 
 - [Start a reconciliation](./start-a-reconciliation.md)
+- [Reconcile general ledger accounts](./reconcile-general-ledger-accounts.md)
 - [Match and unmatch transactions](./match-and-unmatch-transactions.md)
 - [Finish a reconciliation](./finish-a-reconciliation.md)
 - [View and print bank reconciliation reports](./view-and-print-bank-reconciliation-reports.md)

@@ -61,14 +61,7 @@ Assigning a customer to a bank row adds party context. It is not the same as mat
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| A needed review step is missing | Skipping the customer record and trying to build invoice workflows from inconsistent free-typed names | Go back to that check before continuing |
-| The result does not match the intended workflow | Ignoring active and inactive status when cleaning up an older customer list | Review the visible state before continuing |
-| The result does not match what you expected | Setting a default income account without confirming it is the correct income-type account for your setup | Review the visible state and use the related workflow before continuing |
-| A needed review step is missing | Forgetting to maintain terms or credit settings when those defaults matter for invoice creation and follow-up | Go back to that check before continuing |
 | Two similar workflows or fields are easy to mix up | Treating `Credit status` as a payment record | It is a setup signal, not the same thing as receiving money |
-| The result looks ready, but a key check is unresolved | Assuming customer assignment from Banking applies money to an invoice | Customer assignment and invoice matching are separate actions |
-| The result looks ready, but a key check is unresolved | Assuming customer setup alone finishes receivables preparation | Review item setup, invoice account review, and due-date defaults before opening invoices |
-| The result looks ready, but a key check is unresolved | Assuming every imported multi-line billing address parses perfectly | Review address lines, city, state, and postal code after QuickBooks Desktop customer imports |
 
 ## Related
 

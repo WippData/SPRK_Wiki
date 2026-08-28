@@ -17,7 +17,7 @@ Use this workflow when your firm receives a plugin, needs to upgrade an installe
 
 ## Steps
 
-1. Open `Settings` -> `Plugins`.
+1. Open `Plugins` from the left sidebar.
 2. Select `Refresh Installed Plugins`.
 3. Review `Supported plugin types` and the plugin-bundle limits before selecting a file.
 4. If you are installing or upgrading, choose `Select Plugin Bundle`.

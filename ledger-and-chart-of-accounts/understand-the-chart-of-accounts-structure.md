@@ -41,6 +41,7 @@ Use this article when you need to understand how accounts are grouped, created, 
    - optional description, bank number, or notes
    - `Nonposting account` when the account is a parent or summary account that should not receive posted activity directly
    - `Control account` when the account should be controlled by a subledger or source workflow instead of new manual journal lines
+   - `Reconcile account` when an active balance-sheet account should be available for formal reconciliation to a statement or supporting schedule
    - `Active`
 8. If you import chart data, review account-role columns before relying on downstream pickers:
    - Spreadsheet-style account imports can map boolean fields such as `Nonposting Account` and `Control Account`.
@@ -61,16 +62,6 @@ You can organize the account list into a clearer structure and keep accounts ava
 - `Control account` marks an account as subledger controlled and can make it unavailable for new manual journal-entry posting. It is a posting restriction, not an inactive or deleted account.
 - Name-only account presentation changes how accounts are shown and sorted in supported lists. It does not delete stored account codes or change balances.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| The page does not show the expected result | Expecting `Delete` to erase prior history | SPRK marks the account inactive instead |
-| You are about to take an action that may affect the result | Importing parent relationships without valid `parentId` values | Confirm the visible company, page, and workflow state before continuing |
-| Two similar workflows or fields are easy to mix up | Treating subtype as required for every account when the page only exposes it as an optional field | Use the specific workflow or control named on this page |
-| The result looks ready, but a key check is unresolved | Assuming missing visible account codes mean the codes were deleted | Check the company's `Required account fields` setting first |
-| The result looks ready, but a key check is unresolved | Assuming every active account appears in every selector | Nonposting accounts and control-restricted accounts can be hidden from posting, default-account, Banking, journal, or report selectors even when they remain visible in `Chart of Accounts` |
-| The result does not match what you expected | Confusing account-level `Control account` with the company-level `Control accounts` setting | Both protect source-workflow accounts, but they are configured in different places |
 
 ## Related
 
@@ -78,3 +69,4 @@ You can organize the account list into a clearer structure and keep accounts ava
 - [Record journal entries](./record-journal-entries.md)
 - [Prepare and review ledger imports and exports](./understand-ledger-import-and-export-behavior.md)
 - [Understand audit-sensitive ledger behavior](./understand-audit-sensitive-ledger-behavior.md)
+- [Reconcile general ledger accounts](../reconciliation/reconcile-general-ledger-accounts.md)

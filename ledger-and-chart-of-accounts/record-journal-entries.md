@@ -87,15 +87,7 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| The action is unavailable or does not complete | Trying to save an entry when debit and credit totals do not match | Use the supported prerequisite or correction path first |
-| The entered value or selection does not produce the expected result | Entering both debit and credit on the same line | Correct the value or selection before continuing |
-| The result looks ready, but a key check is unresolved | Assuming auto-reversal is part of the edit flow for existing entries | In the current live flow it appears when creating a new manual journal entry |
-| The result looks ready, but a key check is unresolved | Assuming every manual journal creates bank-register activity | Register rows are opt-in and only mirror eligible bank, cash, or credit-card lines |
-| The result looks ready, but a key check is unresolved | Assuming linked register `Resolve` changes the journal's accounting lines | Use journal edit, reversal, or another supported correction path for accounting changes |
 | `Void affected reconciliation?` appears | The journal touches an affected settlement account on or before posted reconciliation history | Cancel unless the correction should preserve the old session as `Voided`; use `Void and save` only after reviewing the statement impact |
-| The result looks ready, but a key check is unresolved | Assuming a missing account was deleted | It may be nonposting, inactive, or intentionally restricted from new manual journals as a control account |
-| The result looks ready, but a key check is unresolved | Assuming class fields appear automatically for every company | Set them up first from company `Dimensions` |
-| The result looks ready, but a key check is unresolved | Assuming the ledger page is only for review | In the current product it is also the manual journal-entry posting page |
 | A search result was not visible on the first unfiltered screen | Whether the text filter has been applied to the full result set | Run the search, then use `Previous` or `Next` when the result spans multiple pages |
 
 ## Practice And Examples

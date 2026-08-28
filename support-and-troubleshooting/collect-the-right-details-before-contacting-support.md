@@ -2,7 +2,7 @@
 
 Prepare a clear support request by capturing the current session log, workflow, visible result, and affected records before reaching out.
 
-![Support tab showing the Support Activity Log, contact options, and bug-reporting link](../screenshots/support-and-troubleshooting/collect-support-details-step-01.png)
+![Support tab showing the Support Activity Log and contact options](../screenshots/support-and-troubleshooting/collect-support-details-step-01.png)
 
 ## When To Use This
 
@@ -18,9 +18,7 @@ Prepare a clear support request by capturing the current session log, workflow, 
 4. Open `Support`.
 5. In `Support Activity Log`, select `Download Log`.
 6. Keep the downloaded text file ready to attach or quote when you contact support.
-7. Choose the support path that fits your need:
-   - Use the email or Discord details in `Contact` for direct outreach.
-   - Use `View or Submit Bugs` for known issues or bug submission.
+7. Email [support@sprksystems.com](mailto:support@sprksystems.com) and include the details below.
 
 ## Details To Capture
 

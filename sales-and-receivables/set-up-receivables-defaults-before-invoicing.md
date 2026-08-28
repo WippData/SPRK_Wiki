@@ -7,6 +7,8 @@ Prepare customer, item, and account defaults before you start entering invoices 
 
 ![New invoice drawer showing Item Number / SKU line selectors](../screenshots/sales-and-receivables/invoice-item-number-sku-line-step-02.png)
 
+![Company Field Setup showing the Default Sales Tax Payable account](../screenshots/company-setup-and-migration/company-sales-tax-default-step-01.png)
+
 ## When To Use This
 
 Use this page when you want invoice entry to start from cleaner defaults instead of rebuilding customer, item, and account choices on each invoice.
@@ -15,7 +17,8 @@ Use this page when you want invoice entry to start from cleaner defaults instead
 
 - Customer setup can carry a `Default Income Account` and standard payment terms.
 - Item setup can carry reusable descriptions, pricing, unit-of-measure values, and income account choices.
-- Company `Sales / Invoicing` setup can seed `Default invoice payment terms` and the `New invoice workflow` for new invoices.
+- Company `Invoice defaults` can seed `Default invoice payment terms` and the `New invoice workflow` for new invoices.
+- Company `Default Sales Tax Payable` can seed the liability account on taxed invoices.
 - Company `Item identification` setup can decide whether supported item selectors show `Item number + description` or `Description only`.
 - Company `Invoice Template` settings control the standard printed layout, payment instructions, and `Payment Information` display mode; there is no visible document-template selector in the current modal.
 - Invoice entry can reuse saved customers and items, or create them inline without leaving the invoice drawer.
@@ -31,10 +34,11 @@ Use this page when you want invoice entry to start from cleaner defaults instead
 
 1. Review your income and receivables accounts first.
 2. Open company settings and review sales-related defaults if they are part of your rollout:
-   - `Sales / Invoicing` stores `Default invoice payment terms` and `New invoice workflow`.
+   - `Invoice defaults` stores `Default invoice payment terms` and `New invoice workflow`.
    - `Default invoice payment terms` can seed new invoices when no more specific value has already been supplied.
    - `New invoice workflow` can start new invoices as `Draft` or `Open`.
    - Due dates can be calculated for common terms such as `Due on receipt`, `Due upon receipt`, `EOM`, `x/y net N`, and `Net N`.
+   - Under `Default accounts`, choose `Default Sales Tax Payable` when the company collects sales tax. This must be an active liability account.
 3. Review `Item identification` if item numbers should or should not appear during entry:
    - `Item number + description` keeps item numbers visible beside descriptions where supported.
    - `Description only` hides item numbers in supported item and invoice helpers without deleting the item numbers from item records.
@@ -55,6 +59,7 @@ Use this page when you want invoice entry to start from cleaner defaults instead
    - `Date`
    - `Payment Terms`
    - `Due Date`
+   - `Sales tax payable account`, when a tax rate is entered
 10. Use the line selectors to pull saved item details into invoice lines:
    - `Item Number / SKU` can fill matching description and price details.
    - `Description` can fill matching item number/SKU and price details.
@@ -70,7 +75,7 @@ Invoice entry starts from cleaner defaults, repeated customers and items are eas
 ## Downstream Effects
 
 - Customer terms can fill invoice terms and help calculate a due date.
-- Company terms and workflow defaults can seed new invoices, but each invoice still needs review before posting.
+- Company terms, workflow defaults, and the sales-tax payable default can seed new invoices, but each invoice still needs review before posting.
 - The invoice still needs a reviewed `Receive to` value before it moves to an open receivable or paid-now settlement path.
 - Saved item details can reduce manual entry and help keep invoice lines more consistent.
 - Customer and item defaults improve setup quality, but they do not replace final invoice review.
@@ -78,17 +83,6 @@ Invoice entry starts from cleaner defaults, repeated customers and items are eas
 - `Description only` item identification changes labels in supported workflows. It does not delete item numbers, change posting, or change import matching by itself.
 - Receivables aging and invoice list review become easier when customer names, due dates, and line details are consistent.
 
-## If Something Looks Wrong
-
-| What You See | What To Check | What To Do Next |
-|---|---|---|
-| You are about to take an action that may affect the result | Starting invoice entry before the chart of accounts is ready for receivables and income activity | Confirm the visible company, page, and workflow state before continuing |
-| The result looks ready, but a key check is unresolved | Assuming customer defaults remove the need to review each invoice header | Verify the visible SPRK state before continuing |
-| The result looks ready, but a key check is unresolved | Assuming company invoice defaults override every customer or invoice-specific value without review | Verify the visible SPRK state before continuing |
-| Two similar workflows or fields are easy to mix up | Treating item setup as optional even when the same services or products repeat every week | Use the specific workflow or control named on this page |
-| The result does not match what you expected | Thinking hidden item numbers mean the item master data was removed | Check `Item identification` |
-| A required value or review step is missing | Leaving imported customer or item account mappings unreviewed before opening invoices | Complete the missing value or review step before continuing |
-| The result looks ready, but a key check is unresolved | Assuming inline create is only for customer records | It can also help you add a missing item during invoice entry |
 
 ## Related
 

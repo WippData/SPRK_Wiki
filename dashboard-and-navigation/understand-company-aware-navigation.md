@@ -16,7 +16,7 @@ Learn how the active company affects what you see as you move through SPRK and h
 
 ## Details
 
-The selected company is the working context across SPRK. If you need a different company, switch it from the company selector or from `Settings` -> `Companies`, then reopen or recheck the page you care about.
+The selected company is the working context across SPRK. If you need a different company, use the company selector or open `Companies` from the left sidebar, then reopen the page you care about.
 
 ## If Something Looks Wrong
 

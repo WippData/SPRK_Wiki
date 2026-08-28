@@ -4,6 +4,8 @@
 
 Record customer payments from the invoice list so SPRK updates the balance and posts the cash or bank side of the transaction, then review payment history and linked journals when you need the audit trail.
 
+<!-- Last validated against SPRK source: 2026-08-27 -->
+
 ## When To Use This
 
 Use this workflow when a customer has paid an invoice and you want SPRK to reduce the receivable and update the invoice status correctly.
@@ -20,7 +22,7 @@ Use this workflow when a customer has paid an invoice and you want SPRK to reduc
 
 1. Open `Invoices`.
 2. Find the invoice you want to collect against.
-3. Select the dollar action for that invoice.
+3. Open `More` for that invoice and select `Record Payment`.
 4. In `Receive payment`, complete:
    - `Payment date`
    - `Amount`
@@ -59,14 +61,11 @@ Customer payment terms and credit settings can help you review receivables befor
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| You are about to take an action that may affect the result | Editing the invoice status to `Paid` instead of using `Receive payment` | Confirm the visible company, page, and workflow state before continuing |
-| The result looks ready, but a key check is unresolved | Assuming customer credit settings or invoice terms collect the payment automatically | Verify the visible SPRK state before continuing |
-| A needed review step is missing | Forgetting to choose `Deposit to` | Go back to that check before continuing |
-| You are about to take an action that may affect the result | Creating a missing `Deposit to` account inline and assuming that saved the payment too | Confirm the visible company, page, and workflow state before continuing |
-| The entered value or selection does not produce the expected result | Entering an amount greater than the remaining balance | Correct the value or selection before continuing |
-| The page does not show the expected result | Expecting a disabled dollar action on a paid invoice to reopen payment entry | Review the visible action or related workflow before continuing |
-| You are about to take an action that may affect the result | Recording a payment manually and then matching the same bank transaction as another payment | Confirm the visible company, page, and workflow state before continuing |
-| Two similar workflows or fields are easy to mix up | Treating payment history as an edit screen | Use the specific workflow or control named on this page |
+| The invoice status was changed without a payment | Whether a payment entry exists in `View payment history` | Use `More` > `Record Payment`; do not type `Paid` as a substitute for recording cash |
+| No payment has been recorded | Whether you only set customer credit or invoice terms | Open `More` > `Record Payment`; terms and credit settings do not collect cash |
+| The new settlement account exists, but the invoice balance did not change | Whether you selected `Record payment` after creating the account | Return to `Receive payment`, choose `Deposit to`, and record the payment |
+| `Record Payment` is unavailable | Whether the invoice is already paid or has no remaining balance | Review `View payment history` before attempting a correction |
+| The same receipt appears to have been recorded twice | Whether you recorded it here and again from a pending Banking row | Stop and review payment history and linked journals before reversing the duplicate |
 
 ## Practice And Examples
 

@@ -2,7 +2,9 @@
 
 ![Reconciliation transaction table for reviewing matched bank activity](../screenshots/reconciliation/reconciliation-transaction-table-step-01.png)
 
-Link a reconciled bank line to a check when the workflow needs check-level support, and remove that link when the wrong check was chosen.
+Link a confirmed bank transaction to a check while you are reconciling, and remove that link when the wrong check was chosen.
+
+<!-- Last validated against SPRK source: 2026-08-27 -->
 
 ## When To Use This
 
@@ -36,13 +38,14 @@ The bank line is either linked to the correct check or returned to an unmatched 
 - Reconciliation can still continue after matching, but the bank line must still be cleared through the reconciliation finish flow.
 - SPRK does not allow unmatching a cleared check through the current unmatch behavior.
 
+This action does not match an invoice or bill and does not confirm a pending bank row. For those jobs, open `Banking`, stay on `Pending`, and use `Match bank transaction`. Selecting a row in `Reconcile` and finishing with a zero difference is what marks it reconciled.
+
 ## If Something Looks Wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| The result does not match what you expected | Matching a bank line only by amount without checking date or check number | Review the visible state and use the related workflow before continuing |
-| The result looks ready, but a key check is unresolved | Assuming matching alone finishes reconciliation | Verify the visible SPRK state before continuing |
-| The action is unavailable or does not complete | Trying to use `Unmatch` after the linked check is already in a cleared state | Use the supported prerequisite or correction path first |
+| The wrong check is suggested | Whether the date, check number, and amount agree | Do not match on amount alone; compare the identifying details |
+| A check is matched, but the statement is not reconciled | Whether the row is selected and the difference is zero | Complete the remaining statement review, then use `Finish` |
 
 ## Related
 

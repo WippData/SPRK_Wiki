@@ -67,14 +67,7 @@ You can move journal-entry data in or out of the product with the current suppor
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| The result looks ready, but a key check is unresolved | Assuming export includes every journal entry in the company even when the ledger view is filtered | Verify the visible SPRK state before continuing |
-| A needed review step is missing | Skipping the starter modal and preparing a file without checking the current required and recommended columns | Go back to that check before continuing |
-| The result does not match what you expected | Confirming import before reviewing missing-account warnings | Review the visible state and use the related workflow before continuing |
-| The result does not match what you expected | Preparing import files with account labels that do not match available accounts or the chosen resolution mapping | Review the visible state and use the related workflow before continuing |
-| The result looks ready, but a key check is unresolved | Assuming only raw account IDs work | Use the current template and review code-plus-name account labels in preview |
 | The result does not match the intended workflow | Ignoring a blank source date just because the preview filled one | Confirm the defaulted date belongs in the intended posting period |
-| The result looks ready, but a key check is unresolved | Assuming vendor matching is fuzzy | Import vendor references should match active vendor IDs or unique active vendor names/company/print-as values |
-| The result looks ready, but a key check is unresolved | Assuming QuickBooks-style or trial-balance-style source files bypass preview | They still need review before commit |
 
 ## Related
 

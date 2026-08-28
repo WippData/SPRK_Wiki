@@ -14,6 +14,7 @@ Import grouped invoice rows from a spreadsheet or CSV after reviewing customer, 
 
 - Confirm the active company.
 - Confirm customers, items, and income accounts are ready for the file.
+- If the file includes taxed Open or paid-now invoices, configure the company default Sales Tax Payable account or include a payable account in the file.
 - Review whether `Receive to` should route each invoice to Accounts Receivable or a settlement account.
 - Keep the original file available until import results have been reviewed.
 
@@ -28,6 +29,7 @@ Import grouped invoice rows from a spreadsheet or CSV after reviewing customer, 
    - `SKU` or `Item`
    - `Memo`
    - `Tax Rate`
+   - `Sales Tax Payable Account` or `Sales Tax Payable Account ID`
    - `Status`
    - `Amount`
    - `Line Amount`
@@ -41,9 +43,10 @@ Import grouped invoice rows from a spreadsheet or CSV after reviewing customer, 
 
 ## What Happens When You Import
 
-SPRK creates invoice documents from grouped rows after preview. `Receive to` follows the same routing rule as the invoice drawer: an Accounts Receivable control account keeps the imported invoice on the accrual path, while a non-control cash, bank, or credit-card settlement account imports as paid-now. `Default Income Account` fills blank line income accounts; `Line Income Account` remains the posting source of truth.
+SPRK creates invoice documents from grouped rows after preview. `Receive to` follows the same routing rule as the invoice drawer: an Accounts Receivable control account keeps the imported invoice on the accrual path, while a non-control cash, bank, or credit-card settlement account imports as paid-now. `Default Income Account` fills blank line income accounts; `Line Income Account` remains the posting source of truth. A sales-tax account in the file overrides the company default for that invoice.
 
 Imports that try to mix receivable control routing and settlement-account routing for the same invoice are rejected instead of silently guessing the posting path.
+Taxed Open and paid-now invoices are also rejected when neither the file nor the company supplies an active liability account. Taxed drafts can be imported without that account and completed before posting.
 
 ## If Something Looks Wrong
 
@@ -53,6 +56,7 @@ Imports that try to mix receivable control routing and settlement-account routin
 | The file leaves a customer unresolved | Customer name or customer identifier in the file | Add or correct the customer before import |
 | An invoice routes as paid-now | The `Receive to` account | Use an Accounts Receivable control account when the invoice should remain open |
 | A line posts to the wrong income account | `Line Income Account` and fallback `Default Income Account` | Correct the account values before confirming |
+| A taxed invoice cannot be imported as Open or paid-now | `Sales Tax Payable Account` in the file and the company default | Select the active liability account used for collected sales tax |
 | The import reports duplicate invoice numbers | Existing invoice numbers and file invoice numbers | Resolve duplicate numbers before confirming |
 
 ## Practice And Examples

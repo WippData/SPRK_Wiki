@@ -15,14 +15,14 @@ If your main goal is to clone, copy, or duplicate an existing SPRK company, star
 
 ## Before You Start
 
-- You can open `Settings` → `Companies`.
+- You can open `Companies` from the left sidebar.
 - You know the new company name you want to create.
 - If you plan to upload files, they are ready in supported formats such as CSV, IIF, XLS, or XLSX.
 - If you plan to copy data from an existing company, that company already exists in SPRK.
 
 ## Steps
 
-1. Open `Settings` → `Companies`.
+1. Open `Companies` from the left sidebar.
 2. Open the menu attached to `New Company`.
 3. Select `Import Wizard`.
 4. Enter the new `Company name`.
@@ -52,11 +52,6 @@ SPRK creates a new company using the combination of files, copied data, and sett
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
-| You are about to take an action that may affect the result | Starting the wizard without a company name | The review action is disabled until a name is entered |
-| A needed review step is missing | Skipping the starter templates and then uploading files that do not match the expected columns | Go back to that check before continuing |
-| You are about to take an action that may affect the result | Uploading operational files such as invoices or bills without also bringing in foundation data like a chart of accounts or a trial balance | Confirm the visible company, page, and workflow state before continuing |
-| The result looks ready, but a key check is unresolved | Assuming the wizard’s auto-assignment is final | Review each data type before creating the company |
-| A needed review step is missing | Forgetting that settings can be entered manually if no source file exists for them | Go back to that check before continuing |
 | `Existing company` is unavailable for `Rules` | No `Existing company (optional)` source has been selected | Choose the source company, then return to the `Rules` row and select `Existing company` |
 
 ## Practice And Examples
