@@ -1,6 +1,6 @@
 # SPRK Wiki Authoring Guide
 
-This repository is the public help center for SPRK. Write for a business owner or bookkeeper who is looking at the app and wants a calm, practical guide from a friendly accountant. This `AGENTS.md` file is contributor guidance, not a public help article; public-page inventories and QA ingestion must exclude it.
+This repository is the public help center for SPRK. Write for a business owner or bookkeeper who is looking at the app and wants a calm, practical guide from a friendly accountant. The root `README.md` is the canonical public SPRK Support homepage; keep it focused on customer goals and link it only to existing public help pages. This `AGENTS.md` file is contributor guidance, not a public help article; public-page inventories and QA ingestion must exclude it.
 
 ## Sources of truth
 
