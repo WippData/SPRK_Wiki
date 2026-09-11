@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "source": "reports-and-financial-review/export-transactions-from-reports.md",
+  "role": "guide",
+  "objective": "Filter transaction detail and export or print the results for a client or reviewer.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "reports"
+  ],
+  "fileFacts": {
+    "sha256": "dbab1964340fff027941547210680c57e28f611291b22329ac6117a7dacfadb6"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reports-and-financial-review/general-ledger-account-selector-sorting-step-01.png",
+      "section": "Export Transactions from Reports",
+      "altText": "General Ledger report account selector showing account ordering controlled by Preferences",
+      "purpose": "Review required: confirm whether this image supports Export Transactions from Reports: General Ledger report account selector showing account ordering controlled by Preferences."
+    },
+    {
+      "file": "screenshots/reports-and-financial-review/general-ledger-column-controls-step-01.png",
+      "section": "Export Transactions from Reports",
+      "altText": "General Ledger report table showing transaction detail columns and column-control gear",
+      "purpose": "Review required: confirm whether this image supports Export Transactions from Reports: General Ledger report table showing transaction detail columns and column-control gear."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

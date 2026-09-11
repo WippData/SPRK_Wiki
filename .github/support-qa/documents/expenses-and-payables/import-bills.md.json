@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "expenses-and-payables/import-bills.md",
+  "role": "guide",
+  "objective": "Import grouped vendor bill rows from a spreadsheet or CSV after reviewing vendor, line, and account-routing details.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "vendors-bills-checks"
+  ],
+  "fileFacts": {
+    "sha256": "5c51d28fdb8963ddabb118d47aaf5d9c1e1ca30652c20793dc2b2dfafa1a3222"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/v1-validation/bill-import-grouped-lines-success-v0.3.57.png",
+      "section": "Import Bills",
+      "altText": "Bill grid filtered to V1 imported bills showing grouped-line CSV import results",
+      "purpose": "Review required: confirm whether this image supports Import Bills: Bill grid filtered to V1 imported bills showing grouped-line CSV import results."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

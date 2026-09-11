@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "source": "faq-and-glossary/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for faqs and glossary and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "faq-glossary"
+  ],
+  "fileFacts": {
+    "sha256": "e87ff86e71a1cd05ff50e5aca42608e6c39a0706d04b772ea89e39dcf0e01992"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/preferences-and-personalization/account-dropdown-sorting-preference-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1200,
+    "height": 800,
+    "sha256": "b25e27963d27ca4ca89b22a07da729722dcc86ea4edd2f6630493687397efae0"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "preferences-and-personalization/use-the-preferences-tab.md",
+      "section": "Use the Preferences Tab",
+      "altText": "Preferences page showing the Account dropdown sorting control and its ordering choices",
+      "purpose": "Review required: confirm whether this image supports Use the Preferences Tab: Preferences page showing the Account dropdown sorting control and its ordering choices."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

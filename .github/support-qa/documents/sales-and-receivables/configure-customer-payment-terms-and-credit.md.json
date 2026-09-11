@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/configure-customer-payment-terms-and-credit.md",
+  "role": "guide",
+  "objective": "Set customer-level payment and credit defaults before invoicing so due dates, receivables follow-up, and internal review expectations stay more consistent.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "1640c2aac6a8d913de3882e3e1895a0443b99c2da00bababa269d7ace19ec5be"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/sales-and-receivables/customer-payments-credit-step-01.png",
+      "section": "Configure Customer Payment Terms and Credit",
+      "altText": "Payments and Credit configuration modal for a customer",
+      "purpose": "Review required: confirm whether this image supports Configure Customer Payment Terms and Credit: Payments and Credit configuration modal for a customer."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

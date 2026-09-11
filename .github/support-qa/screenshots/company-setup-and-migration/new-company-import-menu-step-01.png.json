@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/company-setup-and-migration/new-company-import-menu-step-01.png",
+  "usageStatus": "retained-unreferenced",
+  "retentionReason": "Existing public asset retained for URL compatibility while its future instructional use is reviewed.",
+  "fileFacts": {
+    "format": "png",
+    "width": 1202,
+    "height": 800,
+    "sha256": "ba3ffd955b04b2986c81f7432d3d7174e98d8c175fefa42969e2c3775779d684"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

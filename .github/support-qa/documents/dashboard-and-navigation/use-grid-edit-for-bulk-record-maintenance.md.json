@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "source": "dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md",
+  "role": "guide",
+  "objective": "Use Grid Edit when you need to clean up repeated list data faster than opening one drawer at a time.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "using-sprk"
+  ],
+  "fileFacts": {
+    "sha256": "66f35c3b50c783c834753e7420bd4d68ecc2c9305fe34f11dd10f752ab417230"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png",
+      "section": "Use Grid Edit for Bulk Record Maintenance",
+      "altText": "Column preferences dialog showing drag handles and move controls for supported list columns",
+      "purpose": "Review required: confirm whether this image supports Use Grid Edit for Bulk Record Maintenance: Column preferences dialog showing drag handles and move controls for supported list columns."
+    },
+    {
+      "file": "screenshots/banking-and-cash-management/banking-grid-edit-unsaved-changes-2026-07.png",
+      "section": "Steps",
+      "altText": "Unsaved changes prompt shown when leaving Banking Grid Edit",
+      "purpose": "Review required: confirm whether this image supports Steps: Unsaved changes prompt shown when leaving Banking Grid Edit."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

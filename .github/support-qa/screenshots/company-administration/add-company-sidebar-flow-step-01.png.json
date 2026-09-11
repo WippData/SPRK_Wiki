@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/company-administration/add-company-sidebar-flow-step-01.png",
+  "usageStatus": "retained-unreferenced",
+  "retentionReason": "Existing public asset retained for URL compatibility while its future instructional use is reviewed.",
+  "fileFacts": {
+    "format": "png",
+    "width": 1152,
+    "height": 768,
+    "sha256": "d3a7634e6edb3f974cf973cd881221a7c15278d777b88e5bd894e2e7d1b6e8db"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

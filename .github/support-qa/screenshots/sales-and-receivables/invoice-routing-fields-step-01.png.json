@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/sales-and-receivables/invoice-routing-fields-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1280,
+    "height": 720,
+    "sha256": "9a43352aa2d0302ce341a44a79414fd9b1af9e48f003a9070effb6a35b2030e6"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "sales-and-receivables/create-invoices.md",
+      "section": "Create an Invoice",
+      "altText": "New invoice drawer showing Receive to, income routing, and sales-tax payable account",
+      "purpose": "Review required: confirm whether this image supports Create an Invoice: New invoice drawer showing Receive to, income routing, and sales-tax payable account."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

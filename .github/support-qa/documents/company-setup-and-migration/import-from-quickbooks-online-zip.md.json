@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "company-setup-and-migration/import-from-quickbooks-online-zip.md",
+  "role": "guide",
+  "objective": "Create a company in SPRK by importing a QuickBooks Online ZIP export from the Companies page.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "company-setup"
+  ],
+  "fileFacts": {
+    "sha256": "d6324fde8ef80e3e3242fb77dc4f500deef72602f8ba9b181148802f30d04f77"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png",
+      "section": "Import from QuickBooks Online ZIP",
+      "altText": "Import Wizard showing accepted import files and data-type mapping",
+      "purpose": "Review required: confirm whether this image supports Import from QuickBooks Online ZIP: Import Wizard showing accepted import files and data-type mapping."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

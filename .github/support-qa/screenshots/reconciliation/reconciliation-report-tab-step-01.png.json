@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/reconciliation/reconciliation-report-tab-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1202,
+    "height": 800,
+    "sha256": "aac7f8eedce71f957fda2cba9b44d0317a0198f2789304ed0e346fa919e24cae"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "reconciliation/view-and-print-bank-reconciliation-reports.md",
+      "section": "View and Print Bank Reconciliation Reports",
+      "altText": "Reports Reconciliation tab opened from Print Bank Rec",
+      "purpose": "Review required: confirm whether this image supports View and Print Bank Reconciliation Reports: Reports Reconciliation tab opened from Print Bank Rec."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

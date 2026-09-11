@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "expenses-and-payables/create-and-manage-bills.md",
+  "role": "guide",
+  "objective": "Choose the right guide for entering, paying, importing, reviewing, or correcting a vendor bill.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "vendors-bills-checks"
+  ],
+  "fileFacts": {
+    "sha256": "0e494ce6d9b176b72745bbaa3c0a9365f825ccfe02bb43dd62769bfcb1f2a948"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/expenses-and-payables/bill-payment-history-actions-step-01.png",
+      "section": "Choose a Bill Task",
+      "altText": "Bill row actions for payment history and linked journal review",
+      "purpose": "Review required: confirm whether this image supports Choose a Bill Task: Bill row actions for payment history and linked journal review."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

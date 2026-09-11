@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "company-administration/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for company settings and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "company-settings"
+  ],
+  "fileFacts": {
+    "sha256": "f36869f35dbafe5e25baf85252e209e9bac2afdc51aa9be37e090ec9fdee2927"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-administration/companies-tab-audit-step-01.png",
+      "section": "Company settings",
+      "altText": "Companies tab showing the active company and company list",
+      "purpose": "Review required: confirm whether this image supports Company settings: Companies tab showing the active company and company list."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}

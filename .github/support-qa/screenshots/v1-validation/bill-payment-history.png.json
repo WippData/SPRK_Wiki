@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/bill-payment-history.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 615,
+    "height": 125,
+    "sha256": "17e4c875e251390b7d2be7cda49c91aa2631b22c9f0901821e523ea61a193d13"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md",
+      "section": "Practice and examples",
+      "altText": "Bill payment history showing payable payment activity",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Bill payment history showing payable payment activity."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

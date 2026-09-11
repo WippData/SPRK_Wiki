@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "source": "banking-and-cash-management/import-bank-transactions.md",
+  "role": "guide",
+  "objective": "Import bank or credit card activity, review the preview, and add selected rows to Pending for review.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "banking"
+  ],
+  "fileFacts": {
+    "sha256": "85b57fd7bc2a69e9fba5782b0a8e6fd8f4a48f9a7883f60444502b81c31bb4fb"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/banking-and-cash-management/banking-import-template-menu-step-01.png",
+      "section": "Import Bank Transactions",
+      "altText": "Banking More menu showing Import File and Download Import Template actions",
+      "purpose": "Review required: confirm whether this image supports Import Bank Transactions: Banking More menu showing Import File and Download Import Template actions."
+    },
+    {
+      "file": "screenshots/banking-and-cash-management/bank-transaction-import-template-step-01.png",
+      "section": "Import Bank Transactions",
+      "altText": "Bank transaction import template modal",
+      "purpose": "Review required: confirm whether this image supports Import Bank Transactions: Bank transaction import template modal."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/ledger-and-chart-of-accounts/journal-entries-filter-bar-2026-07.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1152,
+    "height": 768,
+    "sha256": "875d10f78a2b364a0575073052793ba716a09a1176d9f0ea98097f252a78e751"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "ledger-and-chart-of-accounts/record-journal-entries.md",
+      "section": "Steps",
+      "altText": "Journal Entries filter bar",
+      "purpose": "Review required: confirm whether this image supports Steps: Journal Entries filter bar."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

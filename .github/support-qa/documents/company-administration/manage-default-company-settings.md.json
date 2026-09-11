@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "company-administration/manage-default-company-settings.md",
+  "role": "guide",
+  "objective": "Set tenant-level defaults for future companies and apply the same accounting policy choices to selected active companies when your firm wants a consistent setup.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "company-settings"
+  ],
+  "fileFacts": {
+    "sha256": "6cc9085a164b9bc467642bab6a1e36457f6053c9435ffb9f16086cb424c0842a"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-administration/default-company-settings-step-01.png",
+      "section": "Manage Default Company Settings",
+      "altText": "Default Company Settings panel showing tenant defaults for required account fields, journal entries, and reconciliation dates",
+      "purpose": "Review required: confirm whether this image supports Manage Default Company Settings: Default Company Settings panel showing tenant defaults for required account fields, journal entries, and reconciliation dates."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

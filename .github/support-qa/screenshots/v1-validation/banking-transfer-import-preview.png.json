@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/banking-transfer-import-preview.png",
+  "usageStatus": "retained-unreferenced",
+  "retentionReason": "Existing public asset retained for URL compatibility while its future instructional use is reviewed.",
+  "fileFacts": {
+    "format": "png",
+    "width": 915,
+    "height": 490,
+    "sha256": "9e21e1fd7dae108b163019108805fdc6956d762a52e917a52ed0da515f53d059"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

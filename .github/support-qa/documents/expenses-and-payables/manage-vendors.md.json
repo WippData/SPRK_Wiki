@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "source": "expenses-and-payables/manage-vendors.md",
+  "role": "guide",
+  "objective": "Create and maintain vendor records so bills, checks, and vendor reporting use the right payee information.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "vendors-bills-checks"
+  ],
+  "fileFacts": {
+    "sha256": "d3ab2b93fb7532c49beb257808014c2bcc506e868481dcccf444080d1fd16cdb"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/expenses-and-payables/vendors-list-step-01.png",
+      "section": "Manage Vendors",
+      "altText": "Vendors list with editable vendor records",
+      "purpose": "Review required: confirm whether this image supports Manage Vendors: Vendors list with editable vendor records."
+    },
+    {
+      "file": "screenshots/expenses-and-payables/vendors-1099-column-step-01.png",
+      "section": "Manage Vendors",
+      "altText": "Vendors grid showing the 1099 tracking column",
+      "purpose": "Review required: confirm whether this image supports Manage Vendors: Vendors grid showing the 1099 tracking column."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

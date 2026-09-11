@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/import-invoices.md",
+  "role": "guide",
+  "objective": "Import grouped invoice rows from a spreadsheet or CSV after reviewing customer, line, and account-routing details.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "21eeaa4b0e5a7e5f650cb3a03fa18aa01306bf07a0b8986769361a476a51e658"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/v1-validation/invoice-import-grouped-lines-success-v0.3.57.png",
+      "section": "Import Invoices",
+      "altText": "Invoice grid filtered to V1 imported invoices showing grouped-line CSV import results",
+      "purpose": "Review required: confirm whether this image supports Import Invoices: Invoice grid filtered to V1 imported invoices showing grouped-line CSV import results."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

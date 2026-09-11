@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "source": "banking-and-cash-management/understand-the-banking-page.md",
+  "role": "guide",
+  "objective": "Use this Banking page map to understand where account selection, import, pending review, confirmed activity, and repair actions live.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "concept",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "banking"
+  ],
+  "fileFacts": {
+    "sha256": "dc2476418a5643ae9a5ae7cd671d894db4481fa294c97e84978907dec257efc0"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png",
+      "section": "Understand the Banking Page",
+      "altText": "Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column",
+      "purpose": "Review required: confirm whether this image supports Understand the Banking Page: Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column."
+    },
+    {
+      "file": "screenshots/banking-and-cash-management/banking-account-last-reconciled-popover-2026-07.png",
+      "section": "Details",
+      "altText": "Banking account reconciliation date popover",
+      "purpose": "Review required: confirm whether this image supports Details: Banking account reconciliation date popover."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "screenshots"
+    ]
+  }
+}

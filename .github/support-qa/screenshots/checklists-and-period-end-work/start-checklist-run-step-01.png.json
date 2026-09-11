@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/checklists-and-period-end-work/start-checklist-run-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1202,
+    "height": 800,
+    "sha256": "6dfccf18347f0a04c67d77e763788b4ba229060983ea6d8df31be9b6fe4ea81b"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "checklists-and-period-end-work/run-recurring-close-style-tasks.md",
+      "section": "Run Recurring Close-Style Tasks",
+      "altText": "Start checklist run drawer for recurring close-style tasks",
+      "purpose": "Review required: confirm whether this image supports Run Recurring Close-Style Tasks: Start checklist run drawer for recurring close-style tasks."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

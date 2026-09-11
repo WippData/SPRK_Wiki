@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/company-file-import-preview-replace-warning.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 792,
+    "height": 628,
+    "sha256": "ac1c03296cc76bbc756f3c27c56be0369db3b03cc3ea26d1543bc256e1ac8daa"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "backups-and-data-safety/export-and-import-company-files.md",
+      "section": "Practice and examples",
+      "altText": "Company File import preview showing table count, export timestamp, and replace warning",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Company File import preview showing table count, export timestamp, and replace warning."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

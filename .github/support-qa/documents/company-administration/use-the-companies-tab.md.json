@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "company-administration/use-the-companies-tab.md",
+  "role": "guide",
+  "objective": "Open the Companies tab to review active and archived companies, refresh the list, and reach creation or maintenance actions.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "company-settings"
+  ],
+  "fileFacts": {
+    "sha256": "dd5eea88ffa64308a62513fd228820945a824d50d88795d626247701c014ed91"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-administration/companies-tab-step-01.png",
+      "section": "Use the Companies Tab",
+      "altText": "Companies tab showing active companies, filters, refresh, new-company actions, and company row controls",
+      "purpose": "Review required: confirm whether this image supports Use the Companies Tab: Companies tab showing active companies, filters, refresh, new-company actions, and company row controls."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

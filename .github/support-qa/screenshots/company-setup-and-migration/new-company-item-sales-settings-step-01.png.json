@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/company-setup-and-migration/new-company-item-sales-settings-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1280,
+    "height": 720,
+    "sha256": "efca44a3a71e3c9c2a319711b0a2a022cdd26ae83f21978297a03ee82c4e6d7a"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "company-setup-and-migration/create-your-first-company.md",
+      "section": "Create Your First Company",
+      "altText": "Field Setup window showing item identification and Invoice defaults",
+      "purpose": "Review required: confirm whether this image supports Create Your First Company: Field Setup window showing item identification and Invoice defaults."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

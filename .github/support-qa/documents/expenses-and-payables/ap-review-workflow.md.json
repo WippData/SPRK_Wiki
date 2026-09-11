@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "expenses-and-payables/ap-review-workflow.md",
+  "role": "guide",
+  "objective": "Review vendors, open bills, payments, aging, and expense detail before reporting.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "vendors-bills-checks"
+  ],
+  "fileFacts": {
+    "sha256": "d88c77d94c9464107d20ec153eff1f9ec889b6ba3b4934a30564f6870a277a52"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/expenses-and-payables/bills-list-step-01.png",
+      "section": "Review Bills and Vendor Balances",
+      "altText": "Bills list showing bill rows, statuses, and available bill actions",
+      "purpose": "Review required: confirm whether this image supports Review Bills and Vendor Balances: Bills list showing bill rows, statuses, and available bill actions."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

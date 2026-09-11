@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "reports-and-financial-review/run-income-by-customer.md",
+  "role": "guide",
+  "objective": "Review posted income by customer, then open account and invoice detail when you need to explain a balance.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "reports"
+  ],
+  "fileFacts": {
+    "sha256": "b8417672bf7bda5f5da03529ee1874f9ce001cd48f4072b34f239bd60f24eea3"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reports-and-financial-review/income-by-customer-report-step-01.png",
+      "section": "Steps",
+      "altText": "Income by Customer report and filters",
+      "purpose": "Review required: confirm whether this image supports Steps: Income by Customer report and filters."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

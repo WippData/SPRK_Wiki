@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/reports-general-ledger-drilldown-rows.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 766,
+    "height": 625,
+    "sha256": "da7d91582314e2bd4b021920e92577625d12b13f6b38f5b2225fcc34fec5c92f"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "reports-and-financial-review/use-report-drilldown-behavior.md",
+      "section": "Practice and examples",
+      "altText": "General Ledger report rows available for detail review",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: General Ledger report rows available for detail review."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

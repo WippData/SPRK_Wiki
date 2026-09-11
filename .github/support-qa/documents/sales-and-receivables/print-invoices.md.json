@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/print-invoices.md",
+  "role": "guide",
+  "objective": "Print customer-facing invoice copies and review invoice template settings before sending output to a customer.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "9516faa5bcee35af2fcc1e87a05c4e5a3927bf0df191245cab26354590f1a21f"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/sales-and-receivables/invoice-template-payment-information-2026-07.png",
+      "section": "Print Invoices",
+      "altText": "Invoice Template modal showing Payment Information choices",
+      "purpose": "Review required: confirm whether this image supports Print Invoices: Invoice Template modal showing Payment Information choices."
+    },
+    {
+      "file": "screenshots/sales-and-receivables/invoice-template-totals-options-step-02.png",
+      "section": "Steps",
+      "altText": "Invoice Template Show Totals menu with Under Table and Bottom of Page options",
+      "purpose": "Review required: confirm whether this image supports Steps: Invoice Template Show Totals menu with Under Table and Bottom of Page options."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

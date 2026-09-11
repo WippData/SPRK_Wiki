@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "company-setup-and-migration/switch-between-companies.md",
+  "role": "guide",
+  "objective": "Change the active company from the Companies page so the rest of SPRK uses the company you intend to work in.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "company-setup"
+  ],
+  "fileFacts": {
+    "sha256": "d03423cbdd39be075d78ddbf18afe6744d66c51eb61b95dbf918a852d1edb741"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-setup-and-migration/switch-between-companies-step-01.png",
+      "section": "Switch Between Companies and Confirm the Active Company",
+      "altText": "Companies tab showing Demo Company selected and other active companies available to select",
+      "purpose": "Review required: confirm whether this image supports Switch Between Companies and Confirm the Active Company: Companies tab showing Demo Company selected and other active companies available to select."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

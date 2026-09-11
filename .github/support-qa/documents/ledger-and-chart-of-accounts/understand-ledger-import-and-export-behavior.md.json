@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "source": "ledger-and-chart-of-accounts/understand-ledger-import-and-export-behavior.md",
+  "role": "guide",
+  "objective": "Import or export journal entries and review accounts, dates, balances, and results before relying on them.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "accounts-journals"
+  ],
+  "fileFacts": {
+    "sha256": "7b81009d18da55e62e606a16310f7cf96594f381955c5463f0967aca8811ffe1"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/ledger-and-chart-of-accounts/journal-entry-import-template-step-01.png",
+      "section": "Prepare and Review Ledger Imports and Exports",
+      "altText": "Journal Entry Import Template modal showing accepted file formats, required columns, recommended columns, and Download Template",
+      "purpose": "Review required: confirm whether this image supports Prepare and Review Ledger Imports and Exports: Journal Entry Import Template modal showing accepted file formats, required columns, recommended columns, and Download Template."
+    },
+    {
+      "file": "screenshots/ledger-and-chart-of-accounts/journal-entry-import-template-step-02.png",
+      "section": "Prepare and Review Ledger Imports and Exports",
+      "altText": "Journal Entry Import Template modal showing required and recommended columns",
+      "purpose": "Review required: confirm whether this image supports Prepare and Review Ledger Imports and Exports: Journal Entry Import Template modal showing required and recommended columns."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

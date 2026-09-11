@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "expenses-and-payables/record-bill-payments.md",
+  "role": "guide",
+  "objective": "Record payments against open vendor bills and review payment history after the bill balance changes.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "vendors-bills-checks"
+  ],
+  "fileFacts": {
+    "sha256": "d4b8350a74f93f021ce05f2ce3feaf0b0b2ec6962b599419ad1de9bab56b8d59"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/expenses-and-payables/bill-payment-history-actions-step-01.png",
+      "section": "Record a Bill Payment",
+      "altText": "Bill row actions for payment history and linked journal review",
+      "purpose": "Review required: confirm whether this image supports Record a Bill Payment: Bill row actions for payment history and linked journal review."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

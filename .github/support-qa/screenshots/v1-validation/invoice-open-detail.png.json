@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/invoice-open-detail.png",
+  "usageStatus": "retained-unreferenced",
+  "retentionReason": "Existing public asset retained for URL compatibility while its future instructional use is reviewed.",
+  "fileFacts": {
+    "format": "png",
+    "width": 640,
+    "height": 801,
+    "sha256": "e3dee4fcaef0e205b906915e38ff12df0e71943ef2bc6060623c94b4e60d04a1"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

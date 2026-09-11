@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "reconciliation/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for reconcile accounts and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "reconcile"
+  ],
+  "fileFacts": {
+    "sha256": "66ac3febaae257bd4b2e0b825fc0e17cca6737853d141cf62a5138a856dfe117"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reconciliation/reconciliation-history-posted-actions-2026-07.png",
+      "section": "Reconcile accounts",
+      "altText": "Completed reconciliation history with report actions",
+      "purpose": "Review required: confirm whether this image supports Reconcile accounts: Completed reconciliation history with report actions."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "screenshots"
+    ]
+  }
+}

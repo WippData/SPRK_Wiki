@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "getting-started/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for getting started and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "getting-started"
+  ],
+  "fileFacts": {
+    "sha256": "787af2452aca75505adb40dd91f4ad72359c108535558c55b84bdc37c6f91d00"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/getting-started/dashboard-high-level-step-01.png",
+      "section": "Getting started",
+      "altText": "Dashboard overview after signing in to SPRK",
+      "purpose": "Review required: confirm whether this image supports Getting started: Dashboard overview after signing in to SPRK."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}

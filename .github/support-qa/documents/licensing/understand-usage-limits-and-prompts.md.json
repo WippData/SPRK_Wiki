@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "licensing/understand-usage-limits-and-prompts.md",
+  "role": "guide",
+  "objective": "Use the `License` area to review the current usage table and understand which prompts are informational versus the ones tied to adding more real companies.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "concept",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "licensing"
+  ],
+  "fileFacts": {
+    "sha256": "856a2c94faf51ab5716e57217b92015e2adf2cf2437fd6842057c24ceac52936"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/licensing/usage-limits-step-01.png",
+      "section": "Understand Usage Limits And Prompts",
+      "altText": "License page showing the Tenant Stats usage table and visibility note",
+      "purpose": "Review required: confirm whether this image supports Understand Usage Limits And Prompts: License page showing the Tenant Stats usage table and visibility note."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}

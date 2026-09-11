@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "plugins/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for plugins (beta) and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "plugins"
+  ],
+  "fileFacts": {
+    "sha256": "1c0ac410f220cca669b076828218af9d2377ec9f8cceb651195be5b704b049cb"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/plugins/plugins-settings-tab-step-01.png",
+      "section": "Plugins (Beta)",
+      "altText": "Plugins settings tab showing supported plugin types and installed plugin status",
+      "purpose": "Review required: confirm whether this image supports Plugins (Beta): Plugins settings tab showing supported plugin types and installed plugin status."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}

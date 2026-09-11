@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/reconciliation-zero-difference-selected-rows.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1160,
+    "height": 750,
+    "sha256": "e73fa845287715c986bdbbb4e0a0de203dac3eff2b2814470ee547be698b0c3b"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "reconciliation/start-a-reconciliation.md",
+      "section": "Practice and examples",
+      "altText": "Reconciliation selected rows with a zero difference before posting",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Reconciliation selected rows with a zero difference before posting."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

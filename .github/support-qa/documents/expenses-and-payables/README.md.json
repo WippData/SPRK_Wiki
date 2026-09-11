@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "expenses-and-payables/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for vendors, bills, and checks and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "vendors-bills-checks"
+  ],
+  "fileFacts": {
+    "sha256": "f7768f4dced273f4218e84c1eb3cfaa2e3f61487088c31e2ff0299e7c58763b1"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/expenses-and-payables/vendor-default-expense-account-step-01.png",
+      "section": "Vendors, bills, and checks",
+      "altText": "Vendors list showing a default expense account",
+      "purpose": "Review required: confirm whether this image supports Vendors, bills, and checks: Vendors list showing a default expense account."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "screenshots"
+    ]
+  }
+}

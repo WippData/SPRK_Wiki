@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "banking-and-cash-management/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for banking and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "banking"
+  ],
+  "fileFacts": {
+    "sha256": "a38130125598f124bd16abf29c722bb2238bdec2c95a16bfe3964a856adb9f6e"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png",
+      "section": "Banking",
+      "altText": "Banking actions for assigning a vendor or customer",
+      "purpose": "Review required: confirm whether this image supports Banking: Banking actions for assigning a vendor or customer."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "screenshots"
+    ]
+  }
+}

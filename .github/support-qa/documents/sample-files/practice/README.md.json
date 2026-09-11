@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "source": "sample-files/practice/README.md",
+  "role": "repository-reference",
+  "objective": "Help documentation reviewers understand the retained practice files without publishing this repository-only page.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "reference",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "practice-files"
+  ],
+  "fileFacts": {
+    "sha256": "901e239935d4aec8dd30a6eb5699b2fa3abc694686fa17cb1fd87238771d155b"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source"
+    ]
+  }
+}

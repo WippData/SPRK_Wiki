@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "source": "expenses-and-payables/work-with-checks.md",
+  "role": "guide",
+  "objective": "Add `Checks` to the sidebar when it is hidden, then record and manage checks without losing the posting trail.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "vendors-bills-checks"
+  ],
+  "fileFacts": {
+    "sha256": "1587bde8687641e6bb77babfd657047aad2dfeb1c95e0a604b38fb8ec544963b"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/preferences-and-personalization/sidebar-configuration-step-01.png",
+      "section": "Work With Checks",
+      "altText": "Sidebar configuration showing Checks as a hidden navigation item",
+      "purpose": "Review required: confirm whether this image supports Work With Checks: Sidebar configuration showing Checks as a hidden navigation item."
+    },
+    {
+      "file": "screenshots/v1-validation/preferences-sidebar-configuration-checks-boundary.png",
+      "section": "Practice and examples",
+      "altText": "Preferences sidebar configuration entry used to show hidden pages such as Checks",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Preferences sidebar configuration entry used to show hidden pages such as Checks."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

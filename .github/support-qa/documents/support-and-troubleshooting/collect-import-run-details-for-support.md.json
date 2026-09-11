@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "source": "support-and-troubleshooting/collect-import-run-details-for-support.md",
+  "role": "guide",
+  "objective": "Collect the details support needs when an import fails or produces an unexpected result.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "help"
+  ],
+  "fileFacts": {
+    "sha256": "a9168eaf46761126278a1d80aa259b50c59bd4b36e1c38b0928f65c0bdfb08aa"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/support-and-troubleshooting/collect-support-details-step-01.png",
+      "section": "Collect Import Run Details for Support",
+      "altText": "Support tab showing the Support Activity Log and contact options",
+      "purpose": "Review required: confirm whether this image supports Collect Import Run Details for Support: Support tab showing the Support Activity Log and contact options."
+    },
+    {
+      "file": "screenshots/v1-validation/support-log-guides-sync.png",
+      "section": "Practice and examples",
+      "altText": "Support tab showing support activity log, contact information, release controls, and guide sync context",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Support tab showing support activity log, contact information, release controls, and guide sync context."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

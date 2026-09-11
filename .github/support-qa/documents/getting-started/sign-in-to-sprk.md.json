@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "getting-started/sign-in-to-sprk.md",
+  "role": "guide",
+  "objective": "Enter the app from the local sign-in screen, or complete the startup choice flow if this is the first time the workspace is being opened.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "getting-started"
+  ],
+  "fileFacts": {
+    "sha256": "c3afb711c7c33ec7fdec5b8bf3264f6eec3ae1120b12452a8090afd077315305"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/getting-started/sidebar-and-main-navigation-step-01.png",
+      "section": "Sign In to SPRK",
+      "altText": "SPRK application shell after sign-in",
+      "purpose": "Review required: confirm whether this image supports Sign In to SPRK: SPRK application shell after sign-in."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

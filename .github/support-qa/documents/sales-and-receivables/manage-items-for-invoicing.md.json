@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/manage-items-for-invoicing.md",
+  "role": "guide",
+  "objective": "Define reusable products and services so invoice and bill lines can be built faster and with more consistent descriptions, pricing, and account defaults.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "b938359fd0e13d8b8d7c4ca928a7ffdc3c5348d8d4e9420e9aaf9fa74a061c14"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/sales-and-receivables/items-item-number-sku-step-01.png",
+      "section": "Manage Items for Invoicing",
+      "altText": "Items list showing Item Number / SKU column and search label",
+      "purpose": "Review required: confirm whether this image supports Manage Items for Invoicing: Items list showing Item Number / SKU column and search label."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

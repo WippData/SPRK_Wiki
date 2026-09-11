@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "reconciliation/finish-a-reconciliation.md",
+  "role": "guide",
+  "objective": "Clear the correct activity and finish only when SPRK agrees with the statement ending balance.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "reconcile"
+  ],
+  "fileFacts": {
+    "sha256": "d2bd6468a84b87a80f0fa42fcc9d5b9b7f298c9bec791db1382f8af8204a19c3"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reconciliation/reconciliation-active-summary-step-01.png",
+      "section": "Finish a Reconciliation",
+      "altText": "Active reconciliation summary with Finish available and zero difference",
+      "purpose": "Review required: confirm whether this image supports Finish a Reconciliation: Active reconciliation summary with Finish available and zero difference."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

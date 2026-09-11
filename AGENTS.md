@@ -30,8 +30,21 @@ Read the accounting contract before changing guidance about journals, invoices, 
 - Replace an outdated screenshot in place when it serves the same article and purpose; preserving the file path preserves public links.
 - Use a new, descriptive filename under the relevant `screenshots/` category only for a genuinely new view.
 - Crop out Codex, the desktop, other apps, private company data, and unrelated window chrome. Run `python3 scripts/screenshot_quality_check.py` before handoff.
-- Every published guide with an image must include one `<!-- Screenshot status: Current -->` or `<!-- Screenshot status: Review needed -->` marker. Keep an existing `Current` marker only when the current app has been checked. New or unverified screenshots belong in the review queue; run `python3 scripts/screenshot_status_report.py` to list it.
+- Screenshot verification is image-level metadata under `.github/support-qa/screenshots/`, not an article-level HTML comment. Existing `Screenshot status` comments are legacy hints, not proof; remove them as each guide and its images are formally reviewed. New or unverified screenshots belong in the metadata review queue; run `python3 scripts/screenshot_status_report.py` to list it.
 - Screenshot QA requires Pillow. If the default Python does not have it, install the tested version with `python3 -m pip install -r scripts/requirements-screenshots.txt` or use an existing Python environment with that version.
+
+## Invisible QA metadata
+
+Every public document, repository-reference Markdown file, and PNG under `screenshots/` must have one JSON sidecar under `.github/support-qa/`. These files are internal evidence records. They must never appear in the website, in-app help, customer search, or the publication allowlist.
+
+- Document metadata lives at `.github/support-qa/documents/<document-path>.json`. It records the customer objective, intended audiences, content type, accounting risk, product areas, product-source evidence, walkthroughs, screenshot purposes, and verification decision.
+- Screenshot metadata lives at `.github/support-qa/screenshots/<path-below-screenshots>.json`. It records immutable file facts, every article placement, the screenshot's instructional purpose, its capture recipe, the UI state it must show, product-version provenance, and privacy/relevance review.
+- Do not infer verification. Existing content may remain `needs-review` only while its source file is unchanged from `.github/support-qa/review-baseline.json`. That baseline is append-prohibited. A new or materially changed document or screenshot must satisfy the full `verified` contract.
+- A screenshot capture recipe must name the app area, screen and route; prerequisites; navigation path; exact clicks/selections/entries; subject type and state; UI labels or values expected in the image; crop requirements; and safe test-data profile.
+- High-risk accounting guidance requires verified frontend source, backend source, `Accounting_Contract.md`, and a passed current-app walkthrough. Moderate-risk guidance requires frontend, backend, and walkthrough evidence.
+- When a Markdown image is added, removed, moved to another section, or given new alt text, update both the document and screenshot sidecars. Shared screenshots list every placement and purpose.
+
+See `.github/support-qa/README.md` and the JSON schemas for the authoring and phased-review process. Run `python3 scripts/support_qa.py` after every documentation or screenshot change.
 
 ## URL compatibility
 
@@ -55,6 +68,8 @@ Before handoff, run:
 
 ```bash
 git diff --check
+python3 -m unittest scripts/test_support_qa.py
+python3 scripts/support_qa.py
 python3 scripts/wiki_qa.py
 python3 scripts/screenshot_quality_check.py
 python3 scripts/screenshot_status_report.py

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/void-or-correct-invoices.md",
+  "role": "guide",
+  "objective": "Choose the supported invoice correction path before changing a posted, paid, or void-sensitive invoice.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "5df97868c97958b5602a7f43c68e646f0f93fad5ce48f42a0e756745bc8d6cd9"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/v1-validation/invoice-void-action-enabled.png",
+      "section": "Void or Correct Invoices",
+      "altText": "Invoice row action menu with Void invoice enabled on an eligible invoice",
+      "purpose": "Review required: confirm whether this image supports Void or Correct Invoices: Invoice row action menu with Void invoice enabled on an eligible invoice."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

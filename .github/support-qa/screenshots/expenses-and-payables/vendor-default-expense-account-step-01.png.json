@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/expenses-and-payables/vendor-default-expense-account-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1200,
+    "height": 800,
+    "sha256": "4ea9b087de5cf188cba27e9e99b13af365754cc8fba628b09a6cced0a5e2d846"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "expenses-and-payables/README.md",
+      "section": "Vendors, bills, and checks",
+      "altText": "Vendors list showing a default expense account",
+      "purpose": "Review required: confirm whether this image supports Vendors, bills, and checks: Vendors list showing a default expense account."
+    },
+    {
+      "document": "expenses-and-payables/set-up-vendor-default-expense-accounts.md",
+      "section": "Set Up Vendor Default Expense Accounts",
+      "altText": "Vendors list showing the Default Expense Account column",
+      "purpose": "Review required: confirm whether this image supports Set Up Vendor Default Expense Accounts: Vendors list showing the Default Expense Account column."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

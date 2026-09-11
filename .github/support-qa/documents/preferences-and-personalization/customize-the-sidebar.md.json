@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "source": "preferences-and-personalization/customize-the-sidebar.md",
+  "role": "guide",
+  "objective": "Use the sidebar editor in `Preferences` to rename sections, reorder links, hide items, and add external links for your own navigation setup.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "preferences"
+  ],
+  "fileFacts": {
+    "sha256": "327cc92047dbb9b4f7337c84c3e1465d57d094ad74b06c1bc5b570318b65b3a0"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/preferences-and-personalization/sidebar-configuration-step-01.png",
+      "section": "Customize the Sidebar",
+      "altText": "Sidebar configuration modal with visible and hidden navigation items",
+      "purpose": "Review required: confirm whether this image supports Customize the Sidebar: Sidebar configuration modal with visible and hidden navigation items."
+    },
+    {
+      "file": "screenshots/preferences-and-personalization/customize-sidebar-step-01.png",
+      "section": "Customize the Sidebar",
+      "altText": "Sidebar configuration modal showing editable sidebar sections, item labels, reorder controls, and visibility toggles",
+      "purpose": "Review required: confirm whether this image supports Customize the Sidebar: Sidebar configuration modal showing editable sidebar sections, item labels, reorder controls, and visibility toggles."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

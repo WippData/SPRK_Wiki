@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "source": "ledger-and-chart-of-accounts/record-journal-entries.md",
+  "role": "guide",
+  "objective": "Create a balanced manual journal entry, review its accounting date and accounts, and save or reverse it safely.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "accounts-journals"
+  ],
+  "fileFacts": {
+    "sha256": "735afe01c99a9d604d6d8ede80a9096a034f7efa97e7e84624bf0acc79e84f55"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png",
+      "section": "Record Journal Entries",
+      "altText": "New Journal Entry drawer showing date, memo, account lines, debit and credit columns, totals, and reversing-entry controls",
+      "purpose": "Review required: confirm whether this image supports Record Journal Entries: New Journal Entry drawer showing date, memo, account lines, debit and credit columns, totals, and reversing-entry controls."
+    },
+    {
+      "file": "screenshots/reconciliation/journal-entry-void-reconciliation-confirmation-2026-07.png",
+      "section": "Steps",
+      "altText": "Void affected reconciliation confirmation for a backdated journal entry",
+      "purpose": "Review required: confirm whether this image supports Steps: Void affected reconciliation confirmation for a backdated journal entry."
+    },
+    {
+      "file": "screenshots/ledger-and-chart-of-accounts/journal-entries-filter-bar-2026-07.png",
+      "section": "Steps",
+      "altText": "Journal Entries filter bar",
+      "purpose": "Review required: confirm whether this image supports Steps: Journal Entries filter bar."
+    },
+    {
+      "file": "screenshots/ledger-and-chart-of-accounts/journal-entries-pagination-controls-2026-07.png",
+      "section": "Steps",
+      "altText": "Journal Entries Previous and Next pagination controls",
+      "purpose": "Review required: confirm whether this image supports Steps: Journal Entries Previous and Next pagination controls."
+    },
+    {
+      "file": "screenshots/v1-validation/journal-import-preview-success-v0.3.57.png",
+      "section": "Practice and examples",
+      "altText": "Journal import preview showing four parsed rows, zero failures, and balanced debits and credits",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Journal import preview showing four parsed rows, zero failures, and balanced debits and credits."
+    },
+    {
+      "file": "screenshots/v1-validation/journal-import-committed-rows-v0.3.57.png",
+      "section": "Practice and examples",
+      "altText": "Journal Entries grid filtered to imported V1 journal entries after commit",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Journal Entries grid filtered to imported V1 journal entries after commit."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

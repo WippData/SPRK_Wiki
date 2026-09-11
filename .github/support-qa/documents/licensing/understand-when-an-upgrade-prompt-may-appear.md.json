@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "licensing/understand-when-an-upgrade-prompt-may-appear.md",
+  "role": "guide",
+  "objective": "SPRK may show an upgrade or add-license prompt when you try to create another real company after using the free company allowance.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "concept",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "licensing"
+  ],
+  "fileFacts": {
+    "sha256": "4fecd90bf1c4d21743fd8b4056d3ee1c3d6b3d15c29f2328f407e08e9e84318c"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/licensing/usage-limits-step-01.png",
+      "section": "Understand When An Upgrade Prompt May Appear",
+      "altText": "License tab showing usage limits and plan details",
+      "purpose": "Review required: confirm whether this image supports Understand When An Upgrade Prompt May Appear: License tab showing usage limits and plan details."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}

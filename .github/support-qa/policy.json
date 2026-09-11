@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "publicationIsolation": {
+    "metadataRoot": ".github/support-qa",
+    "renderInCustomerContent": false,
+    "includeInSupportIndex": false,
+    "allowedConsumers": [
+      "repository QA",
+      "CI validation",
+      "documentation reviewers"
+    ],
+    "forbiddenConsumers": [
+      "WordPress publication payloads",
+      "desktop support snapshots",
+      "customer search indexes"
+    ]
+  },
+  "sidecars": {
+    "documents": {
+      "sourcePattern": "**/*.md",
+      "sidecarPattern": ".github/support-qa/documents/<source>.json",
+      "schema": ".github/support-qa/schemas/document.schema.json"
+    },
+    "screenshots": {
+      "sourcePattern": "screenshots/**/*.png",
+      "sidecarPattern": ".github/support-qa/screenshots/<path-under-screenshots>.json",
+      "schema": ".github/support-qa/schemas/screenshot.schema.json"
+    }
+  },
+  "coverageBaseline": {
+    "reviewBaseline": ".github/support-qa/review-baseline.json",
+    "reviewRule": "Only a source path and SHA-256 already frozen in reviewBaseline may remain needs-review. The baseline is append-prohibited: new sources and changed bytes require full verification.",
+    "documents": {
+      "expected": 118,
+      "includes": [
+        "README.md",
+        "17 published topic README files",
+        "99 published guides",
+        "sample-files/practice/README.md"
+      ],
+      "excludes": [
+        "AGENTS.md",
+        ".github/**",
+        ".agents/**",
+        ".codex/**",
+        ".private/**"
+      ]
+    },
+    "screenshots": {
+      "expected": 170,
+      "format": "png",
+      "referencedAssetsAtBaseline": 129,
+      "publishedPlacementsAtBaseline": 173,
+      "retainedUnreferencedAtBaseline": 41
+    }
+  },
+  "language": {
+    "hardForbiddenPhrases": [
+      "Business Scenario",
+      "Evidence:",
+      "Validation note",
+      "walkthrough confirmed",
+      "The walkthrough confirmed",
+      "Use this scenario",
+      "source evidence",
+      "source-backed",
+      "current build",
+      "fixture",
+      "ticket",
+      "handoff",
+      "backend",
+      "frontend",
+      "manifest",
+      "runtime",
+      "repository",
+      "sha256",
+      "per-line linkage",
+      "direct synchronization",
+      "normalized amount",
+      "source-document-owned",
+      "current live flow"
+    ],
+    "discouragedWordRatchet": [
+      {
+        "word": "workflow",
+        "maximumOccurrences": 210,
+        "maximumDocuments": 71
+      },
+      {
+        "word": "supported",
+        "maximumOccurrences": 104,
+        "maximumDocuments": 52
+      },
+      {
+        "word": "state",
+        "maximumOccurrences": 62,
+        "maximumDocuments": 24
+      },
+      {
+        "word": "surface",
+        "maximumOccurrences": 4,
+        "maximumDocuments": 4
+      }
+    ],
+    "countingRule": "Count case-insensitive whole-word matches in rendered customer prose, including a simple plural ending, while excluding code spans, link destinations, and QA metadata.",
+    "ratchetRule": "Counts may decrease but may never increase. New uses fail changed-file QA.",
+    "exactUiLabelException": "A discouraged word is allowed only when it is part of a current product label rendered as inline code."
+  },
+  "riskEvidenceRequirements": {
+    "none": [
+      "one verified owning source"
+    ],
+    "low": [
+      "one verified owning product source"
+    ],
+    "moderate": [
+      "verified frontend source",
+      "verified backend source",
+      "passed runtime walkthrough"
+    ],
+    "high": [
+      "verified frontend source",
+      "verified backend source",
+      "verified accounting contract source",
+      "passed runtime walkthrough"
+    ]
+  },
+  "gates": {
+    "hardAlways": [
+      "Every in-scope document and screenshot has exactly one valid sidecar.",
+      "Sidecars and source paths are unique and exist.",
+      "QA metadata is absent from all customer publication payloads and search indexes.",
+      "Existing Markdown and screenshot paths are not renamed, moved, case-changed, or deleted without an approved compatibility plan.",
+      "Every Markdown image placement matches document and screenshot usage metadata.",
+      "Screenshot hashes, dimensions, and formats match the stored files.",
+      "A needs-review record states its reason and remaining checks and does not claim that the overall item is verified. Completed evidence, walkthrough, capture, provenance, privacy, and relevance checks may be recorded incrementally.",
+      "A verified record meets its schema-conditional evidence and reviewer requirements.",
+      "Hard-forbidden phrases fail customer-content QA.",
+      "Discouraged-word baseline counts cannot increase."
+    ],
+    "hardForNewOrMateriallyChangedContent": [
+      "New documents and screenshots must enter as verified.",
+      "A materially changed needs-review document must be verified in the same change.",
+      "A changed screenshot must have a complete capture plan and fresh matching provenance."
+    ],
+    "advisoryUntilCalibrated": [
+      "reading level",
+      "sentence and paragraph length",
+      "passive voice",
+      "OCR comparison with expected UI labels",
+      "screenshot reuse",
+      "automated visual relevance scoring",
+      "AI tone and objective review"
+    ]
+  }
+}

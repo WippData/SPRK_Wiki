@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/expenses-and-payables/bill-payment-history-actions-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1200,
+    "height": 800,
+    "sha256": "60a8c252e6aeee3319db5f3a0a1d3f218c636d6ef04d287391be906cdede9991"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "expenses-and-payables/create-and-manage-bills.md",
+      "section": "Choose a Bill Task",
+      "altText": "Bill row actions for payment history and linked journal review",
+      "purpose": "Review required: confirm whether this image supports Choose a Bill Task: Bill row actions for payment history and linked journal review."
+    },
+    {
+      "document": "expenses-and-payables/record-bill-payments.md",
+      "section": "Record a Bill Payment",
+      "altText": "Bill row actions for payment history and linked journal review",
+      "purpose": "Review required: confirm whether this image supports Record a Bill Payment: Bill row actions for payment history and linked journal review."
+    },
+    {
+      "document": "ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md",
+      "section": "Review Document Payment History and Linked Journals",
+      "altText": "Bill row actions for payment history and linked journal review",
+      "purpose": "Review required: confirm whether this image supports Review Document Payment History and Linked Journals: Bill row actions for payment history and linked journal review."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

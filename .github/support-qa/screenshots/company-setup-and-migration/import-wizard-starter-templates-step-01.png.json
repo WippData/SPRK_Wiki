@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1202,
+    "height": 800,
+    "sha256": "d924888a7eb5c1c6bc2d105873a380bbc9eea476965ed789ca5210c89e7c0a56"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "company-setup-and-migration/before-you-import.md",
+      "section": "Before You Import",
+      "altText": "Import wizard showing starter template download options",
+      "purpose": "Review required: confirm whether this image supports Before You Import: Import wizard showing starter template download options."
+    },
+    {
+      "document": "company-setup-and-migration/copying-an-existing-company.md",
+      "section": "Copying an Existing Company",
+      "altText": "Import Wizard showing starter templates, download templates action, and upload guidance",
+      "purpose": "Review required: confirm whether this image supports Copying an Existing Company: Import Wizard showing starter templates, download templates action, and upload guidance."
+    },
+    {
+      "document": "company-setup-and-migration/import-from-quickbooks-desktop-iif.md",
+      "section": "Import from QuickBooks Desktop IIF",
+      "altText": "Import Wizard showing accepted IIF and spreadsheet file formats",
+      "purpose": "Review required: confirm whether this image supports Import from QuickBooks Desktop IIF: Import Wizard showing accepted IIF and spreadsheet file formats."
+    },
+    {
+      "document": "company-setup-and-migration/import-from-quickbooks-online-zip.md",
+      "section": "Import from QuickBooks Online ZIP",
+      "altText": "Import Wizard showing accepted import files and data-type mapping",
+      "purpose": "Review required: confirm whether this image supports Import from QuickBooks Online ZIP: Import Wizard showing accepted import files and data-type mapping."
+    },
+    {
+      "document": "company-setup-and-migration/understand-import-and-migration-boundaries.md",
+      "section": "What Each Import Can Bring Into SPRK",
+      "altText": "Import Wizard showing starter templates, download templates action, and upload guidance",
+      "purpose": "Review required: confirm whether this image supports What Each Import Can Bring Into SPRK: Import Wizard showing starter templates, download templates action, and upload guidance."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

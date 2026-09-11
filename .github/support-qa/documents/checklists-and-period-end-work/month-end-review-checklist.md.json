@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "checklists-and-period-end-work/month-end-review-checklist.md",
+  "role": "guide",
+  "objective": "Review Banking, reconciliation, customer and vendor balances, reports, and backups before closing your month.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "month-end"
+  ],
+  "fileFacts": {
+    "sha256": "c6926cc47d208d2278bd8c02fe0fc1ab00f44ac2e455e128fd3b79cbfd9db0bd"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/checklists-and-period-end-work/use-checklists-step-01.png",
+      "section": "Month-End Review Checklist",
+      "altText": "Checklists page with close-style task templates",
+      "purpose": "Review required: confirm whether this image supports Month-End Review Checklist: Checklists page with close-style task templates."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

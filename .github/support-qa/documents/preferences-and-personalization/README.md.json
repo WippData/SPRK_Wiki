@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "preferences-and-personalization/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for preferences and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "preferences"
+  ],
+  "fileFacts": {
+    "sha256": "960c364494361c73ce4211998606f5f0104d70ce1276706f3190d1df8d77ee06"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png",
+      "section": "Preferences",
+      "altText": "Column preferences dialog showing drag handles, visibility checkboxes, and move controls",
+      "purpose": "Review required: confirm whether this image supports Preferences: Column preferences dialog showing drag handles, visibility checkboxes, and move controls."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}

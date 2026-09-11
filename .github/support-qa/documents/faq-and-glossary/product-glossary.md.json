@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "source": "faq-and-glossary/product-glossary.md",
+  "role": "guide",
+  "objective": "Look up a SPRK label and go directly to the guide where you use it.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "reference",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "faq-glossary"
+  ],
+  "fileFacts": {
+    "sha256": "d3e3648d46990cb46e3314bb71df36761802289b6d02b8af0f951f520930cbe3"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source"
+    ]
+  }
+}

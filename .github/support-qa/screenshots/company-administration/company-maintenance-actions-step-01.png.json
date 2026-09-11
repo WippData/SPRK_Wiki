@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/company-administration/company-maintenance-actions-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1152,
+    "height": 768,
+    "sha256": "4464cf5e2ee69aa0ace629470b101491068b4644ef781b8550652c8eb769369b"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "company-administration/review-company-level-maintenance-actions.md",
+      "section": "Review Company-Level Maintenance Actions",
+      "altText": "Companies tab filtered to Archived companies with edit, archive, and delete maintenance actions visible",
+      "purpose": "Review required: confirm whether this image supports Review Company-Level Maintenance Actions: Companies tab filtered to Archived companies with edit, archive, and delete maintenance actions visible."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

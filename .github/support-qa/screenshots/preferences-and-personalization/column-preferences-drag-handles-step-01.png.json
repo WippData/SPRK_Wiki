@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1200,
+    "height": 800,
+    "sha256": "904e5ce235022a788cc7bd1ab478df382ae1246cd5f141056ce8831bf5699564"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "dashboard-and-navigation/README.md",
+      "section": "Using SPRK",
+      "altText": "Column preferences dialog used to reorder visible columns",
+      "purpose": "Review required: confirm whether this image supports Using SPRK: Column preferences dialog used to reorder visible columns."
+    },
+    {
+      "document": "dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md",
+      "section": "Use Grid Edit for Bulk Record Maintenance",
+      "altText": "Column preferences dialog showing drag handles and move controls for supported list columns",
+      "purpose": "Review required: confirm whether this image supports Use Grid Edit for Bulk Record Maintenance: Column preferences dialog showing drag handles and move controls for supported list columns."
+    },
+    {
+      "document": "preferences-and-personalization/README.md",
+      "section": "Preferences",
+      "altText": "Column preferences dialog showing drag handles, visibility checkboxes, and move controls",
+      "purpose": "Review required: confirm whether this image supports Preferences: Column preferences dialog showing drag handles, visibility checkboxes, and move controls."
+    },
+    {
+      "document": "preferences-and-personalization/use-the-preferences-tab.md",
+      "section": "Use the Preferences Tab",
+      "altText": "Column preferences dialog showing drag handles, visibility checkboxes, and move controls for invoice columns",
+      "purpose": "Review required: confirm whether this image supports Use the Preferences Tab: Column preferences dialog showing drag handles, visibility checkboxes, and move controls for invoice columns."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

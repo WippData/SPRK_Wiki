@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/preferences-and-personalization/show-tooltips-preference-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1202,
+    "height": 802,
+    "sha256": "7def0d6df5d7e6e8d655ee6a4c37e83b7ac77fc6f6795f6f096479087a0530d7"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "preferences-and-personalization/understand-personalization-boundaries-and-saved-behavior.md",
+      "section": "Understand Which Preferences Are Saved",
+      "altText": "Preferences page showing user-level tooltip visibility, grid edit, and account sorting controls",
+      "purpose": "Review required: confirm whether this image supports Understand Which Preferences Are Saved: Preferences page showing user-level tooltip visibility, grid edit, and account sorting controls."
+    },
+    {
+      "document": "preferences-and-personalization/use-the-preferences-tab.md",
+      "section": "Use the Preferences Tab",
+      "altText": "Preferences page showing the Show tooltips switch in the Appearance card",
+      "purpose": "Review required: confirm whether this image supports Use the Preferences Tab: Preferences page showing the Show tooltips switch in the Appearance card."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

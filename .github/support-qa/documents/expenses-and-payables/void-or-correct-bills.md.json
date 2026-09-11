@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "expenses-and-payables/void-or-correct-bills.md",
+  "role": "guide",
+  "objective": "Choose the supported bill correction path before changing a posted, paid, partial, or void-sensitive bill.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "vendors-bills-checks"
+  ],
+  "fileFacts": {
+    "sha256": "d2c3a65f4a21bc84aa5a360bd8dca6d5ab2563a2125a42a97ee8915ea152c876"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/v1-validation/bill-actions-menu-payment-journal-void.png",
+      "section": "Void or Correct Bills",
+      "altText": "Bill actions menu showing payment, journal, history, and void options",
+      "purpose": "Review required: confirm whether this image supports Void or Correct Bills: Bill actions menu showing payment, journal, history, and void options."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

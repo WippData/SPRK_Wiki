@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/reconciliation/reconciliation-active-summary-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1202,
+    "height": 800,
+    "sha256": "4d6cae44d587017427094b87f89e19fe47a03e0cceb635869d722ee3bd675f71"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "reconciliation/finish-a-reconciliation.md",
+      "section": "Finish a Reconciliation",
+      "altText": "Active reconciliation summary with Finish available and zero difference",
+      "purpose": "Review required: confirm whether this image supports Finish a Reconciliation: Active reconciliation summary with Finish available and zero difference."
+    },
+    {
+      "document": "reconciliation/resolve-common-reconciliation-exceptions.md",
+      "section": "Resolve Common Reconciliation Exceptions",
+      "altText": "Active reconciliation summary showing cleared balance and difference",
+      "purpose": "Review required: confirm whether this image supports Resolve Common Reconciliation Exceptions: Active reconciliation summary showing cleared balance and difference."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

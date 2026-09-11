@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "getting-started/set-up-first-client-for-firm-work.md",
+  "role": "guide",
+  "objective": "Set up a client company for day-to-day bookkeeping, bank review, reconciliation, reporting, and safe transfer.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "getting-started"
+  ],
+  "fileFacts": {
+    "sha256": "5c06359164464096c51b3b50a808a6aa2cbd3e70bdb428eeb1ea5f30eac12469"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/getting-started/first-day-orientation-step-01.png",
+      "section": "Set Up a First Client for Firm Work",
+      "altText": "SPRK Dashboard in Demo Company showing the active company selector, main sidebar navigation, KPI cards, charts, and quick links",
+      "purpose": "Review required: confirm whether this image supports Set Up a First Client for Firm Work: SPRK Dashboard in Demo Company showing the active company selector, main sidebar navigation, KPI cards, charts, and quick links."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

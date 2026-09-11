@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "ledger-and-chart-of-accounts/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for accounts and journal entries and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "accounts-journals"
+  ],
+  "fileFacts": {
+    "sha256": "fdda444a57512ccd3546c6807b9f2fe027dcd410805024c08eaab2b2f36899eb"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/ledger-and-chart-of-accounts/chart-of-accounts-structure-step-01.png",
+      "section": "Accounts and journal entries",
+      "altText": "Chart of Accounts table showing account structure",
+      "purpose": "Review required: confirm whether this image supports Accounts and journal entries: Chart of Accounts table showing account structure."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "screenshots"
+    ]
+  }
+}

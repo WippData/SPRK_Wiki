@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "company-administration/review-company-level-maintenance-actions.md",
+  "role": "guide",
+  "objective": "Edit company details, archive or unarchive companies, and understand when permanent delete is available.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "company-settings"
+  ],
+  "fileFacts": {
+    "sha256": "7bbf4c5f48e315792cacd74744d2ce6f0722e3f73bd972af9a5c1136088a8aca"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-administration/company-maintenance-actions-step-01.png",
+      "section": "Review Company-Level Maintenance Actions",
+      "altText": "Companies tab filtered to Archived companies with edit, archive, and delete maintenance actions visible",
+      "purpose": "Review required: confirm whether this image supports Review Company-Level Maintenance Actions: Companies tab filtered to Archived companies with edit, archive, and delete maintenance actions visible."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

@@ -1,52 +1,50 @@
 #!/usr/bin/env python3
-"""Report the customer-guide screenshot review queue from support metadata."""
+"""Report the image-level screenshot review queue from hidden QA metadata."""
 
 from __future__ import annotations
 
 import json
-import re
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-INDEX = ROOT / ".github" / "support-index.json"
-MARKER = re.compile(r"<!-- Screenshot status: ([^>]+) -->")
+METADATA = ROOT / ".github" / "support-qa" / "screenshots"
 
 
 def main() -> int:
-    index = json.loads(INDEX.read_text(encoding="utf-8"))
-    guides = [
-        guide
-        for topic in index["topics"]
-        for group in topic["groups"]
-        for guide in group["guides"]
-    ]
-    current: list[str] = []
+    verified: list[str] = []
     review: list[str] = []
-    missing: list[str] = []
-    for guide in guides:
-        source = guide["source"]
-        text = (ROOT / source).read_text(encoding="utf-8")
-        if "![" not in text:
+    retained: list[str] = []
+    invalid: list[str] = []
+    for path in sorted(METADATA.rglob("*.json")):
+        try:
+            record = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            invalid.append(path.relative_to(ROOT).as_posix())
             continue
-        match = MARKER.search(text)
-        if not match:
-            missing.append(source)
-        elif match.group(1).startswith("Current"):
-            current.append(source)
+        source = record.get("file")
+        status = record.get("verification", {}).get("status")
+        if not isinstance(source, str) or status not in {"verified", "needs-review"}:
+            invalid.append(path.relative_to(ROOT).as_posix())
+            continue
+        if record.get("usageStatus") == "retained-unreferenced":
+            retained.append(source)
+        if status == "verified":
+            verified.append(source)
         else:
             review.append(source)
 
-    print(f"Current: {len(current)}")
+    print(f"Verified screenshots: {len(verified)}")
     print(f"Review needed: {len(review)}")
-    print(f"Missing status: {len(missing)}")
+    print(f"Retained but unreferenced: {len(retained)}")
+    print(f"Invalid metadata records: {len(invalid)}")
     if review:
         print("\nScreenshot review queue:")
-        for source in review:
+        for source in sorted(review):
             print(f"- {source}")
-    if missing:
-        print("\nMissing status markers:")
-        for source in missing:
+    if invalid:
+        print("\nInvalid screenshot metadata:")
+        for source in sorted(invalid):
             print(f"- {source}")
         return 1
     return 0

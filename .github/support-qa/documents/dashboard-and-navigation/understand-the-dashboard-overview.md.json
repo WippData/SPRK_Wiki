@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "dashboard-and-navigation/understand-the-dashboard-overview.md",
+  "role": "guide",
+  "objective": "Use the dashboard to get a quick summary of recent activity and jump into common workflows.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "concept",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "using-sprk"
+  ],
+  "fileFacts": {
+    "sha256": "41d26b4b8d82ae2e8a3c51ce2fc331a389566520b2e343d514066640dd990416"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/dashboard-and-navigation/dashboard-overview-step-01.png",
+      "section": "Understand the Dashboard Overview",
+      "altText": "Dashboard overview in Demo Company showing 30-day KPI cards, charts, and quick links",
+      "purpose": "Review required: confirm whether this image supports Understand the Dashboard Overview: Dashboard overview in Demo Company showing 30-day KPI cards, charts, and quick links."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}

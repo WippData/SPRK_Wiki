@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/expenses-and-payables/vendors-1099-column-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 892,
+    "height": 190,
+    "sha256": "4bfc5ffd5463b1a9eeb8a2175f3c28fbb0bec7943c69ac46f5735dfe5f6751a8"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "expenses-and-payables/manage-vendors.md",
+      "section": "Manage Vendors",
+      "altText": "Vendors grid showing the 1099 tracking column",
+      "purpose": "Review required: confirm whether this image supports Manage Vendors: Vendors grid showing the 1099 tracking column."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "preferences-and-personalization/understand-personalization-boundaries-and-saved-behavior.md",
+  "role": "guide",
+  "objective": "Learn which SPRK preferences follow your user profile, how broadly they apply, and what they do not change.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "concept",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "preferences"
+  ],
+  "fileFacts": {
+    "sha256": "5238f7fc18b18d138839eb8196078b7196178a22051bc3bcea530a944a4d727f"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/preferences-and-personalization/show-tooltips-preference-step-01.png",
+      "section": "Understand Which Preferences Are Saved",
+      "altText": "Preferences page showing user-level tooltip visibility, grid edit, and account sorting controls",
+      "purpose": "Review required: confirm whether this image supports Understand Which Preferences Are Saved: Preferences page showing user-level tooltip visibility, grid edit, and account sorting controls."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}

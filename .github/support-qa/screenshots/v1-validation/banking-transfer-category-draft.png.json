@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/banking-transfer-category-draft.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 820,
+    "height": 400,
+    "sha256": "a249eabb519d5e6d9374b5e0eb5ac213315dbefe4dd4e59166b6fc3402cca739"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "banking-and-cash-management/review-bank-transfers.md",
+      "section": "Review Bank Transfers",
+      "altText": "Transfer row categorized to the savings account before confirmation",
+      "purpose": "Review required: confirm whether this image supports Review Bank Transfers: Transfer row categorized to the savings account before confirmation."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

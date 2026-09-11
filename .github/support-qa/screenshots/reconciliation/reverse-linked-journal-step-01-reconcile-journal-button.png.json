@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/reconciliation/reverse-linked-journal-step-01-reconcile-journal-button.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1800,
+    "height": 1002,
+    "sha256": "61b5d1d851070a3878e01e70cd3c1d4d60bf4e553ba9eadd037e21b3a95aab2a"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity.md",
+      "section": "Steps",
+      "altText": "Linked journal action in Reconcile",
+      "purpose": "Review required: confirm whether this image supports Steps: Linked journal action in Reconcile."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "licensing/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for licensing and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "licensing"
+  ],
+  "fileFacts": {
+    "sha256": "471b7e3ee9ee507f1e312ceb9e009e8e2619d6d42bb312417c903a50a116298c"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/licensing/view-license-information-step-01.png",
+      "section": "Licensing",
+      "altText": "License tab showing redacted license information",
+      "purpose": "Review required: confirm whether this image supports Licensing: License tab showing redacted license information."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "banking-and-cash-management/choose-bank-and-credit-card-accounts.md",
+  "role": "guide",
+  "objective": "Choose the right bank or credit card account before you import, review, confirm, or reconcile activity so that work stays tied to the correct register.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "banking"
+  ],
+  "fileFacts": {
+    "sha256": "caaf9b81df24c3dffe6b30a5123496e7120b7bc0da2c5109a22ebdc5be313004"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/banking-and-cash-management/banking-account-last-reconciled-popover-2026-07.png",
+      "section": "Choose The Account Before Reconciliation",
+      "altText": "Latest posted reconciliation context on a Banking account card",
+      "purpose": "Review required: confirm whether this image supports Choose The Account Before Reconciliation: Latest posted reconciliation context on a Banking account card."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

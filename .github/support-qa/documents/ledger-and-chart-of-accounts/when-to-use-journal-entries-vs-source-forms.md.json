@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "source": "ledger-and-chart-of-accounts/when-to-use-journal-entries-vs-source-forms.md",
+  "role": "guide",
+  "objective": "Use this page to choose whether an accounting event belongs in invoices, bills, checks, banking, or a manual journal entry.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "accounts-journals"
+  ],
+  "fileFacts": {
+    "sha256": "c6ccb2b5830254b0eeef58a60d7e0b4d4e72ffa5a5a0a390fe57eab3ae32b15b"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough"
+    ]
+  }
+}

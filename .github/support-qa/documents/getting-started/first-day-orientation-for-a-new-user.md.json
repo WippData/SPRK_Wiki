@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "getting-started/first-day-orientation-for-a-new-user.md",
+  "role": "guide",
+  "objective": "Take a short tour of the active company, navigation, dashboard, and the next setup task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "getting-started"
+  ],
+  "fileFacts": {
+    "sha256": "b8e3a75723446f2abfcacc5ae7fbf9360a660dbb923151af9ccb93319a458deb"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/getting-started/first-day-orientation-step-01.png",
+      "section": "First-Day Orientation for a New User",
+      "altText": "SPRK Dashboard in Demo Company showing the active company selector, main sidebar navigation, KPI cards, charts, and quick links",
+      "purpose": "Review required: confirm whether this image supports First-Day Orientation for a New User: SPRK Dashboard in Demo Company showing the active company selector, main sidebar navigation, KPI cards, charts, and quick links."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

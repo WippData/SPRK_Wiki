@@ -1,0 +1,343 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sprksystems.com/schemas/support-qa/screenshot.schema.json",
+  "title": "SPRK support screenshot QA sidecar",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "file",
+    "usageStatus",
+    "fileFacts",
+    "capturePlan",
+    "uses",
+    "verification"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "file": {
+      "type": "string",
+      "pattern": "^screenshots/[A-Za-z0-9._/-]+\\.png$"
+    },
+    "usageStatus": { "enum": ["referenced", "retained-unreferenced"] },
+    "retentionReason": { "type": "string", "minLength": 10, "maxLength": 500 },
+    "fileFacts": { "$ref": "#/$defs/fileFacts" },
+    "capturePlan": { "$ref": "#/$defs/capturePlan" },
+    "uses": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/use" }
+    },
+    "provenance": { "$ref": "#/$defs/provenance" },
+    "verification": { "$ref": "#/$defs/verification" }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "usageStatus": { "const": "referenced" } },
+        "required": ["usageStatus"]
+      },
+      "then": {
+        "properties": { "uses": { "minItems": 1 } },
+        "not": { "required": ["retentionReason"] }
+      }
+    },
+    {
+      "if": {
+        "properties": { "usageStatus": { "const": "retained-unreferenced" } },
+        "required": ["usageStatus"]
+      },
+      "then": {
+        "required": ["retentionReason"],
+        "properties": { "uses": { "maxItems": 0 } }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verification": {
+            "properties": { "status": { "const": "verified" } },
+            "required": ["status"]
+          }
+        },
+        "required": ["verification"]
+      },
+      "then": {
+        "required": ["provenance"],
+        "properties": {
+          "capturePlan": {
+            "allOf": [
+              { "$ref": "#/$defs/capturePlan" },
+              {
+                "properties": {
+                  "completeness": { "const": "complete" },
+                  "preconditions": { "minItems": 1 },
+                  "expectedUi": { "minItems": 1 }
+                },
+                "anyOf": [
+                  { "properties": { "navigationPath": { "minItems": 1 } } },
+                  { "properties": { "interactionSteps": { "minItems": 1 } } }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "fileFacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format", "width", "height", "sha256"],
+      "properties": {
+        "format": { "const": "png" },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "capturePlan": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["completeness", "reason", "requiredDetails"],
+          "properties": {
+            "completeness": { "const": "review-required" },
+            "reason": { "type": "string", "minLength": 10, "maxLength": 500 },
+            "requiredDetails": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "$ref": "#/$defs/knownGap" }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "completeness",
+            "location",
+            "preconditions",
+            "navigationPath",
+            "interactionSteps",
+            "subject",
+            "expectedUi",
+            "crop",
+            "dataProfile"
+          ],
+          "properties": {
+            "completeness": { "const": "complete" },
+            "location": { "$ref": "#/$defs/location" },
+            "preconditions": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 5, "maxLength": 300 }
+            },
+            "navigationPath": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/navigationStep" }
+            },
+            "interactionSteps": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/interactionStep" }
+            },
+            "subject": { "$ref": "#/$defs/subject" },
+            "expectedUi": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/expectedUi" }
+            },
+            "crop": { "$ref": "#/$defs/crop" },
+            "dataProfile": { "type": "string", "minLength": 1, "maxLength": 120 }
+          }
+        }
+      ]
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["area", "screen", "route"],
+      "properties": {
+        "area": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "screen": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "route": {
+          "oneOf": [
+            { "type": "string", "pattern": "^/[^\\s]*$" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "navigationStep": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surface", "label"],
+      "properties": {
+        "surface": {
+          "enum": ["startup", "sidebar", "header", "page", "tab", "menu", "drawer", "modal", "row-actions"]
+        },
+        "label": { "type": "string", "minLength": 1, "maxLength": 160 }
+      }
+    },
+    "interactionStep": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action", "control"],
+      "properties": {
+        "action": {
+          "enum": ["launch", "navigate", "click", "select", "select-row", "enter", "filter", "scroll", "open-row-actions", "wait"]
+        },
+        "control": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "value": { "type": "string", "minLength": 1, "maxLength": 300 },
+        "expectedResult": { "type": "string", "minLength": 5, "maxLength": 500 }
+      }
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "name", "state"],
+      "properties": {
+        "type": {
+          "enum": ["app-shell", "page", "tab", "modal", "drawer", "table", "report", "menu", "popover", "form", "empty-state", "confirmation", "notification"]
+        },
+        "name": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "state": { "type": "string", "minLength": 10, "maxLength": 500 }
+      }
+    },
+    "expectedUi": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "label"],
+      "properties": {
+        "role": {
+          "enum": ["heading", "button", "link", "field", "column", "tab", "menu-item", "status", "message", "value", "chart", "table"]
+        },
+        "label": { "type": "string", "minLength": 1, "maxLength": 200 }
+      }
+    },
+    "crop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["include", "exclude"],
+      "properties": {
+        "include": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 3, "maxLength": 200 }
+        },
+        "exclude": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 3, "maxLength": 200 }
+        }
+      }
+    },
+    "use": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["document", "section", "altText", "purpose"],
+      "properties": {
+        "document": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9._-]+(?:/[A-Za-z0-9._-]+)*\\.md$"
+        },
+        "section": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "altText": { "type": "string", "minLength": 10, "maxLength": 500 },
+        "purpose": { "type": "string", "minLength": 20, "maxLength": 500 }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "capturedAt",
+        "capturedBy",
+        "captureMethod",
+        "appVersion",
+        "frontendRef",
+        "backendRef",
+        "runtimeTarget",
+        "platform",
+        "viewport",
+        "dataProfile",
+        "privacyReviewedBy",
+        "privacyReviewedAt"
+      ],
+      "properties": {
+        "capturedAt": { "type": "string", "format": "date-time" },
+        "capturedBy": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "captureMethod": {
+          "enum": ["manual", "playwright", "electron-automation", "browser-automation"]
+        },
+        "appVersion": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "frontendRef": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "backendRef": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "runtimeTarget": { "enum": ["desktop-macos", "desktop-windows", "web"] },
+        "platform": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "viewport": { "$ref": "#/$defs/viewport" },
+        "dataProfile": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "privacyReviewedBy": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "privacyReviewedAt": { "type": "string", "format": "date" }
+      }
+    },
+    "viewport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["width", "height", "deviceScaleFactor"],
+      "properties": {
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 },
+        "deviceScaleFactor": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    },
+    "knownGap": {
+      "enum": [
+        "capture-plan",
+        "navigation-path",
+        "interaction-steps",
+        "expected-ui",
+        "capture-provenance",
+        "privacy-review",
+        "visual-relevance-review",
+        "current-product-check"
+      ]
+    },
+    "verification": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "reason", "knownGaps"],
+          "properties": {
+            "status": { "const": "needs-review" },
+            "reason": { "type": "string", "minLength": 10, "maxLength": 500 },
+            "knownGaps": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "$ref": "#/$defs/knownGap" }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "verifiedAt",
+            "verifiedBy",
+            "expectedUiConfirmed",
+            "purposeConfirmed"
+          ],
+          "properties": {
+            "status": { "const": "verified" },
+            "verifiedAt": { "type": "string", "format": "date" },
+            "verifiedBy": { "type": "string", "minLength": 1, "maxLength": 120 },
+            "expectedUiConfirmed": { "const": true },
+            "purposeConfirmed": { "const": true }
+          }
+        }
+      ]
+    }
+  }
+}

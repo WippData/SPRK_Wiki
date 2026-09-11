@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "source": "backups-and-data-safety/review-backup-settings-visible-in-the-product.md",
+  "role": "guide",
+  "objective": "Review automatic backup settings, storage location, recent results, manual backups, and Company File controls.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "backups"
+  ],
+  "fileFacts": {
+    "sha256": "72183a17223b6bf3d421bf97f47d7a1a78fbb0ff17033db1aa54f10e1e6b5d90"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/backups-and-data-safety/company-file-controls-step-01.png",
+      "section": "Review Backup Settings and Run a Backup",
+      "altText": "SPRK Backups settings showing status, backup location, Run Backup Now, automatic backup controls, and Company file actions",
+      "purpose": "Review required: confirm whether this image supports Review Backup Settings and Run a Backup: SPRK Backups settings showing status, backup location, Run Backup Now, automatic backup controls, and Company file actions."
+    },
+    {
+      "file": "screenshots/backups-and-data-safety/backup-location-resolved-step-01.png",
+      "section": "Review Backup Settings and Run a Backup",
+      "altText": "SPRK Backups tab showing backup status, resolved backup location, and Company file controls",
+      "purpose": "Review required: confirm whether this image supports Review Backup Settings and Run a Backup: SPRK Backups tab showing backup status, resolved backup location, and Company file controls."
+    },
+    {
+      "file": "screenshots/backups-and-data-safety/review-backup-settings-step-02.png",
+      "section": "Review Backup Settings and Run a Backup",
+      "altText": "SPRK Backups tab showing automatic backup schedule and backup-on-close controls",
+      "purpose": "Review required: confirm whether this image supports Review Backup Settings and Run a Backup: SPRK Backups tab showing automatic backup schedule and backup-on-close controls."
+    },
+    {
+      "file": "screenshots/v1-validation/backups-run-now-location-company-file.png",
+      "section": "Practice and examples",
+      "altText": "Backups page showing backup status, backup path, Run Backup Now, and Company File controls",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Backups page showing backup status, backup path, Run Backup Now, and Company File controls."
+    },
+    {
+      "file": "screenshots/v1-validation/backup-run-now-success-v0.3.57.png",
+      "section": "Practice and examples",
+      "altText": "Backups page showing Run Backup Now completed successfully in the user application support backup folder",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Backups page showing Run Backup Now completed successfully in the user application support backup folder."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

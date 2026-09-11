@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/set-up-receivables-defaults-before-invoicing.md",
+  "role": "guide",
+  "objective": "Prepare customer, item, and account defaults before you start entering invoices so receivables activity is easier to review and maintain later.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "90c702b076e63bd123d8380191c131f58c5d2e38310b641ea27980b65963e74e"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/sales-and-receivables/invoice-item-number-sku-line-step-02.png",
+      "section": "Set Up Receivables Defaults Before Invoicing",
+      "altText": "New invoice drawer showing Item Number / SKU line selectors",
+      "purpose": "Review required: confirm whether this image supports Set Up Receivables Defaults Before Invoicing: New invoice drawer showing Item Number / SKU line selectors."
+    },
+    {
+      "file": "screenshots/company-setup-and-migration/company-sales-tax-default-step-01.png",
+      "section": "Set Up Receivables Defaults Before Invoicing",
+      "altText": "Company Field Setup showing the Default Sales Tax Payable account",
+      "purpose": "Review required: confirm whether this image supports Set Up Receivables Defaults Before Invoicing: Company Field Setup showing the Default Sales Tax Payable account."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

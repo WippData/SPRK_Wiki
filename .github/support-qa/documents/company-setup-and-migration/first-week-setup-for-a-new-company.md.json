@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "company-setup-and-migration/first-week-setup-for-a-new-company.md",
+  "role": "guide",
+  "objective": "Prepare a new company for daily bookkeeping with accounts, opening balances, lists, settings, and review reports.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "company-setup"
+  ],
+  "fileFacts": {
+    "sha256": "a64220ba7c3068169555dbc0fe2291dcb2903bc8b80484d0cbc9f6eea2268c19"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-setup-and-migration/company-account-fields-defaults-step-01.png",
+      "section": "First Week Setup for a New Company",
+      "altText": "New company drawer showing account fields and accounting edit permissions",
+      "purpose": "Review required: confirm whether this image supports First Week Setup for a New Company: New company drawer showing account fields and accounting edit permissions."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

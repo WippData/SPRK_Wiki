@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "dashboard-and-navigation/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for using sprk and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "using-sprk"
+  ],
+  "fileFacts": {
+    "sha256": "bd30b2aaa7da2aa33dc5eb3f1e368c24923f3c7da1cb558ac32d430456fb1416"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png",
+      "section": "Using SPRK",
+      "altText": "Column preferences dialog used to reorder visible columns",
+      "purpose": "Review required: confirm whether this image supports Using SPRK: Column preferences dialog used to reorder visible columns."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}
