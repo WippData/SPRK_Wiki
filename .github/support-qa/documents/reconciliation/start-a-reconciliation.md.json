@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "source": "reconciliation/start-a-reconciliation.md",
+  "role": "guide",
+  "objective": "Choose an account, enter the statement dates and balances, and begin reviewing cleared activity.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "reconcile"
+  ],
+  "fileFacts": {
+    "sha256": "1bed2ffd0e4d62bb660ed185dd12213ec59cdf03c74f68351046281325adef62"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reconciliation/first-reconciliation-start-methods-step-01.png",
+      "section": "Steps",
+      "altText": "First reconciliation choices for a new bank account",
+      "purpose": "Review required: confirm whether this image supports Steps: First reconciliation choices for a new bank account."
+    },
+    {
+      "file": "screenshots/v1-validation/reconciliation-zero-difference-selected-rows.png",
+      "section": "Practice and examples",
+      "altText": "Reconciliation selected rows with a zero difference before posting",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Reconciliation selected rows with a zero difference before posting."
+    },
+    {
+      "file": "screenshots/v1-validation/reconciliation-complete-toast.png",
+      "section": "Practice and examples",
+      "altText": "Reconciliation completion confirmation after posting",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Reconciliation completion confirmation after posting."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

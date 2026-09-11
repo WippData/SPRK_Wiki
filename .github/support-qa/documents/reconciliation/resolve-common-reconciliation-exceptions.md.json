@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "reconciliation/resolve-common-reconciliation-exceptions.md",
+  "role": "guide",
+  "objective": "Resolve first-time setup, date, selection, and balance differences that can prevent reconciliation.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "troubleshooting",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "reconcile"
+  ],
+  "fileFacts": {
+    "sha256": "6d3a2d7abe234e29ca2d0a43b5623b5f38783402760069672f009cbcb6ca4ba6"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reconciliation/reconciliation-active-summary-step-01.png",
+      "section": "Resolve Common Reconciliation Exceptions",
+      "altText": "Active reconciliation summary showing cleared balance and difference",
+      "purpose": "Review required: confirm whether this image supports Resolve Common Reconciliation Exceptions: Active reconciliation summary showing cleared balance and difference."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

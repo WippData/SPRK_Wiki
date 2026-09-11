@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "plugins/control-plugin-availability-by-company.md",
+  "role": "guide",
+  "objective": "Check company context when an installed Plugin (Beta) should be used for one company but not another.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "plugins"
+  ],
+  "fileFacts": {
+    "sha256": "0ba064b58588b481e3f71d238b3e7ae12ac482deb45549d25a03c9922d013dad"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/plugins/plugins-settings-tab-step-01.png",
+      "section": "Control Plugins (Beta) by Company",
+      "altText": "Plugins settings tab showing supported plugin types and installed plugin status",
+      "purpose": "Review required: confirm whether this image supports Control Plugins (Beta) by Company: Plugins settings tab showing supported plugin types and installed plugin status."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

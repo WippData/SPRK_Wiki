@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/reports-and-financial-review/general-ledger-report-populated-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1202,
+    "height": 800,
+    "sha256": "15c5327f5056d59ac1376e320f51ddf0a5bff632c9d89a8b81e5408aa217fc69"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "reports-and-financial-review/review-financial-results-inside-the-product.md",
+      "section": "Review Financial Results",
+      "altText": "Populated General Ledger report with account groups and rows",
+      "purpose": "Review required: confirm whether this image supports Review Financial Results: Populated General Ledger report with account groups and rows."
+    },
+    {
+      "document": "sales-and-receivables/understand-invoice-general-ledger-impact.md",
+      "section": "Understand Invoice General Ledger Impact",
+      "altText": "General Ledger report showing invoice-related receivables activity",
+      "purpose": "Review required: confirm whether this image supports Understand Invoice General Ledger Impact: General Ledger report showing invoice-related receivables activity."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

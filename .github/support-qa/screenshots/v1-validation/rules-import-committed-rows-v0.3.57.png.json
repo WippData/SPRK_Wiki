@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/rules-import-committed-rows-v0.3.57.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1202,
+    "height": 802,
+    "sha256": "8ee6c91264c5ef5d0af7eb3e015c5557050dbb444f1897639890c127b609d57e"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "banking-and-cash-management/import-banking-rules.md",
+      "section": "What Happens When You Import",
+      "altText": "Rules grid showing the imported V1 banking rules after confirmation",
+      "purpose": "Review required: confirm whether this image supports What Happens When You Import: Rules grid showing the imported V1 banking rules after confirmation."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

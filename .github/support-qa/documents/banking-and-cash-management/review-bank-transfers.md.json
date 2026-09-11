@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "banking-and-cash-management/review-bank-transfers.md",
+  "role": "guide",
+  "objective": "Review bank-to-bank, bank-to-cash, or bank-to-credit-card pairings before confirming transfer activity.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "banking"
+  ],
+  "fileFacts": {
+    "sha256": "ae8f4cc55f4fc35f6da1afff20114e12a82b72f137ad371e876dffec4f0c2c63"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/v1-validation/banking-transfer-category-draft.png",
+      "section": "Review Bank Transfers",
+      "altText": "Transfer row categorized to the savings account before confirmation",
+      "purpose": "Review required: confirm whether this image supports Review Bank Transfers: Transfer row categorized to the savings account before confirmation."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

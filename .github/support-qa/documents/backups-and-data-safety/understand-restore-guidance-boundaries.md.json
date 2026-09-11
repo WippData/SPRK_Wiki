@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "backups-and-data-safety/understand-restore-guidance-boundaries.md",
+  "role": "guide",
+  "objective": "Gather the backup or Company File details SPRK Support needs to help with recovery.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "backups"
+  ],
+  "fileFacts": {
+    "sha256": "7b0a650b5f7db096fa2ff974cf065688f2d7fe75a2405bf948e733561c2e7a86"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/backups-and-data-safety/backup-settings-audit-step-01.png",
+      "section": "Get Help Recovering a Backup",
+      "altText": "Backups settings showing backup path and schedule controls",
+      "purpose": "Review required: confirm whether this image supports Get Help Recovering a Backup: Backups settings showing backup path and schedule controls."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

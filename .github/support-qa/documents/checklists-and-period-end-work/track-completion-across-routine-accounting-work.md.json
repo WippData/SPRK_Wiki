@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "checklists-and-period-end-work/track-completion-across-routine-accounting-work.md",
+  "role": "guide",
+  "objective": "Review checklist runs by status, period, and notes so you can see what is still in progress and what has already been completed.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "month-end"
+  ],
+  "fileFacts": {
+    "sha256": "9bc57116ea712562b38a5364df6cd11d3361f390b773c5576723a5c1179e13d2"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/checklists-and-period-end-work/track-completion-step-01.png",
+      "section": "Track Completion Across Routine Accounting Work",
+      "altText": "Checklists page showing completion tracking filters, status and period selectors, run table headers, and the current no-rows state",
+      "purpose": "Review required: confirm whether this image supports Track Completion Across Routine Accounting Work: Checklists page showing completion tracking filters, status and period selectors, run table headers, and the current no-rows state."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

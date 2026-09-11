@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "support-and-troubleshooting/use-the-support-tab.md",
+  "role": "guide",
+  "objective": "Open the Support tab to download a troubleshooting log, email the support team, and review the built-in how-to guides.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "help"
+  ],
+  "fileFacts": {
+    "sha256": "b0c2ef9088f1322478daf8884edd6f11c8a016779330a2b7813d031013d5aa6c"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/support-and-troubleshooting/support-tab-overview-step-01.png",
+      "section": "Use the Support tab",
+      "altText": "Support tab showing Support Activity Log, Contact, and How To Guides",
+      "purpose": "Review required: confirm whether this image supports Use the Support tab: Support tab showing Support Activity Log, Contact, and How To Guides."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

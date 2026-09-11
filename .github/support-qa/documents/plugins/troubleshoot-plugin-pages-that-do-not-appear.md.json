@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "plugins/troubleshoot-plugin-pages-that-do-not-appear.md",
+  "role": "guide",
+  "objective": "Find out why an installed Plugin (Beta) page is missing from SPRK navigation.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "troubleshooting",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "plugins"
+  ],
+  "fileFacts": {
+    "sha256": "faf1be991592732f81bf98a7a4df1327dff000c5b2771dffb1074150bf5a95b5"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/plugins/plugins-settings-tab-step-01.png",
+      "section": "Troubleshoot Missing Plugins (Beta) Pages",
+      "altText": "Plugins settings tab showing supported plugin types and installed plugin status",
+      "purpose": "Review required: confirm whether this image supports Troubleshoot Missing Plugins (Beta) Pages: Plugins settings tab showing supported plugin types and installed plugin status."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

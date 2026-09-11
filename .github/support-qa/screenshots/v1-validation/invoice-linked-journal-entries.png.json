@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/invoice-linked-journal-entries.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1000,
+    "height": 180,
+    "sha256": "8df8801273c92ffa7d1093cadb99195ece4ee814c7204f18d0f9062a11429188"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md",
+      "section": "Practice and examples",
+      "altText": "Invoice linked journal entries showing the posting trail",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Invoice linked journal entries showing the posting trail."
+    },
+    {
+      "document": "sales-and-receivables/receive-invoice-payments.md",
+      "section": "Practice and examples",
+      "altText": "Invoice linked journal entries showing the accounting trail",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Invoice linked journal entries showing the accounting trail."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

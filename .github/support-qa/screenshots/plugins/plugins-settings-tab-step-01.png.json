@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/plugins/plugins-settings-tab-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 892,
+    "height": 520,
+    "sha256": "c81211aafae71de7747b0059b8035beb729dcfa5fb5e6a5aa67e69f5c5770711"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "plugins/README.md",
+      "section": "Plugins (Beta)",
+      "altText": "Plugins settings tab showing supported plugin types and installed plugin status",
+      "purpose": "Review required: confirm whether this image supports Plugins (Beta): Plugins settings tab showing supported plugin types and installed plugin status."
+    },
+    {
+      "document": "plugins/control-plugin-availability-by-company.md",
+      "section": "Control Plugins (Beta) by Company",
+      "altText": "Plugins settings tab showing supported plugin types and installed plugin status",
+      "purpose": "Review required: confirm whether this image supports Control Plugins (Beta) by Company: Plugins settings tab showing supported plugin types and installed plugin status."
+    },
+    {
+      "document": "plugins/install-and-manage-plugins.md",
+      "section": "Install and Manage Plugins (Beta)",
+      "altText": "Plugins settings tab showing supported plugin types and installed plugin status",
+      "purpose": "Review required: confirm whether this image supports Install and Manage Plugins (Beta): Plugins settings tab showing supported plugin types and installed plugin status."
+    },
+    {
+      "document": "plugins/troubleshoot-plugin-pages-that-do-not-appear.md",
+      "section": "Troubleshoot Missing Plugins (Beta) Pages",
+      "altText": "Plugins settings tab showing supported plugin types and installed plugin status",
+      "purpose": "Review required: confirm whether this image supports Troubleshoot Missing Plugins (Beta) Pages: Plugins settings tab showing supported plugin types and installed plugin status."
+    },
+    {
+      "document": "plugins/use-the-plugins-settings-tab.md",
+      "section": "Use the Plugins (Beta) Settings Tab",
+      "altText": "Plugins settings tab showing supported plugin types and installed plugin status",
+      "purpose": "Review required: confirm whether this image supports Use the Plugins (Beta) Settings Tab: Plugins settings tab showing supported plugin types and installed plugin status."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "backups-and-data-safety/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for backups and company files and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "backups"
+  ],
+  "fileFacts": {
+    "sha256": "e157a0a8cd1816b413c5f2aaaa0d37072b27fd8b4e84d5029db479090b73a9e8"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/backups-and-data-safety/backup-settings-audit-step-01.png",
+      "section": "Backups and company files",
+      "altText": "Backups settings showing backup path and retention options",
+      "purpose": "Review required: confirm whether this image supports Backups and company files: Backups settings showing backup path and retention options."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "screenshots"
+    ]
+  }
+}

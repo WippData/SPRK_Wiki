@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "source": "backups-and-data-safety/export-and-import-company-files.md",
+  "role": "guide",
+  "objective": "Move or preserve one company with a Company File.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "backups"
+  ],
+  "fileFacts": {
+    "sha256": "923ad0ddd51685ffa0dcb336c973b6000f011f0d02fd344f7d6531fea3f58c52"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/backups-and-data-safety/company-file-controls-step-01.png",
+      "section": "Export and Import Company Files",
+      "altText": "Backups tab showing Company file export and import controls for Demo Company",
+      "purpose": "Review required: confirm whether this image supports Export and Import Company Files: Backups tab showing Company file export and import controls for Demo Company."
+    },
+    {
+      "file": "screenshots/v1-validation/backups-company-file-and-close-policy.png",
+      "section": "Practice and examples",
+      "altText": "Backups page showing Company File export and import controls",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Backups page showing Company File export and import controls."
+    },
+    {
+      "file": "screenshots/v1-validation/company-file-import-preview-replace-warning.png",
+      "section": "Practice and examples",
+      "altText": "Company File import preview showing table count, export timestamp, and replace warning",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Company File import preview showing table count, export timestamp, and replace warning."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

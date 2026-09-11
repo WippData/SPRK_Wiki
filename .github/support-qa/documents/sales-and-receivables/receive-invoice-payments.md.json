@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/receive-invoice-payments.md",
+  "role": "guide",
+  "objective": "Record a customer payment, confirm where the money went, and review the updated invoice balance.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "e22fb41a153d2a3c56d1d5bc1d5ce2ebb7ecaccd893bdd9a0d580933bcbd5537"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/sales-and-receivables/receive-invoice-payment-drawer-step-01.png",
+      "section": "Record an Invoice Payment",
+      "altText": "Receive payment drawer opened from an open invoice",
+      "purpose": "Review required: confirm whether this image supports Record an Invoice Payment: Receive payment drawer opened from an open invoice."
+    },
+    {
+      "file": "screenshots/v1-validation/invoice-payment-history.png",
+      "section": "Practice and examples",
+      "altText": "Invoice payment history showing recorded payment details",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Invoice payment history showing recorded payment details."
+    },
+    {
+      "file": "screenshots/v1-validation/invoice-linked-journal-entries.png",
+      "section": "Practice and examples",
+      "altText": "Invoice linked journal entries showing the accounting trail",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Invoice linked journal entries showing the accounting trail."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

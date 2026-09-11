@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/reconciliation/first-reconciliation-start-methods-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1280,
+    "height": 720,
+    "sha256": "169dd277f2d3145dff90638653c8a8f8b7f012e01f65ee9e43095be65b139da4"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "reconciliation/start-a-reconciliation.md",
+      "section": "Steps",
+      "altText": "First reconciliation choices for a new bank account",
+      "purpose": "Review required: confirm whether this image supports Steps: First reconciliation choices for a new bank account."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

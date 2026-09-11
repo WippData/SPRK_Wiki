@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/review-and-edit-invoices.md",
+  "role": "guide",
+  "objective": "Open existing invoices, review invoice actions, and handle posted-save prompts before changing invoice details.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "7fa011c238bdb86306dab00ecaea0110a23c0d25da0de970b0d5d1b1a120deba"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/sales-and-receivables/invoice-payment-history-void-actions-step-01.png",
+      "section": "Review and Edit Invoices",
+      "altText": "Invoice row actions showing payment, linked journal, payment history, and void actions",
+      "purpose": "Review required: confirm whether this image supports Review and Edit Invoices: Invoice row actions showing payment, linked journal, payment history, and void actions."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

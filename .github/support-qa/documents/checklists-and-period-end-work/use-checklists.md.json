@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "source": "checklists-and-period-end-work/use-checklists.md",
+  "role": "guide",
+  "objective": "Open the Checklist area, manage reusable checklist templates, and understand the difference between template setup and period-specific runs.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "month-end"
+  ],
+  "fileFacts": {
+    "sha256": "a3314728ade2b07262af955bcbb66c8a7fdd5847392eb558ed1871176ac541ec"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/checklists-and-period-end-work/use-checklists-step-01.png",
+      "section": "Use Checklists",
+      "altText": "Checklists page showing the run table, filters, and Refresh, New, and Manage actions",
+      "purpose": "Review required: confirm whether this image supports Use Checklists: Checklists page showing the run table, filters, and Refresh, New, and Manage actions."
+    },
+    {
+      "file": "screenshots/checklists-and-period-end-work/use-checklists-step-02.png",
+      "section": "Use Checklists",
+      "altText": "Manage checklists dialog showing reusable checklist template columns and the New checklist action",
+      "purpose": "Review required: confirm whether this image supports Use Checklists: Manage checklists dialog showing reusable checklist template columns and the New checklist action."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

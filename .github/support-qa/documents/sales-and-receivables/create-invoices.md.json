@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/create-invoices.md",
+  "role": "guide",
+  "objective": "Create a customer invoice and choose whether it should stay open or be recorded as paid now.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "faf4fb8f9e4362d7839dbcb42dcb0112e510fb697f50b6ffeec206a403d4e601"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/sales-and-receivables/invoice-routing-fields-step-01.png",
+      "section": "Create an Invoice",
+      "altText": "New invoice drawer showing Receive to, income routing, and sales-tax payable account",
+      "purpose": "Review required: confirm whether this image supports Create an Invoice: New invoice drawer showing Receive to, income routing, and sales-tax payable account."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

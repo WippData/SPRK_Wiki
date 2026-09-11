@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/backups-run-now-location-company-file.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 771,
+    "height": 630,
+    "sha256": "252e5c0a60f48f81adec2d6075e72561c76ef4674ad5af195e681e094e7fa79e"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "backups-and-data-safety/review-backup-settings-visible-in-the-product.md",
+      "section": "Practice and examples",
+      "altText": "Backups page showing backup status, backup path, Run Backup Now, and Company File controls",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Backups page showing backup status, backup path, Run Backup Now, and Company File controls."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

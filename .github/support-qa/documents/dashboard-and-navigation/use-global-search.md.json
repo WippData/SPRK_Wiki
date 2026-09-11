@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "dashboard-and-navigation/use-global-search.md",
+  "role": "guide",
+  "objective": "Search across customers, vendors, and ledger entries from the persistent search bar at the top of the app.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "using-sprk"
+  ],
+  "fileFacts": {
+    "sha256": "83f8a9bcd2e5bb4b88f445c6780eb9d7fe3c5a2637062b5da622d3567cb3140c"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/dashboard-and-navigation/global-search-step-01.png",
+      "section": "Use Global Search",
+      "altText": "Global search results showing ledger entries returned from the app header search field",
+      "purpose": "Review required: confirm whether this image supports Use Global Search: Global search results showing ledger entries returned from the app header search field."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/getting-started/sidebar-and-main-navigation-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1152,
+    "height": 743,
+    "sha256": "42081de807099babfd22ad04cee4f218797ceb999208613c55b049e07dd0ee62"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "getting-started/sign-in-to-sprk.md",
+      "section": "Sign In to SPRK",
+      "altText": "SPRK application shell after sign-in",
+      "purpose": "Review required: confirm whether this image supports Sign In to SPRK: SPRK application shell after sign-in."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

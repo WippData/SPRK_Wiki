@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "dashboard-and-navigation/move-between-major-app-areas.md",
+  "role": "guide",
+  "objective": "Use the sidebar, section groups, quick links, and collapse control to move through the main SPRK pages.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "using-sprk"
+  ],
+  "fileFacts": {
+    "sha256": "0c5dfbf41a62cb3272751a3481d47f56fffe92cb8caefbd9633770b83a79b141"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/dashboard-and-navigation/major-app-areas-step-01.png",
+      "section": "Move Between Major App Areas",
+      "altText": "SPRK dashboard showing the sidebar navigation groups, active Dashboard page, and Quick Links shortcuts",
+      "purpose": "Review required: confirm whether this image supports Move Between Major App Areas: SPRK dashboard showing the sidebar navigation groups, active Dashboard page, and Quick Links shortcuts."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

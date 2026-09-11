@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "expenses-and-payables/create-bills.md",
+  "role": "guide",
+  "objective": "Enter a vendor bill and choose whether it should stay open or be recorded as paid now.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "vendors-bills-checks"
+  ],
+  "fileFacts": {
+    "sha256": "7d5794fabf3cd5a1ef9a0361717f2b8388642e8a14e8e50026140bdc8e11cd71"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/expenses-and-payables/bill-routing-fields-step-01.png",
+      "section": "Create a Bill",
+      "altText": "New bill drawer showing Pay from, default expense account, and line account",
+      "purpose": "Review required: confirm whether this image supports Create a Bill: New bill drawer showing Pay from, default expense account, and line account."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

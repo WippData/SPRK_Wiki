@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "faq-and-glossary/frequently-asked-questions.md",
+  "role": "guide",
+  "objective": "Find quick answers about setup, daily work, imports, reconciliation, backups, and support.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "reference",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "faq-glossary"
+  ],
+  "fileFacts": {
+    "sha256": "f1caaa45b2d7be9650692241582153498ba807bc2f4906fa571b8527b2a27d5a"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/faq-and-glossary/frequently-asked-questions-step-01.png",
+      "section": "Frequently Asked Questions",
+      "altText": "Frequently Asked Questions expanded in Support How To Guides with common SPRK help topics visible",
+      "purpose": "Review required: confirm whether this image supports Frequently Asked Questions: Frequently Asked Questions expanded in Support How To Guides with common SPRK help topics visible."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}

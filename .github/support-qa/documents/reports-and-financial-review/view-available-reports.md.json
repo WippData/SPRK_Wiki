@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "source": "reports-and-financial-review/view-available-reports.md",
+  "role": "guide",
+  "objective": "Use this report catalog to choose the SPRK report that fits the review question before running, exporting, printing, or drilling into results.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "reference",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "reports"
+  ],
+  "fileFacts": {
+    "sha256": "ea899f1427cd3e1ae995749bbbedc2056896c5ddfb3b583ce39c7a9c861e6b89"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reports-and-financial-review/reports-overview-step-01.png",
+      "section": "View Available Reports",
+      "altText": "Reports page showing available report tabs and controls",
+      "purpose": "Review required: confirm whether this image supports View Available Reports: Reports page showing available report tabs and controls."
+    },
+    {
+      "file": "screenshots/v1-validation/reports-income-statement-export-surface.png",
+      "section": "Practice and examples",
+      "altText": "Income Statement report with export controls visible",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Income Statement report with export controls visible."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "screenshots"
+    ]
+  }
+}

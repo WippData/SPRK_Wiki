@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "source": "ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity.md",
+  "role": "guide",
+  "objective": "Review linked bank and journal activity and choose a correction that preserves the original posting trail.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "accounts-journals"
+  ],
+  "fileFacts": {
+    "sha256": "86b566675270816b64e8666c1a692516554ec6e8982d60911e7b1d759914203d"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reconciliation/reverse-linked-journal-step-01-reconcile-journal-button.png",
+      "section": "Steps",
+      "altText": "Linked journal action in Reconcile",
+      "purpose": "Review required: confirm whether this image supports Steps: Linked journal action in Reconcile."
+    },
+    {
+      "file": "screenshots/reconciliation/reverse-linked-journal-step-02-linked-journal.png",
+      "section": "Steps",
+      "altText": "Linked journal entry opened from Reconcile",
+      "purpose": "Review required: confirm whether this image supports Steps: Linked journal entry opened from Reconcile."
+    },
+    {
+      "file": "screenshots/reconciliation/reverse-linked-journal-step-03-reverse-date-choice.png",
+      "section": "Steps",
+      "altText": "Reverse journal date choices",
+      "purpose": "Review required: confirm whether this image supports Steps: Reverse journal date choices."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

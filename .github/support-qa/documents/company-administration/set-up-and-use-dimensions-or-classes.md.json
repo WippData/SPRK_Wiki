@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "source": "company-administration/set-up-and-use-dimensions-or-classes.md",
+  "role": "guide",
+  "objective": "Create company-level dimensions, such as a `Class`, `Project`, or `Department`, then apply those values to journal-entry lines for cleaner review and filtering.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "company-settings"
+  ],
+  "fileFacts": {
+    "sha256": "134c466cdff0750e27424c873f1184328d7b70a10ac7dbb0af56d4fc15c16722"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-administration/setup-dimensions-classes-step-01.png",
+      "section": "Set Up and Use Dimensions or Classes",
+      "altText": "Configure dimensions modal showing an enabled Class dimension with one allowed value",
+      "purpose": "Review required: confirm whether this image supports Set Up and Use Dimensions or Classes: Configure dimensions modal showing an enabled Class dimension with one allowed value."
+    },
+    {
+      "file": "screenshots/ledger-and-chart-of-accounts/journal-entry-dimensions-classes-step-01.png",
+      "section": "Set Up and Use Dimensions or Classes",
+      "altText": "New Journal Entry drawer showing the Class dimension selector on a journal line",
+      "purpose": "Review required: confirm whether this image supports Set Up and Use Dimensions or Classes: New Journal Entry drawer showing the Class dimension selector on a journal line."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

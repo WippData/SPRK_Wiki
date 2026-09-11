@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/sales-and-receivables/items-item-number-sku-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1200,
+    "height": 800,
+    "sha256": "d7d7c8edc37a6b4ab2781be04c1c200ecc47e73a4cbc29283fb7af8553e2db05"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "sales-and-receivables/README.md",
+      "section": "Customers, invoices, and payments",
+      "altText": "Items list showing Item Number / SKU setup for invoice lines",
+      "purpose": "Review required: confirm whether this image supports Customers, invoices, and payments: Items list showing Item Number / SKU setup for invoice lines."
+    },
+    {
+      "document": "sales-and-receivables/manage-items-for-invoicing.md",
+      "section": "Manage Items for Invoicing",
+      "altText": "Items list showing Item Number / SKU column and search label",
+      "purpose": "Review required: confirm whether this image supports Manage Items for Invoicing: Items list showing Item Number / SKU column and search label."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

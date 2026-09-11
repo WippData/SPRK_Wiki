@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "dashboard-and-navigation/understand-company-aware-navigation.md",
+  "role": "guide",
+  "objective": "Learn how the active company affects what you see as you move through SPRK and how to avoid working in the wrong company.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "concept",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "using-sprk"
+  ],
+  "fileFacts": {
+    "sha256": "606314010979a3818e00ac3370838827dc76593b42bc471ef416cb6345ed64eb"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/dashboard-and-navigation/company-aware-navigation-step-01.png",
+      "section": "Understand Company-Aware Navigation",
+      "altText": "SPRK Dashboard showing Demo Company selected in the sidebar with company-aware navigation and dashboard data visible",
+      "purpose": "Review required: confirm whether this image supports Understand Company-Aware Navigation: SPRK Dashboard showing Demo Company selected in the sidebar with company-aware navigation and dashboard data visible."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}

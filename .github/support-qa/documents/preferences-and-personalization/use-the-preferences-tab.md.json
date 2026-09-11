@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "source": "preferences-and-personalization/use-the-preferences-tab.md",
+  "role": "guide",
+  "objective": "Open `Preferences` to manage app-wide appearance, formatting, date display, update notification, navigation, automation, and getting-started settings.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "preferences"
+  ],
+  "fileFacts": {
+    "sha256": "22fb18b57ac6b8d0a34f10681003f549102c21429929e86242a3f6d083f5111b"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/preferences-and-personalization/account-dropdown-sorting-preference-step-01.png",
+      "section": "Use the Preferences Tab",
+      "altText": "Preferences page showing the Account dropdown sorting control and its ordering choices",
+      "purpose": "Review required: confirm whether this image supports Use the Preferences Tab: Preferences page showing the Account dropdown sorting control and its ordering choices."
+    },
+    {
+      "file": "screenshots/preferences-and-personalization/show-tooltips-preference-step-01.png",
+      "section": "Use the Preferences Tab",
+      "altText": "Preferences page showing the Show tooltips switch in the Appearance card",
+      "purpose": "Review required: confirm whether this image supports Use the Preferences Tab: Preferences page showing the Show tooltips switch in the Appearance card."
+    },
+    {
+      "file": "screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png",
+      "section": "Use the Preferences Tab",
+      "altText": "Column preferences dialog showing drag handles, visibility checkboxes, and move controls for invoice columns",
+      "purpose": "Review required: confirm whether this image supports Use the Preferences Tab: Column preferences dialog showing drag handles, visibility checkboxes, and move controls for invoice columns."
+    },
+    {
+      "file": "screenshots/preferences-and-personalization/grid-edit-save-regardless-preference-2026-07.png",
+      "section": "Steps",
+      "altText": "Preferences showing Grid Edit save regardless",
+      "purpose": "Review required: confirm whether this image supports Steps: Preferences showing Grid Edit save regardless."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

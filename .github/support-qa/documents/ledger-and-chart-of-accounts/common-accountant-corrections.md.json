@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "ledger-and-chart-of-accounts/common-accountant-corrections.md",
+  "role": "guide",
+  "objective": "Choose the correction path that preserves the source record, payment history, reconciliation state, and ledger trail.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "accounts-journals"
+  ],
+  "fileFacts": {
+    "sha256": "26bb8d67d2d80a4acd099f75c90839ce961773c9bbbdd6ec589b86f87009801e"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png",
+      "section": "Common Accountant Corrections",
+      "altText": "New journal entry drawer showing date, memo, account lines, debit and credit columns, totals, and reversing-entry controls",
+      "purpose": "Review required: confirm whether this image supports Common Accountant Corrections: New journal entry drawer showing date, memo, account lines, debit and credit columns, totals, and reversing-entry controls."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "checklists-and-period-end-work/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for checklists and month-end and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "month-end"
+  ],
+  "fileFacts": {
+    "sha256": "82695ca1ef005e18938f5d8f53c865dfc53ed254a038c32b61ece748a90ed9f3"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/checklists-and-period-end-work/use-checklists-step-01.png",
+      "section": "Checklists and month-end",
+      "altText": "Checklists page with reusable task templates",
+      "purpose": "Review required: confirm whether this image supports Checklists and month-end: Checklists page with reusable task templates."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "screenshots"
+    ]
+  }
+}

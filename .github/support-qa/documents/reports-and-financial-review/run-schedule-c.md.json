@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "reports-and-financial-review/run-schedule-c.md",
+  "role": "guide",
+  "objective": "Use SPRK's `Schedule C` report to review income and expense accounts grouped into Schedule C lines before tax preparation.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "reports"
+  ],
+  "fileFacts": {
+    "sha256": "8aeb2181b3c373e59e4b1e4945684305fd67e3db9841676be805391ff473e406"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reports-and-financial-review/schedule-c-report-step-01.png",
+      "section": "Steps",
+      "altText": "Schedule C selected in the Tax Forms report",
+      "purpose": "Review required: confirm whether this image supports Steps: Schedule C selected in the Tax Forms report."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "plugins/use-the-plugins-settings-tab.md",
+  "role": "guide",
+  "objective": "Use the `Plugins` tab to review installed Plugins (Beta), refresh their status, and understand what each visible plugin state means.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "plugins"
+  ],
+  "fileFacts": {
+    "sha256": "41d26a7307d685b8331c07bf09e971bed77a43474f5ce71e11c8798ac0b28fca"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/plugins/plugins-settings-tab-step-01.png",
+      "section": "Use the Plugins (Beta) Settings Tab",
+      "altText": "Plugins settings tab showing supported plugin types and installed plugin status",
+      "purpose": "Review required: confirm whether this image supports Use the Plugins (Beta) Settings Tab: Plugins settings tab showing supported plugin types and installed plugin status."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

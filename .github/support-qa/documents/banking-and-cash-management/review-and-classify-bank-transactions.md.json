@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "banking-and-cash-management/review-and-classify-bank-transactions.md",
+  "role": "guide",
+  "objective": "Choose whether to categorize, match, transfer, import, or repair bank and credit card activity.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "banking"
+  ],
+  "fileFacts": {
+    "sha256": "366b71b1a57357ced60104296dca41e241e8c096f2ee11337ad7b1626d0fd013"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png",
+      "section": "Choose a Banking Task",
+      "altText": "Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column",
+      "purpose": "Review required: confirm whether this image supports Choose a Banking Task: Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "support-and-troubleshooting/collect-the-right-details-before-contacting-support.md",
+  "role": "guide",
+  "objective": "Gather the company, page, visible message, expected result, and session log for a useful support request.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "help"
+  ],
+  "fileFacts": {
+    "sha256": "acb45b4f4b71b0cc8441034b8a3122155e5e2fa9ae9bb52de79d33655da3b4d7"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/support-and-troubleshooting/collect-support-details-step-01.png",
+      "section": "Collect the Right Details Before Contacting Support",
+      "altText": "Support tab showing the Support Activity Log and contact options",
+      "purpose": "Review required: confirm whether this image supports Collect the Right Details Before Contacting Support: Support tab showing the Support Activity Log and contact options."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

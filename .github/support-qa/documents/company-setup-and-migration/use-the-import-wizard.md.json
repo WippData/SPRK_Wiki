@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "source": "company-setup-and-migration/use-the-import-wizard.md",
+  "role": "guide",
+  "objective": "Build a new company from uploaded files, copied data, and manual settings when a simple one-file import is not enough.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "company-setup"
+  ],
+  "fileFacts": {
+    "sha256": "fea5795baedf713aad303c108e193a77d34caf113a9085e27219cc078acaaf15"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-administration/import-wizard-rules-source-options-2026-07.png",
+      "section": "Use the Import Wizard",
+      "altText": "Import Wizard showing Rules and its source choices",
+      "purpose": "Review required: confirm whether this image supports Use the Import Wizard: Import Wizard showing Rules and its source choices."
+    },
+    {
+      "file": "screenshots/v1-validation/companies-new-company-required-fields.png",
+      "section": "Practice and examples",
+      "altText": "Companies page new-company drawer showing required setup fields",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Companies page new-company drawer showing required setup fields."
+    },
+    {
+      "file": "screenshots/v1-validation/companies-import-wizard-templates-upload-slots.png",
+      "section": "Practice and examples",
+      "altText": "Import Wizard showing starter templates, accepted formats, upload target, and data-type source slots",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Import Wizard showing starter templates, accepted formats, upload target, and data-type source slots."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

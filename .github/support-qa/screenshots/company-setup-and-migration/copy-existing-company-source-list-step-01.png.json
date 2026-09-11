@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/company-setup-and-migration/copy-existing-company-source-list-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1920,
+    "height": 966,
+    "sha256": "edf204919fe0282a50d81d9fb225d18047c7758ca5fa7cb68a18caecef833d57"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "company-setup-and-migration/copying-an-existing-company.md",
+      "section": "Copying an Existing Company",
+      "altText": "Companies tab showing several existing companies and the New Company control",
+      "purpose": "Review required: confirm whether this image supports Copying an Existing Company: Companies tab showing several existing companies and the New Company control."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

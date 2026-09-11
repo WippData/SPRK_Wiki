@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/sales-and-receivables/invoice-template-payment-information-2026-07.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1152,
+    "height": 768,
+    "sha256": "d44df3d8903dba5209652ea4400ed2a380d3d1fc3a853ccb2920232fe21f5ab0"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "sales-and-receivables/print-invoices.md",
+      "section": "Print Invoices",
+      "altText": "Invoice Template modal showing Payment Information choices",
+      "purpose": "Review required: confirm whether this image supports Print Invoices: Invoice Template modal showing Payment Information choices."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

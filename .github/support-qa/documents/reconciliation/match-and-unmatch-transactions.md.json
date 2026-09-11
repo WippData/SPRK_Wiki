@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "reconciliation/match-and-unmatch-transactions.md",
+  "role": "guide",
+  "objective": "Link a confirmed bank transaction to a check while you are reconciling, and remove that link when the wrong check was chosen.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "reconcile"
+  ],
+  "fileFacts": {
+    "sha256": "62749cdc47c62b10213d8abaf1998ba29f2b40be92e7fe3fa7e1c821ddaaac06"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reconciliation/reconciliation-transaction-table-step-01.png",
+      "section": "Match and Unmatch Transactions",
+      "altText": "Reconciliation transaction table for reviewing matched bank activity",
+      "purpose": "Review required: confirm whether this image supports Match and Unmatch Transactions: Reconciliation transaction table for reviewing matched bank activity."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

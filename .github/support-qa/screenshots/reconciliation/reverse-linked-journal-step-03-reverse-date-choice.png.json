@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/reconciliation/reverse-linked-journal-step-03-reverse-date-choice.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1800,
+    "height": 988,
+    "sha256": "b41a8d9b9c57a5c56784b4a082bea91e9d3dedeff2fe84084488163df46a6784"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity.md",
+      "section": "Steps",
+      "altText": "Reverse journal date choices",
+      "purpose": "Review required: confirm whether this image supports Steps: Reverse journal date choices."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

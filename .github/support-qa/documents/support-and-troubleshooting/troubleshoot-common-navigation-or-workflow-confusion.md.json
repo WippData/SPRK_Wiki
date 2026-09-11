@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "support-and-troubleshooting/troubleshoot-common-navigation-or-workflow-confusion.md",
+  "role": "guide",
+  "objective": "Check the active company and sidebar when a page or task is missing or looks different.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "help"
+  ],
+  "fileFacts": {
+    "sha256": "61cf7a34a85052511744d357567504b3a2d3b9fee02da542403a90ff6000dd33"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/support-and-troubleshooting/troubleshoot-navigation-confusion-step-01.png",
+      "section": "Find a Missing Page or Task",
+      "altText": "Support How To Guides expanded to the troubleshooting article for navigation and workflow confusion",
+      "purpose": "Review required: confirm whether this image supports Find a Missing Page or Task: Support How To Guides expanded to the troubleshooting article for navigation and workflow confusion."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

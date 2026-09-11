@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "source": "company-setup-and-migration/create-your-first-company.md",
+  "role": "guide",
+  "objective": "Create a company from the Companies tab and set the core accounting options that SPRK uses for day-to-day work.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "company-setup"
+  ],
+  "fileFacts": {
+    "sha256": "92f29f44ceb8d644ddae190a26f25ac3cc1981159f723ba65f36c22fce71bebf"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-setup-and-migration/company-account-fields-defaults-step-01.png",
+      "section": "Create Your First Company",
+      "altText": "New company drawer showing account fields and accounting edit permissions",
+      "purpose": "Review required: confirm whether this image supports Create Your First Company: New company drawer showing account fields and accounting edit permissions."
+    },
+    {
+      "file": "screenshots/company-setup-and-migration/required-account-fields-selector-step-02.png",
+      "section": "Create Your First Company",
+      "altText": "Required account fields selector showing Code and Name choices",
+      "purpose": "Review required: confirm whether this image supports Create Your First Company: Required account fields selector showing Code and Name choices."
+    },
+    {
+      "file": "screenshots/company-setup-and-migration/new-company-item-sales-settings-step-01.png",
+      "section": "Create Your First Company",
+      "altText": "Field Setup window showing item identification and Invoice defaults",
+      "purpose": "Review required: confirm whether this image supports Create Your First Company: Field Setup window showing item identification and Invoice defaults."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "source": "company-setup-and-migration/copying-an-existing-company.md",
+  "role": "guide",
+  "objective": "Use the Import Wizard, also called the Import Company Wizard in some workflows, to create a new SPRK company from data already stored in another SPRK company.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "company-setup"
+  ],
+  "fileFacts": {
+    "sha256": "b090bf87a1c4bb465fbea995c0f34349c7268ca13a76f2065b352bbe6dd7885a"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-setup-and-migration/copy-existing-company-source-list-step-01.png",
+      "section": "Copying an Existing Company",
+      "altText": "Companies tab showing several existing companies and the New Company control",
+      "purpose": "Review required: confirm whether this image supports Copying an Existing Company: Companies tab showing several existing companies and the New Company control."
+    },
+    {
+      "file": "screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png",
+      "section": "Copying an Existing Company",
+      "altText": "Import Wizard showing starter templates, download templates action, and upload guidance",
+      "purpose": "Review required: confirm whether this image supports Copying an Existing Company: Import Wizard showing starter templates, download templates action, and upload guidance."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

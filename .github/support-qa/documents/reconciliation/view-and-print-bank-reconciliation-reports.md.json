@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "source": "reconciliation/view-and-print-bank-reconciliation-reports.md",
+  "role": "guide",
+  "objective": "Open, review, print, or export a completed bank or credit card reconciliation report.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "reconcile"
+  ],
+  "fileFacts": {
+    "sha256": "f5f666d4f61bc6627dc17967efa4b86de9c0ae8812a968aa288088ff64b896d7"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reconciliation/reconciliation-report-tab-step-01.png",
+      "section": "View and Print Bank Reconciliation Reports",
+      "altText": "Reports Reconciliation tab opened from Print Bank Rec",
+      "purpose": "Review required: confirm whether this image supports View and Print Bank Reconciliation Reports: Reports Reconciliation tab opened from Print Bank Rec."
+    },
+    {
+      "file": "screenshots/reconciliation/reconciliation-history-posted-actions-2026-07.png",
+      "section": "Steps",
+      "altText": "Posted reconciliation history showing status and View report actions",
+      "purpose": "Review required: confirm whether this image supports Steps: Posted reconciliation history showing status and View report actions."
+    },
+    {
+      "file": "screenshots/v1-validation/reconciliation-history-posted-report-action.png",
+      "section": "Practice and examples",
+      "altText": "Posted reconciliation history row with a report action",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Posted reconciliation history row with a report action."
+    },
+    {
+      "file": "screenshots/v1-validation/reconciliation-report-detail.png",
+      "section": "Practice and examples",
+      "altText": "Reconciliation report details opened from posted history",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Reconciliation report details opened from posted history."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

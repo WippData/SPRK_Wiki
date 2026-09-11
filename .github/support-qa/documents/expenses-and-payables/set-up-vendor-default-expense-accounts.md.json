@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "expenses-and-payables/set-up-vendor-default-expense-accounts.md",
+  "role": "guide",
+  "objective": "Prepare vendor-level expense defaults before you enter repeat payables, checks, or bank classifications so supported workflows start with cleaner coding.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "vendors-bills-checks"
+  ],
+  "fileFacts": {
+    "sha256": "2879d5de709a8cac6a3a69e2370a65cacf7f8ce772e35cfeac863278f943f7e9"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/expenses-and-payables/vendor-default-expense-account-step-01.png",
+      "section": "Set Up Vendor Default Expense Accounts",
+      "altText": "Vendors list showing the Default Expense Account column",
+      "purpose": "Review required: confirm whether this image supports Set Up Vendor Default Expense Accounts: Vendors list showing the Default Expense Account column."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

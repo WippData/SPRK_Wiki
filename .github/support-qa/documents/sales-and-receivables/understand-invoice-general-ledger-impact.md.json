@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/understand-invoice-general-ledger-impact.md",
+  "role": "guide",
+  "objective": "See how invoice status, `Receive to`, income accounts, payments, and voids affect customer balances.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "concept",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "139d7c3a53cf5d0128f34d34c1e7553974f23c79a0b4e4db6b3c20cb8c300944"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reports-and-financial-review/general-ledger-report-populated-step-01.png",
+      "section": "Understand Invoice General Ledger Impact",
+      "altText": "General Ledger report showing invoice-related receivables activity",
+      "purpose": "Review required: confirm whether this image supports Understand Invoice General Ledger Impact: General Ledger report showing invoice-related receivables activity."
+    },
+    {
+      "file": "screenshots/v1-validation/invoice-void-action-enabled.png",
+      "section": "Practice and examples",
+      "altText": "Invoice row action menu with Void invoice enabled on an eligible invoice",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Invoice row action menu with Void invoice enabled on an eligible invoice."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "screenshots"
+    ]
+  }
+}

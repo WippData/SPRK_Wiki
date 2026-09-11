@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "company-setup-and-migration/import-from-quickbooks-desktop-iif.md",
+  "role": "guide",
+  "objective": "Create or import a company in SPRK from a QuickBooks Desktop IIF export using the Companies page.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "company-setup"
+  ],
+  "fileFacts": {
+    "sha256": "984a6d68494f4d53316218af21ea5267c5e3bec9f994a48b988041c6b9a062d4"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png",
+      "section": "Import from QuickBooks Desktop IIF",
+      "altText": "Import Wizard showing accepted IIF and spreadsheet file formats",
+      "purpose": "Review required: confirm whether this image supports Import from QuickBooks Desktop IIF: Import Wizard showing accepted IIF and spreadsheet file formats."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

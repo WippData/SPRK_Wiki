@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "reconciliation/reconcile-general-ledger-accounts.md",
+  "role": "guide",
+  "objective": "Reconcile an eligible balance-sheet account to a supporting statement or schedule, even when it is not a bank or credit-card register.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "reconcile"
+  ],
+  "fileFacts": {
+    "sha256": "0c0af2931e4611def1cbf61ce03cf8f5ec49624884c59787f252fdef4aec95dc"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reconciliation/general-ledger-reconciliation-active-step-01.png",
+      "section": "Steps",
+      "altText": "General-ledger reconciliation with selected activity and a zero difference",
+      "purpose": "Review required: confirm whether this image supports Steps: General-ledger reconciliation with selected activity and a zero difference."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

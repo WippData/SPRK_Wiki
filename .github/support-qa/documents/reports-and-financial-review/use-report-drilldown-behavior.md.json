@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "source": "reports-and-financial-review/use-report-drilldown-behavior.md",
+  "role": "guide",
+  "objective": "Open the transactions behind a report amount and review the source entries.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "reports"
+  ],
+  "fileFacts": {
+    "sha256": "f4f738d4b5c9b65b0bfd8e73cf3a5705e4e93d1825171c04a2cb059bade6961f"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reports-and-financial-review/report-drilldown-window-step-01.png",
+      "section": "Open Supporting Details From a Report",
+      "altText": "Report drilldown window showing supporting journal entries",
+      "purpose": "Review required: confirm whether this image supports Open Supporting Details From a Report: Report drilldown window showing supporting journal entries."
+    },
+    {
+      "file": "screenshots/v1-validation/reports-general-ledger-drilldown-rows.png",
+      "section": "Practice and examples",
+      "altText": "General Ledger report rows available for detail review",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: General Ledger report rows available for detail review."
+    },
+    {
+      "file": "screenshots/v1-validation/reports-journal-entry-drilldown-modal.png",
+      "section": "Practice and examples",
+      "altText": "Journal-entry drilldown modal opened from a report row",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Journal-entry drilldown modal opened from a report row."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

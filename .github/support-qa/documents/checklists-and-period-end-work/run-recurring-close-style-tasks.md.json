@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "checklists-and-period-end-work/run-recurring-close-style-tasks.md",
+  "role": "guide",
+  "objective": "Start a checklist run for a defined period, capture responses on each checklist item, and complete the run when the work is actually finished.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "month-end"
+  ],
+  "fileFacts": {
+    "sha256": "5865ba3582aa7ba11255a4ef38d0754425e66983e5c80f55e6a476b7fee03b8e"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/checklists-and-period-end-work/start-checklist-run-step-01.png",
+      "section": "Run Recurring Close-Style Tasks",
+      "altText": "Start checklist run drawer for recurring close-style tasks",
+      "purpose": "Review required: confirm whether this image supports Run Recurring Close-Style Tasks: Start checklist run drawer for recurring close-style tasks."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

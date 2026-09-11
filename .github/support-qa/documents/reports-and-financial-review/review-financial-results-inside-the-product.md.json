@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "source": "reports-and-financial-review/review-financial-results-inside-the-product.md",
+  "role": "guide",
+  "objective": "Review balances, financial statements, and supporting detail before deciding whether a correction is needed.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "reports"
+  ],
+  "fileFacts": {
+    "sha256": "897f22913d457ecf3c73368276c93ca4aac72d084eef45629fd930ba9bdc2459"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reports-and-financial-review/general-ledger-report-populated-step-01.png",
+      "section": "Review Financial Results",
+      "altText": "Populated General Ledger report with account groups and rows",
+      "purpose": "Review required: confirm whether this image supports Review Financial Results: Populated General Ledger report with account groups and rows."
+    },
+    {
+      "file": "screenshots/reports-and-financial-review/income-statement-summary-cards-step-01.png",
+      "section": "Review Financial Results",
+      "altText": "Income Statement summary cards for grouped report review",
+      "purpose": "Review required: confirm whether this image supports Review Financial Results: Income Statement summary cards for grouped report review."
+    },
+    {
+      "file": "screenshots/v1-validation/reports-payables-aging-summary-detail.png",
+      "section": "Practice and examples",
+      "altText": "Payables aging report with summary and detail rows",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Payables aging report with summary and detail rows."
+    },
+    {
+      "file": "screenshots/v1-validation/reports-tax-form-schedule-c-review.png",
+      "section": "Practice and examples",
+      "altText": "Tax form Schedule C review report",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Tax form Schedule C review report."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

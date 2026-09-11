@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/company-administration/import-wizard-rules-source-options-2026-07.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1152,
+    "height": 768,
+    "sha256": "59167c4f44b233549985ea097fd9055a7c2f21239720204aaf3e308c54025ba0"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "company-setup-and-migration/use-the-import-wizard.md",
+      "section": "Use the Import Wizard",
+      "altText": "Import Wizard showing Rules and its source choices",
+      "purpose": "Review required: confirm whether this image supports Use the Import Wizard: Import Wizard showing Rules and its source choices."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

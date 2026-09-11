@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "expenses-and-payables/review-common-payables-workflows.md",
+  "role": "guide",
+  "objective": "Go to the right guide for bills, payments, checks, vendor setup, or accounts payable review.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "vendors-bills-checks"
+  ],
+  "fileFacts": {
+    "sha256": "a2f7e778aa8c8db56196fe35cea4dc5d32c91a7934f37054615629e5e3956838"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/expenses-and-payables/bills-list-step-01.png",
+      "section": "Find the Right Payables Guide",
+      "altText": "Bills list showing payable balances and payment actions",
+      "purpose": "Review required: confirm whether this image supports Find the Right Payables Guide: Bills list showing payable balances and payment actions."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

@@ -16,6 +16,8 @@ import sys
 from pathlib import Path
 from urllib.parse import unquote
 
+from support_qa import check_support_qa
+
 
 ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = ROOT / ".private" / "wiki-page-inventory.md"
@@ -150,6 +152,7 @@ def is_public_path(rel: str) -> bool:
     return not (
         rel.startswith(".git/")
         or rel.startswith(".private/")
+        or rel.startswith(".github/")
         or rel.startswith(".agents/")
         or rel.startswith(".codex/")
         or rel == "AGENTS.md"
@@ -463,15 +466,6 @@ def check_support_index() -> list[str]:
                     source_text = read(source_path)
                     if first_heading(source_text) != guide["title"]:
                         issues.append(f"{source}: H1 must match manifest title {guide['title']!r}")
-                    if "![" in source_text:
-                        markers = re.findall(r"<!-- Screenshot status: ([^>]+) -->", source_text)
-                        if len(markers) != 1:
-                            issues.append(f"{source}: guides with images need exactly one screenshot status marker")
-                        elif not (
-                            markers[0].startswith("Current")
-                            or markers[0].startswith("Review needed")
-                        ):
-                            issues.append(f"{source}: screenshot status must be Current or Review needed")
                 if not isinstance(guide["summary"], str) or not guide["summary"].strip():
                     issues.append(f"{guide_location}: summary must be non-empty")
                 aliases = guide.get("aliases", [])
@@ -612,6 +606,7 @@ def main() -> int:
     inventory_text = read(INVENTORY) if INVENTORY.exists() else ""
     issues: list[str] = []
     issues.extend(check_support_index())
+    issues.extend(check_support_qa(ROOT))
 
     for path in targets:
         text = read(path)

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/create-and-open-invoices.md",
+  "role": "guide",
+  "objective": "Choose the right guide for creating, sending, paying, importing, reviewing, or correcting an invoice.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "660b82b37513d87b7d16b4edbc40830650d90c8dd1abd608bf4af135eac22500"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/sales-and-receivables/invoice-payment-history-void-actions-step-01.png",
+      "section": "Choose an Invoice Task",
+      "altText": "Invoice row actions showing payment, linked journal, payment history, and void actions",
+      "purpose": "Review required: confirm whether this image supports Choose an Invoice Task: Invoice row actions showing payment, linked journal, payment history, and void actions."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

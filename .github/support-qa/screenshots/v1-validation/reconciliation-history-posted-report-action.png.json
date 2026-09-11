@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/reconciliation-history-posted-report-action.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1202,
+    "height": 380,
+    "sha256": "1cf319a0201f63c467771c18b7c1f0783f22fc73a42d0d6d1a47c5dda74f7be0"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "reconciliation/view-and-print-bank-reconciliation-reports.md",
+      "section": "Practice and examples",
+      "altText": "Posted reconciliation history row with a report action",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Posted reconciliation history row with a report action."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

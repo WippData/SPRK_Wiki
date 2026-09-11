@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "source": "banking-and-cash-management/import-banking-rules.md",
+  "role": "guide",
+  "objective": "Import repeated Banking rules, review the preview, and add only the rules you want to keep.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "banking"
+  ],
+  "fileFacts": {
+    "sha256": "a6cd335905d94027db887206fbb1ea380111911d2544f38338ba7fd911ce99a8"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/banking-and-cash-management/rules-import-template-guidance-step-01.png",
+      "section": "Import Banking Rules",
+      "altText": "Rules import dialog showing template guidance, required columns, recommended columns, and supported file types",
+      "purpose": "Review required: confirm whether this image supports Import Banking Rules: Rules import dialog showing template guidance, required columns, recommended columns, and supported file types."
+    },
+    {
+      "file": "screenshots/v1-validation/rules-import-preview-success-v0.3.57.png",
+      "section": "What Happens When You Import",
+      "altText": "Rules import preview showing three reusable rule drafts with zero issues",
+      "purpose": "Review required: confirm whether this image supports What Happens When You Import: Rules import preview showing three reusable rule drafts with zero issues."
+    },
+    {
+      "file": "screenshots/v1-validation/rules-import-committed-rows-v0.3.57.png",
+      "section": "What Happens When You Import",
+      "altText": "Rules grid showing the imported V1 banking rules after confirmation",
+      "purpose": "Review required: confirm whether this image supports What Happens When You Import: Rules grid showing the imported V1 banking rules after confirmation."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

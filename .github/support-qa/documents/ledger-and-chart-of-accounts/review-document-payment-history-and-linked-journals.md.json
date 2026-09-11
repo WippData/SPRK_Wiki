@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "source": "ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md",
+  "role": "guide",
+  "objective": "Review invoice and bill payment history from the source document, then use linked journal review to understand the posting trail.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "accounts-journals"
+  ],
+  "fileFacts": {
+    "sha256": "d45c7dea3130a010a2e77d71db6ccb0bde9fe3cf7fda7f3cef31adffc324ee30"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/sales-and-receivables/invoice-payment-history-void-actions-step-01.png",
+      "section": "Review Document Payment History and Linked Journals",
+      "altText": "Invoice row actions showing payment, linked journal, payment history, and void actions",
+      "purpose": "Review required: confirm whether this image supports Review Document Payment History and Linked Journals: Invoice row actions showing payment, linked journal, payment history, and void actions."
+    },
+    {
+      "file": "screenshots/expenses-and-payables/bill-payment-history-actions-step-01.png",
+      "section": "Review Document Payment History and Linked Journals",
+      "altText": "Bill row actions for payment history and linked journal review",
+      "purpose": "Review required: confirm whether this image supports Review Document Payment History and Linked Journals: Bill row actions for payment history and linked journal review."
+    },
+    {
+      "file": "screenshots/v1-validation/invoice-payment-history.png",
+      "section": "Practice and examples",
+      "altText": "Invoice payment history showing payment application details",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Invoice payment history showing payment application details."
+    },
+    {
+      "file": "screenshots/v1-validation/invoice-linked-journal-entries.png",
+      "section": "Practice and examples",
+      "altText": "Invoice linked journal entries showing the posting trail",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Invoice linked journal entries showing the posting trail."
+    },
+    {
+      "file": "screenshots/v1-validation/bill-payment-history.png",
+      "section": "Practice and examples",
+      "altText": "Bill payment history showing payable payment activity",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Bill payment history showing payable payment activity."
+    },
+    {
+      "file": "screenshots/v1-validation/bill-linked-journal-entries.png",
+      "section": "Practice and examples",
+      "altText": "Bill linked journal entries showing the payable posting trail",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Bill linked journal entries showing the payable posting trail."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

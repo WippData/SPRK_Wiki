@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "source": "ledger-and-chart-of-accounts/understand-the-chart-of-accounts-structure.md",
+  "role": "guide",
+  "objective": "Organize accounts, headings, account types, and control accounts.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "concept",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "accounts-journals"
+  ],
+  "fileFacts": {
+    "sha256": "48756671be5b25865bc82fa3e25d890ac606e872682fc415fcfc7be796006225"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/ledger-and-chart-of-accounts/chart-of-accounts-structure-step-01.png",
+      "section": "Understand the Chart of Accounts Structure",
+      "altText": "Chart of Accounts page showing Posting and Control filters plus Nonposting and Control columns",
+      "purpose": "Review required: confirm whether this image supports Understand the Chart of Accounts Structure: Chart of Accounts page showing Posting and Control filters plus Nonposting and Control columns."
+    },
+    {
+      "file": "screenshots/ledger-and-chart-of-accounts/account-role-switches-step-01.png",
+      "section": "Understand the Chart of Accounts Structure",
+      "altText": "New Account drawer showing Nonposting account and Control account switches",
+      "purpose": "Review required: confirm whether this image supports Understand the Chart of Accounts Structure: New Account drawer showing Nonposting account and Control account switches."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "screenshots"
+    ]
+  }
+}

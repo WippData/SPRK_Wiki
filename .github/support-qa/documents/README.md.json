@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "source": "README.md",
+  "role": "home",
+  "objective": "Help customers choose a common SPRK task or find the Support topic they need.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "support-home"
+  ],
+  "fileFacts": {
+    "sha256": "b7a70f9b0f8f45f033a7b4a6f0bfdbfa661af21b90a40d56212334f2797fd7f8"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source"
+    ]
+  }
+}

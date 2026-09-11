@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": "support-and-troubleshooting/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for help and troubleshooting and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "none",
+  "productAreas": [
+    "help"
+  ],
+  "fileFacts": {
+    "sha256": "35b9d23b80fda7f1e3b9ff88d5fe191995c23435f049e5144307242d174aee3d"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/support-and-troubleshooting/support-tab-overview-step-01.png",
+      "section": "Help and troubleshooting",
+      "altText": "Support tab showing the support log, contact card, and how-to guides",
+      "purpose": "Review required: confirm whether this image supports Help and troubleshooting: Support tab showing the support log, contact card, and how-to guides."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "screenshots"
+    ]
+  }
+}

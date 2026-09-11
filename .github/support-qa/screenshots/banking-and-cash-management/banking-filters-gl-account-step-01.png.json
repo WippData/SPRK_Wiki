@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 850,
+    "height": 310,
+    "sha256": "8bd29f3a48a665cb1597575745e3abd79ea23f08f341578b30ab1ece8f3b432f"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "banking-and-cash-management/README.md",
+      "section": "Banking",
+      "altText": "Banking actions for assigning a vendor or customer",
+      "purpose": "Review required: confirm whether this image supports Banking: Banking actions for assigning a vendor or customer."
+    },
+    {
+      "document": "banking-and-cash-management/classify-bank-transactions.md",
+      "section": "Categorize and Confirm Bank Transactions",
+      "altText": "Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column",
+      "purpose": "Review required: confirm whether this image supports Categorize and Confirm Bank Transactions: Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column."
+    },
+    {
+      "document": "banking-and-cash-management/review-and-classify-bank-transactions.md",
+      "section": "Choose a Banking Task",
+      "altText": "Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column",
+      "purpose": "Review required: confirm whether this image supports Choose a Banking Task: Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column."
+    },
+    {
+      "document": "banking-and-cash-management/understand-the-banking-page.md",
+      "section": "Understand the Banking Page",
+      "altText": "Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column",
+      "purpose": "Review required: confirm whether this image supports Understand the Banking Page: Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "source": "reports-and-financial-review/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for reports and financial review and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "moderate",
+  "productAreas": [
+    "reports"
+  ],
+  "fileFacts": {
+    "sha256": "3f064e1457ca04571589500b57e04b08139145243afa62626481e2b6da4d917b"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reports-and-financial-review/reports-overview-step-01.png",
+      "section": "Reports and financial review",
+      "altText": "Reports page showing report tabs, summary cards, and output controls",
+      "purpose": "Review required: confirm whether this image supports Reports and financial review: Reports page showing report tabs, summary cards, and output controls."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "screenshots"
+    ]
+  }
+}

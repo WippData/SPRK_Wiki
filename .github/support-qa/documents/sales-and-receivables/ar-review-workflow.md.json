@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/ar-review-workflow.md",
+  "role": "guide",
+  "objective": "Review customers, open invoices, payments, aging, and revenue detail before reporting.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "ebc4d398bcdd3dc7a322142713286bbb5aed10310697b1ea5e95d0ec2f527997"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/sales-and-receivables/invoices-list-payment-action-step-01.png",
+      "section": "Review Customer Balances and Overdue Invoices",
+      "altText": "Invoices list showing payment actions and invoice status context",
+      "purpose": "Review required: confirm whether this image supports Review Customer Balances and Overdue Invoices: Invoices list showing payment actions and invoice status context."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

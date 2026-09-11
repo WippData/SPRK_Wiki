@@ -1,0 +1,444 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sprksystems.com/schemas/support-qa/document.schema.json",
+  "title": "SPRK support document QA sidecar",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "source",
+    "role",
+    "objective",
+    "audiences",
+    "contentType",
+    "toneProfile",
+    "accountingRisk",
+    "productAreas",
+    "fileFacts",
+    "sourceEvidence",
+    "walkthroughs",
+    "screenshotUses",
+    "verification"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "source": { "$ref": "#/$defs/documentPath" },
+    "role": {
+      "enum": ["home", "topic", "guide", "repository-reference"]
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 300
+    },
+    "audiences": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": ["business-owner", "bookkeeper", "accountant", "firm-admin"]
+      }
+    },
+    "contentType": {
+      "enum": ["landing", "task", "concept", "troubleshooting", "reference"]
+    },
+    "toneProfile": { "const": "sprk-friendly-accountant-v1" },
+    "accountingRisk": {
+      "enum": ["none", "low", "moderate", "high"]
+    },
+    "productAreas": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/productArea" }
+    },
+    "fileFacts": { "$ref": "#/$defs/fileFacts" },
+    "sourceEvidence": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/sourceEvidence" }
+    },
+    "walkthroughs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/walkthrough" }
+    },
+    "screenshotUses": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/screenshotUse" }
+    },
+    "verification": { "$ref": "#/$defs/verification" }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "role": { "const": "home" } },
+        "required": ["role"]
+      },
+      "then": {
+        "properties": { "source": { "const": "README.md" } }
+      }
+    },
+    {
+      "if": {
+        "properties": { "role": { "const": "topic" } },
+        "required": ["role"]
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+/README\\.md$",
+            "not": { "const": "sample-files/practice/README.md" }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "role": { "const": "guide" } },
+        "required": ["role"]
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+(?:/[a-z0-9-]+)+\\.md$",
+            "not": { "pattern": "/README\\.md$" }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "role": { "const": "repository-reference" } },
+        "required": ["role"]
+      },
+      "then": {
+        "properties": {
+          "source": { "const": "sample-files/practice/README.md" },
+          "contentType": { "const": "reference" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verification": {
+            "properties": { "status": { "const": "verified" } },
+            "required": ["status"]
+          }
+        },
+        "required": ["verification"]
+      },
+      "then": {
+        "properties": {
+          "sourceEvidence": {
+            "minItems": 1,
+            "items": {
+              "allOf": [
+                { "$ref": "#/$defs/sourceEvidence" },
+                { "properties": { "status": { "const": "verified" } } }
+              ]
+            }
+          },
+          "walkthroughs": {
+            "items": {
+              "allOf": [
+                { "$ref": "#/$defs/walkthrough" },
+                { "properties": { "status": { "const": "passed" } } }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verification": {
+            "properties": { "status": { "const": "verified" } },
+            "required": ["status"]
+          },
+          "contentType": { "enum": ["task", "troubleshooting"] }
+        },
+        "required": ["verification", "contentType"]
+      },
+      "then": {
+        "properties": {
+          "walkthroughs": {
+            "minItems": 1,
+            "contains": {
+              "properties": { "status": { "const": "passed" } },
+              "required": ["status"]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verification": {
+            "properties": { "status": { "const": "verified" } },
+            "required": ["status"]
+          },
+          "accountingRisk": { "const": "moderate" }
+        },
+        "required": ["verification", "accountingRisk"]
+      },
+      "then": {
+        "allOf": [
+          { "$ref": "#/$defs/requiresFrontendEvidence" },
+          { "$ref": "#/$defs/requiresBackendEvidence" },
+          { "$ref": "#/$defs/requiresPassedWalkthrough" }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verification": {
+            "properties": { "status": { "const": "verified" } },
+            "required": ["status"]
+          },
+          "accountingRisk": { "const": "high" }
+        },
+        "required": ["verification", "accountingRisk"]
+      },
+      "then": {
+        "allOf": [
+          { "$ref": "#/$defs/requiresFrontendEvidence" },
+          { "$ref": "#/$defs/requiresBackendEvidence" },
+          { "$ref": "#/$defs/requiresAccountingEvidence" },
+          { "$ref": "#/$defs/requiresPassedWalkthrough" }
+        ]
+      }
+    }
+  ],
+  "$defs": {
+    "fileFacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sha256"],
+      "properties": {
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "documentPath": {
+      "type": "string",
+      "allOf": [
+        { "pattern": "^[A-Za-z0-9._-]+(?:/[A-Za-z0-9._-]+)*\\.md$" },
+        {
+          "not": {
+            "pattern": "(^|/)(?:AGENTS\\.md|\\.agents|\\.codex|\\.github|\\.private|screenshots|scripts)(?:/|$)"
+          }
+        }
+      ]
+    },
+    "productArea": {
+      "enum": [
+        "support-home",
+        "getting-started",
+        "using-sprk",
+        "company-setup",
+        "customers-invoices-payments",
+        "vendors-bills-checks",
+        "banking",
+        "reconcile",
+        "reports",
+        "month-end",
+        "accounts-journals",
+        "company-settings",
+        "preferences",
+        "backups",
+        "plugins",
+        "licensing",
+        "faq-glossary",
+        "help",
+        "practice-files"
+      ]
+    },
+    "supportClaim": {
+      "enum": [
+        "navigation",
+        "ui-labels",
+        "behavior",
+        "accounting-impact",
+        "error-recovery",
+        "permissions",
+        "data-persistence",
+        "report-output"
+      ]
+    },
+    "sourceEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "status", "repository", "path", "supports"],
+      "properties": {
+        "kind": {
+          "enum": ["frontend-source", "backend-source", "accounting-contract", "support-index"]
+        },
+        "status": { "enum": ["planned", "verified"] },
+        "repository": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "path": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "ref": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "supports": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/supportClaim" }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "status": { "const": "verified" } },
+            "required": ["status"]
+          },
+          "then": { "required": ["ref"] }
+        },
+        {
+          "if": {
+            "properties": { "status": { "const": "planned" } },
+            "required": ["status"]
+          },
+          "then": { "not": { "required": ["ref"] } }
+        }
+      ]
+    },
+    "walkthrough": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "scenario", "platform"],
+      "properties": {
+        "status": { "enum": ["planned", "passed", "failed"] },
+        "scenario": { "type": "string", "minLength": 10, "maxLength": 500 },
+        "platform": { "enum": ["desktop-macos", "desktop-windows", "web"] },
+        "appVersion": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "runAt": { "type": "string", "format": "date-time" },
+        "runBy": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "notes": { "type": "string", "minLength": 1, "maxLength": 1000 }
+      },
+      "if": {
+        "properties": { "status": { "enum": ["passed", "failed"] } },
+        "required": ["status"]
+      },
+      "then": { "required": ["appVersion", "runAt", "runBy"] }
+    },
+    "screenshotUse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["file", "section", "altText", "purpose"],
+      "properties": {
+        "file": {
+          "type": "string",
+          "pattern": "^screenshots/[A-Za-z0-9._/-]+\\.png$"
+        },
+        "section": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "altText": { "type": "string", "minLength": 10, "maxLength": 500 },
+        "purpose": { "type": "string", "minLength": 20, "maxLength": 500 }
+      }
+    },
+    "reviewCheck": {
+      "enum": [
+        "objective",
+        "audience",
+        "tone",
+        "frontend-source",
+        "backend-source",
+        "accounting-contract",
+        "runtime-walkthrough",
+        "screenshots"
+      ]
+    },
+    "verification": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "reason", "requiredChecks"],
+          "properties": {
+            "status": { "const": "needs-review" },
+            "reason": { "type": "string", "minLength": 10, "maxLength": 500 },
+            "requiredChecks": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "$ref": "#/$defs/reviewCheck" }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "verifiedAt",
+            "verifiedBy",
+            "objectiveMet",
+            "toneReviewed"
+          ],
+          "properties": {
+            "status": { "const": "verified" },
+            "verifiedAt": { "type": "string", "format": "date" },
+            "verifiedBy": { "type": "string", "minLength": 1, "maxLength": 120 },
+            "objectiveMet": { "const": true },
+            "toneReviewed": { "const": true }
+          }
+        }
+      ]
+    },
+    "requiresFrontendEvidence": {
+      "properties": {
+        "sourceEvidence": {
+          "contains": {
+            "properties": {
+              "kind": { "const": "frontend-source" },
+              "status": { "const": "verified" }
+            },
+            "required": ["kind", "status"]
+          }
+        }
+      }
+    },
+    "requiresBackendEvidence": {
+      "properties": {
+        "sourceEvidence": {
+          "contains": {
+            "properties": {
+              "kind": { "const": "backend-source" },
+              "status": { "const": "verified" }
+            },
+            "required": ["kind", "status"]
+          }
+        }
+      }
+    },
+    "requiresAccountingEvidence": {
+      "properties": {
+        "sourceEvidence": {
+          "contains": {
+            "properties": {
+              "kind": { "const": "accounting-contract" },
+              "status": { "const": "verified" }
+            },
+            "required": ["kind", "status"]
+          }
+        }
+      }
+    },
+    "requiresPassedWalkthrough": {
+      "properties": {
+        "walkthroughs": {
+          "minItems": 1,
+          "contains": {
+            "properties": { "status": { "const": "passed" } },
+            "required": ["status"]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "source": "banking-and-cash-management/create-and-manage-rules.md",
+  "role": "guide",
+  "objective": "Build rules that prefill GL account choices for repeated bank transaction patterns, then manage scope, priority, and imported rule sets from the Rules page.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "banking"
+  ],
+  "fileFacts": {
+    "sha256": "d6f8a5018cd218614c1b3f9411c865b56b784b6fcd756f759fa7299a78d31993"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/banking-and-cash-management/create-and-manage-rules-step-01.png",
+      "section": "Create and Manage Rules",
+      "altText": "Rules page showing filters, priority order, active banking rules, and row actions",
+      "purpose": "Review required: confirm whether this image supports Create and Manage Rules: Rules page showing filters, priority order, active banking rules, and row actions."
+    },
+    {
+      "file": "screenshots/banking-and-cash-management/rules-gl-account-labels-step-03.png",
+      "section": "Create and Manage Rules",
+      "altText": "Rules page showing GL Account filter and GL Account result column",
+      "purpose": "Review required: confirm whether this image supports Create and Manage Rules: Rules page showing GL Account filter and GL Account result column."
+    },
+    {
+      "file": "screenshots/banking-and-cash-management/banking-create-rule-full-description-2026-07.png",
+      "section": "Steps",
+      "altText": "Create Rule from Transaction drawer using the full bank description",
+      "purpose": "Review required: confirm whether this image supports Steps: Create Rule from Transaction drawer using the full bank description."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

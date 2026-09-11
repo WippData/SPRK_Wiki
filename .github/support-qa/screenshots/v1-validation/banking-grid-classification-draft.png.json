@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/banking-grid-classification-draft.png",
+  "usageStatus": "retained-unreferenced",
+  "retentionReason": "Existing public asset retained for URL compatibility while its future instructional use is reviewed.",
+  "fileFacts": {
+    "format": "png",
+    "width": 820,
+    "height": 380,
+    "sha256": "5ef47f15a475afb69978608484e35522e89f55a1cd9da9f7b9c66d45f4d4a209"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

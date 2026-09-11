@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/invoice-import-grouped-lines-success-v0.3.57.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 924,
+    "height": 370,
+    "sha256": "2e32c734aaf6f6810e289fedb2894c74a469ee451403cbee3eb44ebb7486b014"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "sales-and-receivables/import-invoices.md",
+      "section": "Import Invoices",
+      "altText": "Invoice grid filtered to V1 imported invoices showing grouped-line CSV import results",
+      "purpose": "Review required: confirm whether this image supports Import Invoices: Invoice grid filtered to V1 imported invoices showing grouped-line CSV import results."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "banking-and-cash-management/match-bank-transactions.md",
+  "role": "guide",
+  "objective": "Match pending bank rows to open invoices, open bills, or existing checks before confirming the bank activity.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "banking"
+  ],
+  "fileFacts": {
+    "sha256": "1fe9f8a30d7d467bc84ae2e45c667c8889a4d54a03f84f04d6fe274bb12d716d"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/v1-validation/banking-grid-confirm-ready.png",
+      "section": "Match Bank Transactions",
+      "altText": "Banking grid after applying the classification and preparing to confirm",
+      "purpose": "Review required: confirm whether this image supports Match Bank Transactions: Banking grid after applying the classification and preparing to confirm."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

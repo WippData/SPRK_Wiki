@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "source": "licensing/view-license-information.md",
+  "role": "guide",
+  "objective": "Open the `License` area to review the saved contact details, current license key status, usage table, and purchase link that SPRK currently exposes.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "licensing"
+  ],
+  "fileFacts": {
+    "sha256": "f4e160312e7c6d600a36227b08a6dc133186782f789c1788658d9638ce558074"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/licensing/view-license-information-step-01.png",
+      "section": "View License Information",
+      "altText": "License page showing redacted saved license details, valid license status, fine print, and tenant usage context",
+      "purpose": "Review required: confirm whether this image supports View License Information: License page showing redacted saved license details, valid license status, fine print, and tenant usage context."
+    },
+    {
+      "file": "screenshots/licensing/license-information-step-02.png",
+      "section": "View License Information",
+      "altText": "SPRK License tab showing fine print and tenant usage stats",
+      "purpose": "Review required: confirm whether this image supports View License Information: SPRK License tab showing fine print and tenant usage stats."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "banking-and-cash-management/classify-bank-transactions.md",
+  "role": "guide",
+  "objective": "Assign accounts, splits, vendors, or customers to pending bank activity, then confirm it.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "banking"
+  ],
+  "fileFacts": {
+    "sha256": "906908d06be00cfc0cb24989107fa2b15d9488b764e4e52bb2ba1301bff675f1"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png",
+      "section": "Categorize and Confirm Bank Transactions",
+      "altText": "Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column",
+      "purpose": "Review required: confirm whether this image supports Categorize and Confirm Bank Transactions: Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

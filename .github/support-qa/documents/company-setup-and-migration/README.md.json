@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "source": "company-setup-and-migration/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for set up or move a company and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "company-setup"
+  ],
+  "fileFacts": {
+    "sha256": "5b29df62533d634cdb12a06f584c5cadbc6d83ca5a6214679a38e270ce9f25ee"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract"
+    ]
+  }
+}

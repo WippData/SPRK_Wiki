@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/bill-actions-menu-payment-journal-void.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 190,
+    "height": 170,
+    "sha256": "26eff2eafd5265b10ad8e1c02d552a96fb39a4076a4c573f020ac250675fa016"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "expenses-and-payables/void-or-correct-bills.md",
+      "section": "Void or Correct Bills",
+      "altText": "Bill actions menu showing payment, journal, history, and void options",
+      "purpose": "Review required: confirm whether this image supports Void or Correct Bills: Bill actions menu showing payment, journal, history, and void options."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "source": "plugins/install-and-manage-plugins.md",
+  "role": "guide",
+  "objective": "Preview a trusted plugin, install or upgrade it when SPRK accepts the preview, and manage installed Plugins (Beta).",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "low",
+  "productAreas": [
+    "plugins"
+  ],
+  "fileFacts": {
+    "sha256": "1ffdd1f7ada054b1e9f4034421a82231e6087155fc34192af028d959979188fb"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/plugins/plugins-settings-tab-step-01.png",
+      "section": "Install and Manage Plugins (Beta)",
+      "altText": "Plugins settings tab showing supported plugin types and installed plugin status",
+      "purpose": "Review required: confirm whether this image supports Install and Manage Plugins (Beta): Plugins settings tab showing supported plugin types and installed plugin status."
+    },
+    {
+      "file": "screenshots/v1-validation/plugins-preview-summary-install-gate.png",
+      "section": "Practice and examples",
+      "altText": "Plugin preview summary showing selected bundle, plugin metadata, and install gate",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Plugin preview summary showing selected bundle, plugin metadata, and install gate."
+    },
+    {
+      "file": "screenshots/v1-validation/plugins-preview-validation-ready.png",
+      "section": "Practice and examples",
+      "altText": "Plugin preview status showing the bundle is ready to install",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Plugin preview status showing the bundle is ready to install."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

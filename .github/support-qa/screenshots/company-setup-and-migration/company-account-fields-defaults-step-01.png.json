@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/company-setup-and-migration/company-account-fields-defaults-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1280,
+    "height": 720,
+    "sha256": "6cbb945ca7c3b2117964b484f5c28069a6dd50b714e5c0e36ef191c966f2af79"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "company-setup-and-migration/create-your-first-company.md",
+      "section": "Create Your First Company",
+      "altText": "New company drawer showing account fields and accounting edit permissions",
+      "purpose": "Review required: confirm whether this image supports Create Your First Company: New company drawer showing account fields and accounting edit permissions."
+    },
+    {
+      "document": "company-setup-and-migration/first-week-setup-for-a-new-company.md",
+      "section": "First Week Setup for a New Company",
+      "altText": "New company drawer showing account fields and accounting edit permissions",
+      "purpose": "Review required: confirm whether this image supports First Week Setup for a New Company: New company drawer showing account fields and accounting edit permissions."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

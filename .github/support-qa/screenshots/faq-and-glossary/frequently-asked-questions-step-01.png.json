@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/faq-and-glossary/frequently-asked-questions-step-01.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 1152,
+    "height": 768,
+    "sha256": "71ece021d65d08707bb668688e0b900b543e9201a4e81221214e8dce17c90915"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "faq-and-glossary/frequently-asked-questions.md",
+      "section": "Frequently Asked Questions",
+      "altText": "Frequently Asked Questions expanded in Support How To Guides with common SPRK help topics visible",
+      "purpose": "Review required: confirm whether this image supports Frequently Asked Questions: Frequently Asked Questions expanded in Support How To Guides with common SPRK help topics visible."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

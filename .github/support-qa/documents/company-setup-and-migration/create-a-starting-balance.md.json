@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "company-setup-and-migration/create-a-starting-balance.md",
+  "role": "guide",
+  "objective": "Choose how a new bank or credit-card account should begin its first reconciliation: start it at zero, or use a journal entry to establish its opening balance.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "company-setup"
+  ],
+  "fileFacts": {
+    "sha256": "36d684b7d9237293e0be9791033145e7e25e3130e0f980629696edc22f047325"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/reconciliation/reconcile-account-selection-audit-step-01.png",
+      "section": "Create a Starting Balance",
+      "altText": "Reconciliation account selection for starting balance context",
+      "purpose": "Review required: confirm whether this image supports Create a Starting Balance: Reconciliation account selection for starting balance context."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

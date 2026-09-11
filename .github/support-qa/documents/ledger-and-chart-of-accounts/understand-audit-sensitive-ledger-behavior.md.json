@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "ledger-and-chart-of-accounts/understand-audit-sensitive-ledger-behavior.md",
+  "role": "guide",
+  "objective": "Choose a history-preserving correction path when posted ledger, journal, account, or bank-linked activity should not be overwritten.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "concept",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "accounts-journals"
+  ],
+  "fileFacts": {
+    "sha256": "2f54f4464961d8c0d563f885bf332eeaf5bef50668c2bf7224b4d03344602857"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png",
+      "section": "Understand Audit-Sensitive Ledger Behavior",
+      "altText": "New journal entry drawer for reviewing ledger posting fields",
+      "purpose": "Review required: confirm whether this image supports Understand Audit-Sensitive Ledger Behavior: New journal entry drawer for reviewing ledger posting fields."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "screenshots"
+    ]
+  }
+}

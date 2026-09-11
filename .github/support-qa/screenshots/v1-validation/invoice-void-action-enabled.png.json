@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "file": "screenshots/v1-validation/invoice-void-action-enabled.png",
+  "usageStatus": "referenced",
+  "fileFacts": {
+    "format": "png",
+    "width": 215,
+    "height": 185,
+    "sha256": "cffe2c2e06482e6d49abd77f2059d3d59d3da9f1613b6afb0011edbcfeb0fc36"
+  },
+  "capturePlan": {
+    "completeness": "review-required",
+    "reason": "The original navigation and capture steps have not been independently verified.",
+    "requiredDetails": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "current-product-check"
+    ]
+  },
+  "uses": [
+    {
+      "document": "sales-and-receivables/understand-invoice-general-ledger-impact.md",
+      "section": "Practice and examples",
+      "altText": "Invoice row action menu with Void invoice enabled on an eligible invoice",
+      "purpose": "Review required: confirm whether this image supports Practice and examples: Invoice row action menu with Void invoice enabled on an eligible invoice."
+    },
+    {
+      "document": "sales-and-receivables/void-or-correct-invoices.md",
+      "section": "Void or Correct Invoices",
+      "altText": "Invoice row action menu with Void invoice enabled on an eligible invoice",
+      "purpose": "Review required: confirm whether this image supports Void or Correct Invoices: Invoice row action menu with Void invoice enabled on an eligible invoice."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; the bitmap and each instructional use require review or recapture.",
+    "knownGaps": [
+      "capture-plan",
+      "navigation-path",
+      "interaction-steps",
+      "expected-ui",
+      "capture-provenance",
+      "privacy-review",
+      "visual-relevance-review",
+      "current-product-check"
+    ]
+  }
+}

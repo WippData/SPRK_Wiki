@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "source": "company-setup-and-migration/understand-import-and-migration-boundaries.md",
+  "role": "guide",
+  "objective": "See which records each import can bring into SPRK and what to review afterward.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "task",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "company-setup"
+  ],
+  "fileFacts": {
+    "sha256": "d1e8ab51f55fc621476abf2a71bca52adef911ed8ae73b40ddb0cf5625d7f8e4"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png",
+      "section": "What Each Import Can Bring Into SPRK",
+      "altText": "Import Wizard showing starter templates, download templates action, and upload guidance",
+      "purpose": "Review required: confirm whether this image supports What Each Import Can Bring Into SPRK: Import Wizard showing starter templates, download templates action, and upload guidance."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "runtime-walkthrough",
+      "screenshots"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": "sales-and-receivables/README.md",
+  "role": "topic",
+  "objective": "Help customers find guidance for customers, invoices, and payments and choose the right task.",
+  "audiences": [
+    "business-owner",
+    "bookkeeper",
+    "accountant"
+  ],
+  "contentType": "landing",
+  "toneProfile": "sprk-friendly-accountant-v1",
+  "accountingRisk": "high",
+  "productAreas": [
+    "customers-invoices-payments"
+  ],
+  "fileFacts": {
+    "sha256": "2661c11df587a34c0f3ecb76c6e471aff79786cb111b351bc95679ab251ca5b8"
+  },
+  "sourceEvidence": [],
+  "walkthroughs": [],
+  "screenshotUses": [
+    {
+      "file": "screenshots/sales-and-receivables/items-item-number-sku-step-01.png",
+      "section": "Customers, invoices, and payments",
+      "altText": "Items list showing Item Number / SKU setup for invoice lines",
+      "purpose": "Review required: confirm whether this image supports Customers, invoices, and payments: Items list showing Item Number / SKU setup for invoice lines."
+    }
+  ],
+  "verification": {
+    "status": "needs-review",
+    "reason": "Initial metadata baseline; this document has not yet been verified against current product evidence.",
+    "requiredChecks": [
+      "objective",
+      "audience",
+      "tone",
+      "frontend-source",
+      "backend-source",
+      "accounting-contract",
+      "screenshots"
+    ]
+  }
+}
