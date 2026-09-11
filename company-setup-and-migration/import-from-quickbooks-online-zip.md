@@ -1,14 +1,16 @@
 # Import from QuickBooks Online ZIP
 
+<!-- Screenshot status: Review needed -->
+
 ![Import Wizard showing accepted import files and data-type mapping](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
 
 Create a company in SPRK by importing a QuickBooks Online ZIP export from the Companies page.
 
-## When To Use This
+## When to use this
 
-Use this workflow when you already exported company data from QuickBooks Online and want SPRK to create or import the company from that ZIP package.
+Use this guide when you already exported company data from QuickBooks Online and want SPRK to create or import the company from that ZIP package.
 
-## Before You Start
+## Before you start
 
 - You can open `Companies` from the left sidebar.
 - You have a QuickBooks Online export saved as a `.zip` file.
@@ -25,7 +27,7 @@ Use this workflow when you already exported company data from QuickBooks Online 
 7. If needed, select the new company so it becomes the active company across the app.
 8. Review imported records before moving into daily work, especially chart of accounts, customers, and vendors.
 
-## What Happens Next
+## What happens next
 
 SPRK imports the QuickBooks Online ZIP and adds the imported company to the companies list.
 

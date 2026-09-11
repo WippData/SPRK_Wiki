@@ -1,14 +1,16 @@
 # Sign In to SPRK
 
+<!-- Screenshot status: Review needed -->
+
 ![SPRK application shell after sign-in](../screenshots/getting-started/sidebar-and-main-navigation-step-01.png)
 
 Enter the app from the local sign-in screen, or complete the startup choice flow if this is the first time the workspace is being opened.
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need to enter the SPRK desktop app and understand the difference between a first-time startup path and a returning login.
+Use this guide when you need to enter the SPRK desktop app and understand the difference between a first-time startup path and a returning login.
 
-## Before You Start
+## Before you start
 
 - The SPRK desktop app is open.
 
@@ -23,13 +25,9 @@ Use this workflow when you need to enter the SPRK desktop app and understand the
 4. If the startup flow asks how much support you want, choose whether to start with tips or skip them.
 5. Continue into the application after the company is created or selected.
 
-## What Happens Next
+## What happens next
 
 You enter SPRK and land in the main application shell with sidebar navigation and the app header available.
-
-- Signing in does not create a journal entry.
-- Choosing a startup path does not post to the general ledger by itself.
-- A ledger impact only occurs later if you complete accounting workflows that create or confirm transactions.
 
 
 ## Related

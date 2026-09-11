@@ -7,13 +7,13 @@ Print customer-facing invoice copies and review invoice template settings before
 
 ![Invoice Template modal showing Payment Information choices](../screenshots/sales-and-receivables/invoice-template-payment-information-2026-07.png)
 
-## When To Use This
+## When to use this
 
 - You need to print or save customer-facing invoice output.
 - You need to review the company-wide invoice print layout.
 - You need to confirm whether SKU, sales tax, quantities, prices, dates, or totals should appear.
 
-## Before You Start
+## Before you start
 
 - Confirm the active company.
 - Confirm the invoice number, customer, date, total, and balance.
@@ -54,7 +54,7 @@ Print customer-facing invoice copies and review invoice template settings before
 
 Printing and template review change the standard customer invoice output. They do not record a payment, change invoice balance, or edit ledger posting by themselves. The current settings modal does not expose a document-template selector; the visible controls adjust the standard customer invoice layout.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

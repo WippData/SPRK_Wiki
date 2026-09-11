@@ -1,10 +1,12 @@
 # Use the Plugins (Beta) Settings Tab
 
+<!-- Screenshot status: Review needed -->
+
 ![Plugins settings tab showing supported plugin types and installed plugin status](../screenshots/plugins/plugins-settings-tab-step-01.png)
 
 Use the `Plugins` tab to review installed Plugins (Beta), refresh their status, and understand what each visible plugin state means.
 
-## Quick Reference
+## Quick reference
 
 | Area or State | Meaning | Where It Matters |
 |---|---|---|
@@ -15,7 +17,7 @@ Use the `Plugins` tab to review installed Plugins (Beta), refresh their status, 
 | `Enabled` | The plugin is available for use where SPRK exposes its pages or reports. | Check navigation and Reports after refreshing. |
 | `Disabled` | The plugin remains installed but is not available for normal use. | Enable it before expecting pages or reports. |
 | `Blocked`, `Invalid`, or `Requires re-enable` | SPRK needs attention before the plugin should be treated as ready. | Resolve the visible message before using the plugin. |
-| Page availability message | Explains whether the plugin can add visible pages or report surfaces. | Use it when expected plugin pages do not appear. |
+| Page availability message | Explains whether the plugin can add pages or reports. | Use it when expected plugin pages do not appear. |
 
 ## Details
 
@@ -25,7 +27,7 @@ Opening or refreshing the `Plugins` tab is review-only. Installing, enabling, di
 
 Installed plugin cards can show lifecycle states such as `Enabled`, `Disabled`, `Requires re-enable`, `Blocked`, or `Invalid`, and page-visibility states such as available, pilot-only, hidden by capability, or no visible page.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

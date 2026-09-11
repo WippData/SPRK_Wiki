@@ -1,17 +1,19 @@
 # Month-End Review Checklist
 
+<!-- Screenshot status: Review needed -->
+
 ![Checklists page with close-style task templates](../screenshots/checklists-and-period-end-work/use-checklists-step-01.png)
 
-Use this month-end review workflow to move through banking, reconciliation, receivables, payables, reports, and backup/export steps before you treat a period as reviewed.
+Use this month-end checklist to review banking, reconciliation, receivables, payables, reports, and backups before you finish the period.
 
-## When To Use This
+## When to use this
 
 Use this page when you are closing a month, reviewing a client file, preparing financial statements, or checking whether routine accounting work is complete before reporting.
 
-## Before You Start
+## Before you start
 
 - The correct company is active.
-- Bank and credit card activity has been imported or entered through the normal workflows.
+- Bank and credit-card activity for the period has been imported or entered.
 - Customer invoices, payments, vendor bills, checks, and journal entries are entered through the source pages that fit the work.
 - You know the month or period you want to review.
 
@@ -52,15 +54,13 @@ Use this page when you are closing a month, reviewing a client file, preparing f
 11. Use `Checklists` to track review tasks that should be repeated every month.
 12. Review backup/export expectations for the company before major cleanup, import, or transfer work.
 
-## What Happens Next
+## What happens next
 
 The month-end review gives you a repeatable path for finding missing activity, wrong classifications, open AR/AP items, reconciliation issues, and report balances that need attention.
 
-- Reviewing a checklist does not post accounting activity.
-- Reports read posted data; they do not correct balances by themselves.
-- Corrections should be made in the workflow that owns the original transaction when possible.
+- Reports show posted data; correct an issue from the page that owns the original transaction when possible.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

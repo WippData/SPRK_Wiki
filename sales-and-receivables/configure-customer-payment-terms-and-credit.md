@@ -1,21 +1,23 @@
 # Configure Customer Payment Terms and Credit
 
+<!-- Screenshot status: Review needed -->
+
 ![Payments and Credit configuration modal for a customer](../screenshots/sales-and-receivables/customer-payments-credit-step-01.png)
 
 Set customer-level payment and credit defaults before invoicing so due dates, receivables follow-up, and internal review expectations stay more consistent.
 
-## When To Use This
+## When to use this
 
 Use this page when you want a customer record to carry standard payment terms, a visible credit review status, or a credit limit before your team starts creating invoices.
 
-## When To Use This Setup
+## When to use this Setup
 
 - Set customer terms when most invoices for the customer should start from the same due-date pattern.
 - Use company `Invoice defaults` when most new invoices across the company should start from the same terms before customer-specific setup is applied.
 - Set a credit status when your team needs a visible reminder to pause, review, or use a stricter collection approach before opening invoices.
 - Set a credit limit when you want the customer record to show a reference amount for receivables review and follow-up.
 
-## Before You Start
+## Before you start
 
 - You can open `Customers`.
 - The customer record already exists, or you are ready to create it.
@@ -39,7 +41,7 @@ Use this page when you want a customer record to carry standard payment terms, a
 9. When creating an invoice later, review the filled `Payment Terms` and `Due Date` instead of assuming they are always correct for that specific job.
 10. Use the customer row action for `AR Aging` when you need to review open balances, terms, and overdue timing for that customer after invoices are posted.
 
-## What Happens Next
+## What happens next
 
 The customer record keeps payment and credit defaults together, new invoices can start with the customer's payment terms already filled in, and receivables follow-up stays easier to review by customer.
 

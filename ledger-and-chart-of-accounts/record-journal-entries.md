@@ -7,11 +7,11 @@ Create balanced manual journal entries in the `Ledger` page, optionally create l
 
 ![New Journal Entry drawer showing date, memo, account lines, debit and credit columns, totals, and reversing-entry controls](../screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need to record a manual accountant adjustment directly in the ledger instead of using invoices, bills, checks, payments, or banking.
+Use this guide when you need to record a manual accountant adjustment directly in the ledger instead of using invoices, bills, checks, payments, or banking.
 
-## Before You Start
+## Before you start
 
 - An active company is selected.
 - The accounts you need already exist in `Chart of Accounts`.
@@ -66,7 +66,7 @@ Use a source workflow instead when the activity belongs to a customer invoice, c
 
 ![Journal Entries Previous and Next pagination controls](../screenshots/ledger-and-chart-of-accounts/journal-entries-pagination-controls-2026-07.png)
 
-## What Happens Next
+## What happens next
 
 A balanced journal entry is posted to the ledger and appears in the journal-entry list.
 
@@ -83,14 +83,14 @@ A balanced journal entry is posted to the ledger and appears in the journal-entr
 - Rows released by the void no longer carry that reconciliation session's reconciled, statement, or cleared markers. Review them in the next appropriate reconciliation period.
 - Canceling the void confirmation leaves the journal create or edit uncommitted.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
 | `Void affected reconciliation?` appears | The journal touches an affected settlement account on or before posted reconciliation history | Cancel unless the correction should preserve the old session as `Voided`; use `Void and save` only after reviewing the statement impact |
 | A search result was not visible on the first unfiltered screen | Whether the text filter has been applied to the full result set | Run the search, then use `Previous` or `Next` when the result spans multiple pages |
 
-## Practice And Examples
+## Practice and examples
 
 Use the practice file and screenshots to review balanced journal-entry import before relying on imported entries for close work.
 
@@ -104,7 +104,7 @@ The import preview shows parsed rows, failures, and debit and credit totals befo
 
 ## Related
 
-- [Choose between journal entries and source workflows](./when-to-use-journal-entries-vs-source-forms.md)
+- [When to use a journal entry](./when-to-use-journal-entries-vs-source-forms.md)
 - [Common accountant corrections](./common-accountant-corrections.md)
 - [Set up and use dimensions or classes](../company-administration/set-up-and-use-dimensions-or-classes.md)
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)

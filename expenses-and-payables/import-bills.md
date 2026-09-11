@@ -1,16 +1,18 @@
 # Import Bills
 
+<!-- Screenshot status: Review needed -->
+
 Import grouped vendor bill rows from a spreadsheet or CSV after reviewing vendor, line, and account-routing details.
 
 ![Bill grid filtered to V1 imported bills showing grouped-line CSV import results](../screenshots/v1-validation/bill-import-grouped-lines-success-v0.3.57.png)
 
-## When To Use This
+## When to use this
 
 - You already have grouped vendor bill rows in a spreadsheet or CSV.
 - You want SPRK to create bill documents after preview.
 - You need to review whether imported bills should stay open or be treated as paid-now.
 
-## Before You Start
+## Before you start
 
 - Confirm the active company.
 - Confirm vendors and line accounts are ready for the file.
@@ -46,7 +48,7 @@ SPRK creates bill documents from grouped rows after preview. `Pay from` follows 
 
 Imports that try to mix payables control routing and settlement-account routing for the same bill are rejected instead of silently guessing the posting path.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -56,7 +58,7 @@ Imports that try to mix payables control routing and settlement-account routing 
 | A line posts to the wrong account | `Line Account` and fallback `Default Expense Account` | Correct the account values before confirming |
 | The import reports duplicate bill numbers | Existing bill numbers and file bill numbers | Resolve duplicate numbers before confirming |
 
-## Practice And Examples
+## Practice and examples
 
 - Practice file: [bill-import-grouped-lines.csv](../sample-files/practice/bill-import-grouped-lines.csv)
 

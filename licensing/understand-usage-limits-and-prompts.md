@@ -1,10 +1,12 @@
 # Understand Usage Limits And Prompts
 
+<!-- Screenshot status: Review needed -->
+
 Use the `License` area to review the current usage table and understand which prompts are informational versus the ones tied to adding more real companies.
 
 ![License page showing the Tenant Stats usage table and visibility note](../screenshots/licensing/usage-limits-step-01.png)
 
-## Quick Reference
+## Quick reference
 
 | Item | Meaning | Where It Matters |
 |---|---|---|
@@ -19,11 +21,11 @@ Use the `License` area to review the current usage table and understand which pr
 
 Open `License` from the `System` section to review the saved license status, purchase link when shown, fine print, and `Tenant Stats` table.
 
-Usage values are visibility information. They do not post to the general ledger, change balances, or create accounting entries.
+Usage values help you understand the current license and company allowance.
 
 License prompts affect setup and access decisions. If you are creating another real company, review the company-creation workflow together with the licensing page.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

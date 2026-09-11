@@ -1,16 +1,18 @@
-# Receive Invoice Payments
+# Record an Invoice Payment
+
+<!-- Screenshot status: Review needed -->
 
 ![Receive payment drawer opened from an open invoice](../screenshots/sales-and-receivables/receive-invoice-payment-drawer-step-01.png)
 
-Record customer payments from the invoice list so SPRK updates the balance and posts the cash or bank side of the transaction, then review payment history and linked journals when you need the audit trail.
+Record a customer payment so SPRK reduces the amount owed and updates the invoice status. Payment history and linked entries remain available for later review.
 
 <!-- Last validated against SPRK source: 2026-08-27 -->
 
-## When To Use This
+## When to use this
 
-Use this workflow when a customer has paid an invoice and you want SPRK to reduce the receivable and update the invoice status correctly.
+Use this guide when a customer has paid an invoice and you want SPRK to reduce the receivable and update the invoice status correctly.
 
-## Before You Start
+## Before you start
 
 - The invoice already exists.
 - The invoice is not already fully paid.
@@ -29,7 +31,7 @@ Use this workflow when a customer has paid an invoice and you want SPRK to reduc
    - `Deposit to`
    - `Reference #`, if needed
    - `Memo`
-5. If the settlement account is missing, use the inline account-create affordance from `Deposit to` when it is available.
+5. If the account is missing, use the add-account option from `Deposit to` when it is available.
    - Create only the bank, cash, or credit-card settlement account you actually want for this payment.
    - Inline account creation adds an account choice; it does not record the payment until you save the payment workflow.
 6. Select `Record payment`.
@@ -42,7 +44,7 @@ Use this workflow when a customer has paid an invoice and you want SPRK to reduc
 
 When the customer payment first appears as a pending money-in row in `Banking`, use `Match bank transaction` when available. SPRK can suggest open invoices, show the candidate number, customer, dates, open amount, bank amount, and difference, then use `Receive Payment & Confirm` or `Receive Partial & Confirm` when the bank amount is eligible. Overpayments are not actionable from that Banking match path.
 
-## What Happens Next
+## What happens next
 
 SPRK records the payment, reduces the invoice balance, and updates the status:
 
@@ -54,10 +56,9 @@ Customer payment terms and credit settings can help you review receivables befor
 
 - Recording a payment reduces Accounts Receivable and increases the selected deposit account according to the invoice payment workflow.
 - Creating a `Deposit to` account inline only changes the available settlement-account choices. The payment itself is posted only when you record it.
-- Viewing payment history or linked journal entries does not post by itself.
 - Reversing a payment-linked journal through a supported source-document confirmation can deactivate the payment application and reopen the invoice balance.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -67,7 +68,7 @@ Customer payment terms and credit settings can help you review receivables befor
 | `Record Payment` is unavailable | Whether the invoice is already paid or has no remaining balance | Review `View payment history` before attempting a correction |
 | The same receipt appears to have been recorded twice | Whether you recorded it here and again from a pending Banking row | Stop and review payment history and linked journals before reversing the duplicate |
 
-## Practice And Examples
+## Practice and examples
 
 Use the practice file and screenshots to compare recording a payment, matching a bank deposit, and reviewing payment history after the invoice balance changes.
 

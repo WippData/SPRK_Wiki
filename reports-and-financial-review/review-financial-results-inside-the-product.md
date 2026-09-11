@@ -1,4 +1,6 @@
-# Review Financial Results Inside the Product
+# Review Financial Results
+
+<!-- Screenshot status: Review needed -->
 
 ![Populated General Ledger report with account groups and rows](../screenshots/reports-and-financial-review/general-ledger-report-populated-step-01.png)
 
@@ -6,11 +8,11 @@
 
 Run financial reports in SPRK as a practical review sequence: scan account balances, review statements, drill into unusual activity, and decide which source workflow should hold any correction.
 
-## When To Use This
+## When to use this
 
-Use this workflow when you want to review company results by period, prepare month-end reporting, investigate unusual balances, or check whether AR, AP, banking, and ledger activity agree.
+Use this guide when you want to review company results by period, prepare month-end reporting, investigate unusual balances, or check whether AR, AP, banking, and ledger activity agree.
 
-## Before You Start
+## Before you start
 
 - You are signed in to SPRK with the correct active company selected.
 - The transactions and journal entries you expect to review are already posted.
@@ -45,20 +47,18 @@ Use this workflow when you want to review company results by period, prepare mon
    - Supported statement cards, subtotals, totals, and rows can drill into grouped supporting detail, not only single-account leaf rows.
    - Grouped drilldowns can represent account scopes such as `Income`, `Expense`, `Net Income`, `Assets`, `Liabilities`, `Equity`, or `Net change in cash`.
 
-## What Happens Next
+## What happens next
 
 You can review current report totals and detailed lines directly in SPRK for the selected company and period.
 
 - Report totals reflect posted activity already stored in SPRK.
-- Running or rerunning the report does not create, reverse, or reclassify any journal entry.
-- Compare-period and grouping views reorganize the display only; they do not change source transactions.
-- Account-code or account-name ordering changes display consistency only; it does not change balances.
-- Running a reconciliation report reads a posted reconciliation period for the selected account; it does not reopen or change that reconciliation.
-- Filtering `Expense by Vendor` by `1099` changes which vendors are included in the review; it does not create forms, file taxes, or change the vendor records by itself.
-- Plugin-backed report output appears only when the installed plugin is enabled, compatible with the report surface, and accepted by SPRK.
+- Compare-period, grouping, and account-order choices change how the results are displayed.
+- A reconciliation report reads the posted period for the selected account.
+- The `1099` filter in `Expense by Vendor` narrows the review to vendors marked for 1099 reporting; it is not a tax-filing workflow.
+- Plugin-backed report output appears only when the installed plugin is enabled, its report is compatible, and SPRK accepts the result.
 
 
-## Practice And Examples
+## Practice and examples
 
 Use the practice file and screenshots to review payables aging and tax-form mapping without implying tax filing or compliance submission.
 
@@ -68,7 +68,7 @@ Use the practice file and screenshots to review payables aging and tax-form mapp
 
 ![Tax form Schedule C review report](../screenshots/v1-validation/reports-tax-form-schedule-c-review.png)
 
-Aging and tax-form views are in-product review tools. They do not file returns, submit agency forms, or change vendor or customer setup by themselves.
+Aging and tax-form views are review tools; SPRK does not file or submit tax forms from these reports.
 
 ## Related
 

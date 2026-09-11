@@ -1,5 +1,7 @@
 # Create Your First Company
 
+<!-- Screenshot status: Review needed -->
+
 ![New company drawer showing account fields and accounting edit permissions](../screenshots/company-setup-and-migration/company-account-fields-defaults-step-01.png)
 
 ![Required account fields selector showing Code and Name choices](../screenshots/company-setup-and-migration/required-account-fields-selector-step-02.png)
@@ -10,11 +12,11 @@ Create a company from the Companies tab and set the core accounting options that
 
 <!-- Last validated against SPRK source: 2026-08-27 -->
 
-## When To Use This
+## When to use this
 
-Use this workflow when you want to start a new company in SPRK without importing it from another accounting system.
+Use this guide when you want to start a new company in SPRK without importing it from another accounting system.
 
-## Before You Start
+## Before you start
 
 - You can open `Companies` from the left sidebar.
 - You have permission to create a company in your current workspace.
@@ -57,11 +59,11 @@ Use this workflow when you want to start a new company in SPRK without importing
 13. If the company will use invoices or bills, reopen it from `Companies` and select `Edit`. Under `Field setup`, select `Configure` and set `Default Accounts Receivable` and `Default Accounts Payable`. These account defaults are available after creation, not in the new-company form.
 14. Review printed-invoice details such as company contact fields and `Payment Instructions` after the company exists.
 
-## What Happens Next
+## What happens next
 
 The new company is added to the `Companies` table and becomes available as the active company across the app.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

@@ -7,11 +7,11 @@ Use Grid Edit when you need to clean up repeated list data faster than opening o
 
 ![Column preferences dialog showing drag handles and move controls for supported list columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you want to make the same kind of careful cleanup across several records, especially after an import, during list cleanup, or while reviewing a table before individual drawer edits would be slower.
+Use this guide when you want to make the same kind of careful cleanup across several records, especially after an import, during list cleanup, or while reviewing a table before individual drawer edits would be slower.
 
-## Before You Start
+## Before you start
 
 - You can open a supported list page such as `Items`, `Customers`, `Vendors`, `Checks`, or a supported `Banking` table.
 - The active company shown in the sidebar is the company you intend to review before you make changes.
@@ -72,18 +72,18 @@ Banking uses Grid Edit for transaction-review cleanup, but Banking also has post
 - If the Banking changed-cell counter is active, apply or discard those Grid Edit changes before running bulk account, vendor, confirm, delete, or select-categorized actions.
 - Applying Grid Edit changes saves the draft cell edits; confirming a bank transaction is still the step that posts or links the ledger result.
 
-## What Happens Next
+## What happens next
 
 You can review and apply repeated list updates from one table instead of opening each record individually.
 
 - Entering or reviewing draft grid changes does not post to the general ledger by itself.
 - Applying list edits updates the saved record data for that page, not a new journal-entry workflow.
-- The `Grid Edit save regardless` preference changes this navigation boundary: when it is on, SPRK saves unapplied Grid Edit changes during navigation instead of showing the prompt. Leave it off when you want the explicit `Discard`, `Cancel`, or `Save` decision.
+- The `Grid Edit save regardless` preference changes this behavior: when it is on, SPRK saves unapplied Grid Edit changes during navigation instead of showing the prompt. Leave it off when you want the explicit `Discard`, `Cancel`, or `Save` decision.
 - On Banking, applying draft Grid Edit changes prepares selected rows for review, but it does not replace the separate transaction confirmation step.
 - The accounting impact still depends on the fields and downstream workflows tied to the records you changed.
 - Banking confirmation remains a separate posting workflow; apply any draft grid edits before using bulk Banking actions such as confirm selected.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -93,7 +93,7 @@ You can review and apply repeated list updates from one table instead of opening
 ## Related
 
 - [Use the Preferences tab](../preferences-and-personalization/use-the-preferences-tab.md)
-- [Understand personalization boundaries and saved behavior](../preferences-and-personalization/understand-personalization-boundaries-and-saved-behavior.md)
+- [Understand which preferences are saved](../preferences-and-personalization/understand-personalization-boundaries-and-saved-behavior.md)
 - [Manage items for invoicing](../sales-and-receivables/manage-items-for-invoicing.md)
 - [Manage customers](../sales-and-receivables/manage-customers.md)
 - [Manage vendors](../expenses-and-payables/manage-vendors.md)

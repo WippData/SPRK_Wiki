@@ -1,16 +1,18 @@
 # Review and Edit Invoices
 
+<!-- Screenshot status: Review needed -->
+
 Open existing invoices, review invoice actions, and handle posted-save prompts before changing invoice details.
 
 ![Invoice row actions showing payment, linked journal, payment history, and void actions](../screenshots/sales-and-receivables/invoice-payment-history-void-actions-step-01.png)
 
-## When To Use This
+## When to use this
 
 - You need to review an existing invoice from the invoice list.
 - You need to update invoice details.
 - SPRK shows a posted-save strategy before changing an invoice that already posted.
 
-## Before You Start
+## Before you start
 
 - Confirm the active company.
 - Find the invoice number, customer, date, status, total, and balance.
@@ -45,7 +47,7 @@ Open existing invoices, review invoice actions, and handle posted-save prompts b
 
 Reopened invoices can be reviewed in view mode, updated in edit mode, reviewed through payment history, or corrected through supported source-document actions. Posted invoice saves follow the strategy you choose when SPRK prompts, and `Edit existing journal entry` can be unavailable when company policy or prior adjustment history does not allow it.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

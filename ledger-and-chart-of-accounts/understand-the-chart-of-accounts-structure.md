@@ -1,16 +1,18 @@
 # Understand the Chart of Accounts Structure
 
+<!-- Screenshot status: Review needed -->
+
 Review how SPRK organizes accounts by code, parent-child hierarchy, type, subtype, posting role, control-account role, and active status so you can maintain a usable account list without changing posted balances.
 
 ![Chart of Accounts page showing Posting and Control filters plus Nonposting and Control columns](../screenshots/ledger-and-chart-of-accounts/chart-of-accounts-structure-step-01.png)
 
 ![New Account drawer showing Nonposting account and Control account switches](../screenshots/ledger-and-chart-of-accounts/account-role-switches-step-01.png)
 
-## When To Use This
+## When to use this
 
 Use this article when you need to understand how accounts are grouped, created, edited, imported, exported, or deactivated in the `Chart of Accounts` page.
 
-## Before You Start
+## Before you start
 
 - An active company is selected.
 - You know whether you are adding a brand-new account, reorganizing an existing one, or reviewing the current structure.
@@ -51,14 +53,13 @@ Use this article when you need to understand how accounts are grouped, created, 
    - Active accounts remain available for normal use.
    - Deleting an account from this page sets it inactive instead of removing its history.
 
-## What Happens Next
+## What happens next
 
 You can organize the account list into a clearer structure and keep accounts available for downstream workflows.
 
-- Creating, editing, importing, exporting, or deactivating accounts from `Chart of Accounts` does not post a journal entry by itself.
 - These actions change account setup and availability, not existing account balances.
-- Export produces a file only and does not change ledger data.
-- `Nonposting account` keeps a parent or summary account visible in the chart but removes it from current posting-oriented account pickers unless the specific surface explicitly supports nonposting accounts.
+- `Export` downloads the current account list.
+- `Nonposting account` keeps a parent or summary account visible in the chart but removes it from posting-oriented account lists unless that page specifically allows nonposting accounts.
 - `Control account` marks an account as subledger controlled and can make it unavailable for new manual journal-entry posting. It is a posting restriction, not an inactive or deleted account.
 - Name-only account presentation changes how accounts are shown and sorted in supported lists. It does not delete stored account codes or change balances.
 

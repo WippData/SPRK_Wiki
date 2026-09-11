@@ -30,10 +30,20 @@ Read the accounting contract before changing guidance about journals, invoices, 
 - Replace an outdated screenshot in place when it serves the same article and purpose; preserving the file path preserves public links.
 - Use a new, descriptive filename under the relevant `screenshots/` category only for a genuinely new view.
 - Crop out Codex, the desktop, other apps, private company data, and unrelated window chrome. Run `python3 scripts/screenshot_quality_check.py` before handoff.
+- Every published guide with an image must include one `<!-- Screenshot status: Current -->` or `<!-- Screenshot status: Review needed -->` marker. Keep an existing `Current` marker only when the current app has been checked. New or unverified screenshots belong in the review queue; run `python3 scripts/screenshot_status_report.py` to list it.
+- Screenshot QA requires Pillow. If the default Python does not have it, install the tested version with `python3 -m pip install -r scripts/requirements-screenshots.txt` or use an existing Python environment with that version.
 
 ## URL compatibility
 
 Existing Markdown and image paths are public URLs. Do not rename, move, case-change, or delete them without explicit user permission. Prefer editing the existing article. When a genuinely new page is necessary, add it and link it from the relevant section index. If the user explicitly approves a future URL change, the same change must also preserve the old URL through a compatibility page or redirect.
+
+## Support index metadata
+
+`.github/support-index.json` is the strict publication allowlist and shared navigation contract for the website and in-app help. It owns topic and guide order, customer-facing labels and summaries, search aliases, visibility, homepage fallback groups, and generated guide-footer behavior. Array order is display order. Keep stable guide IDs equal to the source path without `.md`, and do not add a guide to the website or in-app help unless it is listed in this file.
+
+`.github/support-index.schema.json` documents the supported contract. Topic visibility supports `website`, `inApp`, `search`, and `topicDirectory`; guide visibility supports `website`, `inApp`, `search`, and `topicIndex`. Omitted visibility values mean visible. Authored `Related` sections remain part of each Markdown guide; the shared site footer may add previous/next, topic, home, and contact links without replacing those article-specific links.
+
+The root `README.md` is the readable fallback for the support homepage. Its featured headings and guide links must match `home.featuredGroups` exactly. Topic `README.md` files are readable fallbacks for the topic pages. The practice-file README is for direct repository use and stays outside publication metadata, navigation, and search. Individual practice files remain reachable from the guides that explain them.
 
 ## Validation dates
 
@@ -47,4 +57,5 @@ Before handoff, run:
 git diff --check
 python3 scripts/wiki_qa.py
 python3 scripts/screenshot_quality_check.py
+python3 scripts/screenshot_status_report.py
 ```

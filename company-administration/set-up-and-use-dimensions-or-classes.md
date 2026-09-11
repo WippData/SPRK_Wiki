@@ -1,12 +1,14 @@
 # Set Up and Use Dimensions or Classes
 
+<!-- Screenshot status: Review needed -->
+
 Create company-level dimensions, such as a `Class`, `Project`, or `Department`, then apply those values to journal-entry lines for cleaner review and filtering.
 
 ![Configure dimensions modal showing an enabled Class dimension with one allowed value](../screenshots/company-administration/setup-dimensions-classes-step-01.png)
 
 ![New Journal Entry drawer showing the Class dimension selector on a journal line](../screenshots/ledger-and-chart-of-accounts/journal-entry-dimensions-classes-step-01.png)
 
-## When To Use This
+## When to use this
 
 Use dimensions when your team needs to review ledger activity by a tracking label that is not a general ledger account.
 
@@ -18,7 +20,7 @@ Common examples include:
 
 Do not use dimensions to replace the chart of accounts. Use accounts for financial statement classification, then use dimensions for the extra reporting view.
 
-## Before You Start
+## Before you start
 
 - You can open `Companies` from the left sidebar.
 - The company you want to configure is selected or visible in the companies list.
@@ -63,11 +65,11 @@ Do not use dimensions to replace the chart of accounts. Use accounts for financi
 
 ## What This Changes
 
-Saving company dimensions changes the fields available in supported workflows. It does not create a journal entry by itself.
+Saving company dimensions makes those fields available on supported transaction and report pages.
 
 When a journal entry is posted with dimensions, the selected dimension values are stored on the related journal lines. Ledger review can then show a `Dimensions` column and filters such as `Class Type` and `Class Value` when dimensions are enabled.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

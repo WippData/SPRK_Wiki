@@ -1,14 +1,16 @@
 # Import from QuickBooks Desktop IIF
 
+<!-- Screenshot status: Review needed -->
+
 ![Import Wizard showing accepted IIF and spreadsheet file formats](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
 
 Create or import a company in SPRK from a QuickBooks Desktop IIF export using the Companies page.
 
-## When To Use This
+## When to use this
 
-Use this workflow when your source data comes from QuickBooks Desktop and you exported it as an `.iif` file.
+Use this guide when your source data comes from QuickBooks Desktop and you exported it as an `.iif` file.
 
-## Before You Start
+## Before you start
 
 - You can open `Companies` from the left sidebar.
 - You exported the source data from QuickBooks Desktop as an `.iif` file.
@@ -30,7 +32,7 @@ Use this workflow when your source data comes from QuickBooks Desktop and you ex
    - A final `City, ST ZIP` line can populate city, state, and postal code when it is parseable.
    - Clean up any customer whose address did not follow that pattern before sending customer-facing invoices.
 
-## What Happens Next
+## What happens next
 
 SPRK imports the QuickBooks Desktop IIF file and adds the resulting company to the companies list.
 

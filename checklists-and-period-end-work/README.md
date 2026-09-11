@@ -1,12 +1,15 @@
-# Checklists and Period-End Work
+# Checklists and month-end
 
-![Checklists page with close-style task templates](../screenshots/checklists-and-period-end-work/use-checklists-step-01.png)
+Use repeatable checklists to track month-end and other routine accounting work.
 
-Create checklist templates, start checklist runs for a period, track completion, and follow a month-end review path without using the checklist itself as a posting workflow.
+![Checklists page with reusable task templates](../screenshots/checklists-and-period-end-work/use-checklists-step-01.png)
 
-## In This Section
+## Start here
 
-- [Month-end review checklist](./month-end-review-checklist.md)
+- [Follow the month-end review checklist](./month-end-review-checklist.md)
+
+## Common tasks
+
 - [Use checklists](./use-checklists.md)
-- [Run recurring close-style tasks](./run-recurring-close-style-tasks.md)
-- [Track completion across routine accounting work](./track-completion-across-routine-accounting-work.md)
+- [Run a recurring checklist](./run-recurring-close-style-tasks.md)
+- [Track checklist progress](./track-completion-across-routine-accounting-work.md)

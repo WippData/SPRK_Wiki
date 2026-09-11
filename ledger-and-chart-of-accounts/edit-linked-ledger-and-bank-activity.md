@@ -5,11 +5,11 @@
 
 Review or reverse confirmed bank activity from its linked journal entry, and inspect linked bank-register rows created from journals when that action is available, without deleting the original posting trail.
 
-## When To Use This
+## When to use this
 
-Use this workflow when a confirmed bank or credit card transaction has a linked journal entry and you need to inspect the posting, reverse the ledger entry, review linked bank-register rows where SPRK exposes them, or correct activity that is already part of reconciliation review.
+Use this guide when a confirmed bank or credit card transaction has a linked journal entry and you need to inspect the posting, reverse the ledger entry, review linked bank-register rows where SPRK exposes them, or correct activity that is already part of reconciliation review.
 
-## Before You Start
+## Before you start
 
 - An active company is selected.
 - The bank or credit card transaction is already confirmed.
@@ -40,7 +40,7 @@ Use this workflow when a confirmed bank or credit card transaction has a linked 
    - `Resolve GL link` can remove the current journal association, link the confirmed bank row to a reviewed existing GL line, or create and link a new GL transaction when the bank row has a valid category or split.
    - Removing the link keeps the bank row confirmed and preserves reconciliation or statement metadata.
    - Suggested GL lines are candidates. Compare account, amount, date, memo, and supporting detail before linking.
-9. For a compatible confirmed bank row linked to a simple two-line journal, use the supported edit surface when you need to correct the date, amount, description, memo, party, dimensions, or non-cash target account.
+9. For a compatible confirmed bank row linked to a simple two-line journal, use the available edit action when you need to correct the date, amount, description, memo, party, dimensions, or non-cash target account.
    - Review both the bank row and its paired journal after saving; compatible fields are kept together across the pair.
    - A same-date recategorization of only the non-cash target account does not by itself require reconciliation history to be voided when the settlement account, amount, and posting date remain unchanged.
    - Split rows, changes to the reconciled settlement account, and activity created by an invoice, bill, or payment can require reversal or correction from the original workflow.
@@ -60,7 +60,7 @@ Use this workflow when a confirmed bank or credit card transaction has a linked 
 14. If a journal create or edit would affect posted settlement-account history, review `Void affected reconciliation?` before saving. `Cancel` leaves the edit uncommitted; `Void and save` preserves the affected sessions as `Voided` history and releases their bank rows for later reconciliation review.
 15. Review `Reconcile`, `Banking`, or `Ledger` to confirm the correction appears in the expected period.
 
-## What Happens Next
+## What happens next
 
 SPRK preserves the original audit trail and creates a separate reversing entry.
 
@@ -77,7 +77,7 @@ SPRK preserves the original audit trail and creates a separate reversing entry.
 - When a source-document confirmation is involved, SPRK also updates the linked invoice, bill, or payment application according to the confirmation.
 - Compatible confirmed bank/journal pairs can synchronize supported descriptive and accounting fields, but this is not a blanket in-place edit rule for split, source-document, or settlement-account changes.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

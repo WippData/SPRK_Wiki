@@ -1,14 +1,16 @@
 # Reconcile General Ledger Accounts
 
+<!-- Screenshot status: Review needed -->
+
 Reconcile an eligible balance-sheet account to a supporting statement or schedule, even when it is not a bank or credit-card register.
 
 <!-- Last validated against SPRK source: 2026-08-27 -->
 
-## When To Use This
+## When to use this
 
 Use this workflow for a balance-sheet account that your company has enabled for reconciliation, such as a loan, clearing account, prepaid balance, fixed-asset balance, or another account supported by an outside statement or schedule.
 
-## Before You Start
+## Before you start
 
 - The account is an active asset, liability, or equity account.
 - `Reconcile account` is enabled on the account.
@@ -29,13 +31,13 @@ Use this workflow for a balance-sheet account that your company has enabled for 
 
 ![General-ledger reconciliation with selected activity and a zero difference](../screenshots/reconciliation/general-ledger-reconciliation-active-step-01.png)
 
-## What Happens Next
+## What happens next
 
 Finishing stores a posted reconciliation session and the selected ledger-line references. It does not create another journal entry. The next reconciliation uses the last posted session as its opening reference. Reconciliation reports for this account use the posted ledger lines selected in this workflow.
 
 The first-time bank choices `Start at $0 — New account` and `Use a Ledger Entry to establish the opening balance` apply to bank-register reconciliation, not this general-ledger path.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

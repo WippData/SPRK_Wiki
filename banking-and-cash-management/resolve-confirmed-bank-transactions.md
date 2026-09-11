@@ -7,13 +7,13 @@ Review and repair the accounting link for a confirmed bank row without returning
 
 ![Confirmed transfer toast after posting the bank-to-bank transaction](../screenshots/v1-validation/banking-transfer-confirmed-toast.png)
 
-## When To Use This
+## When to use this
 
 - A confirmed row in `Categorized` needs GL-link review.
 - The visible `Resolve` action is available.
 - You need to remove a link, link to an existing reviewed GL line, or create a linked journal from the confirmed bank row.
 
-## Before You Start
+## Before you start
 
 - Confirm the active company and selected bank account.
 - Confirm the row is already confirmed.
@@ -45,7 +45,7 @@ Review and repair the accounting link for a confirmed bank row without returning
 
 When a supported linked edit changes settlement details that affect posted reconciliation history, SPRK can require explicit void confirmation. A confirmed void preserves the session as `Voided` history and releases its rows for later reconciliation review; it does not delete history.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

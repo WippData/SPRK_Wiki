@@ -5,13 +5,13 @@
 
 ![Reports Reconciliation tab opened from Print Bank Rec](../screenshots/reconciliation/reconciliation-report-tab-step-01.png)
 
-Open the bank reconciliation report from an active reconciliation account or from posted reconciliation history, then review the report output without changing ledger activity.
+Open the bank reconciliation report from an active reconciliation or posted reconciliation history, then review, print, or export the statement-period results.
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need support for a completed bank or credit card reconciliation, or when you want to check whether a posted reconciliation report is available for an account.
+Use this guide when you need support for a completed bank or credit card reconciliation, or when you want to check whether a posted reconciliation report is available for an account.
 
-## Before You Start
+## Before you start
 
 - The correct active company is selected.
 - The bank or credit card account has been selected in `Reconcile`.
@@ -41,23 +41,23 @@ Use this workflow when you need support for a completed bank or credit card reco
    - Review the summary values and cleared transaction sections.
 8. Use `Print` if you need a PDF or paper copy, or `Export` if the report exposes an export action for the current output.
 
-## What Happens Next
+## What happens next
 
 SPRK opens the reconciliation report area for the selected account and posted statement period.
 
-- Opening, running, printing, or exporting a reconciliation report does not create new ledger activity.
+- The report reflects the posted reconciliation period and selected statement items.
 - The report is review output tied to a posted reconciliation session.
 - If the selected account has no posted reconciliation periods, SPRK shows that no posted reconciliations were found for the account instead of generating a populated report.
 - History rows only expose `View report` when there is posted reconciliation history to view.
 - `Posted` history is the normal report-producing state. If a journal correction explicitly voids an affected session, the session stays in history as `Voided`, is not used for future opening balances, and should not be treated as a normal printable posted report.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
 | A history row is `Voided` | Expecting it to behave like a normal posted report row | Keep it as audit history and use the current posted or later reconciliation period for normal report review |
 
-## Practice And Examples
+## Practice and examples
 
 Use the practice file and screenshots to review the report action generated from a completed reconciliation.
 

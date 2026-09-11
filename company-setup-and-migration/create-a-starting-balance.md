@@ -1,16 +1,18 @@
 # Create a Starting Balance
 
+<!-- Screenshot status: Review needed -->
+
 ![Reconciliation account selection for starting balance context](../screenshots/reconciliation/reconcile-account-selection-audit-step-01.png)
 
 Choose how a new bank or credit-card account should begin its first reconciliation: start it at zero, or use a journal entry to establish its opening balance.
 
 <!-- Last validated against SPRK source: 2026-08-27 -->
 
-## When To Use This
+## When to use this
 
-Use this workflow when you are setting up a company and need SPRK to recognize the first balance for a bank or credit account before regular reconciliation work begins.
+Use this guide when you are setting up a company and need SPRK to recognize the first balance for a bank or credit account before regular reconciliation work begins.
 
-## Before You Start
+## Before you start
 
 - An active company is selected.
 - The bank or credit account you want to reconcile already exists in the chart of accounts.
@@ -27,7 +29,7 @@ Use this workflow when you are setting up a company and need SPRK to recognize t
 4. Enter the statement ending date and balance shown by your statement when those fields are available.
 5. Review the account, dates, and amount, then continue with the visible reconciliation action.
 
-## What Happens Next
+## What happens next
 
 SPRK creates the first reconciliation anchor for that account using the method you chose.
 
@@ -36,7 +38,7 @@ SPRK creates the first reconciliation anchor for that account using the method y
 - Pending imported bank activity remains available for later Banking review whichever method you choose.
 - Later reconciliation periods use the completed first period as their beginning-balance reference.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

@@ -1,23 +1,27 @@
-# Sales and Receivables
+# Customers, invoices, and payments
 
-Set up customers and items, create invoices with the right item presentation and account routing, receive payments, configure printed payment visibility, print customer-facing invoices, and review accounts receivable before reporting.
+Set up customers, create invoices, record payments, and review what customers owe.
 
-![Items list showing Item Number / SKU setup for receivables workflows](../screenshots/sales-and-receivables/items-item-number-sku-step-01.png)
+![Items list showing Item Number / SKU setup for invoice lines](../screenshots/sales-and-receivables/items-item-number-sku-step-01.png)
 
-Use the setup pages in this section before heavy invoice entry when customer defaults, payment timing, or revenue review need to stay consistent across repeated work.
+## Start here
 
-## In This Section
-
+- [Choose an invoice task](./create-and-open-invoices.md)
+- [Set up invoice defaults](./set-up-receivables-defaults-before-invoicing.md)
+- [Set customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Manage customers](./manage-customers.md)
-- [AR review workflow](./ar-review-workflow.md)
-- [Set up receivables defaults before invoicing](./set-up-receivables-defaults-before-invoicing.md)
-- [Configure customer payment terms and credit](./configure-customer-payment-terms-and-credit.md)
 - [Manage items for invoicing](./manage-items-for-invoicing.md)
-- [Create and open invoices](./create-and-open-invoices.md)
-- [Create invoices](./create-invoices.md)
-- [Review and edit invoices](./review-and-edit-invoices.md)
-- [Print invoices](./print-invoices.md)
+
+## Common tasks
+
+- [Create an invoice](./create-invoices.md)
+- [Record an invoice payment](./receive-invoice-payments.md)
+- [Review or edit an invoice](./review-and-edit-invoices.md)
+- [Print an invoice](./print-invoices.md)
 - [Import invoices](./import-invoices.md)
-- [Void or correct invoices](./void-or-correct-invoices.md)
-- [Receive invoice payments](./receive-invoice-payments.md)
-- [Understand invoice general ledger impact](./understand-invoice-general-ledger-impact.md)
+
+## Review or fix something
+
+- [Review customer balances and overdue invoices](./ar-review-workflow.md)
+- [Void or correct an invoice](./void-or-correct-invoices.md)
+- [Understand how invoices affect your books](./understand-invoice-general-ledger-impact.md)

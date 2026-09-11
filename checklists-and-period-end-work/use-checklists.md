@@ -1,16 +1,18 @@
 # Use Checklists
 
+<!-- Screenshot status: Review needed -->
+
 ![Checklists page showing the run table, filters, and Refresh, New, and Manage actions](../screenshots/checklists-and-period-end-work/use-checklists-step-01.png)
 
 ![Manage checklists dialog showing reusable checklist template columns and the New checklist action](../screenshots/checklists-and-period-end-work/use-checklists-step-02.png)
 
 Open the Checklist area, manage reusable checklist templates, and understand the difference between template setup and period-specific runs.
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need to review the Checklist page layout, maintain reusable checklist templates, or understand how checklist runs are created from those templates.
+Use this guide when you need to review the Checklist page layout, maintain reusable checklist templates, or understand how checklist runs are created from those templates.
 
-## Before You Start
+## Before you start
 
 - An active company is selected.
 - You know the checklist name and the items you want the template to contain.
@@ -45,7 +47,7 @@ Use this workflow when you need to review the Checklist page layout, maintain re
 8. Save the template.
 9. Return to the main Checklist page when you are ready to start a run from one of the active templates.
 
-## What Happens Next
+## What happens next
 
 You have a reusable checklist template that can be used to create period-specific runs.
 

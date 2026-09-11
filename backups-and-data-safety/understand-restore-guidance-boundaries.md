@@ -1,14 +1,16 @@
-# Collect Details for Backup Recovery Questions
+# Get Help Recovering a Backup
+
+<!-- Screenshot status: Review needed -->
 
 ![Backups settings showing backup path and schedule controls](../screenshots/backups-and-data-safety/backup-settings-audit-step-01.png)
 
-Prepare safe details before treating a backup, Company File, or recovery question as a restore workflow.
+Collect the right details and contact support when you need help recovering company data.
 
-## When To Use This
+## When to use this
 
 Use this page when you need help with backup recovery, cannot find an expected restore option, or need to explain which backup or Company File action was used.
 
-## Do This First
+## Do this first
 
 1. Confirm the active company shown in the sidebar.
 2. Open `Preferences`.
@@ -21,7 +23,7 @@ Use this page when you need help with backup recovery, cannot find an expected r
 6. Review the latest visible backup status before changing settings or importing a file.
 7. If no restore control is visible for the recovery question, collect the details below before contacting support.
 
-## Details To Capture
+## Details to capture
 
 - Company name.
 - Backup setting or Company File action involved.
@@ -32,14 +34,14 @@ Use this page when you need help with backup recovery, cannot find an expected r
 - Visible error message or prompt.
 - Screenshot of the `Backups` tab if it does not expose sensitive client data.
 
-## What To Avoid
+## What to avoid
 
 - Do not import a Company File into the wrong company context.
 - Do not repeat imports or backup actions just to force a recovery result.
 - Do not treat a routine backup file and a Company File package as interchangeable.
-- Do not describe a support recovery request as complete until the visible product or support process confirms the result.
+- Do not describe a support recovery request as complete until the SPRK or support process confirms the result.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

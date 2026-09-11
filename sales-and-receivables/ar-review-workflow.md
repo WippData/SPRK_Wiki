@@ -1,18 +1,20 @@
-# AR Review Workflow
+# Review Customer Balances and Overdue Invoices
+
+<!-- Screenshot status: Review needed -->
 
 ![Invoices list showing payment actions and invoice status context](../screenshots/sales-and-receivables/invoices-list-payment-action-step-01.png)
 
-Use this accounts receivable review workflow to check customers, invoices, payments, receivables aging, and revenue detail before reporting.
+Review customer balances, overdue invoices, payments, receivables aging, and revenue before reporting.
 
-## When To Use This
+## When to use this
 
-Use this workflow before month-end reporting, before contacting customers about balances, or when receivables totals on reports do not look right.
+Use this review before month-end reporting, before contacting customers about balances, or when receivables totals do not look right.
 
-## Before You Start
+## Before you start
 
 - The correct company is active.
 - Customer records and invoice items are set up.
-- Customer invoices and payments for the period have been entered or imported through the supported workflows.
+- Customer invoices and payments for the period have been entered or imported.
 
 ## Steps
 
@@ -29,11 +31,11 @@ Use this workflow before month-end reporting, before contacting customers about 
 9. Use drilldown or `General Ledger` detail when revenue or AR balances do not match expectations.
 10. Correct invoice or payment issues in the receivables workflow before using journal entries.
 
-## What Happens Next
+## What happens next
 
 AR review helps confirm that customer balances, invoice status, payment application, AR aging, and revenue reporting are telling the same story.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

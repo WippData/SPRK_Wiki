@@ -1,10 +1,12 @@
 # Understand Invoice General Ledger Impact
 
+<!-- Screenshot status: Review needed -->
+
 Use this reference to see how invoice status, `Receive to` routing, line income accounts, payments, and voids affect receivables and the general ledger.
 
 ![General Ledger report showing invoice-related receivables activity](../screenshots/reports-and-financial-review/general-ledger-report-populated-step-01.png)
 
-## Quick Reference
+## Quick reference
 
 | Invoice State Or Action | Ledger Effect | Where It Matters |
 |---|---|---|
@@ -34,7 +36,7 @@ Aging can show invoice-level terms for the invoice. If an invoice does not carry
 
 Do not confirm a void in a live company until active payments and reversal consequences have been reviewed.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -45,7 +47,7 @@ Do not confirm a void in a live company until active payments and reversal conse
 | Sales tax posted to an unexpected liability account | The invoice's `Sales tax payable account` | Review the saved invoice and use a posted correction path if its accounting entry must change |
 | Void is needed but payments exist | Payment history and linked journal entries | Reverse the payment journal and confirm the payment-application reversal before voiding the invoice |
 
-## Practice And Examples
+## Practice and examples
 
 - Practice file: [invoice-void-reversal.csv](../sample-files/practice/invoice-void-reversal.csv)
 

@@ -1,14 +1,16 @@
-# Create and Open Invoices
+# Choose an Invoice Task
 
-Use this invoice front door to choose the right invoice workflow before creating, reviewing, printing, importing, paying, or correcting an invoice.
+<!-- Screenshot status: Review needed -->
+
+Choose the invoice guide that matches what you need to do.
 
 ![Invoice row actions showing payment, linked journal, payment history, and void actions](../screenshots/sales-and-receivables/invoice-payment-history-void-actions-step-01.png)
 
-## Use This Page When
+## Start here
 
-Invoices can affect customer balances, income accounts, payment timing, and later review work. Start here when you need to decide which invoice page fits the job in front of you.
+If you are entering a new invoice, go directly to [Create an invoice](./create-invoices.md). Use the choices below for other invoice work.
 
-## Choose This Path If
+## Choose an invoice task
 
 | Goal | Use | Check First |
 |---|---|---|
@@ -37,7 +39,7 @@ Invoices can affect customer balances, income accounts, payment timing, and late
 - Voiding an invoice is not deleting it. A supported void preserves the invoice and reversal history.
 - Customer defaults and company defaults seed values; they do not remove the need to review each invoice.
 
-## Practice And Examples
+## Practice and examples
 
 - Practice reference: [receivables-customer-item-invoice-payment.csv](../sample-files/practice/receivables-customer-item-invoice-payment.csv)
 

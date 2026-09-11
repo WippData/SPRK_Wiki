@@ -1,23 +1,29 @@
-# Banking and Cash Management
+# Banking
 
-Import bank activity, review likely duplicates before rows enter pending review, assign vendor or customer context, assign GL account/category choices, confirm transactions when they are ready, and create or import rules for repeated patterns. Banking account cards can also show latest posted reconciliation context. Banking supports bulk review paths, including selected-row actions and Grid Edit cleanup for pending transactions.
+Import, review, categorize, match, and confirm bank and credit card activity.
 
-![Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
+![Banking actions for assigning a vendor or customer](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
 
-## In This Section
+## Start here
 
-- [Understand the banking page](./understand-the-banking-page.md)
-- [Choose bank and credit card accounts](./choose-bank-and-credit-card-accounts.md)
-- [Review and classify bank transactions](./review-and-classify-bank-transactions.md)
-- [Classify bank transactions](./classify-bank-transactions.md)
+- [Choose a Banking task](./review-and-classify-bank-transactions.md)
+- [Review the Banking page](./understand-the-banking-page.md)
+- [Choose a bank or credit card account](./choose-bank-and-credit-card-accounts.md)
+
+## Common tasks
+
+- [Categorize and confirm transactions](./classify-bank-transactions.md)
 - [Match bank transactions](./match-bank-transactions.md)
-- [Review bank transfers](./review-bank-transfers.md)
-- [Resolve confirmed bank transactions](./resolve-confirmed-bank-transactions.md)
-- [Create and manage rules](./create-and-manage-rules.md)
-- [Import banking rules](./import-banking-rules.md)
 - [Import bank transactions](./import-bank-transactions.md)
+- [Create and manage rules](./create-and-manage-rules.md)
+- [Import Banking rules](./import-banking-rules.md)
+- [Review bank transfers](./review-bank-transfers.md)
 
-## Related Review Workflows
+## Review or fix something
 
-- [Month-end review checklist](../checklists-and-period-end-work/month-end-review-checklist.md)
-- [Before you import](../company-setup-and-migration/before-you-import.md)
+- [Resolve a confirmed transaction](./resolve-confirmed-bank-transactions.md)
+
+## Related
+
+- [Start a reconciliation](../reconciliation/start-a-reconciliation.md)
+- [Follow the month-end review checklist](../checklists-and-period-end-work/month-end-review-checklist.md)

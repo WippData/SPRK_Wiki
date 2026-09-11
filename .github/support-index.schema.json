@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sprksystems.com/schemas/support-index.schema.json",
+  "title": "SPRK Support index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "home", "navigation", "topics"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "home": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "title", "summary", "featuredGroups", "topicDirectoryLabel"],
+      "properties": {
+        "source": { "const": "README.md" },
+        "title": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "summary": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "featuredGroups": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "title", "guideIds"],
+            "properties": {
+              "id": { "$ref": "#/$defs/id" },
+              "title": { "type": "string", "minLength": 1, "maxLength": 80 },
+              "guideIds": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "$ref": "#/$defs/guideId" }
+              }
+            }
+          }
+        },
+        "topicDirectoryLabel": { "type": "string", "minLength": 1, "maxLength": 80 }
+      }
+    },
+    "navigation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["guideFooter"],
+      "properties": {
+        "guideFooter": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["enabled", "previousNext", "showTopicLink", "showHomeLink", "contactGuideId"],
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "previousNext": { "const": "within-topic" },
+            "showTopicLink": { "type": "boolean" },
+            "showHomeLink": { "type": "boolean" },
+            "contactGuideId": { "$ref": "#/$defs/guideId" }
+          }
+        }
+      }
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 17,
+      "maxItems": 17,
+      "items": { "$ref": "#/$defs/topic" }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "guideId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+(?:/[a-z0-9-]+)+$"
+    },
+    "publicMarkdownPath": {
+      "type": "string",
+      "allOf": [
+        {
+          "pattern": "^[A-Za-z0-9._-]+(?:/[A-Za-z0-9._-]+)*\\.(?:md|markdown)$"
+        },
+        {
+          "not": {
+            "pattern": "(^|/)(?:AGENTS\\.(?:md|markdown)|\\.agents|\\.codex|\\.github|\\.private|sample-files|screenshots|scripts)(?:/|$)"
+          }
+        }
+      ]
+    },
+    "topicVisibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "website": { "type": "boolean", "default": true },
+        "inApp": { "type": "boolean", "default": true },
+        "search": { "type": "boolean", "default": true },
+        "topicDirectory": { "type": "boolean", "default": true }
+      }
+    },
+    "guideVisibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "website": { "type": "boolean", "default": true },
+        "inApp": { "type": "boolean", "default": true },
+        "search": { "type": "boolean", "default": true },
+        "topicIndex": { "type": "boolean", "default": true }
+      }
+    },
+    "guide": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "source", "title", "summary"],
+      "properties": {
+        "id": { "$ref": "#/$defs/guideId" },
+        "source": {
+          "allOf": [
+            { "$ref": "#/$defs/publicMarkdownPath" },
+            { "pattern": "^[a-z0-9-]+(?:/[a-z0-9-]+)+\\.md$" }
+          ]
+        },
+        "title": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "summary": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "aliases": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1, "maxLength": 80 }
+        },
+        "visibility": { "$ref": "#/$defs/guideVisibility" }
+      }
+    },
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "guides"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "title": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "guides": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/guide" }
+        }
+      }
+    },
+    "topic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "path", "overview", "title", "summary", "groups"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "path": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:[a-z0-9-]*[a-z0-9])?$"
+        },
+        "overview": {
+          "allOf": [
+            { "$ref": "#/$defs/publicMarkdownPath" },
+            { "pattern": "^[a-z0-9-]+/README\\.md$" }
+          ]
+        },
+        "title": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "summary": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "visibility": { "$ref": "#/$defs/topicVisibility" },
+        "groups": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/group" }
+        }
+      }
+    }
+  }
+}

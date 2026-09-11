@@ -1,18 +1,20 @@
 # Match Bank Transactions
 
+<!-- Screenshot status: Review needed -->
+
 Match pending bank rows to open invoices, open bills, or existing checks before confirming the bank activity.
 
 <!-- Last validated against SPRK source: 2026-08-27 -->
 
 ![Banking grid after applying the classification and preparing to confirm](../screenshots/v1-validation/banking-grid-confirm-ready.png)
 
-## When To Use This
+## When to use this
 
 - A pending money-in bank row should apply to an open invoice.
 - A pending money-out bank row should apply to an open bill.
 - A pending bank row should clear an existing check.
 
-## Before You Start
+## Before you start
 
 - Confirm the selected bank or credit card account.
 - Confirm the row is pending, unreconciled, and not excluded.
@@ -46,9 +48,9 @@ Matching to an invoice or bill from Banking records the related customer receipt
 
 If the transaction was matched to a check first, confirming the bank transaction also clears the linked check.
 
-This is the `Banking` match workflow for a row on the `Pending` tab. It can record a source-document payment as it confirms the bank row. It is different from `Match` inside `Reconcile`, which only links an already confirmed bank transaction to a check and does not create an invoice or bill payment.
+This is the match workflow for a row on the `Banking` `Pending` tab. It can record an invoice or bill payment while confirming the bank row. `Match` inside `Reconcile` is different: it links an already confirmed bank transaction to a check.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

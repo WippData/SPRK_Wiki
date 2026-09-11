@@ -1,5 +1,7 @@
 # Common Accountant Corrections
 
+<!-- Screenshot status: Review needed -->
+
 Choose the correction path that preserves the source record, payment history, reconciliation state, and ledger trail.
 
 ![New journal entry drawer showing date, memo, account lines, debit and credit columns, totals, and reversing-entry controls](../screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png)
@@ -18,7 +20,7 @@ Use this page when review work finds the wrong account, date, customer, vendor, 
 | Correct a bank classification before or after confirmation | [Review and classify bank transactions](../banking-and-cash-management/review-and-classify-bank-transactions.md) | Pending vs confirmed state, reconciliation state, and linked journal |
 | Repair the accounting link on a confirmed bank row | [Resolve confirmed bank transactions](../banking-and-cash-management/resolve-confirmed-bank-transactions.md) | Current link, candidate GL line, account, amount, date, and memo |
 | Reverse or enter an accountant-only adjustment | [Record journal entries](./record-journal-entries.md) | Whether the issue belongs outside customer, vendor, bank, or source-document workflows |
-| Choose journal entry vs source workflow | [Choose between journal entries and source workflows](./when-to-use-journal-entries-vs-source-forms.md) | Whether a source document should own the accounting event |
+| Decide whether to use a journal entry | [When to use a journal entry](./when-to-use-journal-entries-vs-source-forms.md) | Whether an invoice, bill, payment, check, or bank transaction should own the accounting event |
 | Investigate a report balance | [Use report drilldown behavior](../reports-and-financial-review/use-report-drilldown-behavior.md) | Supporting entries, source document, date range, and active company |
 | Resolve a reconciliation difference | [Resolve common reconciliation exceptions](../reconciliation/resolve-common-reconciliation-exceptions.md) | Statement period, selected rows, reconciled state, and correction date |
 
@@ -38,7 +40,7 @@ Use this page when review work finds the wrong account, date, customer, vendor, 
 - Reversing an entry twice can duplicate the correction.
 - Correcting both a source workflow and a journal entry can duplicate the adjustment unless both are intentionally required.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

@@ -9,11 +9,11 @@ Build rules that prefill GL account choices for repeated bank transaction patter
 
 ![Rules page showing GL Account filter and GL Account result column](../screenshots/banking-and-cash-management/rules-gl-account-labels-step-03.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when the same bank or credit card transactions appear repeatedly and you want SPRK to suggest the right account, vendor, or split before you confirm them.
+Use this guide when the same bank or credit card transactions appear repeatedly and you want SPRK to suggest the right account, vendor, or split before you confirm them.
 
-## Before You Start
+## Before you start
 
 - At least one bank or credit card account exists.
 - The destination accounts you want rules to use are available. Nonposting summary accounts and restricted control accounts may be omitted from rule target selectors.
@@ -74,15 +74,15 @@ Use this workflow when the same bank or credit card transactions appear repeated
 
 ![Create Rule from Transaction drawer using the full bank description](../screenshots/banking-and-cash-management/banking-create-rule-full-description-2026-07.png)
 
-## What Happens Next
+## What happens next
 
 The rule is saved and becomes available when SPRK evaluates pending bank transactions.
 
-- Creating, editing, reordering, importing, disabling, or deleting rules does not post to the general ledger.
+- Rules suggest categorization on pending bank rows; review and confirm each transaction before it reaches the ledger.
 - Rules can prefill GL account/category choices or split instructions for pending bank transactions.
 - A general ledger entry is created only later, when the bank transaction itself is confirmed from the Banking workflow.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

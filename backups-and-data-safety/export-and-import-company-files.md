@@ -1,14 +1,16 @@
 # Export and Import Company Files
 
+<!-- Screenshot status: Review needed -->
+
 ![Backups tab showing Company file export and import controls for Demo Company](../screenshots/backups-and-data-safety/company-file-controls-step-01.png)
 
 Use `Company file` actions when you need to move or preserve one company without including every other company in the local SPRK database.
 
-## When To Use This
+## When to use this
 
-Use this workflow when a firm needs a company-level transfer, support needs a complete company package for review, or you want a company-specific transfer path that is separate from routine device backups.
+Use this guide when a firm needs a company-level transfer, support needs a complete company package for review, or you want a company-specific transfer path that is separate from routine device backups.
 
-## Before You Start
+## Before you start
 
 - You are signed in to SPRK.
 - The active company in the sidebar is the company you intend to export or import around.
@@ -25,16 +27,16 @@ Use this workflow when a firm needs a company-level transfer, support needs a co
 7. If SPRK shows an import preview, read the company identity, validation messages, and any replace warning before continuing.
 8. Do not confirm a replace/import step unless you are working in the intended company and have a current backup or exported company file.
 
-## What Happens Next
+## What happens next
 
 You can distinguish a company-level transfer from device backup settings.
 
-- Exporting a company file creates an outbound company package. It does not post, reverse, or edit journal entries.
-- Importing or replacing from a company file can change which company data is available after the workflow completes, so treat confirmation steps as data-management actions rather than accounting entries.
+- Exporting a Company File creates a package for the active company.
+- Importing or replacing from a Company File can change which company data is available after the workflow completes, so review the target company and replace warning carefully.
 - Routine backups still protect the local database for all companies; a company file is narrower and intentionally company-scoped.
 
 
-## Practice And Examples
+## Practice and examples
 
 Use these files to practice the company-scoped export/import path in a disposable or training company. Review the import preview and replacement warning before choosing `Replace company`.
 
@@ -52,6 +54,6 @@ The preview shows the table count, export timestamp, and replacement warning so 
 ## Related
 
 - [Review backup settings visible in the product](./review-backup-settings-visible-in-the-product.md)
-- [Understand restore guidance boundaries](./understand-restore-guidance-boundaries.md)
-- [Understand import and migration boundaries](../company-setup-and-migration/understand-import-and-migration-boundaries.md)
+- [Get help recovering a backup](./understand-restore-guidance-boundaries.md)
+- [See what each import can bring into SPRK](../company-setup-and-migration/understand-import-and-migration-boundaries.md)
 - [Collect the right details before contacting support](../support-and-troubleshooting/collect-the-right-details-before-contacting-support.md)

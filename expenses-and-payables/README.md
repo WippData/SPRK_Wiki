@@ -1,18 +1,23 @@
-# Expenses and Payables
+# Vendors, bills, and checks
 
-Set up vendors, enter bills, work with checks, and review accounts payable before reporting, including reusable vendor expense defaults.
+Set up vendors, enter bills, record payments, and manage checks.
 
-![Vendors list showing default expense account setup context](../screenshots/expenses-and-payables/vendor-default-expense-account-step-01.png)
+![Vendors list showing a default expense account](../screenshots/expenses-and-payables/vendor-default-expense-account-step-01.png)
 
-## In This Section
+## Start here
 
+- [Choose a bill task](./create-and-manage-bills.md)
 - [Manage vendors](./manage-vendors.md)
-- [AP review workflow](./ap-review-workflow.md)
-- [Set up vendor default expense accounts](./set-up-vendor-default-expense-accounts.md)
-- [Create and manage bills](./create-and-manage-bills.md)
-- [Create bills](./create-bills.md)
-- [Record bill payments](./record-bill-payments.md)
-- [Import bills](./import-bills.md)
-- [Void or correct bills](./void-or-correct-bills.md)
+- [Set vendor default expense accounts](./set-up-vendor-default-expense-accounts.md)
+
+## Common tasks
+
+- [Create a bill](./create-bills.md)
+- [Record a bill payment](./record-bill-payments.md)
 - [Work with checks](./work-with-checks.md)
-- [Review common payables workflows](./review-common-payables-workflows.md)
+- [Import bills](./import-bills.md)
+
+## Review or fix something
+
+- [Review bills and vendor balances](./ap-review-workflow.md)
+- [Void or correct a bill](./void-or-correct-bills.md)

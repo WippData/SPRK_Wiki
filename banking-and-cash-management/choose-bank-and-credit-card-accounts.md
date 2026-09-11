@@ -5,7 +5,7 @@
 
 Choose the right bank or credit card account before you import, review, confirm, or reconcile activity so that work stays tied to the correct register.
 
-## When To Use This
+## When to use this
 
 Use this page when you want to understand how SPRK separates banking work by account and how to save one account to open automatically next time.
 

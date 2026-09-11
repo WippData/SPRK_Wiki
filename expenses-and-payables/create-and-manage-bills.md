@@ -1,14 +1,16 @@
-# Create and Manage Bills
+# Choose a Bill Task
 
-Use this bills front door to choose the right payables workflow before creating, paying, importing, matching, voiding, or correcting a vendor bill.
+<!-- Screenshot status: Review needed -->
+
+Choose the bill guide that matches what you need to do.
 
 ![Bill row actions for payment history and linked journal review](../screenshots/expenses-and-payables/bill-payment-history-actions-step-01.png)
 
-## Use This Page When
+## Start here
 
-Bills can affect vendor balances, expense accounts, payment timing, and later review work. Start here when you need to decide which bill page fits the job in front of you.
+If you are entering a new bill, go directly to [Create a bill](./create-bills.md). Use the choices below for other bill work.
 
-## Choose This Path If
+## Choose a bill task
 
 | Goal | Use | Check First |
 |---|---|---|
@@ -36,7 +38,7 @@ Bills can affect vendor balances, expense accounts, payment timing, and later re
 - Voiding a bill is not deleting it. A supported void preserves the bill and reversal history.
 - Vendor defaults seed values; they do not remove the need to review each bill.
 
-## Practice And Examples
+## Practice and examples
 
 - Practice reference: [payables-vendor-bill-payment.csv](../sample-files/practice/payables-vendor-bill-payment.csv)
 

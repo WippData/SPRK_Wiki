@@ -1,16 +1,18 @@
 # Customize the Sidebar
 
+<!-- Screenshot status: Review needed -->
+
 ![Sidebar configuration modal with visible and hidden navigation items](../screenshots/preferences-and-personalization/sidebar-configuration-step-01.png)
 
 Use the sidebar editor in `Preferences` to rename sections, reorder links, hide items, and add external links for your own navigation setup.
 
 ![Sidebar configuration modal showing editable sidebar sections, item labels, reorder controls, and visibility toggles](../screenshots/preferences-and-personalization/customize-sidebar-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you want the left sidebar to better match how you move through SPRK each day without changing underlying accounting data.
+Use this guide when you want the left sidebar to better match how you move through SPRK each day without changing underlying accounting data.
 
-## Before You Start
+## Before you start
 
 - You are signed in to SPRK.
 - You know which pages you want to keep, rename, reorder, or hide.
@@ -29,18 +31,15 @@ Use this workflow when you want the left sidebar to better match how you move th
 6. Save the sidebar configuration when you are finished.
 7. Review the live sidebar to confirm the layout now matches your intended navigation.
 
-## What Happens Next
+## What happens next
 
 Your sidebar reflects your saved navigation preferences while keeping required system access in place.
 
-- Sidebar changes do not create, edit, delete, or repost accounting transactions.
-- Reordering or hiding links changes navigation only and does not change balances or company records.
-- Adding an external link creates a shortcut in the interface, not a bookkeeping entry.
+- The new order and visibility apply to your navigation; hidden destinations remain available through supported menus and search.
 
 
 ## Related
 
 - [Use the Preferences tab](./use-the-preferences-tab.md)
-- [Understand personalization boundaries and saved behavior](./understand-personalization-boundaries-and-saved-behavior.md)
-- [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)
+- [Understand which preferences are saved](./understand-personalization-boundaries-and-saved-behavior.md)
 - [Move between major app areas](../dashboard-and-navigation/move-between-major-app-areas.md)

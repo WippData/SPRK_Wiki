@@ -1,14 +1,16 @@
 # Troubleshoot Missing Plugins (Beta) Pages
 
+<!-- Screenshot status: Review needed -->
+
 ![Plugins settings tab showing supported plugin types and installed plugin status](../screenshots/plugins/plugins-settings-tab-step-01.png)
 
 Use this support path when a Plugin (Beta) should add a page, but the page does not appear in SPRK navigation.
 
-## When To Use This
+## When to use this
 
 Use this page after install, upgrade, enablement, or company switching when expected plugin pages are missing.
 
-## Do This First
+## Do this first
 
 1. Confirm the active company in the sidebar.
 2. Open `Plugins` from the left sidebar.
@@ -23,7 +25,7 @@ Use this page after install, upgrade, enablement, or company switching when expe
 9. Move away from the current page and back again after changing plugin state.
 10. For plugin-provided reports, also check the Reports page after the installed-plugin list has refreshed. Installed status alone does not guarantee a report source.
 
-## Details To Capture
+## Details to capture
 
 - Plugin name and version.
 - Whether the plugin is installed, enabled, disabled, or missing from inventory.
@@ -32,13 +34,13 @@ Use this page after install, upgrade, enablement, or company switching when expe
 - Any preview warning or install message.
 - Any lifecycle, page-visibility, or blocked-action message on the installed plugin card.
 - Whether the sidebar shows a `Plugins` group.
-- Whether the expected surface is a sidebar page, a list or transaction page, or a report source.
+- Whether you expected a sidebar page, a list or transaction page, or a report.
 
 ## What This Changes
 
-Troubleshooting visibility does not post transactions. Installing or enabling a plugin makes pages available; users still need to complete a workflow before accounting data changes.
+Installing or enabling a plugin makes its supported pages available. Accounting actions inside a plugin still follow SPRK's normal posting and review rules.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

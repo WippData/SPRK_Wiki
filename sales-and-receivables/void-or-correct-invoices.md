@@ -1,16 +1,18 @@
 # Void or Correct Invoices
 
+<!-- Screenshot status: Review needed -->
+
 Choose the supported invoice correction path before changing a posted, paid, or void-sensitive invoice.
 
 ![Invoice row action menu with Void invoice enabled on an eligible invoice](../screenshots/v1-validation/invoice-void-action-enabled.png)
 
-## When To Use This
+## When to use this
 
 - An invoice needs correction after it has moved beyond simple draft entry.
 - You need to decide whether to edit, receive or reverse payment, void, or review linked journals.
 - You need to preserve invoice and posting history while correcting the customer record.
 
-## Before You Start
+## Before you start
 
 - Confirm the active company and invoice number.
 - Review invoice status, total, balance, due date, and payment history.
@@ -36,7 +38,7 @@ Choose the supported invoice correction path before changing a posted, paid, or 
 
 `Void invoice` preserves the original invoice and posts reversal history instead of deleting the record. Posted invoice edits follow the posted-save strategy SPRK shows before saving. Payment corrections belong in the payment workflow before the invoice recognition posting can be reversed.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

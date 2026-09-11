@@ -1,14 +1,16 @@
-# Understand Import and Migration Boundaries
+# What Each Import Can Bring Into SPRK
 
-Choose the import or migration path that matches the file type and review risk before relying on imported data.
+<!-- Screenshot status: Review needed -->
+
+Compare SPRK's import options and choose the one that matches the records you are moving.
 
 ![Import Wizard showing starter templates, download templates action, and upload guidance](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
 
-## Use This Page When
+## Start here
 
-Use this page when you are planning a client migration, comparing import options, or deciding how much post-import review a file needs.
+Use this page when you know what you want to move but are not sure which import to use.
 
-## Choose This Path If
+## Choose the right import
 
 | Goal | Use | Check First |
 |---|---|---|
@@ -36,7 +38,7 @@ Use this page when you are planning a client migration, comparing import options
 - Imported documents that use cash, bank, or credit-card settlement routing can post as paid-now activity instead of remaining open AR/AP balances.
 - Direct QuickBooks imports are setup aids, not a promise that every historical QuickBooks transaction type is recreated perfectly.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

@@ -1,16 +1,18 @@
 # View License Information
 
+<!-- Screenshot status: Review needed -->
+
 Open the `License` area to review the saved contact details, current license key status, usage table, and purchase link that SPRK currently exposes.
 
 ![License page showing redacted saved license details, valid license status, fine print, and tenant usage context](../screenshots/licensing/view-license-information-step-01.png)
 
 ![SPRK License tab showing fine print and tenant usage stats](../screenshots/licensing/license-information-step-02.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you want to confirm whether a license is already saved for your workspace and review the licensing details visible in the app.
+Use this guide when you want to confirm whether a license is already saved for your workspace and review the licensing details visible in the app.
 
-## Before You Start
+## Before you start
 
 - You are signed in to SPRK.
 - At least one company is available so the app can load tenant usage details.
@@ -25,13 +27,11 @@ Use this workflow when you want to confirm whether a license is already saved fo
 6. Review the `Fine Print` card for the current public license terms shown in the app.
 7. Review the `Tenant Stats` table to see the usage metrics, current values, and listed limits across the workspace.
 
-## What Happens Next
+## What happens next
 
 You can review the licensing details currently visible in SPRK, including whether a license key is already saved, the public purchase link when it is shown, and the current workspace usage table.
 
-- Opening the `License` area does not create, edit, or delete any journal entry.
-- Viewing saved license details changes access visibility only and does not affect asset, liability, income, expense, or equity balances.
-- Reviewing the usage table reports activity counts only and does not post a transaction to the general ledger.
+- The `License` area shows access and usage information for the workspace.
 
 
 ## Related

@@ -1,17 +1,19 @@
 # Collect Import Run Details for Support
 
+<!-- Screenshot status: Review needed -->
+
 Gather visible import context after a failed, partial, duplicate, or confusing import without changing the source data again.
 
 ![Support tab showing the Support Activity Log and contact options](../screenshots/support-and-troubleshooting/collect-support-details-step-01.png)
 
-## When To Use This
+## When to use this
 
 - An import preview does not match what you expected.
 - An import confirmation creates unexpected records, pending rows, documents, or journal entries.
 - Duplicate warnings, unresolved names, account issues, or validation messages need review.
 - You need to contact support with the details of a specific import attempt.
 
-## Do This First
+## Do this first
 
 1. Stop before confirming another import attempt unless support asks you to retry.
 2. Note the active company and import page.
@@ -19,7 +21,7 @@ Gather visible import context after a failed, partial, duplicate, or confusing i
 4. If you confirmed an import, write down what changed afterward: pending bank rows, journal entries, documents, accounts, vendors, or reports.
 5. Open `Support` and download the `Support Activity Log`.
 
-## Details To Capture
+## Details to capture
 
 - Active company.
 - Import page or workflow.
@@ -34,14 +36,14 @@ Gather visible import context after a failed, partial, duplicate, or confusing i
 - What changed after confirmation.
 - Support Activity Log.
 
-## What To Avoid
+## What to avoid
 
 - Do not retry the same file repeatedly before capturing warnings.
 - Do not make manual cleanup entries before saving the original mismatch details.
 - Do not describe hidden technical fields that are not visible in SPRK.
 - Do not assume invoice, bill, bank, journal, and company imports have identical correction behavior.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -50,7 +52,7 @@ Gather visible import context after a failed, partial, duplicate, or confusing i
 | The result changed after confirmation | Which records, rows, documents, or journals changed | Record the changed area before attempting cleanup |
 | The import type is unclear | Whether it was bank, journal, invoice, bill, company, or rule import | Use the workflow name support can trace |
 
-## Practice And Examples
+## Practice and examples
 
 - Practice file: [import-run-details-support.csv](../sample-files/practice/import-run-details-support.csv)
 

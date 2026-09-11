@@ -1,4 +1,4 @@
-# Choose Between Journal Entries and Source Workflows
+# When to Use a Journal Entry
 
 Use this page to choose whether an accounting event belongs in invoices, bills, checks, banking, or a manual journal entry.
 
@@ -6,7 +6,7 @@ Journal entries affect the ledger, but they do not manage customer invoices, ven
 
 ## Use This Page When
 
-Review this decision before posting a manual journal entry for activity that might belong to accounts receivable, accounts payable, banking, checks, or another source workflow.
+Use this guide before posting a manual journal entry for activity that may belong on an invoice, bill, payment, check, or bank transaction instead.
 
 ## Choose This Path If
 

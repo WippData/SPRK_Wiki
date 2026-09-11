@@ -1,14 +1,16 @@
 # Use the Companies Tab
 
+<!-- Screenshot status: Review needed -->
+
 Open the Companies tab to review active and archived companies, refresh the list, and reach creation or maintenance actions.
 
 ![Companies tab showing active companies, filters, refresh, new-company actions, and company row controls](../screenshots/company-administration/companies-tab-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need a central place to review companies and reach the actions for selecting, editing, archiving, deleting, or adding a company.
+Use this guide when you need a central place to review companies and reach the actions for selecting, editing, archiving, deleting, or adding a company.
 
-## Before You Start
+## Before you start
 
 - You are signed in to SPRK.
 - At least one company exists in the workspace.
@@ -24,13 +26,11 @@ Use this workflow when you need a central place to review companies and reach th
 6. If your workspace uses tenant-level defaults, open `Defaults` from the left sidebar before creating a batch of companies so new company setup starts from the intended `Required account fields`, `Journal entries`, and `Reconciliation dates` policies.
 7. Use the row actions to select the active company, edit a company, archive or unarchive it, or permanently delete an archived company.
 
-## What Happens Next
+## What happens next
 
-You can see the publicly supported company management actions in one place, including the active company marker and company-level action buttons.
+You can see the available company management actions in one place, including the active company marker and company-level action buttons.
 
-- Viewing or refreshing the company list does not create, edit, or delete a journal entry.
 - Switching which company is selected changes app context only.
-- Opening company creation or maintenance actions does not post to the general ledger until you later create accounting transactions inside that company.
 
 
 ## Related

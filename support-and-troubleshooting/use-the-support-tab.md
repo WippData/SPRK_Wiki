@@ -1,14 +1,16 @@
 # Use the Support tab
 
+<!-- Screenshot status: Review needed -->
+
 Open the Support tab to download a troubleshooting log, email the support team, and review the built-in how-to guides.
 
 ![Support tab showing Support Activity Log, Contact, and How To Guides](../screenshots/support-and-troubleshooting/support-tab-overview-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need the current activity log, the support email address, or a built-in help topic.
+Use this guide when you need the current activity log, the support email address, or a built-in help topic.
 
-## Before You Start
+## Before you start
 
 - You can open the `Support` settings tab in SPRK.
 - You are working in the company session where the issue occurred.
@@ -24,15 +26,11 @@ Use this workflow when you need the current activity log, the support email addr
 6. In your email, include the company, page, document or account, what you expected, what happened, and the downloaded log when it is relevant.
 7. Expand `How To Guides` if you want a quick in-product refresher before contacting support.
 
-## What Happens Next
+## What happens next
 
 You can leave the page with a useful log, the support email address, or the help topic you need.
 
-- Opening the Support tab does not create or change any journal entry.
-- Downloading or clearing the support log does not affect the general ledger.
-- Sending email and opening help topics do not post transactions or change account balances.
-
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

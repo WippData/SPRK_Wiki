@@ -1,16 +1,18 @@
 # Review Bank Transfers
 
+<!-- Screenshot status: Review needed -->
+
 Review bank-to-bank, bank-to-cash, or bank-to-credit-card pairings before confirming transfer activity.
 
 ![Transfer row categorized to the savings account before confirmation](../screenshots/v1-validation/banking-transfer-category-draft.png)
 
-## When To Use This
+## When to use this
 
 - A bank row appears to be the other side of a transfer.
 - SPRK uses `Transfer` wording instead of check, invoice, or bill matching.
 - Transfer confirmation stops for review before creating or reusing a transfer.
 
-## Before You Start
+## Before you start
 
 - Confirm both accounts involved in the transfer.
 - Compare date, amount, description, memo, and reconciliation state.
@@ -32,7 +34,7 @@ Review bank-to-bank, bank-to-cash, or bank-to-credit-card pairings before confir
 
 A later imported opposite side of a transfer can be adopted into an existing transfer or excluded as a duplicate counterpart instead of creating a second journal entry for the same transfer. Ambiguous transfer evidence can require an explicit transfer-review choice instead of silently adopting or changing an existing transfer.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -41,7 +43,7 @@ A later imported opposite side of a transfer can be adopted into an existing tra
 | The candidate is already reconciled | Statement period and reconciled status | Cancel and review before changing transfer history |
 | Transfer wording appears unexpectedly | Offset account type | Confirm whether the account pairing is a register-account transfer |
 
-## Practice And Examples
+## Practice and examples
 
 - Practice file: [bank-transfer-counterpart-adoption.csv](../sample-files/practice/bank-transfer-counterpart-adoption.csv)
 

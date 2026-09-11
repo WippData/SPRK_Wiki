@@ -1,14 +1,16 @@
 # First Week Setup for a New Company
 
+<!-- Screenshot status: Review needed -->
+
 ![New company drawer showing account fields and accounting edit permissions](../screenshots/company-setup-and-migration/company-account-fields-defaults-step-01.png)
 
 Use this first-week setup workflow to move from a new company record to a usable accounting file with core defaults, lists, bank accounts, opening balances, and review reports.
 
-## When To Use This
+## When to use this
 
 Use this page when you have just created or imported a company and want a practical setup path before day-to-day bookkeeping begins.
 
-## Before You Start
+## Before you start
 
 - You know whether the company is starting fresh or being migrated from another accounting system.
 - You know the preferred chart of accounts approach.
@@ -46,11 +48,11 @@ Use this page when you have just created or imported a company and want a practi
    - Create a test bill or check path if payables will be used.
    - Import and confirm a small set of banking activity if bank feeds/imports are part of the process.
 
-## What Happens Next
+## What happens next
 
 The company should be ready for normal bookkeeping with fewer surprises around missing accounts, default AR/AP settings, uncategorized bank activity, or incomplete customer/vendor lists.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

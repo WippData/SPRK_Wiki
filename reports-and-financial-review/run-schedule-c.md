@@ -1,10 +1,12 @@
 # Run Schedule C
 
+<!-- Screenshot status: Review needed -->
+
 Use SPRK's `Schedule C` report to review income and expense accounts grouped into Schedule C lines before tax preparation.
 
 <!-- Last validated against SPRK source: 2026-08-27 -->
 
-## When To Use This
+## When to use this
 
 Use this report when you want a Schedule C-oriented review of posted activity. It is a review aid for your accountant or tax preparer; it does not file a tax return.
 
@@ -20,11 +22,11 @@ Use this report when you want a Schedule C-oriented review of posted activity. I
 6. Use supported report rows to inspect the posted activity behind an amount.
 7. Use `Export` or `Print` when you need a working copy for review.
 
-## What Happens Next
+## What happens next
 
-Running, exporting, or printing this report does not post or change accounting entries. Correct the underlying account or transaction through its original workflow, then run the report again.
+Correct an account or transaction from its original page, then run the report again. This report supports review; it does not file or submit Schedule C.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

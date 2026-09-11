@@ -1,18 +1,20 @@
-# AP Review Workflow
+# Review Bills and Vendor Balances
+
+<!-- Screenshot status: Review needed -->
 
 ![Bills list showing bill rows, statuses, and available bill actions](../screenshots/expenses-and-payables/bills-list-step-01.png)
 
-Use this accounts payable review workflow to check vendors, bills, checks, payables aging, and expense detail before reporting.
+Review vendor balances, unpaid bills, checks, payables aging, and expenses before reporting.
 
-## When To Use This
+## When to use this
 
-Use this workflow before month-end reporting, before paying vendors, or when payables or expense totals do not look right.
+Use this review before month-end reporting, before paying vendors, or when payables or expense totals do not look right.
 
-## Before You Start
+## Before you start
 
 - The correct company is active.
 - Vendor records are set up.
-- Bills, checks, and vendor payments for the period have been entered through the supported workflows.
+- Bills, checks, and vendor payments for the period have been entered.
 
 ## Steps
 
@@ -27,11 +29,11 @@ Use this workflow before month-end reporting, before paying vendors, or when pay
 9. Correct bill or payment issues in the payables workflow before using journal entries.
 10. Use journal entries for accountant adjustments that do not belong to a vendor bill, check, or payment workflow.
 
-## What Happens Next
+## What happens next
 
 AP review helps confirm that vendor balances, bill status, payment records, AP aging, and expense reporting agree before reports are finalized.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

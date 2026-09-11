@@ -1,14 +1,16 @@
 # Manage Items for Invoicing
 
+<!-- Screenshot status: Review needed -->
+
 Define reusable products and services so invoice and bill lines can be built faster and with more consistent descriptions, pricing, and account defaults.
 
 ![Items list showing Item Number / SKU column and search label](../screenshots/sales-and-receivables/items-item-number-sku-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you want invoice lines to reuse prepared item records instead of retyping descriptions, prices, and sales defaults each time.
+Use this guide when you want invoice lines to reuse prepared item records instead of retyping descriptions, prices, and sales defaults each time.
 
-## Before You Start
+## Before you start
 
 - You can open the `Items` page.
 - You know whether the record should be set up as a service, product, or other item type.
@@ -57,11 +59,11 @@ This is a presentation setting. It does not delete the item number from the item
 
 Choosing `Product` as the `Item type` or filling in `Expense/COGS account` does not, by itself, create inventory quantities, an inventory asset balance, or automatic cost-of-goods-sold entries. The item stores reusable invoice or bill defaults. If you track inventory outside SPRK, use your accountant's approved journal and supporting schedule rather than assuming the item record is a perpetual inventory system.
 
-## What Happens Next
+## What happens next
 
 The item becomes available for invoice entry, item-started invoices or bills where available, and future lines can reuse its saved description, pricing, unit-of-measure, and account defaults.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

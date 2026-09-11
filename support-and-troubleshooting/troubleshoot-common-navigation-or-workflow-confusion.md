@@ -1,14 +1,16 @@
-# Troubleshoot common navigation or workflow confusion
+# Find a Missing Page or Task
 
-Resolve common "where do I do this?" questions by checking the active company, confirming the correct app area, and using the built-in help and adjacent workflow articles.
+<!-- Screenshot status: Review needed -->
+
+Check the active company, the app area, and any required setup when a task or page seems to be missing.
 
 ![Support How To Guides expanded to the troubleshooting article for navigation and workflow confusion](../screenshots/support-and-troubleshooting/troubleshoot-navigation-confusion-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when a task feels missing, a page looks different than expected, or you are unsure which section of SPRK owns the workflow you need.
+Use this guide when a task feels missing, a page looks different than expected, or you are unsure which section of SPRK owns the workflow you need.
 
-## Before You Start
+## Before you start
 
 - You are signed in to SPRK.
 - You can identify the workflow you are trying to complete.
@@ -30,14 +32,11 @@ Use this workflow when a task feels missing, a page looks different than expecte
 6. If you still cannot find the workflow, open the related public wiki article for the exact page you are trying to use.
 7. If the page still seems unavailable or different than expected, collect a support log and contact support with the page name and company context.
 
-## What Happens Next
+## What happens next
 
 You can usually narrow the problem to the active company, the wrong app section, a missing prerequisite record, or a need for support follow-up.
 
-- Checking navigation, reading help, and opening support resources do not post to the general ledger.
-- If you discover that a workflow belongs in another section, the ledger impact depends on the accounting action you later complete there, not on the troubleshooting steps themselves.
-
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

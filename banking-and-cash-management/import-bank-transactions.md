@@ -1,18 +1,20 @@
 # Import Bank Transactions
 
+<!-- Screenshot status: Review needed -->
+
 Bring bank or credit card activity into SPRK from a supported file, review the preview, and load selected rows into the `Pending` tab for bank review.
 
 ![Banking More menu showing Import File and Download Import Template actions](../screenshots/banking-and-cash-management/banking-import-template-menu-step-01.png)
 
 ![Bank transaction import template modal](../screenshots/banking-and-cash-management/bank-transaction-import-template-step-01.png)
 
-## When To Use This
+## When to use this
 
 - You have bank or credit card activity from an outside file and want to review it in SPRK.
 - You want imported rows to enter `Pending` before they are categorized and confirmed.
 - Imported rows are reviewed before posting. Use Banking review to categorize and confirm them after the import.
 
-## Before You Start
+## Before you start
 
 - The correct active company is selected.
 - The destination bank or credit card account exists in SPRK.
@@ -53,15 +55,13 @@ Bring bank or credit card activity into SPRK from a supported file, review the p
 
 The confirmed preview loads selected, non-skipped rows into the selected account's pending bank register.
 
-- Selecting the destination account does not post to the general ledger.
-- Opening the preview and changing `Swap spent/received` do not post to the general ledger.
-- Creating vendors or customers from the preview updates setup records and the current preview batch. It does not move rows to `Pending` by itself.
+- Creating vendors or customers from the preview updates setup records and the current preview batch.
 - Confirming the import preview creates or updates pending bank rows for later review.
 - Pending rows affect the general ledger only after they are categorized and confirmed from the Banking workflow.
 
 Optional practice files are available for [duplicate review](../sample-files/practice/bank-import-duplicates-and-parties.csv) and [vendor or customer review](../sample-files/practice/bank-import-vendor-customer-parties.csv).
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

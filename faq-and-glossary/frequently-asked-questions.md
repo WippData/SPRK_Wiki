@@ -1,51 +1,84 @@
 # Frequently Asked Questions
 
-![Support tab with help and troubleshooting context](../screenshots/faq-and-glossary/faq-support-context-step-01.png)
+<!-- Screenshot status: Review needed -->
 
-Use this page when you want quick answers to common SPRK questions about companies, navigation, licensing, support, backups, and the difference between product help actions and accounting transactions.
+Find quick answers to common questions about setup, everyday work, imports, reconciliation, backups, and support.
 
 ![Frequently Asked Questions expanded in Support How To Guides with common SPRK help topics visible](../screenshots/faq-and-glossary/frequently-asked-questions-step-01.png)
 
-## When To Use This
+## Getting started
 
-Use this article as a first-stop reference before you contact support or assume a workflow changed your books.
+### How do I know which company I am working in?
 
-## Before You Start
+Check the company name in the sidebar before entering or importing records. Use [Switch between companies](../company-setup-and-migration/switch-between-companies.md) when you need a different company.
 
-- You are signed in to SPRK, or you are reviewing the public help center before using the app.
-- You can open the sidebar, `Companies`, `License`, `Support`, `Preferences`, and `Backups` if you need to verify an answer inside the product.
+### Does a demo company count toward my first real company?
 
-## Steps
+No. Demo companies do not count toward the first real-company allowance.
 
-1. Match your question to the closest topic below.
-2. If your question is about which company you are editing, check the active company selector in the sidebar or open `Companies` to confirm the current selection.
-3. If your question is about company creation limits, open `License` to review license details and usage information.
-4. If your question is about troubleshooting, updates, or built-in help topics, open `Support`.
-5. If your question is about backup timing or backup location, open `Preferences` and then select `Backups`.
-6. Use these quick answers for the most common questions:
+### Where can I see my SPRK version?
 
-- `Does switching companies change my transactions?` No. It changes which company you are viewing, but it does not post or edit transactions by itself.
-- `Do demo companies count toward the first real company limit?` No. Current product guidance says demo companies do not count toward the first real company allowance.
-- `Does adding or viewing a license post anything to the books?` No. Licensing affects workspace access and visibility only.
-- `Does downloading a support log or checking for updates affect balances?` No. Those are product-support actions, not accounting entries.
-- `Can I create another company without a license?` Your first real company is free. Additional real-company creation may show a license prompt.
-- `Where do I confirm backup timing?` In `Preferences` under `Backups`, where the schedule is shown in local device time.
-- `Where do I find quick in-product help topics?` In the `Support` tab under `How To Guides`.
-- `How do I confirm what version I am using?` Check the version shown in the sidebar footer.
-- `Where do I confirm whether a workflow is covered?` Start with the section README that matches the product area, then open the linked workflow page.
+Check the version shown in the sidebar footer. Include it when you contact support.
 
-## What Happens Next
+## Invoices, bills, and payments
 
-You can answer common SPRK usage questions quickly and route yourself to the right product area for confirmation.
+### Should an unpaid invoice use a bank account in `Receive to`?
 
-- Reading FAQ guidance does not create, edit, reverse, or delete a journal entry.
-- Switching companies changes working context only and does not post a transaction by itself.
-- License, support, backup, and update-reference actions described on this page do not affect account balances unless you separately enter or classify accounting transactions elsewhere in SPRK.
+Usually no. Choose an Accounts Receivable control account when the invoice should remain open until payment. Choose a bank or cash account only when the invoice is paid now. See [Create an invoice](../sales-and-receivables/create-invoices.md).
 
+### Should an unpaid bill use a bank account in `Pay from`?
+
+Usually no. Choose an Accounts Payable control account when the bill should remain open until payment. Choose a bank, cash, or credit-card account only when the bill is paid now. See [Create a bill](../expenses-and-payables/create-bills.md).
+
+### Is recording a payment the same as matching a bank transaction?
+
+No. Record the payment against the invoice or bill first. Then match the imported bank row to that existing payment so the same cash movement is not recorded twice.
+
+## Imports
+
+### Which import should I use?
+
+Start with [What each import can bring into SPRK](../company-setup-and-migration/understand-import-and-migration-boundaries.md). Bank, invoice, bill, journal, setup, and Company File imports serve different purposes.
+
+### What should I do before confirming an import?
+
+Confirm the active company, use the template for that import, review the preview totals and warnings, and keep a copy of the source file. See [Before you import](../company-setup-and-migration/before-you-import.md).
+
+### An import completed, but something looks wrong. What should I send support?
+
+Send the company name, import type, file name, run time, visible counts or warnings, and the source file when it is safe to share. See [Collect import run details for support](../support-and-troubleshooting/collect-import-run-details-for-support.md).
+
+## Reconciliation and reports
+
+### Why does the reconciliation difference need to be zero?
+
+A zero difference means the selected cleared activity agrees with the statement ending balance. Resolve missing, duplicate, or incorrectly cleared items before finishing. See [Finish a reconciliation](../reconciliation/finish-a-reconciliation.md).
+
+### How do I find what makes up a report total?
+
+Select a supported amount or account row to open its journal detail. See [Open supporting details from a report](../reports-and-financial-review/use-report-drilldown-behavior.md).
+
+## Backups and Company Files
+
+### Where do I check backup timing and location?
+
+Open `Preferences`, then `Backups`. Review the schedule, saved location, latest status, and `Run Backup Now` result. See [Review backup settings and run a backup](../backups-and-data-safety/review-backup-settings-visible-in-the-product.md).
+
+### Is a Company File the same as a routine backup?
+
+No. A Company File is a package for exporting or importing one company. Keep routine backup and Company File workflows separate. See [Export and import Company Files](../backups-and-data-safety/export-and-import-company-files.md).
+
+## Get more help
+
+### A page or task seems to be missing. What should I check?
+
+Confirm the active company, open the product area that owns the task, and make sure required setup records exist. See [Find a missing page or task](../support-and-troubleshooting/troubleshoot-common-navigation-or-workflow-confusion.md).
+
+### How do I contact support?
+
+Open `Support` to review the activity log and contact options. Include the company, page, task, expected result, actual result, and any visible error. See [Use the Support tab](../support-and-troubleshooting/use-the-support-tab.md).
 
 ## Related
 
-- [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
-- [View license information](../licensing/view-license-information.md)
-- [Use the support tab](../support-and-troubleshooting/use-the-support-tab.md)
-- [Review backup settings visible in the product](../backups-and-data-safety/review-backup-settings-visible-in-the-product.md)
+- [Product glossary](./product-glossary.md)
+- [Collect the right details before contacting support](../support-and-troubleshooting/collect-the-right-details-before-contacting-support.md)

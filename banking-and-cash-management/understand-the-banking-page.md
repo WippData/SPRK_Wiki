@@ -7,7 +7,7 @@ Use this Banking page map to understand where account selection, import, pending
 
 ![Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
 
-## Quick Reference
+## Quick reference
 
 | Area Or Control | Meaning | Where It Matters |
 |---|---|---|
@@ -40,7 +40,7 @@ Import preview review happens before rows are created in `Pending`. Spreadsheet 
 
 Compatible confirmed rows linked to simple two-line journals can keep supported bank and journal fields synchronized during correction. Treat this as a reviewed paired-edit path, not a promise that every row is editable: split activity, source-document postings, or changes to the reconciled settlement account can require reversal or the source workflow. A same-date correction to only the non-cash target account is narrower and does not by itself void reconciliation history when the settlement account and amount remain unchanged.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

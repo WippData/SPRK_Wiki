@@ -7,11 +7,11 @@
 
 Diagnose the most common reasons a reconciliation cannot start or finish cleanly, including first-time setup issues, date-window issues, and nonzero differences.
 
-## When To Use This
+## When to use this
 
 Use this article when reconciliation stops with a validation error, an unexpected difference, or a transaction-selection problem.
 
-## Before You Start
+## Before you start
 
 - You are working in `Reconcile`.
 - You know which bank or credit card account and statement period you are trying to reconcile.
@@ -68,11 +68,10 @@ SPRK does not use reconciliation as a separate ledger-adjustment tool. Correct t
 - Include a clear memo, description, or firm workpaper note explaining why the correction was made and which statement period it affects.
 - After the correction, review the relevant general-ledger detail, reconciliation history, and bank reconciliation report so the ledger correction and reconciliation evidence can be followed separately.
 
-## What Happens Next
+## What happens next
 
 You can identify whether the issue is caused by account selection, transaction status, statement setup, linked journal activity, or the first-time opening balance path.
 
-- Troubleshooting steps do not create new general ledger entries by themselves.
 - Correcting a reconciliation issue usually means adjusting transaction selection, dates, balances, status, exclusion state, or match state before posting the reconcile record.
 - Reconciliation beginning balances are carried from the first anchor or prior posted reconciliation history.
 - Only posted reconciliation sessions feed later opening balances. A session retained with status `Voided` remains audit history but is excluded from that chain.
@@ -80,7 +79,7 @@ You can identify whether the issue is caused by account selection, transaction s
 - Confirmed unreconciled rows can appear for review even when their transaction date is after the statement ending date. Select them only when your statement evidence supports that later-dated item clearing in the current period.
 - `Resolve` can repair a confirmed bank row's GL link, but it is not a reconciliation finish action and does not clear the row by itself.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

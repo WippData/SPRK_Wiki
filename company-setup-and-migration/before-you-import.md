@@ -1,5 +1,7 @@
 # Before You Import
 
+<!-- Screenshot status: Review needed -->
+
 Choose the right import path and review the source file before bringing company, list, bank, document, or ledger data into SPRK.
 
 ![Import wizard showing starter template download options](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
@@ -43,7 +45,7 @@ Use this page before importing from QuickBooks, a spreadsheet, a bank file, or a
 - A familiar source system does not make preview warnings safe to ignore.
 - If the preview is unclear, stop and resolve the source file before committing.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -56,5 +58,5 @@ Use this page before importing from QuickBooks, a spreadsheet, a bank file, or a
 
 ## Related
 
-- [Understand import and migration boundaries](./understand-import-and-migration-boundaries.md)
+- [See what each import can bring into SPRK](./understand-import-and-migration-boundaries.md)
 - [Collect import run details for support](../support-and-troubleshooting/collect-import-run-details-for-support.md)
