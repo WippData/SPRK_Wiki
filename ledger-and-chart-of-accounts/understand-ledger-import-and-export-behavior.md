@@ -1,16 +1,18 @@
 # Prepare and Review Ledger Imports and Exports
 
+<!-- Screenshot status: Review needed -->
+
 Move journal-entry data into or out of SPRK from the `Ledger` page, with an accountant review path for templates, account matching, preview totals, and post-import report checks.
 
 ![Journal Entry Import Template modal showing accepted file formats, required columns, recommended columns, and Download Template](../screenshots/ledger-and-chart-of-accounts/journal-entry-import-template-step-01.png)
 
 ![Journal Entry Import Template modal showing required and recommended columns](../screenshots/ledger-and-chart-of-accounts/journal-entry-import-template-step-02.png)
 
-## When To Use This
+## When to use this
 
 Use this article when you need to import journal-entry activity into SPRK, export journal-entry data for review outside the app, or prepare ledger data for migration cleanup.
 
-## Before You Start
+## Before you start
 
 - An active company is selected.
 - For imports, you have a source file in `.csv` or `.xlsx` format that matches the ledger workflow you intend to use.
@@ -51,7 +53,7 @@ Use this article when you need to import journal-entry activity into SPRK, expor
 10. Confirm the import only after you have reviewed the preview totals, dates, descriptions, accounts, vendors, and validation messages.
 11. After import completes, refresh the ledger if needed and review the newly created entries.
 
-## What Happens Next
+## What happens next
 
 You can move journal-entry data in or out of the product with the current supported tools.
 
@@ -63,7 +65,7 @@ You can move journal-entry data in or out of the product with the current suppor
 - Preview failures remain visible in the import modal, and confirmation stays blocked until SPRK has a valid preview.
 - If the same completed batch is retried, SPRK can return the existing journal entries instead of creating duplicates; if only part of a prior batch exists, the retry should be blocked rather than posting the remainder.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -73,6 +75,6 @@ You can move journal-entry data in or out of the product with the current suppor
 
 - [Before you import](../company-setup-and-migration/before-you-import.md)
 - [Record journal entries](./record-journal-entries.md)
-- [Choose between journal entries and source workflows](./when-to-use-journal-entries-vs-source-forms.md)
+- [When to use a journal entry](./when-to-use-journal-entries-vs-source-forms.md)
 - [Understand the chart of accounts structure](./understand-the-chart-of-accounts-structure.md)
 - [Understand audit-sensitive ledger behavior](./understand-audit-sensitive-ledger-behavior.md)

@@ -1,14 +1,16 @@
 # Review Company-Level Maintenance Actions
 
+<!-- Screenshot status: Review needed -->
+
 Edit company details, archive or unarchive companies, and understand when permanent delete is available.
 
 ![Companies tab filtered to Archived companies with edit, archive, and delete maintenance actions visible](../screenshots/company-administration/company-maintenance-actions-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need to maintain company settings after a company already exists.
+Use this guide when you need to maintain company settings after a company already exists.
 
-## Before You Start
+## Before you start
 
 - You can open `Companies` from the `System` section.
 - The company you want to maintain is visible in the list.
@@ -34,19 +36,18 @@ Use this workflow when you need to maintain company settings after a company alr
 10. Permanently delete a company only after it has been archived first.
 11. If SPRK warns that the company has journal entries, keep it archived instead of expecting permanent delete to succeed.
 
-## What Happens Next
+## What happens next
 
 You can maintain company settings and lifecycle state without guessing which actions are reversible.
 
-- Editing company settings changes setup values but does not create a journal entry by itself.
 - A posting cutoff date can restrict which dates are allowed for future posted entries, but changing the cutoff does not repost prior activity automatically.
 - Changing `Required account fields` affects account setup and visible account presentation. It does not delete existing account codes or change posted balances.
 - Changing `Control accounts` changes future manual-journal availability for selected accounts. It does not delete accounts or rewrite existing posted lines.
 - Changing `Invoice defaults` can affect new invoice starting terms, due dates, and workflow status. It does not rewrite already posted invoices.
-- Changing company contact fields or `Payment Instructions` can affect future printed customer invoices. It does not post accounting activity.
+- Changing company contact fields or `Payment Instructions` can affect future printed customer invoices.
 - Changing `Item identification` affects visible item labels in supported workflows. It does not delete item numbers, item accounts, or posted invoice lines.
 - `Defaults` bulk apply changes required account fields and accounting edit permissions on selected active companies while preserving unrelated company accounting settings.
-- Archiving or unarchiving a company changes availability in the company list and selector; it does not create, edit, or delete journal entries.
+- Archiving or unarchiving a company changes its availability in the company list and selector.
 - Permanent deletion is limited to archived companies, and companies with journal-entry activity are blocked from deletion.
 
 

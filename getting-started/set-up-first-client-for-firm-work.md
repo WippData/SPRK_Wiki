@@ -1,12 +1,14 @@
 # Set Up a First Client for Firm Work
 
+<!-- Screenshot status: Review needed -->
+
 ![SPRK Dashboard in Demo Company showing the active company selector, main sidebar navigation, KPI cards, charts, and quick links](../screenshots/getting-started/first-day-orientation-step-01.png)
 
 Use this checklist to orient a small-business accounting or bookkeeping firm through the first client setup path in SPRK.
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need a high-level sequence from company creation or import through bank review, reconciliation, reporting, and company transfer.
+Use this guide when you need a high-level sequence from company creation or import through bank review, reconciliation, reporting, and company transfer.
 
 ## Steps
 
@@ -26,16 +28,15 @@ Use this workflow when you need a high-level sequence from company creation or i
 14. Export a `Company file` when the firm needs a company-level transfer or safekeeping file.
 15. Start a checklist run if the client needs a recurring close or review cadence.
 
-## Boundaries
+## What to leave for later
 
-- This is workflow orientation, not accounting, tax, payroll, or legal advice.
 - SPRK 1.0 guidance is aimed at accounting and bookkeeping firms serving small businesses, not enterprise ERP, payroll tax filing, tax agency filing, full multi-currency/FX, advanced inventory costing, or perfect historical QuickBooks migration.
 - Use a Company File for SPRK-to-SPRK transfer; use import paths for setup and transaction data that originate outside SPRK.
 
 ## Related
 
 - [Create your first company](../company-setup-and-migration/create-your-first-company.md)
-- [Understand import and migration boundaries](../company-setup-and-migration/understand-import-and-migration-boundaries.md)
+- [See what each import can bring into SPRK](../company-setup-and-migration/understand-import-and-migration-boundaries.md)
 - [Import bank transactions](../banking-and-cash-management/import-bank-transactions.md)
 - [Start a reconciliation](../reconciliation/start-a-reconciliation.md)
 - [View available reports](../reports-and-financial-review/view-available-reports.md)

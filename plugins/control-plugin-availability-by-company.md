@@ -1,14 +1,16 @@
 # Control Plugins (Beta) by Company
 
+<!-- Screenshot status: Review needed -->
+
 ![Plugins settings tab showing supported plugin types and installed plugin status](../screenshots/plugins/plugins-settings-tab-step-01.png)
 
 Check company context when an installed Plugin (Beta) should be used for one company but not another.
 
-## When To Use This
+## When to use this
 
 Use this page when a plugin is installed, but users need to confirm whether its pages or records belong to the active company.
 
-## Before You Start
+## Before you start
 
 - The plugin is already installed.
 - You know which company should use the plugin.
@@ -28,9 +30,9 @@ Use this page when a plugin is installed, but users need to confirm whether its 
 
 ## What This Changes
 
-Changing plugin availability changes whether users can reach plugin pages for the selected context. It does not create journal entries.
+Changing plugin availability controls whether users can reach its pages for the selected company.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

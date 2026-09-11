@@ -1,10 +1,12 @@
-# Understand Personalization Boundaries and Saved Behavior
+# Understand Which Preferences Are Saved
 
-Learn which SPRK preferences follow your user profile, how broadly they apply, and what they do not change.
+<!-- Screenshot status: Review needed -->
+
+Learn which settings follow your user profile and which changes apply only to the current page or company.
 
 ![Preferences page showing user-level tooltip visibility, grid edit, and account sorting controls](../screenshots/preferences-and-personalization/show-tooltips-preference-step-01.png)
 
-## Quick Reference
+## Quick reference
 
 | Preference Area | What It Changes | What It Does Not Change |
 |---|---|---|
@@ -20,9 +22,9 @@ Learn which SPRK preferences follow your user profile, how broadly they apply, a
 
 The Preferences page describes its settings as applying across all companies across the app for your user profile. The active company still matters for navigation and accounting context, but preferences are broader than a single company.
 
-Personalization settings do not post to the general ledger, move transactions between companies, reopen closed periods, rename accounts, or change source documents. They change how SPRK is presented to you.
+Personalization settings change how SPRK is presented to you. Use company setup or the related accounting page when you need to change company records.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

@@ -1,16 +1,18 @@
 # Collect the Right Details Before Contacting Support
 
+<!-- Screenshot status: Review needed -->
+
 Prepare a clear support request by capturing the current session log, workflow, visible result, and affected records before reaching out.
 
 ![Support tab showing the Support Activity Log and contact options](../screenshots/support-and-troubleshooting/collect-support-details-step-01.png)
 
-## When To Use This
+## When to use this
 
 - You need help with a visible SPRK result.
 - You want to avoid a support back-and-forth for missing context.
 - You need to preserve details before making manual cleanup changes.
 
-## Do This First
+## Do this first
 
 1. Reproduce the issue once if it is safe to do so, so the current session log includes the relevant actions.
 2. Note the active company, page, and workflow you were using when the problem happened.
@@ -20,7 +22,7 @@ Prepare a clear support request by capturing the current session log, workflow, 
 6. Keep the downloaded text file ready to attach or quote when you contact support.
 7. Email [support@sprksystems.com](mailto:support@sprksystems.com) and include the details below.
 
-## Details To Capture
+## Details to capture
 
 - Company name.
 - Page or workflow.
@@ -33,14 +35,14 @@ Prepare a clear support request by capturing the current session log, workflow, 
 - Screenshot if it does not expose sensitive client data.
 - Support Activity Log.
 
-## What To Avoid
+## What to avoid
 
 - Do not clear the support log before downloading the session details you need.
 - Do not make manual cleanup entries before capturing the original mismatch.
 - Do not contact support with only "it failed" when the page, company, and workflow are available.
 - Do not treat support activity as an accounting workflow; support actions are informational and operational only.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

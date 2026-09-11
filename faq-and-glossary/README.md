@@ -1,8 +1,13 @@
-# FAQ And Glossary
+# FAQs and glossary
 
-Use this section to answer common SPRK questions quickly and look up product terms.
+Get quick answers to common questions and look up words used throughout SPRK.
 
-## In This Section
+## Start here
 
 - [Frequently asked questions](./frequently-asked-questions.md)
 - [Product glossary](./product-glossary.md)
+
+## Related
+
+- [Find a missing page or task](../support-and-troubleshooting/troubleshoot-common-navigation-or-workflow-confusion.md)
+- [Use the Support tab](../support-and-troubleshooting/use-the-support-tab.md)

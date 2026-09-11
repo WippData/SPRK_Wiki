@@ -1,21 +1,22 @@
-# Reports and Financial Review
+# Reports and financial review
+
+Run reports, open supporting detail, and review financial results.
 
 ![Reports page showing report tabs, summary cards, and output controls](../screenshots/reports-and-financial-review/reports-overview-step-01.png)
 
-Open the Reports area, run the report you need, set searchable filters and date controls, review supporting detail from rows or supported totals, and use reports as part of month-end review inside SPRK.
+## Start here
 
-## In This Section
+- [See the reports available in SPRK](./view-available-reports.md)
+- [Review financial results](./review-financial-results-inside-the-product.md)
 
-- [View available reports](./view-available-reports.md)
-- [Run Schedule C](./run-schedule-c.md)
+## Common tasks
+
 - [Run Income by Customer](./run-income-by-customer.md)
-- [Export transactions from reports](./export-transactions-from-reports.md)
-- [Use report drilldown behavior](./use-report-drilldown-behavior.md)
-- [Review financial results inside the product](./review-financial-results-inside-the-product.md)
+- [Run Schedule C](./run-schedule-c.md)
+- [Export transactions from a report](./export-transactions-from-reports.md)
+- [Open supporting details from a report](./use-report-drilldown-behavior.md)
 
-## Related Review Workflows
+## Related
 
-- [Month-end review checklist](../checklists-and-period-end-work/month-end-review-checklist.md)
-- [Common accountant corrections](../ledger-and-chart-of-accounts/common-accountant-corrections.md)
-
-For reconciliation-specific report access from `Reconcile`, see [View and print bank reconciliation reports](../reconciliation/view-and-print-bank-reconciliation-reports.md).
+- [Follow the month-end review checklist](../checklists-and-period-end-work/month-end-review-checklist.md)
+- [Make common accountant corrections](../ledger-and-chart-of-accounts/common-accountant-corrections.md)

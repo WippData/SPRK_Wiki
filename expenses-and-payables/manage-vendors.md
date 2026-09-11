@@ -1,16 +1,18 @@
 # Manage Vendors
 
+<!-- Screenshot status: Review needed -->
+
 ![Vendors list with editable vendor records](../screenshots/expenses-and-payables/vendors-list-step-01.png)
 
 ![Vendors grid showing the 1099 tracking column](../screenshots/expenses-and-payables/vendors-1099-column-step-01.png)
 
 Create and maintain vendor records so bills, checks, and vendor reporting use the right payee information.
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need a clean vendor record before entering bills, printing or tracking checks, classifying repeat bank activity, or reviewing vendor-specific activity.
+Use this guide when you need a clean vendor record before entering bills, printing or tracking checks, classifying repeat bank activity, or reviewing vendor-specific activity.
 
-## Before You Start
+## Before you start
 
 - You can open the `Vendors` page.
 - You know the vendor name you want to use.
@@ -37,15 +39,15 @@ Use this workflow when you need a clean vendor record before entering bills, pri
    - Use the system print dialog when you want a PDF copy of the register output.
 8. If you update several vendor fields at once, use Grid Edit or a saved Grid Edit default on supported pages to reduce repeated drawer work, then review the changed-cell count before selecting `Apply Changes`.
 
-## What Happens Next
+## What happens next
 
-The vendor is available for bill entry, check tracking, supported banking classification, 1099-oriented expense review, and vendor lookup. Creating or editing a vendor record does not create a general ledger transaction by itself.
+The vendor is available for bill entry, check tracking, banking categorization, 1099-oriented expense review, and vendor lookup.
 
 Clean, unique active vendor names also improve vendor-aware bank-import review when that workflow is available. Spreadsheet imports can resolve exact active vendor IDs and uniquely matched active vendor names during preview; unresolved imported names remain available for review or vendor creation from the import preview.
 
 The `1099` field changes vendor setup and report filtering only. It does not create tax forms, file 1099s, or post accounting activity by itself.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

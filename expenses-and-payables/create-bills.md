@@ -1,16 +1,18 @@
-# Create Bills
+# Create a Bill
 
-Enter a vendor bill, choose the payable or paid-now route, and review line accounts before saving.
+<!-- Screenshot status: Review needed -->
+
+Enter a vendor bill and choose whether it should stay open or be recorded as paid now.
 
 ![New bill drawer showing Pay from, default expense account, and line account](../screenshots/expenses-and-payables/bill-routing-fields-step-01.png)
 
-## When To Use This
+## When to use this
 
 - You need to enter a vendor bill.
 - You need the bill to stay in `Draft`, move to `Open`, or be recorded as paid immediately.
 - You need to review vendor, due date, `Pay from`, and line accounts before saving.
 
-## Before You Start
+## Before you start
 
 - A vendor record exists.
 - The expense or other posting accounts for the bill lines are available.
@@ -31,9 +33,9 @@ Enter a vendor bill, choose the payable or paid-now route, and review line accou
    - `Status`
    - `Terms`, if needed
 4. Choose `Pay from` carefully:
-   - Use an Accounts Payable control account when the bill should stay on the open accrual path.
+   - Use an Accounts Payable control account when you will pay the vendor later.
    - Use a cash, bank, or credit-card settlement account only when the bill is being recorded as paid immediately.
-   - Payables control routing and settlement-account routing are alternative paths, not two fields to combine on the same bill.
+   - These are two different choices: open payable or paid now.
 5. Add one or more bill lines.
 6. For each line, choose the `Account` that should receive the expense or other debit.
    - `Default expense account` fills blank line accounts when the drawer supports that fallback.
@@ -54,7 +56,7 @@ Enter a vendor bill, choose the payable or paid-now route, and review line accou
 - Saving a paid-now bill with a cash, bank, or credit-card settlement account in `Pay from` posts directly between the bill line accounts and that settlement account.
 - Line-level `Account` values control the expense or debit side of the bill posting.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

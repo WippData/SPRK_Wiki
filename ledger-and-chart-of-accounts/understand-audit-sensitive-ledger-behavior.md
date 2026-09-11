@@ -1,5 +1,7 @@
 # Understand Audit-Sensitive Ledger Behavior
 
+<!-- Screenshot status: Review needed -->
+
 Choose a history-preserving correction path when posted ledger, journal, account, or bank-linked activity should not be overwritten.
 
 ![New journal entry drawer for reviewing ledger posting fields](../screenshots/ledger-and-chart-of-accounts/new-journal-entry-drawer-step-01.png)
@@ -14,7 +16,7 @@ Use this page when you are asking "why can't I edit this?" or "should I reverse 
 |---|---|---|
 | The transaction belongs to an invoice, bill, check, payment, or bank row | The source workflow for that record | Source status, payment state, and linked journals |
 | The original manual journal was wrong and should remain visible | [Record journal entries](./record-journal-entries.md) | Whether reversal or a correcting journal is the right audit trail |
-| A source workflow vs journal entry choice is unclear | [Choose between journal entries and source workflows](./when-to-use-journal-entries-vs-source-forms.md) | Whether the source record should own the accounting event |
+| You are not sure whether to use a journal entry | [When to use a journal entry](./when-to-use-journal-entries-vs-source-forms.md) | Whether an invoice, bill, payment, check, or bank transaction should own the accounting event |
 | A bank-linked item looks wrong | [Edit linked ledger and bank activity](./edit-linked-ledger-and-bank-activity.md) | Reconciliation state and linked journal behavior |
 | A confirmed bank row needs link repair | [Resolve confirmed bank transactions](../banking-and-cash-management/resolve-confirmed-bank-transactions.md) | Existing link, candidate GL line, and statement metadata |
 | A backdated journal touches posted reconciliation history | [Record journal entries](./record-journal-entries.md) | Settlement account, journal date, affected statement periods, and whether voiding is intended |
@@ -39,7 +41,7 @@ Use this page when you are asking "why can't I edit this?" or "should I reverse 
 - Posted reconciliation history is not silently recalculated. When a supported journal correction affects it, SPRK requires explicit confirmation and preserves the affected session as `Voided`.
 - Marking an account inactive does not remove prior ledger activity or create a new journal entry.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -50,7 +52,7 @@ Use this page when you are asking "why can't I edit this?" or "should I reverse 
 | A journal save asks to void reconciliation history | Whether the settlement account and posting date affect one or more posted statement periods | Review the named account and statement-ending date; cancel unless voiding is the intended audit result |
 | An inactive account still appears in history | Whether prior activity exists | Treat inactive status as future-use availability, not deletion |
 
-## Practice And Examples
+## Practice and examples
 
 - Practice file: [journal-reversal-auto-reversal.csv](../sample-files/practice/journal-reversal-auto-reversal.csv)
 

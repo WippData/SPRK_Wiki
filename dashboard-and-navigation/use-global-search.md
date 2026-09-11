@@ -1,14 +1,16 @@
 # Use Global Search
 
+<!-- Screenshot status: Review needed -->
+
 Search across customers, vendors, and ledger entries from the persistent search bar at the top of the app.
 
 ![Global search results showing ledger entries returned from the app header search field](../screenshots/dashboard-and-navigation/global-search-step-01.png)
 
-## When To Use This
+## When to use this
 
 Use global search when you want to jump directly to a customer, vendor, or ledger result without browsing to the page first.
 
-## Before You Start
+## Before you start
 
 - An active company is selected.
 - You can see the search field at the top of the app.
@@ -26,7 +28,7 @@ Use global search when you want to jump directly to a customer, vendor, or ledge
 6. Press `Enter` to open the highlighted result, or click the result directly.
 7. Press `Escape` if you want to close the open search result list.
 
-## What Happens Next
+## What happens next
 
 Search results open the page that matches the result type:
 

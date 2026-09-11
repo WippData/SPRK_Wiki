@@ -1,14 +1,16 @@
 # Run Recurring Close-Style Tasks
 
+<!-- Screenshot status: Review needed -->
+
 ![Start checklist run drawer for recurring close-style tasks](../screenshots/checklists-and-period-end-work/start-checklist-run-step-01.png)
 
 Start a checklist run for a defined period, capture responses on each checklist item, and complete the run when the work is actually finished.
 
-## When To Use This
+## When to use this
 
-Use this workflow when you want to start and complete a checklist run for daily, weekly, monthly, quarterly, yearly, or custom close-style work.
+Use this guide when you want to start and complete a checklist run for daily, weekly, monthly, quarterly, yearly, or custom close-style work.
 
-## Before You Start
+## Before you start
 
 - An active company is selected.
 - At least one active checklist template exists.
@@ -37,13 +39,13 @@ Use this workflow when you want to start and complete a checklist run for daily,
    - Use `Complete run` only when the checklist work is actually finished.
 9. Reopen the run later if you need to review or edit it before completion.
 
-## What Happens Next
+## What happens next
 
 You have a dated checklist run tied to a specific period and template, with stored responses and a visible status.
 
 - Starting a checklist run creates a checklist-run record only.
 - Saving responses updates checklist-run fields only.
-- Completing the run changes the run status to `Completed` but does not create, edit, reverse, or approve a journal entry.
+- Completing the run changes its status to `Completed`. Complete any accounting task from the page linked in that checklist item.
 - If one of the checklist items tells you to post an entry elsewhere in SPRK, that posting must still happen in the separate source workflow.
 
 

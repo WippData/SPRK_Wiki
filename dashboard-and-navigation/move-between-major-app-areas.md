@@ -1,14 +1,16 @@
 # Move Between Major App Areas
 
+<!-- Screenshot status: Review needed -->
+
 Use the sidebar, section groups, quick links, and collapse control to move through the main SPRK pages.
 
 ![SPRK dashboard showing the sidebar navigation groups, active Dashboard page, and Quick Links shortcuts](../screenshots/dashboard-and-navigation/major-app-areas-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you want to understand how the app is organized and how to move from one major page to another.
+Use this guide when you want to understand how the app is organized and how to move from one major page to another.
 
-## Before You Start
+## Before you start
 
 - You are signed in to SPRK.
 - A company is active in the sidebar.
@@ -26,11 +28,11 @@ Use this workflow when you want to understand how the app is organized and how t
 6. If you are on the dashboard, use `Quick Links` for fast access to the linked pages that are currently exposed there.
 7. When you need settings-style system work, use the `Settings` section rather than looking for a separate top navigation bar.
 
-## What Happens Next
+## What happens next
 
 You can move reliably between the app’s major work areas and understand whether you are navigating by full labels, icons, or dashboard quick links.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

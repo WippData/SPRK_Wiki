@@ -9,13 +9,13 @@ Use the Import Wizard, also called the Import Company Wizard in some workflows, 
 
 ![Import Wizard showing starter templates, download templates action, and upload guidance](../screenshots/company-setup-and-migration/import-wizard-starter-templates-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you want to clone, copy, or duplicate an existing company into a separate new company. Common uses include building a training copy, starting a similar client from a known setup, testing a setup pattern, or creating a clean company that reuses selected foundation data.
+Use this guide when you want to clone, copy, or duplicate an existing company into a separate new company. Common uses include building a training copy, starting a similar client from a known setup, testing a setup pattern, or creating a clean company that reuses selected foundation data.
 
 Use Company File export/import instead when the goal is a file transfer or replace-style company transfer.
 
-## Before You Start
+## Before you start
 
 - You can open `Companies` from the left sidebar.
 - The source company already exists in SPRK.
@@ -40,7 +40,7 @@ Use Company File export/import instead when the goal is a file transfer or repla
 10. Create the company.
 11. Switch to the new company and review setup, balances, open documents, reports, and defaults before using it for live work.
 
-## What Happens Next
+## What happens next
 
 SPRK creates a separate new company using the source choices you reviewed in the Import Wizard.
 

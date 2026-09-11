@@ -1,20 +1,24 @@
-# Dashboard and Navigation
+# Using SPRK
 
-Learn the main SPRK layout, move between pages, use search to get where you need to go faster, and work efficiently in supported list views with shared table tools such as Grid Edit.
+Move between pages, search records, and update lists efficiently.
 
-![Column preferences dialog used from supported list views to reorder visible columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
+![Column preferences dialog used to reorder visible columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
 
-## In This Section
+## Start here
 
-- [Understand the dashboard overview](./understand-the-dashboard-overview.md)
-- [Move between major app areas](./move-between-major-app-areas.md)
-- [Use grid edit for bulk record maintenance](./use-grid-edit-for-bulk-record-maintenance.md)
+- [Review the dashboard](./understand-the-dashboard-overview.md)
+- [Move between major areas](./move-between-major-app-areas.md)
+
+## Common tasks
+
 - [Use global search](./use-global-search.md)
-- [Understand company-aware navigation](./understand-company-aware-navigation.md)
+- [Update several records with Grid Edit](./use-grid-edit-for-bulk-record-maintenance.md)
 
-## Related Foundation Workflows
+## Review or fix something
 
-- [Move between major app areas](./move-between-major-app-areas.md)
+- [Make sure you are in the right company](./understand-company-aware-navigation.md)
+
+## Related
+
 - [Switch between companies](../company-setup-and-migration/switch-between-companies.md)
 - [Customize the sidebar](../preferences-and-personalization/customize-the-sidebar.md)
-- [Month-end review checklist](../checklists-and-period-end-work/month-end-review-checklist.md)

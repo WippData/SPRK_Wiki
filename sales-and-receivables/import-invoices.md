@@ -1,16 +1,18 @@
 # Import Invoices
 
+<!-- Screenshot status: Review needed -->
+
 Import grouped invoice rows from a spreadsheet or CSV after reviewing customer, line, and account-routing details.
 
 ![Invoice grid filtered to V1 imported invoices showing grouped-line CSV import results](../screenshots/v1-validation/invoice-import-grouped-lines-success-v0.3.57.png)
 
-## When To Use This
+## When to use this
 
 - You already have invoice rows in a spreadsheet or CSV.
 - You want SPRK to create grouped invoice documents after preview.
 - You need to review whether imported invoices should stay open or be treated as paid-now.
 
-## Before You Start
+## Before you start
 
 - Confirm the active company.
 - Confirm customers, items, and income accounts are ready for the file.
@@ -48,7 +50,7 @@ SPRK creates invoice documents from grouped rows after preview. `Receive to` fol
 Imports that try to mix receivable control routing and settlement-account routing for the same invoice are rejected instead of silently guessing the posting path.
 Taxed Open and paid-now invoices are also rejected when neither the file nor the company supplies an active liability account. Taxed drafts can be imported without that account and completed before posting.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -59,7 +61,7 @@ Taxed Open and paid-now invoices are also rejected when neither the file nor the
 | A taxed invoice cannot be imported as Open or paid-now | `Sales Tax Payable Account` in the file and the company default | Select the active liability account used for collected sales tax |
 | The import reports duplicate invoice numbers | Existing invoice numbers and file invoice numbers | Resolve duplicate numbers before confirming |
 
-## Practice And Examples
+## Practice and examples
 
 - Practice file: [invoice-import-grouped-lines.csv](../sample-files/practice/invoice-import-grouped-lines.csv)
 

@@ -1,5 +1,7 @@
 # Review Document Payment History and Linked Journals
 
+<!-- Screenshot status: Review needed -->
+
 ![Invoice row actions showing payment, linked journal, payment history, and void actions](../screenshots/sales-and-receivables/invoice-payment-history-void-actions-step-01.png)
 
 ![Bill row actions for payment history and linked journal review](../screenshots/expenses-and-payables/bill-payment-history-actions-step-01.png)
@@ -8,9 +10,9 @@ Review invoice and bill payment history from the source document, then use linke
 
 <!-- Last validated against SPRK source: 2026-08-27 -->
 
-## When To Use This
+## When to use this
 
-Use this workflow when an invoice or bill balance changed and you need to trace whether the change came from a direct payment, a Banking match, or a linked journal action.
+Use this guide when an invoice or bill balance changed and you need to trace whether the change came from a direct payment, a Banking match, or a linked journal action.
 
 ## Steps
 
@@ -29,23 +31,22 @@ Use this workflow when an invoice or bill balance changed and you need to trace 
    - Confirm only after checking the document, amount, and reversal date.
 9. Use a document void only when the invoice or bill itself is wrong. Do not delete or rewrite the payment journal manually.
 
-## What Happens Next
+## What happens next
 
 You can explain why a receivable or payable balance changed and where to inspect the supporting accounting entry.
 
-- Viewing payment history or linked journal entries does not post to the ledger.
 - Recording or matching a payment can post a payment entry and update the document balance.
 - Reversing a payment-linked journal can deactivate the payment application and reopen the document balance where the source workflow supports that action.
 - Linked journals preserve audit history; corrections should use supported reversals or source-document actions.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
 | A payment came from a bank match | Whether you are reviewing the pending bank row or the document's recorded payment | Use the linked journal to trace the posting before choosing a reversal |
 | The payment remains in history after reversal | Whether it is shown as inactive or reversed and the document balance reopened | Keep the historical row; the reversal preserves the audit trail |
 
-## Practice And Examples
+## Practice and examples
 
 Use the practice file and screenshots to review payment history and linked journals from invoices and bills without changing the source document.
 

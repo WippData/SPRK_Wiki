@@ -1,16 +1,18 @@
-# Create Invoices
+# Create an Invoice
 
-Create a customer invoice, choose the receivables or paid-now route, and review the posting-sensitive fields before saving.
+<!-- Screenshot status: Review needed -->
+
+Create a customer invoice and choose whether it should stay open or be recorded as paid now.
 
 ![New invoice drawer showing Receive to, income routing, and sales-tax payable account](../screenshots/sales-and-receivables/invoice-routing-fields-step-01.png)
 
-## When To Use This
+## When to use this
 
 - You need to enter a new customer invoice.
 - You need the invoice to stay in `Draft`, move to `Open`, or settle immediately.
 - You need to review customer terms, due date, item details, and income accounts before saving.
 
-## Before You Start
+## Before you start
 
 - A customer record exists, or you are ready to add one from the invoice drawer.
 - The invoice amount can be built from one or more lines.
@@ -44,9 +46,9 @@ Create a customer invoice, choose the receivables or paid-now route, and review 
    - Treat unusual freeform terms as values to review manually.
    - If you need an exception for this invoice, replace the default due date before you save.
 7. Choose `Receive to` carefully:
-   - Use an Accounts Receivable control account when the invoice should stay on the open accrual path.
+   - Use an Accounts Receivable control account when the customer will pay later.
    - Use a cash, bank, or credit-card settlement account only when the invoice is being recorded as paid immediately.
-   - Receivable control routing and settlement-account routing are alternative paths, not two fields to combine on the same invoice.
+   - These are two different choices: open receivable or paid now.
 8. Add one or more invoice lines.
 9. Use `Item Number / SKU` or `Description` to pull matching item details into the line when available.
    - In companies set to `Description only`, supported item-entry helpers may show descriptions without item numbers.
@@ -78,7 +80,7 @@ The invoice appears in the invoice list with the expected number, customer, tota
 - Line-level `Income account` values receive the invoice subtotal when the invoice posts.
 - When the invoice has sales tax, SPRK credits that tax to the selected liability account instead of including it in revenue.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

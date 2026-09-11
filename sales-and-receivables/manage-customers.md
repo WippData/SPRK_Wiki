@@ -1,14 +1,16 @@
 # Manage Customers
 
+<!-- Screenshot status: Review needed -->
+
 ![Customers list with editable customer records](../screenshots/sales-and-receivables/customers-list-step-01.png)
 
 Create and maintain customer records so invoicing, payment follow-up, and customer-specific receivables workflows start from clean setup data.
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need to add, update, search, import, or review customer records before creating invoices, receiving customer payments, or assigning customer context to money-in bank activity.
+Use this guide when you need to add, update, search, import, or review customer records before creating invoices, receiving customer payments, or assigning customer context to money-in bank activity.
 
-## Before You Start
+## Before you start
 
 - You can open the `Customers` page.
 - You know the customer name.
@@ -51,13 +53,13 @@ Use this workflow when you need to add, update, search, import, or review custom
    - Review any address that does not follow that pattern before using it on customer-facing invoices.
 12. Use Grid Edit when post-import cleanup or repeated customer-field updates will be faster than opening one drawer at a time, then review the changed-cell count before selecting `Apply Changes`.
 
-## What Happens Next
+## What happens next
 
 The customer is saved and available for invoice selection, payment workflows, Banking party assignment, search, import cleanup, and customer-specific receivables follow-up.
 
 Assigning a customer to a bank row adds party context. It is not the same as matching the bank row to an open invoice payment; use the Banking match workflow when the row should receive an invoice payment.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

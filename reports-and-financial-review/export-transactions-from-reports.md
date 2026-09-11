@@ -1,16 +1,18 @@
 # Export Transactions from Reports
 
+<!-- Screenshot status: Review needed -->
+
 Run transaction detail from the `Reports` page, narrow the results to the account or ledger slice you need, and export or print the report for review outside SPRK.
 
 ![General Ledger report account selector showing account ordering controlled by Preferences](../screenshots/reports-and-financial-review/general-ledger-account-selector-sorting-step-01.png)
 
 ![General Ledger report table showing transaction detail columns and column-control gear](../screenshots/reports-and-financial-review/general-ledger-column-controls-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need transaction-level report detail for an account, subtype, or ledger slice and need to send the results to a client or reviewer as a spreadsheet or PDF.
+Use this guide when you need transaction-level report detail for an account, subtype, or ledger slice and need to send the results to a client or reviewer as a spreadsheet or PDF.
 
-## Before You Start
+## Before you start
 
 - You are signed in to SPRK.
 - The correct active company is selected.
@@ -45,15 +47,15 @@ Use this workflow when you need transaction-level report detail for an account, 
    - Current General Ledger CSV exports include `Account Code`, `Account Name`, `Date`, `Entry #`, `Memo`, `Description`, `Name`, `Debit`, `Credit`, and `Balance`.
    - If the current report includes dimensions in the live table, confirm those dimensions are also present in the exported output where SPRK exposes them.
 
-## What Happens Next
+## What happens next
 
 SPRK produces an outbound copy of the current report results for review outside the app.
 
-- Running the report does not post, edit, reverse, or reclassify journal entries.
+- The report and its export reflect the posted activity for the current company, dates, and filters.
 - Export and print actions do not change ledger balances.
 - The exported or printed file reflects the report filters in effect at the time you create it, rather than exporting unfiltered rows from other pages of the result set.
 - Transaction-detail column controls change the review table you are looking at; confirm exported or printed output after changing columns.
-- Register-level export and print reflect the open register context and title. They do not post, reverse, or reclassify ledger activity.
+- Register-level export and print reflect the open register context and title.
 - The visible Reports page exports or prints the active report context. Do not assume SPRK will create a multi-report package unless that action is visible in your app.
 - Report exports are review outputs, not tax filing, payroll filing, or statutory submission workflows.
 

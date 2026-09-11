@@ -1,16 +1,18 @@
 # Match and Unmatch Transactions
 
+<!-- Screenshot status: Review needed -->
+
 ![Reconciliation transaction table for reviewing matched bank activity](../screenshots/reconciliation/reconciliation-transaction-table-step-01.png)
 
 Link a confirmed bank transaction to a check while you are reconciling, and remove that link when the wrong check was chosen.
 
 <!-- Last validated against SPRK source: 2026-08-27 -->
 
-## When To Use This
+## When to use this
 
-Use this workflow when a bank transaction in reconciliation should be tied to a check record, or when an existing match needs to be removed.
+Use this guide when a bank transaction in reconciliation should be tied to a check record, or when an existing match needs to be removed.
 
-## Before You Start
+## Before you start
 
 - You are in `Reconcile`.
 - The selected account has at least one confirmed transaction available in the reconciliation table.
@@ -29,7 +31,7 @@ Use this workflow when a bank transaction in reconciliation should be tied to a 
 7. If the line already shows a matched check and you need to remove it, use `Unmatch` from the row or from the match window.
 8. Refresh the reconciliation table if you want to confirm the updated match state.
 
-## What Happens Next
+## What happens next
 
 The bank line is either linked to the correct check or returned to an unmatched state.
 
@@ -40,7 +42,7 @@ The bank line is either linked to the correct check or returned to an unmatched 
 
 This action does not match an invoice or bill and does not confirm a pending bank row. For those jobs, open `Banking`, stay on `Pending`, and use `Match bank transaction`. Selecting a row in `Reconcile` and finishing with a zero difference is what marks it reconciled.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

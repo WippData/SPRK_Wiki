@@ -1,14 +1,16 @@
 # Install and Manage Plugins (Beta)
 
+<!-- Screenshot status: Review needed -->
+
 ![Plugins settings tab showing supported plugin types and installed plugin status](../screenshots/plugins/plugins-settings-tab-step-01.png)
 
 Preview a trusted plugin, install or upgrade it when SPRK accepts the preview, and manage installed Plugins (Beta).
 
-## When To Use This
+## When to use this
 
-Use this workflow when your firm receives a plugin, needs to upgrade an installed plugin, or needs to remove a plugin from normal use.
+Use this guide when your firm receives a plugin, needs to upgrade an installed plugin, or needs to remove a plugin from normal use.
 
-## Before You Start
+## Before you start
 
 - Confirm the plugin source is trusted.
 - Confirm your workspace has plugin access.
@@ -38,11 +40,11 @@ Use this workflow when your firm receives a plugin, needs to upgrade an installe
 
 Installing or enabling a plugin can make plugin pages available in navigation. Disabling a plugin removes its visible pages from navigation. Uninstalling removes the installed plugin from the workspace when SPRK confirms the plugin has no protected records or accounting history.
 
-These actions do not post accounting activity by themselves. A plugin may affect accounting later only if a user completes a posting workflow inside that plugin.
+After installation, review where the plugin appears and which companies can use it. Accounting actions inside a plugin still follow SPRK's normal posting and review rules.
 
 Uninstall can remain blocked even after a plugin is disabled when SPRK finds protected plugin-owned records, transaction-page records, linked journal entries, accounting schedules, posting runs, or similar stored plugin data.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -50,10 +52,10 @@ Uninstall can remain blocked even after a plugin is disabled when SPRK finds pro
 | Uninstall is not available | Whether the plugin is still enabled | Disable the plugin first. |
 | Uninstall stays blocked after disablement | The blocked-action message on the plugin card | Capture the message before contacting support. |
 | Expected pages are missing | Plugin enabled state, page availability, and active company | Confirm the plugin is enabled and the intended company is active. |
-| Expected report surfaces are missing | Plugin enabled state and report availability | Refresh installed plugins, then review Reports again. |
+| Expected reports are missing | Plugin enabled state and report availability | Refresh installed plugins, then review Reports again. |
 | Users should not use the plugin yet | Whether setup is complete | Leave it disabled until setup is complete. |
 
-## Practice And Examples
+## Practice and examples
 
 Use these practice files and screenshots to preview a trusted plugin bundle and stop at the install gate until installation is intentional.
 

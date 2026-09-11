@@ -1,4 +1,6 @@
-# Record Bill Payments
+# Record a Bill Payment
+
+<!-- Screenshot status: Review needed -->
 
 Record payments against open vendor bills and review payment history after the bill balance changes.
 
@@ -6,13 +8,13 @@ Record payments against open vendor bills and review payment history after the b
 
 ![Bill row actions for payment history and linked journal review](../screenshots/expenses-and-payables/bill-payment-history-actions-step-01.png)
 
-## When To Use This
+## When to use this
 
 - An open bill is ready to be paid.
 - You need to record a full or partial payment.
 - You need to review bill payment history or linked journals after payment.
 
-## Before You Start
+## Before you start
 
 - Confirm the active company.
 - Confirm the bill is open or partial and has a remaining balance.
@@ -39,7 +41,7 @@ Record payments against open vendor bills and review payment history after the b
 
 Recording a bill payment posts a separate payment entry. SPRK debits the payable account carried by the open bill and credits the selected `Paid from` account. Full payment changes the bill to `Paid`; a smaller payment leaves the bill as `Partial`.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

@@ -1,16 +1,18 @@
 # Void or Correct Bills
 
+<!-- Screenshot status: Review needed -->
+
 Choose the supported bill correction path before changing a posted, paid, partial, or void-sensitive bill.
 
 ![Bill actions menu showing payment, journal, history, and void options](../screenshots/v1-validation/bill-actions-menu-payment-journal-void.png)
 
-## When To Use This
+## When to use this
 
 - A bill needs correction after it has moved beyond simple draft entry.
 - You need to decide whether to edit, pay, reverse payment, void, or review linked journals.
 - You need to preserve bill and posting history while correcting the vendor record.
 
-## Before You Start
+## Before you start
 
 - Confirm the active company and bill number.
 - Review bill status, total, balance, due date, and payment history.
@@ -39,7 +41,7 @@ Choose the supported bill correction path before changing a posted, paid, partia
 
 A successful `Void bill` posts a reversal journal entry, sets the bill status to `Void`, zeroes the bill balance, and records void details instead of deleting the bill. Saving changes to an already posted bill follows the posted-save strategy you choose when SPRK prompts. If a bill has active payments, SPRK blocks voiding or recognition-journal reversal until those payments are reversed or unapplied.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

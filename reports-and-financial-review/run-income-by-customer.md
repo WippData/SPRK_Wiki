@@ -1,10 +1,12 @@
 # Run Income by Customer
 
+<!-- Screenshot status: Review needed -->
+
 Review posted income by customer, then open account and invoice detail when you need to explain a balance.
 
 <!-- Last validated against SPRK source: 2026-08-27 -->
 
-## When To Use This
+## When to use this
 
 Use `Income by Customer` to compare customer contribution, investigate an income amount, or support customer-level review for a selected period.
 
@@ -21,11 +23,11 @@ Use `Income by Customer` to compare customer contribution, investigate an income
 7. Select an amount to open its register detail. In detailed results, select an invoice number to review the invoice information or use `View` to open the linked journal entry.
 8. Use `Export` or `Print` when you need a working copy.
 
-## What Happens Next
+## What happens next
 
-The report reads posted income activity and its customer or invoice links. It does not change customer balances or create accounting entries.
+The report uses posted income activity and its customer or invoice links. Correct a customer or invoice issue from its source page, then run the report again.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

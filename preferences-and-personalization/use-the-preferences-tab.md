@@ -11,11 +11,11 @@ Open `Preferences` to manage app-wide appearance, formatting, date display, upda
 
 ![Column preferences dialog showing drag handles, visibility checkboxes, and move controls for invoice columns](../screenshots/preferences-and-personalization/column-preferences-drag-handles-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you want to review or change how SPRK looks and behaves for your user profile across the app.
+Use this guide when you want to review or change how SPRK looks and behaves for your user profile across the app.
 
-## Before You Start
+## Before you start
 
 - You are signed in to SPRK.
 - The active company shown in the sidebar is the company you intend to use while validating context-sensitive pages.
@@ -51,11 +51,10 @@ Use this workflow when you want to review or change how SPRK looks and behaves f
 10. Review the `Getting started` card if you want the dashboard tour to appear again.
 11. Save preferences when you finish if the page does not auto-save the changes you made.
 
-## What Happens Next
+## What happens next
 
 Your user-level preferences are applied across the SPRK app, including display, formatting, date-entry interpretation, grid-edit startup behavior, and update prompt behavior.
 
-- Changing preferences does not create, edit, or delete a journal entry.
 - Display and formatting updates change how information is shown to you, not the underlying transaction amounts.
 - Changing `Date format` changes how date fields display and interpret typed dates; it does not rewrite posted transaction dates.
 - Turning on `Grid Edit default` changes how supported pages open for your user profile, not which records exist or how they post.
@@ -63,9 +62,9 @@ Your user-level preferences are applied across the SPRK app, including display, 
 - Turning `Show tooltips` on or off changes visible help affordances only; it does not disable the underlying fields, workflows, or validation rules.
 - Changing `Account dropdown sorting` changes the order used by supported account page-link dropdowns across the app, not the chart of accounts itself.
 - Changing column visibility or column order affects your working view on supported tables, not the accounting records behind those rows.
-- Resetting the getting-started tour affects onboarding prompts only and does not change company books.
+- Resetting the getting-started tour shows the onboarding prompts again.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -74,7 +73,7 @@ Your user-level preferences are applied across the SPRK app, including display, 
 ## Related
 
 - [Customize the sidebar](./customize-the-sidebar.md)
-- [Understand personalization boundaries and saved behavior](./understand-personalization-boundaries-and-saved-behavior.md)
+- [Understand which preferences are saved](./understand-personalization-boundaries-and-saved-behavior.md)
 - [Use grid edit for bulk record maintenance](../dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md)
 - [Create your first company](../company-setup-and-migration/create-your-first-company.md)
 - [View available reports](../reports-and-financial-review/view-available-reports.md)

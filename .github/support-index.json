@@ -1,0 +1,1165 @@
+{
+  "schemaVersion": 1,
+  "home": {
+    "source": "README.md",
+    "title": "SPRK Support",
+    "summary": "Practical help for setting up SPRK, completing everyday work, and reviewing your books.",
+    "featuredGroups": [
+      {
+        "id": "start",
+        "title": "Start using SPRK",
+        "guideIds": [
+          "getting-started/first-day-orientation-for-a-new-user",
+          "company-setup-and-migration/create-your-first-company",
+          "getting-started/set-up-first-client-for-firm-work",
+          "company-setup-and-migration/before-you-import"
+        ]
+      },
+      {
+        "id": "everyday-work",
+        "title": "Record everyday work",
+        "guideIds": [
+          "sales-and-receivables/create-invoices",
+          "sales-and-receivables/receive-invoice-payments",
+          "expenses-and-payables/create-bills",
+          "expenses-and-payables/record-bill-payments",
+          "banking-and-cash-management/classify-bank-transactions",
+          "banking-and-cash-management/match-bank-transactions"
+        ]
+      },
+      {
+        "id": "review-close",
+        "title": "Review and close",
+        "guideIds": [
+          "reconciliation/start-a-reconciliation",
+          "reconciliation/finish-a-reconciliation",
+          "checklists-and-period-end-work/month-end-review-checklist",
+          "reports-and-financial-review/review-financial-results-inside-the-product"
+        ]
+      },
+      {
+        "id": "protect-help",
+        "title": "Protect your data or get help",
+        "guideIds": [
+          "backups-and-data-safety/understand-backup-schedule-behavior",
+          "backups-and-data-safety/export-and-import-company-files",
+          "faq-and-glossary/frequently-asked-questions",
+          "support-and-troubleshooting/use-the-support-tab"
+        ]
+      }
+    ],
+    "topicDirectoryLabel": "All help topics"
+  },
+  "navigation": {
+    "guideFooter": {
+      "enabled": true,
+      "previousNext": "within-topic",
+      "showTopicLink": true,
+      "showHomeLink": true,
+      "contactGuideId": "support-and-troubleshooting/use-the-support-tab"
+    }
+  },
+  "topics": [
+    {
+      "id": "getting-started",
+      "path": "getting-started",
+      "overview": "getting-started/README.md",
+      "title": "Getting started",
+      "summary": "Choose the right company, learn the main parts of SPRK, and complete your first setup steps.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "getting-started/first-day-orientation-for-a-new-user",
+              "source": "getting-started/first-day-orientation-for-a-new-user.md",
+              "title": "First-Day Orientation for a New User",
+              "summary": "Take a short tour of the active company, navigation, dashboard, and the next setup task."
+            },
+            {
+              "id": "getting-started/sign-in-to-sprk",
+              "source": "getting-started/sign-in-to-sprk.md",
+              "title": "Sign In to SPRK",
+              "summary": "Enter the app from the local sign-in screen, or complete the startup choice flow if this is the first time the workspace is being opened."
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "getting-started/set-up-first-client-for-firm-work",
+              "source": "getting-started/set-up-first-client-for-firm-work.md",
+              "title": "Set Up a First Client for Firm Work",
+              "summary": "Set up a client company for day-to-day bookkeeping, bank review, reconciliation, reporting, and safe transfer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "using-sprk",
+      "path": "dashboard-and-navigation",
+      "overview": "dashboard-and-navigation/README.md",
+      "title": "Using SPRK",
+      "summary": "Move between pages, search records, and update lists efficiently.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "dashboard-and-navigation/understand-the-dashboard-overview",
+              "source": "dashboard-and-navigation/understand-the-dashboard-overview.md",
+              "title": "Understand the Dashboard Overview",
+              "summary": "Use the dashboard to get a quick summary of recent activity and jump into common workflows."
+            },
+            {
+              "id": "dashboard-and-navigation/move-between-major-app-areas",
+              "source": "dashboard-and-navigation/move-between-major-app-areas.md",
+              "title": "Move Between Major App Areas",
+              "summary": "Use the sidebar, section groups, quick links, and collapse control to move through the main SPRK pages."
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "dashboard-and-navigation/use-global-search",
+              "source": "dashboard-and-navigation/use-global-search.md",
+              "title": "Use Global Search",
+              "summary": "Search across customers, vendors, and ledger entries from the persistent search bar at the top of the app."
+            },
+            {
+              "id": "dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance",
+              "source": "dashboard-and-navigation/use-grid-edit-for-bulk-record-maintenance.md",
+              "title": "Use Grid Edit for Bulk Record Maintenance",
+              "summary": "Use Grid Edit when you need to clean up repeated list data faster than opening one drawer at a time."
+            }
+          ]
+        },
+        {
+          "id": "review-or-fix-something",
+          "title": "Review or fix something",
+          "guides": [
+            {
+              "id": "dashboard-and-navigation/understand-company-aware-navigation",
+              "source": "dashboard-and-navigation/understand-company-aware-navigation.md",
+              "title": "Understand Company-Aware Navigation",
+              "summary": "Learn how the active company affects what you see as you move through SPRK and how to avoid working in the wrong company."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "company-setup",
+      "path": "company-setup-and-migration",
+      "overview": "company-setup-and-migration/README.md",
+      "title": "Set up or move a company",
+      "summary": "Create a company, prepare imports, and move existing records into SPRK.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "company-setup-and-migration/create-your-first-company",
+              "source": "company-setup-and-migration/create-your-first-company.md",
+              "title": "Create Your First Company",
+              "summary": "Create a company from the Companies tab and set the core accounting options that SPRK uses for day-to-day work.",
+              "aliases": [
+                "new company",
+                "add company",
+                "company setup"
+              ]
+            },
+            {
+              "id": "company-setup-and-migration/first-week-setup-for-a-new-company",
+              "source": "company-setup-and-migration/first-week-setup-for-a-new-company.md",
+              "title": "First Week Setup for a New Company",
+              "summary": "Prepare a new company for daily bookkeeping with accounts, opening balances, lists, settings, and review reports."
+            },
+            {
+              "id": "company-setup-and-migration/create-a-starting-balance",
+              "source": "company-setup-and-migration/create-a-starting-balance.md",
+              "title": "Create a Starting Balance",
+              "summary": "Choose how a new bank or credit-card account should begin its first reconciliation: start it at zero, or use a journal entry to establish its opening balance."
+            },
+            {
+              "id": "company-setup-and-migration/switch-between-companies",
+              "source": "company-setup-and-migration/switch-between-companies.md",
+              "title": "Switch Between Companies and Confirm the Active Company",
+              "summary": "Change the active company from the Companies page so the rest of SPRK uses the company you intend to work in."
+            }
+          ]
+        },
+        {
+          "id": "import-or-move-records",
+          "title": "Import or move records",
+          "guides": [
+            {
+              "id": "company-setup-and-migration/before-you-import",
+              "source": "company-setup-and-migration/before-you-import.md",
+              "title": "Before You Import",
+              "summary": "Choose the correct import and review your file before bringing records into SPRK.",
+              "aliases": [
+                "import checklist",
+                "prepare import",
+                "migration checklist"
+              ]
+            },
+            {
+              "id": "company-setup-and-migration/use-the-import-wizard",
+              "source": "company-setup-and-migration/use-the-import-wizard.md",
+              "title": "Use the Import Wizard",
+              "summary": "Build a new company from uploaded files, copied data, and manual settings when a simple one-file import is not enough.",
+              "aliases": [
+                "migration",
+                "upload files",
+                "import records"
+              ]
+            },
+            {
+              "id": "company-setup-and-migration/import-from-quickbooks-online-zip",
+              "source": "company-setup-and-migration/import-from-quickbooks-online-zip.md",
+              "title": "Import from QuickBooks Online ZIP",
+              "summary": "Create a company in SPRK by importing a QuickBooks Online ZIP export from the Companies page."
+            },
+            {
+              "id": "company-setup-and-migration/import-from-quickbooks-desktop-iif",
+              "source": "company-setup-and-migration/import-from-quickbooks-desktop-iif.md",
+              "title": "Import from QuickBooks Desktop IIF",
+              "summary": "Create or import a company in SPRK from a QuickBooks Desktop IIF export using the Companies page."
+            },
+            {
+              "id": "company-setup-and-migration/copying-an-existing-company",
+              "source": "company-setup-and-migration/copying-an-existing-company.md",
+              "title": "Copying an Existing Company",
+              "summary": "Use the Import Wizard, also called the Import Company Wizard in some workflows, to create a new SPRK company from data already stored in another SPRK company."
+            }
+          ]
+        },
+        {
+          "id": "reference",
+          "title": "Reference",
+          "guides": [
+            {
+              "id": "company-setup-and-migration/understand-import-and-migration-boundaries",
+              "source": "company-setup-and-migration/understand-import-and-migration-boundaries.md",
+              "title": "What Each Import Can Bring Into SPRK",
+              "summary": "See which records each import can bring into SPRK and what to review afterward."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "customers-invoices-payments",
+      "path": "sales-and-receivables",
+      "overview": "sales-and-receivables/README.md",
+      "title": "Customers, invoices, and payments",
+      "summary": "Set up customers, create invoices, record payments, and review what customers owe.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "sales-and-receivables/create-and-open-invoices",
+              "source": "sales-and-receivables/create-and-open-invoices.md",
+              "title": "Choose an Invoice Task",
+              "summary": "Choose the right guide for creating, sending, paying, importing, reviewing, or correcting an invoice."
+            },
+            {
+              "id": "sales-and-receivables/set-up-receivables-defaults-before-invoicing",
+              "source": "sales-and-receivables/set-up-receivables-defaults-before-invoicing.md",
+              "title": "Set Up Receivables Defaults Before Invoicing",
+              "summary": "Prepare customer, item, and account defaults before you start entering invoices so receivables activity is easier to review and maintain later."
+            },
+            {
+              "id": "sales-and-receivables/configure-customer-payment-terms-and-credit",
+              "source": "sales-and-receivables/configure-customer-payment-terms-and-credit.md",
+              "title": "Configure Customer Payment Terms and Credit",
+              "summary": "Set customer-level payment and credit defaults before invoicing so due dates, receivables follow-up, and internal review expectations stay more consistent."
+            },
+            {
+              "id": "sales-and-receivables/manage-customers",
+              "source": "sales-and-receivables/manage-customers.md",
+              "title": "Manage Customers",
+              "summary": "Create and maintain customer records so invoicing, payment follow-up, and customer-specific receivables workflows start from clean setup data."
+            },
+            {
+              "id": "sales-and-receivables/manage-items-for-invoicing",
+              "source": "sales-and-receivables/manage-items-for-invoicing.md",
+              "title": "Manage Items for Invoicing",
+              "summary": "Define reusable products and services so invoice and bill lines can be built faster and with more consistent descriptions, pricing, and account defaults."
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "sales-and-receivables/create-invoices",
+              "source": "sales-and-receivables/create-invoices.md",
+              "title": "Create an Invoice",
+              "summary": "Create a customer invoice and choose whether it should stay open or be recorded as paid now.",
+              "aliases": [
+                "customer invoice",
+                "sales invoice",
+                "bill a customer"
+              ]
+            },
+            {
+              "id": "sales-and-receivables/receive-invoice-payments",
+              "source": "sales-and-receivables/receive-invoice-payments.md",
+              "title": "Record an Invoice Payment",
+              "summary": "Record a customer payment, confirm where the money went, and review the updated invoice balance.",
+              "aliases": [
+                "customer payment",
+                "get paid",
+                "accounts receivable payment"
+              ]
+            },
+            {
+              "id": "sales-and-receivables/review-and-edit-invoices",
+              "source": "sales-and-receivables/review-and-edit-invoices.md",
+              "title": "Review and Edit Invoices",
+              "summary": "Open existing invoices, review invoice actions, and handle posted-save prompts before changing invoice details."
+            },
+            {
+              "id": "sales-and-receivables/print-invoices",
+              "source": "sales-and-receivables/print-invoices.md",
+              "title": "Print Invoices",
+              "summary": "Print customer-facing invoice copies and review invoice template settings before sending output to a customer."
+            },
+            {
+              "id": "sales-and-receivables/import-invoices",
+              "source": "sales-and-receivables/import-invoices.md",
+              "title": "Import Invoices",
+              "summary": "Import grouped invoice rows from a spreadsheet or CSV after reviewing customer, line, and account-routing details."
+            }
+          ]
+        },
+        {
+          "id": "review-or-fix-something",
+          "title": "Review or fix something",
+          "guides": [
+            {
+              "id": "sales-and-receivables/ar-review-workflow",
+              "source": "sales-and-receivables/ar-review-workflow.md",
+              "title": "Review Customer Balances and Overdue Invoices",
+              "summary": "Review customers, open invoices, payments, aging, and revenue detail before reporting.",
+              "aliases": [
+                "accounts receivable",
+                "customer aging",
+                "overdue invoices"
+              ]
+            },
+            {
+              "id": "sales-and-receivables/void-or-correct-invoices",
+              "source": "sales-and-receivables/void-or-correct-invoices.md",
+              "title": "Void or Correct Invoices",
+              "summary": "Choose the supported invoice correction path before changing a posted, paid, or void-sensitive invoice."
+            },
+            {
+              "id": "sales-and-receivables/understand-invoice-general-ledger-impact",
+              "source": "sales-and-receivables/understand-invoice-general-ledger-impact.md",
+              "title": "Understand Invoice General Ledger Impact",
+              "summary": "See how invoice status, `Receive to`, income accounts, payments, and voids affect customer balances."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vendors-bills-checks",
+      "path": "expenses-and-payables",
+      "overview": "expenses-and-payables/README.md",
+      "title": "Vendors, bills, and checks",
+      "summary": "Set up vendors, enter bills, record payments, and manage checks.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "expenses-and-payables/create-and-manage-bills",
+              "source": "expenses-and-payables/create-and-manage-bills.md",
+              "title": "Choose a Bill Task",
+              "summary": "Choose the right guide for entering, paying, importing, reviewing, or correcting a vendor bill."
+            },
+            {
+              "id": "expenses-and-payables/manage-vendors",
+              "source": "expenses-and-payables/manage-vendors.md",
+              "title": "Manage Vendors",
+              "summary": "Create and maintain vendor records so bills, checks, and vendor reporting use the right payee information."
+            },
+            {
+              "id": "expenses-and-payables/set-up-vendor-default-expense-accounts",
+              "source": "expenses-and-payables/set-up-vendor-default-expense-accounts.md",
+              "title": "Set Up Vendor Default Expense Accounts",
+              "summary": "Prepare vendor-level expense defaults before you enter repeat payables, checks, or bank classifications so supported workflows start with cleaner coding."
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "expenses-and-payables/create-bills",
+              "source": "expenses-and-payables/create-bills.md",
+              "title": "Create a Bill",
+              "summary": "Enter a vendor bill and choose whether it should stay open or be recorded as paid now.",
+              "aliases": [
+                "vendor bill",
+                "expense bill",
+                "accounts payable"
+              ]
+            },
+            {
+              "id": "expenses-and-payables/record-bill-payments",
+              "source": "expenses-and-payables/record-bill-payments.md",
+              "title": "Record a Bill Payment",
+              "summary": "Record payments against open vendor bills and review payment history after the bill balance changes.",
+              "aliases": [
+                "pay vendor",
+                "vendor payment",
+                "accounts payable payment"
+              ]
+            },
+            {
+              "id": "expenses-and-payables/work-with-checks",
+              "source": "expenses-and-payables/work-with-checks.md",
+              "title": "Work With Checks",
+              "summary": "Add `Checks` to the sidebar when it is hidden, then record and manage checks without losing the posting trail."
+            },
+            {
+              "id": "expenses-and-payables/import-bills",
+              "source": "expenses-and-payables/import-bills.md",
+              "title": "Import Bills",
+              "summary": "Import grouped vendor bill rows from a spreadsheet or CSV after reviewing vendor, line, and account-routing details."
+            }
+          ]
+        },
+        {
+          "id": "review-or-fix-something",
+          "title": "Review or fix something",
+          "guides": [
+            {
+              "id": "expenses-and-payables/ap-review-workflow",
+              "source": "expenses-and-payables/ap-review-workflow.md",
+              "title": "Review Bills and Vendor Balances",
+              "summary": "Review vendors, open bills, payments, aging, and expense detail before reporting.",
+              "aliases": [
+                "accounts payable",
+                "vendor aging",
+                "unpaid bills"
+              ]
+            },
+            {
+              "id": "expenses-and-payables/void-or-correct-bills",
+              "source": "expenses-and-payables/void-or-correct-bills.md",
+              "title": "Void or Correct Bills",
+              "summary": "Choose the supported bill correction path before changing a posted, paid, partial, or void-sensitive bill."
+            },
+            {
+              "id": "expenses-and-payables/review-common-payables-workflows",
+              "source": "expenses-and-payables/review-common-payables-workflows.md",
+              "title": "Find the Right Payables Guide",
+              "summary": "Go to the right guide for bills, payments, checks, vendor setup, or accounts payable review.",
+              "visibility": {
+                "website": true,
+                "inApp": true,
+                "search": false,
+                "topicIndex": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banking",
+      "path": "banking-and-cash-management",
+      "overview": "banking-and-cash-management/README.md",
+      "title": "Banking",
+      "summary": "Import, review, categorize, match, and confirm bank and credit card activity.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "banking-and-cash-management/review-and-classify-bank-transactions",
+              "source": "banking-and-cash-management/review-and-classify-bank-transactions.md",
+              "title": "Choose a Banking Task",
+              "summary": "Choose whether to categorize, match, transfer, import, or repair bank and credit card activity."
+            },
+            {
+              "id": "banking-and-cash-management/understand-the-banking-page",
+              "source": "banking-and-cash-management/understand-the-banking-page.md",
+              "title": "Understand the Banking Page",
+              "summary": "Use this Banking page map to understand where account selection, import, pending review, confirmed activity, and repair actions live."
+            },
+            {
+              "id": "banking-and-cash-management/choose-bank-and-credit-card-accounts",
+              "source": "banking-and-cash-management/choose-bank-and-credit-card-accounts.md",
+              "title": "Choose Bank and Credit Card Accounts",
+              "summary": "Choose the right bank or credit card account before you import, review, confirm, or reconcile activity so that work stays tied to the correct register."
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "banking-and-cash-management/classify-bank-transactions",
+              "source": "banking-and-cash-management/classify-bank-transactions.md",
+              "title": "Categorize and Confirm Bank Transactions",
+              "summary": "Assign accounts, splits, vendors, or customers to pending bank activity, then confirm it.",
+              "aliases": [
+                "categorize bank transaction",
+                "code bank transaction",
+                "confirm bank transaction"
+              ]
+            },
+            {
+              "id": "banking-and-cash-management/match-bank-transactions",
+              "source": "banking-and-cash-management/match-bank-transactions.md",
+              "title": "Match Bank Transactions",
+              "summary": "Match pending bank rows to open invoices, open bills, or existing checks before confirming the bank activity.",
+              "aliases": [
+                "match invoice payment",
+                "match bill payment",
+                "bank match"
+              ]
+            },
+            {
+              "id": "banking-and-cash-management/import-bank-transactions",
+              "source": "banking-and-cash-management/import-bank-transactions.md",
+              "title": "Import Bank Transactions",
+              "summary": "Import bank or credit card activity, review the preview, and add selected rows to Pending for review.",
+              "aliases": [
+                "upload bank activity",
+                "bank CSV",
+                "credit card import"
+              ]
+            },
+            {
+              "id": "banking-and-cash-management/create-and-manage-rules",
+              "source": "banking-and-cash-management/create-and-manage-rules.md",
+              "title": "Create and Manage Rules",
+              "summary": "Build rules that prefill GL account choices for repeated bank transaction patterns, then manage scope, priority, and imported rule sets from the Rules page."
+            },
+            {
+              "id": "banking-and-cash-management/import-banking-rules",
+              "source": "banking-and-cash-management/import-banking-rules.md",
+              "title": "Import Banking Rules",
+              "summary": "Import repeated Banking rules, review the preview, and add only the rules you want to keep."
+            },
+            {
+              "id": "banking-and-cash-management/review-bank-transfers",
+              "source": "banking-and-cash-management/review-bank-transfers.md",
+              "title": "Review Bank Transfers",
+              "summary": "Review bank-to-bank, bank-to-cash, or bank-to-credit-card pairings before confirming transfer activity."
+            }
+          ]
+        },
+        {
+          "id": "review-or-fix-something",
+          "title": "Review or fix something",
+          "guides": [
+            {
+              "id": "banking-and-cash-management/resolve-confirmed-bank-transactions",
+              "source": "banking-and-cash-management/resolve-confirmed-bank-transactions.md",
+              "title": "Resolve Confirmed Bank Transactions",
+              "summary": "Review and repair the accounting link for a confirmed bank row without returning the row to pending review."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reconcile",
+      "path": "reconciliation",
+      "overview": "reconciliation/README.md",
+      "title": "Reconcile accounts",
+      "summary": "Compare SPRK activity with statements and resolve differences before finishing.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "reconciliation/start-a-reconciliation",
+              "source": "reconciliation/start-a-reconciliation.md",
+              "title": "Start a Reconciliation",
+              "summary": "Choose an account, enter the statement dates and balances, and begin reviewing cleared activity.",
+              "aliases": [
+                "bank reconciliation",
+                "credit card reconciliation",
+                "statement balance"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "reconciliation/finish-a-reconciliation",
+              "source": "reconciliation/finish-a-reconciliation.md",
+              "title": "Finish a Reconciliation",
+              "summary": "Clear the correct activity and finish only when SPRK agrees with the statement ending balance."
+            },
+            {
+              "id": "reconciliation/match-and-unmatch-transactions",
+              "source": "reconciliation/match-and-unmatch-transactions.md",
+              "title": "Match and Unmatch Transactions",
+              "summary": "Link a confirmed bank transaction to a check while you are reconciling, and remove that link when the wrong check was chosen."
+            },
+            {
+              "id": "reconciliation/reconcile-general-ledger-accounts",
+              "source": "reconciliation/reconcile-general-ledger-accounts.md",
+              "title": "Reconcile General Ledger Accounts",
+              "summary": "Reconcile an eligible balance-sheet account to a supporting statement or schedule, even when it is not a bank or credit-card register."
+            }
+          ]
+        },
+        {
+          "id": "review-or-fix-something",
+          "title": "Review or fix something",
+          "guides": [
+            {
+              "id": "reconciliation/resolve-common-reconciliation-exceptions",
+              "source": "reconciliation/resolve-common-reconciliation-exceptions.md",
+              "title": "Resolve Common Reconciliation Exceptions",
+              "summary": "Resolve first-time setup, date, selection, and balance differences that can prevent reconciliation.",
+              "aliases": [
+                "reconciliation difference",
+                "out of balance",
+                "cannot reconcile"
+              ]
+            },
+            {
+              "id": "reconciliation/view-and-print-bank-reconciliation-reports",
+              "source": "reconciliation/view-and-print-bank-reconciliation-reports.md",
+              "title": "View and Print Bank Reconciliation Reports",
+              "summary": "Open, review, print, or export a completed bank or credit card reconciliation report."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reports",
+      "path": "reports-and-financial-review",
+      "overview": "reports-and-financial-review/README.md",
+      "title": "Reports and financial review",
+      "summary": "Run reports, open supporting detail, and review financial results.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "reports-and-financial-review/view-available-reports",
+              "source": "reports-and-financial-review/view-available-reports.md",
+              "title": "View Available Reports",
+              "summary": "Use this report catalog to choose the SPRK report that fits the review question before running, exporting, printing, or drilling into results.",
+              "aliases": [
+                "income statement",
+                "balance sheet",
+                "general ledger",
+                "trial balance"
+              ]
+            },
+            {
+              "id": "reports-and-financial-review/review-financial-results-inside-the-product",
+              "source": "reports-and-financial-review/review-financial-results-inside-the-product.md",
+              "title": "Review Financial Results",
+              "summary": "Review balances, financial statements, and supporting detail before deciding whether a correction is needed."
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "reports-and-financial-review/run-income-by-customer",
+              "source": "reports-and-financial-review/run-income-by-customer.md",
+              "title": "Run Income by Customer",
+              "summary": "Review posted income by customer, then open account and invoice detail when you need to explain a balance."
+            },
+            {
+              "id": "reports-and-financial-review/run-schedule-c",
+              "source": "reports-and-financial-review/run-schedule-c.md",
+              "title": "Run Schedule C",
+              "summary": "Use SPRK's `Schedule C` report to review income and expense accounts grouped into Schedule C lines before tax preparation."
+            },
+            {
+              "id": "reports-and-financial-review/export-transactions-from-reports",
+              "source": "reports-and-financial-review/export-transactions-from-reports.md",
+              "title": "Export Transactions from Reports",
+              "summary": "Filter transaction detail and export or print the results for a client or reviewer."
+            },
+            {
+              "id": "reports-and-financial-review/use-report-drilldown-behavior",
+              "source": "reports-and-financial-review/use-report-drilldown-behavior.md",
+              "title": "Open Supporting Details From a Report",
+              "summary": "Open the transactions behind a report amount and review the source entries."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "month-end",
+      "path": "checklists-and-period-end-work",
+      "overview": "checklists-and-period-end-work/README.md",
+      "title": "Checklists and month-end",
+      "summary": "Use repeatable checklists to track month-end and other routine accounting work.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "checklists-and-period-end-work/month-end-review-checklist",
+              "source": "checklists-and-period-end-work/month-end-review-checklist.md",
+              "title": "Month-End Review Checklist",
+              "summary": "Review Banking, reconciliation, customer and vendor balances, reports, and backups before closing your month."
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "checklists-and-period-end-work/use-checklists",
+              "source": "checklists-and-period-end-work/use-checklists.md",
+              "title": "Use Checklists",
+              "summary": "Open the Checklist area, manage reusable checklist templates, and understand the difference between template setup and period-specific runs."
+            },
+            {
+              "id": "checklists-and-period-end-work/run-recurring-close-style-tasks",
+              "source": "checklists-and-period-end-work/run-recurring-close-style-tasks.md",
+              "title": "Run Recurring Close-Style Tasks",
+              "summary": "Start a checklist run for a defined period, capture responses on each checklist item, and complete the run when the work is actually finished."
+            },
+            {
+              "id": "checklists-and-period-end-work/track-completion-across-routine-accounting-work",
+              "source": "checklists-and-period-end-work/track-completion-across-routine-accounting-work.md",
+              "title": "Track Completion Across Routine Accounting Work",
+              "summary": "Review checklist runs by status, period, and notes so you can see what is still in progress and what has already been completed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accounts-journals",
+      "path": "ledger-and-chart-of-accounts",
+      "overview": "ledger-and-chart-of-accounts/README.md",
+      "title": "Accounts and journal entries",
+      "summary": "Manage the chart of accounts, record adjustments, and correct posted activity safely.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "ledger-and-chart-of-accounts/understand-the-chart-of-accounts-structure",
+              "source": "ledger-and-chart-of-accounts/understand-the-chart-of-accounts-structure.md",
+              "title": "Understand the Chart of Accounts Structure",
+              "summary": "Organize accounts, headings, account types, and control accounts."
+            },
+            {
+              "id": "ledger-and-chart-of-accounts/when-to-use-journal-entries-vs-source-forms",
+              "source": "ledger-and-chart-of-accounts/when-to-use-journal-entries-vs-source-forms.md",
+              "title": "When to Use a Journal Entry",
+              "summary": "Use this page to choose whether an accounting event belongs in invoices, bills, checks, banking, or a manual journal entry."
+            },
+            {
+              "id": "ledger-and-chart-of-accounts/record-journal-entries",
+              "source": "ledger-and-chart-of-accounts/record-journal-entries.md",
+              "title": "Record Journal Entries",
+              "summary": "Create a balanced manual journal entry, review its accounting date and accounts, and save or reverse it safely."
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "ledger-and-chart-of-accounts/understand-ledger-import-and-export-behavior",
+              "source": "ledger-and-chart-of-accounts/understand-ledger-import-and-export-behavior.md",
+              "title": "Prepare and Review Ledger Imports and Exports",
+              "summary": "Import or export journal entries and review accounts, dates, balances, and results before relying on them."
+            },
+            {
+              "id": "ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals",
+              "source": "ledger-and-chart-of-accounts/review-document-payment-history-and-linked-journals.md",
+              "title": "Review Document Payment History and Linked Journals",
+              "summary": "Review invoice and bill payment history from the source document, then use linked journal review to understand the posting trail."
+            }
+          ]
+        },
+        {
+          "id": "review-or-fix-something",
+          "title": "Review or fix something",
+          "guides": [
+            {
+              "id": "ledger-and-chart-of-accounts/common-accountant-corrections",
+              "source": "ledger-and-chart-of-accounts/common-accountant-corrections.md",
+              "title": "Common Accountant Corrections",
+              "summary": "Choose the correction path that preserves the source record, payment history, reconciliation state, and ledger trail."
+            },
+            {
+              "id": "ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity",
+              "source": "ledger-and-chart-of-accounts/edit-linked-ledger-and-bank-activity.md",
+              "title": "Edit Linked Ledger and Bank Activity",
+              "summary": "Review linked bank and journal activity and choose a correction that preserves the original posting trail."
+            },
+            {
+              "id": "ledger-and-chart-of-accounts/understand-audit-sensitive-ledger-behavior",
+              "source": "ledger-and-chart-of-accounts/understand-audit-sensitive-ledger-behavior.md",
+              "title": "Understand Audit-Sensitive Ledger Behavior",
+              "summary": "Choose a history-preserving correction path when posted ledger, journal, account, or bank-linked activity should not be overwritten."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "company-settings",
+      "path": "company-administration",
+      "overview": "company-administration/README.md",
+      "title": "Company settings",
+      "summary": "Manage companies, defaults, dimensions, and company-level options.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "company-administration/use-the-companies-tab",
+              "source": "company-administration/use-the-companies-tab.md",
+              "title": "Use the Companies Tab",
+              "summary": "Open the Companies tab to review active and archived companies, refresh the list, and reach creation or maintenance actions."
+            },
+            {
+              "id": "company-administration/manage-default-company-settings",
+              "source": "company-administration/manage-default-company-settings.md",
+              "title": "Manage Default Company Settings",
+              "summary": "Set tenant-level defaults for future companies and apply the same accounting policy choices to selected active companies when your firm wants a consistent setup."
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "company-administration/set-up-and-use-dimensions-or-classes",
+              "source": "company-administration/set-up-and-use-dimensions-or-classes.md",
+              "title": "Set Up and Use Dimensions or Classes",
+              "summary": "Create company-level dimensions, such as a `Class`, `Project`, or `Department`, then apply those values to journal-entry lines for cleaner review and filtering."
+            },
+            {
+              "id": "company-administration/review-company-level-maintenance-actions",
+              "source": "company-administration/review-company-level-maintenance-actions.md",
+              "title": "Review Company-Level Maintenance Actions",
+              "summary": "Edit company details, archive or unarchive companies, and understand when permanent delete is available."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "preferences",
+      "path": "preferences-and-personalization",
+      "overview": "preferences-and-personalization/README.md",
+      "title": "Preferences",
+      "summary": "Choose display, navigation, formatting, and other personal settings.",
+      "groups": [
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "preferences-and-personalization/use-the-preferences-tab",
+              "source": "preferences-and-personalization/use-the-preferences-tab.md",
+              "title": "Use the Preferences Tab",
+              "summary": "Open `Preferences` to manage app-wide appearance, formatting, date display, update notification, navigation, automation, and getting-started settings."
+            },
+            {
+              "id": "preferences-and-personalization/customize-the-sidebar",
+              "source": "preferences-and-personalization/customize-the-sidebar.md",
+              "title": "Customize the Sidebar",
+              "summary": "Use the sidebar editor in `Preferences` to rename sections, reorder links, hide items, and add external links for your own navigation setup."
+            },
+            {
+              "id": "preferences-and-personalization/understand-personalization-boundaries-and-saved-behavior",
+              "source": "preferences-and-personalization/understand-personalization-boundaries-and-saved-behavior.md",
+              "title": "Understand Which Preferences Are Saved",
+              "summary": "Learn which SPRK preferences follow your user profile, how broadly they apply, and what they do not change."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backups",
+      "path": "backups-and-data-safety",
+      "overview": "backups-and-data-safety/README.md",
+      "title": "Backups and company files",
+      "summary": "Review backups and safely export or import one company.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "backups-and-data-safety/review-backup-settings-visible-in-the-product",
+              "source": "backups-and-data-safety/review-backup-settings-visible-in-the-product.md",
+              "title": "Review Backup Settings and Run a Backup",
+              "summary": "Review automatic backup settings, storage location, recent results, manual backups, and Company File controls."
+            },
+            {
+              "id": "backups-and-data-safety/understand-backup-schedule-behavior",
+              "source": "backups-and-data-safety/understand-backup-schedule-behavior.md",
+              "title": "Understand Backup Schedule Behavior",
+              "summary": "Review how SPRK schedules automatic backups so you know when the app plans to save backup files for this device.",
+              "aliases": [
+                "automatic backup",
+                "backup time",
+                "backup schedule"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "backups-and-data-safety/export-and-import-company-files",
+              "source": "backups-and-data-safety/export-and-import-company-files.md",
+              "title": "Export and Import Company Files",
+              "summary": "Move or preserve one company with a Company File.",
+              "aliases": [
+                "move company",
+                "company backup",
+                "transfer company"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "review-or-fix-something",
+          "title": "Review or fix something",
+          "guides": [
+            {
+              "id": "backups-and-data-safety/understand-restore-guidance-boundaries",
+              "source": "backups-and-data-safety/understand-restore-guidance-boundaries.md",
+              "title": "Get Help Recovering a Backup",
+              "summary": "Gather the backup or Company File details SPRK Support needs to help with recovery."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plugins",
+      "path": "plugins",
+      "overview": "plugins/README.md",
+      "title": "Plugins (Beta)",
+      "summary": "Install trusted plugins and manage where they are available.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "plugins/use-the-plugins-settings-tab",
+              "source": "plugins/use-the-plugins-settings-tab.md",
+              "title": "Use the Plugins (Beta) Settings Tab",
+              "summary": "Use the `Plugins` tab to review installed Plugins (Beta), refresh their status, and understand what each visible plugin state means."
+            },
+            {
+              "id": "plugins/install-and-manage-plugins",
+              "source": "plugins/install-and-manage-plugins.md",
+              "title": "Install and Manage Plugins (Beta)",
+              "summary": "Preview a trusted plugin, install or upgrade it when SPRK accepts the preview, and manage installed Plugins (Beta)."
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "plugins/control-plugin-availability-by-company",
+              "source": "plugins/control-plugin-availability-by-company.md",
+              "title": "Control Plugins (Beta) by Company",
+              "summary": "Check company context when an installed Plugin (Beta) should be used for one company but not another."
+            }
+          ]
+        },
+        {
+          "id": "review-or-fix-something",
+          "title": "Review or fix something",
+          "guides": [
+            {
+              "id": "plugins/troubleshoot-plugin-pages-that-do-not-appear",
+              "source": "plugins/troubleshoot-plugin-pages-that-do-not-appear.md",
+              "title": "Troubleshoot Missing Plugins (Beta) Pages",
+              "summary": "Find out why an installed Plugin (Beta) page is missing from SPRK navigation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "licensing",
+      "path": "licensing",
+      "overview": "licensing/README.md",
+      "title": "Licensing",
+      "summary": "Review license status, usage, and prompts for additional companies.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "licensing/view-license-information",
+              "source": "licensing/view-license-information.md",
+              "title": "View License Information",
+              "summary": "Open the `License` area to review the saved contact details, current license key status, usage table, and purchase link that SPRK currently exposes."
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "licensing/understand-usage-limits-and-prompts",
+              "source": "licensing/understand-usage-limits-and-prompts.md",
+              "title": "Understand Usage Limits And Prompts",
+              "summary": "Use the `License` area to review the current usage table and understand which prompts are informational versus the ones tied to adding more real companies."
+            },
+            {
+              "id": "licensing/understand-when-an-upgrade-prompt-may-appear",
+              "source": "licensing/understand-when-an-upgrade-prompt-may-appear.md",
+              "title": "Understand When An Upgrade Prompt May Appear",
+              "summary": "SPRK may show an upgrade or add-license prompt when you try to create another real company after using the free company allowance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq-glossary",
+      "path": "faq-and-glossary",
+      "overview": "faq-and-glossary/README.md",
+      "title": "FAQs and glossary",
+      "summary": "Find quick answers and plain-language definitions for SPRK terms.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "faq-and-glossary/frequently-asked-questions",
+              "source": "faq-and-glossary/frequently-asked-questions.md",
+              "title": "Frequently Asked Questions",
+              "summary": "Find quick answers about setup, daily work, imports, reconciliation, backups, and support.",
+              "aliases": [
+                "FAQ",
+                "common questions",
+                "quick answers"
+              ]
+            },
+            {
+              "id": "faq-and-glossary/product-glossary",
+              "source": "faq-and-glossary/product-glossary.md",
+              "title": "Product Glossary",
+              "summary": "Look up a SPRK label and go directly to the guide where you use it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "path": "support-and-troubleshooting",
+      "overview": "support-and-troubleshooting/README.md",
+      "title": "Help and troubleshooting",
+      "summary": "Collect useful details, download a support log, and contact SPRK Support.",
+      "groups": [
+        {
+          "id": "start-here",
+          "title": "Start here",
+          "guides": [
+            {
+              "id": "support-and-troubleshooting/use-the-support-tab",
+              "source": "support-and-troubleshooting/use-the-support-tab.md",
+              "title": "Use the Support tab",
+              "summary": "Open the Support tab to download a troubleshooting log, email the support team, and review the built-in how-to guides.",
+              "aliases": [
+                "contact support",
+                "support email",
+                "download log"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "common-tasks",
+          "title": "Common tasks",
+          "guides": [
+            {
+              "id": "support-and-troubleshooting/collect-the-right-details-before-contacting-support",
+              "source": "support-and-troubleshooting/collect-the-right-details-before-contacting-support.md",
+              "title": "Collect the Right Details Before Contacting Support",
+              "summary": "Gather the company, page, visible message, expected result, and session log for a useful support request."
+            }
+          ]
+        },
+        {
+          "id": "review-or-fix-something",
+          "title": "Review or fix something",
+          "guides": [
+            {
+              "id": "support-and-troubleshooting/collect-import-run-details-for-support",
+              "source": "support-and-troubleshooting/collect-import-run-details-for-support.md",
+              "title": "Collect Import Run Details for Support",
+              "summary": "Collect the details support needs when an import fails or produces an unexpected result."
+            },
+            {
+              "id": "support-and-troubleshooting/troubleshoot-common-navigation-or-workflow-confusion",
+              "source": "support-and-troubleshooting/troubleshoot-common-navigation-or-workflow-confusion.md",
+              "title": "Find a Missing Page or Task",
+              "summary": "Check the active company and sidebar when a page or task is missing or looks different."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

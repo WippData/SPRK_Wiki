@@ -1,14 +1,16 @@
 # Track Completion Across Routine Accounting Work
 
+<!-- Screenshot status: Review needed -->
+
 Review checklist runs by status, period, and notes so you can see what is still in progress and what has already been completed.
 
 ![Checklists page showing completion tracking filters, status and period selectors, run table headers, and the current no-rows state](../screenshots/checklists-and-period-end-work/track-completion-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need to review checklist-run progress across periods, identify unfinished work, or confirm that a recurring checklist was completed.
+Use this guide when you need to review checklist-run progress across periods, identify unfinished work, or confirm that a recurring checklist was completed.
 
-## Before You Start
+## Before you start
 
 - An active company is selected.
 - At least one checklist run exists for the period you want to review.
@@ -33,11 +35,11 @@ Use this workflow when you need to review checklist-run progress across periods,
 7. If a run is still `Draft` or `In Progress`, update the run or return to the source workflow that still needs to be completed.
 8. Use `Refresh` when recent changes are not yet visible in the list.
 
-## What Happens Next
+## What happens next
 
 You can see which checklist runs are open, completed, or due for follow-up without leaving the Checklist page.
 
-- Filtering, sorting, opening, or refreshing checklist runs does not post to the ledger.
+- Filters and sorting help you find the checklist runs that need attention.
 - Status values show checklist progress only; they do not confirm that underlying accounting entries are correct.
 - The checklist page can help you spot unfinished work, but any ledger change still has to be reviewed and posted in the relevant transaction workflow.
 

@@ -1,10 +1,12 @@
 # Understand When An Upgrade Prompt May Appear
 
+<!-- Screenshot status: Review needed -->
+
 ![License tab showing usage limits and plan details](../screenshots/licensing/usage-limits-step-01.png)
 
 SPRK may show an upgrade or add-license prompt when you try to create another real company after using the free company allowance.
 
-## Quick Reference
+## Quick reference
 
 | Situation | What It Means | What To Do Next |
 |---|---|---|
@@ -16,11 +18,11 @@ SPRK may show an upgrade or add-license prompt when you try to create another re
 
 ## Details
 
-The clearest public upgrade prompt appears around additional real company creation. Seeing the prompt does not change historical accounting data.
+The clearest upgrade prompt appears when you try to create an additional real company.
 
 Saving a license key changes workspace access and company-creation eligibility. Buying a license through the external Stripe link is outside the in-app accounting workflow unless you separately record that purchase in your books.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

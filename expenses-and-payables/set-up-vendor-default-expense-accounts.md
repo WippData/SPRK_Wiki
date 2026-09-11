@@ -1,10 +1,12 @@
 # Set Up Vendor Default Expense Accounts
 
+<!-- Screenshot status: Review needed -->
+
 Prepare vendor-level expense defaults before you enter repeat payables, checks, or bank classifications so supported workflows start with cleaner coding.
 
 ![Vendors list showing the Default Expense Account column](../screenshots/expenses-and-payables/vendor-default-expense-account-step-01.png)
 
-## When To Use This
+## When to use this
 
 Use this page when the same vendor usually points to the same expense account and you want SPRK to reuse that setup where the current workflow supports it.
 
@@ -16,7 +18,7 @@ Use this page when the same vendor usually points to the same expense account an
 - The default helps reduce cleanup work later when you review vendor activity and expense reporting.
 - A saved default does not replace review. You should still confirm the final account before you save or confirm a transaction.
 
-## Before You Start
+## Before you start
 
 - You can open `Vendors`.
 - The expense account you want to reuse already exists, is active, and is eligible for posting. Nonposting summary accounts and restricted control accounts may stay visible in `Chart of Accounts` but be omitted from default-account selectors.
@@ -50,11 +52,11 @@ Use this page when the same vendor usually points to the same expense account an
 - A manual category or saved split should stay in control once you have already chosen a more specific result.
 - Mixed-use vendors may need one-off exceptions even when a default is usually helpful.
 
-## What Happens Next
+## What happens next
 
 The vendor record carries a reusable expense default, and supported check and banking workflows can start from cleaner coding with less repetitive entry.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

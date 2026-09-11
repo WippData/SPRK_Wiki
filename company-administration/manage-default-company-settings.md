@@ -1,14 +1,16 @@
 # Manage Default Company Settings
 
+<!-- Screenshot status: Review needed -->
+
 Set tenant-level defaults for future companies and apply the same accounting policy choices to selected active companies when your firm wants a consistent setup.
 
 ![Default Company Settings panel showing tenant defaults for required account fields, journal entries, and reconciliation dates](../screenshots/company-administration/default-company-settings-step-01.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when your workspace has a valid tenant license and you want new companies to start with consistent account-field and accounting edit-policy settings.
+Use this guide when your workspace has a valid tenant license and you want new companies to start with consistent account-field and accounting edit-policy settings.
 
-## Before You Start
+## Before you start
 
 - You can open `Settings`.
 - The `Defaults` tab is visible.
@@ -43,7 +45,7 @@ The `Defaults` tab requires a valid tenant license before defaults can be saved 
 
 These tenant defaults are separate from per-company settings such as `Invoice defaults`, company contact fields, `Payment Instructions`, and `Item identification`. Edit those on the company record when you want to change new-invoice defaults, printed invoice content, or item-label presentation for a specific company.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

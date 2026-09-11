@@ -1,4 +1,6 @@
-# Review Backup Settings Visible In The Product
+# Review Backup Settings and Run a Backup
+
+<!-- Screenshot status: Review needed -->
 
 Open the `Backups` tab to review the current automatic backup controls, backup location, recent status, on-demand backup action, and visible Company File transfer controls.
 
@@ -8,11 +10,11 @@ Open the `Backups` tab to review the current automatic backup controls, backup l
 
 ![SPRK Backups tab showing automatic backup schedule and backup-on-close controls](../screenshots/backups-and-data-safety/review-backup-settings-step-02.png)
 
-## When To Use This
+## When to use this
 
-Use this workflow when you want to confirm which backup settings are publicly available in the current SPRK app.
+Use this guide when you want to check the backup schedule, confirm the save location, or run a backup now.
 
-## Before You Start
+## Before you start
 
 - You are signed in to SPRK.
 - Confirm the active company shown in the sidebar before using company-file controls.
@@ -37,21 +39,19 @@ Use this workflow when you want to confirm which backup settings are publicly av
    - `Import Company File` starts the company-file import path.
    - The card shows the active company name so you can confirm the company context before continuing.
 
-## What Happens Next
+## What happens next
 
 You can review and manage the current backup controls that SPRK exposes publicly: enable or disable automatic backups, set the daily time, save a folder path, review the last result, start a manual backup run, and use company-scoped Company File transfer controls.
 
-- Saving a backup location does not create or modify any accounting entry.
 - Relative backup locations are not necessarily the final filesystem path shown after a run; SPRK resolves them before writing the backup file.
-- Running a backup creates a data copy for safekeeping; it does not post to income, expense, asset, liability, or equity accounts.
-- Exporting a Company File creates a company-level package and does not post accounting activity.
+- Running a backup creates a data copy for safekeeping.
+- Exporting a Company File creates a package for the active company.
 - Importing a Company File is a data-management workflow. Review preview and replace language before confirming any import.
-- The status area reports backup activity only and does not represent a financial transaction.
 
 
-## Practice And Examples
+## Practice and examples
 
-Use the example file and screenshots to compare routine backup controls with Company File controls. `Run Backup Now` reports backup status and location; it does not post accounting activity.
+Use the example file and screenshots to compare routine backup controls with Company File controls.
 
 - Practice file: [company-file-export-practice.csv](../sample-files/practice/company-file-export-practice.csv)
 
@@ -63,4 +63,4 @@ Use the example file and screenshots to compare routine backup controls with Com
 
 - [Understand backup schedule behavior](./understand-backup-schedule-behavior.md)
 - [Export and import Company Files](./export-and-import-company-files.md)
-- [Understand restore guidance boundaries](./understand-restore-guidance-boundaries.md)
+- [Get help recovering a backup](./understand-restore-guidance-boundaries.md)

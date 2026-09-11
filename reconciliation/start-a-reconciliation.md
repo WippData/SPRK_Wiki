@@ -1,16 +1,18 @@
 # Start a Reconciliation
 
+<!-- Screenshot status: Review needed -->
+
 Open the reconciliation workflow for a bank or credit card account, review the statement dates and balances that SPRK locks or derives, and start the clearing session correctly.
 
 <!-- Last validated against SPRK source: 2026-08-27 -->
 
-## When To Use This
+## When to use this
 
-Use this workflow when you are ready to begin reconciling one bank or credit card account against a statement.
+Use this guide when you are ready to begin reconciling one bank or credit card account against a statement.
 
 For an enabled balance-sheet account that is not a bank register, use [Reconcile general ledger accounts](./reconcile-general-ledger-accounts.md).
 
-## Before You Start
+## Before you start
 
 - An active company is selected.
 - The bank or credit card account you want to reconcile already exists.
@@ -46,27 +48,26 @@ SPRK uses reconciliation history to set the beginning balance for a normal recon
 - For the first reconciliation, the source is either a nonposting $0 opening anchor or the selected `Opening balance journal entry`.
 - For later reconciliations, the source is the last posted reconciliation for the same account before the selected statement ending date.
 - The `Statement opening date` and `Statement opening balance` are locked from that prior posted reconciliation record. They are carried forward as reconciliation history, not edited directly in the start window.
-- Starting or finishing reconciliation does not create a journal entry, and selecting an opening-balance journal entry for the first anchor does not create a duplicate ledger posting.
+- Selecting an existing opening-balance journal entry for the first anchor does not post it a second time.
 - If a journal entry that affects an earlier period is later edited or reversed, financial reports can change according to that ledger correction, while posted reconciliation history continues to show the values recorded for that statement period.
 - Use [Resolve common reconciliation exceptions](./resolve-common-reconciliation-exceptions.md) when the opening balance looks wrong.
 
-## What Happens Next
+## What happens next
 
 The reconciliation workflow is initialized with statement dates and balances for the selected account.
 
-- Starting a normal reconciliation session does not create a new general ledger entry.
 - The page loads confirmed transactions for the selected account and preselects those that fall inside the statement window.
 - Eligible unreconciled confirmed rows can still appear for manual selection even when their transaction date is after the statement ending date. Use statement evidence to decide whether a later-dated row belongs on the current statement.
-- The $0 opening choice does not create a journal entry. Choosing an existing opening-balance entry does not post it a second time. Both choices establish reconciliation history for later periods.
+- Both first-reconciliation choices establish reconciliation history for later periods.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
 | The first opening balance is wrong | Whether you chose $0 or the correct `Opening balance journal entry` | Return to the start choices before establishing the first reconciliation |
 | Later-dated rows still appear | Whether they are confirmed, unreconciled activity for the account | Select only the rows supported by the current statement |
 
-## Practice And Examples
+## Practice and examples
 
 Use the practice file and screenshots to review selected statement rows, a zero difference, and posting the reconciliation.
 

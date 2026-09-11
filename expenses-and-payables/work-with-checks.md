@@ -1,16 +1,18 @@
 # Work With Checks
 
+<!-- Screenshot status: Review needed -->
+
 ![Sidebar configuration showing Checks as a hidden navigation item](../screenshots/preferences-and-personalization/sidebar-configuration-step-01.png)
 
 Add `Checks` to the sidebar when it is hidden, then record and manage checks without losing the posting trail.
 
 <!-- Last validated against SPRK source: 2026-08-27 -->
 
-## When To Use This
+## When to use this
 
-Use this workflow when you need to make the `Checks` page available in your sidebar, track a check, keep its status current, and connect it to related bank activity during reconciliation work.
+Use this guide when you need to make the `Checks` page available in your sidebar, track a check, keep its status current, and connect it to related bank activity during reconciliation work.
 
-## Before You Start
+## Before you start
 
 - You can open `Preferences` if `Checks` is not already visible in your sidebar.
 - A bank account exists for the check.
@@ -46,14 +48,14 @@ Use this workflow when you need to make the `Checks` page available in your side
 10. Review the `Status`, `Bank`, and `Memo` columns in the list after each action.
 11. Use `More` > `Enable Grid Mode` when several check-list corrections or repeated field updates are easier to review in one table, then review the changed-cell count before selecting `Apply Changes`.
 
-## What Happens Next
+## What happens next
 
 `Checks` is available from the sidebar, and the check is stored so it can move through draft, issued, matched, cleared, voided, or deleted states based on the current workflow.
 
 ## GL Impact
 
 
-- Adding or showing `Checks` in the sidebar is a navigation preference only. It does not create, edit, delete, or repost accounting transactions.
+- Adding or showing `Checks` in the sidebar changes only where the page appears in your navigation.
 - Saving a check as `Draft` does not post to the ledger.
 - Saving it as `Issued` posts a journal entry when the check has both a `Bank Account` and an `Offset Account`: SPRK debits the offset account and credits the bank account.
 - A check cannot use an Accounts Payable control account, another bank account, cash account, or credit-card account as its `Offset Account`. Use the bill-payment or transfer workflow when that is the accounting event.
@@ -65,14 +67,14 @@ Use this workflow when you need to make the `Checks` page available in your side
 - Voiding a posted issued check reverses its linked journal entry, removes an eligible bank match, and keeps the check as `Voided` history. A cleared check cannot be voided from this action.
 - `Delete` is available only for an unposted draft. It is not a substitute for voiding an issued check.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
 | A bill is already recorded in Accounts Payable | Whether this check is paying that bill | Use `Bills` > `More` > `Record Payment` instead of posting a second expense through `Checks` |
 | `Void` is unavailable | Whether the check is already `Cleared` | Review the reconciliation and use the supported correction path for cleared activity |
 
-## Practice And Examples
+## Practice and examples
 
 Use the practice file and screenshot to identify where a hidden `Checks` page can be made visible before check tracking.
 

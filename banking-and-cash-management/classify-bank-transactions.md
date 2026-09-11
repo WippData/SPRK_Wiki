@@ -1,16 +1,18 @@
-# Classify Bank Transactions
+# Categorize and Confirm Bank Transactions
+
+<!-- Screenshot status: Review needed -->
 
 Assign account, split, and party details to pending bank or credit card rows before confirming them.
 
 ![Banking actions strip showing Apply vendor or customer and the Vendor or Customer grid column](../screenshots/banking-and-cash-management/banking-filters-gl-account-step-01.png)
 
-## When To Use This
+## When to use this
 
 - Imported or manually entered bank activity is waiting in `Pending`.
 - A row needs a GL account/category, split, vendor, or customer before confirmation.
-- You need to confirm one or more banking rows into the general ledger.
+- You are ready to finish one or more reviewed banking rows.
 
-## Before You Start
+## Before you start
 
 - Select the correct bank or credit card account.
 - Stay on the `Pending` tab.
@@ -47,11 +49,11 @@ Assign account, split, and party details to pending bank or credit card rows bef
 
 ## What Happens When You Confirm
 
-Changing a vendor or customer, changing `GL Account` or `Category`, and saving draft splits do not post by themselves. Confirming a bank transaction creates or links the journal-entry result for that row. The selected bank or credit card account remains the bank-side line of the confirmed entry.
+Changes to the vendor, customer, `GL Account`, `Category`, or split remain pending until you confirm the transaction. Confirmation creates or links the accounting entry for that row. The selected bank or credit-card account remains the bank side of the entry.
 
 For money received, SPRK debits the selected bank or credit card account and credits the chosen target account or split accounts. For money spent, SPRK credits the selected bank or credit card account and debits the chosen target account or split accounts.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
@@ -61,7 +63,7 @@ For money received, SPRK debits the selected bank or credit card account and cre
 | A split will not save | Whether percent or amount lines total correctly | Complete the split total before saving |
 | Selected rows will not confirm | Whether Grid Edit changes are still pending | Apply or discard draft grid changes before the bulk action |
 
-## Practice And Examples
+## Practice and examples
 
 - Practice reference: [bank-review-classify-confirm.csv](../sample-files/practice/bank-review-classify-confirm.csv)
 

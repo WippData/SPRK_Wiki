@@ -1,14 +1,16 @@
 # Finish a Reconciliation
 
+<!-- Screenshot status: Review needed -->
+
 ![Active reconciliation summary with Finish available and zero difference](../screenshots/reconciliation/reconciliation-active-summary-step-01.png)
 
 Clear the right confirmed transactions, monitor the difference, and finish the reconciliation only when the selected activity agrees to the statement ending balance.
 
-## When To Use This
+## When to use this
 
 Use this workflow after a reconciliation session is started and you are ready to clear transactions and finalize the statement.
 
-## Before You Start
+## Before you start
 
 - A reconciliation session is already active for the account.
 - The account's `Statement opening balance`, `Statement ending balance`, and statement date range are already set.
@@ -31,11 +33,10 @@ Use this workflow after a reconciliation session is started and you are ready to
 7. If needed, use `Export` before finishing to download the current reconciliation table as a CSV review file.
 8. After the reconciliation is posted, use `History` and `View report`, or use `More` > `Print Bank Rec`, when you need to review the bank reconciliation report for that posted statement period.
 
-## What Happens Next
+## What happens next
 
 SPRK finalizes the reconciliation for the selected statement window.
 
-- Finishing a reconciliation does not create a new journal entry in the general ledger.
 - SPRK creates a posted reconciliation record for the account and statement ending date.
 - The posted statement ending balance becomes the beginning balance source for later reconciliations on the same account.
 - For a bank register, each selected confirmed bank transaction is stamped as reconciled and tied to the statement period. For another general-ledger account, SPRK stores the selected ledger-line references with the reconciliation session.

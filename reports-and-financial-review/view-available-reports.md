@@ -1,10 +1,12 @@
 # View Available Reports
 
+<!-- Screenshot status: Review needed -->
+
 Use this report catalog to choose the SPRK report that fits the review question before running, exporting, printing, or drilling into results.
 
 ![Reports page showing available report tabs and controls](../screenshots/reports-and-financial-review/reports-overview-step-01.png)
 
-## Quick Reference
+## Quick reference
 
 | Report Or Area | Use It For | Where It Matters |
 |---|---|---|
@@ -21,7 +23,7 @@ Use this report catalog to choose the SPRK report that fits the review question 
 | `Receivables Aging` | Unpaid customer balances | AR review and collection follow-up |
 | `Payables Aging` | Unpaid vendor balances | AP review and payment planning |
 | `Reconciliation` | Posted reconciliation reports | Bank reconciliation history |
-| Plugin-provided reports | Reports added by compatible installed plugins | Available only when the plugin is enabled and the report surface is available |
+| Plugin-provided reports | Reports added by compatible installed plugins | Available only when the plugin is enabled and its report is available |
 
 ## Details
 
@@ -43,20 +45,20 @@ Use this report catalog to choose the SPRK report that fits the review question 
 7. Review the table and any summary cards that appear.
 8. If needed, use `Export` to save the current report rows or `Print` to open the print workflow for the active report.
 
-Opening a report tab does not post anything to the ledger. Running a report reads posted data for the active company but does not change balances. Export and print are output actions only and do not create journal entries.
+Reports show posted data for the active company. `Export` and `Print` use the current report view.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
 | A report looks blank | Active company, date range, filters, and posted activity | Adjust the context and run the report again |
 | A report tab uses different date controls | Whether the report is range-based or as-of | Use the controls shown on that report tab |
 | Typed dates normalize unexpectedly | Saved date-format preference | Enter dates in the order shown in `Preferences` |
-| Export does not create a package for multiple reports | Whether only the active report context is selected | Export each needed report output from its own context |
+| You need files from several reports | Whether only the active report is selected | Export each needed report from its own tab |
 | A plugin report is missing | Plugin enablement, company access, and report availability | Refresh plugin status and check Reports again |
 | `Tax Forms` looks like a filing workflow | Whether you are reviewing report output only | Use it as review output, not tax filing or agency submission |
 
-## Practice And Examples
+## Practice and examples
 
 - Practice file: [report-export-practice.csv](../sample-files/practice/report-export-practice.csv)
 

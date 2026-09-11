@@ -1,17 +1,17 @@
-# Use Report Drilldown Behavior
+# Open Supporting Details From a Report
 
 <!-- Last validated: 2026-07-15 (SPRK 0.4.10, Demo Company) -->
 <!-- Screenshot status: Current; related reconciliation warning captured 2026-07-15 -->
 
 ![Report drilldown window showing supporting journal entries](../screenshots/reports-and-financial-review/report-drilldown-window-step-01.png)
 
-Open a report card, subtotal, total, or row with supporting detail when SPRK exposes drilldown, then review the underlying journal entries without changing the original posting.
+Open a supported report amount and review the journal entries behind it.
 
-## When To Use This
+## When to use this
 
-Use this workflow when you want to move from a report summary card, subtotal, total, or account row into the supporting journal-entry detail behind that amount.
+Use this guide when you want to move from a report summary card, subtotal, total, or account row into the supporting journal-entry detail behind that amount.
 
-## Before You Start
+## Before you start
 
 - You are on the `Reports` page.
 - The report you are using has been run for the date or period you want to inspect.
@@ -46,11 +46,10 @@ Use this workflow when you want to move from a report summary card, subtotal, to
    - Date modes `On`, `Before`, `After`, or `Between`.
 11. Close the drilldown window when you are done and return to the report.
 
-## What Happens Next
+## What happens next
 
 SPRK opens a supporting-entry view for the selected account or account group and date context so you can trace report amounts back to posted activity.
 
-- Drilldown does not create a correcting entry or edit an existing one.
 - Drilldown only exposes journal entries that are already posted in the ledger for that company and date context.
 - Report drilldown can open an edit path only when normal journal edit policy allows it; it does not bypass posting-window or audit controls.
 - Canceling a reconciliation-void confirmation leaves the report-launched journal edit uncommitted. `Void and save` should be used only after reviewing the named account and affected statement-ending date.
@@ -59,9 +58,9 @@ SPRK opens a supporting-entry view for the selected account or account group and
 - Closing the drilldown window leaves the underlying report and ledger unchanged.
 
 
-## Practice And Examples
+## Practice and examples
 
-Use the practice file and screenshots to review how report rows open supporting journal-entry detail without changing the original posting.
+Use the practice file and screenshots to review how report rows open supporting journal-entry detail.
 
 - Practice file: [report-drilldown-transaction-export.csv](../sample-files/practice/report-drilldown-transaction-export.csv)
 
@@ -76,4 +75,3 @@ Report drilldown is a review path, and the journal preview keeps the underlying 
 - [View available reports](./view-available-reports.md)
 - [Export transactions from reports](./export-transactions-from-reports.md)
 - [Review financial results inside the product](./review-financial-results-inside-the-product.md)
-- [View available reports](./view-available-reports.md)

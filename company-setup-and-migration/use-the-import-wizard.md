@@ -7,13 +7,13 @@ Build a new company from uploaded files, copied data, and manual settings when a
 
 ![Import Wizard showing Rules and its source choices](../screenshots/company-administration/import-wizard-rules-source-options-2026-07.png)
 
-## When To Use This
+## When to use this
 
 Use the Import Wizard when your migration spans multiple files or when you want to mix uploaded files, copied data from an existing company, and manual settings in one guided flow.
 
 If your main goal is to clone, copy, or duplicate an existing SPRK company, start with [Copying an existing company](./copying-an-existing-company.md) for the focused version of this workflow.
 
-## Before You Start
+## Before you start
 
 - You can open `Companies` from the left sidebar.
 - You know the new company name you want to create.
@@ -44,17 +44,17 @@ If your main goal is to clone, copy, or duplicate an existing SPRK company, star
 11. Create the company and wait for the wizard to finish.
 12. Review the new company before using it for live work.
 
-## What Happens Next
+## What happens next
 
 SPRK creates a new company using the combination of files, copied data, and settings you selected in the wizard.
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|
 | `Existing company` is unavailable for `Rules` | No `Existing company (optional)` source has been selected | Choose the source company, then return to the `Rules` row and select `Existing company` |
 
-## Practice And Examples
+## Practice and examples
 
 Use the practice file and screenshots to review the new-company drawer, starter templates, accepted formats, and data-type source slots before creating a company.
 

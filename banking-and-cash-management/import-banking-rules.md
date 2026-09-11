@@ -1,16 +1,18 @@
 # Import Banking Rules
 
+<!-- Screenshot status: Review needed -->
+
 Load repeated bank or credit card rule patterns from a spreadsheet or QuickBooks rules export, review the preview, and confirm only the rules that are ready for bank review.
 
 ![Rules import dialog showing template guidance, required columns, recommended columns, and supported file types](../screenshots/banking-and-cash-management/rules-import-template-guidance-step-01.png)
 
-## When To Use This
+## When to use this
 
 - You already maintain bank rule patterns outside SPRK.
 - You want to move repeated description, amount, account, vendor, or split rules into SPRK without entering each rule manually.
 - You want to review imported rules before they can suggest categories on pending bank transactions.
 
-## Before You Start
+## Before you start
 
 - The correct active company is selected.
 - Destination accounts, vendors, and bank or credit card accounts referenced by the rule file already exist or can be resolved during preview.
@@ -43,7 +45,7 @@ Load repeated bank or credit card rule patterns from a spreadsheet or QuickBooks
 Confirmed rule imports add or update rule setup for later bank review.
 
 - Importing rules does not confirm pending bank transactions.
-- Importing rules does not post to the general ledger.
+- Imported rules suggest categorization on future pending bank rows; review each suggestion before confirming the transaction.
 - Imported rules can prefill GL account/category choices, vendor or customer context, or split instructions only when SPRK evaluates matching pending bank transactions.
 - A bank transaction affects the general ledger only after it is reviewed and confirmed from Banking.
 
@@ -53,7 +55,7 @@ Optional practice file: [banking-rules-import.csv](../sample-files/practice/bank
 
 ![Rules grid showing the imported V1 banking rules after confirmation](../screenshots/v1-validation/rules-import-committed-rows-v0.3.57.png)
 
-## If Something Looks Wrong
+## If something looks wrong
 
 | What You See | What To Check | What To Do Next |
 |---|---|---|

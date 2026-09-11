@@ -1,14 +1,16 @@
-# Review Common Payables Workflows
+# Find the Right Payables Guide
 
-Choose the right payables workflow before entering vendor setup, bill recognition, payment, check tracking, or correction activity.
+<!-- Screenshot status: Review needed -->
+
+This address is kept for existing bookmarks. Use [Choose a bill task](./create-and-manage-bills.md) for bill entry, payment, import, matching, or correction, or [Review bills and vendor balances](./ap-review-workflow.md) for period-end review.
 
 ![Bills list showing payable balances and payment actions](../screenshots/expenses-and-payables/bills-list-step-01.png)
 
-## Use This Page When
+## Start here
 
-Use this page when you know the payables job but need to choose the page that best matches the accounting result.
+Choose the task below if you need a more specific guide.
 
-## Choose This Path If
+## Choose a payables task
 
 | Goal | Use | Check First |
 |---|---|---|
@@ -37,7 +39,7 @@ Use this page when you know the payables job but need to choose the page that be
 - Voiding a bill preserves the bill and creates reversal history.
 - Not every payable record supports the same correction action; use the action SPRK shows for that record.
 
-## Practice And Examples
+## Practice and examples
 
 - Practice file: [bill-void-correction-boundary.csv](../sample-files/practice/bill-void-correction-boundary.csv)
 
